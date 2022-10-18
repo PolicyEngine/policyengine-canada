@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Repo created
 
+## [1.5.1] - 2022-10-18 16:23:47
+
+### Added
+
+- Plotly as a dependency.
+
 ## [1.5.0] - 2022-10-18 16:09:03
 
 ### Added
@@ -19,5 +25,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[0.0.0]: https://github.com/PolicyEngine/policyengine-canada/compare/1.5.0...0.0.0
+[0.0.0]: https://github.com/PolicyEngine/policyengine-canada/compare/1.5.1...0.0.0
+[1.5.1]: https://github.com/PolicyEngine/policyengine-canada/compare/1.5.0...1.5.1
 
