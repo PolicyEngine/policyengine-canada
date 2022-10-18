@@ -1,0 +1,24 @@
+- name: Income tax schedule calculates
+  period: 2022
+  input:
+    people:
+      person:
+        employment_income: 25_000
+    households:
+      household:
+        members: person
+  output:
+    income_tax: 2_000
+
+- name: Income tax schedule is zero for pensioner
+  period: 2022
+  input:
+    people:
+      person:
+        employment_income: 25_000
+        age: 65
+    households:
+      household:
+        members: person
+  output:
+    income_tax: 0

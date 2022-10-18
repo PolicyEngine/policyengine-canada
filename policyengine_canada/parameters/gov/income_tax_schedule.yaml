@@ -1,0 +1,22 @@
+description: Example marginal tax schedule.
+brackets:
+  - threshold:
+      values:
+        2010-01-01: 10_000
+    rate:
+      values:
+        2010-01-01: 0.1
+  - threshold:
+      values:
+        2010-01-01: 20_000
+    rate:
+      values:
+        2010-01-01: 0.2
+metadata:
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  name: marginal_tax_schedule
+  label: Marginal tax schedule
+  reference:
+  - title: Some reference
+    href: https://some-gov-site.com

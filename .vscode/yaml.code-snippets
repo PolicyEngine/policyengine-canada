@@ -1,0 +1,30 @@
+{
+	"Insert PolicyEngine CA basic parameter": {
+		"prefix": "param",
+		"body": [
+			"description: ${1:Description}",
+			"values:",
+			"  2022-01-01: ${2:0.00}",
+			"metadata:",
+			"  unit: currency-CAD",
+			"  name: ${3:name}",
+			"  label: ${4:Label}",
+			"  reference:",
+			"  - title: ${5:Title}",
+			"    href: ${6:https://example.com}",
+		],
+		"description": "Insert a basic PolicyEngine CA parameter."
+	},
+	"Insert PolicyEngine CA basic test": {
+		"prefix": "test",
+		"body": [
+			"- name: ${1:Name}",
+			"  period: 2022",
+			"  input:",
+			"    ${3:variable values here}",
+			"  output:",
+			"    ${4:expected output here}"
+		],
+		"description": "Insert a basic PolicyEngine CA parameter for one person."
+	}
+}

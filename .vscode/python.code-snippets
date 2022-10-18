@@ -1,0 +1,34 @@
+{
+	"PolicyEngine CA Variable": {
+		 	"prefix": "var",
+		 	"body": [
+		 		"class ${1:name}(Variable):",
+				"	value_type = ${2:float}",
+				"	entity = ${3:Person}",
+				"	label = \"${4:Label}\"",
+				"	unit = ${5:CAD}",
+				"	documentation = \"${6:Description}\"",
+				"	definition_period = ${7:YEAR}",
+				"",
+				""
+		 	],
+		 	"description": "Insert a new OpenFisca Variable, without a formula."
+		 },
+	"PolicyEngine CA Formula": {
+			"prefix": "form",
+			"body": [
+				"def formula(${1:person}, period, parameters):",
+				"	${2:pass}"
+			],
+			"description": "Insert a new OpenFisca Formula."
+		},
+	"PolicyEngine CA module": {
+		"prefix": "file",
+		"body": [
+			"from policyengine_canada.model_api import *",
+			"",
+			"",
+			"$0"
+		]
+	},
+}

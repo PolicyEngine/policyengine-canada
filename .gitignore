@@ -1,0 +1,10 @@
+**/__pycache__
+**/*.egg-info
+coverage.xml
+.coverage
+build/
+dist/
+docs/_build/
+**/*.ipynb_checkpoints/
+**/*.h5
+**/iframe_figures/
