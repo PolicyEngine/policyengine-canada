@@ -2,14 +2,9 @@
     added:
     - Repo created
   date: 2022-10-18 17:02:00
-  version: 0.0.0
 - bump: minor
   changes:
     added:
     - Initial country package contents.
   date: 2022-10-18 16:09:03
-- bump: patch
-  changes:
-    added:
-    - Plotly as a dependency.
-  date: 2022-10-18 16:23:47
+  version: 0.0.0
