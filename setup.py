@@ -28,6 +28,7 @@ general_requirements = [
     "requests>=2.27.1,<3",
     "pandas>=1.4.2,<2",
     "policyengine_core>=1.4.0,<2",
+    "plotly>=5.6.0,<6",
 ]
 
 dev_requirements = [
