@@ -8,3 +8,8 @@
     - Initial country package contents.
   date: 2022-10-18 16:09:03
   version: 0.0.0
+- bump: patch
+  changes:
+    fixed:
+    - Versioning check action.
+  date: 2022-10-18 17:54:02
