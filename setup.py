@@ -14,7 +14,7 @@ general_requirements = [
     "numpy>=1.11,<1.21",
     "black[jupyter]<23",
     "linecheck<1",
-    "yaml-changelog<1",
+    "yaml-changelog>=0.3.0,<1",
     "coverage<7",
     "sortedcontainers<3",
     "numexpr<3",
