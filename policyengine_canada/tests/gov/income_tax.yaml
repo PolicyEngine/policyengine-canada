@@ -8,7 +8,7 @@
       household:
         members: person
   output:
-    income_tax: 2_000
+    income_tax: 3_750
 
 - name: Income tax schedule is zero for pensioner
   period: 2022
