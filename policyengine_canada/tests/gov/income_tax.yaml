@@ -3,7 +3,7 @@
   input:
     people:
       person:
-        employment_income: 25_000
+        total_individual_pre_tax_income: 25_000
     households:
       household:
         members: person
@@ -15,7 +15,7 @@
   input:
     people:
       person:
-        employment_income: 25_000
+        total_individual_pre_tax_income: 25_000
         age: 65
     households:
       household:
