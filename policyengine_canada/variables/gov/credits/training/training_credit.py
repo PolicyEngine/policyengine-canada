@@ -17,11 +17,11 @@ class training_credit(Variable):
         training = parameters(period).gov.credits.training
         lower_limit = training.age_bracket_lower
         upper_limit = training.age_bracket_upper
-        aged = age >= lower_limit & age <= upper_limit
+        aged = (age >= lower_limit) & (age <= upper_limit)
         existing_credits = tax_unit("existing_training_credits", period)
         cap = training.total_cap
-        remaining = cap - existing_credits
+        remaining = max_(0, cap - existing_credits)
         threshold = training.income_threshold
-        credits = threshold.calc(income, period)
+        credits = threshold.calc(income)
 
         return min_(remaining, credits)
