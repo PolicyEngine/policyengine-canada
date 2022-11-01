@@ -11,8 +11,6 @@ class income_tax(Variable):
 
     def formula(person, period, parameters):
         income = person("employment_income", period)
-        age = person("age", period)
-        gov = parameters(period).gov
+        gov = parameters(period).gov.cra.tax.income
         tax = gov.income_tax_schedule.calc(income)
-        is_exempt = age >= gov.age_exemption
-        return where(is_exempt, 0, tax)
+        return tax

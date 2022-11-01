@@ -13,12 +13,6 @@
 - name: Income tax schedule is zero for pensioner
   period: 2022
   input:
-    people:
-      person:
-        employment_income: 25_000
-        age: 65
-    households:
-      household:
-        members: person
+    employment_income: 100_000
   output:
-    income_tax: 0
+    income_tax: 26_000
