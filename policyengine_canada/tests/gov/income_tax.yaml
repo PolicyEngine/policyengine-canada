@@ -15,4 +15,4 @@
   input:
     employment_income: 100_000
   output:
-    income_tax: 26_000
+    income_tax: 17_911.7
