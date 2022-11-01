@@ -1,4 +1,8 @@
 - bump: minor
   changes:
     added:
+<<<<<<< HEAD
     - total individual pre tax income variable.
+=======
+    - Total individual pre tax income variable. 
+>>>>>>> 4cdb83026648328d19e5726d80a17cef5952b2c3
