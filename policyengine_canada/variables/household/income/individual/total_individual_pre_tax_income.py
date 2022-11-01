@@ -11,5 +11,11 @@ class total_individual_pre_tax_income(Variable):
     reference = "https://www.canada.ca/en/financial-consumer-agency/services/financial-toolkit/taxes/taxes-2/4.html"
 
     formula = sum_of_variables(
-        ["benefits_income", "employment_income", "investment_income", "pension_and_savings_plan_income", "self_employment_income"]
+        [
+            "benefits_income",
+            "employment_income",
+            "investment_income",
+            "pension_and_savings_plan_income",
+            "self_employment_income",
+        ]
     )

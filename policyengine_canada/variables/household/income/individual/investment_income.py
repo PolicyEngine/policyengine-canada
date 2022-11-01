@@ -6,7 +6,8 @@ class investment_income(Variable):
     entity = Person
     label = "Investment income"
     unit = CAD
-    documentation = "Income from investments including dividends and capital gains"
+    documentation = (
+        "Income from investments including dividends and capital gains"
+    )
     definition_period = YEAR
     reference = "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-13499-14299-gross-income-lines-13500-14300-net-income.html"
-
