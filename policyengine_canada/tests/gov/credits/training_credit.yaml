@@ -1,0 +1,41 @@
+- name: 30 year old person with tuition expenses
+  period: 2022
+  input:
+    people:
+      person:
+        employment_income: 62_000
+        tuition_expenses: 1_000
+        age: 30
+    households:
+      household:
+        members: person
+  output:
+    training_credit: 250
+
+- name: No tuition expenses incurred so no credit applied
+  period: 2022
+  input:
+    people:
+      person:
+        employment_income: 62_000
+        tuition_expenses: 0
+        age: 30
+    households:
+      household:
+        members: person
+  output:
+    training_credit: 0
+
+- name: No tuition expenses incurred so no credit applied
+  period: 2022
+  input:
+    people:
+      person:
+        employment_income: 62_000
+        tuition_expenses: 1_000
+        age: 19
+    households:
+      household:
+        members: person
+  output:
+    training_credit: 0
