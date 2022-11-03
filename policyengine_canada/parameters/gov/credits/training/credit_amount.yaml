@@ -1,6 +1,6 @@
 description: Age after which an individual is exempt from the training credit.
 values:
-  2022-01-01: 250
+  2020-01-01: 250
 metadata:
   unit: currency-CAD
   name: training_credit_upper_age_bracket

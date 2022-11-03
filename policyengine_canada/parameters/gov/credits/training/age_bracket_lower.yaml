@@ -1,6 +1,6 @@
 description: Age before which an individual is exempt from the training credit.
 values:
-  2022-01-01: 26
+  2020-01-01: 26
 metadata:
   unit: year
   name: training_credit_lower_age_bracket

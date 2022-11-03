@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class income_for_training_credit_calculation(Variable):
+class training_credit_income(Variable):
     value_type = float
     entity = Person
     label = "Canada Training Credit Income"
@@ -12,7 +12,5 @@ class income_for_training_credit_calculation(Variable):
     def formula(tax_unit, period, parameters):
 
         income = sum_of_variables(
-            ["employment_income", "self_employment_income"]
+            ["employment_income", "maternity_and_parental_benefit"]
         )
-
-    # TODO: add maternity income

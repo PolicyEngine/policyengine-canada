@@ -1,17 +1,17 @@
 description: Income Thresholds for Canada Training Credit. This is a $250 annual credit.
 brackets:
   - amount:
-      2021-01-01: 0
+      2020-01-01: 0
     threshold:
-      2021-01-01: 0
+      2020-01-01: 0
   - amount:
-      2021-01-01: 250
+      2020-01-01: 250
     threshold:
-      2021-01-01: 10_000
+      2020-01-01: 10_000
   - amount:
-      2021-01-01: 0
+      2020-01-01: 0
     threshold:
-      2021-01-01: 150_000
+      2020-01-01: 150_000
 metadata:
   type: single_amount
   threshold_unit: currency-CAD

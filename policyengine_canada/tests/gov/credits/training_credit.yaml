@@ -3,7 +3,7 @@
   input:
     people:
       person:
-        employment_income: 62_000
+        training_credit_income: 62_000
         tuition_expenses: 1_000
         age: 30
     households:
@@ -17,7 +17,7 @@
   input:
     people:
       person:
-        employment_income: 62_000
+        training_credit_income: 62_000
         tuition_expenses: 0
         age: 30
     households:
@@ -26,14 +26,44 @@
   output:
     training_credit: 0
 
-- name: No tuition expenses incurred so no credit applied
+- name: Under the eligibility age so no credit applied
   period: 2022
   input:
     people:
       person:
-        employment_income: 62_000
+        training_credit_income: 62_000
         tuition_expenses: 1_000
         age: 19
+    households:
+      household:
+        members: person
+  output:
+    training_credit: 0
+
+- name: 5_000 CAD cap on training credit
+  period: 2022
+  input:
+    people:
+      person:
+        training_credit_income: 62_000
+        tuition_expenses: 1_000
+        existing_training_credits: 4900
+        age: 36
+    households:
+      household:
+        members: person
+  output:
+    training_credit: 100
+
+- name: 5_000 CAD cap on training credit
+  period: 2022
+  input:
+    people:
+      person:
+        training_credit_income: 62_000
+        tuition_expenses: 1_000
+        existing_training_credits: 5000
+        age: 36
     households:
       household:
         members: person

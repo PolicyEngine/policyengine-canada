@@ -1,6 +1,6 @@
 description: Canada caps the total amount that can be received through the training credit.
 values:
-  2021-01-01: 5_000
+  2020-01-01: 5_000
 metadata:
   unit: currency-USD
   period: year

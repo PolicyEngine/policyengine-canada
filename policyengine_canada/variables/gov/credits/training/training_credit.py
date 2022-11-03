@@ -11,8 +11,7 @@ class training_credit(Variable):
     definition_period = YEAR
 
     def formula(tax_unit, period, parameters):
-        income = tax_unit("employment_income", period)
-        # TODO: ^ the above income concept should include maternity & parental benefits + working income (employment + self-employment income)
+        income = tax_unit("training_credit_income", period)
         tuition = tax_unit("tuition_expenses", period)
         age = tax_unit("age", period)
         training = parameters(period).gov.credits.training
@@ -24,5 +23,9 @@ class training_credit(Variable):
         remaining = max_(0, cap - existing_credits)
         threshold = training.income_threshold
         credits = threshold.calc(income)
-        # TODO: test for age and tuition paid
-        return min_(remaining, credits)
+        student = tuition > 0
+        eligible = min_(remaining, credits)
+        if aged == True and student == True:
+            return eligible
+        else:
+            return 0
