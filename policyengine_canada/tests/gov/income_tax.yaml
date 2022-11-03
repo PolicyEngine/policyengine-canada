@@ -15,10 +15,10 @@
   input:
     people:
       person:
-        total_individual_pre_tax_income: 25_000
+        total_individual_pre_tax_income: 100_000
         age: 65
     households:
       household:
         members: person
   output:
-    income_tax: 0
+    income_tax: 17_911.7
