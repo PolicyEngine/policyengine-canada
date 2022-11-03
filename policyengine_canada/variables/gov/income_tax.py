@@ -10,7 +10,8 @@ class income_tax(Variable):
     definition_period = YEAR
 
     def formula(person, period, parameters):
-        income = person("employment_income", period)
-        gov = parameters(period).gov.cra.tax.income
+        income = person("total_individual_pre_tax_income", period)
+        age = person("age", period)
+        gov = parameters(period).gov
         tax = gov.income_tax_schedule.calc(income)
         return tax
