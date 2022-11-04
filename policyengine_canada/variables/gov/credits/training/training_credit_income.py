@@ -11,6 +11,4 @@ class training_credit_income(Variable):
 
     def formula(tax_unit, period, parameters):
 
-        income = sum_of_variables(
-            ["employment_income", "maternity_and_parental_benefit"]
-        )
+        income = ["employment_income", "maternity_and_parental_benefit"]
