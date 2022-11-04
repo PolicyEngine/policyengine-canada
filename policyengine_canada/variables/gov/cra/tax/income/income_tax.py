@@ -11,7 +11,5 @@ class income_tax(Variable):
 
     def formula(person, period, parameters):
         income = person("total_individual_pre_tax_income", period)
-        age = person("age", period)
         gov = parameters(period).gov.cra.tax.income
-        tax = gov.income_tax_schedule.calc(income)
-        return tax
+        return gov.income_tax_schedule.calc(income)
