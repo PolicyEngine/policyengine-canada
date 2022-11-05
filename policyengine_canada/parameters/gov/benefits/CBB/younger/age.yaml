@@ -1,0 +1,10 @@
+description: Child benfit lower age limit (exclusive)
+values:
+  2020-01-01: 6
+metadata:
+  unit: year
+  name: child_benfit_lower_age_limit
+  label: Child benefit lower age limit
+  reference:
+  - title: Government of Canada - Canada Child Benefit
+    href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2019-investing-middle-class/canada-training-credit.html
