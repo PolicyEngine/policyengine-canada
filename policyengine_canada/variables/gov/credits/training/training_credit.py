@@ -17,13 +17,13 @@ class training_credit(Variable):
         training = parameters(period).gov.credits.training
         lower_limit = training.age_eligibility.min
         upper_limit = training.age_eligibility.max
-        aged = (age >= lower_limit) & (age <= upper_limit)
-        existing_credits = tax_unit("existing_training_credits", period)
+        meets_age_requirement = (age >= lower_limit) & (age <= upper_limit)
+        existing_credits = tax_unit("prior_training_credits", period)
         cap = training.lifetime_cap
         remaining = max_(0, cap - existing_credits)
         threshold = training.amount
         credits = threshold.calc(income)
         student = tuition > 0
         amount_if_eligible = min_(remaining, credits)
-        eligible = aged & student
+        eligible = meets_age_requirement & student
         return eligible * amount_if_eligible
