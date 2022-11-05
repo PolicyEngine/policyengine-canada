@@ -25,7 +25,5 @@ class training_credit(Variable):
         credits = threshold.calc(income)
         student = tuition > 0
         amount_if_eligible = min_(remaining, credits)
-        if aged == True and student == True:
-            return amount_if_eligible
-        else:
-            return 0
+        eligible = aged & student
+        return eligible * amount_if_eligible
