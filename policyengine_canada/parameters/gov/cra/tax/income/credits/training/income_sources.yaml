@@ -1,0 +1,11 @@
+description: Income sources that count toward training credit eligibility.
+values:
+  2020-01-01:
+    - employment_income
+    - maternity_and_parental_benefit
+metadata:
+  name: training_credit_income_sources
+  label: Training credit income sources
+  reference:
+  - title: Government of Canada - Canada Training Credit
+    href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2019-investing-middle-class/canada-training-credit.html

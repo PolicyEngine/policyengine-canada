@@ -1,0 +1,24 @@
+description: Canada Training Credit amount by income.
+brackets:
+  - amount:
+      2020-01-01: 0
+    threshold:
+      2020-01-01: 0
+  - amount:
+      2020-01-01: 250
+    threshold:
+      2020-01-01: 10_000
+  - amount:
+      2020-01-01: 0
+    threshold:
+      2020-01-01: 150_000
+metadata:
+  type: single_amount
+  threshold_unit: currency-CAD
+  amount_unit: currency-CAD
+  period: year
+  name: canada_training_credit_income_thresholds
+  label: Canada Training Credit Income Thresholds
+  reference:
+    - title: Government of Canada - Canada Training Credit
+      href: https://www.canada.ca/en/employment-social-development/news/2019/05/backgrounder-canada-training-benefit.html
