@@ -6,7 +6,6 @@ class training_credit(Variable):
     entity = Person
     label = "Training credit"
     unit = CAD
-    documentation = "Training credit available"
     definition_period = YEAR
 
     def formula(tax_unit, period, parameters):
