@@ -12,7 +12,7 @@ class training_credit(Variable):
         income = tax_unit("training_credit_income", period)
         tuition = tax_unit("tuition_expenses", period)
         age = tax_unit("age", period)
-        training = parameters(period).gov.credits.training
+        training = parameters(period).gov.cra.tax.credits.training
         lower_limit = training.age_eligibility.min
         upper_limit = training.age_eligibility.max
         meets_age_requirement = (age >= lower_limit) & (age <= upper_limit)
