@@ -3,22 +3,22 @@
   input:
     people:
       person:
-        employment_income: 25_000
+        total_individual_pre_tax_income: 25_000
     households:
       household:
         members: person
   output:
-    income_tax: 2_000
+    income_tax: 3_750
 
 - name: Income tax schedule is zero for pensioner
   period: 2022
   input:
     people:
       person:
-        employment_income: 25_000
+        total_individual_pre_tax_income: 100_000
         age: 65
     households:
       household:
         members: person
   output:
-    income_tax: 0
+    income_tax: 17_911.7

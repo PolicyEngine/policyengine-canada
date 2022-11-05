@@ -13,3 +13,13 @@
     fixed:
     - Versioning check action.
   date: 2022-10-18 17:54:02
+- bump: minor
+  changes:
+    added:
+    - Total individual pre tax income variable.
+  date: 2022-11-01 01:29:46
+- bump: minor
+  changes:
+    added:
+    - Canada income tax structure.
+  date: 2022-11-05 11:43:20

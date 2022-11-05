@@ -9,6 +9,6 @@ class training_credit_income(Variable):
     documentation = "The sum of employment income, self-employment income, maternity benefits and parental benefits"
     definition_period = YEAR
 
-    def formula(tax_unit, period, parameters):
-
-        income = ["employment_income", "maternity_and_parental_benefit"]
+    formula = formula = sum_of_variables(
+        ["employment_income", "maternity_and_parental_benefit"]
+    )
