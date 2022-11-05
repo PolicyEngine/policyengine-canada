@@ -1,4 +1,3 @@
-from math import remainder
 from policyengine_canada.model_api import *
 
 
