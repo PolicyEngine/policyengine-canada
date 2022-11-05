@@ -1,0 +1,46 @@
+- name: 30 year old person with tuition expenses
+  period: 2022
+  input:
+    training_credit_income: 62_000
+    tuition_expenses: 1_000
+    age: 30
+  output:
+    training_credit: 250
+
+- name: No tuition expenses incurred so no credit applied
+  period: 2022
+  input:
+    training_credit_income: 62_000
+    tuition_expenses: 0
+    age: 30
+  output:
+    training_credit: 0
+
+- name: Under the eligibility age so no credit applied
+  period: 2022
+  input:
+    training_credit_income: 62_000
+    tuition_expenses: 1_000
+    age: 19
+  output:
+    training_credit: 0
+
+- name: 5_000 CAD cap on training credit
+  period: 2022
+  input:
+    training_credit_income: 62_000
+    tuition_expenses: 1_000
+    prior_training_credits: 4_900
+    age: 36
+  output:
+    training_credit: 100
+
+- name: 5_000 CAD cap on training credit
+  period: 2022
+  input:
+    training_credit_income: 62_000
+    tuition_expenses: 1_000
+    prior_training_credits: 5_000
+    age: 36 
+  output:
+    training_credit: 0

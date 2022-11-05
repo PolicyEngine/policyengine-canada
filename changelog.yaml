@@ -23,3 +23,8 @@
     added:
     - Canada income tax structure.
   date: 2022-11-05 11:43:20
+- bump: minor
+  changes:
+    added:
+    - Canada training credit.
+  date: 2022-11-05 20:58:56

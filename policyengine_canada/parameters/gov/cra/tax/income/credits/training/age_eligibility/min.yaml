@@ -1,0 +1,10 @@
+description: Age before which an individual is exempt from the training credit.
+values:
+  2020-01-01: 26
+metadata:
+  unit: year
+  name: training_credit_lower_age_bracket
+  label: Training credit lower age bracket
+  reference:
+  - title: Government of Canada - Canada Training Credit
+    href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2019-investing-middle-class/canada-training-credit.html
