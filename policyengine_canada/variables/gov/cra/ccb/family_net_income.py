@@ -6,5 +6,5 @@ class family_net_income(Variable):
     entity = Person
     label = "Family net income"
     unit = CAD
-    documentation = "The family net income"
+    documentation = "Sum of head and spouse's line 23600 on tax return"
     definition_period = YEAR

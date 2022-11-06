@@ -10,7 +10,13 @@ class adjusted_family_net_income(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
-        income = ["family_net_income"] - [
-            "universal_childcare_benfits",
-            ["registered_disability_savings_plan_income"],
-        ]
+        net_income = household("family_net_income", period)
+        subtractions = add(
+            household,
+            period,
+            [
+                "universal_child_care_benefit",
+                "registered_disability_savings_plan_income",
+            ],
+        )
+        return net_income - subtractions

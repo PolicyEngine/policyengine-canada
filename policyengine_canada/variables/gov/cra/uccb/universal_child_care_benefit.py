@@ -6,5 +6,5 @@ class universal_child_care_benefit(Variable):
     entity = Person
     label = "Universal child care benefit"
     unit = CAD
-    documentation = "Universal child care benefits"
+    documentation = "Universal child care benefit (UCCB) ended in 2016."
     definition_period = YEAR
