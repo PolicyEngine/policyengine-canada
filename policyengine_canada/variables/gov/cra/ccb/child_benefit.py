@@ -13,7 +13,11 @@ class child_benefit(Variable):
 
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)
-        children = household("child".count, period)
+        children = household("children".count, period)
         gov = parameters(period).gov.cra.ccb
         base_amount = gov.base
         reduction = gov.reduction
+
+
+# TODO: select statement to select amount of children and calculate the benefit amount
+# TODO: distinguish between ages of children

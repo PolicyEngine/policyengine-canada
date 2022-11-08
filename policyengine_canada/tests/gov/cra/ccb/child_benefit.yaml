@@ -1,0 +1,7 @@
+- name: No children
+  period: 2022
+  input:
+    adjusted_family_net_income: 62_000
+    children: 0
+  output:
+    child_benefit: 0
