@@ -10,3 +10,10 @@ class child_benefit(Variable):
         "Non taxable amount paid monthly per children under 18 years of age. "
     )
     definition_period = YEAR
+
+    def formula(household, period, parameters):
+        income = household("adjusted_family_net_income", period)
+        children = household("child".count, period)
+        gov = parameters(period).gov.cra.ccb
+        base_amount = gov.base
+        reduction = gov.reduction
