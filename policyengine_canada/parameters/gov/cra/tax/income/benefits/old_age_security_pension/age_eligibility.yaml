@@ -1,0 +1,10 @@
+description: Age at which a person becomes eligible for the OAS Pension
+values:
+  2020-01-01: 65
+metadata:
+  unit: year
+  name: old_age_security_pension_eligible_age
+  label: Old Age Security Pension Eligible Age
+  reference:
+  - title: Government of Canada - Old Age Security Pension
+    href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html
