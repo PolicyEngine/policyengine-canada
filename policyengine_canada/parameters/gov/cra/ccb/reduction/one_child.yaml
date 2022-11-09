@@ -2,22 +2,22 @@ description: Canada child benefit reduction for one child
 brackets:
   - threshold:
       values:
-        2021-01-01: 0
+        2022-07-01: 0
     rate:
       values:
-        2021-01-01: 0
+        2022-07-01: 0
   - threshold:
       values:
-        2021-01-01: 32_797
+        2022-07-01: 32_797
     rate:
       values:
-        2021-01-01: 0.07
+        2022-07-01: 0.07
   - threshold:
       values:
-        2021-01-01: 71_060
+        2022-07-01: 71_060
     rate:
       values:
-        2021-01-01: 0.032
+        2022-07-01: 0.032
 
 
 metadata:
