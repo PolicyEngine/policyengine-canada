@@ -1,0 +1,11 @@
+description: Annual credit per child under 19 in Saskatchewan under the Canada climate action.
+values:
+  2021-01-01: 138
+metadata:
+  unit: currency-USD
+  period: year
+  name: climate_action_child_amount_saskatchewan
+  label: Canada climate action amount per child under 19 in Saskatchewan.
+  reference:
+    - title: Government of Canada - Climate action incentive payment
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html

@@ -1,0 +1,11 @@
+description: Annual credit for a spouse or common law partner in Manitoba under the Canada climate action.
+values:
+  2021-01-01: 208
+metadata:
+  unit: currency-USD
+  period: year
+  name: climate_action_spouse_amount_manitoba
+  label: Canada climate action amount per spouse or common-law partner in Manitoba.
+  reference:
+    - title: Government of Canada - Climate action incentive payment
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html

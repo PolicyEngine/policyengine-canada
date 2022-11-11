@@ -1,0 +1,11 @@
+description: Annual credit for an individual in Ontario under the Canada climate action.
+values:
+  2021-01-01: 373
+metadata:
+  unit: currency-USD
+  period: year
+  name: climate_action_individual_amount_ontario
+  label: Canada climate action amount for an individual in Ontario.
+  reference:
+    - title: Government of Canada - Climate action incentive payment
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html

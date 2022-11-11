@@ -1,0 +1,11 @@
+description: Annual credit for the first child in a single-parent family in Ontario under the Canada climate action.
+values:
+  2021-01-01: 93
+metadata:
+  unit: currency-USD
+  period: year
+  name: climate_action_first_child_in_single_parent_family_amount_ontario
+  label: Canada climate action amount for the first child in a single parent family in Ontario.
+  reference:
+    - title: Government of Canada - Climate action incentive payment
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html
