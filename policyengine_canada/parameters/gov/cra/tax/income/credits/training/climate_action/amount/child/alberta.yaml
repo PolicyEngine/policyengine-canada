@@ -1,0 +1,11 @@
+description: Annual credit per child under 19 in Alberta under the Canada climate action.
+values:
+  2021-01-01: 135
+metadata:
+  unit: currency-USD
+  period: year
+  name: climate_action_child_amount_alberta
+  label: Canada climate action amount per child under 19 in Alberta.
+  reference:
+    - title: Government of Canada - Climate action incentive payment
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html
