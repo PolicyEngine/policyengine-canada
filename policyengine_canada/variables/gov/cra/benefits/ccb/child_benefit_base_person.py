@@ -12,5 +12,5 @@ class child_benefit_base_person(Variable):
     def formula(household, period, parameters):
         person = household.members
         age = person("age", period)
-        person_amount = parameters(period).gov.cra.ccb.base.calc(age)
+        person_amount = parameters(period).gov.cra.benefits.ccb.base.calc(age)
         return household.sum(person_amount)

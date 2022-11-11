@@ -14,7 +14,7 @@ class child_benefit_reduction(Variable):
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)
         children = household("child_benefit_eligible_children", period)
-        p = parameters(period).gov.cra.ccb.reduction
+        p = parameters(period).gov.cra.benefits.ccb.reduction
         return select(
             # Conditions.
             [children == 1, children == 2, children == 3, children > 3],
