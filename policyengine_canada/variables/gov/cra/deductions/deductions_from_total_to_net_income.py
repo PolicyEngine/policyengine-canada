@@ -9,6 +9,3 @@ class deductions_from_total_to_net_income(Variable):
     documentation = "Deductions used in the calculation of Net Income"
     definition_period = YEAR
     reference = "SPSD/M 29.0 Variable Guide, Page 8"
-
-    def formula(tax_unit, period, parameters):
-        return 0

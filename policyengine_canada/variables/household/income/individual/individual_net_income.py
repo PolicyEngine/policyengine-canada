@@ -12,5 +12,7 @@ class individual_net_income(Variable):
 
     def formula(tax_unit, period, parameters):
         total_income = tax_unit("total_individual_pre_tax_income", period)
-        deductions_from_total_to_net_income = tax_unit(" deductions_from_total_to_net_income", period)
+        deductions_from_total_to_net_income = tax_unit(
+            " deductions_from_total_to_net_income", period
+        )
         return total_income - deductions_from_total_to_net_income
