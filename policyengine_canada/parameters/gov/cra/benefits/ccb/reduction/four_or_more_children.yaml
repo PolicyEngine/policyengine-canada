@@ -1,0 +1,31 @@
+description: Canada child benefit reduction for four or more children.
+brackets:
+  - threshold:
+      values:
+        2022-07-01: 0
+    rate:
+      values:
+        2022-07-01: 0
+  - threshold:
+      values:
+        2022-07-01: 32_797
+    rate:
+      values:
+        2022-07-01: 0.23
+  - threshold:
+      values:
+        2022-07-01: 71_060
+    rate:
+      values:
+        2022-07-01: 0.095
+
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  name: child_benefit_four_or_more_children_reduction
+  label: Child Benefit four or more children reduction
+  reference:
+  - title: Government of Canada - Canada Child Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html
