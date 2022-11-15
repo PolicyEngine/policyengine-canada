@@ -1,0 +1,44 @@
+- name: No eligible children
+  period: 2023
+  input:
+    people:
+      person:
+        age: 22
+    households:
+      household:
+        members: [person]
+        adjusted_family_net_income: 62_000
+        child_benefit_eligible_children: 0
+  output:
+    child_benefit: 0
+
+- name: One eligible child under 6
+  period: 2023
+  input:
+    people:
+      person:
+        age: 5
+    households:
+      household:
+        members: [person]
+        adjusted_family_net_income: 30_000
+        child_benefit_eligible_children: 1
+  output:
+    child_benefit: 6_997
+
+- name: One eligible child under 6, one eligible childe under 17
+  period: 2023
+  absolute_error_margin: 0.5
+  input:
+    people:
+      person:
+        age: 5
+      second_person: 
+        age: 17
+    households:
+      household:
+        members: [person, second_person]
+        adjusted_family_net_income: 80_000
+        child_benefit_eligible_children: 2
+  output:
+    child_benefit: 7_224.42
