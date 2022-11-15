@@ -1,0 +1,21 @@
+description: The climate action program provides the following amounts by province per child under 19 years
+
+ALBERTA:
+  2021-07-01: 135
+MANITOBA:
+  2021-07-01: 104
+ONTARIO:
+  2021-07-01: 93
+SASKATCHEWAN:
+  2021-07-01: 138
+
+metadata:
+  unit: currency-USD
+  period: year
+  name: climate_action_amount_per_child_under_19
+  label: Climate action amount per child under 19
+  reference:
+    - title: Government of Canada - Climate action incentive payment
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html
+  breakdown:
+    - province

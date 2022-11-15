@@ -16,3 +16,6 @@ class climate_action_incentive(Variable):
 
 
 # TODO: state codes for Canada + select statements based on the states
+
+# TODO: 10% supplement of the base amount for residents in rural communities
+# TODO: select if single parent

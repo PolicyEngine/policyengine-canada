@@ -1,0 +1,21 @@
+description: The climate action program provides the following amounts by province for the first child in a single parent family
+
+ALBERTA:
+  2021-07-01: 270
+MANITOBA:
+  2021-07-01: 208
+ONTARIO:
+  2021-07-01: 186
+SASKATCHEWAN:
+  2021-07-01: 275
+
+metadata:
+  unit: currency-USD
+  period: year
+  name: climate_action_amount_for_first_child_in_a_single_parent_family
+  label: Climate action amount for first child in a single parent family
+  reference:
+    - title: Government of Canada - Climate action incentive payment
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html
+  breakdown:
+    - province
