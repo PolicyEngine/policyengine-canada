@@ -5,7 +5,7 @@ from policyengine_canada.variables.household.demographic.geographic.province.pro
 import numpy as np
 
 
-class county(Variable):
+class province(Variable):
     value_type = Enum
     possible_values = Province
     default_value = Province.UNKNOWN
