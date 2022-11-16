@@ -13,6 +13,7 @@ class climate_action_incentive(Variable):
         gov = parameters(
             period
         ).gov.cra.tax.income.credits.climate_action.amount
+        filing_status = tax_unit("filing_status", period)
 
 
 # TODO: state codes for Canada + select statements based on the states
