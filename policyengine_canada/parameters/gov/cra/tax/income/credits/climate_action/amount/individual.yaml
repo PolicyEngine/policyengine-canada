@@ -10,7 +10,7 @@ SASKATCHEWAN:
   2021-07-01: 550
 
 metadata:
-  unit: currency-USD
+  unit: currency-CAD
   period: year
   name: climate_action_amount_per_individual
   label: Climate action amount per individual

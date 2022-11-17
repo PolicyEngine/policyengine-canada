@@ -10,7 +10,7 @@ SASKATCHEWAN:
   2021-07-01: 275
 
 metadata:
-  unit: currency-USD
+  unit: currency-CAD
   period: year
   name: climate_action_amount_for_spouse
   label: Climate action amount for spouse

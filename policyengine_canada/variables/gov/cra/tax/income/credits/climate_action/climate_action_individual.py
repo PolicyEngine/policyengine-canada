@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class climate_action_individual(Variable):
+class climate_action_head(Variable):
     value_type = float
     entity = Person
     label = "Canada Climate Action amount per child under 19"
