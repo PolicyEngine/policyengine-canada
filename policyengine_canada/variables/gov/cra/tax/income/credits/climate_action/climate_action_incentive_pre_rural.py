@@ -17,6 +17,3 @@ class climate_action_incentive_pre_rural(Variable):
             "climate_action_individual",
         ]
     )
-
-
-# TODO: 10% supplement of the base amount for residents in rural communities
