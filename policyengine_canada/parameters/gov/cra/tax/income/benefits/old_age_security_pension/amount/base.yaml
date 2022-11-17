@@ -2,7 +2,7 @@ description: The amount you receive if you meet the age and residuence requireme
 values:
   2022-01-01: 685.50
 metadata:
-  unit: year
+  unit: currency-CAD
   name: old_age_security_pension_maximum_amount
   label: Old Age Security Pension Maximum Amount 
   reference:
