@@ -2,7 +2,7 @@ from policyengine_canada.model_api import *
 
 
 class is_married(Variable):
-    value_type = int
+    value_type = bool
     entity = Person
     label = "Is married"
     unit = CAD

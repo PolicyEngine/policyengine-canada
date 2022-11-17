@@ -10,13 +10,14 @@ class climate_action_incentive(Variable):
     definition_period = YEAR
 
     def formula(tax_unit, period, parameters):
-        gov = parameters(
-            period
-        ).gov.cra.tax.income.credits.climate_action.amount
-        filing_status = tax_unit("filing_status", period)
+        return sum_of_variables(
+            [
+                "climate_action_children",
+                "climate_action_single_parent",
+                "climate_action_married",
+                "climate_action_individual",
+            ]
+        )
 
-
-# TODO: state codes for Canada + select statements based on the states
 
 # TODO: 10% supplement of the base amount for residents in rural communities
-# TODO: select if single parent

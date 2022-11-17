@@ -1,0 +1,6 @@
+- name: individual filing in Ontario
+  period: 2022
+  input:
+    province: ONTARIO
+  output:
+    climate_action_incentive: 373

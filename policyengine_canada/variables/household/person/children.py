@@ -6,5 +6,5 @@ class child(Variable):
     entity = Person
     label = "Children"
     unit = CAD
-    documentation = "Number of dependent children under the age of 18"
+    documentation = "Number of dependent children under the age of 19"
     definition_period = YEAR
