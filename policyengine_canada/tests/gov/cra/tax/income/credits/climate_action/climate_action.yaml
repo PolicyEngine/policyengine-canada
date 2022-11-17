@@ -7,6 +7,6 @@
     households:
       household:
         province: ONTARIO
-        members: person
+        members: [person]
   output:
     climate_action_incentive_pre_rural: 373
