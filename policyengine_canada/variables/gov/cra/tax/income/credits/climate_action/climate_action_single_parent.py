@@ -14,5 +14,5 @@ class climate_action_single_parent(Variable):
         province = person.household("province_str", period)
         children_amount = parameters(
             period
-        ).gov.cra.tax.income.credits.climate.action.amount.child[province]
+        ).gov.cra.tax.income.credits.climate_action.amount.child[province]
         return single_parent * children_amount

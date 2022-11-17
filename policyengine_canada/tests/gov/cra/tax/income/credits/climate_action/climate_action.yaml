@@ -1,6 +1,12 @@
 - name: individual filing in Ontario
   period: 2022
   input:
-    province: ONTARIO
+    people:
+      person:
+        is_adult: TRUE 
+    households:
+      household:
+        province: ONTARIO
+        members: person
   output:
-    climate_action_incentive: 373
+    climate_action_incentive_pre_rural: 373

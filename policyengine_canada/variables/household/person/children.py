@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class child(Variable):
+class children(Variable):
     value_type = int
     entity = Person
     label = "Children"
