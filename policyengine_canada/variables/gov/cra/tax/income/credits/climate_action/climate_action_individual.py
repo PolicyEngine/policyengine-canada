@@ -12,13 +12,7 @@ class climate_action_head(Variable):
     def formula(person, period, parameters):
         person = person("is_adult", period)
         province = person.household("province_str", period)
-        ontario == province == "ALBERTA"
-        manitoba == province == "MANITOBA"
-        saskatchewan == province == "SASKATCHEWAN"
-        alberta == province == "ALBERTA"
-        geo_list = [ontario, manitoba, saskatchewan, alberta]
-        return person * parameters(
+        children_amount = parameters(
             period
-        ).gov.cra.tax.income.credits.climate.action.amount.individual.calc(
-            geo_list
-        )
+        ).gov.cra.tax.income.credits.climate.action.amount.child[province]
+        return person * children_amount

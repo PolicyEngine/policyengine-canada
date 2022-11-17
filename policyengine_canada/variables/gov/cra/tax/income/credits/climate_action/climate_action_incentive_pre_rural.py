@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class climate_action_incentive(Variable):
+class climate_action_incentive_pre_rural(Variable):
     value_type = float
     entity = Person
-    label = "Canada Climate Action Incentive"
+    label = "Canada Climate Action Incentive before rural suplement"
     unit = CAD
     documentation = "Universal amount without adjustment based on AFNI"
     definition_period = YEAR

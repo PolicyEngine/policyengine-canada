@@ -12,14 +12,7 @@ class climate_action_spouse(Variable):
     def formula(person, period, parameters):
         spouse = person("is_married", period)
         province = person.household("province_str", period)
-        ontario == province == "ALBERTA"
-        manitoba == province == "MANITOBA"
-        saskatchewan == province == "SASKATCHEWAN"
-        alberta == province == "ALBERTA"
-        geo_list = [ontario, manitoba, saskatchewan, alberta]
-        spouse_amount = parameters(
+        children_amount = parameters(
             period
-        ).gov.cra.tax.income.credits.climate.action.amount.spouse.calc(
-            geo_list
-        )
-        return spouse * spouse_amount
+        ).gov.cra.tax.income.credits.climate.action.amount.child[province]
+        return spouse * children_amount
