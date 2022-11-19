@@ -28,3 +28,8 @@
     added:
     - Canada training credit.
   date: 2022-11-05 20:58:56
+- bump: minor
+  changes:
+    added:
+    - Canada child benefit.
+  date: 2022-11-18 12:12:53
