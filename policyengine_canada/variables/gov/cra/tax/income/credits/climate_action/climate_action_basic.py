@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class climate_action_married(Variable):
+class climate_action_basic(Variable):
     value_type = float
     entity = Household
     label = "Canada Climate Action amount per child under 19"
@@ -10,9 +10,7 @@ class climate_action_married(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
-        spouse = household("is_married", period)
         province = household("province_str", period)
-        children_amount = parameters(
+        return parameters(
             period
-        ).gov.cra.tax.income.credits.climate_action.amount.spouse[province]
-        return spouse * children_amount
+        ).gov.cra.tax.income.credits.climate_action.amount.basic[province]
