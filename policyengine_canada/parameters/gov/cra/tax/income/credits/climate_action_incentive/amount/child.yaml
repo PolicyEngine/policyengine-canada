@@ -1,13 +1,13 @@
 description: The climate action program provides the following amounts by province per child under 19 years
 
 ALBERTA:
-  2021-07-01: 135
+  2022-07-01: 135
 MANITOBA:
-  2021-07-01: 104
+  2022-07-01: 104
 ONTARIO:
-  2021-07-01: 93
+  2022-07-01: 93
 SASKATCHEWAN:
-  2021-07-01: 138
+  2022-07-01: 138
 
 metadata:
   unit: currency-CAD

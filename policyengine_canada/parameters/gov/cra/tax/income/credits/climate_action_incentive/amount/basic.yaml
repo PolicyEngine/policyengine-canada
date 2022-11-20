@@ -1,13 +1,13 @@
 description: The climate action program provides the following amounts by province per individual under 19 years
 
 ALBERTA:
-  2021-07-01: 539
+  2022-07-01: 539
 MANITOBA:
-  2021-07-01: 416
+  2022-07-01: 416
 ONTARIO:
-  2021-07-01: 373
+  2022-07-01: 373
 SASKATCHEWAN:
-  2021-07-01: 550
+  2022-07-01: 550
 
 metadata:
   unit: currency-CAD

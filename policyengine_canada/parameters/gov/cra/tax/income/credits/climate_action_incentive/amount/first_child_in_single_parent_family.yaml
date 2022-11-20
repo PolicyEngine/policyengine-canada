@@ -1,13 +1,13 @@
 description: The climate action program provides the following amounts by province for the first child in a single parent family on top of the original children amount
 
 ALBERTA:
-  2021-07-01: 270
+  2022-07-01: 270
 MANITOBA:
-  2021-07-01: 208
+  2022-07-01: 208
 ONTARIO:
-  2021-07-01: 186
+  2022-07-01: 186
 SASKATCHEWAN:
-  2021-07-01: 275
+  2022-07-01: 275
 
 metadata:
   unit: currency-CAD

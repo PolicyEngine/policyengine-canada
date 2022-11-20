@@ -1,12 +1,12 @@
 - name: individual filing in Ontario
-  period: 2022
+  period: 2023
   input:
     province: ONTARIO
   output:
     climate_action_incentive_pre_rural: 373
 
 - name: Married couple with two children filing in Alberta
-  period: 2022
+  period: 2023
   input:
     province: ALBERTA
     children: 2
@@ -15,7 +15,7 @@
     climate_action_incentive_pre_rural: 1_079
 
 - name: Married couple with two children filing in rural Alberta
-  period: 2022
+  period: 2023
   input:
     province: ALBERTA
     children: 2
@@ -25,7 +25,7 @@
     climate_action_incentive_post_rural: 1_186.9
 
 - name: Single parent with two children filing in MANITOBA
-  period: 2022
+  period: 2023
   input:
     province: MANITOBA
     children: 2
