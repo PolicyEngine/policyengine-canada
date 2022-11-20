@@ -18,6 +18,7 @@ class climate_action_incentive_single_parent(Variable):
             province
         ]
         children = household("climate_action_incentive_children", period)
+        print(children)
         return where(
             single_parent,
             children + (first_child_amount / 2),

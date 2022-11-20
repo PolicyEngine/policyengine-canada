@@ -31,23 +31,5 @@ Person = build_entity(
     is_person=True,
 )
 
-TaxUnit = build_entity(
-    key="tax_unit",
-    plural="tax_units",
-    label="Tax unit",
-    doc="""
-    A tax unit.
-    """,
-    roles=[
-        dict(
-            key="member",
-            plural="members",
-            label="Member",
-            doc="A member of the tax unit",
-        ),
-    ],
-    containing_entities=["household"],
-)
 
-
-entities = [Household, Person, TaxUnit]
+entities = [Household, Person]

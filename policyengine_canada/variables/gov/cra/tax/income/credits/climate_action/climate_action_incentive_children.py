@@ -9,11 +9,13 @@ class climate_action_incentive_children(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
-        children = household("children", period)
+        children = household(
+            "climate_action_incentive_dependent_children", period
+        )
         province = household("province_str", period)
-        children_amount = parameters(
+        child_amount = parameters(
             period
         ).gov.cra.tax.income.credits.climate_action_incentive.amount.child[
             province
         ]
-        return children * children_amount
+        return children * child_amount
