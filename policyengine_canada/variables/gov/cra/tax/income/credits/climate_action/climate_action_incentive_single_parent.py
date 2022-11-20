@@ -17,10 +17,13 @@ class climate_action_incentive_single_parent(Variable):
         ).gov.cra.tax.income.credits.climate_action_incentive.amount.first_child_in_single_parent_family[
             province
         ]
-        children = household("climate_action_incentive_children", period)
-        print(children)
+        child_amount = parameters(
+            period
+        ).gov.cra.tax.income.credits.climate_action_incentive.amount.child[
+            province
+        ]
         return where(
             single_parent,
-            children + (first_child_amount / 2),
-            children,
+            first_child_amount - child_amount,
+            0,
         )

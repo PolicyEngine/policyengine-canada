@@ -12,7 +12,7 @@ class climate_action_incentive_post_rural(Variable):
     def formula(household, period, parameters):
         amount = household("climate_action_incentive_pre_rural", period)
         rural = household("is_rural", period)
-        rural_amount = parameters(
+        rural_percent_bonus = parameters(
             period
         ).gov.cra.tax.income.credits.climate_action_incentive.rural
-        return where(rural, amount + (amount * rural_amount), amount)
+        return amount * (1 + rural * rural_percent_bonus)

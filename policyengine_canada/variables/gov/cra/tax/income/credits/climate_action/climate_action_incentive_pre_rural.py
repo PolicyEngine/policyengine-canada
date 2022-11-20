@@ -14,5 +14,6 @@ class climate_action_incentive_pre_rural(Variable):
             "climate_action_incentive_single_parent",
             "climate_action_incentive_married",
             "climate_action_incentive_basic",
+            "climate_action_incentive_children",
         ]
     )
