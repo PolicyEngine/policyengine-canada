@@ -2,7 +2,6 @@ from policyengine_canada.model_api import *
 from policyengine_canada.variables.household.demographic.geographic.province.province_enum import (
     Province,
 )
-import numpy as np
 
 
 class province(Variable):

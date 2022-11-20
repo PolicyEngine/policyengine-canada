@@ -6,5 +6,5 @@ class is_married(Variable):
     entity = Household
     label = "Is married"
     unit = CAD
-    documentation = "Person is part of a marriage"
+    documentation = "Household head is married"
     definition_period = YEAR

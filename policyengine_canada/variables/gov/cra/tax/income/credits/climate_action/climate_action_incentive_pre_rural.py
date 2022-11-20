@@ -11,8 +11,8 @@ class climate_action_incentive_pre_rural(Variable):
 
     formula = sum_of_variables(
         [
-            "climate_action_single_parent",
-            "climate_action_married",
-            "climate_action_basic",
+            "climate_action_incentive_single_parent",
+            "climate_action_incentive_married",
+            "climate_action_incentive_basic",
         ]
     )

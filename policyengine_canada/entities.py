@@ -46,7 +46,7 @@ TaxUnit = build_entity(
             doc="A member of the tax unit",
         ),
     ],
-    containing_entities=["spm_unit", "family", "household"],
+    containing_entities=["household"],
 )
 
 
