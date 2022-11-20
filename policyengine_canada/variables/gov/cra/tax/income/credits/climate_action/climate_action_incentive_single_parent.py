@@ -20,6 +20,6 @@ class climate_action_incentive_single_parent(Variable):
         children = household("climate_action_incentive_children", period)
         return where(
             single_parent,
-            children + ((single_parent * first_child_amount) / 2),
+            children + (first_child_amount / 2),
             children,
         )
