@@ -2,7 +2,6 @@ from policyengine_canada.model_api import *
 
 # SPSD/M 29.0: imioas or imoasmax, I'm not sure. I think imioas is post-clawback?
 
-
 class old_age_security_pension_pre_clawback(Variable):
     value_type = float
     entity = Person
