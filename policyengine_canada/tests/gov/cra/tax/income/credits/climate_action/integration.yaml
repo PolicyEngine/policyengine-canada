@@ -3,7 +3,7 @@
   input:
     province: ONTARIO
   output:
-    climate_action_incentive_pre_rural: 373
+    climate_action_incentive_post_rural: 373
 
 - name: Married couple with two children filing in Alberta
   period: 2023
@@ -12,7 +12,7 @@
     climate_action_incentive_dependent_children: 2
     is_married: TRUE
   output:
-    climate_action_incentive_pre_rural: 1_079
+    climate_action_incentive_post_rural: 1_079
 
 - name: Married couple with two children filing in rural Alberta
   period: 2023
@@ -32,4 +32,4 @@
     is_married: FALSE
     is_single_parent: TRUE
   output:
-    climate_action_incentive_pre_rural: 728
+    climate_action_incentive_post_rural: 728

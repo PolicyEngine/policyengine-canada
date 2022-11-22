@@ -3,7 +3,7 @@ values:
   2022-07-01: 19
 metadata:
   unit: year
-  name: climate_action_incentive_child_max_age
+  name: climate_action_incentive_adult_age
   label: The maximum age until which a person qualifies as a child for the climate action incentive
   reference:
     - title: Government of Canada - Climate action incentive payment
