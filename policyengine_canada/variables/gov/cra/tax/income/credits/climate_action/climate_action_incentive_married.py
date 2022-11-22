@@ -4,7 +4,9 @@ from policyengine_canada.model_api import *
 class climate_action_incentive_married(Variable):
     value_type = float
     entity = Household
-    label = "Canada Climate Action amount per child under 19"
+    label = (
+        "Canada Climate Action amount for the spouse in a married household"
+    )
     unit = CAD
     documentation = (
         "Determination of the amount for the spouse in a married household"

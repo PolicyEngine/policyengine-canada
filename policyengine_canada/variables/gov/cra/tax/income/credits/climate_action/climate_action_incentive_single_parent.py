@@ -22,8 +22,4 @@ class climate_action_incentive_single_parent(Variable):
         ).gov.cra.tax.income.credits.climate_action_incentive.amount.child[
             province
         ]
-        return where(
-            single_parent,
-            first_child_amount - child_amount,
-            0,
-        )
+        return where(single_parent, first_child_amount - child_amount, 0)
