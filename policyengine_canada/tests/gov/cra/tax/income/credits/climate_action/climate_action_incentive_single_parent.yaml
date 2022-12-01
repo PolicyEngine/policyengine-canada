@@ -3,5 +3,6 @@
   input:
     province: ONTARIO
     is_single_parent: TRUE
+    is_first_child: TRUE
   output:
     climate_action_incentive_single_parent: 186
