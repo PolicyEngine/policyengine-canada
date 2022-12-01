@@ -1,0 +1,16 @@
+- name: Individual filing in Ontario
+  period: 2023
+  input:
+    people:
+      person1: 
+        age: 12
+        is_dependent: TRUE
+      person2:
+        age: 20
+        is_dependent: FALSE
+    households:
+      household:
+        members: [person1, person2]
+        province: ONTARIO
+  output:
+    climate_action_incentive_dependent_children: 1
