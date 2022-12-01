@@ -7,3 +7,6 @@ class is_married(Variable):
     label = "Is married"
     documentation = "Household head is married"
     definition_period = YEAR
+
+    def formula(household, period, parameters):
+        return add(household, period, ["is_spouse"]) > 0

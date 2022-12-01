@@ -10,6 +10,4 @@ class is_single_parent(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
-        married = household("is_married", period)
-        children = household("children", period)
-        return ~married & (children > 0)
+        

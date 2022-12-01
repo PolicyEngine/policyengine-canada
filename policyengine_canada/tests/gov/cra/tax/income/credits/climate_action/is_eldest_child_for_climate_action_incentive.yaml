@@ -1,7 +1,7 @@
-- name: Single person with no children should be false.
+- name: Only children can be eldest children.
   period: 2023
   input:
-    age: 20
+    is_child_for_climate_action_incentive: false
   output:
     is_eldest_child_for_climate_action_incentive: false
 
@@ -10,28 +10,14 @@
   input:
     people:
       parent:
-        age: 30
+        person_index: 0
+        is_child_for_climate_action_incentive: false
       c1:
-        age: 10
+        person_index: 1
+        is_child_for_climate_action_incentive: true
       c2:
-        age: 9
-    household:
-      members: [parent, c1, c2]
-  output:
-    is_eldest_child_for_climate_action_incentive: [false, true, false]
-
-- name: Parent with two 18-year-olds; select the first only.
-  period: 2023
-  input:
-    people:
-      parent:
-        age: 30
-      c1:
-        age: 18
-        is_dependent: true
-      c2:
-        age: 18
-        is_dependent: true
+        person_index: 2
+        is_child_for_climate_action_incentive: true
     household:
       members: [parent, c1, c2]
   output:
