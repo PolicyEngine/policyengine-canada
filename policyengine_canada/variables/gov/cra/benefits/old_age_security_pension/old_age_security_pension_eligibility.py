@@ -12,7 +12,7 @@ class old_age_security_pension_eligibility(Variable):
         adult_years_in_canada = person("adult_years_in_canada", period)
         oas_pension = parameters(
             period
-        ).gov.cra.tax.income.benefits.old_age_security_pension
+        ).gov.cra.benefits.old_age_security_pension
         eligible_age_threshold = oas_pension.age_eligibility
         eligible_residence_threshold = (
             oas_pension.residence_eligibility

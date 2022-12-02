@@ -15,7 +15,7 @@ class old_age_security_pension_pre_clawback(Variable):
         eligible = person("old_age_security_pension_eligibility", period)
         oas_pension = parameters(
             period
-        ).gov.cra.tax.income.benefits.old_age_security_pension  # shortcut
+        ).gov.cra.benefits.old_age_security_pension  # shortcut
         older_increase_age_threshold = (
             oas_pension.age_eligibility_older_seniors_increase
         )  # age at which you get the percentage boost
@@ -26,7 +26,7 @@ class old_age_security_pension_pre_clawback(Variable):
             * oas_pension.amount.older_seniors_increase_factor
         )
         base_amount = oas_pension.amount.base
-        scale_factor = min_(
+        scale_factor = min(
             adult_years_in_canada / oas_pension.residence_for_full_base_amount,
             1,
         )  # Your full base amount is your number of adult residence years divided by the number of years at which you are eligible for 100%. In the SPSD/M 29.0 this is imoasres
