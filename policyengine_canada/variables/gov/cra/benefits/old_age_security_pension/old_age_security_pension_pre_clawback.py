@@ -2,10 +2,12 @@ from policyengine_canada.model_api import *
 
 # SPSD/M 29.0: imioas or imoasmax, I'm not sure. I think imioas is post-clawback?
 
+
 class old_age_security_pension_pre_clawback(Variable):
     value_type = float
     entity = Person
     label = "Old age security pension pre-clawback"
+    documentation = "The OAS amount a person is eligible for prior to the clawback tax. See SPSD/M 'imoasmax'."
     unit = CAD
     definition_period = YEAR
 
@@ -31,8 +33,5 @@ class old_age_security_pension_pre_clawback(Variable):
             1,
         )  # Your full base amount is your number of adult residence years divided by the number of years at which you are eligible for 100%. In the SPSD/M 29.0 this is imoasres
         return (
-            eligible
-            * base_amount
-            * scale_factor
-            * total_older_increase_factor
+            eligible * base_amount * scale_factor * total_older_increase_factor
         )  # apply the old age boost to the base amount if applicable. In the SPSD/M 29.0 this is imoasmax
