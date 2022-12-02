@@ -5,6 +5,8 @@ class old_age_security_pension_eligibility(Variable):
     value_type = bool
     entity = Person
     label = "Old age security pension eligibility"
+    unit = CAD
+    documentation = "Eligibility for the OAS based on age and adult years resident in canada"
     definition_period = YEAR
 
     def formula(person, period, parameters):
@@ -17,7 +19,7 @@ class old_age_security_pension_eligibility(Variable):
         eligible_residence_threshold = (
             oas_pension.residence_eligibility
         )  # Specifically years resident since the age of 18
-        eligible = ((age >= eligible_age_threshold) & (
+        eligible = (age >= eligible_age_threshold) & (
             adult_years_in_canada >= eligible_residence_threshold
-        ))
+        )
         return eligible
