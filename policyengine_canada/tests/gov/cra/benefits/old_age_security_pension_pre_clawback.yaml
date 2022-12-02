@@ -23,10 +23,11 @@
   output:
     old_age_security_pension_pre_clawback: 754.05
 
-- name: 65 year old but with only 5 years of residency
+- name: 65 year old but with only 5 years of residency, so not eligible
   period: 2022
   input:
     age: 65
     adult_years_in_canada: 5
   output:
+    old_age_security_pension_eligibility: FALSE
     old_age_security_pension_pre_clawback: 0
