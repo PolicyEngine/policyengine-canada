@@ -1,0 +1,24 @@
+- name: Married couple with a child; should be false
+  period: 2023
+  input:
+    is_married: TRUE
+    climate_action_incentive_dependent_children: 2
+  output:
+    climate_action_incentive_single_parent_household: false
+
+- name: Non-married with a child; should be true
+  period: 2023
+  input:
+    is_married: FALSE
+    climate_action_incentive_dependent_children: 2
+  output:
+    climate_action_incentive_single_parent_household: true
+
+
+- name: Non-married with no child; should be false
+  period: 2023
+  input:
+    is_married: FALSE
+    climate_action_incentive_dependent_children: 0
+  output:
+    climate_action_incentive_single_parent_household: false

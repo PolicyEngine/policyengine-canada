@@ -1,4 +1,4 @@
-description: The climate action program provides the following amounts by province per individual under 19 years
+description: The climate action program provides the following amounts by province
 
 HEAD:
   ALBERTA:
@@ -18,7 +18,7 @@ SPOUSE:
     2022-07-01: 186
   SASKATCHEWAN:
     2022-07-01: 275 
-ELDEST_CHILD_IN_SINGLE_PARENT_FAMILY:
+ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD:
   ALBERTA:
     2022-07-01: 270
   MANITOBA:
@@ -40,11 +40,12 @@ OTHER_CHILD:
 metadata:
   unit: currency-CAD
   period: year
-  name: climate_action_amount_per_individual
-  label: Climate action amount per individual
+  name: climate_action_amount
+  label: Climate action amount 
   reference:
     - title: Government of Canada - Climate action incentive payment
       href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html
   breakdown:
     - climate_action_incentive_category
     - province
+  

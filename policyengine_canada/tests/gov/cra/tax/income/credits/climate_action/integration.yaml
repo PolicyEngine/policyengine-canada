@@ -1,35 +1,47 @@
-- name: individual filing in Ontario
+- name: Single parent with two children living in Manitoba.
   period: 2023
   input:
-    province: ONTARIO
-  output:
-    climate_action_incentive_post_rural: 373
-
-- name: Married couple with two children filing in Alberta
-  period: 2023
-  input:
-    province: ALBERTA
-    climate_action_incentive_dependent_children: 2
-    is_married: TRUE
-  output:
-    climate_action_incentive_post_rural: 1_079
-
-- name: Married couple with two children filing in rural Alberta
-  period: 2023
-  input:
-    province: ALBERTA
-    climate_action_incentive_dependent_children: 2
-    is_married: TRUE
-    is_rural: TRUE
-  output:
-    climate_action_incentive_post_rural: 1_186.9
-
-- name: Single parent with two children filing in MANITOBA
-  period: 2023
-  input:
-    province: MANITOBA
-    climate_action_incentive_dependent_children: 2
-    is_married: FALSE
-    is_single_parent: TRUE
+    people:
+      parent:
+        age: 30
+      c1:
+        age: 10
+      c2:
+        age: 9
+    household:
+      members: [parent, c1, c2]
+      province: MANITOBA
   output:
     climate_action_incentive_post_rural: 728
+
+- name: Married couple with no children in Saskatchewan
+  period: 2023
+  input:
+    people:
+      head:
+        age: 30
+      spouse:
+        age: 28
+        is_spouse: true
+    household:
+      members: [head, spouse]
+      province: SASKATCHEWAN
+  output:
+    climate_action_incentive_post_rural: 825
+
+- name: Single parent with two children living in rural Manitoba.
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 30
+      c1:
+        age: 10
+      c2:
+        age: 9
+    household:
+      members: [parent, c1, c2]
+      province: MANITOBA
+      is_rural: true
+  output:
+    climate_action_incentive_post_rural: 800.8

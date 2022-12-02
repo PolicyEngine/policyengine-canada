@@ -3,7 +3,7 @@ from policyengine_canada.model_api import *
 
 class climate_action_incentive_person(Variable):
     value_type = float
-    entity = Household
+    entity = Person
     label = "Canada Climate Action amount per individual"
     unit = CAD
     documentation = "Determination of the amount per individual"

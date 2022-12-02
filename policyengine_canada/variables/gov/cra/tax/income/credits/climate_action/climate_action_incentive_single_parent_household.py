@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class climate_action_incentive_single_parent(Variable):
+class climate_action_incentive_single_parent_household(Variable):
     value_type = bool
     entity = Household
     label = "Canada Climate Action single parent status"

@@ -1,7 +1,0 @@
-- name: One child in Manitoba
-  period: 2023
-  input:
-    climate_action_incentive_dependent_children: 1
-    province: MANITOBA
-  output:
-    climate_action_incentive_children: 104

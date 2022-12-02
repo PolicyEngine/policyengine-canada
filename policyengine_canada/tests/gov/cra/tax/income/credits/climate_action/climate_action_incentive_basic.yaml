@@ -1,6 +1,0 @@
-- name: Individual filing in Ontario
-  period: 2023
-  input:
-    province: ONTARIO
-  output:
-    climate_action_incentive_basic: 373

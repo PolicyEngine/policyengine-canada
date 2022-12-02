@@ -1,0 +1,15 @@
+- name: Rural household with 1_000 pre-rural climate action credit.
+  period: 2023
+  input:
+    climate_action_incentive_pre_rural: 1_000
+    is_rural: true
+  output:
+    climate_action_incentive_post_rural: 1_100
+
+- name: Non-rural household with 1_000 pre-rural climate action credit.
+  period: 2023
+  input:
+    climate_action_incentive_pre_rural: 1_000
+    is_rural: false
+  output:
+    climate_action_incentive_post_rural: 1_000
