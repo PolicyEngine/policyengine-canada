@@ -1,8 +1,10 @@
 description: Canada Age Amount Credit lower credit amount.
-  threshold:
-      2021-12-31: 38_893
-  - amount:
-      2021-12-31: 7_713
+threshold:
+  values:
+    2021-12-31: 38_893
+amount:
+  values:
+    2021-12-31: 7_713
 metadata:
   type: single_amount
   threshold_unit: currency-CAD
