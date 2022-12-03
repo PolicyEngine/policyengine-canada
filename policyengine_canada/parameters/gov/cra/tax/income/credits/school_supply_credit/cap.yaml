@@ -1,6 +1,6 @@
 description: Canada caps the credit on teaching supply expenses for eligible educators at the following amount.
 values:
-  2020-01-01: 1_000
+  2021-01-01: 1_000
 metadata:
   unit: currency-CAD
   period: year

@@ -1,6 +1,6 @@
 description: Canada allows a credit on teaching supply expenses for eligible educators.
 values:
-  2020-01-01: .25
+  2021-01-01: .25
 metadata:
   unit: /1
   period: year
