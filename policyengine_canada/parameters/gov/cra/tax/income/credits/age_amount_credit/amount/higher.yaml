@@ -1,0 +1,32 @@
+description: Canada Age Amount Credit higher credit amount.
+brackets:
+  - threshold:
+      values:
+        2021-01-01: 0
+    rate:
+      values:
+        2021-01-01: 0
+  - threshold:
+      values:
+        2021-01-01: 38_893
+    rate:
+      values:
+        2021-01-01: 0.15
+  - threshold:
+      values:
+        2021-01-01: 90_313 
+    rate:
+      values:
+        2021-01-01: 0
+metadata:
+  type: single_amount
+  threshold_unit: currency-CAD
+  amount_unit: currency-CAD
+  period: year
+  name: Canada_age_amount_higher_credit_amount
+  label: Canada age amount credit higher amount
+  reference:
+  - title: Government of Canada - Canada Age Amount Credit
+    href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30100-amount.html
+  - title: Federal Worksheet
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-21e.pdf
