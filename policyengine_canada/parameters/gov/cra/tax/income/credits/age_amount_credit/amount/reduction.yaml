@@ -19,7 +19,7 @@ brackets:
       values:
         2021-01-01: 0
 metadata:
-  type: single_amount
+  type: marginal_rate
   threshold_unit: currency-CAD
   amount_unit: currency-CAD
   period: year

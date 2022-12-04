@@ -1,17 +1,13 @@
-description: Canada Age Amount Credit lower credit amount.
-threshold:
-  values:
-    2021-12-31: 38_893
-amount:
-  values:
-    2021-12-31: 7_713
+description: Canada Age Amount income cap.
+values:
+  2021-01-01: 90_313
 metadata:
   type: single_amount
   threshold_unit: currency-CAD
   amount_unit: currency-CAD
   period: year
-  name: Canada_age_amount_lower_credit_amount
-  label: Canada age amount credit lower amount
+  name: Canada_age_amount_income_cap
+  label: Canada age amount income cap
   reference:
   - title: Government of Canada - Canada Age Amount Credit
     href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30100-amount.html
