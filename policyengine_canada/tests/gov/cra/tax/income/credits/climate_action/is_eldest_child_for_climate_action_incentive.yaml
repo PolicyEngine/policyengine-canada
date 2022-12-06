@@ -1,0 +1,24 @@
+- name: Only children can be eldest children.
+  period: 2023
+  input:
+    is_child_for_climate_action_incentive: false
+  output:
+    is_eldest_child_for_climate_action_incentive: false
+
+- name: Parent with two children.
+  period: 2023
+  input:
+    people:
+      parent:
+        person_index: 0
+        is_child_for_climate_action_incentive: false
+      c1:
+        person_index: 1
+        is_child_for_climate_action_incentive: true
+      c2:
+        person_index: 2
+        is_child_for_climate_action_incentive: true
+    household:
+      members: [parent, c1, c2]
+  output:
+    is_eldest_child_for_climate_action_incentive: [false, true, false]

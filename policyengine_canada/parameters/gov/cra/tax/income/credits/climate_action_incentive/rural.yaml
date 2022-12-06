@@ -1,0 +1,12 @@
+description: Canada supplements the climate action incentive amount for rural citizens of the provinces.
+values:
+  2022-07-01: 0.10
+metadata:
+  unit: /1
+  period: year
+  name: climate_action_rural_supplement
+  label: Climate action rural supplement
+  reference:
+    - title: Government of Canada - Climate action incentive payment
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html
+  

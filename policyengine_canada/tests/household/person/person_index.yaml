@@ -1,0 +1,25 @@
+- name: Multiple people with different age.
+  period: 2020
+  input:
+    people:
+      p1:
+        age: 30
+      p2:
+        age: 20
+    household:
+      members: [p1, p2]
+  output:
+    person_index: [0, 1]
+
+- name: Multiple people with the same age.
+  period: 2020
+  input:
+    people:
+      p1:
+        age: 10
+      p2:
+        age: 10
+    household:
+      members: [p1, p2]
+  output:
+    person_index: [0, 1]
