@@ -1,0 +1,28 @@
+description: Canada dental benefit shared custody amount
+brackets:
+  - threshold:
+      2022-12-31: 0
+    amount:
+      2022-12-31: 325
+  - threshold:
+      2022-12-31: 69_999
+    amount:
+      2022-12-31: 195
+  - threshold:
+      2022-12-31: 80_000
+    amount:
+      2022-12-31: 130
+  - threshold:
+      2022-12-31: 90_000
+    amount:
+      2022-12-31: 0
+
+metadata:
+  type: single_amount
+  rate_unit: currency-CAD
+  threshold_unit: currency-CAD
+  name: dental_benefit_shared_custody_amount
+  label: Dental benefit shared custody amount
+  reference:
+  - title: Government of Canada - Canada Dental Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/dental-benefit/how-much.html
