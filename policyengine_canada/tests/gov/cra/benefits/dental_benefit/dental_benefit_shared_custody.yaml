@@ -1,0 +1,66 @@
+- name: One shared custody child with dental expenses, no insurance plan, and income under 70_000; should be 325
+  period: 2023
+  input:
+    dental_benefit_children: 1
+    adjusted_family_net_income: 50_000
+    child_dental_costs: 300
+    child_private_dental_insurance_plan: false
+    full_custody: false
+  output:
+    dental_benefit_shared_custody: 325
+
+- name: One shared custody child with insurance plan; should be 0
+  period: 2023
+  input:
+    dental_benefit_children: 1
+    adjusted_family_net_income: 50_000
+    child_dental_costs: 300
+    child_private_dental_insurance_plan: true
+    full_custody: false
+  output:
+    dental_benefit_shared_custody: 0
+
+- name: One full custody child; should be 0
+  period: 2023
+  input:
+    dental_benefit_children: 1
+    adjusted_family_net_income: 50_000
+    child_dental_costs: 300
+    child_private_dental_insurance_plan: false
+    full_custody: true
+  output:
+    dental_benefit_shared_custody: 0
+
+
+- name: One child with no dental costs; should be 0
+  period: 2023
+  input:
+    dental_benefit_children: 1
+    adjusted_family_net_income: 50_000
+    child_dental_costs: 0
+    child_private_dental_insurance_plan: false
+    full_custody: false
+  output:
+    dental_benefit_shared_custody: 0
+
+- name: two shared custody children with dental expenses, no insurance plan, and income between 80_000 and 89_999; should be (130 * 2 = 260)
+  period: 2023
+  input:
+    dental_benefit_children: 2
+    adjusted_family_net_income: 89_999
+    child_dental_costs: 300
+    child_private_dental_insurance_plan: false
+    full_custody: false
+  output:
+    dental_benefit_shared_custody: 260
+
+- name: One child with income over 89_999; should be 0
+  period: 2023
+  input:
+    dental_benefit_children: 1
+    adjusted_family_net_income: 90_000
+    child_dental_costs: 300
+    child_private_dental_insurance_plan: false
+    full_custody: false
+  output:
+    dental_benefit_shared_custody: 0

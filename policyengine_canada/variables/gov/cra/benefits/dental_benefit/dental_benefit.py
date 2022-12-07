@@ -9,9 +9,11 @@ class dental_benefit(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
-        income = household.person("total_individual_pre_tax_income", period)
-        p = parameters(period).gov.cra.benefits.dental_benefit
-        cap = p.income_cap
-        shared_custody_benefit = p.shared_custody_amount.calc(income)
-        full_custody_benefit = p.full_custody_amount.calc(income)
-        dental_benefit_children = household("dental_benefit_children", period)
+        full_custody_amount = household("dental_benefit_full_custody", period)
+        shared_custody_amount = household(
+            "dental_benefit_shared_custody", period
+        )
+        return full_custody_amount + shared_custody_amount
+
+
+# TODO additional benefit (if dental expenses exceed 650 CAD)

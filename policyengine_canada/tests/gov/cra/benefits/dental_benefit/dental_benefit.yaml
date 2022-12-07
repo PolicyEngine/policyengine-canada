@@ -1,0 +1,8 @@
+- name: Sum of both amounts
+  period: 2022
+  input:
+    dental_benefit_full_custody: 650
+    dental_benefit_shared_custody: 325
+  output:
+    dental_benefit: 975
+
