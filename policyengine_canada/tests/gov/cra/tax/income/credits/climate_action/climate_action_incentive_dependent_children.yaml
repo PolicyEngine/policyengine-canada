@@ -1,0 +1,6 @@
+- name: Individual filing in Ontario
+  period: 2023
+  input:
+    is_child_for_climate_action_incentive: 1
+  output:
+    climate_action_incentive_dependent_children: 1
