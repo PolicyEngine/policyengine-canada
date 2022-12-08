@@ -1,8 +1,58 @@
-- name: Sum of both amounts
-  period: 2022
+- name: One eligible full custody child with afni under 80_000; should be 650
+  period: 2023
   input:
-    dental_benefit_full_custody: 650
-    dental_benefit_shared_custody: 325
+    people:
+      person:
+        dental_benefit_eligible: 1
+        full_custody: true
+    households:
+      household:
+        members: person
+        adjusted_family_net_income: 60_000
   output:
-    dental_benefit: 975
+    dental_benefit: 650
 
+- name: Two eligible children, one full custody, one shared custody with afni under 80_000; should be [390, 195]
+  period: 2023
+  input:
+    people:
+      person1:
+        dental_benefit_eligible: 1
+        full_custody: true
+      person2:
+        dental_benefit_eligible: 1
+        full_custody: false
+    households:
+      household:
+        members: [person1, person2]
+        adjusted_family_net_income: 75_000
+  output:
+    dental_benefit: [390, 195]
+
+- name: One eligible full custody child with afni over 89_999; should be 0
+  period: 2023
+  input:
+    people:
+      person:
+        dental_benefit_eligible: 1
+        full_custody: true
+    households:
+      household:
+        members: person
+        adjusted_family_net_income: 90_000
+  output:
+    dental_benefit: 0
+
+- name: No eligible children; should be 0
+  period: 2023
+  input:
+    people:
+      person:
+        dental_benefit_eligible: 0
+        full_custody: true
+    households:
+      household:
+        members: person
+        adjusted_family_net_income: 50_000
+  output:
+    dental_benefit: 0

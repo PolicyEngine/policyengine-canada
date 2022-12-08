@@ -1,0 +1,45 @@
+- name: Child under 12 without insurance and with dental expenses; eligible
+  period: 2022
+  input:
+    people:
+      child:
+        dental_expenses: 100
+        has_private_dental_insurance: false
+        age: 10
+    households:
+      household:
+        members: child
+  output:
+    dental_benefit_eligible: 1
+
+- name: Two Child under 12 one with insurance and one without dental expenses; both uneligible
+  period: 2022
+  input:
+    people:
+      child1:
+        dental_expenses: 100
+        has_private_dental_insurance: true
+        age: 8
+      child2:
+        dental_expenses: 0
+        has_private_dental_insurance: false
+        age: 10
+    households:
+      household:
+        members: [child1, child2]
+  output:
+    dental_benefit_eligible: 0
+
+- name: Child over 12; uneligible
+  period: 2022
+  input:
+    people:
+      child:
+        dental_expenses: 100
+        has_private_dental_insurance: false
+        age: 12
+    households:
+      household:
+        members: child
+  output:
+    dental_benefit_eligible: 0
