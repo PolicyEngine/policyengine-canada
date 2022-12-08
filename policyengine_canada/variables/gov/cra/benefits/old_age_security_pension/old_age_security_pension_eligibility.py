@@ -10,16 +10,11 @@ class old_age_security_pension_eligibility(Variable):
     definition_period = YEAR
 
     def formula(person, period, parameters):
-        age = person("age", period)
-        adult_years_in_canada = person("adult_years_in_canada", period)
-        oas_pension = parameters(
+        p = parameters(
             period
-        ).gov.cra.benefits.old_age_security_pension
-        eligible_age_threshold = oas_pension.age_eligibility
-        eligible_residence_threshold = (
-            oas_pension.residence_eligibility
-        )  # Specifically years resident since the age of 18
-        eligible = (age >= eligible_age_threshold) & (
-            adult_years_in_canada >= eligible_residence_threshold
+        ).gov.cra.benefits.old_age_security_pension.eligibility
+        age_eligible = person("age", period) >= p.age.base
+        residency_eligible = (
+            person("adult_years_in_canada", period) >= p.residence.any
         )
-        return eligible
+        return age_eligible & residency_eligible
