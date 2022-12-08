@@ -31,4 +31,5 @@ Person = build_entity(
     is_person=True,
 )
 
+
 entities = [Household, Person]
