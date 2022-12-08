@@ -1,0 +1,24 @@
+- name: 19-year-old dependent is not a child dependent.
+  period: 2023
+  input:
+    age: 19
+    is_dependent: true
+  output:
+    is_child_for_climate_action_incentive: false
+
+- name: 18-year-old child dependent is.
+  period: 2023
+  input:
+    age: 18
+    is_dependent: true
+  output:
+    is_child_for_climate_action_incentive: true
+
+- name: 18-year-old non-dependent is not.
+  period: 2023
+  input:
+    age: 18
+    is_dependent: false
+  output:
+    is_child_for_climate_action_incentive: false
+
