@@ -1,0 +1,21 @@
+description: Climate Action Incentive adult age.
+values:
+  2019-01-01:
+    value: 18
+    metadata:
+      reference:
+        - title: Income Tax Act
+          href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/20190101/P1TT3xt3.html
+  2022-07-01:
+    value: 19
+    metadata:
+      reference:
+        - title: Income Tax Act
+          href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/20220701/P1TT3xt3.html
+metadata:
+  unit: year
+  name: climate_action_incentive_adult_age
+  label: The maximum age until which a person qualifies as a child for the climate action incentive
+  reference:
+    - title: Government of Canada - Climate action incentive payment
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html
