@@ -3,8 +3,7 @@ values:
   2021-01-01: 7_713
 metadata:
   type: single_amount
-  threshold_unit: currency-CAD
-  amount_unit: currency-CAD
+  unit: currency-CAD
   period: year
   name: Canada_age_amount_credit_cap
   label: Canada age amount credit credit cap
