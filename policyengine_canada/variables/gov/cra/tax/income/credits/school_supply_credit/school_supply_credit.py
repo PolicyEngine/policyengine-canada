@@ -11,6 +11,4 @@ class school_supply_credit(Variable):
     def formula(person, period, parameters):
         expenses = person("teaching_supplies_expenses", period)
         p = parameters(period).gov.cra.tax.income.credits.school_supply_credit
-        rate = p.amount
-        cap = p.cap
-        return min_(expenses * rate, cap)
+        return min_(expenses * p.amount, p.cap)
