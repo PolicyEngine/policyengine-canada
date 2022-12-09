@@ -1,0 +1,11 @@
+description: Canada allows for a children supplement.
+values:
+  2021-01-01: 5_053
+metadata:
+  unit: currency-USD
+  period: year
+  name: canada_disability_credit_child_supplement
+  label: Canada disability credit child supplement
+  reference:
+    - title: Government of Canada - Canada Disability tax credit
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/claiming-dtc.html
