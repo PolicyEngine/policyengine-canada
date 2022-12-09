@@ -2,16 +2,16 @@ description: Canada child disability benefit reduction for one disabled child
 brackets:
   - threshold:
       values:
-        2022-07-01: 0
+        2021-01-01: 0
     rate:
       values:
-        2022-07-01: 0
+        2021-01-01: 0
   - threshold:
       values:
-        2022-07-01: 71_060
+        2021-01-01: 71_060
     rate:
       values:
-        2022-07-01: 0.032
+        2021-01-01: 0.032
 
 
 metadata:
