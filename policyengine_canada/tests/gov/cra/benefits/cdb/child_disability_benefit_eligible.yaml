@@ -1,0 +1,12 @@
+- name: Income tax schedule calculates
+  period: 2022
+  input:
+    people:
+      person:
+        age: 11
+        is_disabled: true
+    households:
+      household:
+        members: person
+  output:
+    child_disability_benefit_eligible: 1

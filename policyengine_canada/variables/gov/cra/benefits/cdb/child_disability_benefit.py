@@ -13,4 +13,4 @@ class child_disability_benefit(Variable):
         reduction = household("child_disability_benefit_reduction", period)
         base = parameters(period).gov.cra.benefits.cdb.base
         children = household("child_disability_benefit_children", period)
-        return (base * children) - reduction
+        return max_(base * children - reduction, 0)

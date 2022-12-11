@@ -1,8 +1,8 @@
 from policyengine_canada.model_api import *
 
 
-class child_disability_benefit_eligible_children(Variable):
-    value_type = float
+class child_disability_benefit_eligible(Variable):
+    value_type = bool
     entity = Person
     label = "Children eligible for Canada Child Disability Benefit"
     unit = "Person"
@@ -10,5 +10,5 @@ class child_disability_benefit_eligible_children(Variable):
 
     def formula(person, period, parameters):
         age = person("age", period)
-        disabled = person("is_dsiabled")
+        disabled = person("is_disabled", period)
         return disabled & (age < 18)
