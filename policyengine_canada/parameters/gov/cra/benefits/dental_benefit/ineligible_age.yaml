@@ -3,8 +3,8 @@ values:
   2021-01-01: 12
 metadata:
   unit: year
-  name: Canada_dental_benefit_child_age_eligibility
-  label: Canada dental benefit child age eligibility
+  name: dental_benefit_ineligible_age
+  label: Dental benefit ineligible age
   reference:
   - title: Government of Canada - Canada Dental Benefit
     href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/dental-benefit/how-much.html
