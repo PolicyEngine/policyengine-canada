@@ -1,10 +1,10 @@
-description: CRA provides a dental benefit to children below this age.
+description: CRA reduces the dental benefit for children in shared custody.
 values:
-  2021-01-01: 12
+  2021-01-01: 0.5
 metadata:
-  unit: year
-  name: Canada_dental_benefit_child_age_eligibility
-  label: Canada dental benefit child age eligibility
+  unit: /1
+  name: Canada_dental_benefit_shared_custody_reduction
+  label: Canada dental benefit shared custody reduction
   reference:
   - title: Government of Canada - Canada Dental Benefit
     href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/dental-benefit/how-much.html

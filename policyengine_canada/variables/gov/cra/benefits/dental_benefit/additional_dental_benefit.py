@@ -7,4 +7,4 @@ class additional_dental_benefit(Variable):
     label = "Additional dental benefit"
     unit = CAD
     definition_period = YEAR
-    documentation = "If dental costs exceeed $650, a household may apply for an additional payment."
+    documentation = "If dental costs exceed a threshold, a household may apply for an additional payment."

@@ -15,5 +15,8 @@ class dental_benefit(Variable):
         full_custody_amount = p.amount.calc(income)
         # Divide by two if shared custody.
         full_custody = person("full_custody", period)
-        amount = full_custody_amount / where(full_custody, 1, 2)
+        shared_custody_reduction = p.shared_custody_reduction
+        amount = full_custody_amount * where(
+            full_custody, 1, shared_custody_reduction
+        )
         return eligible * amount
