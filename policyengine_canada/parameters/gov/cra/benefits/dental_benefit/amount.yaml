@@ -1,4 +1,4 @@
-description: Canada dental benefit full custody amount
+description: CRA provides a Canada dental benefit of this amount to children in full custody, depending on AFNI.
 brackets:
   - threshold:
       2022-12-31: 0
