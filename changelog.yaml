@@ -48,3 +48,8 @@
     added:
     - Canada disability child benefit.
   date: 2022-12-12 18:52:25
+- bump: minor
+  changes:
+    added:
+    - Canada dental benefit.
+  date: 2022-12-12 19:19:23
