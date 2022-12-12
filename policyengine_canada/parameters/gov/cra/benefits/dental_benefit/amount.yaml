@@ -1,0 +1,30 @@
+description: CRA provides a Canada dental benefit of this amount to children in full custody, depending on AFNI.
+brackets:
+  - threshold:
+      2022-12-31: 0
+    amount:
+      2022-12-31: 650
+  - threshold:
+      2022-12-31: 70_000
+    amount:
+      2022-12-31: 390
+  - threshold:
+      2022-12-31: 80_000
+    amount:
+      2022-12-31: 260
+  - threshold:
+      2022-12-31: 90_000
+    amount:
+      2022-12-31: 0
+
+metadata:
+  type: single_amount
+  rate_unit: currency-CAD
+  threshold_unit: currency-CAD
+  name: dental_benefit_full_custody_amount
+  label: Dental benefit full custody amount
+  reference:
+  - title: Government of Canada - Canada Dental Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/dental-benefit/how-much.html
+  - title: Dental Benefit Act
+    href: https://laws-lois.justice.gc.ca/eng/acts/D-1.55/page-1.html
