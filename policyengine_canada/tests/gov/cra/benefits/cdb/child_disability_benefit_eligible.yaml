@@ -1,12 +1,31 @@
-- name: Income tax schedule calculates
+- name: Eligible for ccb and dtc; should be true
   period: 2022
   input:
-    people:
-      person:
-        age: 11
-        is_disabled: true
-    households:
-      household:
-        members: person
+    dtc_eligible: true
+    child_benefit_eligible: true
   output:
-    child_disability_benefit_eligible: 1
+    child_disability_benefit_eligible: true
+
+- name: Not eligible for ccb; should be false
+  period: 2022
+  input:
+    dtc_eligible: true
+    child_benefit_eligible: false
+  output:
+    child_disability_benefit_eligible: false
+
+- name: Not eligible for dtc; should be false
+  period: 2022
+  input:
+    dtc_eligible: false
+    child_benefit_eligible: true
+  output:
+    child_disability_benefit_eligible: false
+
+- name: Not eligible for ccb or dtc; should be false
+  period: 2022
+  input:
+    dtc_eligible: false
+    child_benefit_eligible: false
+  output:
+    child_disability_benefit_eligible: false

@@ -1,0 +1,40 @@
+- name: No children; should be 0
+  period: 2022
+  input:
+    adjusted_family_net_income: 71_070
+    child_disability_benefit_children: 0
+  output:
+    child_disability_benefit_reduction: 0
+
+- name: AFNI under 71_060; should be 0
+  period: 2022
+  input:
+    adjusted_family_net_income: 71_000
+    child_disability_benefit_children: 1
+  output:
+    child_disability_benefit_reduction: 0
+
+- name: AFNI over 71_060, one child; should be (80_000 - 71_060) * 0.032 = 286.08
+  period: 2022
+  input:
+    adjusted_family_net_income: 80_000
+    child_disability_benefit_children: 1
+  output:
+    child_disability_benefit_reduction: 286.08
+
+
+- name: AFNI over 71_060, two children; should be (80_000 - 71_060) * 0.057 = 509.58
+  period: 2022
+  input:
+    adjusted_family_net_income: 80_000
+    child_disability_benefit_children: 2
+  output:
+    child_disability_benefit_reduction: 509.58
+
+- name: AFNI over 71_060, three children; should be (80_000 - 71_060) * 0.057 = 509.58
+  period: 2022
+  input:
+    adjusted_family_net_income: 80_000
+    child_disability_benefit_children: 3
+  output:
+    child_disability_benefit_reduction: 509.58

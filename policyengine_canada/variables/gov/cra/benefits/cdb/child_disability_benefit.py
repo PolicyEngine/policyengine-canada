@@ -4,9 +4,9 @@ from policyengine_canada.model_api import *
 class child_disability_benefit(Variable):
     value_type = float
     entity = Household
-    label = "Canada Child Disability Benefit "
+    label = "Child Disability Benefit"
     unit = CAD
-    documentation = "Non taxable amount paid monthly per children under 18 years of age with a severe and prolonged impairment in physical or mental functions.. "
+    documentation = "Non taxable amount paid monthly per children with a severe and prolonged impairment in physical or mental functions."
     definition_period = YEAR
 
     def formula(household, period, parameters):
