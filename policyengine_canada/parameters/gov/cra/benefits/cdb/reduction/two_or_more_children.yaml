@@ -1,0 +1,25 @@
+description: Canada child disability benefit reduction for two or more disabled children.
+brackets:
+  - threshold:
+      values:
+        2021-01-01: 0
+    rate:
+      values:
+        2021-01-01: 0
+  - threshold:
+      values:
+        2021-01-01: 71_060
+    rate:
+      values:
+        2021-01-01: 0.057
+
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  name: child_disability_benefit_one_child_reduction
+  label: Child Disability Benefit one child reduction
+  reference:
+    - title: Government of Canada - Child disability benefit (CDB)
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/child-disability-benefit.html

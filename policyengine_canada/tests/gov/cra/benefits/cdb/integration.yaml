@@ -1,0 +1,65 @@
+- name: No eligible children
+  period: 2023
+  input:
+    people:
+      person:
+        age: 12
+    households:
+      household:
+        members: [person]
+        adjusted_family_net_income: 62_000
+        child_disability_benefit_children: 0
+  output:
+    child_disability_benefit: 0
+
+- name: One eligible child with AFNi under 71_060
+  period: 2023
+  input:
+    people:
+      person:
+        age: 11
+        is_disabled: true
+    households:
+      household:
+        members: [person]
+        adjusted_family_net_income: 60_000
+        child_disability_benefit_children: 1
+  output:
+    child_disability_benefit: 2_985
+
+- name: Two eligible children with AFNi over 71_060; (2985 * 2) - ((80_000 - 71_060) * 0.052) = 5_460_42
+  period: 2023
+  input:
+    people:
+      person1:
+        age: 10
+        is_disabled: true
+      person2:
+        age: 8
+        is_disabled: true
+    households:
+      household:
+        members: [person1, person2]
+        adjusted_family_net_income: 80_000
+        child_disability_benefit_children: 2
+  output:
+    child_disability_benefit: 5_460.42
+
+
+- name: One eligible childr with AFNi over 71_060; (2985) - ((80_000 - 71_060) * 0.032) = 2_520.12
+  period: 2023
+  input:
+    people:
+      person1:
+        age: 10
+        is_disabled: true
+      person2:
+        age: 8
+        is_disabled: false
+    households:
+      household:
+        members: [person1, person2]
+        adjusted_family_net_income: 80_000
+        child_disability_benefit_children: 1
+  output:
+    child_disability_benefit: 2_698.92

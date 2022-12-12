@@ -1,0 +1,11 @@
+description: Maximum amount that can be received per eligible child under the canada child disability benefit.
+values:
+  2021-01-01: 2_985
+metadata:
+  unit: currency-CAD
+  period: year
+  name: child_disability_benefit_amount
+  label: Child disability benefit amount
+  reference:
+    - title: Government of Canada - Child disability benefit (CDB)
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/child-disability-benefit.html
