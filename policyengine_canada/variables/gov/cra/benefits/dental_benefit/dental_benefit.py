@@ -13,10 +13,8 @@ class dental_benefit(Variable):
         p = parameters(period).gov.cra.benefits.dental_benefit
         eligible = person("dental_benefit_eligible", period)
         full_custody_amount = p.amount.calc(income)
-        # Divide by two if shared custody.
-        full_custody = person("full_custody", period)
-        shared_custody_share = p.shared_custody_share
+        # Multiply by a factor for shared custody.
         amount = full_custody_amount * where(
-            full_custody, 1, shared_custody_share
+            person("full_custody", period), 1, p.shared_custody_share
         )
         return eligible * amount
