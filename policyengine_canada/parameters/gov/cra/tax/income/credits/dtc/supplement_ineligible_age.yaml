@@ -1,0 +1,12 @@
+description: Age at with a person is eligible for the disability tax credit supplement.
+values:
+  2021-12-31: 18
+metadata:
+  unit: year
+  name: disability_credit_child_supplement_ineligible_age
+  label: disability credit child supplement ineligible age
+  reference:
+    - title: Government of Canada - Disability tax credit
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/claiming-dtc.html
+    - title: Income Tax Act
+      href: https://laws.justice.gc.ca/eng/acts/I-3.3/page-89.html#1155124-1171692
