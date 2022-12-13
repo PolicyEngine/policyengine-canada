@@ -31,3 +31,11 @@
   output:
     old_age_security_pension_eligibility: FALSE
     old_age_security_pension_pre_clawback: 0
+
+- name: only 64 years old so not eligible
+  period: 2022
+  input:
+    age: 64
+    adult_years_in_canada: 46
+  output:
+    old_age_security_pension_eligibility: FALSE
