@@ -5,27 +5,6 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-<<<<<<< HEAD
-## [0.10.0] - 2022-12-13 06:15:23
-
-### Added
-
-- Canada age amount credit.
-
-## [0.9.0] - 2022-12-12 19:19:23
-
-### Added
-
-- Canada dental benefit.
-
-## [0.8.0] - 2022-12-12 18:52:25
-
-### Added
-
-- Canada disability child benefit.
-
-=======
->>>>>>> 96770c69ef9e464a0a3b597214702c19f3587364
 ## [0.7.0] - 2022-12-08 06:58:07
 
 ### Added
@@ -82,12 +61,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-<<<<<<< HEAD
-[0.10.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.9.0...0.10.0
-[0.9.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.8.0...0.9.0
-[0.8.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.7.0...0.8.0
-=======
->>>>>>> 96770c69ef9e464a0a3b597214702c19f3587364
 [0.7.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.6.0...0.7.0
 [0.6.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.5.0...0.6.0
 [0.5.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.4.0...0.5.0
