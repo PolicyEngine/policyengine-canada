@@ -1,0 +1,13 @@
+description: Inclusive age at with a person is eligible for the age amount credit.
+values:
+  2021-12-31: 65
+metadata:
+  unit: year
+  name: age_amount_credit_age_eligibility
+  label: Age amount credit age eligibility
+  reference:
+  - title: Government of Canada - Canada Age Amount Credit
+    href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30100-amount.html
+  - title: Federal Worksheet
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-21e.pdf
+
