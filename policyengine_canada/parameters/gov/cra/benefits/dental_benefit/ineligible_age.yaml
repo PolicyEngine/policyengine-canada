@@ -1,0 +1,12 @@
+description: CRA provides a dental benefit to children below this age.
+values:
+  2021-01-01: 12
+metadata:
+  unit: year
+  name: dental_benefit_ineligible_age
+  label: Dental benefit ineligible age
+  reference:
+  - title: Government of Canada - Canada Dental Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/dental-benefit/how-much.html
+  - title: Dental Benefit Act
+    href: https://laws-lois.justice.gc.ca/eng/acts/D-1.55/page-1.html
