@@ -1,0 +1,31 @@
+- name: Eligible person with income below the rduction line
+  period: 2022
+  input:
+    total_individual_pre_tax_income: 38_000
+    age: 65
+  output:
+    age_amount_credit: 7_713
+
+- name: Uneligible; should be 0
+  period: 2022
+  input:
+    total_individual_pre_tax_income: 38_000
+    age: 64
+  output:
+    age_amount_credit: 0
+
+- name: Eligible with income over threshhold; should be 0 
+  period: 2022
+  input:
+    total_individual_pre_tax_income: 100_000
+    age: 66
+  output:
+    age_amount_credit: 0
+
+- name: Eligible with income of 60_000; should be 7_713 - ((60_000-38_893)*0.15) =  
+  period: 2022
+  input:
+    total_individual_pre_tax_income: 60_000
+    age: 66
+  output:
+    age_amount_credit: 4_546.95
