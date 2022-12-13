@@ -1,4 +1,4 @@
-description: Canada Age Amount Credit higher credit amount.
+description: Age Amount Credit higher credit amount.
 brackets:
   - threshold:
       values:
@@ -16,8 +16,8 @@ metadata:
   type: marginal_rate
   threshold_unit: currency-CAD
   period: year
-  name: Canada_age_amount_higher_credit_amount
-  label: Canada age amount credit higher amount
+  name: age_amount_higher_credit_amount
+  label: age amount credit higher amount
   reference:
   - title: Government of Canada - Canada Age Amount Credit
     href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30100-amount.html
