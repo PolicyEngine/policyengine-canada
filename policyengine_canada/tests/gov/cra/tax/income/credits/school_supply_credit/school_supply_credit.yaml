@@ -1,0 +1,13 @@
+- name: Expenses below the cap
+  period: 2022
+  input:
+    teaching_supplies_expenses: 2_000
+  output:
+    school_supply_credit: 500
+
+- name: Expenses over the cap
+  period: 2022
+  input:
+    teaching_supplies_expenses: 10_000
+  output:
+    school_supply_credit: 1_000

@@ -1,0 +1,12 @@
+description: CRA reduces the dental benefit for children in shared custody.
+values:
+  2021-01-01: 0.5
+metadata:
+  unit: /1
+  name: dental_benefit_shared_custody_reduction
+  label: Dental benefit shared custody reduction
+  reference:
+  - title: Government of Canada - Canada Dental Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/dental-benefit/how-much.html
+  - title: Dental Benefit Act
+    href: https://laws-lois.justice.gc.ca/eng/acts/D-1.55/page-1.html

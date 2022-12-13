@@ -1,0 +1,22 @@
+- name: No eligible children.
+  period: 2021
+  input:
+    child_disability_benefit_children: 0
+  output:
+    child_disability_benefit: 0
+
+- name: Household with two eligible children and $1,000 reduction.
+  period: 2021
+  input:
+    child_disability_benefit_children: 2
+    child_disability_benefit_reduction: 1_000
+  output:
+    child_disability_benefit: 4_970 # $2,985 * 2 - $1,000
+
+- name: Non-negative if reduction exceeds base.
+  period: 2021
+  input:
+    child_disability_benefit_children: 1
+    child_disability_benefit_reduction: 3_000
+  output:
+    child_disability_benefit: 0 # $3,000 > $2,985.

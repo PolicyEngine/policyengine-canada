@@ -38,3 +38,18 @@
     added:
     - Canada climate action incentive.
   date: 2022-12-06 07:38:07
+- bump: minor
+  changes:
+    added:
+    - Canada school supply credit.
+  date: 2022-12-08 06:58:07
+- bump: minor
+  changes:
+    added:
+    - Canada disability child benefit.
+  date: 2022-12-12 18:52:25
+- bump: minor
+  changes:
+    added:
+    - Canada dental benefit.
+  date: 2022-12-12 19:19:23

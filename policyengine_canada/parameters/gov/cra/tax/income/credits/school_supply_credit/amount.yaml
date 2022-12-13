@@ -1,0 +1,14 @@
+description: Canada allows a credit on teaching supply expenses for eligible educators.
+values:
+  2016-01-01: 0.15
+  2021-01-01: 0.25
+metadata:
+  unit: /1
+  period: year
+  name: school_supply_credit_amount
+  label: The credit amount of the teaching supply expenses
+  reference:
+    - title: Government of Canada - Eligible educator school supply tax credit
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/lines-46800-46900-eligible-educator-school-supply-tax-credit.html 
+    - title: Bill C/8
+      href: https://www.parl.ca/DocumentViewer/en/44-1/bill/C-8/first-reading

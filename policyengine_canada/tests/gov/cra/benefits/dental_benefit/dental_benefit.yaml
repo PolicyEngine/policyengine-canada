@@ -1,0 +1,44 @@
+- name: One eligible full custody child with afni under 80_000, should be 650
+  period: 2023
+  input:
+    dental_benefit_eligible: true
+    full_custody: true
+    adjusted_family_net_income: 60_000
+  output:
+    dental_benefit: 650
+
+- name: Eligible person with $75,000 AFNI.
+  period: 2023
+  input:
+    dental_benefit_eligible: true
+    full_custody: true
+    adjusted_family_net_income: 75_000
+  output:
+    dental_benefit: 390
+
+- name: Eligible person in shared custody with $75,000 AFNI.
+  period: 2023
+  input:
+    dental_benefit_eligible: true
+    full_custody: false
+    adjusted_family_net_income: 75_000
+  output:
+    dental_benefit: 195
+
+- name: One eligible full custody child with afni over 89_999; should be 0
+  period: 2023
+  input:
+    dental_benefit_eligible: true
+    full_custody: true
+    adjusted_family_net_income: 90_000
+  output:
+    dental_benefit: 0
+
+- name: No eligible children; should be 0
+  period: 2023
+  input:
+    dental_benefit_eligible: false
+    full_custody: true
+    adjusted_family_net_income: 50_000
+  output:
+    dental_benefit: 0
