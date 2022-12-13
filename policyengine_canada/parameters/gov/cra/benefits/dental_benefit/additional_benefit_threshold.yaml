@@ -1,0 +1,13 @@
+description: CRA provides an additional dental benefit to people who incur above this amount of dental expenses.
+values:
+  2022-12-31: 650
+metadata:
+  unit: currency-CAD
+  period: year
+  name: dental_benefit_additional_benefit_threshold
+  label: Dental benefit additional benefit threshold
+  reference:
+  - title: Government of Canada - Canada Dental Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/dental-benefit/how-much.html
+  - title: Dental Benefit Act
+    href: https://laws-lois.justice.gc.ca/eng/acts/D-1.55/page-1.html

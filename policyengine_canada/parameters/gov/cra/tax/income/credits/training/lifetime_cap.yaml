@@ -2,7 +2,7 @@ description: Canada caps the total amount that can be received through the train
 values:
   2020-01-01: 5_000
 metadata:
-  unit: currency-USD
+  unit: currency-CAD
   period: year
   name: total_training_credit_cap
   label: Total lifetime cap on the training credit
