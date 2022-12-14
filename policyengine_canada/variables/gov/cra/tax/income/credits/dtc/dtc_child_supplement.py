@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class dtc_supplement(Variable):
+class dtc_child_supplement(Variable):
     value_type = float
     entity = Person
     label = "Disability child supplement"
