@@ -3,7 +3,7 @@
   input:
     income_tax: 10_000
     dtc_eligible: true
-    dtc_supplement: 0
+    dtc_child_supplement: 0
   output:
     disability_tax_credit: 8_662
 
@@ -12,7 +12,7 @@
   input:
     income_tax: 10_000
     dtc_eligible: true
-    dtc_supplement: 5_053
+    dtc_child_supplement: 5_053
   output:
     disability_tax_credit: 10_000
 
@@ -21,7 +21,7 @@
   input:
     income_tax: 10_000
     dtc_eligible: false
-    dtc_supplement: 5_053
+    dtc_child_supplement: 5_053
   output:
     disability_tax_credit: 0
 
@@ -30,6 +30,6 @@
   input:
     income_tax: 20_000
     dtc_eligible: true
-    dtc_supplement: 5_053
+    dtc_child_supplement: 5_053
   output:
     disability_tax_credit: 13_715

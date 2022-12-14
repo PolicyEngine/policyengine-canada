@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class dtc_supplement(Variable):
     value_type = float
     entity = Person
-    label = "Disability tax credit"
+    label = "Disability child supplement"
     unit = CAD
     definition_period = YEAR
 

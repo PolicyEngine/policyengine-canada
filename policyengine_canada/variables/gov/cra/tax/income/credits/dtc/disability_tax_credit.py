@@ -12,6 +12,6 @@ class disability_tax_credit(Variable):
         p = parameters(period).gov.cra.tax.income.credits.dtc
         eligible = person("dtc_eligible", period)
         base_amount = p.base * eligible
-        supplement = person("dtc_supplement", period) * eligible
+        supplement = person("dtc_child_supplement", period) * eligible
         income_tax = person("income_tax", period)
         return min_((base_amount + supplement), income_tax)
