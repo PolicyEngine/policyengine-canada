@@ -1,0 +1,10 @@
+description: Number of adult years of Canadian residence required to be eligible for the OAS pension.
+values:
+  2020-01-01: 10
+metadata:
+  unit: year
+  name: old_age_security_pension_residence_requirement
+  label: Old Age Security Pension Residence Requirement
+  reference:
+  - title: Government of Canada - Old Age Security Pension
+    href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html

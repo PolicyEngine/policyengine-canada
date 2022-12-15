@@ -1,0 +1,10 @@
+description: Age at which you become eligible for the older seniors increase factor. 
+values:
+  2022-01-01: 75
+metadata:
+  unit: year
+  name: old_age_security_pension_age_eligibility_older_seniors_increase
+  label: Old Age Security Pension Age Eligibility Older Seniors Increase
+  reference:
+  - title: Government of Canada - Old Age Security Pension
+    href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html

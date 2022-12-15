@@ -1,0 +1,41 @@
+- name: 66 year-old with 47 years of residence (all of their adult years)
+  period: 2022
+  input:
+    age: 66
+    adult_years_in_canada: 47
+  output:
+    old_age_security_pension_eligibility: TRUE
+    old_age_security_pension_pre_clawback: 685.50
+
+- name: HERE NOW same but with only 20 years of residence (all of their adult years)
+  period: 2022
+  input:
+    age: 66
+    adult_years_in_canada: 20
+  output:
+    old_age_security_pension_pre_clawback: 342.75
+
+- name: 80 year-old with 62 years of residence (all of their adult years)
+  period: 2022
+  input:
+    age: 80
+    adult_years_in_canada: 62
+  output:
+    old_age_security_pension_pre_clawback: 754.05
+
+- name: 65 year old but with only 5 years of residency, so not eligible
+  period: 2022
+  input:
+    age: 65
+    adult_years_in_canada: 5
+  output:
+    old_age_security_pension_eligibility: FALSE
+    old_age_security_pension_pre_clawback: 0
+
+- name: only 64 years old so not eligible
+  period: 2022
+  input:
+    age: 64
+    adult_years_in_canada: 46
+  output:
+    old_age_security_pension_eligibility: FALSE
