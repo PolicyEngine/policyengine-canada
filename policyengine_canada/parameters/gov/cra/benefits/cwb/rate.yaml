@@ -1,0 +1,13 @@
+description: The rate applied under the canada workers benefit.
+values:
+  2021-01-01: 0.27
+metadata:
+  unit: /1
+  period: year
+  name: canada_workers_benefit_rate
+  label: Canada workers benefit rate
+  reference:
+  - title: Government of Canada - Canada workers benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-workers-benefit.html
+  - title: Government of Canada - Canada workers benefit
+    href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2021-recovery-plan-for-jobs-growth-resilience/canada-workers-benefit-qa.html
