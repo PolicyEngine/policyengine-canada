@@ -4,8 +4,8 @@ values:
 metadata:
   unit: currency-CAD
   period: year
-  name: canada_workers_benefit_min_income_amount
-  label: Canada workers benefit minimum income amount
+  name: canada_workers_benefit_income_eligibility
+  label: Canada workers benefit income eligibility
   reference:
   - title: Government of Canada - Canada workers benefit
     href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-workers-benefit.html

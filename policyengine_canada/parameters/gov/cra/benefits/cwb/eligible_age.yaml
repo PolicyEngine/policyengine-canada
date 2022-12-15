@@ -1,0 +1,10 @@
+description: Age eligibility for the canada workers benefit
+values:
+  2021-01-01: 19
+metadata:
+  unit: year
+  name: canada_workers_benefit_
+  label: Canada workers benefit eligibile age
+  reference:
+  - title: Government of Canada - Canada workers benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/witb-eligibility.html
