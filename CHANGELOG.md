@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.11.0] - 2022-12-15 16:34:10
+
+### Added
+
+- Disability tax credit (dtc).
+
 ## [0.10.0] - 2022-12-13 06:15:23
 
 ### Added
@@ -79,6 +85,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.11.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.10.0...0.11.0
 [0.10.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.9.0...0.10.0
 [0.9.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.8.0...0.9.0
 [0.8.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.7.0...0.8.0
