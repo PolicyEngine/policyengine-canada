@@ -1,0 +1,10 @@
+description: Years of residence at which a person becomes eligible for their full OAS base amount
+values:
+  2020-01-01: 40
+metadata:
+  unit: year
+  name: old_age_security_pension_residence_for_full_base_amount
+  label: Old Age Security Pension Residence For Full Base Amount
+  reference:
+  - title: Government of Canada - Old Age Security Pension
+    href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html
