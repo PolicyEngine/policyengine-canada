@@ -1,0 +1,10 @@
+description: Percentage increase in the benefit amount once you're past the 'older' senior age threshold.
+values:
+  2022-01-01: 0.10
+metadata:
+  unit: /1
+  name: old_age_security_pension_older_seniors_increase_factor
+  label: Old Age Security Pension Older Seniors Increase Factor
+  reference:
+  - title: Government of Canada - Old Age Security Pension
+    href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html
