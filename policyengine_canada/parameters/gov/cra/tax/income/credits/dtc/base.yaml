@@ -1,0 +1,13 @@
+description: Canada provides this base amount in the Disability Tax Credit.
+values:
+  2021-01-01: 8_662
+metadata:
+  unit: currency-CAD
+  period: year
+  name: disability_credit_base
+  label: disability credit base
+  reference:
+    - title: Government of Canada - Disability tax credit
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/claiming-dtc.html
+    - title: Income Tax Act
+      href: https://laws.justice.gc.ca/eng/acts/I-3.3/page-89.html#1155124-1171692

@@ -1,0 +1,23 @@
+- name: Over the ineligible age and disabled; should be 0
+  period: 2022
+  input:
+    dtc_eligible: true
+    age: 18
+  output:
+    dtc_child_supplement: 0
+
+- name: Under the ineligible age and disabled; should be 5_053
+  period: 2022
+  input:
+    dtc_eligible: true
+    age: 17
+  output:
+    dtc_child_supplement: 5_053
+
+- name: Not disabled; should be 0
+  period: 2022
+  input:
+    dtc_eligible: false
+    age: 17
+  output:
+    dtc_child_supplement: 0
