@@ -1,0 +1,8 @@
+from policyengine_canada.model_api import *
+
+
+class canada_workers_benefit_disability_category(Variable):
+    value_type = bool
+    entity = Household
+    label = "Canada workers benefit disability category"
+    definition_period = YEAR
