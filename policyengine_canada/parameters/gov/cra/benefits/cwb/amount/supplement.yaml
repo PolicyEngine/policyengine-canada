@@ -4,8 +4,8 @@ values:
 metadata:
   unit: currency-CAD
   period: year
-  name: canada_workers_benefit_max_supplement_amount
-  label: Canada workers benefit maximum supplement amount
+  name: canada_workers_benefit_supplement_amount
+  label: Canada workers benefit  supplement amount
   reference:
   - title: Government of Canada - Canada workers benefit
     href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-workers-benefit.html

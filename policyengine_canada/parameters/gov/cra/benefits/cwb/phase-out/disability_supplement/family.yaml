@@ -17,8 +17,8 @@ metadata:
   type: marginal_rate
   rate_unit: /1
   threshold_unit: currency-CAD
-  name: canada_workers_benefit_family_supplement_reduction
-  label: Canada workers benefit family supplement reduction
+  name: canada_workers_benefit_disability_supplement_family
+  label: Canada workers benefit disability supplement family phase out
   reference:
   - title: Government of Canada - Canada workers benefit
     href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-workers-benefit.html
