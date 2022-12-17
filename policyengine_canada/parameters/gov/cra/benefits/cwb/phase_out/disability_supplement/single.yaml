@@ -1,4 +1,4 @@
-description: Canada workers benefit family disability supplement reduction.
+description: Canada workers benefit single disability supplement reduction.
 brackets:
   - threshold:
       values:
@@ -8,7 +8,7 @@ brackets:
         2021-01-01: 0
   - threshold:
       values:
-        2021-01-01: 42_197
+        2021-01-01: 32_244
     rate:
       values:
         2021-01-01: 0.15
@@ -17,13 +17,13 @@ metadata:
   type: marginal_rate
   rate_unit: /1
   threshold_unit: currency-CAD
-  name: canada_workers_benefit_disability_supplement_family
-  label: Canada workers benefit disability supplement family phase out
+  name: canada_workers_benefit_disability_supplement_single_phase_out
+  label: Canada workers benefit disability supplement for singles
   reference:
   - title: Government of Canada - Canada workers benefit
     href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-workers-benefit.html
   - title: Government of Canada - Canada workers benefit
     href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2021-recovery-plan-for-jobs-growth-resilience/canada-workers-benefit-qa.html
-
-
-# TODO: different rates for one or two spouses disabled - two parameters?
+  - title: Income Tax Act (Part I)(Division E)(Subdivision A.2)(1.3)(3)(a)
+    href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-96.html#h-299725
+  

@@ -9,8 +9,4 @@ class canada_workers_benefit_eligible(Variable):
 
     def formula(person, period, parameters):
         p = parameters(period).gov.cra.benefits.cwb
-        age_eligible = person("age", period) >= p.eligible_age
-        income_eligible = (
-            person("employment_income", period) > p.income_eligibility
-        )
-        return age_eligible & income_eligible
+        return person("age", period) >= p.eligible_age

@@ -6,6 +6,9 @@ class canada_workers_benefit_supplement_eligible(Variable):
     entity = Person
     label = "Eligible for canada workers benefit supplement"
     definition_period = YEAR
+    reference = (
+        "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-89.html#docCont"
+    )
 
     def formula(person, period, parameters):
         eligible_person = person("canada_workers_benefit_eligible", period)
