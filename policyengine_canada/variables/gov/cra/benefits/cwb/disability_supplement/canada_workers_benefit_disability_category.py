@@ -11,6 +11,8 @@ class CanadaWorkersBenefitDisabilityCategory(Enum):
 class canada_workers_benefit_disability_category(Variable):
     value_type = Enum
     entity = Household
+    possible_values = CanadaWorkersBenefitDisabilityCategory
+    default_value = CanadaWorkersBenefitDisabilityCategory.INELIGIBLE
     label = "Canada workers benefit disability category"
     definition_period = YEAR
 
