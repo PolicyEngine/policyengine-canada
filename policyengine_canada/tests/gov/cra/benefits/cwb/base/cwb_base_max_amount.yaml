@@ -1,0 +1,13 @@
+- name: Single; should be 1_395
+  period: 2022
+  input:
+    is_cwb_family: false
+  output:
+    cwb_base_max_amount: 1_395
+
+- name: Family; should be 2_403
+  period: 2022
+  input:
+    is_cwb_family: true
+  output:
+    cwb_base_max_amount: 2_403

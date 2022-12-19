@@ -1,0 +1,8 @@
+- name: Phase in over max amount
+  period: 2022
+  input:
+    family_working_income: 5_000
+    is_cwb_family: true
+    cwb_eligible: false
+  output:
+    cwb_phase_in: 0

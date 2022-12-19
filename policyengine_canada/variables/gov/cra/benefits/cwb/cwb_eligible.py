@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class canada_workers_benefit_eligible(Variable):
+class cwb_eligible(Variable):
     value_type = bool
     entity = Person
     label = "Eligible for canada workers benefit"

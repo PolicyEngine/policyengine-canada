@@ -8,7 +8,7 @@ class CanadaWorkersBenefitDisabilityCategory(Enum):
     FAMILY_WITH_TWO_DISABLED_SPOUSES = "Family with two disabled spouses"
 
 
-class canada_workers_benefit_disability_category(Variable):
+class cwb_disability_category(Variable):
     value_type = Enum
     entity = Household
     possible_values = CanadaWorkersBenefitDisabilityCategory
@@ -20,10 +20,8 @@ class canada_workers_benefit_disability_category(Variable):
         person = household.members
         # Compute individual-level eligibility among heads/spouses.
         head_or_spouse = person("is_head_or_spouse", period)
-        disability_eligible = person(
-            "canada_workers_benefit_supplement_eligible", period
-        )
-        cwb_family = household("is_canada_workers_benefit_family", period)
+        disability_eligible = person("cwb_supplement_eligible", period)
+        cwb_family = household("is_cwb_family", period)
         eligible_spouses = household.sum(head_or_spouse * disability_eligible)
         return select(
             [

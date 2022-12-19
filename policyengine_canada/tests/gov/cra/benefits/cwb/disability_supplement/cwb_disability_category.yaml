@@ -1,0 +1,8 @@
+- name: Phase in over max amount
+  period: 2022
+  input:
+    is_head_or_spouse: true
+    cwb_supplement_eligible: 0
+    is_cwb_family: false
+  output:
+    cwb_disability_category: Ineligible

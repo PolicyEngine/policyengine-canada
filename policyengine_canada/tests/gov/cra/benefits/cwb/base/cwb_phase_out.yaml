@@ -1,0 +1,7 @@
+- name: Phase in over max amount
+  period: 2022
+  input:
+    adjusted_family_net_income: 22_993
+    is_cwb_family: false
+  output:
+    cwb_phase_out: 0

@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class canada_workers_benefit_disability_supplement_eligible(Variable):
+class cwb_disability_supplement_max_amount(Variable):
     value_type = bool
     entity = Person
     label = "Eligible for canada workers benefit supplement"
@@ -11,6 +11,7 @@ class canada_workers_benefit_disability_supplement_eligible(Variable):
     )
 
     def formula(person, period, parameters):
-        eligible_person = person("canada_workers_benefit_eligible", period)
-        disability_eligible = person("dtc_eligible", period)
-        return eligible_person & disability_eligible
+        return (
+            person("cwb_disability_supplement_eligible", period)
+            * parameters(period).benefit.canada_workers_benefit.max_amount
+        )

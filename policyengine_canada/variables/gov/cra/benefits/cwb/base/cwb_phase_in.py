@@ -1,17 +1,18 @@
 from policyengine_canada.model_api import *
 
 
-class canada_workers_benefit_phase_in(Variable):
+class cwb_phase_in(Variable):
     value_type = float
     entity = Household
-    label = "Canada workers benefit phase in"
+    label = "Canada workers benefit base phase in"
     definition_period = YEAR
 
     def formula(household, period, parameters):
-        income = household.person("working_income", period)
+        person = household.members
+        income = household("family_working_income", period)
         p = parameters(period).gov.cra.benefits.cwb
-        family = household.person("is_canada_workers_benefit_family", period)
-        eligible = household.person("canada_workers_benefit_eligible", period)
+        family = household("is_cwb_family", period)
+        eligible = household.person("cwb_eligible", period)
         return select(
             [eligible & family, eligible & ~family],
             [
