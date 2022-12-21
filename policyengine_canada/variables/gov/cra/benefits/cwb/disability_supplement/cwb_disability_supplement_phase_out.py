@@ -8,7 +8,7 @@ class cwb_disability_supplement_phase_out(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
-        income = household("adjusted_net_family_income", period)
+        income = household("adjusted_family_net_income", period)
         p = parameters(
             period
         ).gov.cra.benefits.cwb.phase_out.disability_supplement

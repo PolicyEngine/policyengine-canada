@@ -2,16 +2,16 @@ description: Canada workers benefit single base amount reduction.
 brackets:
   - threshold:
       values:
-        2021-01-01: 0
+        2022-12-31: 0
     rate:
       values:
-        2021-01-01: 0
+        2022-12-31: 0
   - threshold:
       values:
-        2021-01-01: 22_944
+        2022-12-31: 22_944
     rate:
       values:
-        2021-01-01: 0.15
+        2022-12-31: 0.15
 
 
 

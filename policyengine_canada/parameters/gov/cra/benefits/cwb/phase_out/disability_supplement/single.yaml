@@ -2,16 +2,16 @@ description: Canada workers benefit single disability supplement reduction.
 brackets:
   - threshold:
       values:
-        2021-01-01: 0
+        2022-12-31: 0
     rate:
       values:
-        2021-01-01: 0
+        2022-12-31: 0
   - threshold:
       values:
-        2021-01-01: 32_244
+        2022-12-31: 32_244
     rate:
       values:
-        2021-01-01: 0.15
+        2022-12-31: 0.15
 
 metadata:
   type: marginal_rate

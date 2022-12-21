@@ -1,0 +1,13 @@
+- name: Income under the phase in threshold
+  period: 2023
+  input:
+    family_working_income: 1_149
+  output:
+    cwb_disability_supplement_phase_in: 0
+
+- name: Income over the phase in threshold
+  period: 2023
+  input:
+    family_working_income: 2_000
+  output:
+    cwb_disability_supplement_phase_in: 229.5

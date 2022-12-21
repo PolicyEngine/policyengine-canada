@@ -20,7 +20,9 @@ class cwb_disability_category(Variable):
         person = household.members
         # Compute individual-level eligibility among heads/spouses.
         head_or_spouse = person("is_head_or_spouse", period)
-        disability_eligible = person("cwb_supplement_eligible", period)
+        disability_eligible = person(
+            "cwb_disability_supplement_eligible", period
+        )
         cwb_family = household("is_cwb_family", period)
         eligible_spouses = household.sum(head_or_spouse * disability_eligible)
         return select(

@@ -10,14 +10,14 @@ class cwb_phase_in(Variable):
     def formula(household, period, parameters):
         person = household.members
         income = household("family_working_income", period)
-        p = parameters(period).gov.cra.benefits.cwb
+        p = parameters(period).gov.cra.benefits.cwb.phase_in.base
         family = household("is_cwb_family", period)
-        eligible = household.person("cwb_eligible", period)
+        eligible = person("cwb_eligible", period)
         return select(
             [eligible & family, eligible & ~family],
             [
-                p.phase_in.base.family.calc(income),
-                p.phase_in.base.single.calc(income),
+                p.family.calc(income),
+                p.single.calc(income),
             ],
             default=0,
         )

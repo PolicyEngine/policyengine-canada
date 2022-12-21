@@ -1,0 +1,31 @@
+- name: Base and disability supplement amount
+  period: 2023
+  input:
+    cwb_base: 1_000
+    cwb_disability_supplement: 720
+  output:
+    canada_workers_benefit: 1_720
+
+- name: Base and no disability supplement
+  period: 2023
+  input:
+    cwb_base: 1_000
+    cwb_disability_supplement: 0
+  output:
+    canada_workers_benefit: 1_000
+
+- name: No Base and disability supplement
+  period: 2023
+  input:
+    cwb_base: 0
+    cwb_disability_supplement: 720
+  output:
+    canada_workers_benefit: 720
+
+- name: No Base and no disability supplement
+  period: 2023
+  input:
+    cwb_base: 0
+    cwb_disability_supplement: 0
+  output:
+    canada_workers_benefit: 0

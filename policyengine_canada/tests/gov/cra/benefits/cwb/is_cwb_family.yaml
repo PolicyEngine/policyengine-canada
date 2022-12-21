@@ -1,0 +1,23 @@
+- name: Uneligible 
+  period: 2023
+  input:
+    is_married: false
+    cwb_dependant: 0
+  output:
+    is_cwb_family: false
+
+- name: Married 
+  period: 2023
+  input:
+    is_married: true
+    cwb_dependant: 0
+  output:
+    is_cwb_family: true
+
+- name: Has dependant 
+  period: 2023
+  input:
+    is_married: false
+    cwb_dependant: 1
+  output:
+    is_cwb_family: true

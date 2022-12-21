@@ -1,0 +1,35 @@
+- name: Phase in over max amount with phase out
+  period: 2023
+  input:
+    cwb_disability_supplement_max_amount: 720
+    cwb_disability_supplement_phase_in: 1_000
+    cwb_disability_supplement_phase_out: 500
+  output:
+    cwb_disability_supplement: 220
+
+- name: Phase in over max amount without phase out
+  period: 2023
+  input:
+    cwb_disability_supplement_max_amount: 720
+    cwb_disability_supplement_phase_in: 1_000
+    cwb_disability_supplement_phase_out: 0
+  output:
+    cwb_disability_supplement: 720
+
+- name: Phase in over max amount without phase out over max amount
+  period: 2023
+  input:
+    cwb_disability_supplement_max_amount: 720
+    cwb_disability_supplement_phase_in: 1_000
+    cwb_disability_supplement_phase_out: 900
+  output:
+    cwb_disability_supplement: 0
+
+- name: Phase in over max amount without phase out over max amount
+  period: 2023
+  input:
+    cwb_disability_supplement_max_amount: 720
+    cwb_disability_supplement_phase_in: 500
+    cwb_disability_supplement_phase_out: 100
+  output:
+    cwb_disability_supplement: 400

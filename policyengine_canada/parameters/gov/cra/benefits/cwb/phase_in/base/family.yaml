@@ -1,20 +1,26 @@
 description: The phase-in rate for families applied under the canada workers benefit.
 brackets:
   - threshold:
-      2022-12-31: 0
-    amount:
-      2022-12-31: 0
+      values:
+        2022-12-31: 0
+    rate:
+      values:
+        2022-12-31: 0
   - threshold:
-      2022-12-31: 3_000
-    amount:
-      2022-12-31: 0.27
+      values:
+        2022-12-31: 3_000
+    rate:
+      values:
+        2022-12-31: 0.27
   - threshold:
-      2022-12-31: 26_177
-    amount:
-      2022-12-31: 0
+      values:
+        2022-12-31: 26_177
+    rate:
+      values:
+        2022-12-31: 0
 
 metadata:
-  type: single_amount
+  type: marginal_rate
   rate_unit: /1
   threshold_unit: currency-CAD
   name: canada_workers_benefit_phase_in_family

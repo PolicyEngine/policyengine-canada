@@ -1,6 +1,6 @@
 description: The maximum base amount allowed for families under the canada workers benefit.
 values:
-  2021-01-01: 2_403
+  2022-12-31: 2_403
 metadata:
   unit: currency-CAD
   period: year
