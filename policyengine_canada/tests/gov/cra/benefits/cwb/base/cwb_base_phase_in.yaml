@@ -5,7 +5,7 @@
     is_cwb_family: true
     cwb_eligible: false
   output:
-    cwb_phase_in: 0
+    cwb_base_phase_in: 0
 
 - name: Eligible family
   period: 2023
@@ -14,7 +14,7 @@
     is_cwb_family: true
     cwb_eligible: true
   output:
-    cwb_phase_in: 540
+    cwb_base_phase_in: 540
 
 - name: Eligible single
   period: 2023
@@ -23,7 +23,7 @@
     is_cwb_family: false
     cwb_eligible: true
   output:
-    cwb_phase_in: 5_384.61
+    cwb_base_phase_in: 5_384.61
 
 - name: Eligible single under min threshold 
   period: 2023
@@ -32,4 +32,4 @@
     is_cwb_family: false
     cwb_eligible: true
   output:
-    cwb_phase_in: 0
+    cwb_base_phase_in: 0

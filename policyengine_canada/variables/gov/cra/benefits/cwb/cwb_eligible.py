@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class cwb_eligible(Variable):
     value_type = bool
     entity = Person
-    label = "Eligible for canada workers benefit"
+    label = "Eligible for Canada Workers Benefit"
     definition_period = YEAR
 
     def formula(person, period, parameters):

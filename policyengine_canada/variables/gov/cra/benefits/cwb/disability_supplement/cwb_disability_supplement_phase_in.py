@@ -9,6 +9,7 @@ class cwb_disability_supplement_phase_in(Variable):
 
     def formula(household, period, parameters):
         income = household("family_working_income", period)
-        return parameters(
+        p = parameters(
             period
-        ).gov.cra.benefits.cwb.phase_in.disability_supplement.calc(income)
+        ).gov.cra.benefits.cwb.phase_in.disability_supplement
+        return p.calc(income)

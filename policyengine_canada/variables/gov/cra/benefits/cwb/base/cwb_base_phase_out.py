@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class cwb_phase_out(Variable):
+class cwb_base_phase_out(Variable):
     value_type = float
     entity = Household
     label = "Canada workers benefit base phase out"

@@ -12,9 +12,8 @@ class cwb_disability_supplement_max_amount(Variable):
 
     def formula(household, period, parameters):
         person = household.members
-        return (
-            person("cwb_disability_supplement_eligible", period)
-            * parameters(
-                period
-            ).gov.cra.benefits.cwb.amount.disability_supplement
-        )
+        eligible = person("cwb_disability_supplement_eligible", period)
+        amount = parameters(
+            period
+        ).gov.cra.benefits.cwb.amount.disability_supplement
+        return household.sum(eligible * amount)

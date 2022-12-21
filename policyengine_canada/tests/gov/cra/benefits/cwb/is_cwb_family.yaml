@@ -1,23 +1,29 @@
-- name: Uneligible 
+- name: Unmarried, no dependants. 
   period: 2023
   input:
     is_married: false
-    cwb_dependant: 0
+    cwb_dependant: false
   output:
     is_cwb_family: false
 
-- name: Married 
+- name: Married, no dependants.
   period: 2023
   input:
     is_married: true
-    cwb_dependant: 0
+    cwb_dependant: false
   output:
     is_cwb_family: true
 
-- name: Has dependant 
+- name: Has dependants.
   period: 2023
   input:
-    is_married: false
-    cwb_dependant: 1
+    people:
+      head:
+        cwb_dependant: false
+      dependant:
+        cwb_dependant: true
+    households:
+      household:
+        members: [head, dependant]
   output:
     is_cwb_family: true

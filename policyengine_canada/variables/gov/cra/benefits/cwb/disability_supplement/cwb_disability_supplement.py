@@ -8,7 +8,6 @@ class cwb_disability_supplement(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
-        # TODO: Make these disability-supplement-specific.
         max_amount = household("cwb_disability_supplement_max_amount", period)
         phase_in = household("cwb_disability_supplement_phase_in", period)
         phase_out = household("cwb_disability_supplement_phase_out", period)
