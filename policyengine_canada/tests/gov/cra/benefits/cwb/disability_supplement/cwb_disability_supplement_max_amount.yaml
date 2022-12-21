@@ -1,12 +1,12 @@
 - name: Eligible
-  period: 2022
+  period: 2023
   input:
     cwb_disability_supplement_eligible: true
   output:
     cwb_disability_supplement_max_amount: 720
 
 - name: Not eligible
-  period: 2022
+  period: 2023
   input:
     cwb_disability_supplement_eligible: false
   output:

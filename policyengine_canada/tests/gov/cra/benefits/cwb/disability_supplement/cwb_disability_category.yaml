@@ -1,5 +1,5 @@
 - name: No eligible people
-  period: 2022
+  period: 2023
   input:
     is_head_or_spouse: false
     cwb_disability_supplement_eligible: 1
@@ -8,7 +8,7 @@
     cwb_disability_category: INELIGIBLE
 
 - name: Single disabled person
-  period: 2022
+  period: 2023
   input:
     is_head_or_spouse: true
     cwb_disability_supplement_eligible: 1
@@ -17,7 +17,7 @@
     cwb_disability_category: SINGLE
 
 - name: One disabled spouse
-  period: 2022
+  period: 2023
   input:
     is_head_or_spouse: true
     cwb_disability_supplement_eligible: 1
@@ -26,7 +26,7 @@
     cwb_disability_category: FAMILY_WITH_ONE_DISABLED_SPOUSE
 
 - name: Two disabled spouses
-  period: 2022
+  period: 2023
   input:
     people:
       person1:

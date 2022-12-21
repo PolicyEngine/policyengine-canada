@@ -1,5 +1,5 @@
 - name: Not cwb eligible
-  period: 2022
+  period: 2023
   input:
     cwb_eligible: false
     dtc_eligible: true
@@ -7,7 +7,7 @@
     cwb_disability_supplement_eligible: false
 
 - name: Not dtc eligible
-  period: 2022
+  period: 2023
   input:
     cwb_eligible: true
     dtc_eligible: false
@@ -15,15 +15,15 @@
     cwb_disability_supplement_eligible: false
 
 - name: Not eligible
-  period: 2022
+  period: 2023
   input:
     cwb_eligible: false
     dtc_eligible: false
   output:
     cwb_disability_supplement_eligible: false
 
-- name:  eligible
-  period: 2022
+- name: Eligible
+  period: 2023
   input:
     cwb_eligible: true
     dtc_eligible: true
