@@ -1,0 +1,45 @@
+- name: Phase in over max amount
+  period: 2023
+  input:
+    cwb_base_max_amount: 1_395
+    cwb_base_phase_in: 2_000
+    cwb_base_phase_out: 0
+  output:
+    cwb_base: 1_395
+
+- name: No eligible benefit
+  period: 2023
+  input:
+    cwb_base_max_amount: 1_395
+    cwb_base_phase_in: 0
+    cwb_base_phase_out: 0
+  output:
+    cwb_base: 0
+
+- name: Phase in below max amount
+  period: 2023
+  input:
+    cwb_base_max_amount: 2_403
+    cwb_base_phase_in: 1_000
+    cwb_base_phase_out: 0
+  output:
+    cwb_base: 1_000
+
+
+- name: Phase in over max amount, phase out under max amount
+  period: 2023
+  input:
+    cwb_base_max_amount: 2_403
+    cwb_base_phase_in: 4_000
+    cwb_base_phase_out: 400
+  output:
+    cwb_base: 2_003
+
+- name: Phase in over max amount, phase out over max amount
+  period: 2023
+  input:
+    cwb_base_max_amount: 2_403
+    cwb_base_phase_in: 4_000
+    cwb_base_phase_out: 3_000
+  output:
+    cwb_base: 0

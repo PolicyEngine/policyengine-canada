@@ -1,0 +1,15 @@
+description: The maximum base amount allowed for families under the canada workers benefit.
+values:
+  2022-12-31: 2_403
+metadata:
+  unit: currency-CAD
+  period: year
+  name: canada_workers_benefit_max_base_amount_family
+  label: Canada workers benefit maximum base amount for families
+  reference:
+  - title: Government of Canada - Canada workers benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-workers-benefit.html
+  - title: Government of Canada - Canada workers benefit
+    href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2021-recovery-plan-for-jobs-growth-resilience/canada-workers-benefit-qa.html
+  - title: Income Tax Act (Part I)(Division E)(Subdivision A.2)(1.3)(2)(A)(b)
+    href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-96.html#h-299725

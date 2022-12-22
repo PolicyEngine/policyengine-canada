@@ -1,0 +1,13 @@
+- name: Eligible - not a dependant
+  period: 2023
+  input:
+    cwb_eligible: true
+  output:
+    cwb_dependant: 0
+
+- name: Uneligible - a dependant 
+  period: 2023
+  input:
+    cwb_eligible: false
+  output:
+    cwb_dependant: 1

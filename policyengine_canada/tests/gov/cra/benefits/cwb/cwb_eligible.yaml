@@ -1,0 +1,13 @@
+- name: Uneligible 
+  period: 2023
+  input:
+    age: 18
+  output:
+    cwb_eligible: false
+
+- name: Eligible 
+  period: 2023
+  input:
+    age: 19
+  output:
+    cwb_eligible: true

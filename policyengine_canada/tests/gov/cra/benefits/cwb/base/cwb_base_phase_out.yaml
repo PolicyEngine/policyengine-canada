@@ -1,0 +1,24 @@
+- name: Afni under min threshold
+  period: 2023
+  input:
+    adjusted_family_net_income: 22_943
+    is_cwb_family: false
+  output:
+    cwb_base_phase_out: 0
+
+
+- name: Single, afni over threshold
+  period: 2023
+  input:
+    adjusted_family_net_income: 22_945
+    is_cwb_family: false
+  output:
+    cwb_base_phase_out: 0.15
+
+- name: Family, afni over threshold
+  period: 2023
+  input:
+    adjusted_family_net_income: 40_000
+    is_cwb_family: true
+  output:
+    cwb_base_phase_out: 2_073.45

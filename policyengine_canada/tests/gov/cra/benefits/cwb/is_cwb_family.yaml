@@ -1,0 +1,29 @@
+- name: Unmarried, no dependants. 
+  period: 2023
+  input:
+    is_married: false
+    cwb_dependant: false
+  output:
+    is_cwb_family: false
+
+- name: Married, no dependants.
+  period: 2023
+  input:
+    is_married: true
+    cwb_dependant: false
+  output:
+    is_cwb_family: true
+
+- name: Has dependants.
+  period: 2023
+  input:
+    people:
+      head:
+        cwb_dependant: false
+      dependant:
+        cwb_dependant: true
+    households:
+      household:
+        members: [head, dependant]
+  output:
+    is_cwb_family: true

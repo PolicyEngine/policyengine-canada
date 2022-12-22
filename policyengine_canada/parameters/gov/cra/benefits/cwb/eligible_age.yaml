@@ -1,0 +1,14 @@
+description: Age eligibility for the canada workers benefit
+values:
+  2022-12-31: 19
+metadata:
+  unit: year
+  name: canada_workers_benefit_eligible_age
+  label: Canada workers benefit eligibile age
+  reference:
+  - title: Government of Canada - Canada workers benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-workers-benefit.html
+  - title: Government of Canada - Canada workers benefit
+    href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2021-recovery-plan-for-jobs-growth-resilience/canada-workers-benefit-qa.html
+  - title: Income Tax Act (A.2)(122.7)(1) - Definition of eligible individual (a)
+    href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-96.html#h-299725

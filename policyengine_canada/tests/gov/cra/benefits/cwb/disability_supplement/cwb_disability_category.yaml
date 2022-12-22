@@ -1,0 +1,43 @@
+- name: No eligible people
+  period: 2023
+  input:
+    is_head_or_spouse: false
+    cwb_disability_supplement_eligible: true
+    is_cwb_family: false
+  output:
+    cwb_disability_category: INELIGIBLE
+
+- name: Single disabled person
+  period: 2023
+  input:
+    is_head_or_spouse: true
+    cwb_disability_supplement_eligible: true
+    is_cwb_family: false
+  output:
+    cwb_disability_category: SINGLE
+
+- name: One disabled spouse
+  period: 2023
+  input:
+    is_head_or_spouse: true
+    cwb_disability_supplement_eligible: true
+    is_cwb_family: True
+  output:
+    cwb_disability_category: FAMILY_WITH_ONE_DISABLED_SPOUSE
+
+- name: Two disabled spouses
+  period: 2023
+  input:
+    people:
+      person1:
+        is_head_or_spouse: true
+        cwb_disability_supplement_eligible: true
+      person2:
+        is_head_or_spouse: true
+        cwb_disability_supplement_eligible: true
+    households:
+      household:
+        members: [person1, person2]
+        is_cwb_family: True
+  output:
+    cwb_disability_category: FAMILY_WITH_TWO_DISABLED_SPOUSES
