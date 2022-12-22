@@ -63,3 +63,8 @@
     added:
     - Disability tax credit (dtc).
   date: 2022-12-15 16:34:10
+- bump: minor
+  changes:
+    added:
+    - Canada workers benefit
+  date: 2022-12-22 00:39:48
