@@ -1,1 +1,4 @@
-
+- bump: minor
+  changes:
+    added:
+    - Household net income
