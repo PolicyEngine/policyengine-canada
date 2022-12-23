@@ -8,3 +8,4 @@ class family_net_income(Variable):
     unit = CAD
     documentation = "Sum of head and spouse's line 23600 on tax return"
     definition_period = YEAR
+    adds = ["individual_net_income"]

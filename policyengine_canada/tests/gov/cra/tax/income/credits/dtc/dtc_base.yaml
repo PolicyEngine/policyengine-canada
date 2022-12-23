@@ -1,0 +1,13 @@
+- name: Eligible person 
+  period: 2022
+  input:
+    dtc_eligible: true
+  output:
+    dtc_base: 8_662
+
+- name: Uneligible person 
+  period: 2022
+  input:
+    dtc_eligible: false
+  output:
+    dtc_base: 0
