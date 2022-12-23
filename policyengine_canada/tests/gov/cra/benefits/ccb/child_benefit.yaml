@@ -10,7 +10,7 @@
         adjusted_family_net_income: 62_000
         child_benefit_eligible_children: 0
   output:
-    child_benefit: 0
+    canada_child_benefit: 0
 
 - name: One eligible child under 6
   period: 2023
@@ -24,7 +24,7 @@
         adjusted_family_net_income: 30_000
         child_benefit_eligible_children: 1
   output:
-    child_benefit: 6_997
+    canada_child_benefit: 6_997
 
 - name: One eligible child under 6, one eligible childe under 17
   period: 2023
@@ -41,4 +41,4 @@
         adjusted_family_net_income: 80_000
         child_benefit_eligible_children: 2
   output:
-    child_benefit: 7_224.42
+    canada_child_benefit: 7_224.42

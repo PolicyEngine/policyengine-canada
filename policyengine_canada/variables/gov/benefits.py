@@ -8,9 +8,9 @@ class benefits(Variable):
     unit = CAD
     definition_period = YEAR
     adds = [
-        "ccb",
-        "cdb",
-        "cwb",
+        "canada_child_benefit",
+        "child_disability_benefit",
+        "canada_workers_benefit",
         "dental_benefit",
-        "old_age_security_pension",
+        #        "old_age_security_pension",
     ]

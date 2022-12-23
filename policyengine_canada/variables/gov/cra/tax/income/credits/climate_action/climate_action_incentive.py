@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class climate_action_incentive_post_rural(Variable):
+class climate_action_incentive(Variable):
     value_type = float
     entity = Household
     label = "Canada Climate Action Incentive after rural supplement"

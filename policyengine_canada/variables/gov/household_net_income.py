@@ -8,4 +8,4 @@ class household_net_income(Variable):
     unit = CAD
     definition_period = YEAR
     adds = ["market_income", "refundable_tax_credits", "benefits"]
-    subtracts = ["tax_before_refundable_credits"]
+    subtracts = ["income_tax_before_refundable_credits"]
