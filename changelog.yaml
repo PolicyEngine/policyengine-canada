@@ -78,3 +78,8 @@
     added:
     - Household net income
   date: 2022-12-23 18:38:20
+- bump: minor
+  changes:
+    added:
+    - Fixed bugs on cwb & pension programs. Created net income Notebook
+  date: 2022-12-26 21:25:42
