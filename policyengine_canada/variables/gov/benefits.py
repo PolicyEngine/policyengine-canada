@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class benefits(Variable):
     value_type = float
     entity = Household
-    label = "benfits"
+    label = "benefits"
     unit = CAD
     definition_period = YEAR
     adds = [
@@ -12,5 +12,5 @@ class benefits(Variable):
         "child_disability_benefit",
         "canada_workers_benefit",
         "dental_benefit",
-        #        "old_age_security_pension",
+        "old_age_security_pension",
     ]
