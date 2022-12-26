@@ -9,4 +9,5 @@ class cwb_dependant(Variable):
     reference = ""  # TODO: Add
 
     def formula(person, period, parameters):
-        return ~person("cwb_eligible", period)
+        p = parameters(period).gov.cra.benefits.cwb
+        return person("age", period) < p.eligible_age

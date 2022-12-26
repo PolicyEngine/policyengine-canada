@@ -2,6 +2,7 @@
   period: 2023
   input:
     is_cwb_family: false
+    cwb_eligible: true
   output:
     cwb_base_max_amount: 1_395
 
@@ -9,5 +10,14 @@
   period: 2023
   input:
     is_cwb_family: true
+    cwb_eligible: true
   output:
     cwb_base_max_amount: 2_403
+
+- name: Ineligible; should be 0
+  period: 2023
+  input:
+    is_cwb_family: true
+    cwb_eligible: false
+  output:
+    cwb_base_max_amount: 0

@@ -11,6 +11,7 @@ class cwb_disability_supplement_eligible(Variable):
     )
 
     def formula(person, period, parameters):
-        eligible_person = person("cwb_eligible", period)
+        # For now, apply a person-level logic based on age.
+        eligible_person = ~person("cwb_dependant", period)
         disability_eligible = person("dtc_eligible", period)
         return eligible_person & disability_eligible

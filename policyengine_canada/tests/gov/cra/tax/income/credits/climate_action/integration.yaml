@@ -12,7 +12,7 @@
       members: [parent, c1, c2]
       province: MANITOBA
   output:
-    climate_action_incentive_post_rural: 728
+    climate_action_incentive: 728
 
 - name: Married couple with no children in Saskatchewan
   period: 2023
@@ -27,7 +27,7 @@
       members: [head, spouse]
       province: SASKATCHEWAN
   output:
-    climate_action_incentive_post_rural: 825
+    climate_action_incentive: 825
 
 - name: Single parent with two children living in rural Manitoba.
   period: 2023
@@ -44,4 +44,4 @@
       province: MANITOBA
       is_rural: true
   output:
-    climate_action_incentive_post_rural: 800.8
+    climate_action_incentive: 800.8
