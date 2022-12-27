@@ -1,4 +1,0 @@
-- bump: patch
-  changes:
-    fixed:
-      - Pin yaml-changelog to avoid syntax that outputs the result as a file.

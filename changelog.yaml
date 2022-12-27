@@ -83,3 +83,8 @@
     added:
     - Fixed bugs on cwb & pension programs. Created net income Notebook
   date: 2022-12-26 21:25:42
+- bump: patch
+  changes:
+    fixed:
+    - Pin yaml-changelog to avoid syntax that outputs the result as a file.
+  date: 2022-12-27 04:19:58
