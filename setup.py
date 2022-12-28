@@ -14,7 +14,7 @@ general_requirements = [
     "numpy>=1.11,<1.21",
     "black[jupyter]<23",
     "linecheck<1",
-    "yaml-changelog>=0.3.0,<1",
+    "yaml-changelog==0.3.0",
     "coverage<7",
     "sortedcontainers<3",
     "numexpr<3",
@@ -27,7 +27,7 @@ general_requirements = [
     "tqdm>=4.46.0,<5",
     "requests>=2.27.1,<3",
     "pandas>=1.4.2,<2",
-    "policyengine_core>=1.4.0,<2",
+    "policyengine_core==1.10.23",
     "plotly>=5.6.0,<6",
 ]
 
@@ -42,7 +42,7 @@ dev_requirements = [
 
 setup(
     name="policyengine-canada",
-    version="0.12.0",
+    version="0.14.1",
     author="PolicyEngine",
     author_email="hello@policyengine.org",
     classifiers=[

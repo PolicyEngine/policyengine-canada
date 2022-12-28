@@ -1,10 +1,9 @@
 from policyengine_canada.model_api import *
 
 
-class disability_tax_credit(Variable):
+class old_age_security_pension_clawback(Variable):
     value_type = float
     entity = Person
-    label = "Disability tax credit"
+    label = "Old age security pension clawback"
     unit = CAD
     definition_period = YEAR
-    adds = ["dtc_base", "dtc_child_supplement"]

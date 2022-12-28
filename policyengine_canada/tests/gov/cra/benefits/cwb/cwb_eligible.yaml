@@ -1,13 +1,23 @@
-- name: Uneligible 
+- name: Single person under age 19 is ineligible. 
   period: 2023
   input:
     age: 18
+    is_cwb_family: false
   output:
     cwb_eligible: false
 
-- name: Eligible 
+- name: Single person aged 19 or older is eligible.
+  period: 2023
+  input:
+    age: 18
+    is_cwb_family: true
+  output:
+    cwb_eligible: true
+
+- name: CWB families are eligible, regardless of ages.
   period: 2023
   input:
     age: 19
+    is_cwb_family: true
   output:
     cwb_eligible: true

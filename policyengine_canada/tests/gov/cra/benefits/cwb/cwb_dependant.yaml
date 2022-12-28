@@ -1,13 +1,13 @@
-- name: Eligible - not a dependant
+- name: Single person under age 19 is a dependant. 
   period: 2023
   input:
-    cwb_eligible: true
+    age: 18
   output:
-    cwb_dependant: 0
+    cwb_dependant: true
 
-- name: Uneligible - a dependant 
+- name: Single person aged 19 or older is not a dependant.
   period: 2023
   input:
-    cwb_eligible: false
+    age: 19
   output:
-    cwb_dependant: 1
+    cwb_dependant: false

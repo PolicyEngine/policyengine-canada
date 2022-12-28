@@ -1,0 +1,6 @@
+- name: Income tax for someone with $25,000 taxable income.
+  period: 2022
+  input:
+    total_individual_pre_tax_income: 25_000
+  output:
+    income_tax_before_credits: 3_750

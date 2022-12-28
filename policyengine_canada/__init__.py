@@ -34,16 +34,16 @@ class Simulation(CoreSimulation):
     default_tax_benefit_system = CountryTaxBenefitSystem
     default_tax_benefit_system_instance = system
     default_role = "parent"
-    default_calculation_period = 2022
-    default_input_period = 2022
+    default_calculation_period = 2023
+    default_input_period = 2023
 
 
 class Microsimulation(CoreMicrosimulation):
     default_tax_benefit_system = CountryTaxBenefitSystem
     default_dataset = CountryTemplateDataset
     default_tax_benefit_system_instance = system
-    default_dataset_year = 2022
-    default_calculation_period = 2022
+    default_dataset_year = 2023
+    default_calculation_period = 2023
 
 
 if 2022 not in CountryTemplateDataset.years:
