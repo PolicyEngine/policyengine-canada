@@ -8,7 +8,7 @@ class ontario_income_tax(Variable):
     unit = CAD
     definition_period = YEAR
     reference = "https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html"
-    defined_for = Province.ONTARIO
+    #    defined_for = Province.ONTARIO
 
     def formula(person, period, parameters):
         income = person("ontario_taxable_income", period)
