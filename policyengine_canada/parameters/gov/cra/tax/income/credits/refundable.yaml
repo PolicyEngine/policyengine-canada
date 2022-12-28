@@ -1,0 +1,9 @@
+description: Refundable tax credits.
+values:
+  2019-01-01:
+    - climate_action_incentive
+    - school_supply_credit
+    - training_credit
+    
+metadata:
+  unit: program

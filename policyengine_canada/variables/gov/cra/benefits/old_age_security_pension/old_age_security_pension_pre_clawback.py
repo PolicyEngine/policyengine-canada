@@ -27,7 +27,7 @@ class old_age_security_pension_pre_clawback(Variable):
         # Your full base amount is your number of adult residence years divided
         # by the number of years at which you are eligible for 100%.
         # In the SPSD/M 29.0 this is imoasres.
-        residency_scale_factor = min(
+        residency_scale_factor = min_(
             adult_years_in_canada / p.eligibility.residence.full_base_amount,
             1,
         )

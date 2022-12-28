@@ -1,18 +1,9 @@
-- name: Not cwb eligible
-  period: 2023
-  input:
-    family_working_income: 5_000
-    is_cwb_family: true
-    cwb_eligible: false
-  output:
-    cwb_base_phase_in: 0
-
 - name: Eligible family
   period: 2023
   input:
     family_working_income: 5_000
     is_cwb_family: true
-    cwb_eligible: true
+    cwb_dependant: false
   output:
     cwb_base_phase_in: 540
 
@@ -21,7 +12,7 @@
   input:
     family_working_income: 22_943
     is_cwb_family: false
-    cwb_eligible: true
+    cwb_dependant: false
   output:
     cwb_base_phase_in: 5_384.61
 
@@ -30,6 +21,6 @@
   input:
     family_working_income: 2_999
     is_cwb_family: false
-    cwb_eligible: true
+    cwb_dependant: false
   output:
     cwb_base_phase_in: 0

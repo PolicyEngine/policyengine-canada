@@ -1,0 +1,7 @@
+description: Non-refundable tax credits.
+values:
+  2019-01-01:
+    - age_amount_credit
+    - disability_tax_credit
+metadata:
+  unit: program
