@@ -2,22 +2,22 @@
   period: 2022
   input:
     province: ONTARIO
-    ontario_taxable_income: 46_225
+    on_taxable_income: 46_225
   output:
-    ontario_income_tax: 2_334.3625
+    on_income_tax: 2_334.3625
 
 - name: Ontario income tax; wrong province
   period: 2022
   input:
     province: ALBERTA
-    ontario_taxable_income: 46_225
+    on_taxable_income: 46_225
   output:
-    ontario_income_tax: 0
+    on_income_tax: 0
 
 - name: Ontario income tax 
   period: 2022
   input:
     province: ONTARIO
-    ontario_taxable_income: 220_000
+    on_taxable_income: 220_000
   output:
-    ontario_income_tax: 29_860
+    on_income_tax: 29_860
