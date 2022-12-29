@@ -1,0 +1,27 @@
+description: Income tax rate in Northwest Territories. 
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  name: nt_income_tax_rate
+  label: Northwest Territories income tax rates 
+  reference:
+    - title: Government of Canada - Canadian income tax rates for individuals current and previous years
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0.059
+  - threshold:
+      2022-01-01: 45_462
+    rate:
+      2022-01-01: 0.086
+  - threshold:
+      2022-01-01: 90_927
+    rate:
+      2022-01-01: 0.122
+  - threshold:
+      2022-01-01: 147_826
+    rate:
+      2022-01-01: 0.1405
