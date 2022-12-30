@@ -93,3 +93,8 @@
     added:
     - Ontario tax rates.
   date: 2022-12-29 19:33:52
+- bump: minor
+  changes:
+    added:
+    - Ontario child benefit.
+  date: 2022-12-30 20:07:58
