@@ -1,0 +1,23 @@
+- name: Ontario income tax 
+  period: 2022
+  input:
+    province: ONTARIO
+    on_taxable_income: 46_225
+  output:
+    on_income_tax_before_credits: 2_334.3625
+
+- name: Ontario income tax; wrong province
+  period: 2022
+  input:
+    province: ALBERTA
+    on_taxable_income: 46_225
+  output:
+    on_income_tax_before_credits: 0
+
+- name: Ontario income tax higher bracket
+  period: 2022
+  input:
+    province: ONTARIO
+    on_taxable_income: 100_000
+  output:
+    on_income_tax_before_credits: 7_406.4086

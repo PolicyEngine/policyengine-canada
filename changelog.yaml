@@ -88,3 +88,8 @@
     fixed:
     - Pin yaml-changelog to avoid syntax that outputs the result as a file.
   date: 2022-12-27 04:19:58
+- bump: minor
+  changes:
+    added:
+    - Ontario tax rates.
+  date: 2022-12-29 19:33:52

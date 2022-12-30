@@ -1,0 +1,33 @@
+description: Income tax rate in Ontario. 
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  name: ontario_income_tax_rate
+  label: Ontario income tax rates 
+  reference:
+    - title: Government of Canada - Canadian income tax rates for individuals current and previous years
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    - title: Taxation Act, 2007
+      href: https://www.ontario.ca/laws/statute/07t11#BK8 
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0.0505
+  - threshold:
+      2022-01-01: 46_226
+    rate:
+      2022-01-01: 0.0915   
+  - threshold:
+      2022-01-01: 92_454
+    rate:
+      2022-01-01: 0.1116
+  - threshold:
+      2022-01-01: 150_000
+    rate:
+      2022-01-01: 0.1216
+  - threshold:
+      2022-01-01: 220_000
+    rate:
+      2022-01-01: 0.1316
