@@ -1,0 +1,15 @@
+- name: Reduction larger than benefit
+  period: 2023
+  input:
+    on_child_benefit_base: 1_000
+    on_child_benefit_reduction: 1_100
+  output:
+    on_child_benefit: 0
+
+- name: Base larger than reduction
+  period: 2023
+  input:
+    on_child_benefit_base: 1_000
+    on_child_benefit_reduction: 200
+  output:
+    on_child_benefit: 800

@@ -1,23 +1,18 @@
-description: Ontario child benefit reduction for one child
+description: Ontario reduces total child benefit payments as a percentage of AFNI above a threshold.
 brackets:
   - threshold:
-      values:
-        2022-07-01: 0
+      2022-07-01: 0
     rate:
-      values:
-        2022-07-01: 0
+      2022-07-01: 0
   - threshold:
-      values:
-        2022-07-01: 23_044
+      2022-07-01: 23_044
     rate:
-      values:
-        2022-07-01: 0.08
+      2022-07-01: 0.08
 
 metadata:
   type: marginal_rate
   rate_unit: /1
   threshold_unit: currency-CAD
-  name: ontario_child_benefit_reduction
   label: Ontario child Benefit reduction
   reference:
   - title: Government of Canada - Canada Child Benefit

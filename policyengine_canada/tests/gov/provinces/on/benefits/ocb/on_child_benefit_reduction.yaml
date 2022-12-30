@@ -1,0 +1,13 @@
+- name: AFNI under threshold
+  period: 2023
+  input:
+    adjusted_family_net_income: 23_043
+  output:
+    on_child_benefit_reduction: 0
+
+- name: AFNI over threshold
+  period: 2023
+  input:
+    adjusted_family_net_income: 40_000
+  output:
+    on_child_benefit_reduction: 1_356.48

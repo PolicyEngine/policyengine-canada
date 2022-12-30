@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class ontario_child_benefit(Variable):
+class on_child_benefit(Variable):
     value_type = float
     entity = Household
     label = "Ontario Child Benefit"
@@ -12,7 +12,6 @@ class ontario_child_benefit(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
-        base = household("ontario_child_benefit_base", period)
-        reduction = household("ontario_child_benefit_reduction", period)
-        children = household("child_benefit_eligible_children", period)
-        return max_(0, (base * children) - reduction)
+        base = household("on_child_benefit_base", period)
+        reduction = household("on_child_benefit_reduction", period)
+        return max_(0, base - reduction)

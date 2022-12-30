@@ -1,16 +1,15 @@
 from policyengine_canada.model_api import *
 
 
-class ontario_child_benefit_base(Variable):
+class on_child_benefit_reduction(Variable):
     value_type = float
     entity = Household
-    label = "Ontario Child Benefit Base"
+    label = "Ontario Child Benefit reduction"
     unit = CAD
-    documentation = "Base amount of Ontario Child Benefit before reduction."
     definition_period = YEAR
 
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)
-        return parameters(period).gov.provinces.on.benefits.ocb.base.calc(
+        return parameters(period).gov.provinces.on.benefits.ocb.reduction.calc(
             income
         )

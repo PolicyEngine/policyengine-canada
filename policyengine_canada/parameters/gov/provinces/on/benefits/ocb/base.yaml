@@ -1,9 +1,8 @@
-description: Onatrio Child Benefit base.
+description: Ontario Child Benefit base.
 values:
-  2022-07-01: 1_509
+  2022-07-01: 1_509 # $1,310 in 2008, indexed to inflation.
 metadata:
   unit: currency-CAD
-  name: ontario_child_benefit_base
   label: ontario child benefit base
   reference:
   - title: Government of Canada - Canada Child Benefit
