@@ -13,4 +13,6 @@ class benefits(Variable):
         "canada_workers_benefit",
         "dental_benefit",
         "old_age_security_pension",
+        # Ontario programs.
+        "on_child_benefit",
     ]
