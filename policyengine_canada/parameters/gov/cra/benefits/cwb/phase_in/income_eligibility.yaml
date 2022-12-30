@@ -1,0 +1,15 @@
+description: Minimum wokring income for canada workers benefit eligibility
+values:
+  2021-01-01: 3_000
+metadata:
+  unit: currency-CAD
+  period: year
+  name: canada_workers_benefit_income_eligibility
+  label: Canada workers benefit income eligibility
+  reference:
+  - title: Government of Canada - Canada workers benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-workers-benefit.html
+  - title: Government of Canada - Canada workers benefit
+    href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2021-recovery-plan-for-jobs-growth-resilience/canada-workers-benefit-qa.html
+  - title: Income Tax Act
+    href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-96.html#h-299725

@@ -1,0 +1,35 @@
+- name: Eligible person with no supplement and income tax over credit am0unt; should be 8_662
+  period: 2022
+  input:
+    income_tax: 10_000
+    dtc_eligible: true
+    dtc_child_supplement: 0
+  output:
+    disability_tax_credit: 8_662
+
+- name: Eligible person with supplement and income tax under credit amount; should be 8_662
+  period: 2022
+  input:
+    income_tax: 10_000
+    dtc_eligible: true
+    dtc_child_supplement: 5_053
+  output:
+    disability_tax_credit: 10_000
+
+- name: Eligible person with supplement and income tax under credit amount; should be 8_662
+  period: 2022
+  input:
+    income_tax: 10_000
+    dtc_eligible: false
+    dtc_child_supplement: 5_053
+  output:
+    disability_tax_credit: 0
+
+- name: Eligible person with supplement and income tax under credit amount; should be 8_662
+  period: 2022
+  input:
+    income_tax: 20_000
+    dtc_eligible: true
+    dtc_child_supplement: 5_053
+  output:
+    disability_tax_credit: 13_715
