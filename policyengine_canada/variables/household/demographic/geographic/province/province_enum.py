@@ -9,6 +9,7 @@ class Province(Enum):
     NEW_BRUNSWICK = "New Brunswick"
     NEWFOUNDLAND_AND_LABRADOR = "Newfoundland and Labrador"
     NOVA_SCOTIA = "Nova Scotia"
+    NORTHWEST_TERRITORIES = "Northwest Territories"
     NUNAVUT = "Nunavut"
     ONTARIO = "Ontario"
     PRINCE_EDWARD_ISLAND = "Prince Edward Island"
