@@ -20,4 +20,4 @@
     province: NEWFOUNDLAND_AND_LABRADOR
     nl_taxable_income: 1_000_100
   output:
-    nl_income_tax_before_credits: 
+    nl_income_tax_before_credits: 198_023.98

@@ -12,6 +12,6 @@ class ns_income_tax_before_credits(Variable):
     def formula(person, period, parameters):
         province = person.household("province", period)
         in_nova_scotia = province == province.possible_values.NOVA_SCOTIA
-        income = person("on_taxable_income", period)
+        income = person("ns_taxable_income", period)
         p = parameters(period).gov.provinces.ns.tax.income.rate
         return in_nova_scotia * p.calc(income)

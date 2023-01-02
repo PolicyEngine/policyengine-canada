@@ -11,13 +11,5 @@ class nt_taxable_income(Variable):
 
     def formula(person, period, parameters):
         province = person.household("province", period)
-        in_northwest_territories = (
-            province == province.possible_values.NORTHWEST_TERRITORIES
-        )
-        province = person.household("province", period)
-        in_northwest_territories = (
-            province == province.possible_values.NORTHWEST_TERRITORIES
-        )
-        return in_northwest_territories * add(
-            person, period, ["total_individual_pre_tax_income"]
-        )
+        in_nt = province == province.possible_values.NORTHWEST_TERRITORIES
+        return in_nt * add(person, period, ["total_individual_pre_tax_income"])

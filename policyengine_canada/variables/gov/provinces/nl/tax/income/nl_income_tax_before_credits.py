@@ -12,6 +12,6 @@ class nl_income_tax_before_credits(Variable):
     def formula(person, period, parameters):
         province = person.household("province", period)
         in_nl = province == province.possible_values.NEWFOUNDLAND_AND_LABRADOR
-        income = person("on_taxable_income", period)
+        income = person("nl_taxable_income", period)
         p = parameters(period).gov.provinces.nl.tax.income.rate
         return in_nl * p.calc(income)

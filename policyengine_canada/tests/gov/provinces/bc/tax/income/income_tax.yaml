@@ -20,4 +20,4 @@
     province: BRITISH_COLUMBIA
     bc_taxable_income: 230_000
   output:
-    bc_income_tax_before_credits: 
+    bc_income_tax_before_credits: 27_114.572

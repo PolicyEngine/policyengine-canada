@@ -20,4 +20,4 @@
     province: MANITOBA
     mb_taxable_income: 75_000
   output:
-    mb_income_tax_before_credits: 
+    mb_income_tax_before_credits: 8_911.582

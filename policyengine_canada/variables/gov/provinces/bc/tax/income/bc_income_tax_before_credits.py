@@ -12,6 +12,6 @@ class bc_income_tax_before_credits(Variable):
     def formula(person, period, parameters):
         province = person.household("province", period)
         in_bc = province == province.possible_values.BRITISH_COLUMBIA
-        income = person("on_taxable_income", period)
+        income = person("bc_taxable_income", period)
         p = parameters(period).gov.provinces.bc.tax.income.rate
         return in_bc * p.calc(income)

@@ -20,4 +20,4 @@
     province: NEW_BRUNSWICK
     nb_taxable_income: 170_000
   output:
-    nb_income_tax_before_credits: 
+    nb_income_tax_before_credits: 24_533.855

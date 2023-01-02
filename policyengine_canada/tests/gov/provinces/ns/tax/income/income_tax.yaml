@@ -20,4 +20,4 @@
     province: NOVA_SCOTIA
     ns_taxable_income: 160_000
   output:
-    ns_income_tax_before_credits: 
+    ns_income_tax_before_credits: 24_737.46
