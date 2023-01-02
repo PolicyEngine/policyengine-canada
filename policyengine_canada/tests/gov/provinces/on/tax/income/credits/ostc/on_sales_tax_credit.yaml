@@ -1,0 +1,15 @@
+- name: Reduction under threshold
+  period: 2022
+  input:
+    on_sales_tax_credit_base: 324
+    on_sales_tax_credit_reduction: 100
+  output:
+    on_sales_tax_credit: 224
+
+- name: Reduction over threshold
+  period: 2022
+  input:
+    on_sales_tax_credit_base: 324
+    on_sales_tax_credit_reduction: 400
+  output:
+    on_sales_tax_credit: 0
