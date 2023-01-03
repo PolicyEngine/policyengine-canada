@@ -1,0 +1,15 @@
+- name: Single parent with two children 
+  period: 2023
+  input:
+    people:
+      parent:
+        gst_credit_category: HEAD
+      c1:
+        gst_credit_category: CHILD
+      c2:
+        gst_credit_category: CHILD
+    household:
+      members: [parent, c1, c2]
+  output:
+    gst_credit_person: [306, 306, 306]
+

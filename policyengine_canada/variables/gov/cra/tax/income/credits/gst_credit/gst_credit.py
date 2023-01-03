@@ -1,27 +1,13 @@
 from policyengine_canada.model_api import *
 
-
-class training_credit(Variable):
+class gst_credit(Variable):
     value_type = float
-    entity = Person
-    label = "Federal Sales Tax / GST Credit"
+    entity = Household
+    label = "GST Credit"
     unit = CAD
+    documentation = " "
     definition_period = YEAR
 
-    def formula(tax_unit, period, parameters):
-        gst = parameters(period).gov.cra.tax.income.credits.gst
-        tuition = tax_unit("tuition_expenses", period)
-        age = tax_unit("age", period)
-        training = parameters(period).gov.cra.tax.income.credits.training
-        lower_limit = training.age_eligibility.min
-        upper_limit = training.age_eligibility.max
-        meets_age_requirement = (age >= lower_limit) & (age <= upper_limit)
-        existing_credits = tax_unit("prior_training_credits", period)
-        cap = training.lifetime_cap
-        remaining = max_(0, cap - existing_credits)
-        threshold = training.amount
-        credits = threshold.calc(income)
-        student = tuition > 0
-        amount_if_eligible = min_(remaining, credits)
-        eligible = meets_age_requirement & student
-        return eligible * amount_if_eligible
+    def formula(household, period, parameters):
+        base_amount = household("gst_credit_pre_reduction", period)
+        return base_amount * (1)
