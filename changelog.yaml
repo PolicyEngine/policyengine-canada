@@ -128,3 +128,8 @@
     fixed:
     - Pip installs include folders.
   date: 2023-01-03 22:01:11
+- bump: patch
+  changes:
+    changed:
+    - Core version widened.
+  date: 2023-01-03 23:40:13
