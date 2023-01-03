@@ -1,4 +1,4 @@
-- name: Single in Onatrio 
+- name: Single in Ontario 
   period: 2022
   input:
     province: ONTARIO
@@ -14,7 +14,7 @@
   output:
     on_sales_tax_credit_base: 0
 
-- name: Three people household in Onatrio 
+- name: Three people household in Ontario 
   period: 2022
   input:
     province: ONTARIO

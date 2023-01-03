@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class on_sales_tax_credit_base(Variable):
     value_type = float
     entity = Household
-    label = "Ontario Sales Tax Credits Base"
+    label = "Ontario Sales Tax Credit Base"
     unit = CAD
     documentation = (
         "Base amount of Ontario sales tax credits before reduction."

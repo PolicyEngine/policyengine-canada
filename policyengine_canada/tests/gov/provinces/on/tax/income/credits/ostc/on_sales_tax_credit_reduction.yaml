@@ -1,4 +1,4 @@
-- name: Single in Onatrio with income over reduction threshold
+- name: Single in Ontario with income over reduction threshold
   period: 2022
   input:
     adjusted_family_net_income: 30_000
