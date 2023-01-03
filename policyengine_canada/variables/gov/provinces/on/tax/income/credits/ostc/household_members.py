@@ -6,4 +6,6 @@ class household_members(Variable):
     entity = Household
     label = "Members in household"
     definition_period = YEAR
-    default_value = 1.0
+
+    def formula(household, period, parameters):
+        return household.nb_persons()
