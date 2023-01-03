@@ -1,0 +1,4 @@
+- bump: patch
+  changes:
+    changed:
+    - Relaxed Numpy version requirement slightly.
