@@ -1,0 +1,4 @@
+- bump: patch
+  changes:
+    added:
+    - Metadata to get PolicyEngine-Canada working.
