@@ -1,5 +1,7 @@
 from policyengine_canada.model_api import *
 
+label = "Earnings"
+
 
 class employment_income(Variable):
     value_type = float
@@ -8,4 +10,3 @@ class employment_income(Variable):
     unit = CAD
     documentation = "Income from gainful employment"
     definition_period = YEAR
-    reference = "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-10100-employment-income.html"
