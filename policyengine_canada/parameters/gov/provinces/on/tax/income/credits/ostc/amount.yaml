@@ -1,0 +1,9 @@
+description: Ontario Sales tax credit base for each adult or child in a household.
+values:
+  2022-01-01: 324 
+metadata:
+  unit: currency-CAD
+  label: Ontario sales tax credit base
+  reference:
+  - title: Government of Canada - Province of Ontario
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-ontario.html
