@@ -67,4 +67,5 @@ setup(
         "dev": dev_requirements,
     },
     install_requires=general_requirements,
+    packages=find_packages(),
 )
