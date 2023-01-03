@@ -118,3 +118,8 @@
     added:
     - Ontario sales tax credit
   date: 2023-01-03 21:48:21
+- bump: patch
+  changes:
+    changed:
+    - Relaxed Numpy version requirement slightly.
+  date: 2023-01-03 21:48:48
