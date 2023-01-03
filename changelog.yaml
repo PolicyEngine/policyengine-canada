@@ -98,3 +98,8 @@
     added:
     - Ontario child benefit.
   date: 2022-12-30 20:07:58
+- bump: patch
+  changes:
+    added:
+    - Metadata to get PolicyEngine-Canada working.
+  date: 2023-01-03 20:11:50
