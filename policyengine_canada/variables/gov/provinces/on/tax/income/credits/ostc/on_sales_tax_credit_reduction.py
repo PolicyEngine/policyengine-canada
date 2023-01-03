@@ -10,7 +10,7 @@ class on_sales_tax_credit_reduction(Variable):
 
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)
-        family = household("household_members", period) > 1
+        family = household("household_size", period) > 1
         p = parameters(
             period
         ).gov.provinces.on.tax.income.credits.ostc.reduction

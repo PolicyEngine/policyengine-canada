@@ -2,7 +2,7 @@
   period: 2022
   input:
     province: ONTARIO
-    household_members: 1
+    household_size: 1
   output:
     on_sales_tax_credit_base: 324
 
@@ -10,7 +10,7 @@
   period: 2022
   input:
     province: MANITOBA
-    household_members: 1
+    household_size: 1
   output:
     on_sales_tax_credit_base: 0
 
@@ -18,6 +18,6 @@
   period: 2022
   input:
     province: ONTARIO
-    household_members: 3
+    household_size: 3
   output:
     on_sales_tax_credit_base: 972

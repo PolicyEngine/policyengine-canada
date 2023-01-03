@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class household_members(Variable):
+class household_size(Variable):
     value_type = int
     entity = Household
-    label = "Members in household"
+    label = "Size of a household"
     definition_period = YEAR
 
     def formula(household, period, parameters):
