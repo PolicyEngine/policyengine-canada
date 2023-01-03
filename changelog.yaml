@@ -103,3 +103,8 @@
     added:
     - Metadata to get PolicyEngine-Canada working.
   date: 2023-01-03 20:11:50
+- bump: patch
+  changes:
+    fixed:
+    - PolicyEngine Core dependency relaxed to minor versions.
+  date: 2023-01-03 20:26:57

@@ -1,4 +1,0 @@
-- bump: patch
-  changes:
-    fixed:
-    - PolicyEngine Core dependency relaxed to minor versions.
