@@ -108,3 +108,8 @@
     fixed:
     - PolicyEngine Core dependency relaxed to minor versions.
   date: 2023-01-03 20:26:57
+- bump: patch
+  changes:
+    fixed:
+    - Missing package in Pip installs.
+  date: 2023-01-03 21:22:07

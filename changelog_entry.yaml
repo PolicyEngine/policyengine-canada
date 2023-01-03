@@ -1,4 +1,0 @@
-- bump: patch
-  changes:
-    fixed:
-    - Missing package in Pip installs.
