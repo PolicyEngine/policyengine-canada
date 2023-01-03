@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class children(Variable):
+class count_children(Variable):
     value_type = int
     entity = Household
     label = "Children"
