@@ -12,6 +12,6 @@ class nu_income_tax_before_credits(Variable):
     def formula(person, period, parameters):
         province = person.household("province", period)
         in_nunavut = province == province.possible_values.NUNAVUT
-        income = person("on_taxable_income", period)
+        income = person("nu_taxable_income", period)
         p = parameters(period).gov.provinces.nu.tax.income.rate
         return in_nunavut * p.calc(income)

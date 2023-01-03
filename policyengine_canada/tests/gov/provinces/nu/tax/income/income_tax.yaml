@@ -4,7 +4,7 @@
     province: NUNAVUT
     nu_taxable_income: 47_861
   output:
-    nu_income_tax_before_credits: 1_914.48
+    nu_income_tax_before_credits: 1_914.44
 
 - name: Nunavut income tax; wrong province
   period: 2022
@@ -20,4 +20,4 @@
     province: NUNAVUT
     nu_taxable_income: 160_000
   output:
-    nu_income_tax_before_credits: 
+    nu_income_tax_before_credits: 11_159.035
