@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.16.3] - 2023-01-03 21:22:07
+
+### Fixed
+
+- Missing package in Pip installs.
+
+## [0.16.2] - 2023-01-03 20:26:57
+
+### Fixed
+
+- PolicyEngine Core dependency relaxed to minor versions.
+
+## [0.16.1] - 2023-01-03 20:11:50
+
+### Added
+
+- Metadata to get PolicyEngine-Canada working.
+
 ## [0.16.0] - 2022-12-30 20:07:58
 
 ### Added
@@ -127,6 +145,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.16.3]: https://github.com/PolicyEngine/policyengine-canada/compare/0.16.2...0.16.3
+[0.16.2]: https://github.com/PolicyEngine/policyengine-canada/compare/0.16.1...0.16.2
+[0.16.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.16.0...0.16.1
 [0.16.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.15.0...0.16.0
 [0.15.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.14.1...0.15.0
 [0.14.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.14.0...0.14.1
