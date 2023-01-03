@@ -113,3 +113,8 @@
     fixed:
     - Missing package in Pip installs.
   date: 2023-01-03 21:22:07
+- bump: minor
+  changes:
+    added:
+    - Ontario sales tax credit
+  date: 2023-01-03 21:48:21
