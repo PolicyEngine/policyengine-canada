@@ -1,0 +1,23 @@
+- name: Alberta income tax 
+  period: 2022
+  input:
+    province: ALBERTA
+    ab_taxable_income: 131_220
+  output:
+    ab_income_tax_before_credits: 13_122
+
+- name: Alberta income tax; wrong province
+  period: 2022
+  input:
+    province: MANITOBA
+    ab_taxable_income: 100_000
+  output:
+    ab_income_tax_before_credits: 0
+
+- name: Alberta income tax higher bracket
+  period: 2022
+  input:
+    province: ALBERTA
+    ab_taxable_income: 315_928
+  output:
+    ab_income_tax_before_credits: 37_941.36

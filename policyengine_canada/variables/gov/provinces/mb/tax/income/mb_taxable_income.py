@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class on_taxable_income(Variable):
+class mb_taxable_income(Variable):
     value_type = float
     entity = Person
     label = "Ontario total taxable income"
@@ -11,7 +11,7 @@ class on_taxable_income(Variable):
 
     def formula(person, period, parameters):
         province = person.household("province", period)
-        in_ontario = province == province.possible_values.ONTARIO
-        return in_ontario * add(
+        in_manitoba = province == province.possible_values.MANITOBA
+        return in_manitoba * add(
             person, period, ["total_individual_pre_tax_income"]
         )

@@ -1,0 +1,43 @@
+description: Income tax rate in Newfoundland and Labrador. 
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  name: nl_income_tax_rate
+  label: Newfoundland and Labrador income tax rates 
+  reference:
+    - title: Government of Canada - Canadian income tax rates for individuals current and previous years
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0.087
+  - threshold:
+      2022-01-01: 39_147
+    rate:
+      2022-01-01: 0.145
+  - threshold:
+      2022-01-01: 78_294
+    rate:
+      2022-01-01: 0.158
+  - threshold:
+      2022-01-01: 139_780
+    rate:
+      2022-01-01: 0.178
+  - threshold:
+      2022-01-01: 195_693
+    rate:
+      2022-01-01: 0.198
+  - threshold:
+      2022-01-01: 250_000
+    rate:
+      2022-01-01: 0.208
+  - threshold:
+      2022-01-01: 500_000
+    rate:
+      2022-01-01: 0.213
+  - threshold:
+      2022-01-01: 1_000_000
+    rate:
+      2022-01-01: 0.218

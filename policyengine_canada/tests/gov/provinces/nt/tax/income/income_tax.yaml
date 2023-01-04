@@ -1,0 +1,23 @@
+- name: Northwest Territories income tax 
+  period: 2022
+  input:
+    province: NORTHWEST_TERRITORIES
+    nt_taxable_income: 45_461
+  output:
+    nt_income_tax_before_credits: 2_682.199
+
+- name: Northwest Territories income tax; wrong province
+  period: 2022
+  input:
+    province: ALBERTA
+    nt_taxable_income: 46_225
+  output:
+    nt_income_tax_before_credits: 0
+
+- name: Northwest Territories income tax higher bracket
+  period: 2022
+  input:
+    province: NORTHWEST_TERRITORIES
+    nt_taxable_income: 150_000
+  output:
+    nt_income_tax_before_credits: 13_839.373
