@@ -133,3 +133,8 @@
     changed:
     - Core version widened.
   date: 2023-01-03 23:40:13
+- bump: minor
+  changes:
+    added:
+    - Canada provincial income tax structure.
+  date: 2023-01-04 22:09:26
