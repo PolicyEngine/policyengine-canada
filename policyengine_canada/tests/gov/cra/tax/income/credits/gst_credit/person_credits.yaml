@@ -1,4 +1,19 @@
-- name: Single parent with two children 
+- name: Family with no children BASE AMOUNT ONLY CHANGE THIS
+  period: 2023
+  input:
+    people:
+      parent:
+        gst_credit_category: HEAD
+      c1:
+        gst_credit_category: SPOUSE
+      c2:
+        gst_credit_category: CHILD
+    household:
+      members: [parent, c1, c2]
+  output:
+    gst_credit_person: [306, 306, 306]
+
+- name: Single parent household with income 15,000. Should get a boost of (15,000 - 9919) * 0.02 = 101.62
   period: 2023
   input:
     people:
@@ -10,6 +25,29 @@
         gst_credit_category: CHILD
     household:
       members: [parent, c1, c2]
+      is_married: false
+      household_net_income: 15_000
   output:
-    gst_credit_person: [306, 306, 306]
+    gst_credit_singles_boost: 101.62
+    gst_credit: (306 * 3) + 101.62
+  
+- name: Same as above but for a married household, so the boost doesn't apply
+  period: 2023
+  input:
+    people:
+      parent:
+        gst_credit_category: HEAD
+      c1:
+        gst_credit_category: SPOUSE
+      c2:
+        gst_credit_category: CHILD
+    household:
+      members: [parent, c1, c2]
+      is_married: true
+      household_net_income: 15_000
+  output:
+    gst_credit_singles_boost: 0
+    gst_credit: 306 * 3
+
+
 

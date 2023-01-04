@@ -9,5 +9,6 @@ class gst_credit(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
-        base_amount = household("gst_credit_pre_reduction", period)
-        return base_amount * (1)
+        base_amount  = household("gst_credit_base", period)
+        boost_amount = household("gst_credit_singles_boost", period)
+        return base_amount + boost_amount
