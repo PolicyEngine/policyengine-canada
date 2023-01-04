@@ -1,0 +1,23 @@
+- name: Manitoba income tax 
+  period: 2022
+  input:
+    province: MANITOBA
+    mb_taxable_income: 34_430
+  output:
+    mb_income_tax_before_credits: 3_718.44
+
+- name: Ontario income tax; wrong province
+  period: 2022
+  input:
+    province: ALBERTA
+    mb_taxable_income: 46_225
+  output:
+    mb_income_tax_before_credits: 0
+
+- name: Manitoba income tax higher bracket
+  period: 2022
+  input:
+    province: MANITOBA
+    mb_taxable_income: 75_000
+  output:
+    mb_income_tax_before_credits: 8_911.582

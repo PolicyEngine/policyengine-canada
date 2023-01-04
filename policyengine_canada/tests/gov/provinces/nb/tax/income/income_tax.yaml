@@ -1,0 +1,23 @@
+- name: New Brunswick income tax 
+  period: 2022
+  input:
+    province: NEW_BRUNSWICK
+    nb_taxable_income: 44_886
+  output:
+    nb_income_tax_before_credits: 4_219.284
+
+- name: New Brunswick income tax; wrong province
+  period: 2022
+  input:
+    province: ALBERTA
+    nb_taxable_income: 46_225
+  output:
+    nb_income_tax_before_credits: 0
+
+- name: New Brunswick income tax higher bracket
+  period: 2022
+  input:
+    province: NEW_BRUNSWICK
+    nb_taxable_income: 170_000
+  output:
+    nb_income_tax_before_credits: 24_533.855

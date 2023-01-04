@@ -1,0 +1,31 @@
+description: Income tax rate in New Bushwick. 
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  name: nb_income_tax_rate
+  label: New Bushwick income tax rates 
+  reference:
+    - title: Government of Canada - Canadian income tax rates for individuals current and previous years
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0.094
+  - threshold:
+      2022-01-01: 44_887
+    rate:
+      2022-01-01: 0.1482
+  - threshold:
+      2022-01-01: 89_775
+    rate:
+      2022-01-01: 0.1652
+  - threshold:
+      2022-01-01: 145_955
+    rate:
+      2022-01-01: 0.1784
+  - threshold:
+      2022-01-01: 166_280
+    rate:
+      2022-01-01: 0.203

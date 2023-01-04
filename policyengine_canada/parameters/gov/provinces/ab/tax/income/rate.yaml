@@ -1,0 +1,32 @@
+description: Income tax rate in Alberta. 
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  name: ab_income_tax_rate
+  label: Alberta income tax rates 
+  reference:
+    - title: Government of Canada - Canadian income tax rates for individuals current and previous years
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0.1
+  - threshold:
+      2022-01-01: 131_220
+    rate:
+      2022-01-01: 0.12  
+  - threshold:
+      2022-01-01: 157_464
+    rate:
+      2022-01-01: 0.13
+  - threshold:
+      2022-01-01: 209_952
+    rate:
+      2022-01-01: 0.14
+  - threshold:
+      2022-01-01: 314_928
+    rate:
+      2022-01-01: 0.15
+

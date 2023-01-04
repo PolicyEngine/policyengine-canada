@@ -1,0 +1,23 @@
+- name: Nova Scotia income tax 
+  period: 2022
+  input:
+    province: NOVA_SCOTIA
+    ns_taxable_income: 29_589
+  output:
+    ns_income_tax_before_credits: 2_600.8731
+
+- name: Nova Scotia income tax; wrong province
+  period: 2022
+  input:
+    province: ALBERTA
+    ns_taxable_income: 46_225
+  output:
+    ns_income_tax_before_credits: 0
+
+- name: Nova Scotia income tax higher bracket
+  period: 2022
+  input:
+    province: NOVA_SCOTIA
+    ns_taxable_income: 160_000
+  output:
+    ns_income_tax_before_credits: 24_737.46

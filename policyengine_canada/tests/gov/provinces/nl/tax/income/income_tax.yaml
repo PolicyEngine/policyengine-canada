@@ -1,0 +1,23 @@
+- name: Newfoundland and Labrador income tax 
+  period: 2022
+  input:
+    province: NEWFOUNDLAND_AND_LABRADOR
+    nl_taxable_income: 39_146
+  output:
+    nl_income_tax_before_credits: 3_405.702
+
+- name: Newfoundland and Labrador income tax; wrong province
+  period: 2022
+  input:
+    province: ALBERTA
+    nl_taxable_income: 46_225
+  output:
+    nl_income_tax_before_credits: 0
+
+- name: Newfoundland and Labrador income tax higher bracket
+  period: 2022
+  input:
+    province: NEWFOUNDLAND_AND_LABRADOR
+    nl_taxable_income: 1_000_100
+  output:
+    nl_income_tax_before_credits: 198_023.98

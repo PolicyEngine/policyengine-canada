@@ -1,0 +1,23 @@
+- name: Saskatchewan income tax 
+  period: 2022
+  input:
+    province: SASKATCHEWAN
+    sk_taxable_income: 46_772
+  output:
+    sk_income_tax_before_credits: 4_911.06
+
+- name: Saskatchewan income tax; wrong province
+  period: 2022
+  input:
+    province: ALBERTA
+    sk_taxable_income: 46_225
+  output:
+    sk_income_tax_before_credits: 0
+
+- name: Saskatchewan income tax higher bracket
+  period: 2022
+  input:
+    province: SASKATCHEWAN
+    sk_taxable_income: 150_000
+  output:
+    sk_income_tax_before_credits: 18_141.78

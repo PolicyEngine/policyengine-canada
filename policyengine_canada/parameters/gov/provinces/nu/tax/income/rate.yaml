@@ -1,0 +1,27 @@
+description: Income tax rate in Nunavut. 
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  name: nu_income_tax_rate
+  label: Nunavut income tax rates 
+  reference:
+    - title: Government of Canada - Canadian income tax rates for individuals current and previous years
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0.04
+  - threshold:
+      2022-01-01: 47_862
+    rate:
+      2022-01-01: 0.07
+  - threshold:
+      2022-01-01: 95_724
+    rate:
+      2022-01-01: 0.09
+  - threshold:
+      2022-01-01: 155_625
+    rate:
+      2022-01-01: 0.115

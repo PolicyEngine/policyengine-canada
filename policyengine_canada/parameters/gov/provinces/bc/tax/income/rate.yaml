@@ -1,0 +1,39 @@
+description: Income tax rate in British Columbia. 
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  name: bc_income_tax_rate
+  label: British columbia income tax rates 
+  reference:
+    - title: Government of Canada - Canadian income tax rates for individuals current and previous years
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0.0506
+  - threshold:
+      2022-01-01: 43_070
+    rate:
+      2022-01-01: 0.077
+  - threshold:
+      2022-01-01: 86_141
+    rate:
+      2022-01-01: 0.105
+  - threshold:
+      2022-01-01: 98_901
+    rate:
+      2022-01-01: 0.1229
+  - threshold:
+      2022-01-01: 120_094
+    rate:
+      2022-01-01: 0.147
+  - threshold:
+      2022-01-01: 162_832
+    rate:
+      2022-01-01: 0.168
+  - threshold:
+      2022-01-01: 227_091
+    rate:
+      2022-01-01: 0.205
