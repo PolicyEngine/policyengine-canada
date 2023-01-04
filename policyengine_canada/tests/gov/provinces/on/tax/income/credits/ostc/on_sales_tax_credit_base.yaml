@@ -1,0 +1,23 @@
+- name: Single in Ontario 
+  period: 2022
+  input:
+    province: ONTARIO
+    household_size: 1
+  output:
+    on_sales_tax_credit_base: 324
+
+- name: Wrong province
+  period: 2022
+  input:
+    province: MANITOBA
+    household_size: 1
+  output:
+    on_sales_tax_credit_base: 0
+
+- name: Three people household in Ontario 
+  period: 2022
+  input:
+    province: ONTARIO
+    household_size: 3
+  output:
+    on_sales_tax_credit_base: 972

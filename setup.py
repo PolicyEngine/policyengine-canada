@@ -11,7 +11,7 @@ long_description = (this_directory / "README.md").read_text()
 
 general_requirements = [
     "pytest>=4,<6",
-    "numpy>=1.11,<1.21",
+    "numpy>=1.11,<1.23",
     "black[jupyter]<23",
     "linecheck<1",
     "yaml-changelog==0.3.0",
@@ -27,7 +27,7 @@ general_requirements = [
     "tqdm>=4.46.0,<5",
     "requests>=2.27.1,<3",
     "pandas>=1.4.2,<2",
-    "policyengine_core>=1.10.18,<1.11",
+    "policyengine_core>=1.10.18,<2",
     "plotly>=5.6.0,<6",
 ]
 
@@ -42,7 +42,7 @@ dev_requirements = [
 
 setup(
     name="policyengine-canada",
-    version="0.16.3",
+    version="0.17.3",
     author="PolicyEngine",
     author_email="hello@policyengine.org",
     classifiers=[
@@ -68,4 +68,5 @@ setup(
     },
     install_requires=general_requirements,
     packages=find_packages(),
+    include_package_data=True,
 )
