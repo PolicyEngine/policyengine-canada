@@ -1,0 +1,20 @@
+description: Ontario senior homeowners property tax grant reduction for families
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0
+  - threshold:
+      2022-01-01: 45_000
+    rate:
+      2022-01-01: 0.0333
+
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: Ontario senior homeowners property tax grant reduction family
+  reference:
+  - title: Government of Canada - Ontario Senior Homeowners' Property Tax Grant (OSHPTG)
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/ontario-senior-homeowners-property-tax-grant-oshptg-questions-answers.html 
