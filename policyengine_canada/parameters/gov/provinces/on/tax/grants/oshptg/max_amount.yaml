@@ -4,7 +4,6 @@ values:
 metadata:
   unit: currency-CAD
   period: year
-  name: oshptg_max_amount
   label: Ontario senior homeoweners' property tax grant max amount
   reference:
   - title: Government of Canada - Ontario Senior Homeowners' Property Tax Grant (OSHPTG)

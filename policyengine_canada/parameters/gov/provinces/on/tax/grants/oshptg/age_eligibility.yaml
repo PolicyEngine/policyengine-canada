@@ -1,9 +1,8 @@
-description: Inclusive age at with a person is eligible for the ontario senior homeowners' property tax grant.
+description: Inclusive age at with a person is eligible for the Ontario senior homeowners' property tax grant.
 values:
   2021-12-31: 64
 metadata:
   unit: year
-  name: oshptg_age_eligibility
   label: Ontario senior homeowners property tax grant age eligibility
   reference:
   - title: Government of Canada - Ontario Senior Homeowners' Property Tax Grant (OSHPTG)

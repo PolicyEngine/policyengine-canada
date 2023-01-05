@@ -14,7 +14,6 @@ metadata:
   type: marginal_rate
   rate_unit: /1
   threshold_unit: currency-CAD
-  name: ontario_senior_homeowners_property_tax_grant_reduction_family
   label: Ontario senior homeowners property tax grant reduction family
   reference:
   - title: Government of Canada - Ontario Senior Homeowners' Property Tax Grant (OSHPTG)
