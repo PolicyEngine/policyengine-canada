@@ -1,17 +1,13 @@
 description: Ontario senior homeowners property tax grant reduction for families
 brackets:
   - threshold:
-      values:
-        2022-01-01: 0
+      2022-01-01: 0
     rate:
-      values:
-        2022-01-01: 0
+      2022-01-01: 0
   - threshold:
-      values:
-        2022-01-01: 45_000
+      2022-01-01: 45_000
     rate:
-      values:
-        2022-01-01: 0.0333
+      2022-01-01: 0.0333
 
 
 metadata:
