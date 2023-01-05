@@ -10,5 +10,9 @@ class on_child_benefit_base(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
+        province = household("province", period)
+        in_ontario = province == province.possible_values.ONTARIO
         children = household("child_benefit_eligible_children", period)
-        return children * parameters(period).gov.provinces.on.benefits.ocb.base
+        return in_ontario * (
+            children * parameters(period).gov.provinces.on.benefits.ocb.base
+        )
