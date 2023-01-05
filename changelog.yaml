@@ -138,3 +138,8 @@
     added:
     - Canada provincial income tax structure.
   date: 2023-01-04 22:09:26
+- bump: minor
+  changes:
+    added:
+    - Ontario senior homeowners property tax grant.
+  date: 2023-01-05 19:31:40
