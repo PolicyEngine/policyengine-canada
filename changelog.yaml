@@ -143,3 +143,8 @@
     added:
     - Ontario senior homeowners property tax grant.
   date: 2023-01-05 19:31:40
+- bump: minor
+  changes:
+    added:
+    - Added OSTC to list of credits.
+  date: 2023-01-05 20:16:53
