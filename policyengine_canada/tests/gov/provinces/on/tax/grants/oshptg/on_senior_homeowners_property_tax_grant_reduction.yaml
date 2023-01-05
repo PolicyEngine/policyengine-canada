@@ -1,0 +1,23 @@
+- name: Under reduction threshold
+  period: 2022
+  input:
+    adjusted_family_net_income: 34_999
+    is_married: false
+  output:
+    on_senior_homeowners_property_tax_grant_reduction: 0
+
+- name: Unmarried reduction
+  period: 2022
+  input:
+    adjusted_family_net_income: 40_000
+    is_married: false
+  output:
+    on_senior_homeowners_property_tax_grant_reduction: 166.5
+
+- name: Married reduction
+  period: 2022
+  input:
+    adjusted_family_net_income: 50_000
+    is_married: true
+  output:
+    on_senior_homeowners_property_tax_grant_reduction: 166.5
