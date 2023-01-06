@@ -24,5 +24,5 @@ class gst_credit_singles_boost(Variable):
             return params.singles_boost_max
         else:
             return numpy.around(
-                min(difference * 0.02, params.singles_boost_max) * ~married, 2
+                min(difference * params.singles_boost_multiplier, params.singles_boost_max) * ~married, 2
             )

@@ -14,16 +14,9 @@ class gst_credit_reduction(Variable):
     # these modifications and just used net income.
     def formula(household, period, parameters):
         net_income = household("household_net_income", period)
-        reduction_threshold = parameters(
+    
+        reduction = parameters(
             period
-        ).gov.cra.tax.income.credits.gst_credit.reduction_threshold
-        difference = max(net_income - reduction_threshold, 0)
-        reduction = numpy.around(
-            difference
-            * parameters(
-                period
-            ).gov.cra.tax.income.credits.gst_credit.reduction_multiplier,
-            2,
-        )
-
-        return reduction
+        ).gov.cra.tax.income.credits.gst_credit.reduction.calc(net_income)
+        # Round to the nearest cent.
+        return numpy.around(reduction, 2)
