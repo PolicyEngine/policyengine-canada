@@ -1,0 +1,13 @@
+- name: Ineligible person gets zero.
+  period: 2022
+  input:
+    dtc_eligible: false
+  output:
+    disability_tax_credit: 0
+
+- name: Eligible person with supplement and income tax under credit amount; should be 8_662
+  period: 2022
+  input:
+    dtc_eligible: true
+  output:
+    disability_tax_credit: 8_662
