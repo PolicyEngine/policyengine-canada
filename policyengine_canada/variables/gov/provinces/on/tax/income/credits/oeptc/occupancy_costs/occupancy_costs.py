@@ -22,3 +22,6 @@ class occupancy_costs(Variable):
             student_residence * p.student_resident_supplement
         )
         return rent_multiplication + property_tax + student_residence_addition
+
+
+# TODO: simplify
