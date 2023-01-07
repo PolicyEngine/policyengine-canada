@@ -5,6 +5,72 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.21.0] - 2023-01-05 20:33:31
+
+### Added
+
+- Add ontario province definition to OCB.
+
+## [0.20.0] - 2023-01-05 20:16:53
+
+### Added
+
+- Added OSTC to list of credits.
+
+## [0.19.0] - 2023-01-05 19:31:40
+
+### Added
+
+- Ontario senior homeowners property tax grant.
+
+## [0.18.0] - 2023-01-04 22:09:26
+
+### Added
+
+- Canada provincial income tax structure.
+
+## [0.17.3] - 2023-01-03 23:40:13
+
+### Changed
+
+- Core version widened.
+
+## [0.17.2] - 2023-01-03 22:01:11
+
+### Fixed
+
+- Pip installs include folders.
+
+## [0.17.1] - 2023-01-03 21:48:48
+
+### Changed
+
+- Relaxed Numpy version requirement slightly.
+
+## [0.17.0] - 2023-01-03 21:48:21
+
+### Added
+
+- Ontario sales tax credit
+
+## [0.16.3] - 2023-01-03 21:22:07
+
+### Fixed
+
+- Missing package in Pip installs.
+
+## [0.16.2] - 2023-01-03 20:26:57
+
+### Fixed
+
+- PolicyEngine Core dependency relaxed to minor versions.
+
+## [0.16.1] - 2023-01-03 20:11:50
+
+### Added
+
+- Metadata to get PolicyEngine-Canada working.
+
 ## [0.16.0] - 2022-12-30 20:07:58
 
 ### Added
@@ -127,6 +193,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.21.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.20.0...0.21.0
+[0.20.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.19.0...0.20.0
+[0.19.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.18.0...0.19.0
+[0.18.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.17.3...0.18.0
+[0.17.3]: https://github.com/PolicyEngine/policyengine-canada/compare/0.17.2...0.17.3
+[0.17.2]: https://github.com/PolicyEngine/policyengine-canada/compare/0.17.1...0.17.2
+[0.17.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.17.0...0.17.1
+[0.17.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.16.3...0.17.0
+[0.16.3]: https://github.com/PolicyEngine/policyengine-canada/compare/0.16.2...0.16.3
+[0.16.2]: https://github.com/PolicyEngine/policyengine-canada/compare/0.16.1...0.16.2
+[0.16.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.16.0...0.16.1
 [0.16.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.15.0...0.16.0
 [0.15.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.14.1...0.15.0
 [0.14.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.14.0...0.14.1

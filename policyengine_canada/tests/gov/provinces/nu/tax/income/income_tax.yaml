@@ -1,0 +1,23 @@
+- name: Nunavut income tax 
+  period: 2022
+  input:
+    province: NUNAVUT
+    nu_taxable_income: 47_861
+  output:
+    nu_income_tax_before_credits: 1_914.44
+
+- name: Nunavut income tax; wrong province
+  period: 2022
+  input:
+    province: ALBERTA
+    nu_taxable_income: 46_225
+  output:
+    nu_income_tax_before_credits: 0
+
+- name: Nunavut income tax higher bracket
+  period: 2022
+  input:
+    province: NUNAVUT
+    nu_taxable_income: 160_000
+  output:
+    nu_income_tax_before_credits: 11_159.035

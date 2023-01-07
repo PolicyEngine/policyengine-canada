@@ -1,0 +1,23 @@
+- name: Prince Edward Island income tax 
+  period: 2022
+  input:
+    province: PRINCE_EDWARD_ISLAND
+    pe_taxable_income: 31_983
+  output:
+    pe_income_tax_before_credits: 3_134.334
+
+- name: Prince Edward Island income tax; wrong province
+  period: 2022
+  input:
+    province: ALBERTA
+    pe_taxable_income: 46_225
+  output:
+    pe_income_tax_before_credits: 0
+
+- name: Prince Edward Island income tax higher bracket
+  period: 2022
+  input:
+    province: PRINCE_EDWARD_ISLAND
+    pe_taxable_income: 100_000
+  output:
+    pe_income_tax_before_credits: 13_565.539

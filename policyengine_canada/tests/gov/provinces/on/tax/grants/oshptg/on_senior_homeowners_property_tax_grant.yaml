@@ -1,0 +1,15 @@
+- name: Reduction over base
+  period: 2022
+  input:
+    on_senior_homeowners_property_tax_grant_base: 500
+    on_senior_homeowners_property_tax_grant_reduction: 600
+  output:
+    on_senior_homeowners_property_tax_grant: 0
+
+- name: Reduction under base
+  period: 2022
+  input:
+    on_senior_homeowners_property_tax_grant_base: 500
+    on_senior_homeowners_property_tax_grant_reduction: 100
+  output:
+    on_senior_homeowners_property_tax_grant: 400

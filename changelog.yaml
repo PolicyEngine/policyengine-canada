@@ -98,3 +98,58 @@
     added:
     - Ontario child benefit.
   date: 2022-12-30 20:07:58
+- bump: patch
+  changes:
+    added:
+    - Metadata to get PolicyEngine-Canada working.
+  date: 2023-01-03 20:11:50
+- bump: patch
+  changes:
+    fixed:
+    - PolicyEngine Core dependency relaxed to minor versions.
+  date: 2023-01-03 20:26:57
+- bump: patch
+  changes:
+    fixed:
+    - Missing package in Pip installs.
+  date: 2023-01-03 21:22:07
+- bump: minor
+  changes:
+    added:
+    - Ontario sales tax credit
+  date: 2023-01-03 21:48:21
+- bump: patch
+  changes:
+    changed:
+    - Relaxed Numpy version requirement slightly.
+  date: 2023-01-03 21:48:48
+- bump: patch
+  changes:
+    fixed:
+    - Pip installs include folders.
+  date: 2023-01-03 22:01:11
+- bump: patch
+  changes:
+    changed:
+    - Core version widened.
+  date: 2023-01-03 23:40:13
+- bump: minor
+  changes:
+    added:
+    - Canada provincial income tax structure.
+  date: 2023-01-04 22:09:26
+- bump: minor
+  changes:
+    added:
+    - Ontario senior homeowners property tax grant.
+  date: 2023-01-05 19:31:40
+- bump: minor
+  changes:
+    added:
+    - Added OSTC to list of credits.
+  date: 2023-01-05 20:16:53
+- bump: minor
+  changes:
+    added:
+    - Add ontario province definition to OCB.
+  date: 2023-01-05 20:33:31

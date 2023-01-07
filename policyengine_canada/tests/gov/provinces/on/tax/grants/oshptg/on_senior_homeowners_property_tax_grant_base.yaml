@@ -1,0 +1,50 @@
+- name: No property tax paid
+  period: 2022
+  input:
+    province: ONTARIO
+    property_tax: 0
+    age: 64
+  output:
+    on_senior_homeowners_property_tax_grant_base: 0
+
+- name: Under age eligibility
+  period: 2022
+  input:
+    province: ONTARIO
+    property_tax: 100
+    age: 63
+  output:
+    on_senior_homeowners_property_tax_grant_base: 0
+
+- name: Wrong province
+  period: 2022
+  input:
+    people:
+      person:
+        age: 64
+        property_tax: 100
+    households:
+      household:
+        members: [person]
+        province: MANITOBA
+  output:
+    on_senior_homeowners_property_tax_grant_base: 0
+
+
+- name: Property tax under max amount
+  period: 2022
+  input:
+    province: ONTARIO
+    property_tax: 100
+    age: 64
+  output:
+    on_senior_homeowners_property_tax_grant_base: 100
+
+- name: Property tax over max amount
+  period: 2022
+  input:
+    province: ONTARIO
+    property_tax: 600
+    age: 64
+  output:
+    on_senior_homeowners_property_tax_grant_base: 500

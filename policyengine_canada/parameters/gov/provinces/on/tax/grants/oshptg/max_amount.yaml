@@ -1,0 +1,10 @@
+description:  Maximum amount of the Ontario senior homeoweners' property tax grant.
+values:
+  2022-01-01: 500
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Ontario senior homeoweners' property tax grant max amount
+  reference:
+  - title: Government of Canada - Ontario Senior Homeowners' Property Tax Grant (OSHPTG)
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/ontario-senior-homeowners-property-tax-grant-oshptg-questions-answers.html 
