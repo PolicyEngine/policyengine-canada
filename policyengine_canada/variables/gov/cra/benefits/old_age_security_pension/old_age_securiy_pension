@@ -1,0 +1,13 @@
+class old_age_security_pension(Variable):
+    value_type = float
+    entity = Person
+    label = "Old age security pension"
+    documentation = "The difference between OAS pre-clawback and the OAS repayment."
+    unit = CAD
+    definition_period = YEARs 
+
+    def formula(person, period, parameters):
+        oas_pre_clawback = person("old_age_security_pension_pre_clawback", period)
+        repayment = person("old_age_security_pension_repayment", period)
+
+        return(oas_pre_clawback - repayment)
