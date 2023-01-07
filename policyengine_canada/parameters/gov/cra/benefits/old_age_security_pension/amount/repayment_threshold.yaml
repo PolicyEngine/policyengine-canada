@@ -1,6 +1,6 @@
 description: OAS Repayment Threshold
 values:
-  2022-12-31: 81_761
+  2022-01-01: 81_761
 
 metadata:
   label: Repayment threshold

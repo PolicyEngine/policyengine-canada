@@ -1,6 +1,6 @@
-description: The amount you receive if you meet the age and residuence requirements but are _below_ the age threshold for the seniors increase
+description: The annual amount you receive if you meet the age and residuence requirements but are _below_ the age threshold for the seniors increase
 values:
-  2022-01-01: 685.50
+  2022-01-01: 8226
 metadata:
   unit: currency-CAD
   name: old_age_security_pension_maximum_amount

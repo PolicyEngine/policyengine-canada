@@ -5,15 +5,15 @@
     adult_years_in_canada: 47
   output:
     old_age_security_pension_eligibility: TRUE
-    old_age_security_pension_pre_clawback: 685.50
+    old_age_security_pension_pre_repayment: 8226
 
-- name: HERE NOW same but with only 20 years of residence (all of their adult years)
+- name: Same but with only 20 years of residence (all of their adult years)
   period: 2022
   input:
     age: 66
     adult_years_in_canada: 20
   output:
-    old_age_security_pension_pre_clawback: 342.75
+    old_age_security_pension_pre_repayment: 4113
 
 - name: 80 year-old with 62 years of residence (all of their adult years)
   period: 2022
@@ -21,7 +21,7 @@
     age: 80
     adult_years_in_canada: 62
   output:
-    old_age_security_pension_pre_clawback: 754.05
+    old_age_security_pension_pre_repayment: 9048.60
 
 - name: 65 year old but with only 5 years of residency, so not eligible
   period: 2022
@@ -30,7 +30,7 @@
     adult_years_in_canada: 5
   output:
     old_age_security_pension_eligibility: FALSE
-    old_age_security_pension_pre_clawback: 0
+    old_age_security_pension_pre_repayment: 0
 
 - name: only 64 years old so not eligible
   period: 2022
@@ -48,5 +48,18 @@
     individual_net_income: 5_000_000
   output:
     old_age_security_pension_eligibility: TRUE
-    old_age_security_pension_pre_clawback: 685.50
-    old_age_security_pension_repayment: 685.50
+    old_age_security_pension_pre_repayment: 8226
+    old_age_security_pension_repayment: 8226
+    old_age_security_pension: 0
+
+- name: 80 year-old with 62 years of residence (all of their adult years), but with a partial reduction where 100,000 - 81761 = 18239 * .15 = 2735.85
+  period: 2022
+  input:
+    age: 80
+    adult_years_in_canada: 62
+    individual_net_income: 100_000
+  output:
+    old_age_security_pension_pre_repayment: 9048.60
+    old_age_security_pension_repayment: 2735.85
+    old_age_security_pension: 6312.75
+

@@ -1,6 +1,6 @@
 description: OAS Repayment Rate
 values:
-  2022-12-31: 0.15
+  2022-01-01: 0.15
 
 metadata:
   type: single_amount
