@@ -11,8 +11,9 @@ class old_age_security_pension(Variable):
 
     def formula(person, period, parameters):
 
-      pre_repayment = person("old_age_security_pension_pre_repayment", period)
-      repayment = person("old_age_security_pension_repayment", period)
+        pre_repayment = person(
+            "old_age_security_pension_pre_repayment", period
+        )
+        repayment = person("old_age_security_pension_repayment", period)
 
-      return(numpy.around(pre_repayment - repayment, 2))
-
+        return numpy.around(pre_repayment - repayment, 2)

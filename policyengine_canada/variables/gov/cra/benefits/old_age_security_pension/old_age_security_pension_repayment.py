@@ -11,15 +11,15 @@ class old_age_security_pension_repayment(Variable):
     unit = CAD
     definition_period = YEAR
 
-
     def formula(person, period, parameters):
         p = parameters(period).gov.cra.benefits.old_age_security_pension.amount
-        # The income concept in the documentation is 'net world income'. I just use net income here. 
+        # The income concept in the documentation is 'net world income'. I just use net income here.
         net_income = person("individual_net_income", period)
-        oas_pre_repayment = person("old_age_security_pension_pre_repayment", period)
+        oas_pre_repayment = person(
+            "old_age_security_pension_pre_repayment", period
+        )
         difference = max(net_income - p.repayment_threshold, 0)
         repayment = min(oas_pre_repayment, (difference * p.repayment_rate))
 
-        # Round to the nearest cent. 
+        # Round to the nearest cent.
         return numpy.around(repayment, 2)
-
