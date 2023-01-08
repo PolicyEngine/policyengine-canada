@@ -1,7 +1,6 @@
 description: GST credit adult age.
 values:
-  2022-07-01:
-    value: 19
+  2022-07-01: 19
           
 metadata:
   label: The age at which a household can no longer get a benefit amount for this child. 

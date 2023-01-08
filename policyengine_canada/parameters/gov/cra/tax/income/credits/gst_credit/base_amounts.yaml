@@ -5,7 +5,7 @@ HEAD:
 SPOUSE:
   2022-07-01: 306
 CHILD:
-  2022-07-01: 306
+  2022-07-01: 161
 
 metadata:
   unit: currency-CAD
@@ -15,5 +15,4 @@ metadata:
   reference:
     - title: Government of Canada - GST calculation sheet for the July 2022 to June 2023 payments (2021 base year)
       href: https://www.canada.ca/content/dam/cra-arc/serv-info/benefits/gstcclc21-eng.pdf
-  breakdown:
  

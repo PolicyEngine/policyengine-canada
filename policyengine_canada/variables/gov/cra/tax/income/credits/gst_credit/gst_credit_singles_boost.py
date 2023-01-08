@@ -6,7 +6,7 @@ class gst_credit_singles_boost(Variable):
     entity = Household
     label = "GST Credit Additional Amount for Singles"
     unit = CAD
-    documentation = " "
+    documentation = "Single-adult households without children get 2 percent of the difference between family net income and the threshold amount, up to a maximum of $161. Single-adult households _with_ children always get the maximum of $161, regardless of household net income."
     definition_period = YEAR
 
     # Singles get an amount between 0 and 161, but single _parents_ always get the full 161.
@@ -16,7 +16,7 @@ class gst_credit_singles_boost(Variable):
             "gst_credit_single_parent_household", period
         )
         net_income = household("household_net_income", period)
-        params = parameters(period).gov.cra.tax.income.credits.gst_credit
+        params = parameters(period).gov.cra.tax.income.credits.gst_credit.singles_boost
         threshold = params.singles_boost_threshold
         difference = max(net_income - threshold, 0)
 

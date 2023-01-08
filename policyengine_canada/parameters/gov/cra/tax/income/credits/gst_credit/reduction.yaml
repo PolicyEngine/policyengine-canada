@@ -1,16 +1,12 @@
 description: GST credit reduction multiplier
 brackets:
   - threshold:
-      values:
         2022-12-31: 0
     rate:
-      values:
         2022-12-31: 0
   - threshold:
-      values:
         2022-12-31: 39_826
     rate:
-      values:
         2022-12-31: 0.05
 
           

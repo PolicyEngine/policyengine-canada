@@ -1,4 +1,4 @@
-- name: Family with no children BASE AMOUNT ONLY CHANGE THIS
+- name: Base amount for family of 3
   period: 2023
   input:
     people:
@@ -11,19 +11,114 @@
     household:
       members: [parent, c1, c2]
   output:
-    gst_credit_person: [306, 306, 306]
+    gst_credit_base: 306 + 306 + 161
 
-- name: Single person with income 15,000. Should get a boost of (15,000 - 9919) * 0.02 = 101.62
+- name: Number of dependent children
   period: 2023
   input:
     people:
-      p1:
+      parent:
         gst_credit_category: HEAD
+        is_dependent: false
+        age: 55
+      c1:
+        gst_credit_category: CHILD
+        is_dependent: true
+        age: 16
+      c2:
+        gst_credit_category: CHILD
+        is_dependent: true
+        age: 17
     household:
-      members: [p1]
-      is_married: false
-      gst_credit_single_parent_household: false
-      household_net_income: 15_000
+      members: [parent, c1, c2]
+  output:
+    gst_credit_dependent_children: 2
+    gst_credit_base: 306 + 161 + 161
+
+- name: Is considered a child for this credit
+  period: 2023
+  input:
+    gst_credit_category: CHILD
+    is_dependent: true
+    age: 7
+  output:
+    is_child_for_gst_credit: true
+
+- name: Isn't a child because not dependent
+  period: 2023
+  input:
+    gst_credit_category: CHILD
+    is_dependent: false
+    age: 7
+  output:
+    is_child_for_gst_credit: false
+
+- name: Is a single parent household
+  period: 2023
+  input:
+    is_married: false
+    people:
+      parent:
+        gst_credit_category: HEAD
+        age: 55
+      c1:
+        gst_credit_category: CHILD
+        is_dependent: true
+        age: 16
+      c2:
+        gst_credit_category: CHILD
+        is_dependent: true
+        age: 17
+    household:
+      members: [parent, c1, c2]
+  output:
+    gst_credit_single_parent_household: true
+
+
+- name: Number of dependent children, being over the age limit excludes c2
+  period: 2023
+  input:
+    people:
+      parent:
+        gst_credit_category: HEAD
+        is_dependent: false
+        age: 55
+      c1:
+        gst_credit_category: CHILD
+        is_dependent: true
+        age: 16
+      c2:
+        gst_credit_category: CHILD
+        is_dependent: true
+        age: 19
+    household:
+      members: [parent, c1, c2]
+  output:
+    gst_credit_dependent_children: 1
+    gst_credit_base: 306 + 161 + 161
+
+- name: Personal amounts for family of 3 
+  period: 2023
+  input:
+    people:
+      parent:
+        gst_credit_category: HEAD
+      c1:
+        gst_credit_category: SPOUSE
+      c2:
+        gst_credit_category: CHILD
+    household:
+      members: [parent, c1, c2]
+  output:
+    gst_credit_person: [306, 306, 161]
+
+- name: Singles boost. Single person with income 15,000. Should get a boost of (15,000 - 9919) * 0.02 = 101.62
+  period: 2023
+  input:
+    gst_credit_category: HEAD
+    is_married: false
+    gst_credit_single_parent_household: false
+    household_net_income: 15_000
   output:
     gst_credit_singles_boost: 101.62
 
@@ -42,7 +137,7 @@
       household_net_income: 15_000
   output:
     gst_credit_singles_boost: 161
-    gst_credit: 306 * 2 + 161
+    gst_credit: (306 + 161) + 161
   
 - name: Same as above but for a married household, so the boost doesn't apply
   period: 2023
@@ -60,7 +155,7 @@
       household_net_income: 15_000
   output:
     gst_credit_singles_boost: 0
-    gst_credit: 306 * 3
+    gst_credit: 306 + 306 + 161
 
 - name: A household with less than $39,826 in net income should have a reduction of 0. 
   period: 2023
@@ -79,7 +174,7 @@
   output:
     gst_credit_reduction: 0 
 
-- name: A household with $100,000 in net income should have a reduction of $3,008.70
+- name: Total credit. A household with $100,000 in net income should have a reduction of $3,008.70
   period: 2023
   input:
     people:
@@ -96,6 +191,3 @@
   output:
     gst_credit_reduction: 3_008.70
     gst_credit: 0
-
-
-
