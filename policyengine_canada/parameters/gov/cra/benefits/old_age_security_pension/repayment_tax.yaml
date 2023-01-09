@@ -1,0 +1,31 @@
+description: OAS Repayment Tax
+brackets:
+  - threshold: 
+      values: 
+        2020-12-31: 0
+        2021-12-31: 0
+        2022-12-31: 0
+    rate: 
+      values: 
+        2020-12-31: 0
+        2021-12-31: 0
+        2022-12-31: 0
+  - threshold:
+      values:
+        2020-12-31: 79_845
+        2021-12-31: 81_761
+        2022-12-31: 86_912
+    rate: 
+      values:
+        2020-12-31: 0.15
+        2021-12-31: 0.15
+        2022-12-31: 0.15
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: Repayment tax
+  reference:
+    - title: Government of Canada - Old Age Security Pension Recovery Tax
+      href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/recovery-tax.html
