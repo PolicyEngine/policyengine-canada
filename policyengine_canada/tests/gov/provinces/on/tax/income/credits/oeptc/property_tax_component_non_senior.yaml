@@ -1,0 +1,13 @@
+- name: 1_000 * 0.1 (capped at 810) + 62 = 162
+  period: 2022
+  input:
+    occupancy_costs: 1_000
+  output:
+    property_tax_component_non_senior: 162
+
+- name: 1_000 * 0.1 (capped at 810) + 62 = 872
+  period: 2022
+  input:
+    occupancy_costs: 10_000
+  output:
+    property_tax_component_non_senior: 872
