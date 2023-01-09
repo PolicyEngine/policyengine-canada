@@ -12,14 +12,16 @@ class old_age_security_pension_repayment(Variable):
     definition_period = YEAR
 
     def formula(person, period, parameters):
-        p = parameters(period).gov.cra.benefits.old_age_security_pension.amount
+        p = parameters(period).gov.cra.benefits.old_age_security_pension
         # The income concept in the documentation is 'net world income'. I just use net income here.
         net_income = person("individual_net_income", period)
+        # The repayment tax is a percent of income above a threshold.
+        uncapped_repayment_tax = p.repayment_tax.calc(net_income)
+        # Cap repayment at the pre-repayment amount.
         oas_pre_repayment = person(
             "old_age_security_pension_pre_repayment", period
         )
-        difference = max(net_income - p.repayment_threshold, 0)
-        repayment = min(oas_pre_repayment, (difference * p.repayment_rate))
+        repayment_tax = min_(oas_pre_repayment, uncapped_repayment_tax)
 
         # Round to the nearest cent.
-        return numpy.around(repayment, 2)
+        return numpy.around(repayment_tax, 2)

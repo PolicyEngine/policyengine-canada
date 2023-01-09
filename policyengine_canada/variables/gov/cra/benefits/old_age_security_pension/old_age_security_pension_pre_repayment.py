@@ -33,9 +33,11 @@ class old_age_security_pension_pre_repayment(Variable):
         )
         # Apply the old age boost to the base amount if applicable.
         # In the SPSD/M 29.0 this is imoasmax.
-        return (
+        amount = (
             eligible
             * base_amount
             * residency_scale_factor
             * total_older_increase_factor
         )
+
+        return numpy.around(amount, 2)

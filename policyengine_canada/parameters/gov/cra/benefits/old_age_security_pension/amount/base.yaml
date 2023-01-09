@@ -3,8 +3,8 @@ values:
   2022-01-01: 8226
 metadata:
   unit: currency-CAD
-  name: old_age_security_pension_maximum_amount
-  label: Old Age Security Pension Maximum Amount 
+  name: old_age_security_pension_base_amount
+  label: Old Age Security Pension Base Amount
   reference:
   - title: Government of Canada - Old Age Security Pension
     href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html

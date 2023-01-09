@@ -8,12 +8,5 @@ class old_age_security_pension(Variable):
     documentation = "The OAS amount a person is eligible for prior to the repayment tax. See SPSD/M 'imoasmax'."
     unit = CAD
     definition_period = YEAR
-
-    def formula(person, period, parameters):
-
-        pre_repayment = person(
-            "old_age_security_pension_pre_repayment", period
-        )
-        repayment = person("old_age_security_pension_repayment", period)
-
-        return numpy.around(pre_repayment - repayment, 2)
+    adds = ["old_age_security_pension_pre_repayment"]
+    subtracts = ["old_age_security_pension_repayment"]
