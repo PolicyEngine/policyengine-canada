@@ -1,0 +1,6 @@
+- name: 1_000 * 0.1 (capped at 499) + 529 = 629
+  period: 2022
+  input:
+    occupancy_costs: 1_000
+  output:
+    property_tax_component_senior: 629

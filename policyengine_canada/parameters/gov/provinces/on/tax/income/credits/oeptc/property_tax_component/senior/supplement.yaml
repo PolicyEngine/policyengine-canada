@@ -1,9 +1,9 @@
-description: Ontario energy and property tax credit property tax component initial cap.
+description: Ontario energy and property tax credit property tax component supplement for seniors.
 values:
-  2022-01-01: 810
+  2022-01-01: 529
 metadata:
   unit: currency-CAD
-  label: Ontario energy and property tax credit property tax initial cap
+  label: Ontario energy and property tax credit property tax supplement for seniors
   reference:
   - title: Government of Canada - Province of Ontario - 2022 Ontario energy and property tax credit (OEPTC) - Calculation sheet
     href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/2022-ontario-energy-property-tax-credit-oeptc-calculation-sheet-for-married-common-law-individuals-who-have-do-not-have-children.html
