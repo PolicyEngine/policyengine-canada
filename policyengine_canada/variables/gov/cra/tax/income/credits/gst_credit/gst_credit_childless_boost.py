@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class gst_credit_singles_boost(Variable):
+class gst_credit_childless_boost(Variable):
     value_type = float
     entity = Household
     label = "GST Credit Additional Amount for Singles"
@@ -16,13 +16,13 @@ class gst_credit_singles_boost(Variable):
             "gst_credit_single_parent_household", period
         )
         net_income = household("household_net_income", period)
-        params = parameters(period).gov.cra.tax.income.credits.gst_credit.singles_boost
-        threshold = params.singles_boost_threshold
-        difference = max(net_income - threshold, 0)
-
-        if single_parent_household:
-            return params.singles_boost_max
-        else:
-            return numpy.around(
-                min(difference * params.singles_boost_multiplier, params.singles_boost_max) * ~married, 2
-            )
+        p = parameters(
+            period
+        ).gov.cra.tax.income.credits.gst_credit.childless_boost
+        childless_phase_in = p.childless_phase_in.calc(net_income)
+        childless_amount = min_(p.cap, childless_phase_in)
+        amount_if_single = where(
+            single_parent_household, p.cap, childless_amount
+        )
+        eligible = ~household("is_married", period)
+        return eligible * amount_if_single

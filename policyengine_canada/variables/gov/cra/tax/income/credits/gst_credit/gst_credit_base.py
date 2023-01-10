@@ -9,4 +9,4 @@ class gst_credit_base(Variable):
     documentation = " "
     definition_period = YEAR
 
-    formula = sum_of_variables(["gst_credit_person"])
+    adds = ["gst_credit_person"]

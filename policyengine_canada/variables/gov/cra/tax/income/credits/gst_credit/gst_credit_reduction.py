@@ -14,7 +14,7 @@ class gst_credit_reduction(Variable):
     # these modifications and just used net income.
     def formula(household, period, parameters):
         net_income = household("household_net_income", period)
-    
+
         reduction = parameters(
             period
         ).gov.cra.tax.income.credits.gst_credit.reduction.calc(net_income)

@@ -1,10 +1,10 @@
-description: GST credit singles boost threshold
+description: GST credit childless boost cap
 values:
   2022-07-01: 161
           
 metadata:
   unit: currency-CAD
-  name: gst_credit_singles_boost_maximum
+  name: gst_credit_childless_boost_maximum
   label: The maximum boost amount for singles. Single parent households will always receive this amount. 
   reference:
     - title: Government of Canada - GST Credit Calculation Sheet
