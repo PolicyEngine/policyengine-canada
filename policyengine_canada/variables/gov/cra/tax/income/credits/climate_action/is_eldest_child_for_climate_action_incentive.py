@@ -6,6 +6,7 @@ class is_eldest_child_for_climate_action_incentive(Variable):
     entity = Person
     label = "Is the first born child in a household, for the purposes of the Climate Action Incentive"
     definition_period = YEAR
+    defined_for = "is_child_for_climate_action_incentive"
 
     def formula(person, period, parameters):
         household = person.household

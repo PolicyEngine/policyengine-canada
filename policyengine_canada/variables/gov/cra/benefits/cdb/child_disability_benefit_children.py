@@ -7,4 +7,4 @@ class child_disability_benefit_children(Variable):
     label = "Children eligible for the Child Disability Benefit"
     definition_period = YEAR
 
-    formula = sum_of_variables(["child_disability_benefit_eligible"])
+    adds = ["child_disability_benefit_eligible"]
