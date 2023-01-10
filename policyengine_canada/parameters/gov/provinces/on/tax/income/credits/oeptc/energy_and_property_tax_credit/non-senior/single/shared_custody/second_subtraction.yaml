@@ -1,9 +1,0 @@
-description: Ontario energy and property tax credit eptc single non-senior shared custody children second subtraction.
-values:
-  2022-01-01: 37_373
-metadata:
-  unit: currency-CAD
-  label: Ontario energy and property tax credit energy eptc single non-senior with children shared custody second subtraction
-  reference:
-  - title: Government of Canada - Province of Ontario - 2022 Ontario energy and property tax credit (OEPTC) - Calculation sheet
-    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/2022-ontario-energy-property-tax-credit-oeptc-calculation-sheet-single-seniors-who-share-care-their-children.html

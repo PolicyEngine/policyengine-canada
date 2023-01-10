@@ -25,15 +25,7 @@ class energy_component(Variable):
             * p.student_resident_reduction
         )
 
-        occupancy_costs = household("occupancy_costs", period)
         return min_(
             p.max_amount,
-            (
-                max_(
-                    0,
-                    long_term_care_home
-                    + reserve_home_energy_costs
-                    - student_resident,
-                )
-            ),
+            long_term_care_home + reserve_home_energy_costs - student_resident,
         )

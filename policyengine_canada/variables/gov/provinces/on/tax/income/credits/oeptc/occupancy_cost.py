@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class occupancy_costs(Variable):
+class occupancy_cost(Variable):
     value_type = float
     entity = Household
-    label = "Oeptc occupancy costs"
+    label = "OEPTC occupancy cost"
     unit = CAD
     definition_period = YEAR
 
@@ -15,11 +15,10 @@ class occupancy_costs(Variable):
             period
         ).gov.provinces.on.tax.income.credits.oeptc.occupancy_costs
         student_residence = person("lived_in_a_student_residence", period)
-        rent_multiplication = person("rent", period) * p.multiplication_factor
+        countable_rent = person("rent", period) * p.rent_multiplication_factor
         student_residence_addition = (
             student_residence * p.student_resident_supplement
         )
-        return rent_multiplication + property_tax + student_residence_addition
-
-
-# TODO: simplify
+        return household.sum(
+            countable_rent + property_tax + student_residence_addition
+        )
