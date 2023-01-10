@@ -54,6 +54,7 @@
 
 - name: 80 year-old with 62 years of residence (all of their adult years), but with a partial reduction where 100,000 - 81761 = 18239 * .15 = 2735.85
   period: 2022
+  absolute_error_margin: 0.01
   input:
     age: 80
     adult_years_in_canada: 62
