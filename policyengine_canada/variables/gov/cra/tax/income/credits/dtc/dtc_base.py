@@ -7,8 +7,7 @@ class dtc_base(Variable):
     label = "Disability tax credit base"
     unit = CAD
     definition_period = YEAR
+    defined_for = "dtc_eligible"
 
     def formula(person, period, parameters):
-        p = parameters(period).gov.cra.tax.income.credits.dtc
-        eligible = person("dtc_eligible", period)
-        return p.base * eligible
+        return parameters(period).gov.cra.tax.income.credits.dtc.base
