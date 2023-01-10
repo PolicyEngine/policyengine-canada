@@ -8,4 +8,4 @@ class refundable_tax_credits(Variable):
     unit = CAD
     definition_period = YEAR
 
-    formula = sum_of_variables("gov.cra.tax.income.credits.refundable")
+    adds = "gov.cra.tax.income.credits.refundable"

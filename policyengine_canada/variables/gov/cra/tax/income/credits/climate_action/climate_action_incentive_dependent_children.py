@@ -9,4 +9,4 @@ class climate_action_incentive_dependent_children(Variable):
     documentation = "Number of eligible dependent children"
     definition_period = YEAR
 
-    formula = sum_of_variables(["is_child_for_climate_action_incentive"])
+    adds = ["is_child_for_climate_action_incentive"]
