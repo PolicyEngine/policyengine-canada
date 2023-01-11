@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class occupancy_cost(Variable):
+class oeptc_occupancy_cost(Variable):
     value_type = float
     entity = Household
     label = "OEPTC occupancy cost"

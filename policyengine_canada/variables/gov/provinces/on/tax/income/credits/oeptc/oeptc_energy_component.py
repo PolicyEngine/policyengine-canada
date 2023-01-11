@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class energy_component(Variable):
+class oeptc_energy_component(Variable):
     value_type = float
     entity = Household
     label = "Oeptc energy component"
@@ -24,8 +24,11 @@ class energy_component(Variable):
             person("lived_in_a_student_residence", period)
             * p.student_resident_reduction
         )
-
+        occupancy_costs = household("oeptc_occupancy_costs", period)
         return min_(
             p.max_amount,
-            long_term_care_home + reserve_home_energy_costs - student_resident,
+            long_term_care_home
+            + reserve_home_energy_costs
+            + occupancy_costs
+            - student_resident,
         )
