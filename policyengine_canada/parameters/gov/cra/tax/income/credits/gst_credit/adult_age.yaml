@@ -1,0 +1,9 @@
+description: GST credit adult age.
+values:
+  2022-07-01: 19
+          
+metadata:
+  label: The age at which a household can no longer get a benefit amount for this child. 
+  reference:
+    - title: Government of Canada - GST Credit Calculation Sheet
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/goods-services-tax-harmonized-sales-tax-gst-hst-credit/goods-services-tax-harmonized-sales-tax-credit-calculation-sheet-july-2022-june-2023-payments-2021-tax-year.html
