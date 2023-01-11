@@ -15,12 +15,12 @@ class gst_credit_category(Variable):
     definition_period = YEAR
 
     def formula(person, period, parameters):
-        child = person("is_child_for_gst_credit", period)
         return select(
-            [person("is_head", period), person("is_spouse", period), child],
+            [person("is_head", period), person("is_spouse", period), person("is_eldest_child_in_single_household_for_gst_credit", period), person("is_child_for_gst_credit", period) & ~person("is_eldest_child_in_single_household_for_gst_credit", period)],
             [
                 GSTCreditCategory.HEAD,
                 GSTCreditCategory.SPOUSE,
+                GSTCreditCategory.SPOUSE,
                 GSTCreditCategory.CHILD,
-            ],
+            ], default=0
         )

@@ -18,22 +18,20 @@
   input:
     people:
       parent:
-        gst_credit_category: HEAD
         is_dependent: false
         age: 55
       c1:
-        gst_credit_category: CHILD
         is_dependent: true
         age: 16
       c2:
-        gst_credit_category: CHILD
         is_dependent: true
         age: 17
     household:
       members: [parent, c1, c2]
+      is_married: false
   output:
     gst_credit_dependent_children: 2
-    gst_credit_base: 306 + 161 + 161
+    gst_credit_base: 306 + 306 + 161
 
 - name: Is considered a child for this credit
   period: 2023
@@ -52,6 +50,50 @@
     age: 7
   output:
     is_child_for_gst_credit: false
+
+- name: Is eldest child in single-parent household 
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 50
+      c1:
+        age: 17
+      c2:
+        age: 7
+    household:
+      members: [parent, c1, c2]
+      is_married: false
+  output:
+    people: 
+      c1:        
+        is_eldest_child_in_single_household_for_gst_credit: true
+      c2:        
+        is_eldest_child_in_single_household_for_gst_credit: false
+
+- name: Eldest child in single-parent household gets the spousal amount
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 50
+      c1:
+        age: 17
+      c2:
+        age: 7
+    household:
+      members: [parent, c1, c2]
+      is_married: false
+  output:
+    people: 
+      parent:
+        gst_credit_person: 306
+      c1:        
+        gst_credit_person: 306
+      c2: 
+        gst_credit_person: 161
+    gst_credit_base: 306 + 306 + 161
+
 
 - name: Is a single parent household
   period: 2023
