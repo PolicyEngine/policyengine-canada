@@ -27,4 +27,4 @@ metadata:
     href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/2022-ontario-energy-property-tax-credit-oeptc-calculation-sheet-for-married-common-law-individuals-who-have-do-not-have-children.html
   breakdown:
     - oeptc_senior_status
-    - oeptc_household_type
+    - oeptc_category

@@ -10,6 +10,8 @@ class oeptc_senior_status(Variable):
     value_type = Enum
     entity = Household
     label = "Is a senior for the OEPTC"
+    possible_values = OEPTCSeniorStatus
+    default_value = OEPTCSeniorStatus.NON_SENIOR
     definition_period = YEAR
 
     def formula(household, period, parameters):

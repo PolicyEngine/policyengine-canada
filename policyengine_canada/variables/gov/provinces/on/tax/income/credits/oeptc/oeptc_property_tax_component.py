@@ -15,11 +15,14 @@ class oeptc_property_tax_component(Variable):
             period
         ).gov.provinces.on.tax.income.credits.oeptc.property_tax_component
         # Step A: "Multiply the result of Step 1 by x%"
-        multiplied_occupancy_cost = (
-            household("occupancy_cost", period) * p.multiplication_factor
-        )
+        occupancy_cost = household("oeptc_occupancy_cost", period)
+        multiplied_occupancy_cost = occupancy_cost * p.multiplication_factor
         # Step B: Use A or $x, whichever is less.
         cap = p.initial_cap[senior_status]
         capped_multiplied_occupancy_cost = min_(multiplied_occupancy_cost, cap)
         # Step C: Add $x to B.
-        return capped_multiplied_occupancy_cost + p.supplement[senior_status]
+
+        return min_(
+            occupancy_cost,
+            capped_multiplied_occupancy_cost + p.supplement[senior_status],
+        )

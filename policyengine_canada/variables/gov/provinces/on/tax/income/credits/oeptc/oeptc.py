@@ -11,7 +11,9 @@ class oeptc(Variable):
     def formula(household, period, parameters):
         # A. Add the results of Step 2 and Step 3.
         energy_plus_property_tax_components = add(
-            household, period, ["energy_component", "property_tax_component"]
+            household,
+            period,
+            ["oeptc_energy_component", "oeptc_property_tax_component"],
         )
         # B. Subtract $x from your adjusted family net income for 2021 (if
         #    negative, the result is zero).
@@ -60,8 +62,14 @@ class oeptc(Variable):
             + shared_custody_second_phased_out_divided
         )
         # Return result depending on shared custody.
-        return where(
-            category == category.possible_values.SINGLE_SHARED_CUSTODY,
-            shared_custody_result,
-            phased_out,
+        print(energy_plus_property_tax_components)
+        print(phase_out)
+        print(phased_out)
+        return max_(
+            0,
+            where(
+                category == category.possible_values.SINGLE_SHARED_CUSTODY,
+                shared_custody_result,
+                phased_out,
+            ),
         )

@@ -12,6 +12,7 @@ class oeptc_category(Variable):
     value_type = Enum
     entity = Household
     possible_values = OEPTCCategory
+    default_value = OEPTCCategory.SINGLE_SHARED_CUSTODY
     definition_period = YEAR
 
     def formula(household, period, parameters):

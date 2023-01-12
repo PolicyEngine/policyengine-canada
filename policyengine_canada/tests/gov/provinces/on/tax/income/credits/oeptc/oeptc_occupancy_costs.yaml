@@ -5,7 +5,7 @@
     property_tax: 1_000
     lived_in_a_student_residence: false
   output:
-    occupancy_costs: 3_000
+    oeptc_occupancy_cost: 3_000
 
 - name: 10_000 * 0.2 + 1_000 + 25 = 3_000
   period: 2022
@@ -14,4 +14,4 @@
     property_tax: 1_000
     lived_in_a_student_residence: true
   output:
-    occupancy_costs: 3_025
+    oeptc_occupancy_cost: 3_025
