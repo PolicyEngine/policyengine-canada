@@ -1,0 +1,10 @@
+description: Ontario energy and property tax credit occupancy costs student resident supplement.
+values:
+  2022-01-01: 25
+metadata:
+  unit: currency-CAD
+  label: Ontario energy and property tax credit occupancy costs student resident supplement
+  reference:
+  - title: Government of Canada - Province of Ontario - 2022 Ontario energy and property tax credit (OEPTC) - Calculation sheet
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/2022-ontario-energy-property-tax-credit-oeptc-calculation-sheet-for-married-common-law-individuals-who-have-do-not-have-children.html
+

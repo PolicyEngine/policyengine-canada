@@ -1,0 +1,56 @@
+- name: Married Non-senior (1_000 + 1_000 - ((40_000 - 31_144) * 0.02)) = 1_822.88
+  period: 2022
+  input:
+    oeptc_senior_status: NON_SENIOR
+    oeptc_category: MARRIED
+    oeptc_energy_component: 1_000
+    oeptc_property_tax_component: 1_000
+    adjusted_family_net_income: 40_000
+  output:
+    oeptc: 1_822.88
+
+- name: Married Non-senior (1_000 + 1_000 - ((30_000 - 31_144) ( if negative then 0) * 0.02)) = 2_000
+  period: 2022
+  input:
+    oeptc_senior_status: NON_SENIOR
+    oeptc_category: MARRIED
+    oeptc_energy_component: 1_000
+    oeptc_property_tax_component: 1_000
+    adjusted_family_net_income: 30_000
+  output:
+    oeptc: 2_000
+
+
+- name: Single without children Non-senior (1_000 + 1_000 - ((30_000 - 24_916) * 0.02)) = 1_898.32
+  period: 2022
+  input:
+    oeptc_senior_status: NON_SENIOR
+    oeptc_category: SINGLE_NO_CHILDREN
+    oeptc_energy_component: 1_000
+    oeptc_property_tax_component: 1_000
+    adjusted_family_net_income: 30_000
+  output:
+    oeptc: 1_898.32
+
+- name: Single without children Non-senior (50 + 50 - ((30_000 - 24_916) * 0.02)) = 0 ( 0 if negative)
+  period: 2022
+  input:
+    oeptc_senior_status: NON_SENIOR
+    oeptc_category: SINGLE_NO_CHILDREN
+    oeptc_energy_component: 50
+    oeptc_property_tax_component: 50
+    adjusted_family_net_income: 30_000
+  output:
+    oeptc: 0
+
+- name: Single with shared custody children senior ((1_000 + 1_000 - ((40_000 - 31_144) * 0.02))) / 2 + (1_000 + 1_000 -((40_000 - 37_373) * 0,02) / 2) = 1_885.17 
+  period: 2022
+  input:
+    oeptc_senior_status: SENIOR
+    oeptc_category: SINGLE_SHARED_CUSTODY
+    oeptc_energy_component: 1_000
+    oeptc_property_tax_component: 1_000
+    adjusted_family_net_income: 40_000
+  output:
+    oeptc: 1_885.17
+

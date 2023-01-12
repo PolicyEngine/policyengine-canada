@@ -8,4 +8,4 @@ class non_refundable_tax_credits(Variable):
     unit = CAD
     definition_period = YEAR
 
-    adds = "gov.cra.tax.income.credits.non_refundable"
+    adds = ["gov.cra.tax.income.credits.non_refundable"]
