@@ -15,7 +15,6 @@ class oeptc_senior_status(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
-        # TODO: Check this works.
         oldest_age = household.members("age", period).max(axis=0)
         p = parameters(period).gov.provinces.on.tax.income.credits.oeptc
         return where(

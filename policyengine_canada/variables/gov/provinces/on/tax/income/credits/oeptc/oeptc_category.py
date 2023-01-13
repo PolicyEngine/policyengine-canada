@@ -18,7 +18,6 @@ class oeptc_category(Variable):
     def formula(household, period, parameters):
         married = household("is_married", period)
         children = household("count_children", period)
-        # TODO: Make this from person to household.
         full_custody = household("full_custody", period)
         return select(
             [married, children == 0, full_custody],

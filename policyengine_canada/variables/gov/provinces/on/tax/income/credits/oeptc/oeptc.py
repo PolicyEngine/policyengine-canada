@@ -62,9 +62,6 @@ class oeptc(Variable):
             + shared_custody_second_phased_out_divided
         )
         # Return result depending on shared custody.
-        print(energy_plus_property_tax_components)
-        print(phase_out)
-        print(phased_out)
         return max_(
             0,
             where(
