@@ -6,7 +6,7 @@ class OEPTCSeniorStatus(Enum):
     NON_SENIOR = "Has no seniors"
 
 
-class oeptc_senior_status(Variable):
+class is_senior_for_oeptc(Variable):
     value_type = Enum
     entity = Household
     label = "Is a senior for the OEPTC"
@@ -15,7 +15,7 @@ class oeptc_senior_status(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
-        oldest_age = household.members("age", period).max(axis=0)
+        oldest_age = household.max(household.members("age", period))
         p = parameters(period).gov.provinces.on.tax.income.credits.oeptc
         return where(
             oldest_age >= p.senior_age,

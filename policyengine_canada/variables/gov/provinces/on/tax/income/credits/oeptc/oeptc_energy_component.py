@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class oeptc_energy_component(Variable):
     value_type = float
     entity = Household
-    label = "Oeptc energy component"
+    label = "OEPTC energy component"
     unit = CAD
     definition_period = YEAR
 
@@ -14,7 +14,7 @@ class oeptc_energy_component(Variable):
         ).gov.provinces.on.tax.income.credits.oeptc.energy_component
         long_term_care_home = (
             household(
-                "public_or_non_profit_long_term_care_home_expense", period
+                "rent_paid_to_public_or_non_profit_long_term_care_home", period
             )
             * p.multiplication_factor
         )
@@ -26,10 +26,10 @@ class oeptc_energy_component(Variable):
             * p.student_resident_reduction
         )
         occupancy_costs = household("oeptc_occupancy_cost", period)
-        return min_(
-            p.max_amount,
+        uncapped = (
             long_term_care_home
             + reserve_home_energy_costs
             + occupancy_costs
-            - student_resident,
+            - student_resident
         )
+        return min_(uncapped, p.max_amount)
