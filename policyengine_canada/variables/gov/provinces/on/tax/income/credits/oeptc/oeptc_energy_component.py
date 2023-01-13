@@ -13,7 +13,9 @@ class oeptc_energy_component(Variable):
             period
         ).gov.provinces.on.tax.income.credits.oeptc.energy_component
         long_term_care_home = (
-            household("public_or_non_profit_long_term_care_home", period)
+            household(
+                "public_or_non_profit_long_term_care_home_expense", period
+            )
             * p.multiplication_factor
         )
         reserve_home_energy_costs = household(
