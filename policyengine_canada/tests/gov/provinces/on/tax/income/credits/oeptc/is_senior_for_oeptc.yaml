@@ -3,11 +3,11 @@
   input:
     age: 64
   output:
-    is_senior_for_oeptc: SENIOR
+    oeptc_senior_status: SENIOR
 
 - name: Non-Senior
   period: 2022
   input:
     age: 63
   output:
-    is_senior_for_oeptc: NON_SENIOR
+    oeptc_senior_status: NON_SENIOR
