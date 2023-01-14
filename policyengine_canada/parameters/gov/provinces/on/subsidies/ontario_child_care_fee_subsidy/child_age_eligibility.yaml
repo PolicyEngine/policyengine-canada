@@ -1,0 +1,9 @@
+description: Ontario child care fee subsidy exclusive child age eligibility
+values:
+  2022-01-01: 13
+metadata:
+  unit: year
+  label: Ontario child care fee subsidy child age eligibility
+  reference:
+  - title: Government of OntFinancial Support for Child Care
+    href: https://www.ontario.ca/page/child-care-subsidies 
