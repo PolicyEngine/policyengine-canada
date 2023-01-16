@@ -10,7 +10,7 @@ class oeptc_property_tax_component(Variable):
 
     def formula(household, period, parameters):
         # Varies by senior status, not household type.
-        senior_status = household("oeptc_senior_status", period)
+        senior_status = household("is_senior_for_oeptc", period)
         p = parameters(
             period
         ).gov.provinces.on.tax.income.credits.oeptc.property_tax_component

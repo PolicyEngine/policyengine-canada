@@ -15,7 +15,7 @@ class oeptc(Variable):
             ["oeptc_energy_component", "oeptc_property_tax_component"],
         )
         afni = household("adjusted_family_net_income", period)
-        senior_status = household("oeptc_senior_status", period)
+        senior_status = household("is_senior_for_oeptc", period)
         category = household("oeptc_category", period)
         p = parameters(
             period

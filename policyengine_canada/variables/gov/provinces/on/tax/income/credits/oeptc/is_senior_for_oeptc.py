@@ -6,7 +6,7 @@ class OEPTCSeniorStatus(Enum):
     NON_SENIOR = "Has no seniors"
 
 
-class oeptc_senior_status(Variable):
+class is_senior_for_oeptc(Variable):
     value_type = Enum
     entity = Household
     label = "Is a senior for the OEPTC"

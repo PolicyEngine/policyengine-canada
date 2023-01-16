@@ -3,7 +3,7 @@
   period: 2022
   input:
     oeptc_category: SINGLE_SHARED_CUSTODY
-    oeptc_senior_status: SENIOR
+    is_senior_for_oeptc: SENIOR
     rent: 12_000
     adjusted_family_net_income: 40_000
   output:
