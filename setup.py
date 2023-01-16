@@ -27,7 +27,7 @@ general_requirements = [
     "tqdm>=4.46.0,<5",
     "requests>=2.27.1,<3",
     "pandas>=1.4.2,<2",
-    "policyengine_core>=1.10.18,<2",
+    "policyengine_core>=1.11.4,<2",
     "plotly>=5.6.0,<6",
 ]
 
