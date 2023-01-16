@@ -11,7 +11,7 @@ class gis_eligible(Variable):
         age = person("age", period) 
         # using the pre-repayment amount here because the documentation says "receives the OAS". 
         oas = person("old_age_security_pension_pre_repayment", period)
-        income = 
+        income = 3
 
         # MAKE A 'type of household' variable!!
         # MAKE A 'maximum amount' parameter based on 'type of household'!!

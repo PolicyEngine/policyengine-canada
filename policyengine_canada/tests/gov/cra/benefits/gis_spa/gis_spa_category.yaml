@@ -1,0 +1,17 @@
+- name: Single OAS Pensioner
+  period: 2022
+  input:
+    is_married: false
+    old_age_security_pension_eligibility: true
+  output:
+    gis_spa_category: "SINGLE_WITH_OAS"
+
+- name: Single OAS Pensioner
+  period: 2022
+  input:
+    is_widow: true
+    old_age_security_pension_eligibility: false
+    age: 61
+  output:
+    gis_spa_category: "WIDOW_60_64"
+
