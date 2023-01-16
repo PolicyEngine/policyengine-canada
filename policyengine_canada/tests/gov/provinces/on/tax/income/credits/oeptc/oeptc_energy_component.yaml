@@ -1,0 +1,48 @@
+- name: 10_000 * 0.2 + 1_000 = 3_000 - capped at 249
+  period: 2022
+  input:
+    rent_paid_to_public_or_non_profit_long_term_care_home: 10_000
+    home_energy_costs_on_a_reserve: 1_000
+    lived_in_a_student_residence: false
+    oeptc_occupancy_cost: 0
+  output:
+    oeptc_energy_component: 249
+
+
+- name: 1_000 * 0.2 + 30 = 230 
+  period: 2022
+  input:
+    rent_paid_to_public_or_non_profit_long_term_care_home: 1_000
+    home_energy_costs_on_a_reserve: 0
+    lived_in_a_student_residence: false
+    oeptc_occupancy_cost: 30
+  output:
+    oeptc_energy_component: 230
+
+- name: No negative amount
+  period: 2022
+  input:
+    rent_paid_to_public_or_non_profit_long_term_care_home: 0
+    home_energy_costs_on_a_reserve: 0
+    lived_in_a_student_residence: true
+  output:
+    oeptc_energy_component: 0
+
+- name: 300 * 0.2 = 60
+  period: 2022
+  input:
+    rent_paid_to_public_or_non_profit_long_term_care_home: 300
+    home_energy_costs_on_a_reserve: 0
+    lived_in_a_student_residence: false
+  output:
+    oeptc_energy_component: 60
+
+- name: 300 * 0.2 - 25 = 35
+  period: 2022
+  input:
+    rent_paid_to_public_or_non_profit_long_term_care_home: 300
+    home_energy_costs_on_a_reserve: 0
+    oeptc_occupancy_cost: 0
+    lived_in_a_student_residence: true
+  output:
+    oeptc_energy_component: 35
