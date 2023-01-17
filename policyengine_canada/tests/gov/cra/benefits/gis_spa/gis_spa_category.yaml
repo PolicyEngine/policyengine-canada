@@ -15,3 +15,20 @@
   output:
     gis_spa_category: "WIDOW_60_64"
 
+- name: Couple, both are OAS eligible
+  period: 2022
+  input:
+    is_married: true
+    people:
+      head:
+        age: 70
+        old_age_security_pension_eligibility: true
+      spouse:
+        age: 70
+        old_age_security_pension_eligibility: true
+    household:
+      is_married: true
+      members: [head, spouse]
+  output:
+      gis_spa_category: ["COUPLE_BOTH_OAS", "COUPLE_BOTH_OAS"]
+

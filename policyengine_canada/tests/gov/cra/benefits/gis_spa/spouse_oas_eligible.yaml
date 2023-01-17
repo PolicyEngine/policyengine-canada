@@ -1,0 +1,32 @@
+- name: Spouse is OAS eligible
+  period: 2022
+  input:
+    is_married: true
+    people:
+      head:
+        age: 70
+        old_age_security_pension_eligibility: true
+      spouse:
+        age: 70
+        old_age_security_pension_eligibility: true
+    household:
+      members: [head, spouse]
+  output:
+      spouse_oas_eligible: [true, true]
+
+- name: Spouse is not OAS eligible
+  period: 2022
+  input:
+    is_married: true
+    people:
+      head:
+        age: 70
+        old_age_security_pension_eligibility: false
+      spouse:
+        age: 70
+        old_age_security_pension_eligibility: true
+    household:
+      members: [head, spouse]
+  output:
+      spouse_oas_eligible: [false, true]
+
