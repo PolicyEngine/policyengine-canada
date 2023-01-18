@@ -32,3 +32,23 @@
   output:
       gis_spa_category: ["COUPLE_BOTH_OAS", "COUPLE_BOTH_OAS"]
 
+- name: Couple, elder is OAS eligible, younger is aged 60-64
+  period: 2022
+  input:
+    is_married: true
+    people:
+      head:
+        is_head: true
+        age: 70
+        old_age_security_pension_eligibility: true
+      spouse:
+        is_spouse: true
+        age: 61
+        old_age_security_pension_eligibility: false
+    household:
+      is_married: true
+      members: [head, spouse]
+  output:
+      age_spouse: 61
+      gis_spa_category: ["COUPLE_ELDER_OAS_YOUNGER_60_64", "COUPLE_ELDER_OAS_YOUNGER_60_64"]
+

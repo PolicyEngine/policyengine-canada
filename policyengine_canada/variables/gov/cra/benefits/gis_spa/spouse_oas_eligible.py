@@ -12,6 +12,5 @@ class spouse_oas_eligible(Variable):
         head_or_spouse_oas_eligible = head_or_spouse & oas_eligible
         household = person.household
         count_head_or_spouse_oas_eligible = household.sum(head_or_spouse_oas_eligible)
-        spouse_oas_eligible = count_head_or_spouse_oas_eligible - where(oas_eligible, 1, 0)
 
-        return spouse_oas_eligible
+        return count_head_or_spouse_oas_eligible - where(oas_eligible, 1, 0)
