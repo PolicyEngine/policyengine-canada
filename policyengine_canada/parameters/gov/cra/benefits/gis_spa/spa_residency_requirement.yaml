@@ -1,0 +1,8 @@
+description: Number of years of canadian residency since the age of 18 required to recieve the Spousal Allowance
+values:
+  2020-01-01: 10
+metadata:
+  label: SPA Residency Requirement
+  reference:
+  - title: Government of Canada - Spousal Allowance
+    href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/allowance/eligibility.html

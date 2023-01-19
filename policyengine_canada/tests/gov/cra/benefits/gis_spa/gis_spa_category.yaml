@@ -11,9 +11,20 @@
   input:
     is_widow: true
     old_age_security_pension_eligibility: false
+    adult_years_in_canada: 12
     age: 61
   output:
-    gis_spa_category: "WIDOW_60_64"
+    gis_spa_category: "WIDOW_SPA_ELIGIBLE"
+
+- name: Single OAS Pensioner, ineligible because not enough adult years in canada
+  period: 2022
+  input:
+    is_widow: true
+    old_age_security_pension_eligibility: false
+    adult_years_in_canada: 2
+    age: 61
+  output:
+    gis_spa_category: "NONE"
 
 - name: Couple, both are OAS eligible
   period: 2022
@@ -32,7 +43,7 @@
   output:
       gis_spa_category: ["COUPLE_BOTH_OAS", "COUPLE_BOTH_OAS"]
 
-- name: Couple, elder is OAS eligible, younger is aged 60-64
+- name: Couple, elder is OAS eligible, younger is SPA eligible
   period: 2022
   input:
     is_married: true
@@ -45,10 +56,29 @@
         is_spouse: true
         age: 61
         old_age_security_pension_eligibility: false
+        adult_years_in_canada: 20
     household:
       is_married: true
       members: [head, spouse]
   output:
-      age_spouse: 61
-      gis_spa_category: ["COUPLE_ELDER_OAS_YOUNGER_60_64", "COUPLE_ELDER_OAS_YOUNGER_60_64"]
+      gis_spa_category: ["COUPLE_ONE_OAS_SPA_ELIGIBLE", "COUPLE_ONE_OAS_SPA_ELIGIBLE"]
+
+- name: Couple, elder is OAS eligible, younger is _not_ SPA eligible
+  period: 2022
+  input:
+    is_married: true
+    people:
+      head:
+        is_head: true
+        age: 70
+        old_age_security_pension_eligibility: true
+      spouse:
+        is_spouse: true
+        age: 44
+        spa_eligible: false
+        old_age_security_pension_eligibility: false
+    household:
+      members: [head, spouse]
+  output:
+      gis_spa_category: ["COUPLE_ONE_OAS_SPA_INELIGIBLE", "COUPLE_ONE_OAS_SPA_INELIGIBLE"]
 

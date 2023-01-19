@@ -1,0 +1,47 @@
+- name: Is SPA eligible because spouse has OAS
+  period: 2022
+  input:
+    is_married: true
+    spouse_oas_eligible: true
+    age: 61
+    adult_years_in_canada: 12
+  output:
+      spouse_spa_eligible: true
+
+- name: Is SPA eligible because is widow
+  period: 2022
+  input:
+    is_married: false
+    is_widow: true
+    age: 61
+    adult_years_in_canada: 12
+  output:
+      spouse_spa_eligible: true
+
+- name: Isn't SPA eligible because not enough years in canada
+  period: 2022
+  input:
+    is_married: false
+    is_widow: true
+    age: 61
+    adult_years_in_canada: 9
+  output:
+      spouse_spa_eligible: false
+
+- name: Isn't SPA eligible because too old
+  period: 2022
+  input:
+    is_married: false
+    is_widow: true
+    age: 80
+    adult_years_in_canada: 40
+  output:
+      spouse_spa_eligible: false
+
+- name: Isn't SPA eligible because is OAS pensioner
+  period: 2022
+  input:
+    is_widow: true
+    old_age_security_pension_eligibility: true
+  output:
+      spouse_spa_eligible: false

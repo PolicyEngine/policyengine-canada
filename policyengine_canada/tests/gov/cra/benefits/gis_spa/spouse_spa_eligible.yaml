@@ -1,0 +1,40 @@
+- name: Spouse is SPA eligible
+  period: 2022
+  input:
+    is_married: true
+    people:
+      head:
+        is_head: true
+        age: 70
+        old_age_security_pension_eligibility: true
+        adult_years_in_canada: 40
+      spouse:
+        is_spouse: true
+        age: 61
+        old_age_security_pension_eligibility: false
+        adult_years_in_canada: 12
+    household:
+      members: [head, spouse]
+  output:
+    is_spouse: [false, true]
+    spouse_spa_eligible: [true, false]
+
+- name: Spouse is not SPA eligible
+  period: 2022
+  input:
+    is_married: true
+    people:
+      head:
+        is_head: true
+        age: 70
+        old_age_security_pension_eligibility: true
+      spouse:
+        is_spouse: false
+        age: 70
+        old_age_security_pension_eligibility: false
+        adult_years_in_canada: 9
+    household:
+      members: [head, spouse]
+  output:
+      spouse_spa_eligible: [false, false]
+
