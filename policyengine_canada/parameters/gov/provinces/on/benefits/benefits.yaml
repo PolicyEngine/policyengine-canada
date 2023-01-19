@@ -2,3 +2,6 @@ description: Ontario list of benefits.
 values:
   2022-01-01:
     - on_child_benefit
+
+metadata:
+  unit: program
