@@ -1,0 +1,4 @@
+- bump: minor
+  changes:
+    added:
+    - CWB eligibility at the person level.
