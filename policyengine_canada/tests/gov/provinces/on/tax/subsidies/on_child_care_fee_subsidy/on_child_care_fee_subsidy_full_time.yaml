@@ -1,0 +1,20 @@
+- name: Under the phase-in limit
+  period: 2023
+  input:
+    adjusted_family_net_income: 20_000
+  output:
+    on_child_care_fee_subsidy_full_time: 0
+
+- name: 10% of AFNI of 40_000 - 20_000
+  period: 2023
+  input:
+    adjusted_family_net_income: 40_000
+  output:
+    on_child_care_fee_subsidy_full_time: 2_000
+
+- name: 10% of AFNI of 40_000 - 20_000 + 30% of AFNI of 60_000 - 40_000
+  period: 2023
+  input:
+    adjusted_family_net_income: 60_000
+  output:
+    on_child_care_fee_subsidy_full_time: 8_000

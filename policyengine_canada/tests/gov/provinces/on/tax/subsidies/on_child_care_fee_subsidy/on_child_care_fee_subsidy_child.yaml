@@ -1,0 +1,13 @@
+- name: Uneligible
+  period: 2023
+  input:
+    age: 13
+  output:
+    on_child_care_fee_subsidy_child: 0
+
+- name: Eligible
+  period: 2023
+  input:
+    age: 12
+  output:
+    on_child_care_fee_subsidy_child: 1
