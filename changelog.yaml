@@ -168,3 +168,8 @@
     added:
     - Ontario energy and property tax credit (OEPTC).
   date: 2023-01-16 20:15:46
+- bump: patch
+  changes:
+    added:
+    - API auto-deployment
+  date: 2023-01-20 17:15:53
