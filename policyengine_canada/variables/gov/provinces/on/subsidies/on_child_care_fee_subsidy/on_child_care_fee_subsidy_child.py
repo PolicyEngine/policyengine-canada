@@ -5,7 +5,6 @@ class on_child_care_fee_subsidy_child(Variable):
     value_type = bool
     entity = Person
     label = "Ontario Child Care Fee Subsidy child"
-    unit = CAD
     definition_period = YEAR
 
     def formula(person, period, parameters):

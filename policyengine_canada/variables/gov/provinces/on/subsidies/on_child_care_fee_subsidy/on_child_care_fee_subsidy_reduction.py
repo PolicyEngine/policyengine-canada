@@ -17,20 +17,16 @@ class on_child_care_fee_subsidy_reduction(Variable):
         reduction_factor = parameters(
             period
         ).gov.provinces.on.subsidies.on_child_care_fee_subsidy.reduction.factor
-        full_time_reduction = (
-            person("on_child_care_fee_subsidy_full_time", period)
-            / children
-            * eligible_children
-            * reduction_factor
+        full_factor = eligible_children * reduction_factor / children
+        full_time_reduction = person(
+            "on_child_care_fee_subsidy_full_time", period
         )
-        part_time_reduction = (
-            person("on_child_care_fee_subsidy_part_time", period)
-            / children
-            * eligible_children
-            * reduction_factor
+        part_time_reduction = person(
+            "on_child_care_fee_subsidy_part_time", period
         )
-        return where(
-            children > 0,
-            where(full_time, full_time_reduction, part_time_reduction),
-            0,
+        eligible = children > 0
+        return (
+            eligible
+            * full_factor
+            * where(full_time, full_time_reduction, part_time_reduction)
         )
