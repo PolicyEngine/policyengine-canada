@@ -1,4 +1,0 @@
-- bump: minor
-  changes:
-    added:
-    - Rename is_senior_for_oeptc to oeptc_senior_status.
