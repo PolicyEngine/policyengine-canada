@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class oshptg_adjusted_oeptc(Variable):
     value_type = float
     entity = Household
-    label = "Ontario energy and property tax credit adjusted for the ontario senior homeowners property tax garnt"
+    documentation = "Ontario energy and property tax credit adjusted for the Ontario senior homeowners property tax grant"
     unit = CAD
     definition_period = YEAR
 
