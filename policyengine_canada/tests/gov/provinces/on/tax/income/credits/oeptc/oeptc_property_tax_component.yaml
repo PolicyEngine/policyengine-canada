@@ -1,7 +1,7 @@
 - name: 1_000 * 0.1 + 62 = 162
   period: 2022
   input:
-    is_senior_for_oeptc: NON_SENIOR
+    oeptc_senior_status: NON_SENIOR
     oeptc_occupancy_cost: 1_000
   output:
     oeptc_property_tax_component: 162
@@ -9,7 +9,7 @@
 - name: 10_000 * 0.1 (capped at 810) + 62 = 872
   period: 2022
   input:
-    is_senior_for_oeptc: NON_SENIOR
+    oeptc_senior_status: NON_SENIOR
     oeptc_occupancy_cost: 10_000
   output:
     oeptc_property_tax_component: 872
@@ -17,7 +17,7 @@
 - name: 10_000 * 0.1 (capped at 499) + 529 = 1_028
   period: 2022
   input:
-    is_senior_for_oeptc: SENIOR
+    oeptc_senior_status: SENIOR
     oeptc_occupancy_cost: 10_000
   output:
     oeptc_property_tax_component: 1_028
@@ -25,7 +25,7 @@
 - name: 1_000 * 0.1 + 529 = 629
   period: 2022
   input:
-    is_senior_for_oeptc: SENIOR
+    oeptc_senior_status: SENIOR
     oeptc_occupancy_cost: 1_000
   output:
     oeptc_property_tax_component: 629
