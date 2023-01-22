@@ -7,4 +7,4 @@ class child_benefit_eligible_children(Variable):
     label = "Children eligible for Canada Child Benefit"
     definition_period = YEAR
 
-    adds = ["child_benefit_eligible"]
+    formula = sum_of_variables(["child_benefit_eligible"])

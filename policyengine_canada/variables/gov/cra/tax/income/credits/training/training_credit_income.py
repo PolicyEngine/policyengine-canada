@@ -9,4 +9,6 @@ class training_credit_income(Variable):
     documentation = "The sum of employment income, self-employment income, maternity benefits and parental benefits"
     definition_period = YEAR
 
-    adds = "gov.cra.tax.income.credits.training.income_sources"
+    formula = sum_of_variables(
+        "gov.cra.tax.income.credits.training.income_sources"
+    )

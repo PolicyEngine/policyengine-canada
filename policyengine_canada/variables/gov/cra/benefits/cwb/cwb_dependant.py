@@ -6,6 +6,7 @@ class cwb_dependant(Variable):
     entity = Person
     label = "Canada workers benefit dependant"
     definition_period = YEAR
+    reference = ""  # TODO: Add
 
     def formula(person, period, parameters):
         p = parameters(period).gov.cra.benefits.cwb

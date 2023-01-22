@@ -9,4 +9,4 @@ class working_income(Variable):
     documentation = "Income from employment and self-employment"
     definition_period = YEAR
 
-    adds = "gov.cra.benefits.cwb.working_income_sources"
+    formula = sum_of_variables("gov.cra.benefits.cwb.working_income_sources")

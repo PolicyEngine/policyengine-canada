@@ -6,9 +6,9 @@ class cwb_base_max_amount(Variable):
     entity = Household
     label = "Canada workers benefit max base amount"
     definition_period = YEAR
-    defined_for = "cwb_eligible"
 
     def formula(household, period, parameters):
         p = parameters(period).gov.cra.benefits.cwb.amount
         family = household("is_cwb_family", period)
-        return where(family, p.family, p.single)
+        eligible = household("cwb_eligible", period)
+        return eligible * where(family, p.family, p.single)

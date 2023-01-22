@@ -9,4 +9,4 @@ class child_benefit_base(Variable):
     documentation = "Base amount of Canada Child Benefit before reduction."
     definition_period = YEAR
 
-    adds = ["child_benefit_base_person"]
+    formula = sum_of_variables(["child_benefit_base_person"])

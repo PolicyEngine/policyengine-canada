@@ -9,4 +9,4 @@ class climate_action_incentive_pre_rural(Variable):
     documentation = "Universal amount without adjustment based on AFNI"
     definition_period = YEAR
 
-    adds = ["climate_action_incentive_person"]
+    formula = sum_of_variables(["climate_action_incentive_person"])

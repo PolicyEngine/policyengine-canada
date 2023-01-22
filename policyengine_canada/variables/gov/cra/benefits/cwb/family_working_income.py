@@ -13,4 +13,4 @@ class family_working_income(Variable):
         "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-96.html#h-299725"
     )
 
-    adds = ["working_income"]
+    formula = sum_of_variables(["working_income"])
