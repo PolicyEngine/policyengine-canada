@@ -19,7 +19,7 @@ class gst_credit_childless_boost(Variable):
         p = parameters(
             period
         ).gov.cra.tax.income.credits.gst_credit.childless_boost
-        childless_phase_in = p.childless_phase_in.calc(net_income)
+        childless_phase_in = p.phase_in.calc(net_income)
         childless_amount = min_(p.cap, childless_phase_in)
         amount_if_single = where(
             single_parent_household, p.cap, childless_amount
