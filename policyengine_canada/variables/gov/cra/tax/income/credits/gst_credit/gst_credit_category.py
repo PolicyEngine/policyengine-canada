@@ -18,22 +18,14 @@ class gst_credit_category(Variable):
         return select(
             [
                 person("is_head", period),
-                person("is_spouse", period),
-                person(
-                    "is_eldest_child_in_single_household_for_gst_credit",
-                    period,
-                ),
-                person("is_child_for_gst_credit", period)
-                & ~person(
+                # Eldest children of single parents are treated as spouses
+                # for GST credit purposes.
+                person("is_spouse", period)
+                | person(
                     "is_eldest_child_in_single_household_for_gst_credit",
                     period,
                 ),
             ],
-            [
-                GSTCreditCategory.HEAD,
-                GSTCreditCategory.SPOUSE,
-                GSTCreditCategory.SPOUSE,
-                GSTCreditCategory.CHILD,
-            ],
-            default=0,
+            [GSTCreditCategory.HEAD, GSTCreditCategory.SPOUSE],
+            default=GSTCreditCategory.CHILD,
         )
