@@ -1,17 +1,13 @@
-description: The phase-in rate of the boost for households with no children.
+description: The GST credit phases in the boost for households with no children at this rate, with respect to household net income..
 brackets:
   - threshold:
-      values:
-        2022-12-31: 0
+      2022-12-31: 0
     rate:
-      values:
-        2022-12-31: 0
+      2022-12-31: 0
   - threshold:
-      values:
-        2022-12-31: 9_919
+      2022-12-31: 9_919
     rate:
-      values:
-        2022-12-31: 0.02
+      2022-12-31: 0.02
 
 metadata:
   label: GST Credit Childless Phase-In Rate

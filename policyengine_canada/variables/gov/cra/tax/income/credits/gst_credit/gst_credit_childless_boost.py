@@ -11,7 +11,6 @@ class gst_credit_childless_boost(Variable):
 
     # Singles get an amount between 0 and 161, but single _parents_ always get the full 161.
     def formula(household, period, parameters):
-        married = household("is_married", period)
         single_parent_household = household(
             "gst_credit_single_parent_household", period
         )
