@@ -9,12 +9,16 @@ class northern_ontario_energy_credit(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
+        person = household.members
+        age = person("age", period)
+        married = household("is_married", period)
+        children = household("count_children", period)
         in_northern_ontario = household("is_in_northern_ontario", period)
         category = household("oeptc_category", period)
         afni = household("adjusted_family_net_income", period)
         p = parameters(period).gov.provinces.on.tax.income.credits.noec
         excess = max_(afni - p.phase_out.start[category], 0)
-        phase_out = excess * p.rate
+        phase_out = excess * p.multiplication_factor
         phased_out = p.base - phase_out
         shared_custody_phased_out_divided = (
             phased_out / p.phase_out.shared_custody.divisor
@@ -34,15 +38,19 @@ class northern_ontario_energy_credit(Variable):
             shared_custody_phased_out_divided
             + shared_custody_second_phased_out_divided
         )
-        return max_(
-            0,
-            where(
-                category == category.possible_values.SINGLE_SHARED_CUSTODY,
-                shared_custody_result,
-                phased_out,
-            ),
+        eligible = age >= p.age_eligibility or married == True or children > 0
+        return (
+            eligible
+            * in_northern_ontario
+            * max_(
+                0,
+                where(
+                    category == category.possible_values.SINGLE_SHARED_CUSTODY,
+                    shared_custody_result,
+                    phased_out,
+                ),
+            )
         )
 
 
-# TODO: age  / spouse / parent - eligibility
 # TODO: shared custody under $43k amount is 205.50
