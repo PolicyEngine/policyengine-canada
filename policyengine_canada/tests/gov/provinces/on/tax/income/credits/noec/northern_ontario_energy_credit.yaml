@@ -1,0 +1,8 @@
+- name: Test
+  period: 2022
+  input:
+    is_in_northern_ontario: True
+    adjusted_family_net_income: 20_000
+    oeptc_category: MARRIED
+  output:
+    northern_ontario_energy_credit: 249
