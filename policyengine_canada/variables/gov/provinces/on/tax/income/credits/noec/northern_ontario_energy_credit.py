@@ -37,6 +37,7 @@ class northern_ontario_energy_credit(Variable):
             shared_custody_second_phased_out
             / p.phase_out.shared_custody.divisor
         )
+        # TODO: shared custody under $43k amount is 205.50
         shared_custody_result = where(
             afni >= p.phase_out.start[category],
             shared_custody_phased_out_divided
@@ -56,6 +57,3 @@ class northern_ontario_energy_credit(Variable):
                 ),
             )
         )
-
-
-# TODO: shared custody under $43k amount is 205.50
