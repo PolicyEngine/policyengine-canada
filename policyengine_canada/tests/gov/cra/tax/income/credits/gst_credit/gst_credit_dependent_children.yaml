@@ -1,0 +1,18 @@
+- name: Family with 2 dependent children for GST credit
+  period: 2023
+  input:
+    people:
+      parent:
+        gst_credit_category: HEAD
+      c1:
+        gst_credit_category: CHILD
+        is_dependent: true
+        age: 4
+      c2:
+        gst_credit_category: CHILD
+        is_dependent: true
+        age: 7
+    household:
+      members: [parent, c1, c2]
+  output:
+    gst_credit_dependent_children: 2

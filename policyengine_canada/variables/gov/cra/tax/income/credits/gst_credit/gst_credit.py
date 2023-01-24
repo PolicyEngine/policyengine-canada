@@ -11,6 +11,6 @@ class gst_credit(Variable):
 
     def formula(household, period, parameters):
         base_amount = household("gst_credit_base", period)
-        boost = household("gst_credit_childless_boost", period)
+        boost = household("gst_credit_singles_boost", period)
         reduction = household("gst_credit_reduction", period)
         return max(base_amount + boost - reduction, 0)

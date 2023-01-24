@@ -1,0 +1,17 @@
+- name: Base amounts for family of 3
+  period: 2023
+  input:
+    people:
+      c1:
+        is_child_for_gst_credit: true
+        age: 11
+      c2:
+        is_child_for_gst_credit: true
+        age: 10
+    household:
+      members: [c1, c2]
+  output:
+    is_eldest_child_in_single_household_for_gst_credit: [true, false]
+
+
+

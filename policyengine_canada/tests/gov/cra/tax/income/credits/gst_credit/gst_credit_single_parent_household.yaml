@@ -1,0 +1,23 @@
+- name: GST credit single parent household
+  period: 2023
+  input:
+    is_married: false
+    gst_credit_dependent_children: 1
+  output:
+    gst_credit_single_parent_household: true
+
+- name: Not GST credit single parent household because no GST credit dependent children
+  period: 2023
+  input:
+    is_married: false
+    gst_credit_dependent_children: 0
+  output:
+    gst_credit_single_parent_household: false
+
+- name: Not GST credit single parent household because is married
+  period: 2023
+  input:
+    is_married: true
+    gst_credit_dependent_children: 1
+  output:
+    gst_credit_single_parent_household: false
