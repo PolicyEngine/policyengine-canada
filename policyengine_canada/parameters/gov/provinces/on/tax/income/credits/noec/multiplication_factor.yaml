@@ -1,6 +1,6 @@
 description: Northern ontario energy credit multiplication factor.
 values:
-  2022-01-01: 0.1
+  2022-01-01: 0.01
 metadata:
   unit: /1
   label: Northern ontario energy credit multiplication factor
