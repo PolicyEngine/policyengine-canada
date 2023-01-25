@@ -6,7 +6,6 @@ class gst_credit_reduction(Variable):
     entity = Household
     label = "GST Credit reduction based on income"
     unit = CAD
-    documentation = " "
     definition_period = YEAR
 
     # The income concept here is supposed to be based on a slightly modified version of family net income,

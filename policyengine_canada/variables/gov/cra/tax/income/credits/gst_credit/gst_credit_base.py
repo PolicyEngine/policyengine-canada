@@ -6,7 +6,6 @@ class gst_credit_base(Variable):
     entity = Household
     label = "GST Credit before the boost is applied and before reduction based on family net income"
     unit = CAD
-    documentation = " "
     definition_period = YEAR
 
     adds = ["gst_credit_person"]

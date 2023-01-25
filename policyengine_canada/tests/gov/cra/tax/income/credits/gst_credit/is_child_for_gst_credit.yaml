@@ -1,21 +1,10 @@
-- name: Family with two children for GST credit based on age and dependent status
+- name: Is child for GST credit 
   period: 2023
   input:
-    people:
-      parent:
-        gst_credit_category: HEAD
-      c1:
-        gst_credit_category: CHILD
-        is_dependent: true
-        age: 4
-      c2:
-        gst_credit_category: CHILD
-        is_dependent: true
-        age: 7
-    household:
-      members: [parent, c1, c2]
+    age: 10
+    is_dependent: true
   output:
-    is_child_for_gst_credit: [false, true, true]
+    is_child_for_gst_credit: true
 
 - name: Is not a child for GST credit because too old
   period: 2023
