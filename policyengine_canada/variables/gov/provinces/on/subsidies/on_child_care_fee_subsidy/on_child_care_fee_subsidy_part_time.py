@@ -11,9 +11,9 @@ class on_child_care_fee_subsidy_part_time(Variable):
     def formula(household, period, parameters):
         childcare_expenses = household("childcare_costs", period)
         days = household("childcare_received_days", period)
-        factor = parameters(
+        multiplier = parameters(
             period
-        ).gov.provinces.on.subsidies.on_child_care_fee_subsidy.part_time_child_care_multiplication_factor
-        return where(
-            days > 0, ((childcare_expenses / (days * factor)) * days), 0
-        )
+        ).gov.provinces.on.subsidies.on_child_care_fee_subsidy.part_time_child_care_multiplier
+        eligible = days > 0
+        amount_if_eligible = childcare_expenses / multiplier
+        return eligible * amount_if_eligible

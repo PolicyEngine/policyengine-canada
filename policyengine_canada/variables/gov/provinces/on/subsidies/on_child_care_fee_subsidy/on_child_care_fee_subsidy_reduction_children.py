@@ -8,4 +8,4 @@ class on_child_care_fee_subsidy_reduction_children(Variable):
     unit = CAD
     definition_period = YEAR
 
-    adds = ["on_child_care_fee_subsidy_reduction_child"]
+    adds = ["is_child_for_on_child_care_fee_subsidy_reduction"]

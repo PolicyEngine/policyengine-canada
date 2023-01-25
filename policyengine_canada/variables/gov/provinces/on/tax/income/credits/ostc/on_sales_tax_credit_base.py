@@ -15,9 +15,6 @@ class on_sales_tax_credit_base(Variable):
         members = household("household_size", period)
         province = household("province", period)
         in_ontario = province == province.possible_values.ONTARIO
-        return in_ontario * (
-            members
-            * parameters(
-                period
-            ).gov.provinces.on.tax.income.credits.ostc.amount
-        )
+        p = parameters(period).gov.provinces.on.tax.income.credits.ostc
+        amount_if_eligible = members * p.amount
+        return in_ontario * amount_if_eligible

@@ -7,4 +7,4 @@ class on_child_care_fee_subsidy_children(Variable):
     label = "Ontario Child Care Fee Subsidy children"
     definition_period = YEAR
 
-    adds = ["on_child_care_fee_subsidy_child"]
+    adds = ["is_child_for_on_child_care_fee_subsidy"]

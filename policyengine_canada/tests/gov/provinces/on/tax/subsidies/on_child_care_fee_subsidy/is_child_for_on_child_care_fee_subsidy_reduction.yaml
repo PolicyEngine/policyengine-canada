@@ -1,0 +1,13 @@
+- name: Six-year-olds are ineligible for the Ontario child care fee subsidy reduction.
+  period: 2023
+  input:
+    age: 6
+  output:
+    is_child_for_on_child_care_fee_subsidy_reduction: false
+
+- name: Five-year-olds are eligible for the Ontario child care fee subsidy reduction.
+  period: 2023
+  input:
+    age: 5
+  output:
+    is_child_for_on_child_care_fee_subsidy_reduction: true

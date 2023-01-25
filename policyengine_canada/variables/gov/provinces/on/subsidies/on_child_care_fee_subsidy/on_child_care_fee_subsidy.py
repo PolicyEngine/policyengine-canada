@@ -19,10 +19,8 @@ class on_child_care_fee_subsidy(Variable):
         part_time_care = household(
             "on_child_care_fee_subsidy_part_time", period
         )
-        return max_(
-            0,
-            (
-                in_ontario * where(full_time, full_time_care, part_time_care)
-                - reduction
-            ),
+        amount_before_reduction = where(
+            full_time, full_time_care, part_time_care
         )
+        amount_if_eligible = max_(0, amount_before_reduction - reduction)
+        return in_ontario * amount_if_eligible
