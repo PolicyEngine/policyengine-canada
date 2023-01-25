@@ -1,0 +1,11 @@
+description: People are no longer eligible for the Ontario child care fee subsidy when they reach this age.
+values:
+  2022-01-01: 13
+metadata:
+  unit: year
+  label: Ontario child care fee subsidy child age eligibility
+  reference:
+  - title: Government of OntFinancial Support for Child Care
+    href: https://www.ontario.ca/page/child-care-subsidies
+  - title: Child Care and Early Years Act (2)
+    href: https://www.ontario.ca/laws/statute/14c11#BK2 

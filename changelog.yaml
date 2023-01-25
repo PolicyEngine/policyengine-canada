@@ -178,3 +178,13 @@
     added:
     - Rename is_senior_for_oeptc to oeptc_senior_status.
   date: 2023-01-20 17:22:26
+- bump: minor
+  changes:
+    added:
+    - Ontario child care fee subsidy.
+  date: 2023-01-25 04:38:58
+- bump: minor
+  changes:
+    added:
+    - Oshptg adjusted oeptc.
+  date: 2023-01-25 04:39:47

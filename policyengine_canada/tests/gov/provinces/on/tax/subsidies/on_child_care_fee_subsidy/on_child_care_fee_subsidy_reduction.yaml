@@ -1,0 +1,43 @@
+- name: Ontario full time care with reduction
+  period: 2023
+  input:
+    on_child_care_fee_subsidy_children: 2
+    on_child_care_fee_subsidy_reduction_children: 1
+    full_time_childcare: true 
+    on_child_care_fee_subsidy_full_time: 1_000
+    on_child_care_fee_subsidy_part_time: 2_000
+  output:
+    on_child_care_fee_subsidy_reduction: 250
+  
+- name: Ontario part time care with reduction
+  period: 2023
+  input:
+    on_child_care_fee_subsidy_children: 2
+    on_child_care_fee_subsidy_reduction_children: 2
+    full_time_childcare: false 
+    on_child_care_fee_subsidy_full_time: 1_000
+    on_child_care_fee_subsidy_part_time: 2_000
+  output:
+    on_child_care_fee_subsidy_reduction: 1_000
+
+- name: No eligible children
+  period: 2023
+  input:
+    on_child_care_fee_subsidy_children: 1
+    on_child_care_fee_subsidy_reduction_children: 0
+    full_time_childcare: true 
+    on_child_care_fee_subsidy_full_time: 1_000
+    on_child_care_fee_subsidy_part_time: 2_000
+  output:
+    on_child_care_fee_subsidy_reduction: 0
+  
+- name: No children
+  period: 2023
+  input:
+    on_child_care_fee_subsidy_children: 0
+    on_child_care_fee_subsidy_reduction_children: 0
+    full_time_childcare: true 
+    on_child_care_fee_subsidy_full_time: 1_000
+    on_child_care_fee_subsidy_part_time: 2_000
+  output:
+    on_child_care_fee_subsidy_reduction: 0
