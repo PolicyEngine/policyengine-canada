@@ -13,4 +13,3 @@ class on_taxable_income(Variable):
         province = person.household("province", period)
         in_ontario = province == province.possible_values.ONTARIO
         return in_ontario * person("total_individual_pre_tax_income", period)
-        )

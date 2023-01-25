@@ -16,5 +16,3 @@ class on_child_benefit_base(Variable):
         p = parameters(period).gov.provinces.on.benefits.ocb
         amount_if_eligible = children * p.base
         return in_ontario * amount_if_eligible
-            
-        )
