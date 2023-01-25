@@ -21,3 +21,23 @@
     is_cwb_family: true
   output:
     cwb_eligible: true
+
+- name: Students with dependants are eligible.
+  period: 2023
+  input:
+    age: 19
+    is_cwb_family: true
+    is_full_time_student: true
+    count_children: 1
+  output:
+    cwb_eligible: true
+
+- name: Students without dependants are ineligible.
+  period: 2023
+  input:
+    age: 19
+    is_cwb_family: true
+    is_full_time_student: true
+    count_children: 0
+  output:
+    cwb_eligible: false
