@@ -15,7 +15,7 @@ class oeptc_occupancy_cost(Variable):
             period
         ).gov.provinces.on.tax.income.credits.oeptc.occupancy_costs
         student_residence = household("lived_in_a_student_residence", period)
-        countable_rent = person("rent", period) * p.rent_multiplication_factor
+        countable_rent = person("rent", period) * p.rent_multiplier
         student_residence_addition = (
             student_residence * p.student_resident_supplement
         )

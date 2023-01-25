@@ -1,0 +1,23 @@
+- name: 10_000 / (120 * 4.35) * 120 = 2_298.85057
+  period: 2023
+  input:
+    childcare_costs: 10_000
+    childcare_received_days: 120
+  output:
+    on_child_care_fee_subsidy_part_time: 2_298.85057
+
+- name: No childcare days
+  period: 2023
+  input:
+    childcare_costs: 10_000
+    childcare_received_days: 0
+  output:
+    on_child_care_fee_subsidy_part_time: 0
+
+- name: No child care costs
+  period: 2023
+  input:
+    childcare_costs: 0
+    childcare_received_days: 10
+  output:
+    on_child_care_fee_subsidy_part_time: 0
