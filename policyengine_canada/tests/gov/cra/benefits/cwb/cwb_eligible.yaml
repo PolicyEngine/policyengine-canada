@@ -6,19 +6,23 @@
   output:
     cwb_eligible: false
 
-- name: Single person aged 19 or older is eligible.
+- name: CWB families are eligible, regardless of ages.
   period: 2023
   input:
     age: 18
     is_cwb_family: true
+    is_full_time_student: false
+    count_children: 0
   output:
     cwb_eligible: true
 
-- name: CWB families are eligible, regardless of ages.
+- name: CWB families are eligible.
   period: 2023
   input:
     age: 19
     is_cwb_family: true
+    is_full_time_student: true
+    count_children: 1
   output:
     cwb_eligible: true
 

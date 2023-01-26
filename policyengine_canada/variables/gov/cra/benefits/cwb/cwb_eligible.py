@@ -13,9 +13,10 @@ class cwb_eligible(Variable):
         eligible_age = person("age", period) >= p.eligible_age
         family = household("is_cwb_family", period)
         any_of_eligible_age = household.any(eligible_age)
-        eligible = family | any_of_eligible_age
         children = household("count_children", period)
         student_without_dependent = (
             person("is_full_time_student", period) & children == 0
         )
-        return where(student_without_dependent, 0, eligible)
+        return where(
+            student_without_dependent, 0, family | any_of_eligible_age
+        )
