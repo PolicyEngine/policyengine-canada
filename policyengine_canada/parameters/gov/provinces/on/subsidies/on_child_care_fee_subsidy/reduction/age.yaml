@@ -1,0 +1,9 @@
+description: Ontario child care fee subsidy reduction child age limit
+values:
+  2022-01-01: 6
+metadata:
+  unit: year
+  label: Ontario child care fee subsidy reduction child age limit
+  reference:
+  - title: Child Care and Early Years Act, 2014 (1)
+    href: https://www.ontario.ca/laws/regulation/150138#BK13 

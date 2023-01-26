@@ -14,4 +14,5 @@ class on_senior_homeowners_property_tax_grant_base(Variable):
         p = parameters(period).gov.provinces.on.tax.grants.oshptg
         age_eligible = person("age", period) >= p.age_eligibility
         eligible = age_eligible & in_ontario
-        return eligible * min_(person("property_tax", period), p.max_amount)
+        amount_if_eligible = min_(person("property_tax", period), p.max_amount)
+        return eligible * amount_if_eligible

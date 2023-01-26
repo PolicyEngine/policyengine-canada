@@ -16,7 +16,7 @@ class oeptc_energy_component(Variable):
             household(
                 "rent_paid_to_public_or_non_profit_long_term_care_home", period
             )
-            * p.multiplication_factor
+            * p.multiplier
         )
         reserve_home_energy_costs = household(
             "home_energy_costs_on_a_reserve", period

@@ -1,0 +1,13 @@
+- name: 13-year-olds are ineligible for the Ontario child care fee subsidy.
+  period: 2023
+  input:
+    age: 13
+  output:
+    is_child_for_on_child_care_fee_subsidy: false
+
+- name: 12-year-olds are eligible for the Ontario child care fee subsidy.
+  period: 2023
+  input:
+    age: 12
+  output:
+    is_child_for_on_child_care_fee_subsidy: true

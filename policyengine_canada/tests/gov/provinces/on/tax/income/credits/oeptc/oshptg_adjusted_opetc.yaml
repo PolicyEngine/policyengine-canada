@@ -1,0 +1,30 @@
+- name: No oshptg costs
+  period: 2022
+  input:
+    on_senior_homeowners_property_tax_grant: 0
+    oeptc: 10_000
+    oeptc_energy_component: 1_000
+    oeptc_occupancy_cost: 1_000 
+  output:
+    oshptg_adjusted_oeptc: 0
+
+- name: 10_000 - ((10_000 + 1_000) - 1_000 - 1_500) = 1_500
+  period: 2022
+  input:
+    on_senior_homeowners_property_tax_grant: 1_000
+    oeptc: 10_000
+    oeptc_energy_component: 1_000
+    oeptc_occupancy_cost: 1_500 
+  output:
+    oshptg_adjusted_oeptc: 1_500
+
+
+- name: 8_000 - ((8_000 + 2_000) - 1_000) = negative (0)
+  period: 2022
+  input:
+    on_senior_homeowners_property_tax_grant: 2_000
+    oeptc: 8_000
+    oeptc_energy_component: 1_000
+    oeptc_occupancy_cost: 0
+  output:
+    oshptg_adjusted_oeptc: 0

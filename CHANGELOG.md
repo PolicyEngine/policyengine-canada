@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.26.0] - 2023-01-26 05:20:56
+
+### Added
+
+- Ontario tax credits and benefits to net income tree .
+
+## [0.25.0] - 2023-01-25 04:39:47
+
+### Added
+
+- Oshptg adjusted oeptc.
+
+## [0.24.0] - 2023-01-25 04:38:58
+
+### Added
+
+- Ontario child care fee subsidy.
+
 ## [0.23.0] - 2023-01-20 17:22:26
 
 ### Added
@@ -223,6 +241,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.26.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.25.0...0.26.0
+[0.25.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.24.0...0.25.0
+[0.24.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.23.0...0.24.0
 [0.23.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.22.1...0.23.0
 [0.22.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.22.0...0.22.1
 [0.22.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.21.2...0.22.0
