@@ -15,5 +15,4 @@ class benefits(Variable):
         "old_age_security_pension",
         # Ontario programs.
         "on_child_benefit",
-        "on_sales_tax_credit",
     ]
