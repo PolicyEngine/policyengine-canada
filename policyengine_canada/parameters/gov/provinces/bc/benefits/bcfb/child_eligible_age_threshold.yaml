@@ -1,0 +1,9 @@
+description: Child Age eligibility threshold for the British Columbia family benefit.
+values:
+  2022-07-01: 18
+metadata:
+  unit: year
+  label: British Columbia family benefit Child Age eligibility threshold.
+  reference:
+  - title: Government of Canada - Province of British Columbia
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-british-columbia.html

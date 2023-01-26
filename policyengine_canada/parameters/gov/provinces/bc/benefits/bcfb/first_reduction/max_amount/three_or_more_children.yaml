@@ -1,0 +1,9 @@
+description: British Columbia family benefit first reduction maximum amount for the third and each additional child.
+values:
+  2022-07-01: 660 # 55.00 monthly
+metadata:
+  unit: currency-CAD
+  label: British Columbia family benefit first reduction max amount third child and more
+  reference:
+  - title: Government of Canada - Province of British Columbia
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-british-columbia.html
