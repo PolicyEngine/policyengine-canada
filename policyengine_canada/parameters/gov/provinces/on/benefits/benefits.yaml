@@ -1,0 +1,8 @@
+description: Ontario list of benefits.
+values:
+  2022-01-01:
+    - on_child_benefit
+    - on_senior_homeowners_property_tax_grant
+
+metadata:
+  unit: program
