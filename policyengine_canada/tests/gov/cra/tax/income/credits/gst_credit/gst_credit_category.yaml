@@ -1,0 +1,29 @@
+- name: GST credit category 'HEAD'
+  period: 2023
+  input:
+    is_head: true
+  output:
+    gst_credit_category: "HEAD"
+
+- name: GST credit category 'SPOUSE'
+  period: 2023
+  input:
+    is_spouse: true
+  output:
+    gst_credit_category: "SPOUSE"
+
+- name: GST credit eldest child gets treated as 'SPOUSE'
+  period: 2023
+  input:
+    is_spouse: false
+    is_eldest_child_in_single_household_for_gst_credit: true
+  output:
+    gst_credit_category: "SPOUSE"
+
+- name: GST credit category 'CHILD'
+  period: 2023
+  input:
+    is_child_for_gst_credit: true
+    is_eldest_child_in_single_household_for_gst_credit: false
+  output:
+    gst_credit_category: "CHILD"

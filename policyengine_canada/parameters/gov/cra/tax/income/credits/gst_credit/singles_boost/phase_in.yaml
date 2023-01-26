@@ -1,0 +1,16 @@
+description: The GST credit phases in the boost for households with no children at this rate, with respect to household net income..
+brackets:
+  - threshold:
+      2022-12-31: 0
+    rate:
+      2022-12-31: 0
+  - threshold:
+      2022-12-31: 9_919
+    rate:
+      2022-12-31: 0.02
+
+metadata:
+  label: GST Credit singles Phase-In Rate
+  reference:
+  - title: Goods and services tax/harmonized sales tax (GST/HST) credit - calculation sheet for the July 2022 to June 2023 payments (2021 base year)
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/goods-services-tax-harmonized-sales-tax-gst-hst-credit/goods-services-tax-harmonized-sales-tax-credit-calculation-sheet-july-2022-june-2023-payments-2021-tax-year.html

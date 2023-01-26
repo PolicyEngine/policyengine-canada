@@ -1,0 +1,18 @@
+- name: Basic calculation
+  period: 2023
+  input:
+    gst_credit_base: 612
+    gst_credit_singles_boost: 100
+    gst_credit_reduction: 200
+  output:
+    gst_credit: 512
+
+- name: Reduction greater than benefit + boost returns 0
+  period: 2023
+  input:
+    gst_credit_base: 306
+    gst_credit_singles_boost: 0
+    gst_credit_reduction: 1000
+  output:
+    gst_credit: 0
+
