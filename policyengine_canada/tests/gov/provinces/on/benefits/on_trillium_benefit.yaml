@@ -1,0 +1,8 @@
+- name: Ontario trillium benefit
+  period: 2023
+  input:
+    oeptc: 1_000
+    on_sales_tax_credit: 1_100
+    northern_ontario_energy_credit: 1_200
+  output:
+    on_trillium_benefit: 3_300
