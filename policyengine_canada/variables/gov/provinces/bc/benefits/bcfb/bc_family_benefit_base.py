@@ -19,11 +19,11 @@ class bc_family_benefit_base(Variable):
             # Results.
             [
                 p.one_child,
-                p.two_children,
-                p.three_or_more_children,
+                (p.two_children + p.one_child),
+                (p.three_or_more_children + p.one_child + p.two_children),
             ],
             default=0,
         )
 
 
-# TODO: Calculate amounts for each child - first child, second child etc.
+# TODO: Calculate amounts for each child over 2 children
