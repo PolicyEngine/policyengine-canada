@@ -1,0 +1,7 @@
+- name: British Columbia income tax 
+  period: 2023
+  input:
+    province: BRITISH_COLUMBIA
+    bc_family_benefit_eligible_children: 1
+  output:
+    bc_family_benefit_base: 1_599.96
