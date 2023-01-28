@@ -10,4 +10,4 @@ class province(Variable):
     default_value = Province.UNKNOWN
     entity = Household
     label = "Province"
-    definition_period = ETERNITY
+    definition_period = YEAR
