@@ -1,0 +1,4 @@
+- bump: patch
+  changes:
+    changed:
+      - Made province yearly to work in the app.
