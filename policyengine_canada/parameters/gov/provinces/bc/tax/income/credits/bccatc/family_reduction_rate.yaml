@@ -9,7 +9,6 @@ brackets:
     rate:
       2022-07-01: 0.02
 
-
 metadata:
   type: marginal_rate
   rate_unit: /1
