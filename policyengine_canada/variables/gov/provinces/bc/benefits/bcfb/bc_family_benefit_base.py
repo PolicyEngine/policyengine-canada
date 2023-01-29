@@ -13,17 +13,9 @@ class bc_family_benefit_base(Variable):
         p = parameters(period).gov.provinces.bc.benefits.bcfb.base
         province = household("province", period)
         in_bc = province == province.possible_values.BRITISH_COLUMBIA
-        return in_bc * select(
-            # Conditions.
-            [children == 1, children == 2, children > 2],
-            # Results.
-            [
-                p.one_child,
-                (p.two_children + p.one_child),
-                (p.three_or_more_children + p.one_child + p.two_children),
-            ],
-            default=0,
+        amount_if_eligible = (
+            ((children > 0) * p.one_child)
+            + ((children > 1) * p.two_children)
+            + (max_(children - 2, 0) * p.three_or_more_children)
         )
-
-
-# TODO: Calculate amounts for each child over 2 children
+        return in_bc * amount_if_eligible

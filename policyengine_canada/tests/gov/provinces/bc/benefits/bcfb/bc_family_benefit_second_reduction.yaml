@@ -1,0 +1,32 @@
+- name: Partial reduction
+  period: 2023
+  input:
+    adjusted_family_net_income: 90_000
+    bc_family_benefit_first_reduction: 1_000
+  output:
+    bc_family_benefit: 703.12
+
+- name: Full reduction
+  period: 2023
+  input:
+    adjusted_family_net_income: 190_000
+    bc_family_benefit_first_reduction: 1_000
+  output:
+    bc_family_benefit: 0
+
+
+- name: No previous amount reduction
+  period: 2023
+  input:
+    adjusted_family_net_income: 83_000
+    bc_family_benefit_first_reduction: 0
+  output:
+    bc_family_benefit: 0
+
+- name: under second reduction threshold
+  period: 2023
+  input:
+    adjusted_family_net_income: 82_000
+    bc_family_benefit_first_reduction: 1_000
+  output:
+    bc_family_benefit: 1_000

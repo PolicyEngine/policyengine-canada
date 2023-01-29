@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class bc_family_benefit_second_reduction(Variable):
+class bc_family_benefit(Variable):
     value_type = float
     entity = Household
     label = "British Columbia family benefit second reduction"
