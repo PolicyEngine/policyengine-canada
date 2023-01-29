@@ -1,0 +1,106 @@
+- name: Single person with singles boost and partial reduction
+  period: 2023
+  input:
+    household_net_income: 40_000
+    is_head: true
+  output:
+    gst_credit_base: 306 
+    gst_credit_singles_boost: 161
+    gst_credit_reduction: 8.7
+    gst_credit: 306 + 161 - 8.7
+
+- name: Single-parent household with two child and a partial reduction. Eldest child gets the spousal amount.
+  period: 2023
+  input:
+    people:
+      parent:
+        is_dependent: false
+        is_head: true
+        age: 55
+      c1:
+        is_dependent: true
+        age: 16
+      c2:
+        is_dependent: true
+        age: 17
+    household:
+      members: [parent, c1, c2]
+      household_net_income: 50_000
+      is_married: false
+  output:
+    gst_credit_person: [306, 161, 306]
+    gst_credit_singles_boost: 161
+    gst_credit_reduction: 508.7
+    gst_credit: 306 + 161 + 306 + 161 - 508.7
+
+- name: married household with four children and a partial reduction. Eldest child does not get the spousal amount.
+  period: 2023
+  absolute_error_margin: 0.01
+  input:
+    people:
+      head:
+        is_head: true
+        age: 55
+      spouse:
+        is_spouse: true
+        age: 55
+      c1:
+        is_dependent: true
+        age: 7
+      c2:
+        is_dependent: true
+        age: 10
+      c3:
+        is_dependent: true
+        age: 12
+      c4:
+        is_dependent: true
+        age: 15
+    household:
+      members: [head, spouse, c1, c2, c3, c4]
+      household_net_income: 60_000
+      is_married: true
+  output:
+    gst_credit_person: [306, 306, 161, 161, 161, 161]
+    gst_credit_singles_boost: 0
+    gst_credit_reduction: 1008.7
+    gst_credit: 306 + 306 + 161 + 161 + 161 + 161 - 1008.7
+
+- name: Amount for child in a married household.
+  period: 2023
+  input:
+    people:
+      parent:
+        gst_credit_category: HEAD
+      c1:
+        gst_credit_category: SPOUSE
+      c2:
+        gst_credit_category: CHILD
+    household:
+      members: [parent, c1, c2]
+  output:
+    gst_credit_person: [306, 306, 161]
+
+- name: Person amounts for single-parent family of 3. Eldest child gets spousal amount.
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 50
+        is_head: true
+      c1:
+        age: 17
+      c2:
+        age: 7
+    household:
+      members: [parent, c1, c2]
+      is_married: false
+  output:
+    people: 
+      parent:
+        gst_credit_person: 306
+      c1:        
+        gst_credit_person: 306
+      c2: 
+        gst_credit_person: 161
+    gst_credit_person: [306, 306, 161]

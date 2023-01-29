@@ -1,0 +1,18 @@
+description: GST credit reduction multiplier
+brackets:
+  - threshold:
+      2022-12-31: 0
+    rate:
+      2022-12-31: 0
+  - threshold:
+      2022-12-31: 39_826
+    rate:
+      2022-12-31: 0.05
+
+metadata:
+  unit: year
+  name: gst_credit_reduction_threshold
+  label: Proportion of above-threshold income to reduce from the credit value. 
+  reference:
+    - title: Government of Canada - GST Credit Calculation Sheet
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/goods-services-tax-harmonized-sales-tax-gst-hst-credit/goods-services-tax-harmonized-sales-tax-credit-calculation-sheet-july-2022-june-2023-payments-2021-tax-year.html

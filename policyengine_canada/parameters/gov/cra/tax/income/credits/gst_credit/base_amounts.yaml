@@ -1,0 +1,18 @@
+description: This tax credit, introduced in 1986, is a refundable credit calculated by summing a base amount for the head, spouse, and number of children under 19, then reducing this amount by a proportion of 'family net income' as defined in the SPSD/M
+
+HEAD:
+  2022-07-01: 306
+SPOUSE:
+  2022-07-01: 306
+CHILD:
+  2022-07-01: 161
+
+metadata:
+  unit: currency-CAD
+  period: year
+  name: gst_credit_base_amount
+  label: GST Credit Base Amount
+  reference:
+    - title: Government of Canada - GST calculation sheet for the July 2022 to June 2023 payments (2021 base year)
+      href: https://www.canada.ca/content/dam/cra-arc/serv-info/benefits/gstcclc21-eng.pdf
+ 
