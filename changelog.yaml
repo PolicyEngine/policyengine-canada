@@ -203,3 +203,8 @@
     changed:
     - Made province yearly to work in the app.
   date: 2023-01-28 01:31:28
+- bump: minor
+  changes:
+    added:
+    - Ontario trillium benefit.
+  date: 2023-01-29 15:46:25
