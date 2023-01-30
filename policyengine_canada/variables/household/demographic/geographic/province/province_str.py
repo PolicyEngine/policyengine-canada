@@ -6,7 +6,7 @@ class province_str(Variable):
     entity = Household
     label = "Province (string)"
     documentation = "Province variable, stored as a string"
-    definition_period = ETERNITY
+    definition_period = YEAR
 
     def formula(household, period, parameters):
         return household("province", period).decode_to_str()

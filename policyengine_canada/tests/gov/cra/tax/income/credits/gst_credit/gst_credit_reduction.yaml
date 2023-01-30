@@ -1,0 +1,13 @@
+- name: A household with less than $39,826 in net income should have a reduction of 0. 
+  period: 2023
+  input:
+    household_net_income: 30_000
+  output:
+    gst_credit_reduction: 0 
+
+- name: A household with $100,000 in net income should have a reduction of $3,008.70, which eats their whole credit.
+  period: 2023
+  input:
+    household_net_income: 100_000
+  output:
+    gst_credit_reduction: 3_008.70
