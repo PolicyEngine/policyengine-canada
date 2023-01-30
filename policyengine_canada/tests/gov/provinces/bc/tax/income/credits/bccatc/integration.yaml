@@ -1,0 +1,16 @@
+- name: Integration
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 40
+      c1:
+        age: 12
+      c2:
+        age: 10
+    household:
+      members: [parent, c1, c2]
+      adjusted_family_net_income: 20_000
+      province: BRITISH_COLUMBIA
+  output:
+    bc_climate_action_tax_credit: 369
