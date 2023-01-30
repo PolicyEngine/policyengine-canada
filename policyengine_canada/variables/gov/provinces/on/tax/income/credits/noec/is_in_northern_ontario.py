@@ -8,4 +8,4 @@ class is_in_northern_ontario(Variable):
     definition_period = YEAR
 
 
-# placeholder until distric enum is made
+# placeholder until district enum is made

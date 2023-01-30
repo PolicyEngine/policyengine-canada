@@ -65,4 +65,5 @@
     adjusted_family_net_income: 50_000
     oeptc_category: SINGLE_NO_CHILDREN
   output:
+    # 162 - (50000 - 43602) * 0.01
     northern_ontario_energy_credit: 98.02
