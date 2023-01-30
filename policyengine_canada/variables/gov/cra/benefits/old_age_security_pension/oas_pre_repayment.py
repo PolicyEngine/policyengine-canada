@@ -1,20 +1,20 @@
 from policyengine_canada.model_api import *
 
-# SPSD/M 29.0: imioas or imoasmax, I'm not sure. I think imioas is post-clawback?
+# SPSD/M 29.0: imioas or imoasmax, I'm not sure. I think imioas is post-repayment?
 
 
-class old_age_security_pension_pre_clawback(Variable):
+class oas_pre_repayment(Variable):
     value_type = float
     entity = Person
-    label = "Old age security pension pre-clawback"
-    documentation = "The OAS amount a person is eligible for prior to the clawback tax. See SPSD/M 'imoasmax'."
+    label = "Old age security pension pre-repayment"
+    documentation = "The OAS amount a person is eligible for prior to the repayment tax. See SPSD/M 'imoasmax'."
     unit = CAD
     definition_period = YEAR
-    defined_for = "old_age_security_pension_eligibility"
 
     def formula(person, period, parameters):
         age = person("age", period)
         adult_years_in_canada = person("adult_years_in_canada", period)
+        oas_eligible = person("oas_eligibility", period)
         p = parameters(period).gov.cra.benefits.old_age_security_pension
         # Age at which you get the percentage boost.
         older_increase_age_threshold = p.eligibility.age.older_seniors_increase
@@ -33,6 +33,11 @@ class old_age_security_pension_pre_clawback(Variable):
         )
         # Apply the old age boost to the base amount if applicable.
         # In the SPSD/M 29.0 this is imoasmax.
-        return (
-            base_amount * residency_scale_factor * total_older_increase_factor
+        amount = (
+            oas_eligible
+            * base_amount
+            * residency_scale_factor
+            * total_older_increase_factor
         )
+
+        return numpy.around(amount, 2)
