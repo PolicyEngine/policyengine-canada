@@ -10,9 +10,5 @@ class bc_family_benefit_eligible_child(Variable):
 
     def formula(person, period, parameters):
         age = person("age", period)
-        return (
-            age
-            < parameters(
-                period
-            ).gov.cra.provinces.bc.benefits.bcfb.child_eligible_age
-        )
+        p = parameters(period).gov.cra.provinces.bc.benefits.bcfb
+        return age < p.child_ineligible_age_threshold

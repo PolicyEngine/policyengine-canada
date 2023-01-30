@@ -14,29 +14,10 @@ class bc_family_benefit_first_reduction(Variable):
         p = parameters(period).gov.provinces.bc.benefits.bcfb.first_reduction
         base = household("bc_family_benefit_base", period)
         reduction = p.rate.calc(income)
+        # The maximum family benefit is reduced to an amount dependent on the amount of children. Each child has a designated amount, varying for the first two children.
         reduction_cap = (
             ((children > 0) * p.max_amount.one_child)
             + ((children > 1) * p.max_amount.two_children)
             + (max_(children - 2, 0) * p.max_amount.three_or_more_children)
         )
-        print(reduction_cap)
         return max_(max_(base - reduction, reduction_cap), 0)
-
-        # reduction = base - p.first_reduction.rate.calc(income)
-        # return max_(
-        #     min_(
-        #         select(
-        #             # Conditions.
-        #             [children == 1, children == 2, children > 2],
-        #             # Results.
-        #             [
-        #                 p.first_reduction.max_amount.one_child,
-        #                 p.first_reduction.max_amount.two_children,
-        #                 p.first_reduction.max_amount.three_or_more_children,
-        #             ],
-        #             default=0,
-        #         ),
-        #         reduction,
-        #     ),
-        #     0,
-        # )

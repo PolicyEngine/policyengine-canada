@@ -12,12 +12,5 @@ class bc_family_benefit(Variable):
         income = household("adjusted_family_net_income", period)
         p = parameters(period).gov.provinces.bc.benefits.bcfb
         reduced_amount = household("bc_family_benefit_first_reduction", period)
-        return max_(
-            reduced_amount
-            - parameters(
-                period
-            ).gov.provinces.bc.benefits.bcfb.second_reduction.rate.calc(
-                income
-            ),
-            0,
-        )
+        second_reduction = p.second_reduction.rate.calc(income)
+        return max_(reduced_amount - second_reduction, 0)
