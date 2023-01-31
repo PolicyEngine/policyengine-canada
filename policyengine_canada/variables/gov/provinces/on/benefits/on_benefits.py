@@ -9,4 +9,4 @@ class on_benefits(Variable):
     unit = CAD
     definition_period = YEAR
 
-    adds = "gov.province.on.tax.income.credits.refundable"
+    adds = "gov.province.on.benefits.benefits"

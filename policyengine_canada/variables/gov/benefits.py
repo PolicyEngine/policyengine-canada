@@ -14,5 +14,7 @@ class benefits(Variable):
         "dental_benefit",
         "old_age_security_pension",
         # Ontario programs.
-        "on_child_benefit",
+        "on_benefits",
+        # British Columbia programs.
+        "bc_benefits",
     ]
