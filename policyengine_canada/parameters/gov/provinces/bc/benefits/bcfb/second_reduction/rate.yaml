@@ -1,0 +1,20 @@
+description: British Columbia reduces total family benefit payments as a percentage of AFNI above a threshold for a second time.
+brackets:
+  - threshold:
+      2022-07-01: 0
+    rate:
+      2022-07-01: 0
+  - threshold:
+      2022-07-01: 82_578
+    rate:
+      2022-07-01: 0.04
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: British Columbia Family Benefit second reduction rate
+  reference:
+  - title: Government of Canada - Province of British Columbia
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-british-columbia.html
+
