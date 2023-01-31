@@ -7,7 +7,7 @@
   output:
     northern_ontario_energy_credit: 249
 
-- name: Not in northern ontario
+- name: Not in Northern Ontario
   period: 2022
   input:
     is_in_northern_ontario: false
