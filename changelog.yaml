@@ -213,3 +213,8 @@
     added:
     - British Columbia family benefit.
   date: 2023-01-31 00:30:36
+- bump: minor
+  changes:
+    added:
+    - Northern Ontario Energy Credit (NOEC).
+  date: 2023-01-31 18:07:39
