@@ -208,3 +208,8 @@
     added:
     - Ontario trillium benefit.
   date: 2023-01-29 15:46:25
+- bump: minor
+  changes:
+    added:
+    - British Columbia family benefit.
+  date: 2023-01-31 00:30:36
