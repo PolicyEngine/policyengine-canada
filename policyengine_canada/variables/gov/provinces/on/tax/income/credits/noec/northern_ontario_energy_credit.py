@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class northern_ontario_energy_credit(Variable):
     value_type = float
     entity = Household
-    label = "Northern ontario energy credit"
+    label = "Northern Ontario energy credit"
     unit = CAD
     definition_period = YEAR
     defined_for = "is_in_northern_ontario"
