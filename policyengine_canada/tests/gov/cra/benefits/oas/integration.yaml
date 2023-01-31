@@ -6,9 +6,9 @@
     individual_net_income: 91_761
   output:
     oas_eligibility: TRUE
-    oas_pre_repayment: 8226
-    oas_repayment: 1500
-    oas_net: 6726
+    oas_pre_repayment: 8_226
+    oas_repayment: 1_500
+    oas_net: 6_726
 
 - name: Same but no repayment because low income
   period: 2022
@@ -18,9 +18,9 @@
     individual_net_income: 40_000
   output:
     oas_eligibility: TRUE
-    oas_pre_repayment: 8226
+    oas_pre_repayment: 8_226
     oas_repayment: 0
-    oas_net: 8226
+    oas_net: 8_226
 
 - name: 66 year old but with only 20 years of residence and total repayment
   period: 2022
@@ -30,9 +30,6 @@
     individual_net_income: 10_000_000
   output:
     oas_eligibility: TRUE
-    oas_pre_repayment: 4113
-    oas_repayment: 4113
+    oas_pre_repayment: 4_113
+    oas_repayment: 4_113
     oas_net: 0
-
-
-
