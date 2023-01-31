@@ -1,0 +1,9 @@
+description: British Columbia family benefit maximum amount for the third and each additional child.
+values:
+  2022-07-01: 799.92 # 66.66 monthly
+metadata:
+  unit: currency-CAD
+  label: British Columbia family benefit max amount third child and more
+  reference:
+  - title: Government of Canada - Province of British Columbia
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-british-columbia.html

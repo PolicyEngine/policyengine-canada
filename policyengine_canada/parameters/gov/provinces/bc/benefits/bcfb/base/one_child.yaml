@@ -1,0 +1,9 @@
+description: British Columbia family benefit maximum amount for the first child.
+values:
+  2022-07-01: 1_599.96 # 133.33 monthly
+metadata:
+  unit: currency-CAD
+  label: British Columbia family benefit max amount first child
+  reference:
+  - title: Government of Canada - Province of British Columbia
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-british-columbia.html
