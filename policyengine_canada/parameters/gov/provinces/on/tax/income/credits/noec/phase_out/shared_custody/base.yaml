@@ -1,0 +1,11 @@
+description: Northern Ontario energy credit shared custody second base amount.
+values:
+  2022-01-01: 205.50
+metadata:
+  unit: currency-CAD
+  label: Northern Ontario energy credit shared custody second base amount
+  reference:
+  - title: Government of Canada - Province of Ontario - 2022 Northern Ontario energy credit (NOEC) - Calculation sheet - single with shared custody
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/2022-northern-ontario-energy-credit-noec-calculation-sheet-single-individuals-who-share-care-their-children.html
+  breakdown:
+    - oeptc_category

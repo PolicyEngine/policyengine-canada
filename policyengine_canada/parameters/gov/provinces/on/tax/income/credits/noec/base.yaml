@@ -1,0 +1,19 @@
+description: Northern Ontario energy credit base amount per category.
+
+MARRIED:
+  2022-01-01: 249
+SINGLE_NO_CHILDREN:
+  2022-01-01: 162
+SINGLE_SHARED_CUSTODY:
+  2022-01-01: 162
+SINGLE_SOLE_CUSTODY:
+  2022-01-01: 249
+
+metadata:
+  unit: currency-CAD
+  label: Northern Ontario energy credit base amount per category
+  reference:
+  - title: Government of Canada - Province of Ontario - 2022 Northern Ontario energy credit (NOEC) - Calculation sheet
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/2022-northern-ontario-energy-credit-noec-calculation-sheets.html
+  breakdown:
+    - oeptc_category
