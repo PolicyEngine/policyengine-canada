@@ -1,0 +1,14 @@
+- name: Integration
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 40
+      c1:
+        age: 12
+    household:
+      members: [parent, c1]
+      province: BRITISH_COLUMBIA
+      adjusted_family_net_income: 20_000
+  output:
+    benefits: 0

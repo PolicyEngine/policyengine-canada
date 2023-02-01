@@ -10,5 +10,5 @@ class household_refundable_tax_credits(Variable):
     adds = [
         "refundable_tax_credits",  # Federal.
         "on_refundable_credits",  # Ontario.
-        "bc_refundable_credits",  # British Columbia
+        "bc_refundable_credits",  # British Columbia.
     ]

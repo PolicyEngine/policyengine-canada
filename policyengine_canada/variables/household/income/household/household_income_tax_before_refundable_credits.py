@@ -10,5 +10,6 @@ class household_income_tax_before_refundable_credits(Variable):
     definition_period = YEAR
     adds = [
         "income_tax_before_refundable_credits",  # Federal.
-        "on_income_tax_before_refundable_credits",
+        "on_income_tax_before_refundable_credits",  # Ontario.
+        "bc_income_tax_before_refundable_credits",  # British Columbia.
     ]

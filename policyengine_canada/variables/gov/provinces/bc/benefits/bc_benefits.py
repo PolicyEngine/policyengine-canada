@@ -9,4 +9,4 @@ class bc_benefits(Variable):
     unit = CAD
     definition_period = YEAR
 
-    adds = "gov.province.bc.benfits.benefits"
+    adds = "gov.provinces.bc.benefits.benefits"
