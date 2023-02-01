@@ -16,9 +16,10 @@ class oeptc_category(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
+        person = household.members
         married = household("is_married", period)
         children = household("count_children", period)
-        full_custody = household("full_custody", period)
+        full_custody = person("full_custody", period)
         return select(
             [married, children == 0, full_custody],
             [

@@ -10,5 +10,14 @@
       members: [parent, c1]
       province: BRITISH_COLUMBIA
       adjusted_family_net_income: 20_000
+      is_married: false
+  output:
+    benefits: 0
+
+- name: British Columbia, no children, should be 0
+  period: 2023
+  input:
+    adjusted_family_net_income: 20_000
+    province: BRITISH_COLUMBIA
   output:
     benefits: 0
