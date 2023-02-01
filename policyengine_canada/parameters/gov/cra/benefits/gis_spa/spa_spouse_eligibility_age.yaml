@@ -2,7 +2,7 @@ description: Age at which the spouse of an OAS pensioner becomes eligible for th
 values:
   2020-01-01: 60
 metadata:
-  label: SPA Eligibility Age
+  label: SPA Spouse Eligibility Age
   reference:
   - title: Government of Canada - Guaranteed Income Supplement
     href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/allowance-survivor.html
