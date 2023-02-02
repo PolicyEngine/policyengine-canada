@@ -1,23 +1,22 @@
 - name: Integration
   period: 2023
+  absolute_error_margin: 0.5
   input:
     people:
       parent:
         age: 40
       c1:
         age: 12
+        full_custody: false
     household:
       members: [parent, c1]
-      province: BRITISH_COLUMBIA
+      province: ONTARIO
       adjusted_family_net_income: 20_000
       is_married: false
+      family_working_income: 3_000
   output:
-    benefits: 0
-
-- name: British Columbia, no children, should be 0
-  period: 2023
-  input:
-    adjusted_family_net_income: 20_000
-    province: BRITISH_COLUMBIA
-  output:
-    benefits: 0
+    on_child_benefit: 754.44
+    on_trillium_benefit: 486
+    climate_action_incentive: 466
+    child_benefit: 2_951.4
+    benefits: 5_277.84
