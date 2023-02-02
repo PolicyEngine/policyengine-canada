@@ -13,7 +13,7 @@ class northern_ontario_energy_credit(Variable):
         person = household.members
         age = person("age", period)
         married = household("is_married", period)
-        children = household("count_children", period)
+        children = household("noec_count_children", period)
         category = household("oeptc_category", period)
         afni = household("adjusted_family_net_income", period)
         p = parameters(period).gov.provinces.on.tax.income.credits.noec
