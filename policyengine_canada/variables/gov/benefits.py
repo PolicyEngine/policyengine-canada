@@ -12,7 +12,7 @@ class benefits(Variable):
         "child_disability_benefit",
         "canada_workers_benefit",
         "dental_benefit",
-        "old_age_security_pension",
+        "oas_net",
         # Ontario programs.
         "on_benefits",
         # British Columbia programs.
