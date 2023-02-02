@@ -218,3 +218,8 @@
     added:
     - Northern Ontario Energy Credit (NOEC).
   date: 2023-01-31 18:07:39
+- bump: minor
+  changes:
+    added:
+    - OAS params, vars, and tests
+  date: 2023-02-02 14:47:47
