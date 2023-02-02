@@ -23,6 +23,7 @@
     age: 17
     adjusted_family_net_income: 20_000
     oeptc_category: MARRIED
+    noec_count_children: 0
   output:
     northern_ontario_energy_credit: 0
 
@@ -31,7 +32,7 @@
   input:
     is_in_northern_ontario: true
     age: 17
-    count_children: 1
+    noec_count_children: 1
     adjusted_family_net_income: 20_000
     oeptc_category: MARRIED
   output:
@@ -42,7 +43,7 @@
   input:
     is_in_northern_ontario: true
     age: 17
-    count_children: 0
+    noec_count_children: 0
     is_married: true
     adjusted_family_net_income: 20_000
     oeptc_category: MARRIED
