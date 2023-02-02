@@ -16,6 +16,9 @@
       family_working_income: 3_000
   output:
     on_child_benefit: 754.44
+    oeptc: 0
+    on_sales_tax_credit: 486
+    northern_ontario_energy_credit: 0
     on_trillium_benefit: 486
     climate_action_incentive: 466
     child_benefit: 2_951.4
