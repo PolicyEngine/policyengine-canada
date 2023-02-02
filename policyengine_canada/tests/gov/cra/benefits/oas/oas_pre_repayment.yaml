@@ -1,0 +1,15 @@
+- name: 80 year-old with 62 years of residence (all of their adult years)
+  period: 2022
+  input:
+    age: 80
+    adult_years_in_canada: 62
+  output:
+    oas_pre_repayment: 9_048.60
+
+- name: 66 year old but with only 20 years of residence, so benefit is reduced
+  period: 2022
+  input:
+    age: 66
+    adult_years_in_canada: 20
+  output:
+    oas_pre_repayment: 4_113
