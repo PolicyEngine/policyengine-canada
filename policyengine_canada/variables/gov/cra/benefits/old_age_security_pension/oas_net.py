@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+
 # SPSD/M 29.0: imioas or imoasmax, I'm not sure. I think imioas is post-repayment?
 class oas_net(Variable):
     value_type = float
