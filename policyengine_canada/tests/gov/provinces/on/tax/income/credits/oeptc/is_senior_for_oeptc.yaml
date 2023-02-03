@@ -1,0 +1,13 @@
+- name: Senior
+  period: 2022
+  input:
+    age: 64
+  output:
+    oeptc_senior_status: SENIOR
+
+- name: Non-Senior
+  period: 2022
+  input:
+    age: 63
+  output:
+    oeptc_senior_status: NON_SENIOR

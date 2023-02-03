@@ -8,11 +8,9 @@ class on_senior_homeowners_property_tax_grant(Variable):
     unit = CAD
     definition_period = YEAR
 
-    def formula(household, period, parameters):
-        base = household(
-            "on_senior_homeowners_property_tax_grant_base", period
-        )
-        reduction = household(
+    def formula(person, period, parameters):
+        base = person("on_senior_homeowners_property_tax_grant_base", period)
+        reduction = person(
             "on_senior_homeowners_property_tax_grant_reduction", period
         )
         return max_(0, base - reduction)

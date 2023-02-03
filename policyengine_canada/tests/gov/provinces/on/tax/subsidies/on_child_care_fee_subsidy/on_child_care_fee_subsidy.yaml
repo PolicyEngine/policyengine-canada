@@ -1,0 +1,43 @@
+- name: Ontario full time care with reduction
+  period: 2023
+  input:
+    province: ONTARIO
+    on_child_care_fee_subsidy_reduction: 100
+    full_time_childcare: true 
+    on_child_care_fee_subsidy_full_time: 1_000
+    on_child_care_fee_subsidy_part_time: 2_000
+  output:
+    on_child_care_fee_subsidy: 900
+  
+- name: Ontario part time care with reduction
+  period: 2023
+  input:
+    province: ONTARIO
+    on_child_care_fee_subsidy_reduction: 100
+    full_time_childcare: false 
+    on_child_care_fee_subsidy_full_time: 1_000
+    on_child_care_fee_subsidy_part_time: 2_000
+  output:
+    on_child_care_fee_subsidy: 1_900
+
+- name: Wrong province
+  period: 2023
+  input:
+    province: MANITOBA
+    on_child_care_fee_subsidy_reduction: 100
+    full_time_childcare: false 
+    on_child_care_fee_subsidy_full_time: 1_000
+    on_child_care_fee_subsidy_part_time: 2_000
+  output:
+    on_child_care_fee_subsidy: 0
+
+- name: Reduction over main amount
+  period: 2023
+  input:
+    province: ONTARIO
+    on_child_care_fee_subsidy_reduction: 1_100
+    full_time_childcare: true 
+    on_child_care_fee_subsidy_full_time: 1_000
+    on_child_care_fee_subsidy_part_time: 2_000
+  output:
+    on_child_care_fee_subsidy: 0

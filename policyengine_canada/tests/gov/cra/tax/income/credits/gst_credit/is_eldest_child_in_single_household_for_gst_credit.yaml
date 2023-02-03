@@ -1,0 +1,18 @@
+- name: Is eldest child in single household for gst credit
+  period: 2023
+  input:
+    people:
+      c1:
+        is_child_for_gst_credit: true
+        person_index: 1
+      c2:
+        is_child_for_gst_credit: true
+        person_index: 2
+    household:
+      members: [c1, c2]
+      is_married: false
+  output:
+    is_eldest_child_in_single_household_for_gst_credit: [true, false]
+
+
+

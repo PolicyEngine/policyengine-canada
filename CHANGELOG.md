@@ -5,6 +5,84 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.31.0] - 2023-02-02 14:47:47
+
+### Added
+
+- OAS params, vars, and tests
+
+## [0.30.0] - 2023-01-31 18:07:39
+
+### Added
+
+- Northern Ontario Energy Credit (NOEC).
+
+## [0.29.0] - 2023-01-31 00:30:36
+
+### Added
+
+- British Columbia family benefit.
+
+## [0.28.0] - 2023-01-29 15:46:25
+
+### Added
+
+- Ontario trillium benefit.
+
+## [0.27.1] - 2023-01-28 01:31:28
+
+### Changed
+
+- Made province yearly to work in the app.
+
+## [0.27.0] - 2023-01-26 19:18:43
+
+### Added
+
+- GST credit.
+
+## [0.26.0] - 2023-01-26 05:20:56
+
+### Added
+
+- Ontario tax credits and benefits to net income tree .
+
+## [0.25.0] - 2023-01-25 04:39:47
+
+### Added
+
+- Oshptg adjusted oeptc.
+
+## [0.24.0] - 2023-01-25 04:38:58
+
+### Added
+
+- Ontario child care fee subsidy.
+
+## [0.23.0] - 2023-01-20 17:22:26
+
+### Added
+
+- Rename is_senior_for_oeptc to oeptc_senior_status.
+
+## [0.22.1] - 2023-01-20 17:15:53
+
+### Added
+
+- API auto-deployment
+
+## [0.22.0] - 2023-01-16 20:15:46
+
+### Added
+
+- Ontario energy and property tax credit (OEPTC).
+
+## [0.21.2] - 2023-01-13 23:56:13
+
+### Fixed
+
+- Fixed age variable
+
 ## [0.21.1] - 2023-01-10 14:25:18
 
 ### Changed
@@ -199,6 +277,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.31.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.30.0...0.31.0
+[0.30.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.29.0...0.30.0
+[0.29.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.28.0...0.29.0
+[0.28.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.27.1...0.28.0
+[0.27.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.27.0...0.27.1
+[0.27.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.26.0...0.27.0
+[0.26.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.25.0...0.26.0
+[0.25.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.24.0...0.25.0
+[0.24.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.23.0...0.24.0
+[0.23.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.22.1...0.23.0
+[0.22.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.22.0...0.22.1
+[0.22.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.21.2...0.22.0
+[0.21.2]: https://github.com/PolicyEngine/policyengine-canada/compare/0.21.1...0.21.2
 [0.21.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.21.0...0.21.1
 [0.21.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.20.0...0.21.0
 [0.20.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.19.0...0.20.0

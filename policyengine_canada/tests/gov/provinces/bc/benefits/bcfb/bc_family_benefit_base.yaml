@@ -1,0 +1,39 @@
+- name: British Columbia family benefit one child
+  period: 2023
+  input:
+    province: BRITISH_COLUMBIA
+    bc_family_benefit_eligible_children: 1
+  output:
+    bc_family_benefit_base: 1_599.96
+
+- name: Wrong province
+  period: 2023
+  input:
+    province: ONTARIO
+    bc_family_benefit_eligible_children: 1
+  output:
+    bc_family_benefit_base: 0
+
+- name: No children
+  period: 2023
+  input:
+    province: BRITISH_COLUMBIA
+    bc_family_benefit_eligible_children: 0
+  output:
+    bc_family_benefit_base: 0
+
+- name: British Columbia family benefit two children
+  period: 2023
+  input:
+    province: BRITISH_COLUMBIA
+    bc_family_benefit_eligible_children: 2
+  output:
+    bc_family_benefit_base: 2_599.92
+
+- name: British Columbia family benefit four children
+  period: 2023
+  input:
+    province: BRITISH_COLUMBIA
+    bc_family_benefit_eligible_children: 4
+  output:
+    bc_family_benefit_base: 4_199.76

@@ -1,0 +1,26 @@
+- name: Single person with income 15,000 gets a boost of (15,000 - 9919) * 0.02 = 101.62
+  period: 2023
+  input:
+    gst_credit_single_parent_household: false
+    is_married: false
+    household_net_income: 15_000
+  output:
+    gst_credit_singles_boost: 101.62
+
+- name: Same but as a single-parent household, so should get the full amount of 161
+  period: 2023
+  input:
+    gst_credit_single_parent_household: True
+    is_married: false
+    household_net_income: 15_000
+  output:
+    gst_credit_singles_boost: 161
+
+- name: Same as above but for a married household, so the boost doesn't apply
+  period: 2023
+  input:
+    gst_credit_single_parent_household: false
+    is_married: true
+    household_net_income: 15_000
+  output:
+    gst_credit_singles_boost: 0

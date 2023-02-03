@@ -1,0 +1,11 @@
+description: GST credit singles boost cap
+values:
+  2022-07-01: 161
+          
+metadata:
+  unit: currency-CAD
+  name: gst_credit_singles_boost_maximum
+  label: The maximum boost amount for singles. Single parent households will always receive this amount. 
+  reference:
+    - title: Government of Canada - GST Credit Calculation Sheet
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/goods-services-tax-harmonized-sales-tax-gst-hst-credit/goods-services-tax-harmonized-sales-tax-credit-calculation-sheet-july-2022-june-2023-payments-2021-tax-year.html

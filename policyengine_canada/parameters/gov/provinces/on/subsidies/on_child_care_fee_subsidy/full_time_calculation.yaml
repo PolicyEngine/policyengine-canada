@@ -1,0 +1,24 @@
+description: Ontario child care fee subsidy payment calculation for full time care
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0
+  - threshold:
+      2022-01-01: 20_000
+    rate:
+      2022-01-01: 0.1
+  - threshold:
+      2022-01-01: 40_000
+    rate:
+      2022-01-01: 0.3
+
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: Ontario child care fee subsidy full time calculation
+  reference:
+  - title: Child Care and Early Years Act, 2014 (10), (3)
+    href: https://www.ontario.ca/laws/regulation/150138#BK13 

@@ -1,0 +1,35 @@
+- name: Single senior with $12,000 annual rent and $40,000 AFNI who shares care of all children.
+  # https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/2022-ontario-energy-property-tax-credit-oeptc-calculation-sheet-single-seniors-who-share-care-their-children.html
+  period: 2022
+  input:
+    oeptc_category: SINGLE_SHARED_CUSTODY
+    oeptc_senior_status: SENIOR
+    rent: 12_000
+    adjusted_family_net_income: 40_000
+  output:
+    # Step 1 - Occupancy cost
+    # 20% of rent = $2,400
+    # Step 2 - Energy component
+    # Not on long-term care home or reserve, so $0.
+    # capped at $249
+    oeptc_energy_component: 249
+    # Step 3 - Property tax component
+    # A: 10% of $2400 = $240
+    # A or $499, whichever is less = $240
+    # Add $529 = $769
+    # $769 or $2,400, whichever is less = $769
+    oeptc_property_tax_component: 769
+    # Step 4 - Energy and property tax credit
+    # A. Add the result of Step 2 and Step 3 = $1,018
+    # B: Subtract $31,144.00 from your adjusted family net income for 2021
+    #    (if negative, the result is zero) = $8,856
+    # C: Multiply B by 2% = $177.12
+    # D. Subtract C from A = $840.88
+    # E. Divide D by 2 = $420.44
+    # F. Subtract $37,373.00 from your adjusted family net income for 2021
+    #    (if negative, the result is zero) = $2,627
+    # G. Multiply F by 2% = $52.54
+    # H. Subtract G from A = $965.46
+    # I. Divide H by 2 = $482.73
+    # J. Add E and I = $903.17
+    oeptc: 903.17

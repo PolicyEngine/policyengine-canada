@@ -1,0 +1,21 @@
+- name: GST amount for head
+  period: 2023
+  input:
+      gst_credit_category: HEAD
+  output:
+    gst_credit_person: 306
+
+- name: GST amount for spouse
+  period: 2023
+  input:
+      gst_credit_category: SPOUSE
+  output:
+    gst_credit_person: 306
+
+- name: GST amount for child
+  period: 2023
+  input:
+      gst_credit_category: CHILD
+  output:
+    gst_credit_person: 161
+

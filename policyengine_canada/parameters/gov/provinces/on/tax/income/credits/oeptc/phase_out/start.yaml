@@ -1,0 +1,30 @@
+description: Ontario energy and property tax credit phase-out start per category.
+
+SENIOR:
+  MARRIED:
+    2022-01-01: 37_373
+  SINGLE_NO_CHILDREN:
+    2022-01-01: 31_144
+  SINGLE_SHARED_CUSTODY: 
+    2022-01-01: 31_144
+  SINGLE_SOLE_CUSTODY: 
+    2022-01-01: 37_373
+NON_SENIOR:
+  MARRIED:
+    2022-01-01: 31_144
+  SINGLE_NO_CHILDREN:
+    2022-01-01: 24_916
+  SINGLE_SHARED_CUSTODY:
+    2022-01-01: 24_916
+  SINGLE_SOLE_CUSTODY:
+    2022-01-01: 31_144
+
+metadata:
+  unit: currency-CAD
+  label: Ontario energy and property tax credit subtarctions per category.
+  reference:
+  - title: Government of Canada - Province of Ontario - 2022 Ontario energy and property tax credit (OEPTC) - Calculation sheet
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/2022-ontario-energy-property-tax-credit-oeptc-calculation-sheet-for-married-common-law-individuals-who-have-do-not-have-children.html
+  breakdown:
+    - oeptc_senior_status
+    - oeptc_category
