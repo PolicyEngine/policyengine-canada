@@ -2,16 +2,17 @@ description: Ontario sales tax credit reduction for families
 brackets:
   - threshold:
       values:
-        2022-01-01: 0
+        2021-01-01: 0
     rate:
       values:
-        2022-01-01: 0
+        2021-01-01: 0
   - threshold:
       values:
-        2022-01-01: 31_144
+        2022-01-01: 33_169
+        2021-01-01: 31_144
     rate:
       values:
-        2022-01-01: 0.04
+        2021-01-01: 0.04
 
 
 metadata:

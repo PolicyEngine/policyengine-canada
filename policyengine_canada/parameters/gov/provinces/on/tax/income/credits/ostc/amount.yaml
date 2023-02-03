@@ -1,6 +1,7 @@
 description: Ontario Sales tax credit base for each adult or child in a household.
 values:
-  2022-01-01: 324 
+  2022-01-01: 345
+  2021-01-01: 324 
 metadata:
   unit: currency-CAD
   label: Ontario sales tax credit base
