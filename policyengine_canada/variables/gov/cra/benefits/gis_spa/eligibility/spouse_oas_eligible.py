@@ -7,7 +7,7 @@ class spouse_oas_eligible(Variable):
     definition_period = YEAR
 
     def formula(person, period, parameters):
-        oas_eligible = person("old_age_security_pension_eligibility", period)
+        oas_eligible = person("oas_eligible", period)
         head_or_spouse = person("is_head", period) | person("is_spouse", period)
         head_or_spouse_oas_eligible = head_or_spouse & oas_eligible
         household = person.household

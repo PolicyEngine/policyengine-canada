@@ -4,7 +4,7 @@
     age: 61
     adult_years_in_canada: 40
     is_widow: FALSE
-    old_age_security_pension_eligibility: FALSE
+    oas_eligible: FALSE
     spouse_oas_eligible: TRUE
   output:
     spa_eligible: TRUE
@@ -15,7 +15,7 @@
     age: 61
     adult_years_in_canada: 40
     is_widow: TRUE
-    old_age_security_pension_eligibility: FALSE
+    oas_eligible: FALSE
     spouse_oas_eligible: FALSE
   output:
     spa_eligible: TRUE
@@ -26,7 +26,7 @@
     age: 61
     adult_years_in_canada: 9
     is_widow: TRUE
-    old_age_security_pension_eligibility: FALSE
+    oas_eligible: FALSE
     spouse_oas_eligible: FALSE
   output:
     spa_eligible: FALSE

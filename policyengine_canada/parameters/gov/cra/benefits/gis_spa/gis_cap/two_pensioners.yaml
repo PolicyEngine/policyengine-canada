@@ -1,0 +1,10 @@
+description: Guaranteed Income Supplement maximum rate in dollars for each OAS pensioner in a married couple. Corresponds to COUPLE_BOTH_OAS or COUPLE_ONE_OAS_SPA_ELIGIBLE
+values:
+  2021-12-31: 6_240.18
+metadata:
+  period: year
+  label: GIS Cap for pensioners married to a pensioner.
+  documentataion: Corresponds to BGISS in the SPSD/M Variable Guide
+  reference:
+  - title: SPSD/M Variable Guide
+   

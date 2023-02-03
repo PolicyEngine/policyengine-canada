@@ -22,11 +22,10 @@ class gis_spa_category(Variable):
         age_spouse = household("age_spouse", period)
         married = household("is_married", period)
         widow = person("is_widow", period)
-        oas_eligible = person("old_age_security_pension_eligibility", period)
+        oas_eligible = person("oas_eligible", period)
         spa_eligible = person("spa_eligible", period)
         spouse_oas_eligible = person("spouse_oas_eligible", period)
         spouse_spa_eligible = person("spouse_spa_eligible", period)
-        p = parameters(period).gov.cra.benefits.gis_spa
         return select(
             [
                 ~married & oas_eligible,

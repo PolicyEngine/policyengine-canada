@@ -4,10 +4,10 @@
     people:
       head:
         is_head: true
-        old_age_security_pension_eligibility: true
+        oas_eligible: true
       spouse:
         is_spouse: true
-        old_age_security_pension_eligibility: true
+        oas_eligible: true
     household:
       members: [head, spouse]
   output:
@@ -19,10 +19,10 @@
     people:
       head:
         is_head: true
-        old_age_security_pension_eligibility: true
+        oas_eligible: true
       spouse:
         is_spouse: true
-        old_age_security_pension_eligibility: false 
+        oas_eligible: false 
     household:
       members: [head, spouse]
   output:

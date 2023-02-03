@@ -2,7 +2,7 @@
   period: 2022
   input:
     is_married: false
-    old_age_security_pension_eligibility: true
+    oas_eligible: true
   output:
     gis_spa_category: "SINGLE_WITH_OAS"
 
@@ -10,7 +10,7 @@
   period: 2022
   input:
     is_widow: true
-    old_age_security_pension_eligibility: false
+    oas_eligible: false
     adult_years_in_canada: 12
     age: 61
   output:
@@ -20,7 +20,7 @@
   period: 2022
   input:
     is_widow: true
-    old_age_security_pension_eligibility: false
+    oas_eligible: false
     adult_years_in_canada: 2
     age: 61
   output:
@@ -33,10 +33,10 @@
     people:
       head:
         age: 70
-        old_age_security_pension_eligibility: true
+        oas_eligible: true
       spouse:
         age: 70
-        old_age_security_pension_eligibility: true
+        oas_eligible: true
     household:
       is_married: true
       members: [head, spouse]
@@ -51,11 +51,11 @@
       head:
         is_head: true
         age: 70
-        old_age_security_pension_eligibility: true
+        oas_eligible: true
       spouse:
         is_spouse: true
         age: 61
-        old_age_security_pension_eligibility: false
+        oas_eligible: false
         adult_years_in_canada: 20
     household:
       is_married: true
@@ -71,12 +71,12 @@
       head:
         is_head: true
         age: 70
-        old_age_security_pension_eligibility: true
+        oas_eligible: true
       spouse:
         is_spouse: true
         age: 44
         spa_eligible: false
-        old_age_security_pension_eligibility: false
+        oas_eligible: false
     household:
       members: [head, spouse]
   output:
