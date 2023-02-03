@@ -10,7 +10,7 @@ class adult_years_in_canada_spouse(Variable):
     definition_period = YEAR
 
     def formula(household, period, parameters):
-      person = household.members
-      adult_years_in_canada = person("adult_years_in_canada", period)
-      spouse = person("is_spouse", period)
-      return household.max(adult_years_in_canada * spouse)
+        person = household.members
+        adult_years_in_canada = person("adult_years_in_canada", period)
+        spouse = person("is_spouse", period)
+        return household.max(adult_years_in_canada * spouse)

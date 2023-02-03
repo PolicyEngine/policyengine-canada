@@ -14,7 +14,3 @@ class age_spouse(Variable):
         age = person("age", period)
         spouse = person("is_spouse", period)
         return household.max(age * spouse)
-
-
-
-

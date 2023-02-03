@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+
 class is_widow(Variable):
     value_type = bool
     entity = Person

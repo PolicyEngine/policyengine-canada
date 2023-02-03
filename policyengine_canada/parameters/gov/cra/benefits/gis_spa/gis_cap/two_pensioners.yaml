@@ -4,7 +4,7 @@ values:
 metadata:
   period: year
   label: GIS Cap for pensioners married to a pensioner.
-  documentataion: Corresponds to BGISS in the SPSD/M Variable Guide
+  documentataion: Corresponds to BGISM in the SPSD/M Variable Guide
   reference:
   - title: SPSD/M Variable Guide
    
