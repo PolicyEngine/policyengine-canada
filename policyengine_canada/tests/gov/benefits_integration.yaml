@@ -23,3 +23,38 @@
     climate_action_incentive: 559
     child_benefit: 2_951.4
     benefits: 5_095.96
+
+- name: Integration - disabled child
+  period: 2023
+  absolute_error_margin: 0.5
+  input:
+    people:
+      parent1:
+        age: 40
+        rent: 1_000
+        is_head: true
+      parent2:
+        age: 40
+        is_spouse: true
+      c1:
+        age: 5
+        full_custody: true 
+        is_disabled: true
+        dtc_eligible: true
+    household:
+      members: [parent1, parent2, c1]
+      province: ONTARIO
+      household_net_income: 26_000
+      adjusted_family_net_income: 26_000
+      is_married: true
+      family_working_income: 5_000
+  output:
+    child_benefit: 6_996.96
+    child_disability_benefit: 2_985
+    on_child_benefit: 1_272.52
+    canada_workers_benefit: 540
+    climate_action_incentive: 652
+    gst_credit: 773
+    oeptc: 282
+    on_sales_tax_credit: 1035
+    benefits: 13_811.48
