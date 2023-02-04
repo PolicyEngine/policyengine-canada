@@ -1,5 +1,13 @@
-- name: Single in Ontario 
+- name: Single in Ontario - 2022
   period: 2022
+  input:
+    province: ONTARIO
+    household_size: 1
+  output:
+    on_sales_tax_credit_base: 345
+
+- name: Single in Ontario - 2021
+  period: 2021
   input:
     province: ONTARIO
     household_size: 1
@@ -20,4 +28,4 @@
     province: ONTARIO
     household_size: 3
   output:
-    on_sales_tax_credit_base: 972
+    on_sales_tax_credit_base: 1035

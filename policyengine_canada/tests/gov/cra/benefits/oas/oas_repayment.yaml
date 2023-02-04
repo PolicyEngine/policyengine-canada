@@ -1,0 +1,23 @@
+- name: Partial repayment
+  period: 2022
+  input:
+    oas_pre_repayment: 9_048.60
+    individual_net_income: 91_761
+  output:
+    oas_repayment: 1_500
+
+- name: No repayment because below the threshold
+  period: 2022
+  input:
+    oas_pre_repayment: 9048.60
+    individual_net_income: 40_000
+  output:
+    oas_repayment: 0
+
+- name: Full repayment
+  period: 2022
+  input:
+    oas_pre_repayment: 9_048.60
+    individual_net_income: 10_000_000
+  output:
+    oas_repayment: 9_048.60

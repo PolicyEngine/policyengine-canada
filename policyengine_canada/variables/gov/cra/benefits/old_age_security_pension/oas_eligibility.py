@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class old_age_security_pension_eligibility(Variable):
+class oas_eligibility(Variable):
     value_type = bool
     entity = Person
     label = "Old age security pension eligibility"

@@ -1,0 +1,70 @@
+- name: Married, under phase out threshold 
+  period: 2022
+  input:
+    is_in_northern_ontario: true
+    adjusted_family_net_income: 56_060
+    oeptc_category: MARRIED
+  output:
+    northern_ontario_energy_credit: 249
+
+- name: Not in Northern Ontario
+  period: 2022
+  input:
+    is_in_northern_ontario: false
+    adjusted_family_net_income: 20_000
+    oeptc_category: MARRIED
+  output:
+    northern_ontario_energy_credit: 0
+  
+- name: Under age eligibility
+  period: 2022
+  input:
+    is_in_northern_ontario: true
+    age: 17
+    adjusted_family_net_income: 20_000
+    oeptc_category: MARRIED
+    noec_count_children: 0
+  output:
+    northern_ontario_energy_credit: 0
+
+- name: Eligible by children
+  period: 2022
+  input:
+    is_in_northern_ontario: true
+    age: 17
+    noec_count_children: 1
+    adjusted_family_net_income: 20_000
+    oeptc_category: MARRIED
+  output:
+    northern_ontario_energy_credit: 249
+
+- name: Eligible by married
+  period: 2022
+  input:
+    is_in_northern_ontario: true
+    age: 17
+    noec_count_children: 0
+    is_married: true
+    adjusted_family_net_income: 20_000
+    oeptc_category: MARRIED
+  output:
+    northern_ontario_energy_credit: 249
+
+- name: Single shared custody - not implemented yet
+  period: 2022
+  input:
+    is_in_northern_ontario: true
+    adjusted_family_net_income: 43_602
+    oeptc_category: SINGLE_SHARED_CUSTODY
+  output:
+    northern_ontario_energy_credit: 205.50
+
+- name: Single no children
+  period: 2022
+  input:
+    is_in_northern_ontario: true
+    adjusted_family_net_income: 50_000
+    oeptc_category: SINGLE_NO_CHILDREN
+  output:
+    # 162 - (50000 - 43602) * 0.01
+    northern_ontario_energy_credit: 98.02

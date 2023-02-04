@@ -4,7 +4,7 @@
     adjusted_family_net_income: 30_000
     household_size: 1
   output:
-    on_sales_tax_credit_reduction: 203.36
+    on_sales_tax_credit_reduction: 138.6
 
 - name: Single in Ontario with income under reduction threshold
   period: 2022
@@ -14,13 +14,21 @@
   output:
     on_sales_tax_credit_reduction: 0
 
-- name: Family in Ontario with income over reduction threshold
-  period: 2022
+- name: Family in Ontario with income over reduction threshold - 2021
+  period: 2021
   input:
     adjusted_family_net_income: 35_000
     household_size: 2
   output:
     on_sales_tax_credit_reduction: 154.24
+
+- name: Family in Ontario with income over reduction threshold - 2022
+  period: 2022
+  input:
+    adjusted_family_net_income: 35_000
+    household_size: 2
+  output:
+    on_sales_tax_credit_reduction: 73.24
 
 - name: Family in Ontario with income under reduction threshold
   period: 2022

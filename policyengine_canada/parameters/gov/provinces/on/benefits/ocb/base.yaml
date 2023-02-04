@@ -3,7 +3,7 @@ values:
   2022-07-01: 1_509 # $1,310 in 2008, indexed to inflation.
 metadata:
   unit: currency-CAD
-  label: ontario child benefit base
+  label: Ontario child benefit base
   reference:
   - title: Government of Canada - Canada Child Benefit
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html

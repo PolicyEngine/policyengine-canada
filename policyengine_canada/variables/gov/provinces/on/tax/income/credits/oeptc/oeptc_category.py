@@ -17,10 +17,12 @@ class oeptc_category(Variable):
 
     def formula(household, period, parameters):
         married = household("is_married", period)
-        children = household("count_children", period)
-        full_custody = household("full_custody", period)
+        children = household("oeptc_count_children", period)
+        has_any_full_custody_children = (
+            add(household, period, ["full_custody"]) > 0
+        )
         return select(
-            [married, children == 0, full_custody],
+            [married, children == 0, has_any_full_custody_children],
             [
                 OEPTCCategory.MARRIED,
                 OEPTCCategory.SINGLE_NO_CHILDREN,

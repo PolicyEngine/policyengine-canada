@@ -14,4 +14,15 @@ class on_child_benefit(Variable):
     def formula(household, period, parameters):
         base = household("on_child_benefit_base", period)
         reduction = household("on_child_benefit_reduction", period)
-        return max_(0, base - reduction)
+        devsior = parameters(
+            period
+        ).gov.provinces.on.benefits.ocb.shared_custody_divisor
+        has_any_full_custody_children = (
+            add(household, period, ["full_custody"]) > 0
+        )
+        child_benefit_amount = max_(0, base - reduction)
+        return where(
+            has_any_full_custody_children,
+            child_benefit_amount,
+            child_benefit_amount / devsior,
+        )

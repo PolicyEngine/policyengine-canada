@@ -17,7 +17,7 @@ metadata:
   threshold_unit: year
   amount_unit: currency-CAD
   period: year
-  name: canada_child_benefit_amount_base
+  name: child_benefit_amount_base
   label: Canada Child Benefit base amount
   reference:
     - title: Government of Canada - Canada Child Benefit
