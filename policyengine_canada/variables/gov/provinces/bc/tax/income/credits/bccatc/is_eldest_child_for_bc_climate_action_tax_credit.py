@@ -6,7 +6,7 @@ class is_eldest_child_for_bc_climate_action_tax_credit(Variable):
     entity = Person
     label = "Is the first born child in a household, for the purposes of the British Columbia Climate Action Tax Credit"
     definition_period = YEAR
-    defined_for = "is_child_for_climate_action_incentive"
+    defined_for = "is_child_for_bc_climate_action_tax_credit"
 
     def formula(person, period, parameters):
         household = person.household
