@@ -10,21 +10,37 @@
         adjusted_family_net_income: 62_000
         child_benefit_eligible_children: 0
   output:
-    canada_child_benefit: 0
+    child_benefit: 0
 
-- name: One eligible child under 6
+- name: One eligible child under 6 - full custody
   period: 2023
   input:
     people:
       person:
         age: 5
+        full_custody: true
     households:
       household:
         members: [person]
         adjusted_family_net_income: 30_000
         child_benefit_eligible_children: 1
   output:
-    canada_child_benefit: 6_997
+    child_benefit: 6_997
+
+- name: One eligible child under 6 - full custody
+  period: 2023
+  input:
+    people:
+      person:
+        age: 5
+        full_custody: false
+    households:
+      household:
+        members: [person]
+        adjusted_family_net_income: 30_000
+        child_benefit_eligible_children: 1
+  output:
+    child_benefit: 3_498.5
 
 - name: One eligible child under 6, one eligible childe under 17
   period: 2023
@@ -33,12 +49,14 @@
     people:
       person:
         age: 5
+        full_custody: true
       second_person: 
         age: 17
+        full_custody: true
     households:
       household:
         members: [person, second_person]
         adjusted_family_net_income: 80_000
         child_benefit_eligible_children: 2
   output:
-    canada_child_benefit: 7_224.42
+    child_benefit: 7_224.42
