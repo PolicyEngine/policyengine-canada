@@ -223,3 +223,8 @@
     added:
     - OAS params, vars, and tests
   date: 2023-02-02 14:47:47
+- bump: minor
+  changes:
+    added:
+    - Canada net income tree audit.
+  date: 2023-02-04 21:41:29
