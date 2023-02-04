@@ -6,7 +6,7 @@
   output:
     gis_spa_category: "SINGLE_WITH_OAS"
 
-- name: Single OAS Pensioner
+- name: Widow
   period: 2022
   input:
     is_widow: true

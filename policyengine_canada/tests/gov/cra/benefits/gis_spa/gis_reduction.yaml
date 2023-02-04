@@ -1,10 +1,11 @@
 - name: Single Pensioner
   period: 2022
   input:
-    gis_spa_category: "SINGLE_WITH_OAS"
-    oas_eligible: true
+  #  gis_spa_category: "SINGLE_WITH_OAS"
+    individual_net_income: 224
+  #  gis_base_amount: 9_449.87
   output:
-    gis_base_amount: 9_449.87
+    gis_reduction: 100
 
 - name: Widow
   period: 2022

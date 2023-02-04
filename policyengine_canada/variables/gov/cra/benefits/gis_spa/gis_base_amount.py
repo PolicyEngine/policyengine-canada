@@ -10,14 +10,15 @@ class gis_base_amount(Variable):
 
     def formula(person, period, parameters):
         gis_spa_category = person("gis_spa_category", period)
+        gis_spa_categories = gis_spa_category.possible_values
         oas_eligible = person("oas_eligible", period)
         p = parameters(period).gov.cra.benefits.gis_spa.gis_cap
         return select(
              [
-                 gis_spa_category == "SINGLE_WITH_OAS",
-                 gis_spa_category == "COUPLE_BOTH_OAS",
-                 (gis_spa_category == "COUPLE_ONE_OAS_SPA_ELIGIBLE") & oas_eligible,  # the oas_eligible makes sure this person is the eligible one in the couple, since both people in the couple will have the same category.
-                 gis_spa_category == "COUPLE_ONE_OAS_SPA_INELIGIBLE" # & oas_eligible,
+                 gis_spa_category == gis_spa_categories.SINGLE_WITH_OAS,
+                 gis_spa_category == gis_spa_categories.COUPLE_BOTH_OAS,
+                 (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_ELIGIBLE) & oas_eligible,  # the oas_eligible makes sure this person is the eligible one in the couple, since both people in the couple will have the same category.
+                 (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_INELIGIBLE) & oas_eligible
              ],
              [
                  p.one_pensioner,
