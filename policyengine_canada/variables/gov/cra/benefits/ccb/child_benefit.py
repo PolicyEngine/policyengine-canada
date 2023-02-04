@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class canada_child_benefit(Variable):
+class child_benefit(Variable):
     value_type = float
     entity = Household
     label = "Canada Child Benefit"

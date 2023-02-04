@@ -3,6 +3,7 @@ values:
   2022-01-01:
     - on_child_benefit
     - on_senior_homeowners_property_tax_grant
+    - on_trillium_benefit
 
 metadata:
   unit: program

@@ -9,4 +9,4 @@ class on_refundable_credits(Variable):
     unit = CAD
     definition_period = YEAR
 
-    adds = "gov.province.on.tax.income.credits.refundable"
+    adds = "gov.provinces.on.tax.income.credits.refundable"

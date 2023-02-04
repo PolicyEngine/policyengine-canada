@@ -11,4 +11,8 @@ class child_benefit_base_person(Variable):
 
     def formula(person, period, parameters):
         age = person("age", period)
-        return parameters(period).gov.cra.benefits.ccb.base.calc(age)
+        p = parameters(period).gov.cra.benefits.ccb
+        full_custody = person("full_custody", period)
+        return where(
+            full_custody, p.base.calc(age), p.base.calc(age) / p.divisor
+        )
