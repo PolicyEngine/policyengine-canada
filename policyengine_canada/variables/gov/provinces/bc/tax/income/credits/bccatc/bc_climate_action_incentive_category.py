@@ -22,7 +22,7 @@ class bc_climate_action_incentive_category(Variable):
             "bc_climate_action_tax_credit_single_parent_household", period
         )
         eldest_child = person(
-            "is_child_for_bc_climate_action_tax_credit", period
+            "is_eldest_child_for_bc_climate_action_tax_credit", period
         )
         eldest_child_in_single_parent_household = (
             is_single_parent_household & eldest_child
