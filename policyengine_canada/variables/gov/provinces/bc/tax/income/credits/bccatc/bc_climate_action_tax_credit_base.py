@@ -9,4 +9,4 @@ class bc_climate_action_tax_credit_base(Variable):
     documentation = "Universal amount without adjustment based on AFNI"
     definition_period = YEAR
 
-    adds = ["climate_action_incentive_person"]
+    adds = ["bc_climate_action_incentive_category"]

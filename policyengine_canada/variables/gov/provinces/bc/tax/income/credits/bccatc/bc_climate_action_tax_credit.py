@@ -28,4 +28,5 @@ class bc_climate_action_tax_credit(Variable):
             ),
             0,
         )
+        print(post_reduction)
         return in_bc * post_reduction
