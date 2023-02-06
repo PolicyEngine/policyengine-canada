@@ -1,0 +1,26 @@
+description: OOntario Low-Income Workers Tax Credit reduction for single filers
+brackets:
+  - threshold:
+      values:
+        2019-01-01: 0
+    rate:
+      values:
+        2019-01-01: 0
+  - threshold:
+      values:
+        2022-01-01: 32_500
+        2019-01-01: 30_000
+    rate:
+      values:
+        2022-01-01: 0.05
+        2019-01-01: 0.1
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: Ontario Low-Income Workers Tax Creditreduction single
+  reference:
+  - title: Province of Ontario - Low-Income Workers Tax Credit
+    href: https://www.ontario.ca/page/low-income-workers-tax-credit
+

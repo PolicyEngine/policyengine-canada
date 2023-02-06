@@ -1,0 +1,9 @@
+description: Ontario Low-Income Workers Tax Credit rate.
+values:
+  2019-01-01: 0.0505
+metadata:
+  unit: /1
+  label: Ontario Low-Income Workers Tax Credit rate
+  reference:
+  - title: Province of Ontario - Low-Income Workers Tax Credit
+    href: https://www.ontario.ca/page/low-income-workers-tax-credit

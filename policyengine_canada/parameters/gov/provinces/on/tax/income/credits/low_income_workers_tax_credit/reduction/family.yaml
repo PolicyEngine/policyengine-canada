@@ -1,0 +1,25 @@
+description: Ontario sales tax credit reduction for families 
+brackets:
+  - threshold:
+      values:
+        2019-01-01: 0
+    rate:
+      values:
+        2019-01-01: 0
+  - threshold:
+      values:
+        2022-01-01: 65_000
+        2019-01-01: 60_000
+    rate:
+      values:
+        2022-01-01: 0.05
+        2019-01-01: 0.1
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: Ontario sales tax credit reduction family
+  reference:
+  - title: Government of Canada - Province of Ontario
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-ontario.html

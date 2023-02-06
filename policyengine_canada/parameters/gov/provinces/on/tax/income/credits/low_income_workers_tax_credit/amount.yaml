@@ -1,0 +1,10 @@
+description: Ontario Low-Income Workers Tax Credit base for each adult or child in a household.
+values:
+  2022-01-01: 875
+  2019-01-01: 850
+metadata:
+  unit: currency-CAD
+  label: Ontario Low-Income Workers Tax Credit base
+  reference:
+  - title: Province of Ontario - Low-Income Workers Tax Credit
+    href: https://www.ontario.ca/page/low-income-workers-tax-credit
