@@ -1,4 +1,4 @@
-description: OOntario Low-Income Workers Tax Credit reduction for single filers
+description: OOntario Low-Income Workers Tax Credit reduction for single filers.
 brackets:
   - threshold:
       values:

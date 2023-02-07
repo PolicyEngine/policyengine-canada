@@ -1,4 +1,4 @@
-description: Ontario sales tax credit reduction for families 
+description: Ontario Low-Income Workres Tax Credit reduction for families.
 brackets:
   - threshold:
       values:
@@ -19,7 +19,7 @@ metadata:
   type: marginal_rate
   rate_unit: /1
   threshold_unit: currency-CAD
-  label: Ontario sales tax credit reduction family
+  label: Ontario Low-Income Workres Tax Credit reduction family
   reference:
   - title: Government of Canada - Province of Ontario
     href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-ontario.html
