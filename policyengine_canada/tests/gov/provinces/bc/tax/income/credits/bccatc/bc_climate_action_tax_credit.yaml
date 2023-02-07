@@ -1,4 +1,4 @@
-- name: Not in british columbia
+- name: Not in British Columbia
   period: 2023
   input:
     province: ONTARIO

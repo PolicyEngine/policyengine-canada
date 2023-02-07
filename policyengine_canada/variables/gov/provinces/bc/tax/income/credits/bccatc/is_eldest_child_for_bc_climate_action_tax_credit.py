@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class is_eldest_child_for_bc_climate_action_tax_credit(Variable):
     value_type = bool
     entity = Person
-    label = "Is the first born child in a household, for the purposes of the British Columbia Climate Action Tax Credit"
+    label = "Is the first born child in a household, for the purposes of the British Columbia climate action tax credit "
     definition_period = YEAR
     defined_for = "is_child_for_bc_climate_action_tax_credit"
 

@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class BcClimateActionIncentiveCategory(Enum):
+class BCClimateActionIncentiveCategory(Enum):
     HEAD = "Head"
     SPOUSE = "Spouse"
     ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD = (
@@ -13,8 +13,8 @@ class BcClimateActionIncentiveCategory(Enum):
 class bc_climate_action_incentive_category(Variable):
     value_type = Enum
     entity = Person
-    possible_values = BcClimateActionIncentiveCategory
-    default_value = BcClimateActionIncentiveCategory.HEAD
+    possible_values = BCClimateActionIncentiveCategory
+    default_value = BCClimateActionIncentiveCategory.HEAD
     definition_period = YEAR
 
     def formula(person, period, parameters):
@@ -39,9 +39,9 @@ class bc_climate_action_incentive_category(Variable):
                 other_child,
             ],
             [
-                BcClimateActionIncentiveCategory.HEAD,
-                BcClimateActionIncentiveCategory.SPOUSE,
-                BcClimateActionIncentiveCategory.ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD,
-                BcClimateActionIncentiveCategory.OTHER_CHILD,
+                BCClimateActionIncentiveCategory.HEAD,
+                BCClimateActionIncentiveCategory.SPOUSE,
+                BCClimateActionIncentiveCategory.ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD,
+                BCClimateActionIncentiveCategory.OTHER_CHILD,
             ],
         )

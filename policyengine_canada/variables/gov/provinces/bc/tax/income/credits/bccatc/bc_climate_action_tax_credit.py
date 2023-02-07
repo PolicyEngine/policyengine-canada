@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class bc_climate_action_tax_credit(Variable):
     value_type = float
     entity = Household
-    label = "British Columbia Climate Action Tax Credit after reduction"
+    label = "British Columbia climate action tax credit after reduction"
     unit = CAD
     documentation = "Universal amount without adjustment based on AFNI"
     definition_period = YEAR
@@ -20,13 +20,10 @@ class bc_climate_action_tax_credit(Variable):
         base = household("bc_climate_action_tax_credit_base", period)
         p = parameters(period).gov.provinces.bc.tax.income.credits.bccatc
         in_bc = province == province.possible_values.BRITISH_COLUMBIA
-        post_reduction = max_(
-            where(
-                family,
-                base - p.family_reduction_rate.calc(income),
-                base - p.single_reduction_rate.calc(income),
-            ),
-            0,
+        reduction = where(
+            family,
+            p.reduction_rate.family.calc(income),
+            p.reduction_rate.single.calc(income),
         )
-        print(post_reduction)
+        post_reduction = max_(base - reduction, 0)
         return in_bc * post_reduction
