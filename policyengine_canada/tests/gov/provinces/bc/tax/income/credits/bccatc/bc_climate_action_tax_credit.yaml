@@ -1,0 +1,43 @@
+- name: Not in British Columbia
+  period: 2023
+  input:
+    province: ONTARIO
+    adjusted_family_net_income: 10_000
+    is_married: true
+    bc_climate_action_tax_credit_single_parent_household: true
+    bc_climate_action_tax_credit_base: 1_000
+  output:
+    bc_climate_action_tax_credit: 0
+
+- name: No reduction
+  period: 2023
+  input:
+    province: BRITISH_COLUMBIA
+    adjusted_family_net_income: 36_901
+    is_married: false
+    bc_climate_action_tax_credit_single_parent_household: false
+    bc_climate_action_tax_credit_base: 164
+  output:
+    bc_climate_action_tax_credit: 164
+
+- name: Single full reduction
+  period: 2023
+  input:
+    province: BRITISH_COLUMBIA
+    adjusted_family_net_income: 60_000
+    is_married: false
+    bc_climate_action_tax_credit_single_parent_household: false
+    bc_climate_action_tax_credit_base: 164
+  output:
+    bc_climate_action_tax_credit: 0
+
+- name: Single partial reduction
+  period: 2023
+  input:
+    province: BRITISH_COLUMBIA
+    adjusted_family_net_income: 40_000
+    is_married: false
+    bc_climate_action_tax_credit_single_parent_household: false
+    bc_climate_action_tax_credit_base: 164
+  output:
+    bc_climate_action_tax_credit: 102.02

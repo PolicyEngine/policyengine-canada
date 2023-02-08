@@ -1,0 +1,24 @@
+- name: Under eligibility age
+  period: 2023
+  input:
+    is_child_for_bc_climate_action_tax_credit: false
+  output:
+    is_eldest_child_for_bc_climate_action_tax_credit: false
+
+- name: Parent with two children.
+  period: 2023
+  input:
+    people:
+      parent:
+        person_index: 0
+        is_child_for_bc_climate_action_tax_credit: false
+      c1:
+        person_index: 1
+        is_child_for_bc_climate_action_tax_credit: true
+      c2:
+        person_index: 2
+        is_child_for_bc_climate_action_tax_credit: true
+    household:
+      members: [parent, c1, c2]
+  output:
+    is_eldest_child_for_bc_climate_action_tax_credit: [false, true, false]

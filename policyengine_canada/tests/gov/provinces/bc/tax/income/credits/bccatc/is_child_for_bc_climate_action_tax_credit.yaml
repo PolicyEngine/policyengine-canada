@@ -1,0 +1,13 @@
+- name: Under eligibility age
+  period: 2023
+  input:
+    age: 17
+  output:
+    is_child_for_bc_climate_action_tax_credit: true
+
+- name: Over eligibility age
+  period: 2023
+  input:
+    age: 18
+  output:
+    is_child_for_bc_climate_action_tax_credit: false
