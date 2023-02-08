@@ -1,0 +1,23 @@
+description: The British Columbia climate action tax credit provides the following amounts 
+
+HEAD:
+  2022-07-01: 193.5
+SPOUSE:
+  2022-07-01: 193.4
+ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD:
+  2022-07-01: 193.4
+OTHER_CHILD:
+  2022-07-01: 56.5
+
+metadata:
+  unit: currency-CAD
+  period: year
+  label: British Columbia climate action tax credit amount 
+  reference:
+    - title: Government of Canada - Province of British Columbia
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-british-columbia.html
+    - title: Income Tax Act 
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96215_01#section8.1 
+  breakdown:
+    - bc_climate_action_incentive_category
+  

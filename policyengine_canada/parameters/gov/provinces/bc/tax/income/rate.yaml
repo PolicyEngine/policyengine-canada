@@ -4,7 +4,7 @@ metadata:
   threshold_unit: currency-CAD
   rate_unit: /1
   name: bc_income_tax_rate
-  label: British columbia income tax rates 
+  label: British Columbia income tax rates 
   reference:
     - title: Government of Canada - Canadian income tax rates for individuals current and previous years
       href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html

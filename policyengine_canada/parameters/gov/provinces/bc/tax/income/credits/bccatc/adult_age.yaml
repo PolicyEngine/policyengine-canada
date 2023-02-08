@@ -1,0 +1,11 @@
+description: Climate Action Incentive adult age.
+values:
+  2022-07-01: 18
+metadata:
+  unit: year
+  label: The maximum age until which a person qualifies as a child for the British Columbia climate action tax credit
+  reference:
+    - title: Government of Canada - Province of British Columbia
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-british-columbia.html
+    - title: Income Tax Act 
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96215_01#section8.1 
