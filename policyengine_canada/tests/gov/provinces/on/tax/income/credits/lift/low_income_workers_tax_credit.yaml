@@ -27,9 +27,10 @@
     low_income_workers_tax_credit: 500
 
 - name: Married over full reduction amount
+  absolute_error_margin: 0.0001
   period: 2023
   input:
-    low_income_workers_tax_credit_base: 1_750
+    low_income_workers_tax_credit_base: 875
     adjusted_family_net_income: 82_500
     is_married: true
   output:

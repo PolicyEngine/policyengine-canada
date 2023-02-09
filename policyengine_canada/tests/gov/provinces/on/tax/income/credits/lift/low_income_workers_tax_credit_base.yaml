@@ -1,7 +1,7 @@
 - name: Wrong province
   period: 2023
   input:
-    family_employment_income: 20_000
+    employment_income: 20_000
     province: MANITOBA
   output:
     low_income_workers_tax_credit_base: 0
@@ -9,7 +9,7 @@
 - name: No employment income
   period: 2023
   input:
-    family_employment_income: 0
+    employment_income: 0
     province: ONTARIO
   output:
     low_income_workers_tax_credit_base: 0
@@ -18,7 +18,7 @@
   absolute_error_margin: 0.0001
   period: 2023
   input:
-    family_employment_income: 10_000
+    employment_income: 10_000
     province: ONTARIO
     low_income_workers_tax_credit_eligible_people: 1
   output:
@@ -27,7 +27,7 @@
 - name: One eligible person with income over full phase-in amount
   period: 2023
   input:
-    family_employment_income: 32_500
+    employment_income: 32_500
     province: ONTARIO
     low_income_workers_tax_credit_eligible_people: 1
   output:
@@ -36,7 +36,7 @@
 - name: Two eligible people with income over full phase-in amount
   period: 2023
   input:
-    family_employment_income: 65_000
+    employment_income: 65_000
     province: ONTARIO
     low_income_workers_tax_credit_eligible_people: 2
   output:
@@ -46,7 +46,7 @@
   absolute_error_margin: 0.0001
   period: 2023
   input:
-    family_employment_income: 20_000
+    employment_income: 20_000
     province: ONTARIO
     low_income_workers_tax_credit_eligible_people: 2
   output:
