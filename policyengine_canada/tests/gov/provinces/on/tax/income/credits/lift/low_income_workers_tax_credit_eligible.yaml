@@ -1,0 +1,13 @@
+- name: Ineligible
+  period: 2023
+  input:
+    employment_income: 0
+  output:
+    low_income_workers_tax_credit_eligible: false
+
+- name: Eligible
+  period: 2023
+  input:
+    employment_income: 1
+  output:
+    low_income_workers_tax_credit_eligible: true
