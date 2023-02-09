@@ -1,0 +1,13 @@
+- name: Household head base amount
+  period: 2023
+  input:
+    bc_climate_action_incentive_category: HEAD
+  output:
+    bc_climate_action_tax_credit_person: 193.5
+
+- name: Household head base amount
+  period: 2023
+  input:
+    bc_climate_action_incentive_category: OTHER_CHILD
+  output:
+    bc_climate_action_tax_credit_person: 56.5

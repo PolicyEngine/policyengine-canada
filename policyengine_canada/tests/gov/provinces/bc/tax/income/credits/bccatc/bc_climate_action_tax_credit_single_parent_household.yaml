@@ -1,0 +1,23 @@
+- name: No children
+  period: 2023
+  input:
+    is_married: false
+    bc_climate_action_tax_credit_dependent_children: 0
+  output:
+    bc_climate_action_tax_credit_single_parent_household: 0
+
+- name: Married
+  period: 2023
+  input:
+    is_married: true
+    bc_climate_action_tax_credit_dependent_children: 1
+  output:
+    bc_climate_action_tax_credit_single_parent_household: 0
+
+- name: No children
+  period: 2023
+  input:
+    is_married: false
+    bc_climate_action_tax_credit_dependent_children: 1
+  output:
+    bc_climate_action_tax_credit_single_parent_household: 1

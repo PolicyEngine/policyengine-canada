@@ -228,3 +228,8 @@
     added:
     - Canada net income tree audit.
   date: 2023-02-04 21:41:29
+- bump: minor
+  changes:
+    added:
+    - British Columbia climate action tax credit.
+  date: 2023-02-08 02:29:01
