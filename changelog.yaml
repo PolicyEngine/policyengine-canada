@@ -233,3 +233,18 @@
     added:
     - British Columbia climate action tax credit.
   date: 2023-02-08 02:29:01
+- bump: minor
+  changes:
+    added:
+    - Ontario Low-Income Individuals and Families tax credit.
+  date: 2023-02-10 02:12:22
+- bump: minor
+  changes:
+    added:
+    - Cap tax before non-refundable credits at zero.
+  date: 2023-02-10 02:31:23
+- bump: minor
+  changes:
+    added:
+    - Income tax after refundable credits variable.
+  date: 2023-02-10 04:37:34

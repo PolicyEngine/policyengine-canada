@@ -7,5 +7,10 @@ class income_tax_before_refundable_credits(Variable):
     label = "Income tax before refundable credits"
     unit = CAD
     definition_period = YEAR
-    adds = ["income_tax_before_credits"]
-    subtracts = ["non_refundable_tax_credits"]
+
+    def formula(person, period, parameters):
+        income_tax_before_credits = person("income_tax_before_credits", period)
+        non_refundable_tax_credits = person(
+            "non_refundable_tax_credits", period
+        )
+        return max_(income_tax_before_credits - non_refundable_tax_credits, 0)
