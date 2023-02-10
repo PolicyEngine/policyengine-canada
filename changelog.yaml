@@ -233,3 +233,8 @@
     added:
     - British Columbia climate action tax credit.
   date: 2023-02-08 02:29:01
+- bump: minor
+  changes:
+    added:
+    - Ontario Low-Income Individuals and Families tax credit.
+  date: 2023-02-10 02:12:22
