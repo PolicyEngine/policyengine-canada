@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class low_income_workers_tax_credit_eligible_people(Variable):
+class on_low_income_workers_tax_credit_eligible_people(Variable):
     value_type = float
     entity = Person
     label = (
@@ -10,4 +10,4 @@ class low_income_workers_tax_credit_eligible_people(Variable):
     unit = CAD
     definition_period = YEAR
 
-    adds = ["low_income_workers_tax_credit_eligible"]
+    adds = ["on_low_income_workers_tax_credit_eligible"]

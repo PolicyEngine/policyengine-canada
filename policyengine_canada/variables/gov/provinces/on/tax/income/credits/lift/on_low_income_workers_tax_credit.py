@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class low_income_workers_tax_credit(Variable):
+class on_low_income_workers_tax_credit(Variable):
     value_type = float
     entity = Person
     label = "Post reduction of Ontario Low-Income Workers Tax Credit"
@@ -10,7 +10,7 @@ class low_income_workers_tax_credit(Variable):
 
     def formula(person, period, parameters):
         household = person.household
-        base = person("low_income_workers_tax_credit_base", period)
+        base = person("on_low_income_workers_tax_credit_base", period)
         afni = household("adjusted_family_net_income", period)
         p = parameters(
             period

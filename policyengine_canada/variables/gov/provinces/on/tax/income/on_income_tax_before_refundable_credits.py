@@ -8,5 +8,12 @@ class on_income_tax_before_refundable_credits(Variable):
     unit = CAD
     definition_period = YEAR
     reference = "https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html"
-    adds = ["on_income_tax_before_credits"]
-    subtracts = ["on_non_refundable_tax_credits"]
+
+    def formula(person, period, parameters):
+        income_tax_before_credits = person(
+            "on_income_tax_before_credits", period
+        )
+        non_refundable_tax_credits = person(
+            "pn_non_refundable_tax_credits", period
+        )
+        return max_(income_tax_before_credits - non_refundable_tax_credits, 0)
