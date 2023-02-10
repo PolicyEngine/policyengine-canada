@@ -238,3 +238,8 @@
     added:
     - Ontario Low-Income Individuals and Families tax credit.
   date: 2023-02-10 02:12:22
+- bump: minor
+  changes:
+    added:
+    - Cap tax before non-refundable credits at zero.
+  date: 2023-02-10 02:31:23

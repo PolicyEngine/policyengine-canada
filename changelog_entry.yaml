@@ -1,4 +1,0 @@
-- bump: minor
-  changes:
-    added:
-    - Cap tax before non-refundable credits at zero.
