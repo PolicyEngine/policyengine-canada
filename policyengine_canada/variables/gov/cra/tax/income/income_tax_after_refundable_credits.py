@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class income_tax_after_refundable_credits(Variable):
+class income_tax(Variable):
     value_type = float
     entity = Household
     label = "Income tax after non-refundable tax credits"
