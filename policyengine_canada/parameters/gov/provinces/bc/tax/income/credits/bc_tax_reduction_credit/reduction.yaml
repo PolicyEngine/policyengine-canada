@@ -1,14 +1,12 @@
 description: British Columbia tax reduction credit base amount rate.
 brackets:
   - threshold:
-      2023-01-01: 0
       2022-01-01: 0
     rate:
-      2023-01-01: 0
       2022-01-01: 0
   - threshold:
+      2022-01-01: 21_876
       2023-01-01: 23_179
-      2022-01-01: 21_867
     rate:
       2022-01-01: 0.0356
 
