@@ -14,6 +14,6 @@ class on_income_tax_before_refundable_credits(Variable):
             "on_income_tax_before_credits", period
         )
         non_refundable_tax_credits = person(
-            "pn_non_refundable_tax_credits", period
+            "on_non_refundable_credits", period
         )
         return max_(income_tax_before_credits - non_refundable_tax_credits, 0)
