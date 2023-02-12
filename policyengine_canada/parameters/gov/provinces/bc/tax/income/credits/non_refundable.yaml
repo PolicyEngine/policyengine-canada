@@ -1,0 +1,7 @@
+description: British Columbia list of non-refundable tax credits.
+values:
+  2022-01-01:
+    - bc_tax_reduction_credit
+
+metadata:
+  unit: program

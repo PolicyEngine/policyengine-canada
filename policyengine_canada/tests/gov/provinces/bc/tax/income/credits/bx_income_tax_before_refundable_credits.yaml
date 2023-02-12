@@ -1,0 +1,15 @@
+- name: Basic computation
+  period: 2022
+  input:
+    bc_income_tax_before_credits: 2_000
+    bc_non_refundable_credits: 1_000
+  output:
+    bc_income_tax_before_refundable_credits: 1_000
+
+- name: Capped at 0
+  period: 2022
+  input:
+    bc_income_tax_before_credits: 2_000
+    bc_non_refundable_credits: 3_000
+  output:
+    bc_income_tax_before_refundable_credits: 0
