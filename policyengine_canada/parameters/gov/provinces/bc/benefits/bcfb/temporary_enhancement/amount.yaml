@@ -1,0 +1,10 @@
+description: British Columbia family benefit temporary enhancement amount.
+values:
+  2023-01-01: 175 # 58.33 monthly - 3 months
+  2023-04-01: 0
+metadata:
+  unit: currency-CAD
+  label: British Columbia family benefit temporary enhancement amount
+  reference:
+  - title: Government of Canada - Province of British Columbia
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-british-columbia.html
