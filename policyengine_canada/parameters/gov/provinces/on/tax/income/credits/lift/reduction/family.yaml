@@ -1,0 +1,27 @@
+description: Ontario Low-Income Workres Tax Credit reduction for families.
+brackets:
+  - threshold:
+      values:
+        2019-01-01: 0
+    rate:
+      values:
+        2019-01-01: 0
+  - threshold:
+      values:
+        2022-01-01: 65_000
+        2019-01-01: 60_000
+    rate:
+      values:
+        2022-01-01: 0.05
+        2019-01-01: 0.1
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: Ontario Low-Income Workres Tax Credit reduction family
+  reference:
+  - title: Government of Canada - Province of Ontario
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-ontario.html
+  - title: Taxation Act, 2007, S.O. 2007, c. 11, Sched A (21.1)
+    href: https://www.ontario.ca/laws/statute/07t11?search=Low-income+Individuals+and+Families#BK39

@@ -1,0 +1,15 @@
+- name: Basic computation
+  period: 2022
+  input:
+    on_income_tax_before_credits: 2_000
+    on_non_refundable_credits: 1_000
+  output:
+    on_income_tax_before_refundable_credits: 1_000
+
+- name: Capped at 0
+  period: 2022
+  input:
+    on_income_tax_before_credits: 2_000
+    on_non_refundable_credits: 3_000
+  output:
+    on_income_tax_before_refundable_credits: 0

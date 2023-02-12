@@ -1,0 +1,23 @@
+- name: Ineligible
+  period: 2023
+  input:
+    employment_income: 0
+    province: ONTARIO
+  output:
+    on_low_income_workers_tax_credit_eligible: false
+
+- name: Eligible
+  period: 2023
+  input:
+    employment_income: 1
+    province: ONTARIO
+  output:
+    on_low_income_workers_tax_credit_eligible: true
+
+- name: Wrong province
+  period: 2023
+  input:
+    employment_income: 1
+    province: MANITOBA
+  output:
+    on_low_income_workers_tax_credit_eligible: false
