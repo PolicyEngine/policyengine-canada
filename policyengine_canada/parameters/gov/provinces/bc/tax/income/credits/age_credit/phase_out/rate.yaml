@@ -1,0 +1,22 @@
+description: British columbia age credit phase out rate.
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0
+  - threshold:
+      2022-01-01: 37_730
+      2023-01-01: 39_994
+    rate:
+      2022-01-01: 0.15
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: British Columbia age credit phase out rate 
+  reference:
+    - title: B.C. basic personal income tax credits
+      href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/basic
+    - title: Income Tax Act (4.31)
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96215_00_multi#section4.31
