@@ -248,3 +248,8 @@
     added:
     - Income tax after refundable credits variable.
   date: 2023-02-10 04:37:34
+- bump: minor
+  changes:
+    added:
+    - Ontario Low-income individuals and families tax credit.
+  date: 2023-02-12 01:47:46
