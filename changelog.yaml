@@ -253,3 +253,8 @@
     added:
     - Ontario Low-income individuals and families tax credit.
   date: 2023-02-12 01:47:46
+- bump: minor
+  changes:
+    added:
+    - British columbia tax reduction credit.
+  date: 2023-02-12 01:48:40
