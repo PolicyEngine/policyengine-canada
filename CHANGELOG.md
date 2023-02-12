@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.38.0] - 2023-02-12 01:48:40
+
+### Added
+
+- British columbia tax reduction credit.
+
+## [0.37.0] - 2023-02-12 01:47:46
+
+### Added
+
+- Ontario Low-income individuals and families tax credit.
+
 ## [0.36.0] - 2023-02-10 04:37:34
 
 ### Added
@@ -307,6 +319,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.38.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.37.0...0.38.0
+[0.37.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.36.0...0.37.0
 [0.36.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.35.0...0.36.0
 [0.35.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.34.0...0.35.0
 [0.34.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.33.0...0.34.0
