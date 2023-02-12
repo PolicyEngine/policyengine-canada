@@ -303,14 +303,17 @@
 <span class="g g-Whitespace">    </span><span class="mi">487</span>     <span class="k">if</span> <span class="n">array</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
 <span class="g g-Whitespace">    </span><span class="mi">488</span>         <span class="c1"># Check if the variable has a previously defined value</span>
 
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:687,</span> in <span class="ni">Simulation._run_formula</span><span class="nt">(self, variable, population, period)</span>
-<span class="g g-Whitespace">    </span><span class="mi">685</span>     <span class="n">values</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="g g-Whitespace">    </span><span class="mi">686</span>     <span class="k">for</span> <span class="n">added_variable</span> <span class="ow">in</span> <span class="n">adds_list</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">687</span>         <span class="n">values</span> <span class="o">=</span> <span class="n">values</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">688</span>             <span class="n">added_variable</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">map_to</span><span class="o">=</span><span class="n">variable</span><span class="o">.</span><span class="n">entity</span><span class="o">.</span><span class="n">key</span>
-<span class="g g-Whitespace">    </span><span class="mi">689</span>         <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">690</span> <span class="k">if</span> <span class="n">variable</span><span class="o">.</span><span class="n">subtracts</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">691</span>     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">variable</span><span class="o">.</span><span class="n">subtracts</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:707,</span> in <span class="ni">Simulation._run_formula</span><span class="nt">(self, variable, population, period)</span>
+<span class="g g-Whitespace">    </span><span class="mi">705</span>             <span class="n">values</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="g g-Whitespace">    </span><span class="mi">706</span>         <span class="k">for</span> <span class="n">subtracted_variable</span> <span class="ow">in</span> <span class="n">subtracts_list</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">707</span>             <span class="n">values</span> <span class="o">=</span> <span class="n">values</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">708</span>                 <span class="n">subtracted_variable</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">map_to</span><span class="o">=</span><span class="n">variable</span><span class="o">.</span><span class="n">entity</span><span class="o">.</span><span class="n">key</span>
+<span class="g g-Whitespace">    </span><span class="mi">709</span>             <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">710</span>     <span class="k">return</span> <span class="n">values</span>
+<span class="g g-Whitespace">    </span><span class="mi">712</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">trace</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">713</span>     <span class="bp">self</span><span class="o">.</span><span class="n">tax_benefit_system</span><span class="o">.</span><span class="n">parameters</span><span class="p">,</span> <span class="n">TracingParameterNodeAtInstant</span>
+<span class="g g-Whitespace">    </span><span class="mi">714</span> <span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">715</span>     <span class="c1"># Soft-recast</span>
 
 <span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:323,</span> in <span class="ni">Simulation.calculate</span><span class="nt">(self, variable_name, period, map_to, decode_enums)</span>
 <span class="g g-Whitespace">    </span><span class="mi">318</span> <span class="bp">self</span><span class="o">.</span><span class="n">tracer</span><span class="o">.</span><span class="n">record_calculation_start</span><span class="p">(</span>
@@ -328,17 +331,6 @@
 <span class="g g-Whitespace">    </span><span class="mi">486</span>     <span class="c1"># If no result, use the default value and cache it</span>
 <span class="g g-Whitespace">    </span><span class="mi">487</span>     <span class="k">if</span> <span class="n">array</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
 <span class="g g-Whitespace">    </span><span class="mi">488</span>         <span class="c1"># Check if the variable has a previously defined value</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:687,</span> in <span class="ni">Simulation._run_formula</span><span class="nt">(self, variable, population, period)</span>
-<span class="g g-Whitespace">    </span><span class="mi">685</span>     <span class="n">values</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="g g-Whitespace">    </span><span class="mi">686</span>     <span class="k">for</span> <span class="n">added_variable</span> <span class="ow">in</span> <span class="n">adds_list</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">687</span>         <span class="n">values</span> <span class="o">=</span> <span class="n">values</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">688</span>             <span class="n">added_variable</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">map_to</span><span class="o">=</span><span class="n">variable</span><span class="o">.</span><span class="n">entity</span><span class="o">.</span><span class="n">key</span>
-<span class="g g-Whitespace">    </span><span class="mi">689</span>         <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">690</span> <span class="k">if</span> <span class="n">variable</span><span class="o">.</span><span class="n">subtracts</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">691</span>     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">variable</span><span class="o">.</span><span class="n">subtracts</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-
-    <span class="p">[</span><span class="o">...</span> <span class="n">skipping</span> <span class="n">similar</span> <span class="n">frames</span><span class="p">:</span> <span class="n">Simulation</span><span class="o">.</span><span class="n">_calculate</span> <span class="n">at</span> <span class="n">line</span> <span class="mi">484</span> <span class="p">(</span><span class="mi">2</span> <span class="n">times</span><span class="p">),</span> <span class="n">Simulation</span><span class="o">.</span><span class="n">calculate</span> <span class="n">at</span> <span class="n">line</span> <span class="mi">323</span> <span class="p">(</span><span class="mi">2</span> <span class="n">times</span><span class="p">),</span> <span class="n">Simulation</span><span class="o">.</span><span class="n">_run_formula</span> <span class="n">at</span> <span class="n">line</span> <span class="mi">687</span> <span class="p">(</span><span class="mi">1</span> <span class="n">times</span><span class="p">)]</span>
 
 <span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:687,</span> in <span class="ni">Simulation._run_formula</span><span class="nt">(self, variable, population, period)</span>
 <span class="g g-Whitespace">    </span><span class="mi">685</span>     <span class="n">values</span> <span class="o">=</span> <span class="mi">0</span>
@@ -372,133 +364,73 @@
 <span class="ne">--&gt; </span><span class="mi">724</span>     <span class="n">array</span> <span class="o">=</span> <span class="n">formula</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">parameters_at</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">726</span> <span class="k">return</span> <span class="n">array</span>
 
-<span class="nn">File ~/work/policyengine-canada/policyengine-canada/policyengine_canada/variables/gov/provinces/on/tax/income/credits/oeptc/oeptc.py:12,</span> in <span class="ni">oeptc.formula</span><span class="nt">(household, period, parameters)</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="k">def</span> <span class="nf">formula</span><span class="p">(</span><span class="n">household</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">parameters</span><span class="p">):</span>
-<span class="ne">---&gt; </span><span class="mi">12</span>     <span class="n">energy_plus_property_tax_components</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span>         <span class="n">household</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">14</span>         <span class="n">period</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">15</span>         <span class="p">[</span><span class="s2">&quot;oeptc_energy_component&quot;</span><span class="p">,</span> <span class="s2">&quot;oeptc_property_tax_component&quot;</span><span class="p">],</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span>     <span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">17</span>     <span class="n">afni</span> <span class="o">=</span> <span class="n">household</span><span class="p">(</span><span class="s2">&quot;adjusted_family_net_income&quot;</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">18</span>     <span class="n">senior_status</span> <span class="o">=</span> <span class="n">household</span><span class="p">(</span><span class="s2">&quot;oeptc_senior_status&quot;</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
+<span class="nn">File ~/work/policyengine-canada/policyengine-canada/policyengine_canada/variables/gov/provinces/on/tax/income/on_income_tax_before_refundable_credits.py:16,</span> in <span class="ni">on_income_tax_before_refundable_credits.formula</span><span class="nt">(person, period, parameters)</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="k">def</span> <span class="nf">formula</span><span class="p">(</span><span class="n">person</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">parameters</span><span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>     <span class="n">income_tax_before_credits</span> <span class="o">=</span> <span class="n">person</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span>         <span class="s2">&quot;on_income_tax_before_credits&quot;</span><span class="p">,</span> <span class="n">period</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span>     <span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">16</span>     <span class="n">non_refundable_tax_credits</span> <span class="o">=</span> <span class="n">person</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span>         <span class="s2">&quot;on_non_refundable_credits&quot;</span><span class="p">,</span> <span class="n">period</span>
+<span class="g g-Whitespace">     </span><span class="mi">18</span>     <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span>     <span class="k">return</span> <span class="n">max_</span><span class="p">(</span><span class="n">income_tax_before_credits</span> <span class="o">-</span> <span class="n">non_refundable_tax_credits</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/commons/formulas.py:223,</span> in <span class="ni">add</span><span class="nt">(entity, period, variables, options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">203</span> <span class="k">def</span> <span class="nf">add</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">204</span>     <span class="n">entity</span><span class="p">:</span> <span class="n">Population</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">205</span>     <span class="n">period</span><span class="p">:</span> <span class="n">Period</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">206</span>     <span class="n">variables</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<span class="g g-Whitespace">    </span><span class="mi">207</span>     <span class="n">options</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">208</span> <span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">209</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;Sums a list of variables.</span>
-<span class="g g-Whitespace">    </span><span class="mi">210</span><span class="sd"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">211</span><span class="sd">     Args:</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/populations/population.py:134,</span> in <span class="ni">Population.__call__</span><span class="nt">(self, variable_name, period, options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">130</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">simulation</span><span class="o">.</span><span class="n">calculate_divide</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">131</span>         <span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="o">**</span><span class="n">calculate_kwargs</span>
+<span class="g g-Whitespace">    </span><span class="mi">132</span>     <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">133</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">134</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">simulation</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">135</span>         <span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="o">**</span><span class="n">calculate_kwargs</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span>     <span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:323,</span> in <span class="ni">Simulation.calculate</span><span class="nt">(self, variable_name, period, map_to, decode_enums)</span>
+<span class="g g-Whitespace">    </span><span class="mi">318</span> <span class="bp">self</span><span class="o">.</span><span class="n">tracer</span><span class="o">.</span><span class="n">record_calculation_start</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">319</span>     <span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">branch_name</span>
+<span class="g g-Whitespace">    </span><span class="mi">320</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">322</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">323</span>     <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calculate</span><span class="p">(</span><span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">324</span>     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">EnumArray</span><span class="p">)</span> <span class="ow">and</span> <span class="n">decode_enums</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">325</span>         <span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">decode_to_str</span><span class="p">()</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:484,</span> in <span class="ni">Simulation._calculate</span><span class="nt">(self, variable_name, period)</span>
+<span class="g g-Whitespace">    </span><span class="mi">482</span> <span class="k">try</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">483</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_check_for_cycle</span><span class="p">(</span><span class="n">variable</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">484</span>     <span class="n">array</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_run_formula</span><span class="p">(</span><span class="n">variable</span><span class="p">,</span> <span class="n">population</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">486</span>     <span class="c1"># If no result, use the default value and cache it</span>
+<span class="g g-Whitespace">    </span><span class="mi">487</span>     <span class="k">if</span> <span class="n">array</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">488</span>         <span class="c1"># Check if the variable has a previously defined value</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:687,</span> in <span class="ni">Simulation._run_formula</span><span class="nt">(self, variable, population, period)</span>
+<span class="g g-Whitespace">    </span><span class="mi">685</span>     <span class="n">values</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="g g-Whitespace">    </span><span class="mi">686</span>     <span class="k">for</span> <span class="n">added_variable</span> <span class="ow">in</span> <span class="n">adds_list</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">687</span>         <span class="n">values</span> <span class="o">=</span> <span class="n">values</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">688</span>             <span class="n">added_variable</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">map_to</span><span class="o">=</span><span class="n">variable</span><span class="o">.</span><span class="n">entity</span><span class="o">.</span><span class="n">key</span>
+<span class="g g-Whitespace">    </span><span class="mi">689</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">690</span> <span class="k">if</span> <span class="n">variable</span><span class="o">.</span><span class="n">subtracts</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">691</span>     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">variable</span><span class="o">.</span><span class="n">subtracts</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:323,</span> in <span class="ni">Simulation.calculate</span><span class="nt">(self, variable_name, period, map_to, decode_enums)</span>
+<span class="g g-Whitespace">    </span><span class="mi">318</span> <span class="bp">self</span><span class="o">.</span><span class="n">tracer</span><span class="o">.</span><span class="n">record_calculation_start</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">319</span>     <span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">branch_name</span>
+<span class="g g-Whitespace">    </span><span class="mi">320</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">322</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">323</span>     <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calculate</span><span class="p">(</span><span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">324</span>     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">EnumArray</span><span class="p">)</span> <span class="ow">and</span> <span class="n">decode_enums</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">325</span>         <span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">decode_to_str</span><span class="p">()</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:443,</span> in <span class="ni">Simulation._calculate</span><span class="nt">(self, variable_name, period)</span>
+<span class="g g-Whitespace">    </span><span class="mi">432</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">433</span><span class="sd"> Calculate the variable ``variable_name`` for the period ``period``, using the variable formula if it exists.</span>
+<span class="g g-Whitespace">    </span><span class="mi">434</span><span class="sd"> </span>
 <span class="sd">   (...)</span>
-<span class="g g-Whitespace">    </span><span class="mi">221</span><span class="sd">         ArrayLike: The result of the operation.</span>
-<span class="g g-Whitespace">    </span><span class="mi">222</span><span class="sd">     &quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">223</span>     <span class="k">return</span> <span class="n">for_each_variable</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">224</span>         <span class="n">entity</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">variables</span><span class="p">,</span> <span class="n">agg_func</span><span class="o">=</span><span class="s2">&quot;add&quot;</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="n">options</span>
-<span class="g g-Whitespace">    </span><span class="mi">225</span>     <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">440</span><span class="sd">     ArrayLike: The calculated variable.</span>
+<span class="g g-Whitespace">    </span><span class="mi">441</span><span class="sd"> &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">442</span> <span class="k">if</span> <span class="n">variable_name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tax_benefit_system</span><span class="o">.</span><span class="n">variables</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">443</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Variable </span><span class="si">{</span><span class="n">variable_name</span><span class="si">}</span><span class="s2"> does not exist.&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">444</span> <span class="n">population</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_variable_population</span><span class="p">(</span><span class="n">variable_name</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">445</span> <span class="n">holder</span> <span class="o">=</span> <span class="n">population</span><span class="o">.</span><span class="n">get_holder</span><span class="p">(</span><span class="n">variable_name</span><span class="p">)</span>
 
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/commons/formulas.py:179,</span> in <span class="ni">for_each_variable</span><span class="nt">(entity, period, variables, agg_func, group_agg_func, options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">177</span> <span class="n">variable_entity</span> <span class="o">=</span> <span class="n">entity</span><span class="o">.</span><span class="n">entity</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="n">variable</span><span class="p">)</span><span class="o">.</span><span class="n">entity</span>
-<span class="g g-Whitespace">    </span><span class="mi">178</span> <span class="k">if</span> <span class="n">variable_entity</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">entity</span><span class="o">.</span><span class="n">entity</span><span class="o">.</span><span class="n">key</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">179</span>     <span class="n">values</span> <span class="o">=</span> <span class="n">entity</span><span class="p">(</span><span class="n">variable</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">180</span> <span class="k">elif</span> <span class="n">variable_entity</span><span class="o">.</span><span class="n">is_person</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">181</span>     <span class="n">values</span> <span class="o">=</span> <span class="n">group_agg_func</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">182</span>         <span class="n">entity</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">variable</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">183</span>     <span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/populations/population.py:134,</span> in <span class="ni">Population.__call__</span><span class="nt">(self, variable_name, period, options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">130</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">simulation</span><span class="o">.</span><span class="n">calculate_divide</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">131</span>         <span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="o">**</span><span class="n">calculate_kwargs</span>
-<span class="g g-Whitespace">    </span><span class="mi">132</span>     <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">133</span> <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">134</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">simulation</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">135</span>         <span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="o">**</span><span class="n">calculate_kwargs</span>
-<span class="g g-Whitespace">    </span><span class="mi">136</span>     <span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:323,</span> in <span class="ni">Simulation.calculate</span><span class="nt">(self, variable_name, period, map_to, decode_enums)</span>
-<span class="g g-Whitespace">    </span><span class="mi">318</span> <span class="bp">self</span><span class="o">.</span><span class="n">tracer</span><span class="o">.</span><span class="n">record_calculation_start</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">319</span>     <span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">branch_name</span>
-<span class="g g-Whitespace">    </span><span class="mi">320</span> <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">322</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">323</span>     <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calculate</span><span class="p">(</span><span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">324</span>     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">EnumArray</span><span class="p">)</span> <span class="ow">and</span> <span class="n">decode_enums</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">325</span>         <span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">decode_to_str</span><span class="p">()</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:484,</span> in <span class="ni">Simulation._calculate</span><span class="nt">(self, variable_name, period)</span>
-<span class="g g-Whitespace">    </span><span class="mi">482</span> <span class="k">try</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">483</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_check_for_cycle</span><span class="p">(</span><span class="n">variable</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">484</span>     <span class="n">array</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_run_formula</span><span class="p">(</span><span class="n">variable</span><span class="p">,</span> <span class="n">population</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">486</span>     <span class="c1"># If no result, use the default value and cache it</span>
-<span class="g g-Whitespace">    </span><span class="mi">487</span>     <span class="k">if</span> <span class="n">array</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">488</span>         <span class="c1"># Check if the variable has a previously defined value</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:724,</span> in <span class="ni">Simulation._run_formula</span><span class="nt">(self, variable, population, period)</span>
-<span class="g g-Whitespace">    </span><span class="mi">722</span>     <span class="n">array</span> <span class="o">=</span> <span class="n">formula</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">723</span> <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">724</span>     <span class="n">array</span> <span class="o">=</span> <span class="n">formula</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">parameters_at</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">726</span> <span class="k">return</span> <span class="n">array</span>
-
-<span class="nn">File ~/work/policyengine-canada/policyengine-canada/policyengine_canada/variables/gov/provinces/on/tax/income/credits/oeptc/oeptc_energy_component.py:28,</span> in <span class="ni">oeptc_energy_component.formula</span><span class="nt">(household, period, parameters)</span>
-<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="n">reserve_home_energy_costs</span> <span class="o">=</span> <span class="n">household</span><span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">22</span>     <span class="s2">&quot;home_energy_costs_on_a_reserve&quot;</span><span class="p">,</span> <span class="n">period</span>
-<span class="g g-Whitespace">     </span><span class="mi">23</span> <span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="n">student_resident</span> <span class="o">=</span> <span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">25</span>     <span class="n">household</span><span class="p">(</span><span class="s2">&quot;lived_in_a_student_residence&quot;</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">26</span>     <span class="o">*</span> <span class="n">p</span><span class="o">.</span><span class="n">student_resident_reduction</span>
-<span class="g g-Whitespace">     </span><span class="mi">27</span> <span class="p">)</span>
-<span class="ne">---&gt; </span><span class="mi">28</span> <span class="n">occupancy_costs</span> <span class="o">=</span> <span class="n">household</span><span class="p">(</span><span class="s2">&quot;oeptc_occupancy_cost&quot;</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">29</span> <span class="n">uncapped</span> <span class="o">=</span> <span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">30</span>     <span class="n">long_term_care_home</span>
-<span class="g g-Whitespace">     </span><span class="mi">31</span>     <span class="o">+</span> <span class="n">reserve_home_energy_costs</span>
-<span class="g g-Whitespace">     </span><span class="mi">32</span>     <span class="o">+</span> <span class="n">occupancy_costs</span>
-<span class="g g-Whitespace">     </span><span class="mi">33</span>     <span class="o">-</span> <span class="n">student_resident</span>
-<span class="g g-Whitespace">     </span><span class="mi">34</span> <span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">35</span> <span class="k">return</span> <span class="n">min_</span><span class="p">(</span><span class="n">uncapped</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">max_amount</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/populations/population.py:134,</span> in <span class="ni">Population.__call__</span><span class="nt">(self, variable_name, period, options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">130</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">simulation</span><span class="o">.</span><span class="n">calculate_divide</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">131</span>         <span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="o">**</span><span class="n">calculate_kwargs</span>
-<span class="g g-Whitespace">    </span><span class="mi">132</span>     <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">133</span> <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">134</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">simulation</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">135</span>         <span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="o">**</span><span class="n">calculate_kwargs</span>
-<span class="g g-Whitespace">    </span><span class="mi">136</span>     <span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:323,</span> in <span class="ni">Simulation.calculate</span><span class="nt">(self, variable_name, period, map_to, decode_enums)</span>
-<span class="g g-Whitespace">    </span><span class="mi">318</span> <span class="bp">self</span><span class="o">.</span><span class="n">tracer</span><span class="o">.</span><span class="n">record_calculation_start</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">319</span>     <span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">branch_name</span>
-<span class="g g-Whitespace">    </span><span class="mi">320</span> <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">322</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">323</span>     <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calculate</span><span class="p">(</span><span class="n">variable_name</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">324</span>     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">EnumArray</span><span class="p">)</span> <span class="ow">and</span> <span class="n">decode_enums</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">325</span>         <span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">decode_to_str</span><span class="p">()</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:484,</span> in <span class="ni">Simulation._calculate</span><span class="nt">(self, variable_name, period)</span>
-<span class="g g-Whitespace">    </span><span class="mi">482</span> <span class="k">try</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">483</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_check_for_cycle</span><span class="p">(</span><span class="n">variable</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">484</span>     <span class="n">array</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_run_formula</span><span class="p">(</span><span class="n">variable</span><span class="p">,</span> <span class="n">population</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">486</span>     <span class="c1"># If no result, use the default value and cache it</span>
-<span class="g g-Whitespace">    </span><span class="mi">487</span>     <span class="k">if</span> <span class="n">array</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">488</span>         <span class="c1"># Check if the variable has a previously defined value</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/policyengine_core/simulations/simulation.py:724,</span> in <span class="ni">Simulation._run_formula</span><span class="nt">(self, variable, population, period)</span>
-<span class="g g-Whitespace">    </span><span class="mi">722</span>     <span class="n">array</span> <span class="o">=</span> <span class="n">formula</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">723</span> <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">724</span>     <span class="n">array</span> <span class="o">=</span> <span class="n">formula</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">parameters_at</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">726</span> <span class="k">return</span> <span class="n">array</span>
-
-<span class="nn">File ~/work/policyengine-canada/policyengine-canada/policyengine_canada/variables/gov/provinces/on/tax/income/credits/oeptc/oeptc_occupancy_cost.py:23,</span> in <span class="ni">oeptc_occupancy_cost.formula</span><span class="nt">(household, period, parameters)</span>
-<span class="g g-Whitespace">     </span><span class="mi">18</span> <span class="n">countable_rent</span> <span class="o">=</span> <span class="n">person</span><span class="p">(</span><span class="s2">&quot;rent&quot;</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span> <span class="o">*</span> <span class="n">p</span><span class="o">.</span><span class="n">rent_multiplier</span>
-<span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="n">student_residence_addition</span> <span class="o">=</span> <span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">20</span>     <span class="n">student_residence</span> <span class="o">*</span> <span class="n">p</span><span class="o">.</span><span class="n">student_resident_supplement</span>
-<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="k">return</span> <span class="n">household</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span>
-<span class="ne">---&gt; </span><span class="mi">23</span>     <span class="n">countable_rent</span> <span class="o">+</span> <span class="n">property_tax</span> <span class="o">+</span> <span class="n">student_residence_addition</span>
-<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="p">)</span>
-
-<span class="ne">ValueError</span>: operands could not be broadcast together with shapes (602,) (301,) 
+<span class="ne">ValueError</span>: Variable low_income_workers_tax_credit does not exist.
 </pre></div>
 </div>
 </div>
