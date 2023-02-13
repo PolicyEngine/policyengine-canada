@@ -1,0 +1,9 @@
+description: Maximum amount of the 'OAS-portion' of the SPA. By default equal to the OAS maximum amount. 
+values:
+  1999-12-31: 8_226
+metadata:
+  period: year
+  label: Maximum amount of the OAS-portion of the SPA.
+  reference:
+  - title: SPSD/M Variable Guide
+   
