@@ -1,9 +1,9 @@
 from policyengine_canada.model_api import *
 
-class gis_base_amount(Variable):
+class gis_cap(Variable):
     value_type = float
     entity = Person
-    label = "Guaranteed Income Supplement Base Amount"
+    label = "Guaranteed Income Supplement Maximum Amount"
     unit = CAD
     documentation = "The highest GIS amount an individual could receive, based on the number of pensioners in the household, before the amount is reduced based on income. Equivalent of imgismax in the SPSD/M variable guide."
     definition_period = YEAR

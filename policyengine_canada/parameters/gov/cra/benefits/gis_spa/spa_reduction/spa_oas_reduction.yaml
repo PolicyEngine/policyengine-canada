@@ -1,0 +1,9 @@
+description: Reduction rate for the OAS portion of the SPA. 
+values:
+  1999-12-31: .75
+metadata:
+  period: year
+  label: Reduction rate for the OAS portion of the SPA. 
+  reference:
+  - title: SPSD/M Algorithm Guide
+   

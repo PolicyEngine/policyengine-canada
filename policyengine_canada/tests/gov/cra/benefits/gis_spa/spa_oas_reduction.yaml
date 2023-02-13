@@ -1,0 +1,7 @@
+- name:  The default rate of 75% of net household income
+  period: 2022
+  input:
+    individual_net_income: 1000
+  output:
+    spa_oas_reduction: 750
+

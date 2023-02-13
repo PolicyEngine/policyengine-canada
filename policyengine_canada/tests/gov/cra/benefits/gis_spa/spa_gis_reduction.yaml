@@ -1,0 +1,8 @@
+- name:  The default rate of 25% of net household income
+  period: 2022
+  input:
+    individual_net_income: 500
+    spouse_net_income: 500
+  output:
+    spa_gis_reduction: 250
+

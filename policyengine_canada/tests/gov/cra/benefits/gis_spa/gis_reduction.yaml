@@ -12,7 +12,7 @@
     gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
     individual_net_income: 2_048
     spouse_net_income: 2_000
-    gis_base_amount: 6_240.18
+    gis_cap: 6_240.18
   output:
     gis_reduction: 1_000
 
@@ -30,7 +30,7 @@
   input:
     gis_spa_category: "COUPLE_ONE_OAS_SPA_INELIGIBLE"
     individual_net_income: 2_024
-    gis_base_amount: 6_240.18
+    gis_cap: 6_240.18
     spouse_net_income: 2_000
   output:
     gis_reduction: 1_000
@@ -40,7 +40,7 @@
   input:
     gis_spa_category: "COUPLE_ONE_OAS_SPA_INELIGIBLE"
     individual_net_income: 2_024
-    gis_base_amount: 0
+    gis_cap: 0
     spouse_net_income: 2_000
   output:
     gis_reduction: 0

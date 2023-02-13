@@ -14,7 +14,7 @@ class gis_reduction(Variable):
         individual_net_income = person("individual_net_income", period)
         household = person.household
         spouse_net_income = household("spouse_net_income", period)
-        gis_base = person("gis_base_amount", period)
+        gis_base = person("gis_cap", period)
         p = parameters(period).gov.cra.benefits.gis_spa.gis_reduction
         
         reduction = select(
@@ -33,6 +33,6 @@ class gis_reduction(Variable):
              default=0,
         )
 
-        return(max(reduction, 0))
+        return(reduction)
 
 
