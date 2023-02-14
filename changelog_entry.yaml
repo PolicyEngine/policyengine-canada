@@ -1,0 +1,4 @@
+- bump: patch
+  changes:
+    added:
+    - Expand integration test to go up to household_net_income.

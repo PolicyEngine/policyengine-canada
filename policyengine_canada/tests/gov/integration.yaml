@@ -1,0 +1,120 @@
+- name: Integration
+  period: 2023
+  absolute_error_margin: 0.5
+  input:
+    people:
+      parent:
+        age: 40
+      c1:
+        age: 12
+        full_custody: false
+    household:
+      members: [parent, c1]
+      province: ONTARIO
+      adjusted_family_net_income: 20_000
+      is_married: false
+      family_working_income: 3_000
+  output:
+    on_child_benefit: 754.44
+    oeptc: 0
+    on_sales_tax_credit: 690
+    northern_ontario_energy_credit: 0
+    on_trillium_benefit: 690
+    climate_action_incentive: 559
+    child_benefit: 2_951.4
+    benefits: 4_405.96
+
+- name: Integration - disabled child
+  period: 2023
+  absolute_error_margin: 0.5
+  input:
+    people:
+      parent1:
+        age: 40
+        rent: 1_000
+        is_head: true
+      parent2:
+        age: 40
+        is_spouse: true
+      c1:
+        age: 5
+        full_custody: true 
+        is_disabled: true
+        dtc_eligible: true
+    household:
+      members: [parent1, parent2, c1]
+      province: ONTARIO
+      household_net_income: 26_000
+      adjusted_family_net_income: 26_000
+      is_married: true
+      family_working_income: 5_000
+  output:
+    child_benefit: 6_996.96
+    child_disability_benefit: 2_985
+    on_child_benefit: 1_272.52
+    canada_workers_benefit: 540
+    climate_action_incentive: 652
+    gst_credit: 773
+    oeptc: 282
+    on_sales_tax_credit: 1035
+    benefits: 12_494.48
+
+
+- name: Integration - Onatrio
+  period: 2023
+  absolute_error_margin: 0.5
+  input:
+    people:
+      parent:
+        age: 40
+      c1:
+        age: 12
+        full_custody: false
+    household:
+      members: [parent, c1]
+      province: ONTARIO
+      adjusted_family_net_income: 20_000
+      is_married: false
+      family_working_income: 3_000
+  output:
+    on_non_refundable_credits: 0
+    on_refundable_credits: 690
+    on_benefits: 754.5
+    household_net_income: 4_964.96
+    bc_non_refundable_credits: 0
+    bc_refundable_credits:  0
+    refundable_tax_credits: 559
+    non_refundable_tax_credits: 0
+    benefits: 4_405.96
+    income_tax_before_refundable_credits: 0
+    income_tax_before_credits: 0
+
+
+- name: Integration - British Columbia
+  period: 2023
+  absolute_error_margin: 0.5
+  input:
+    people:
+      parent:
+        age: 40
+        bc_taxable_income: 10_000
+      c1:
+        age: 12
+        full_custody: false
+    household:
+      members: [parent, c1]
+      province: BRITISH_COLUMBIA
+      adjusted_family_net_income: 20_000
+      is_married: false
+      family_working_income: 3_000
+  output:
+    on_non_refundable_credits: 0
+    on_refundable_credits: 0
+    on_benefits: 0
+    household_net_income: 4_551.46
+    bc_non_refundable_credits: 521
+    bc_refundable_credits:  386.9
+    bc_benefits: 1_599.96
+    non_refundable_tax_credits: 0
+    income_tax_before_refundable_credits: 0
+    income_tax_before_credits: 0
