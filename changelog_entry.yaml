@@ -1,1 +1,4 @@
-
+- bump: minor
+  changes:
+    added:
+    - xpand integration test to go up to household_net_income.
