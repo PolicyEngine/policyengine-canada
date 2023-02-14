@@ -13,6 +13,3 @@ class spa_gis_portion(Variable):
         base_amount = parameters(period).gov.cra.benefits.gis_spa.spa_cap.gis_portion
 
         return(base_amount * spa_eligible)
-
-
-

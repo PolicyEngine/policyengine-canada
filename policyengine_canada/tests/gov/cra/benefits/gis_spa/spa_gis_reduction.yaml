@@ -3,6 +3,16 @@
   input:
     individual_net_income: 500
     spouse_net_income: 500
+    spa_oas_net: 0
   output:
     spa_gis_reduction: 250
+
+- name:  No reduction happens until the SPA OAS-portion is already reduced to 0
+  period: 2022
+  input:
+    individual_net_income: 500
+    spouse_net_income: 500
+    spa_oas_net: 100
+  output:
+    spa_gis_reduction: 0
 
