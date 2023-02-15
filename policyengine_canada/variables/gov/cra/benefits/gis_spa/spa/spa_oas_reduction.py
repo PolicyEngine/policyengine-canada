@@ -14,4 +14,4 @@ class spa_oas_reduction(Variable):
         spouse_net_income = household("spouse_net_income", period)
         p = parameters(period).gov.cra.benefits.gis_spa.spa_reduction
 
-        return((individual_net_income + spouse_net_income) * p.spa_oas_reduction)
+        return(p.spa_oas_reduction.calc(individual_net_income + spouse_net_income))
