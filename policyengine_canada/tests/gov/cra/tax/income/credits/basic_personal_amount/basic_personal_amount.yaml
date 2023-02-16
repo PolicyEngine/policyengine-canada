@@ -1,0 +1,6 @@
+- name: Maximum 2023 BAP amount
+  period: 2023
+  input:
+    basic_personal_amount_supplement: 1_479
+  output:
+    basic_personal_amount: 15_000

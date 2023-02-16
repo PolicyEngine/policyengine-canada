@@ -1,0 +1,6 @@
+- name: Income below phase out threshold
+  period: 2022
+  input:
+    individual_net_income: 140_387
+  output:
+    basic_personal_amount_supplement: 1_679
