@@ -1,0 +1,15 @@
+description: Canada provides this base amount for the BPA.
+values:
+  2020-01-01: 12_298
+  2021-01-01: 12_421
+  2022-01-01: 12_719
+  2023-01-01: 13_521
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Basic personal amount base
+  reference:
+    - title: Government of Canada - Basic Personal amount
+      href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/basic-personal-amount.html
+    - title: Income Tax Act (E), (A), (118.1), (1.1)
+      href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-84.html?txthl=personal+amounts+amount+basic#s-118 
