@@ -20,9 +20,6 @@ class basic_personal_amount_supplement(Variable):
                 / (p.phase_out.threshold.end - p.phase_out.threshold.start),
                 1,
             ),
-            income,
+            0,
         )
         return (max_amount - base) - ((max_amount - base) * phase_out_rate)
-
-
-# TODO: add to the net income tree.

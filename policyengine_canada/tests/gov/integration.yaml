@@ -84,7 +84,7 @@
     bc_non_refundable_credits: 0
     bc_refundable_credits:  0
     refundable_tax_credits: 559
-    non_refundable_tax_credits: 0
+    non_refundable_tax_credits: 15_000
     benefits: 4_405.96
     income_tax_before_refundable_credits: 0
     income_tax_before_credits: 0
@@ -115,6 +115,6 @@
     bc_non_refundable_credits: 521
     bc_refundable_credits:  386.9
     bc_benefits: 1_599.96
-    non_refundable_tax_credits: 0
+    non_refundable_tax_credits: 15_000
     income_tax_before_refundable_credits: 0
     income_tax_before_credits: 0
