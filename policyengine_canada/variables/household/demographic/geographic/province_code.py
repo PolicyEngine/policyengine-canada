@@ -18,10 +18,10 @@ class ProvinceCode(Enum):
     YT = "YT"
 
 
-class state_code(Variable):
+class province_code(Variable):
     value_type = Enum
     possible_values = ProvinceCode
-    default_value = ProvinceCode.CA
+    default_value = ProvinceCode.ON
     entity = Household
     label = "Province code"
     definition_period = ETERNITY

@@ -6,11 +6,13 @@ from pathlib import Path
 import pandas as pd
 from policyengine_canada.typing import Formula
 
-ZIP_CODE_DATASET_PATH = (
-    Path(__file__).parent.parent / "data" / "geography" / "zip_codes.csv.gz"
-)
+# ZIP_CODE_DATASET_PATH = (
+#     Path(__file__).parent.parent / "data" / "geography" / "zip_codes.csv.gz"
+# )
 
-ZIP_CODE_DATASET = pd.read_csv(ZIP_CODE_DATASET_PATH, compression="gzip")
+# ZIP_CODE_DATASET = pd.read_csv(ZIP_CODE_DATASET_PATH, compression="gzip")
+
+# TODO: add zip_code data
 
 USD = "currency-CAD"
 
@@ -87,9 +89,9 @@ def spouse(person: Population, period: int, variable: str) -> ArrayLike:
     return (person.marital_unit.sum(values) - values).astype(values.dtype)
 
 
-def in_state(state):
+def in_province(province):
     def is_eligible(population, period, parameters):
-        return population("province_code_str", period) == state
+        return population("province_code_str", period) == province
 
     return is_eligible
 
