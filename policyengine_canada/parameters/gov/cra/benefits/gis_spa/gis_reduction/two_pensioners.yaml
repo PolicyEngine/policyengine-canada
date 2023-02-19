@@ -11,7 +11,7 @@ brackets:
 metadata:
   period: year
   label: GIS reduction for pensioners married to a pensioner.
-  documentataion: Corresponds to GISRRS and GISRLS in the SPSD/M Variable Guide
+  documentataion: Corresponds to GISRRM and GISRLM in the SPSD/M Variable Guide
   reference:
   - title: SPSD/M Variable Guide
    
