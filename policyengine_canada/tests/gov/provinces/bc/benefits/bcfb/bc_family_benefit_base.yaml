@@ -9,7 +9,7 @@
 - name: Wrong province
   period: 2023
   input:
-    province_code: ON
+    province_code: NB
     bc_family_benefit_eligible_children: 1
   output:
     bc_family_benefit_base: 0

@@ -8,5 +8,5 @@ class on_benefits(Variable):
     documentation = "Ontario benefits"
     unit = CAD
     definition_period = YEAR
-
+    defined_for = ProvinceCode.ON
     adds = "gov.provinces.on.benefits.benefits"

@@ -10,7 +10,7 @@
         full_custody: false
     household:
       members: [parent, c1]
-      # province_code: ON
+      # province_code_str: ON
       adjusted_family_net_income: 20_000
       is_married: false
       family_working_income: 3_000
@@ -43,7 +43,7 @@
         dtc_eligible: true
     household:
       members: [parent1, parent2, c1]
-      # province_code: ON
+      province_code_str: ON
       household_net_income: 26_000
       adjusted_family_net_income: 26_000
       is_married: true
@@ -72,7 +72,7 @@
         full_custody: false
     household:
       members: [parent, c1]
-      # province_code: ON
+      province_code_str: ON
       adjusted_family_net_income: 20_000
       is_married: false
       family_working_income: 3_000
@@ -103,7 +103,7 @@
         full_custody: false
     household:
       members: [parent, c1]
-      # province_code: BC
+      province_code_str: BC
       adjusted_family_net_income: 20_000
       is_married: false
       family_working_income: 3_000
