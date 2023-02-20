@@ -14,3 +14,12 @@ class ProvinceName(Enum):
     QC = "Quebec"
     SK = "Saskatchawan"
     YT = "Yukon"
+
+
+class province_name(Variable):
+    value_type = Enum
+    possible_values = ProvinceName
+    default_value = ProvinceName.ON
+    entity = Household
+    label = "Province"
+    definition_period = YEAR

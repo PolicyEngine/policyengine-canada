@@ -10,7 +10,7 @@
         full_custody: false
     household:
       members: [parent, c1]
-      province: ONTARIO
+      province_code: ON
       adjusted_family_net_income: 20_000
       is_married: false
       family_working_income: 3_000
@@ -43,7 +43,7 @@
         dtc_eligible: true
     household:
       members: [parent1, parent2, c1]
-      province: ONTARIO
+      province_code: ON
       household_net_income: 26_000
       adjusted_family_net_income: 26_000
       is_married: true
@@ -60,7 +60,7 @@
     benefits: 12_494.48
 
 
-- name: Integration - Onatrio
+- name: Integration - Ontario
   period: 2023
   absolute_error_margin: 0.5
   input:
@@ -72,7 +72,7 @@
         full_custody: false
     household:
       members: [parent, c1]
-      province: ONTARIO
+      province_code: ON
       adjusted_family_net_income: 20_000
       is_married: false
       family_working_income: 3_000
@@ -103,7 +103,7 @@
         full_custody: false
     household:
       members: [parent, c1]
-      province: BRITISH_COLUMBIA
+      # province_code: BC
       adjusted_family_net_income: 20_000
       is_married: false
       family_working_income: 3_000
