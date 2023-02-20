@@ -8,6 +8,7 @@ class on_child_benefit_base(Variable):
     unit = CAD
     documentation = "Base amount of Ontario Child Benefit before reduction."
     definition_period = YEAR
+    defined_for = ProvinceCode.ON
 
     def formula(household, period, parameters):
         province = household("province", period)

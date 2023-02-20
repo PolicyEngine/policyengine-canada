@@ -11,7 +11,6 @@ from policyengine_canada.tools.general import *
 from pathlib import Path
 from policyengine_canada.typing import *
 import warnings
-from policyengine_canada.tools.cloning import get_stored_variables
 
 CAD = "currency-CAD"
 
