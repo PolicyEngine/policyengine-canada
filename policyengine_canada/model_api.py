@@ -30,7 +30,7 @@ def all_of_variables(variables: List[str]) -> Formula:
     return formula
 
 
-STATES = [
+PROVINCES = [
     "AB",
     "BC",
     "MB",
