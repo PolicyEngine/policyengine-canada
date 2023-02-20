@@ -8,8 +8,5 @@ class bc_taxable_income(Variable):
     unit = CAD
     definition_period = YEAR
     reference = "https://www.revenue.pa.gov/FormsandPublications/FormsforIndividuals/PIT/Documents/2021/2021_pa-40in.pdf#page=8"
-
-    def formula(person, period, parameters):
-        province = person.household("province", period)
-        in_bc = province == province.possible_values.BRITISH_COLUMBIA
-        return in_bc * add(person, period, ["total_individual_pre_tax_income"])
+    defined_for = ProvinceCode.BC
+    adds = ["total_individual_pre_tax_income"]

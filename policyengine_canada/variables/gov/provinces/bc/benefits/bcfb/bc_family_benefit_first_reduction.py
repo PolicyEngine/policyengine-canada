@@ -7,6 +7,7 @@ class bc_family_benefit_first_reduction(Variable):
     label = "British Columbia family benefit first reduction"
     unit = CAD
     definition_period = YEAR
+    defined_for = ProvinceCode.BC
 
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)

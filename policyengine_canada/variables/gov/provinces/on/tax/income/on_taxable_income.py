@@ -8,8 +8,7 @@ class on_taxable_income(Variable):
     unit = CAD
     definition_period = YEAR
     reference = "https://www.revenue.pa.gov/FormsandPublications/FormsforIndividuals/PIT/Documents/2021/2021_pa-40in.pdf#page=8"
+    defined_for = ProvinceCode.ON
 
     def formula(person, period, parameters):
-        province = person.household("province", period)
-        in_ontario = province == province.possible_values.ONTARIO
-        return in_ontario * person("total_individual_pre_tax_income", period)
+        return person("total_individual_pre_tax_income", period)

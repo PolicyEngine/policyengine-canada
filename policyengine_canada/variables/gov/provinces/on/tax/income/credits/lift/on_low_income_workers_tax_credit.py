@@ -7,6 +7,7 @@ class on_low_income_workers_tax_credit(Variable):
     label = "Post reduction of Ontario Low-Income Workers Tax Credit"
     unit = CAD
     definition_period = YEAR
+    defined_for = ProvinceCode.ON
 
     def formula(person, period, parameters):
         household = person.household

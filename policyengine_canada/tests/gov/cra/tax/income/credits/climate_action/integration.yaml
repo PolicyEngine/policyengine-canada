@@ -10,7 +10,7 @@
         age: 9
     household:
       members: [parent, c1, c2]
-      province: MANITOBA
+      province_code: MB
   output:
     climate_action_incentive: 728
 
@@ -25,7 +25,7 @@
         is_spouse: true
     household:
       members: [head, spouse]
-      province: SASKATCHEWAN
+      province_code: SK
   output:
     climate_action_incentive: 825
 
@@ -41,7 +41,7 @@
         age: 9
     household:
       members: [parent, c1, c2]
-      province: MANITOBA
+      province_code: MB
       is_rural: true
   output:
     climate_action_incentive: 800.8

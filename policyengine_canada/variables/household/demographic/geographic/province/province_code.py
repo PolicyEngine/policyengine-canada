@@ -13,6 +13,7 @@ class ProvinceCode(Enum):
     NT = "NT"
     NU = "NU"
     ON = "ON"
+    PE = "PE"
     QC = "QC"
     SK = "SK"
     YT = "YT"

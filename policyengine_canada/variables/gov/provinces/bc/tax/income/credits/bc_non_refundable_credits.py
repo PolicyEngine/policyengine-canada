@@ -8,5 +8,5 @@ class bc_non_refundable_credits(Variable):
     documentation = "British Columbia non-refundable tax credits"
     unit = CAD
     definition_period = YEAR
-
+    defined_for = ProvinceCode.BC
     adds = "gov.provinces.bc.tax.income.credits.non_refundable"

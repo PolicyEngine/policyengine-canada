@@ -1,6 +1,6 @@
 from policyengine_core.model_api import *
 from policyengine_canada.entities import *
-from policyengine_canada.variables.household.demographic.geographic.province_code import (
+from policyengine_canada.variables.household.demographic.geographic.province.province_code import (
     ProvinceCode,
 )
 from policyengine_canada.tools.general import *
@@ -19,6 +19,7 @@ PROVINCES = [
     "NT",
     "NU",
     "ON",
+    "PE",
     "QC",
     "SK",
     "YT",

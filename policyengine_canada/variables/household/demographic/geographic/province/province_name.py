@@ -11,8 +11,9 @@ class ProvinceName(Enum):
     NT = "Northwest Territories"
     NU = "Nunavut"
     ON = "Ontario"
+    PE = "Prince Dward Island"
     QC = "Quebec"
-    SK = "Saskatchawan"
+    SK = "Saskatchewan"
     YT = "Yukon"
 
 

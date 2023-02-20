@@ -8,10 +8,9 @@ class mb_income_tax_before_credits(Variable):
     unit = CAD
     definition_period = YEAR
     reference = "https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html"
+    defined_for = ProvinceCode.MB
 
     def formula(person, period, parameters):
-        province = person.household("province", period)
-        in_manitoba = province == province.possible_values.MANITOBA
         income = person("mb_taxable_income", period)
         p = parameters(period).gov.provinces.mb.tax.income.rate
-        return in_manitoba * p.calc(income)
+        return p.calc(income)
