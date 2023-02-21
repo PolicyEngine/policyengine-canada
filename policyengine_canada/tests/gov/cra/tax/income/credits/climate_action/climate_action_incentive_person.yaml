@@ -10,7 +10,7 @@
         climate_action_incentive_category: OTHER_CHILD
     household:
       members: [parent, c1, c2]
-      province_code: ON
+      province_code: ONT
   output:
     climate_action_incentive_person: [373, 186, 93]
 

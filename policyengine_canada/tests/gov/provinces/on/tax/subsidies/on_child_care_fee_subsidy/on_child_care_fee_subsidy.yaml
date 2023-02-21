@@ -1,7 +1,7 @@
 - name: Ontario full time care with reduction
   period: 2023
   input:
-    province_code: ON
+    province_code: ONT
     on_child_care_fee_subsidy_reduction: 100
     full_time_childcare: true 
     on_child_care_fee_subsidy_full_time: 1_000
@@ -12,7 +12,7 @@
 - name: Ontario part time care with reduction
   period: 2023
   input:
-    province_code: ON
+    province_code: ONT
     on_child_care_fee_subsidy_reduction: 100
     full_time_childcare: false 
     on_child_care_fee_subsidy_full_time: 1_000
@@ -34,7 +34,7 @@
 - name: Reduction over main amount
   period: 2023
   input:
-    province_code: ON
+    province_code: ONT
     on_child_care_fee_subsidy_reduction: 1_100
     full_time_childcare: true 
     on_child_care_fee_subsidy_full_time: 1_000

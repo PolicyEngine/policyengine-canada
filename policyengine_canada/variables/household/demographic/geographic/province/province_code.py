@@ -12,7 +12,7 @@ class ProvinceCode(Enum):
     NS = "NS"
     NT = "NT"
     NU = "NU"
-    ON = "ON"
+    ONT = "ONT"
     PE = "PE"
     QC = "QC"
     SK = "SK"
@@ -22,7 +22,7 @@ class ProvinceCode(Enum):
 class province_code(Variable):
     value_type = Enum
     possible_values = ProvinceCode
-    default_value = ProvinceCode.ON
+    default_value = ProvinceCode.ONT
     entity = Household
     label = "Province code"
     definition_period = ETERNITY

@@ -7,7 +7,7 @@ class on_senior_homeowners_property_tax_grant_reduction(Variable):
     label = "Ontario senior homeowners property tax grant reduction"
     unit = CAD
     definition_period = YEAR
-    defined_for = ProvinceCode.ON
+    defined_for = ProvinceCode.ONT
 
     def formula(person, period, parameters):
         income = person.household("adjusted_family_net_income", period)

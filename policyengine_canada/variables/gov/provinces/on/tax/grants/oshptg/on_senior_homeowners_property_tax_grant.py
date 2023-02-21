@@ -7,7 +7,7 @@ class on_senior_homeowners_property_tax_grant(Variable):
     label = "Ontario senior homeowners property tax grant"
     unit = CAD
     definition_period = YEAR
-    defined_for = ProvinceCode.ON
+    defined_for = ProvinceCode.ONT
 
     def formula(person, period, parameters):
         base = person("on_senior_homeowners_property_tax_grant_base", period)

@@ -18,7 +18,7 @@ PROVINCES = [
     "NS",
     "NT",
     "NU",
-    "ON",
+    "ONT",
     "PE",
     "QC",
     "SK",

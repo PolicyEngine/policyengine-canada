@@ -7,7 +7,7 @@ class oeptc(Variable):
     label = "Ontario energy and property tax credit"
     unit = CAD
     definition_period = YEAR
-    defined_for = ProvinceCode.ON
+    defined_for = ProvinceCode.ONT
 
     def formula(household, period, parameters):
         energy_plus_property_tax_components = add(

@@ -7,7 +7,7 @@ class on_child_care_fee_subsidy(Variable):
     label = "Ontario Child Care Fee Subsidy"
     unit = CAD
     definition_period = YEAR
-    defined_for = ProvinceCode.ON
+    defined_for = ProvinceCode.ONT
 
     def formula(household, period, parameters):
         reduction = household("on_child_care_fee_subsidy_reduction", period)

@@ -10,7 +10,7 @@ class ProvinceName(Enum):
     NS = "Nova Scotia"
     NT = "Northwest Territories"
     NU = "Nunavut"
-    ON = "Ontario"
+    ONT = "Ontario"
     PE = "Prince Edward Island"
     QC = "Quebec"
     SK = "Saskatchewan"
@@ -20,7 +20,7 @@ class ProvinceName(Enum):
 class province_name(Variable):
     value_type = Enum
     possible_values = ProvinceName
-    default_value = ProvinceName.ON
+    default_value = ProvinceName.ONT
     entity = Household
     label = "Province"
     definition_period = YEAR

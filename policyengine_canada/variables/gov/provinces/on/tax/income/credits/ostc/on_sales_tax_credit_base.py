@@ -10,7 +10,7 @@ class on_sales_tax_credit_base(Variable):
         "Base amount of Ontario sales tax credits before reduction."
     )
     definition_period = YEAR
-    defined_for = ProvinceCode.ON
+    defined_for = ProvinceCode.ONT
 
     def formula(household, period, parameters):
         members = household("household_size", period)
