@@ -21,7 +21,7 @@ class gis_reduction(Variable):
              [
                  gis_spa_category == gis_spa_categories.SINGLE_WITH_OAS,
                  gis_spa_category == gis_spa_categories.COUPLE_BOTH_OAS,
-                 (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_ELIGIBLE) & (gis_base > 0),  # the gis_base > 0 makes sure this person is the eligible one in the couple, since both people in the couple will have the same category.
+                 (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_ELIGIBLE) & (gis_base > 0),  # THIS NEEDS TO CHANGE BASED ON THE 'CROSSOVER' THING. # the gis_base > 0 makes sure this person is the eligible one in the couple, since both people in the couple will have the same category.
                  (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_INELIGIBLE) & (gis_base > 0)
              ],
              [

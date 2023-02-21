@@ -1,6 +1,6 @@
 description: Guaranteed Income Supplement maximum benefit for single OAS pensioners or married pensioners whose spouse does not qualify for OAS or SPA. Corresponds to categories SINGLE_WITH_OAS or COUPLE_ONE_OAS_SPA_INELIGIBLE
 values:
-  1999-12-31: 9_449.87
+  2021-01-01: 9_449.87
 metadata:
   period: year
   label: GIS Cap for Single Pensioners and Married Pensioners whose spouse doesn't qualify for GIS or SPA

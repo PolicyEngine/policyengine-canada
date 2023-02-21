@@ -1,13 +1,13 @@
 description: Reduction threshold and rate for pensioners married to pensioners. Applies to COUPLE_BOTH_OAS or COUPLE_ONE_OAS_SPA_ELIGIBLE. Note that this calculates on couples combined income, whereas the other GIS cateogires calculate on the lone pensioner's income. Correponds to GISRRM in the SPSD/M.
 brackets:
   - threshold:
-      2021-07-01: 0
+      2021-01-01: 0
     rate:
-      2022-07-01: 0
+      2021-01-01: 0
   - threshold:
-      2022-07-01: 48
+      2021-01-01: 48
     rate:
-      2022-07-01: 0.25
+      2021-01-01: 0.25
 metadata:
   period: year
   label: GIS reduction for pensioners married to a pensioner.

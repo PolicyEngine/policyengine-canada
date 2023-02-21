@@ -1,13 +1,13 @@
 description: Reduction rate for the OAS portion of the SPA. See SPARL in the SPSD/M Parameter Guide.
 brackets:
   - threshold:
-      2021-07-01: 0
+      2021-01-01: 0
     rate:
-      2022-07-01: 0 
+      2021-01-01: 0 
   - threshold:
-      2022-07-01: 48
+      2021-01-01: 48
     rate:
-      2022-07-01: 0.75
+      2021-01-01: 0.75
 metadata:
   type: marginal_rate
   rate_unit: /1

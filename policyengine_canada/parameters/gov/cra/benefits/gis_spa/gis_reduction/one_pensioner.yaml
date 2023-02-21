@@ -1,13 +1,13 @@
 description: Guaranteed Income Supplement reduction for single OAS pensioners or married pensioners whose spouse does not qualify for OAS or SPA. Corresponds to categories SINGLE_WITH_OAS or COUPLE_ONE_OAS_SPA_INELIGIBLE. Corresponds to GISRRS in the SPSD/M Variable Guide
 brackets:
   - threshold:
-      2021-07-01: 0
+      2021-01-01: 0
     rate:
-      2022-07-01: 0 
+      2021-01-01: 0 
   - threshold:
-      2022-07-01: 24
+      2021-01-01: 24
     rate:
-      2022-07-01: 0.5
+      2021-01-01: 0.5
 metadata:
   type: marginal_rate
   rate_unit: /1

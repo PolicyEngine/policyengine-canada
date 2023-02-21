@@ -1,5 +1,7 @@
-- name:  testing
+- name: This isn't a real test -- I just used it to calculate these amounts, to make sure they make sense.
   period: 2023
+  absolute_error_margin: .01
   output:
-    breakeven_spa_eligible: .25
-
+    breakeven_spa_eligible: 35976.72
+    breakeven_spa_ineligible: 46025.98
+    gis_spa_crossover: 25927.45
