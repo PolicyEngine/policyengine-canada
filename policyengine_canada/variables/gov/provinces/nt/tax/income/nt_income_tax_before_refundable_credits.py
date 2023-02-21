@@ -9,3 +9,4 @@ class nt_income_tax_before_refundable_credits(Variable):
     definition_period = YEAR
     reference = "https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html"
     adds = ["nt_income_tax_before_credits"]
+    defined_for = ProvinceCode.NT

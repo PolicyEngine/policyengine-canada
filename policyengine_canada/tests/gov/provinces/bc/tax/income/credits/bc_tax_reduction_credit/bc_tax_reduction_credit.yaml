@@ -2,7 +2,7 @@
   period: 2023
   input:
     bc_taxable_income: 23_179
-    province: BRITISH_COLUMBIA
+    province_code: BC
   output:
     bc_tax_reduction_credit: 521
 

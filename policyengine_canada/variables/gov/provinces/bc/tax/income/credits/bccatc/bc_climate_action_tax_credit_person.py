@@ -8,6 +8,7 @@ class bc_climate_action_tax_credit_person(Variable):
     unit = CAD
     documentation = "Determination of the amount per individual"
     definition_period = YEAR
+    defined_for = ProvinceCode.BC
 
     def formula(person, period, parameters):
         category = person("bc_climate_action_incentive_category", period)

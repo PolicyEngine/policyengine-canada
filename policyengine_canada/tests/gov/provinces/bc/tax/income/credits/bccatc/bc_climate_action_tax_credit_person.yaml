@@ -2,6 +2,7 @@
   period: 2023
   input:
     bc_climate_action_incentive_category: HEAD
+    province_code: BC
   output:
     bc_climate_action_tax_credit_person: 193.5
 
@@ -9,5 +10,6 @@
   period: 2023
   input:
     bc_climate_action_incentive_category: OTHER_CHILD
+    province_code: BC
   output:
     bc_climate_action_tax_credit_person: 56.5

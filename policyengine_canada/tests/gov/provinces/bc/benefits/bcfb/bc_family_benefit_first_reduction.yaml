@@ -4,6 +4,7 @@
     adjusted_family_net_income: 82_578
     bc_family_benefit_eligible_children: 1
     bc_family_benefit_base: 1_599.96
+    province_code: BC
   output:
     bc_family_benefit_first_reduction: 699.96
 
@@ -13,6 +14,7 @@
     adjusted_family_net_income: 40_000
     bc_family_benefit_eligible_children: 1
     bc_family_benefit_base: 1_599.96
+    province_code: BC
   output:
     bc_family_benefit_first_reduction: 1_032.2
 
@@ -22,6 +24,7 @@
     adjusted_family_net_income: 82_578
     bc_family_benefit_eligible_children: 2
     bc_family_benefit_base: 2_599.92
+    province_code: BC
   output:
     bc_family_benefit_first_reduction: 1_379.88
 
@@ -31,6 +34,7 @@
     adjusted_family_net_income: 82_578
     bc_family_benefit_eligible_children: 4
     bc_family_benefit_base: 4_199.76
+    province_code: BC
   output:
     bc_family_benefit_first_reduction: 2_699.88
 
@@ -41,5 +45,6 @@
     adjusted_family_net_income: 40_000
     bc_family_benefit_eligible_children: 4
     bc_family_benefit_base: 4_199.76
+    province_code: BC
   output:
     bc_family_benefit_first_reduction: 3_632

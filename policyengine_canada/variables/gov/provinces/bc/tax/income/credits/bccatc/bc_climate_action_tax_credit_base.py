@@ -8,5 +8,5 @@ class bc_climate_action_tax_credit_base(Variable):
     unit = CAD
     documentation = "Universal amount without adjustment based on AFNI"
     definition_period = YEAR
-
+    defined_for = ProvinceCode.BC
     adds = ["bc_climate_action_tax_credit_person"]

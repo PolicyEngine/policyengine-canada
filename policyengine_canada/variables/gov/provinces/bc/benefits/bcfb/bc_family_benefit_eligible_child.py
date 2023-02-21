@@ -7,6 +7,7 @@ class bc_family_benefit_eligible_child(Variable):
     label = "British Columbia family benefit eligible child"
     unit = CAD
     definition_period = YEAR
+    defined_for = ProvinceCode.BC
 
     def formula(person, period, parameters):
         age = person("age", period)
