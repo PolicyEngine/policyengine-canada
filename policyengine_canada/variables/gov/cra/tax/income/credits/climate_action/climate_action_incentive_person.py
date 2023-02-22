@@ -10,7 +10,7 @@ class climate_action_incentive_person(Variable):
     definition_period = YEAR
 
     def formula(person, period, parameters):
-        province = person.household("province_str", period)
+        province = person.household("province_code_str", period)
         category = person("climate_action_incentive_category", period)
         amounts = parameters(
             period

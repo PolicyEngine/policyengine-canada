@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.39.0] - 2023-02-21 18:04:57
+
+### Added
+
+- defined_for = Province. adjusted.
+
 ## [0.38.1] - 2023-02-14 02:01:10
 
 ### Added
@@ -325,6 +331,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.39.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.38.1...0.39.0
 [0.38.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.38.0...0.38.1
 [0.38.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.37.0...0.38.0
 [0.37.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.36.0...0.37.0

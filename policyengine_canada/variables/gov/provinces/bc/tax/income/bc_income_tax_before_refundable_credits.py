@@ -8,6 +8,7 @@ class bc_income_tax_before_refundable_credits(Variable):
     unit = CAD
     definition_period = YEAR
     reference = "https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html"
+    defined_for = ProvinceCode.BC
 
     def formula(person, period, parameters):
         income_tax_before_credits = person(

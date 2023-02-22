@@ -7,5 +7,5 @@ class bc_family_benefit_eligible_children(Variable):
     label = "British Columbia family benefit eligible children"
     unit = CAD
     definition_period = YEAR
-
+    defined_for = ProvinceCode.BC
     adds = ["bc_family_benefit_eligible_child"]

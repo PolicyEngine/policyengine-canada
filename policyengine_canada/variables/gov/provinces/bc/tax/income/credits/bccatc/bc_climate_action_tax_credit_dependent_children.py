@@ -8,5 +8,5 @@ class bc_climate_action_tax_credit_dependent_children(Variable):
     unit = CAD
     documentation = "Number of eligible dependent children"
     definition_period = YEAR
-
+    defined_for = ProvinceCode.BC
     adds = ["is_child_for_bc_climate_action_tax_credit"]

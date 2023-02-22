@@ -8,6 +8,7 @@ class bc_climate_action_tax_credit_single_parent_household(Variable):
     unit = CAD
     documentation = "Determination wether the filer is a single parent eligible for the climate action tax credit"
     definition_period = YEAR
+    defined_for = ProvinceCode.BC
 
     def formula(household, period, parameters):
         married = household("is_married", period)

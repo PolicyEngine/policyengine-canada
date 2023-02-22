@@ -15,6 +15,10 @@ from policyengine_core.simulations import (
 from policyengine_core.simulations import Simulation as CoreSimulation
 from policyengine_core.taxbenefitsystems import TaxBenefitSystem
 
+from policyengine_canada.variables.household.demographic.geographic.province.in_province import (
+    create_10_province_variables,
+)
+
 from .constants import COUNTRY_DIR
 
 DATASETS = [CountryTemplateDataset]  # Important: must be instantiated
@@ -28,6 +32,12 @@ class CountryTaxBenefitSystem(TaxBenefitSystem):
     basic_inputs = [
         "employment_income",
     ]
+
+    def __init__(self):
+        # We initialize our tax and benefit system with the general constructor
+        super().__init__(entities)
+
+        self.add_variables(*create_10_province_variables())
 
 
 system = CountryTaxBenefitSystem()

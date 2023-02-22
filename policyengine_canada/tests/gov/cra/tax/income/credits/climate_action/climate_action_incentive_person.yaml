@@ -10,7 +10,7 @@
         climate_action_incentive_category: OTHER_CHILD
     household:
       members: [parent, c1, c2]
-      province: ONTARIO
+      province_code: ONT
   output:
     climate_action_incentive_person: [373, 186, 93]
 
@@ -26,6 +26,6 @@
         climate_action_incentive_category: OTHER_CHILD
     household:
       members: [head, spouse, c1]
-      province: ALBERTA
+      province_code: AB
   output:
     climate_action_incentive_person: [539, 270, 135]
