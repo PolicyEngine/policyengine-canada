@@ -1,0 +1,10 @@
+description: GIS reduction rate for the 'plateau' range for a GIS recipient married to a SPA recipient.
+values:
+  2021-01-01: 0
+metadata:
+  period: year
+  label: GIS reduction rate for the 'plateau' range for a GIS recipient married to a SPA recipient.
+  documentataion: Corresponds to GISRRM and GISRLM in the SPSD/M Variable Guide
+  reference:
+  - title: SPSD/M Variable Guide
+   

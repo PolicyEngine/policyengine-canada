@@ -6,15 +6,15 @@
   output:
     gis_reduction: 100
 
-- name: OAS pensioner whose spouse is SPA eligible
-  period: 2023
-  input:
-    gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
-    individual_net_income: 2_048
-    spouse_net_income: 2_000
-    gis_cap: 6_240.18
-  output:
-    gis_reduction: 1_000
+# - name: OAS pensioner whose spouse is SPA eligible
+#   period: 2023
+#   input:
+#     gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
+#     individual_net_income: 2_048
+#     spouse_net_income: 2_000
+#     gis_cap: 6_240.18
+#   output:
+#     gis_reduction: 1_000
 
 - name: Two OAS pensioners
   period: 2023

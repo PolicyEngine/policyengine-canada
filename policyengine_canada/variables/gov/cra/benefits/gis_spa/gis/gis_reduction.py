@@ -21,14 +21,15 @@ class gis_reduction(Variable):
              [
                  gis_spa_category == gis_spa_categories.SINGLE_WITH_OAS,
                  gis_spa_category == gis_spa_categories.COUPLE_BOTH_OAS,
-                 (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_ELIGIBLE) & (gis_base > 0),  # THIS NEEDS TO CHANGE BASED ON THE 'CROSSOVER' THING. # the gis_base > 0 makes sure this person is the eligible one in the couple, since both people in the couple will have the same category.
+                 (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_ELIGIBLE) & (gis_base > 0),  # the gis_base > 0 makes sure this person is the eligible one in the couple, since both people in the couple will have the same category.
                  (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_INELIGIBLE) & (gis_base > 0)
              ],
              [
                  p.one_pensioner.calc(individual_net_income),
                  p.two_pensioners.calc(individual_net_income + spouse_net_income),
-                 p.two_pensioners.calc(individual_net_income + spouse_net_income),
+                 p.two_pensioners.calc(individual_net_income + spouse_net_income), # THIS NEEDS TO CHANGE BASED ON THE 'CROSSOVER' THING.
                  p.one_pensioner.calc(individual_net_income)
+                 #person("gis_reduction_spa_couple", period)
              ],
              default=0,
         )
