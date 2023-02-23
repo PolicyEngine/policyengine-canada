@@ -8,5 +8,5 @@ class bc_benefits(Variable):
     documentation = "British Columbia benefits"
     unit = CAD
     definition_period = YEAR
-
+    defined_for = ProvinceCode.BC
     adds = "gov.provinces.bc.benefits.benefits"

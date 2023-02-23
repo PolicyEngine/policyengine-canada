@@ -3,6 +3,7 @@
   input:
     bc_income_tax_before_credits: 2_000
     bc_non_refundable_credits: 1_000
+    province_code: BC
   output:
     bc_income_tax_before_refundable_credits: 1_000
 
@@ -11,5 +12,6 @@
   input:
     bc_income_tax_before_credits: 2_000
     bc_non_refundable_credits: 3_000
+    province_code: BC
   output:
     bc_income_tax_before_refundable_credits: 0

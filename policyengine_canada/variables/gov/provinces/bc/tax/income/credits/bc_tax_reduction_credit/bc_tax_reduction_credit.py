@@ -7,6 +7,7 @@ class bc_tax_reduction_credit(Variable):
     label = "British Columbia tax reduction credit"
     unit = CAD
     definition_period = YEAR
+    defined_for = ProvinceCode.BC
 
     def formula(person, period, parameters):
         income = person("bc_taxable_income", period)

@@ -1,7 +1,7 @@
 - name: Yukon income tax 
   period: 2022
   input:
-    province: YUKON
+    province_code: YT
     yt_taxable_income: 50_196
   output:
     yt_income_tax_before_credits: 3_212.544
@@ -9,7 +9,7 @@
 - name: Yukon income tax; wrong province
   period: 2022
   input:
-    province: ALBERTA
+    province_code: AB
     yt_taxable_income: 46_225
   output:
     yt_income_tax_before_credits: 0
@@ -17,7 +17,7 @@
 - name: Yukon income tax higher bracket
   period: 2022
   input:
-    province: YUKON
+    province_code: YT
     yt_taxable_income: 510_000
   output:
     yt_income_tax_before_credits: 59_330.555

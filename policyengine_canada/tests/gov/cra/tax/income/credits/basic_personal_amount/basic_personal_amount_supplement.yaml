@@ -1,0 +1,27 @@
+- name: Income below phase out threshold
+  period: 2022
+  input:
+    individual_net_income: 140_387
+  output:
+    basic_personal_amount_supplement: 1_679
+
+- name: Income significantly below phase out threshold
+  period: 2022
+  input:
+    individual_net_income: 20_387
+  output:
+    basic_personal_amount_supplement: 1_679
+
+- name: Income above phase out 
+  period: 2022
+  input:
+    individual_net_income: 221_788
+  output:
+    basic_personal_amount_supplement: 0
+
+- name: Calculation #(14_398 - 12_719) -  ( (14_398 - 12_719) * ( ( 200_000 - 155_625) / (221_708 - 155_625))) = 551,54474
+  period: 2022
+  input:
+    individual_net_income: 200_000
+  output:
+    basic_personal_amount_supplement: 551.54474

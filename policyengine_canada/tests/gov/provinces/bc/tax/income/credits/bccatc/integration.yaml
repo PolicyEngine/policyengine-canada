@@ -15,7 +15,7 @@
     household:
       members: [parent, c1, c2]
       adjusted_family_net_income: 20_000
-      province: BRITISH_COLUMBIA
+      province_code: BC
       is_married: false
   output:
     bc_climate_action_tax_credit: 443.5

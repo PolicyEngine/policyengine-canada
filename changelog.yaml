@@ -258,3 +258,18 @@
     added:
     - British columbia tax reduction credit.
   date: 2023-02-12 01:48:40
+- bump: patch
+  changes:
+    added:
+    - Expand integration test to go up to household_net_income.
+  date: 2023-02-14 02:01:10
+- bump: minor
+  changes:
+    added:
+    - defined_for = Province. adjusted.
+  date: 2023-02-21 18:04:57
+- bump: minor
+  changes:
+    added:
+    - Basic personal amount.
+  date: 2023-02-23 18:10:43

@@ -16,6 +16,7 @@ class bc_climate_action_incentive_category(Variable):
     possible_values = BCClimateActionIncentiveCategory
     default_value = BCClimateActionIncentiveCategory.HEAD
     definition_period = YEAR
+    defined_for = ProvinceCode.BC
 
     def formula(person, period, parameters):
         is_single_parent_household = person.household(

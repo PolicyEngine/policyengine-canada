@@ -10,6 +10,7 @@ class on_child_benefit(Variable):
         "Non taxable amount paid monthly per children under 18 years of age. "
     )
     definition_period = YEAR
+    defined_for = ProvinceCode.ONT
 
     def formula(household, period, parameters):
         base = household("on_child_benefit_base", period)
