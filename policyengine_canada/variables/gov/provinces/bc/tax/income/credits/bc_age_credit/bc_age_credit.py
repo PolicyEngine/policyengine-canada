@@ -7,6 +7,7 @@ class bc_age_credit(Variable):
     label = "British Columbia Age credit, non-refundable"
     unit = CAD
     definition_period = YEAR
+    defined_for = ProvinceCode.BC
 
     def formula(person, period, parameters):
         age = person("age", period)
@@ -15,6 +16,5 @@ class bc_age_credit(Variable):
         ).gov.provinces.bc.tax.income.credits.bc_age_credit
         eligible = age >= p.eligible_age
         income = person("total_individual_pre_tax_income", period)
-        base = p.base
         reduction = p.phase_out.rate.calc(income)
-        return eligible * (max_(0, base - reduction))
+        return eligible * (max_(0, p.base - reduction))

@@ -3,6 +3,7 @@
   input:
     age: 64
     total_individual_pre_tax_income: 20_000
+    province_code: BC
   output:
     bc_age_credit: 0
 
@@ -11,6 +12,7 @@
   input:
     age: 65
     total_individual_pre_tax_income: 39_994
+    province_code: BC
   output:
     bc_age_credit: 5_243
 
@@ -19,6 +21,7 @@
   input:
     age: 65
     total_individual_pre_tax_income: 45_000
+    province_code: BC
   output:
     bc_age_credit: 4_492.1
 
@@ -27,5 +30,6 @@
   input:
     age: 65
     total_individual_pre_tax_income: 75_000
+    province_code: BC
   output:
     bc_age_credit: 0
