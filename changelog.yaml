@@ -268,3 +268,8 @@
     added:
     - defined_for = Province. adjusted.
   date: 2023-02-21 18:04:57
+- bump: minor
+  changes:
+    added:
+    - Basic personal amount.
+  date: 2023-02-23 18:10:43
