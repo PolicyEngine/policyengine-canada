@@ -6,7 +6,7 @@
   output:
     gis_reduction: 100
 
-- name: OAS pensioner whose spouse is SPA eligible
+- name: OAS pensioner whose spouse is SPA eligible, with combined income too low to trigger the plateau in the reduction
   period: 2023
   input:
     gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
@@ -15,6 +15,17 @@
     gis_cap: 6_240.18
   output:
     gis_reduction: 1_000
+
+- name: Couple with combined income that exceeds the upper plateau threshold given by breakeven_spa_eligible. So the GIS reduction starts again after the plateau. 
+  period: 2023
+  absolute_error_margin: .01
+  input:
+    gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
+    individual_net_income: 20_048
+    spouse_net_income: 20_000
+    gis_cap: 30000
+  output:
+    gis_reduction: 7487.68
 
 - name: Two OAS pensioners
   period: 2023

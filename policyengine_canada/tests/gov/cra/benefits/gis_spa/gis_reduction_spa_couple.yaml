@@ -1,0 +1,42 @@
+- name: Couple with combined income less than the plateau threshold. 
+  period: 2023
+  absolute_error_margin: .01
+  input:
+    gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
+    individual_net_income: 2_048
+    spouse_net_income: 2_000
+  output:
+    gis_reduction_spa_couple: 1_000
+
+- name: Couple with combined income inside the plateau threshold. So the GIS reduction is frozen at the reduction you would have if your income were the crossover amount.
+  period: 2023
+  absolute_error_margin: .01
+  input:
+    gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
+    individual_net_income: 15_048
+    spouse_net_income: 15_000
+  output:
+    gis_reduction_spa_couple: 6_469.86
+
+- name: Couple with combined income that exceeds the upper plateau threshold given by breakeven_spa_eligible. So the GIS reduction starts again after the plateau. 
+  period: 2023
+  absolute_error_margin: .01
+  input:
+    gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
+    individual_net_income: 20_048
+    spouse_net_income: 20_000
+  output:
+    gis_reduction_spa_couple: 7487.68
+
+- name: Automatically 0 if you're not the right gis-spa category
+  period: 2023
+  absolute_error_margin: .01
+  input:
+    gis_spa_category: "COUPLE_ONE_OAS_SPA_INELIGIBLE"
+    individual_net_income: 20_048
+    spouse_net_income: 20_000
+  output:
+    gis_reduction_spa_couple: 0
+
+
+
