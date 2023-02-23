@@ -12,6 +12,3 @@ class basic_personal_amount(Variable):
         p = parameters(period).gov.cra.tax.income.credits.basic_personal_amount
         supplement = person("basic_personal_amount_supplement", period)
         return p.base + supplement
-
-
-# TODO: add to the net income tree.

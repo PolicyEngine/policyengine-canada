@@ -2,6 +2,7 @@ description: Basic Personal Amout phase-out threshold start.
 values:
   2020-01-01: 140_388
   2022-01-01: 155_625
+  2023-01-01: 165_430
 metadata:
   unit: currency-CAD
   period: year
@@ -12,4 +13,5 @@ metadata:
     - title: Income Tax Act (E), (A), (118.1), (1.1)
       href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-84.html?txthl=personal+amounts+amount+basic#s-118 
 
-#TODO: 2023 tax brackets
+
+# Based on the 2023 tax schedule (29% bracket)
