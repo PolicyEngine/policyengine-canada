@@ -1,0 +1,11 @@
+description: Alberta Age Amount base.
+values:
+  2022-01-01: 7_898
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Alberta Age amount credit base
+   reference:
+  - title: Government of Canada - Line 30100, Age amount
+    href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30100-amount.html
+  

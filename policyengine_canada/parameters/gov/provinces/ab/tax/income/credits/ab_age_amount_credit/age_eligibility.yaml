@@ -1,0 +1,10 @@
+description: Inclusive age at with a person is eligible for the Alberta age amount credit.
+values:
+  2022-12-31: 65
+metadata:
+  unit: year
+  label: Alberta Age amount credit age eligibility
+  reference:
+  - title: Government of Canada - Line 30100, Age amount
+    href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30100-amount.html
+  

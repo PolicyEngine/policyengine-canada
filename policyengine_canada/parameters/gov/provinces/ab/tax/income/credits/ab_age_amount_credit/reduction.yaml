@@ -1,0 +1,23 @@
+description: Alberta Age Amount Credit reduction.
+brackets:
+  - threshold:
+      values:
+        2022-01-01: 0
+    rate:
+      values:
+        2022-01-01: 0
+  - threshold:
+      values:
+        2022-01-01: 39_826
+    rate:
+      values:
+        2022-01-01: 0.15
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  period: year
+  label: alberta age amount credit reduction
+  reference:
+  - title: Government of Canada - Line 30100, Age amount
+    href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30100-amount.html
+  

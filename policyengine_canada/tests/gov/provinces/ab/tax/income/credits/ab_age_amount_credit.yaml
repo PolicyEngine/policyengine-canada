@@ -1,0 +1,37 @@
+- name: Under age eligibility
+  period: 2023
+  input:
+    age: 64
+    total_individual_pre_tax_income: 30_000
+    province_code: AB
+  output:
+    ab_age_amount_credit: 0
+
+- name: capped at 0
+  period: 2023
+  input:
+    age: 65
+    total_individual_pre_tax_income: 100_000
+    province_code: AB
+  output:
+    ab_age_amount_credit: 0
+
+- name: Pre-reduction
+  period: 2023
+  input:
+    age: 65
+    total_individual_pre_tax_income: 39_826
+    province_code: AB
+  output:
+    ab_age_amount_credit: 7_898
+
+- name: calculation # 7_898 - (50_000-39_826) * 0.15
+  period: 2023
+  input:
+    age: 65
+    total_individual_pre_tax_income: 50_000
+    province_code: AB
+  output:
+    ab_age_amount_credit: 50_000
+
+  
