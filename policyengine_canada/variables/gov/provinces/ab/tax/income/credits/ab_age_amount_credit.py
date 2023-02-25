@@ -16,6 +16,6 @@ class ab_age_amount_credit(Variable):
         ).gov.provinces.ab.tax.income.credits.ab_age_amount_credit
         eligible = age >= p.age_eligibility
         income = person("total_individual_pre_tax_income", period)
-        base = p.base
+        base = p.max
         reduction = p.reduction.calc(income)
         return eligible * (max_(0, base - reduction))
