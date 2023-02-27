@@ -5,7 +5,6 @@ class eligible_spouse_for_canada_caregiver_amount(Variable):
     value_type = bool
     entity = Person
     label = "Spouse eligible for the Canada caregiver amount"
-    unit = CAD
     definition_period = YEAR
 
     def formula(person, period, parameters):

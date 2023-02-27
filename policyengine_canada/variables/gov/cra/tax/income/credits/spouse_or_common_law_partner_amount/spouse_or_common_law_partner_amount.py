@@ -21,7 +21,10 @@ class spouse_or_common_law_partner_amount(Variable):
                 period
             ).gov.cra.tax.income.credits.spouse_or_common_law_partner_amount.supplement
         )
-        return max_(
+        eligible = person(
+            "spouse_or_common_law_partner_amount_eligible_spouse", period
+        )
+        return eligible * max_(
             0, basic_personal_amount + supplement_amount - spouse_income
         )
 
