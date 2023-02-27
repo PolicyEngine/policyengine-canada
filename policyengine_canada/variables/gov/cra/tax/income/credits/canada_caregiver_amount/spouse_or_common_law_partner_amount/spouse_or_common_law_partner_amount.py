@@ -19,7 +19,7 @@ class spouse_or_common_law_partner_amount(Variable):
             disabled_spouse
             * parameters(
                 period
-            ).gov.cra.tax.income.credits.spouse_or_common_law_partner_amount.supplement
+            ).gov.cra.tax.income.credits.canada_caregiver_amount.spouse_or_common_law_partner_amount.supplement
         )
         eligible = person(
             "spouse_or_common_law_partner_amount_eligible_spouse", period
