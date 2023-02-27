@@ -1,0 +1,26 @@
+- name: Spouse income over basic personal amount
+  period: 2022
+  input:
+    spouse_net_income: 16_000
+    basic_personal_amount: 15_000
+    eligible_spouse_for_canada_caregiver_amount: 0
+  output:
+    spouse_or_common_law_partner_amount: 0
+
+- name: Eligible for caregiver supplement
+  period: 2022
+  input:
+    spouse_net_income: 16_000
+    basic_personal_amount: 15_000
+    eligible_spouse_for_canada_caregiver_amount: 2_350
+  output:
+    spouse_or_common_law_partner_amount: 1_350
+
+- name: Eligible for caregiver supplement
+  period: 2022
+  input:
+    spouse_net_income: 14_000
+    basic_personal_amount: 15_000
+    eligible_spouse_for_canada_caregiver_amount: 0
+  output:
+    spouse_or_common_law_partner_amount: 1_000
