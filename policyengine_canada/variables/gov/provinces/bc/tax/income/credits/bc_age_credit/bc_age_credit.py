@@ -11,9 +11,7 @@ class bc_age_credit(Variable):
 
     def formula(person, period, parameters):
         age = person("age", period)
-        p = parameters(
-            period
-        ).gov.provinces.bc.tax.income.credits.bc_age_credit
+        p = parameters(period).gov.provinces.bc.tax.income.credits.age
         eligible = age >= p.eligible_age
         income = person("total_individual_pre_tax_income", period)
         reduction = p.phase_out.rate.calc(income)
