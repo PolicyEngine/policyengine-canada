@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.42.0] - 2023-02-28 05:08:04
+
+### Added
+
+- British Columbia age credit.
+
 ## [0.41.0] - 2023-02-28 01:30:52
 
 ### Added
@@ -343,6 +349,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.42.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.41.0...0.42.0
 [0.41.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.40.0...0.41.0
 [0.40.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.39.0...0.40.0
 [0.39.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.38.1...0.39.0
