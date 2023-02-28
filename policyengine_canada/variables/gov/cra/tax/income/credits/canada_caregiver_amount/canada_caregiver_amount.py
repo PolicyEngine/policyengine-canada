@@ -11,15 +11,9 @@ class canada_caregiver_amount(Variable):
     def formula(person, period, parameters):
         p = parameters(period).gov.cra.tax.income.credits.canada_caregiver_amount.
         base = p.base
-        dependent_income = person("spouse_net_income", period)
-
-#TODO: dependent income variable
-
+        dependent_income = person("dependent_net_income", period)
         spouse_amount = person("spouse_or_common_law_partner_amount", period)
-        dependent_amount = person()
-
-#TODO: dependent amount
-
+        dependent_amount = person("eligible_dependent_amount", period)
         max_amount = p.max_amount
         min_income = p.income.min
         eligible = person("eligible_dependent_for_canada_caregiver_amount", period) or person("eligible_spouse_for_canada_caregiver_amount", period)
