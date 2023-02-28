@@ -1,0 +1,35 @@
+- name: Under age eligibility
+  period: 2023
+  input:
+    age: 64
+    total_individual_pre_tax_income: 20_000
+    province_code: BC
+  output:
+    bc_age_credit: 0
+
+- name: Under phase-out start
+  period: 2023
+  input:
+    age: 65
+    total_individual_pre_tax_income: 39_994
+    province_code: BC
+  output:
+    bc_age_credit: 5_243
+
+- name: Over phase-out start
+  period: 2023
+  input:
+    age: 65
+    total_individual_pre_tax_income: 45_000
+    province_code: BC
+  output:
+    bc_age_credit: 4_492.1
+
+- name: Capped at 0
+  period: 2023
+  input:
+    age: 65
+    total_individual_pre_tax_income: 75_000
+    province_code: BC
+  output:
+    bc_age_credit: 0
