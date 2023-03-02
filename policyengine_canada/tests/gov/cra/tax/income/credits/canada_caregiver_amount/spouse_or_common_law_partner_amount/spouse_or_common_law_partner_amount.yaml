@@ -18,7 +18,7 @@
   output:
     spouse_or_common_law_partner_amount: 1_350
 
-- name: Eligible spouse
+- name: Eligible spouse # 15_000 - 14_000 = 1_000
   period: 2022
   input:
     spouse_net_income: 14_000
@@ -27,3 +27,13 @@
     spouse_or_common_law_partner_amount_eligible_spouse: true
   output:
     spouse_or_common_law_partner_amount: 1_000
+
+- name: Ineligible
+  period: 2022
+  input:
+    spouse_net_income: 14_000
+    basic_personal_amount: 15_000
+    eligible_spouse_for_canada_caregiver_amount: false
+    spouse_or_common_law_partner_amount_eligible_spouse: false
+  output:
+    spouse_or_common_law_partner_amount: 0

@@ -11,8 +11,8 @@ class eligible_dependent_for_eligible_dependent_amount(Variable):
         disabled = person("is_disabled", period)
         age_eligible = (
             person("age", period)
-            <= parameters(
+            < parameters(
                 period
             ).gov.cra.tax.income.credits.canada_caregiver_amount.eligible_dependent_amount.age
         )
-        return disabled or age_eligible
+        return disabled | age_eligible

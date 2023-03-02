@@ -1,0 +1,31 @@
+- name: Ineligible
+  period: 2022
+  input:
+    is_disabled: false
+    age: 17
+  output:
+    eligible_dependent_for_canada_caregiver_amount: false
+
+- name: Disabled - eligible
+  period: 2022
+  input:
+    is_disabled: true
+    age: 17
+  output:
+    eligible_dependent_for_canada_caregiver_amount: true
+
+- name: Age eligible
+  period: 2022
+  input:
+    is_disabled: false
+    age: 18
+  output:
+    eligible_dependent_for_canada_caregiver_amount: true
+
+- name: Eligible
+  period: 2022
+  input:
+    is_disabled: true
+    age: 18
+  output:
+    eligible_dependent_for_canada_caregiver_amount: true
