@@ -7,7 +7,7 @@ class spouse_or_common_law_partner_amount(Variable):
     label = "Spouse or common-law partner amount"
     unit = CAD
     definition_period = YEAR
-    reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-s5/5000-s5-22e.pdf"
+    reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-s5/5000-s5-22e.pdf - Line 30300"
 
     def formula(person, period, parameters):
         spouse_income = person("spouse_net_income", period)

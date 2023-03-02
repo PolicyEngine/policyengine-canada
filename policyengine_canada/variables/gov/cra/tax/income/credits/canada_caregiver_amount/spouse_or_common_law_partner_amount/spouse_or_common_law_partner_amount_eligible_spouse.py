@@ -6,3 +6,6 @@ class spouse_or_common_law_partner_amount_eligible_spouse(Variable):
     entity = Person
     label = "Eligible spouse for the spouse or common law partner amount"
     definition_period = YEAR
+
+
+# TODO: formula

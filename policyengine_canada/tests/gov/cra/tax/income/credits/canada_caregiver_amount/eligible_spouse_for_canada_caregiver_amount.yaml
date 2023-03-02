@@ -14,11 +14,11 @@
   output:
     eligible_spouse_for_canada_caregiver_amount: false
 
-- name: Not spouse - ineligible
+- name: Not disabled - ineligible
   period: 2022
   input:
     is_disabled: false
-    is_spouse: spouse
+    is_spouse: true
   output:
     eligible_spouse_for_canada_caregiver_amount: false
 

@@ -13,12 +13,12 @@
   period: 2022
   input:
     dependent_net_income: 7_544
-    spouse_or_common_law_partner_amount: 1_000
-    eligible_dependent_amount: 1_000
+    spouse_or_common_law_partner_amount: 0
+    eligible_dependent_amount: 0
     eligible_dependent_for_canada_caregiver_amount: true
     eligible_spouse_for_canada_caregiver_amount: true
   output:
-    canada_caregiver_amount: 7_544
+    canada_caregiver_amount: 7_525
 
 - name: Ineligible
   period: 2022
