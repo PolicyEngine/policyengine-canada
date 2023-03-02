@@ -1,0 +1,10 @@
+description: Alberta Child and Family Benefit working amount for the fourth childrens.
+values:
+  2022-07-01: 123 # $10.25 monthly.
+  2023-01-01: 130 # $10.83 monthly
+metadata:
+  unit: currency-CAD
+  label: Alberta Child and Family Benefit the fourth childrens working amount
+  reference:
+  - title: Government of Canada - Alberta Child and Family Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-alberta.html

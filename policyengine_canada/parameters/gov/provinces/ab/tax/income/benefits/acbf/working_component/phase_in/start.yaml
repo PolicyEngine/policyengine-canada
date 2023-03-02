@@ -1,0 +1,9 @@
+description: Alberta child and Family Benefit working component phase-in eligibility.
+values:
+  2022-07-01: 2_760
+metadata:
+  unit: currency-CAD
+  label: Alberta child and Family Benefit working component phase-in eligibility.
+  reference:
+  - title: Province of Alberta - Alberta Child and Family Benefit
+    href: https://www.alberta.ca/alberta-child-and-family-benefit.aspx

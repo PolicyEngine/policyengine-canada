@@ -1,0 +1,10 @@
+description: Alberta Child and Family Benefit working amount for the second childrens.
+values:
+  2022-07-01: 620 # $51.66 monthly.
+  2023-01-01: 657 # $54.75 monthly
+metadata:
+  unit: currency-CAD
+  label: Alberta Child and Family Benefit the second childrens working amount
+  reference:
+  - title: Government of Canada - Alberta Child and Family Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-alberta.html
