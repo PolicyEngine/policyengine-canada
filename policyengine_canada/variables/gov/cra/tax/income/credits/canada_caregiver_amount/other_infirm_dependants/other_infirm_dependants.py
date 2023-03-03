@@ -13,13 +13,15 @@ class other_infirm_dependants(Variable):
         p = parameters(
             period
         ).gov.cra.tax.income.credits.canada_caregiver_amount
-        dependant_income = person("dependant_income", period)
+        dependant_income = person("dependent_net_income", period)
         eligible = person(
-            "eligible_dependent_for_other_infirm_dependants_amount", period
+            "eligible_people_for_other_infirm_dependants_amount", period
         )
         return eligible * (
-            min_(max_(p.base - dependant_income), 0),
-            p.max_amount,
+            min_(
+                max_((p.base - dependant_income), 0),
+                p.max_amount,
+            )
         )
 
 
