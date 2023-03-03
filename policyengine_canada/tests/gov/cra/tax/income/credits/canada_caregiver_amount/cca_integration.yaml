@@ -1,0 +1,23 @@
+- name: Dependent income below threshold
+  period: 2022
+  input:
+    people:
+      head:
+        age: 40
+        basic_personal_amount: 15_000
+      spouse:
+        is_spouse: true
+        spouse_net_income: false
+      c1:
+        age: 12
+        is_depenant: true
+        is_disabled: true
+        dependent_net_income: 23_000
+      c2: 
+        age: 13
+        dependent_net_income: 2_000
+    household:
+      members: [head, spouse, c1, c2]
+  output:
+    canada_caregiver_amount: 0
+    other_infirm_dependants: 0
