@@ -7,5 +7,5 @@ class spouse_or_common_law_partner_amount_eligible_spouse(Variable):
     label = "Eligible spouse for the spouse or common law partner amount"
     definition_period = YEAR
 
-
-# TODO: formula
+    def formula(person, period, parameters):
+        return person("is_spouse", period)
