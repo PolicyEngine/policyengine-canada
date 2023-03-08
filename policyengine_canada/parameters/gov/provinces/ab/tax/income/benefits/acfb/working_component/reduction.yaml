@@ -1,4 +1,4 @@
-description: Alberta child and Family Benefit base component reduction.
+description: Alberta child and Family Benefit working component reduction.
 brackets:
   - threshold:
       values:
@@ -8,19 +8,19 @@ brackets:
         2022-07-01: 0
   - threshold:
       values:
-        2022-07-01: 24_467
-        2023-01-01: 25_935
+        2022-07-01: 41_000
+        2023-01-01: 43_460
     rate:
       values:
         2023-01-01: 0.2011
 
-# Calculated from source
+# Need rate
 
 metadata:
   type: marginal_rate
   rate_unit: /1
   threshold_unit: currency-CAD
-  label: Alberta Child and Family benefit base component reduction
+  label: Alberta Child and Family benefit working component reduction
   reference:
   - title: Government of Canada - Alberta Child and Family Benefit
     href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-alberta.html
