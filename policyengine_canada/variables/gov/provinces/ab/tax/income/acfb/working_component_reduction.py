@@ -9,8 +9,9 @@ class working_component_reduction(Variable):
     defined_for = ProvinceCode.AB
 
     def formula(household, period, parameters):
-        p = parameters(period).gov.provinces.ab.tax.income.benefits.acfb.working_component
+        p = parameters(
+            period
+        ).gov.provinces.ab.tax.income.benefits.acfb.working_component
         income = household("adjusted_family_net_income", period)
         base = household("working_component_phase_in", period)
         return max_(0, base - p.reduction.calc(income))
-    
