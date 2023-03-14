@@ -11,9 +11,9 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=d81277517bee4d6b0349d71bb2661d4890b5617c" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
@@ -200,6 +200,11 @@
 <h1>Net income after taxes and benefits<a class="headerlink" href="#net-income-after-taxes-and-benefits" title="Permalink to this headline">#</a></h1>
 <p>This shows a range of Ontario households.</p>
 <div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">policyengine_canada</span> <span class="kn">import</span> <span class="n">Microsimulation</span><span class="p">,</span> <span class="n">Simulation</span>
 <span class="kn">from</span> <span class="nn">policyengine_core.reforms</span> <span class="kn">import</span> <span class="n">Reform</span>
@@ -258,6 +263,7 @@
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">VariableNotFoundError</span><span class="g g-Whitespace">                     </span>Traceback (most recent call last)
@@ -287,7 +293,7 @@
 <span class="ne">--&gt; </span><span class="mi">479</span>     <span class="k">raise</span> <span class="n">VariableNotFoundError</span><span class="p">(</span><span class="n">variable_name</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">480</span> <span class="k">return</span> <span class="n">found</span>
 
-<span class="ne">VariableNotFoundError</span>: You tried to calculate or to set a value for variable &#39;province&#39;, but it was not found in the loaded tax and benefit system (policyengine-canada@0.42.0).
+<span class="ne">VariableNotFoundError</span>: You tried to calculate or to set a value for variable &#39;province&#39;, but it was not found in the loaded tax and benefit system (policyengine-canada@0.42.1).
 <span class="n">Are</span> <span class="n">you</span> <span class="n">sure</span> <span class="n">you</span> <span class="n">spelled</span> <span class="s1">&#39;province&#39;</span> correctly<span class="o">?</span>
 <span class="n">If</span> <span class="n">this</span> <span class="n">code</span> <span class="n">used</span> <span class="n">to</span> <span class="n">work</span> <span class="ow">and</span> <span class="n">suddenly</span> <span class="n">does</span> <span class="ow">not</span><span class="p">,</span> <span class="n">this</span> <span class="ow">is</span> <span class="n">most</span> <span class="n">probably</span> <span class="n">linked</span> <span class="n">to</span> <span class="n">an</span> <span class="n">update</span> <span class="n">of</span> <span class="n">the</span> <span class="n">tax</span> <span class="ow">and</span> <span class="n">benefit</span> <span class="n">system</span><span class="o">.</span>
 <span class="n">Look</span> <span class="n">at</span> <span class="n">its</span> <span class="n">changelog</span> <span class="n">to</span> <span class="n">learn</span> <span class="n">about</span> <span class="n">renames</span> <span class="ow">and</span> <span class="n">removals</span> <span class="ow">and</span> <span class="n">update</span> <span class="n">your</span> <span class="n">code</span><span class="o">.</span> <span class="n">If</span> <span class="n">it</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">official</span> <span class="n">package</span><span class="p">,</span>
@@ -361,12 +367,17 @@
 <span class="g g-Whitespace">    </span><span class="mi">544</span> <span class="n">instance_index</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_ids</span><span class="p">(</span><span class="n">entity</span><span class="o">.</span><span class="n">plural</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">instance_id</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">546</span> <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">variable_values</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
 
-<span class="ne">SituationParsingError</span>: {&#39;households&#39;: {&#39;household&#39;: {&#39;province&#39;: &quot;You tried to calculate or to set a value for variable &#39;province&#39;, but it was not found in the loaded tax and benefit system (policyengine-canada@0.42.0). Are you sure you spelled &#39;province&#39; correctly? If this code used to work and suddenly does not, this is most probably linked to an update of the tax and benefit system. Look at its changelog to learn about renames and removals and update your code. If it is an official package, it is probably available on &lt;https://github.com/openfisca/policyengine-canada/blob/master/CHANGELOG.md&gt;.&quot;}}}
+<span class="ne">SituationParsingError</span>: {&#39;households&#39;: {&#39;household&#39;: {&#39;province&#39;: &quot;You tried to calculate or to set a value for variable &#39;province&#39;, but it was not found in the loaded tax and benefit system (policyengine-canada@0.42.1). Are you sure you spelled &#39;province&#39; correctly? If this code used to work and suddenly does not, this is most probably linked to an update of the tax and benefit system. Look at its changelog to learn about renames and removals and update your code. If it is an official package, it is probably available on &lt;https://github.com/openfisca/policyengine-canada/blob/master/CHANGELOG.md&gt;.&quot;}}}
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">policyengine_canada</span> <span class="kn">import</span> <span class="n">Simulation</span>
 
@@ -385,6 +396,7 @@
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([18395.], dtype=float32)
 </pre></div>
@@ -496,13 +508,13 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script src="_static/scripts/furo.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
