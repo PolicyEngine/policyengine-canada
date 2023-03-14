@@ -1,9 +1,9 @@
 from policyengine_canada.model_api import *
 
-class gis_topup(Variable):
+class gis_topup_cap(Variable):
     value_type = float
     entity = Person
-    label = "Guaranteed Income Supplement Top-up"
+    label = "Guaranteed Income Supplement Top-up Maximum Value"
     unit = CAD
     documentation = "The highest GIS Top-up amount an individual could receive, based on the number of pensioners in the household, before the amount is reduced based on income. Roughly equivalent to imigistop in the SPSD/M variable guide."
     definition_period = YEAR

@@ -30,7 +30,6 @@ class gis_reduction(Variable):
                  p.two_pensioners.calc(individual_net_income + spouse_net_income),
                  gis_reduction_spa_couple,
                  p.one_pensioner.calc(individual_net_income)
-                 #person("gis_reduction_spa_couple", period)
              ],
              default=0,
         )
