@@ -1,0 +1,4 @@
+- bump: patch
+  changes:
+    added:
+    - Province name to the basic input set.
