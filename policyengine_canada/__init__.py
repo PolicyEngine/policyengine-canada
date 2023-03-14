@@ -30,6 +30,7 @@ class CountryTaxBenefitSystem(TaxBenefitSystem):
     parameters_dir = COUNTRY_DIR / "parameters"
     auto_carry_over_input_variables = True
     basic_inputs = [
+        "province_name",
         "employment_income",
     ]
 
