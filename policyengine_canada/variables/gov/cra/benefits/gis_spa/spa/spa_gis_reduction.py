@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+
 class spa_gis_reduction(Variable):
     value_type = float
     entity = Person
@@ -17,4 +18,8 @@ class spa_gis_reduction(Variable):
 
         p = parameters(period).gov.cra.benefits.gis_spa.spa_reduction
 
-        return((individual_net_income + spouse_net_income) * p.spa_gis_reduction * (spa_oas_net == 0))
+        return (
+            (individual_net_income + spouse_net_income)
+            * p.spa_gis_reduction
+            * (spa_oas_net == 0)
+        )

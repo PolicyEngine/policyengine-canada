@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+
 class gis_reduction(Variable):
     value_type = float
     entity = Person
@@ -17,23 +18,31 @@ class gis_reduction(Variable):
         gis_base = person("gis_cap", period)
         gis_reduction_spa_couple = person("gis_reduction_spa_couple", period)
         p = parameters(period).gov.cra.benefits.gis_spa.gis_reduction
-        
+
         reduction = select(
-             [
-                 gis_spa_category == gis_spa_categories.SINGLE_WITH_OAS,
-                 gis_spa_category == gis_spa_categories.COUPLE_BOTH_OAS,
-                 (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_ELIGIBLE) & (gis_base > 0),  # the gis_base > 0 makes sure this person is the eligible one in the couple, since both people in the couple will have the same category.
-                 (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_INELIGIBLE) & (gis_base > 0)
-             ],
-             [
-                 p.one_pensioner.calc(gis_income),
-                 p.two_pensioners.calc(gis_income + spouse_gis_income),
-                 gis_reduction_spa_couple,
-                 p.one_pensioner.calc(gis_income)
-             ],
-             default=0,
+            [
+                gis_spa_category == gis_spa_categories.SINGLE_WITH_OAS,
+                gis_spa_category == gis_spa_categories.COUPLE_BOTH_OAS,
+                (
+                    gis_spa_category
+                    == gis_spa_categories.COUPLE_ONE_OAS_SPA_ELIGIBLE
+                )
+                & (
+                    gis_base > 0
+                ),  # the gis_base > 0 makes sure this person is the eligible one in the couple, since both people in the couple will have the same category.
+                (
+                    gis_spa_category
+                    == gis_spa_categories.COUPLE_ONE_OAS_SPA_INELIGIBLE
+                )
+                & (gis_base > 0),
+            ],
+            [
+                p.one_pensioner.calc(gis_income),
+                p.two_pensioners.calc(gis_income + spouse_gis_income),
+                gis_reduction_spa_couple,
+                p.one_pensioner.calc(gis_income),
+            ],
+            default=0,
         )
 
-        return(reduction)
-
-
+        return reduction

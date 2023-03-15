@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+
 class gis_reduction_spa_couple(Variable):
     value_type = float
     entity = Person
@@ -22,14 +23,22 @@ class gis_reduction_spa_couple(Variable):
         plateau_range = breakeven_spa_eligible - crossover
         p = parameters(period).gov.cra.benefits.gis_spa.gis_reduction
 
-        # Reduce like other pensioner couples up to the crossover point 
-        first_part  = min(p.two_pensioners.calc(combined_gis_income), p.two_pensioners.calc(crossover)) 
+        # Reduce like other pensioner couples up to the crossover point
+        first_part = min(
+            p.two_pensioners.calc(combined_gis_income),
+            p.two_pensioners.calc(crossover),
+        )
         # Plateau until the spouse's SPA-gis-portion is exhausted, as captured by the variable plateau_range. The first part must be maxed-out for this to be non-zero.
-        second_part = min((combined_gis_income - first_part) * p.gis_spa_couple_plateau_rate, plateau_range * p.gis_spa_couple_plateau_rate) * (first_part == (p.two_pensioners.calc(crossover))) 
-        # Start reducing again at the married couple breakeven point for income beyond the crossover maximum. Only be non-zero if there's any income in that range. 
-        third_part  = p.two_pensioners.calc(combined_gis_income - (crossover - 48) - plateau_range) * ((combined_gis_income > (crossover - plateau_range))) 
+        second_part = min(
+            (combined_gis_income - first_part) * p.gis_spa_couple_plateau_rate,
+            plateau_range * p.gis_spa_couple_plateau_rate,
+        ) * (first_part == (p.two_pensioners.calc(crossover)))
+        # Start reducing again at the married couple breakeven point for income beyond the crossover maximum. Only be non-zero if there's any income in that range.
+        third_part = p.two_pensioners.calc(
+            combined_gis_income - (crossover - 48) - plateau_range
+        ) * ((combined_gis_income > (crossover - plateau_range)))
 
-     #   return(third_part)
-        return(first_part + second_part + third_part) * (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_ELIGIBLE)
-     
-
+        #   return(third_part)
+        return (first_part + second_part + third_part) * (
+            gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_ELIGIBLE
+        )

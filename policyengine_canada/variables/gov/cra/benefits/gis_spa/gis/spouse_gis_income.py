@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+
 class spouse_gis_income(Variable):
     value_type = int
     entity = Household
@@ -13,5 +14,3 @@ class spouse_gis_income(Variable):
         gis_income = person("gis_income", period)
         spouse = person("is_spouse", period)
         return household.max(gis_income * spouse)
-
-

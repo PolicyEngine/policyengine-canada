@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+
 class breakeven_spa_ineligible(Variable):
     value_type = float
     entity = State
@@ -12,4 +13,11 @@ class breakeven_spa_ineligible(Variable):
         p_gis_spa = parameters(period).gov.cra.benefits.gis_spa
         p_oas = parameters(period).gov.cra.benefits.old_age_security_pension
 
-        return((p_gis_spa.gis_cap.one_pensioner / p_gis_spa.gis_reduction.two_pensioners.rates[1]) + p_oas.amount.base + p_gis_spa.gis_reduction.one_pensioner.rates[1])
+        return (
+            (
+                p_gis_spa.gis_cap.one_pensioner
+                / p_gis_spa.gis_reduction.two_pensioners.rates[1]
+            )
+            + p_oas.amount.base
+            + p_gis_spa.gis_reduction.one_pensioner.rates[1]
+        )
