@@ -9,11 +9,11 @@ class gis_reduction(Variable):
     definition_period = YEAR
 
     def formula(person, period, parameters):
+        household = person.household
         gis_spa_category = person("gis_spa_category", period)
         gis_spa_categories = gis_spa_category.possible_values
-        individual_net_income = person("individual_net_income", period)
-        household = person.household
-        spouse_net_income = household("spouse_net_income", period)
+        gis_income = person("gis_income", period)
+        spouse_gis_income = household("spouse_gis_income", period)
         gis_base = person("gis_cap", period)
         gis_reduction_spa_couple = person("gis_reduction_spa_couple", period)
         p = parameters(period).gov.cra.benefits.gis_spa.gis_reduction
@@ -26,10 +26,10 @@ class gis_reduction(Variable):
                  (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_INELIGIBLE) & (gis_base > 0)
              ],
              [
-                 p.one_pensioner.calc(individual_net_income),
-                 p.two_pensioners.calc(individual_net_income + spouse_net_income),
+                 p.one_pensioner.calc(gis_income),
+                 p.two_pensioners.calc(gis_income + spouse_gis_income),
                  gis_reduction_spa_couple,
-                 p.one_pensioner.calc(individual_net_income)
+                 p.one_pensioner.calc(gis_income)
              ],
              default=0,
         )

@@ -2,7 +2,7 @@
   period: 2023
   input:
     gis_spa_category: "SINGLE_WITH_OAS"
-    individual_net_income: 224
+    gis_income: 224
   output:
     gis_reduction: 100
 
@@ -10,8 +10,8 @@
   period: 2023
   input:
     gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
-    individual_net_income: 2_048
-    spouse_net_income: 2_000
+    gis_income: 2_048
+    spouse_gis_income: 2_000
     gis_cap: 6_240.18
   output:
     gis_reduction: 1_000
@@ -21,8 +21,8 @@
   absolute_error_margin: .01
   input:
     gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
-    individual_net_income: 20_048
-    spouse_net_income: 20_000
+    gis_income: 20_048
+    spouse_gis_income: 20_000
     gis_cap: 30000
   output:
     gis_reduction: 7487.68
@@ -31,8 +31,8 @@
   period: 2023
   input:
     gis_spa_category: "COUPLE_BOTH_OAS"
-    individual_net_income: 2_048
-    spouse_net_income: 2_000
+    gis_income: 2_048
+    spouse_gis_income: 2_000
   output:
     gis_reduction: 1_000
 
@@ -40,9 +40,9 @@
   period: 2023
   input:
     gis_spa_category: "COUPLE_ONE_OAS_SPA_INELIGIBLE"
-    individual_net_income: 2_024
+    gis_income: 2_024
     gis_cap: 6_240.18
-    spouse_net_income: 2_000
+    spouse_gis_income: 2_000
   output:
     gis_reduction: 1_000
 
@@ -50,8 +50,8 @@
   period: 2023
   input:
     gis_spa_category: "COUPLE_ONE_OAS_SPA_INELIGIBLE"
-    individual_net_income: 2_024
+    gis_income: 2_024
     gis_cap: 0
-    spouse_net_income: 2_000
+    spouse_gis_income: 2_000
   output:
     gis_reduction: 0

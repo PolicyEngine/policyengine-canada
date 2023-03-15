@@ -9,12 +9,12 @@ class gis_reduction_spa_couple(Variable):
     definition_period = YEAR
 
     def formula(person, period, parameters):
+        household = person.household
         gis_spa_category = person("gis_spa_category", period)
         gis_spa_categories = gis_spa_category.possible_values
-        individual_net_income = person("individual_net_income", period)
-        household = person.household
-        spouse_net_income = household("spouse_net_income", period)
-        combined_net_income = individual_net_income + spouse_net_income
+        gis_income = person("gis_income", period)
+        spouse_gis_income = household("spouse_gis_income", period)
+        combined_gis_income = gis_income + spouse_gis_income
         state = person.state
         crossover = state("gis_spa_crossover", period)
         breakeven_spa_eligible = state("breakeven_spa_eligible", period)
@@ -23,11 +23,11 @@ class gis_reduction_spa_couple(Variable):
         p = parameters(period).gov.cra.benefits.gis_spa.gis_reduction
 
         # Reduce like other pensioner couples up to the crossover point 
-        first_part  = min(p.two_pensioners.calc(combined_net_income), p.two_pensioners.calc(crossover)) 
+        first_part  = min(p.two_pensioners.calc(combined_gis_income), p.two_pensioners.calc(crossover)) 
         # Plateau until the spouse's SPA-gis-portion is exhausted, as captured by the variable plateau_range. The first part must be maxed-out for this to be non-zero.
-        second_part = min((combined_net_income - first_part) * p.gis_spa_couple_plateau_rate, plateau_range * p.gis_spa_couple_plateau_rate) * (first_part == (p.two_pensioners.calc(crossover))) 
+        second_part = min((combined_gis_income - first_part) * p.gis_spa_couple_plateau_rate, plateau_range * p.gis_spa_couple_plateau_rate) * (first_part == (p.two_pensioners.calc(crossover))) 
         # Start reducing again at the married couple breakeven point for income beyond the crossover maximum. Only be non-zero if there's any income in that range. 
-        third_part  = p.two_pensioners.calc(combined_net_income - (crossover - 48) - plateau_range) * ((combined_net_income > (crossover - plateau_range))) 
+        third_part  = p.two_pensioners.calc(combined_gis_income - (crossover - 48) - plateau_range) * ((combined_gis_income > (crossover - plateau_range))) 
 
      #   return(third_part)
         return(first_part + second_part + third_part) * (gis_spa_category == gis_spa_categories.COUPLE_ONE_OAS_SPA_ELIGIBLE)

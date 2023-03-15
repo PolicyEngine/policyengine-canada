@@ -3,8 +3,8 @@
   absolute_error_margin: .01
   input:
     gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
-    individual_net_income: 2_048
-    spouse_net_income: 2_000
+    gis_income: 2_048
+    spouse_gis_income: 2_000
   output:
     gis_reduction_spa_couple: 1_000
 
@@ -13,8 +13,8 @@
   absolute_error_margin: .01
   input:
     gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
-    individual_net_income: 15_048
-    spouse_net_income: 15_000
+    gis_income: 15_048
+    spouse_gis_income: 15_000
   output:
     gis_reduction_spa_couple: 6_469.86
 
@@ -23,8 +23,8 @@
   absolute_error_margin: .01
   input:
     gis_spa_category: "COUPLE_ONE_OAS_SPA_ELIGIBLE"
-    individual_net_income: 20_048
-    spouse_net_income: 20_000
+    gis_income: 20_048
+    spouse_gis_income: 20_000
   output:
     gis_reduction_spa_couple: 7487.68
 
@@ -33,8 +33,8 @@
   absolute_error_margin: .01
   input:
     gis_spa_category: "COUPLE_ONE_OAS_SPA_INELIGIBLE"
-    individual_net_income: 20_048
-    spouse_net_income: 20_000
+    gis_income: 20_048
+    spouse_gis_income: 20_000
   output:
     gis_reduction_spa_couple: 0
 
