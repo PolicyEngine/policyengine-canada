@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class working_component_base(Variable):
+class working_component_phase_in(Variable):
     value_type = float
     entity = Household
     label = "Alberta child and family benefit working component base amount"

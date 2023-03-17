@@ -1,0 +1,15 @@
+- name: Over age eligibility
+  period: 2023
+  input:
+    age: 18
+    province_code: AB
+  output:
+    acfb_eligible_child: false
+
+- name: Under age eligibility
+  period: 2023
+  input:
+    age: 17
+    province_code: AB
+  output:
+    acfb_eligible_child: true

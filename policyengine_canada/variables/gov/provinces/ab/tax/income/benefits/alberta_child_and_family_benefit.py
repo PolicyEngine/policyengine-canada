@@ -9,6 +9,6 @@ class alberta_child_and_family_benefit(Variable):
     defined_for = ProvinceCode.AB
 
     def formula(household, period, parameters):
-        base_component = household("base_component_reduction", period)
-        working_component = household("working_component_reduction", period)
+        base_component = household("base_component_post_reduction", period)
+        working_component = household("working_component_post_reduction", period)
         return base_component + working_component
