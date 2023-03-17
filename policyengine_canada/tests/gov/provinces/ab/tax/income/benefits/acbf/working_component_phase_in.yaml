@@ -1,0 +1,26 @@
+- name: Under phase-in rate
+  period: 2023
+  input:
+    family_employment_income: 2_760
+    working_component_base: 1_500
+    province_code: AB
+  output:
+    working_component_phase_in: 0
+
+- name: Capped at base amount
+  period: 2023
+  input:
+    family_employment_income: 20_000
+    working_component_base: 1_500
+    province_code: AB
+  output:
+    working_component_phase_in: 1_500
+
+- name: Calculation # 8_000 * 0.15 = 1_200
+  period: 2023
+  input:
+    family_employment_income: 8_000
+    working_component_base: 1_500
+    province_code: AB
+  output:
+    working_component_phase_in: 1_200

@@ -17,6 +17,4 @@ class working_component_phase_in(Variable):
         rate = p.phase_in.rate
         start = p.phase_in.start
         eligible = employment_income > start
-        return eligible * min_(
-            max_amount, (max_amount - employment_income * rate)
-        )
+        return eligible * min_(max_amount, (employment_income * rate))

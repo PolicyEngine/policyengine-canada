@@ -1,7 +1,7 @@
 description: Alberta Child and Family Benefit working amount for the first child.
 values:
-  2022-07-01: 681 # $56.75 monthly.
-  2023-01-01: 722 # $60.16 monthly
+  2022-07-01: 620 # $51.66 monthly.
+  2023-01-01: 657 # $54.75 monthly
 metadata:
   unit: currency-CAD
   label: Alberta Child and Family Benefit the first childrens working amount

@@ -15,13 +15,12 @@ class working_component_base(Variable):
         eligible_children = ("acfb_eligible_children", period)
         return select(
             [
-                eligible_children == 0,
                 eligible_children == 1,
                 eligible_children == 2,
                 eligible_children == 3,
                 eligible_children > 3,
-            ][
-                0,
+            ],
+            [
                 p.one_child.base,
                 p.two_children.base + p.one_child.base,
                 p.three_children.base + p.two_children.base + p.one_child.base,
@@ -29,5 +28,6 @@ class working_component_base(Variable):
                 + p.three_children.base
                 + p.two_children.base
                 + p.one_child.base,
-            ]
+            ],
+            default=0,
         )

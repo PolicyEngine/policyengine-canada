@@ -12,7 +12,7 @@ class base_component_base(Variable):
         p = parameters(
             period
         ).gov.provinces.ab.tax.income.benefits.acfb.base_component
-        eligible_children = ("acfb_eligible_children", period)
+        eligible_children = household("acfb_eligible_children", period)
         return select(
             [
                 eligible_children == 0,
@@ -20,7 +20,8 @@ class base_component_base(Variable):
                 eligible_children == 2,
                 eligible_children == 3,
                 eligible_children > 3,
-            ][
+            ],
+            [
                 0,
                 p.one_child.base,
                 p.two_children.base + p.one_child.base,
@@ -29,8 +30,6 @@ class base_component_base(Variable):
                 + p.three_children.base
                 + p.two_children.base
                 + p.one_child.base,
-            ]
+            ],
+            default=0,
         )
-
-
-# TODO: calculate additional child over 4 is not calculated

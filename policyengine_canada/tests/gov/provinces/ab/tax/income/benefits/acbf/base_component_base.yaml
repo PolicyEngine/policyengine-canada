@@ -1,0 +1,39 @@
+- name: 5 Children - capped at 4 children # 1_410 + 3 * 705
+  period: 2023
+  input:
+    acfb_eligible_children: 5
+    province_code: AB
+  output:
+    alberta_child_and_family_benefit: 3_525
+
+- name: No children
+  period: 2023
+  input:
+    acfb_eligible_children: 0
+    province_code: AB
+  output:
+    alberta_child_and_family_benefit: 0
+
+- name: 1 child
+  period: 2023
+  input:
+    acfb_eligible_children: 1
+    province_code: AB
+  output:
+    alberta_child_and_family_benefit: 1_410
+
+- name: 2 children
+  period: 2023
+  input:
+    acfb_eligible_children: 2
+    province_code: AB
+  output:
+    alberta_child_and_family_benefit: 2_115
+
+- name: 3 children
+  period: 2023
+  input:
+    acfb_eligible_children: 3
+    province_code: AB
+  output:
+    alberta_child_and_family_benefit: 2_820
