@@ -13,9 +13,9 @@ class nu_cost_of_living_credit(Variable):
         p = parameters(
             period
         ).gov.provinces.nu.tax.income.credits.cost_of_living
-        income = person("net_income", period)
+        income = person("individual_net_income", period)
         armed_deduction = person(
             "canadian_armed_forces_and_personnel_deduction", period
         )
-        adjusted_income = income - armed_deduction
+        adjusted_income = max_(0, income - armed_deduction)
         return min_(p.max_amount, adjusted_income * p.rate)
