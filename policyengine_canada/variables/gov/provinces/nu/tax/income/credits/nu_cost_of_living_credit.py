@@ -19,3 +19,6 @@ class nu_cost_of_living_credit(Variable):
         )
         adjusted_income = max_(0, income - armed_deduction)
         return min_(p.max_amount, adjusted_income * p.rate)
+
+
+#TODO: include in net income tree
