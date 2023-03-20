@@ -6,4 +6,3 @@ class is_rural(Variable):
     entity = Household
     definition_period = ETERNITY
     label = "Is in a rural area"
-    reference = ""

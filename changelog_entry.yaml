@@ -1,0 +1,6 @@
+- bump: patch
+  changes:
+    added:
+      - README files for parameter folder display text.
+    changed:
+      - Revised variable labels for consistency.
