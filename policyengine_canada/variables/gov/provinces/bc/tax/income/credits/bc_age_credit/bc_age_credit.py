@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class bc_age_credit(Variable):
     value_type = float
     entity = Person
-    label = "British Columbia Age credit, non-refundable"
+    label = "British Columbia Age credit"
     unit = CAD
     definition_period = YEAR
     defined_for = ProvinceCode.BC
