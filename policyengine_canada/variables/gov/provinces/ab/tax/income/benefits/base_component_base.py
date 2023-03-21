@@ -11,8 +11,10 @@ class base_component_base(Variable):
     def formula(household, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.ab.tax.income.benefits.acfb.base_component
+        ).gov.provinces.ab.tax.income.benefits.acfb.base_component.base
         eligible_children = household("acfb_eligible_children", period)
+        # TODO: try a marginal_amount approach, or finish this approach if that doesn't work.
+        return (p.one_child * (eligible_children > 0)) + (p.two_children * (eligible_children > 1)) + #...
         return select(
             [
                 eligible_children == 0,
