@@ -1,0 +1,7 @@
+description: Non-refundable tax credits in Ontario.
+values:
+  2022-01-01:
+    - yt_childrens_arts_amount
+
+metadata:
+  unit: program
