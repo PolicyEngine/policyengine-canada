@@ -288,3 +288,10 @@
     added:
     - Province name to the basic input set.
   date: 2023-03-14 22:17:09
+- bump: patch
+  changes:
+    added:
+    - README files for parameter folder display text.
+    changed:
+    - Revised variable labels for consistency.
+  date: 2023-03-20 13:59:40
