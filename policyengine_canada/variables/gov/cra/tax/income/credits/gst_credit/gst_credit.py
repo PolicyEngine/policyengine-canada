@@ -6,7 +6,6 @@ class gst_credit(Variable):
     entity = Household
     label = "GST Credit"
     unit = CAD
-    documentation = " "
     definition_period = YEAR
 
     def formula(household, period, parameters):
