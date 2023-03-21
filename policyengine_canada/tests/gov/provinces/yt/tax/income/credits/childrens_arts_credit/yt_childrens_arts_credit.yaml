@@ -1,0 +1,26 @@
+- name: No children - no credit
+  period: 2022
+  input:
+    province_code: YT
+    yt_childrens_arts_credit_eligible_children: 0
+    yt_childrens_arts_credit_expenses: 1_000
+  output:
+    yt_childrens_arts_credit: 0
+
+- name: capped at expenses
+  period: 2022
+  input:
+    province_code: YT
+    yt_childrens_arts_credit_eligible_children: 2
+    yt_childrens_arts_credit_expenses: 700
+  output:
+    yt_childrens_arts_credit: 700
+
+- name: 500 per child = 1_000 (under cap)
+  period: 2022
+  input:
+    province_code: YT
+    yt_childrens_arts_credit_eligible_children: 2
+    yt_childrens_arts_credit_expenses: 1_500
+  output:
+    yt_childrens_arts_credit: 1_000

@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class childrens_arts_credit_expenses(Variable):
+class yt_childrens_arts_credit_expenses(Variable):
     value_type = float
     entity = Household
     label = "Yukon childrens arts credit expenses"

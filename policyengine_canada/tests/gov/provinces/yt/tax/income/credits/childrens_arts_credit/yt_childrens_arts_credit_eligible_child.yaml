@@ -1,0 +1,15 @@
+- name: Over eligible age
+  period: 2022
+  input:
+    province_code: YT
+    age: 16
+  output:
+    yt_childrens_arts_credit_eligible_child: false
+
+- name: Under eligible age
+  period: 2022
+  input:
+    province_code: YT
+    age: 15
+  output:
+    yt_childrens_arts_credit_eligible_child: true

@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class childrens_arts_credit_eligible_child(Variable):
+class yt_childrens_arts_credit_eligible_child(Variable):
     value_type = bool
     entity = Person
     label = "Yukon childrens arts credit eligible child"
