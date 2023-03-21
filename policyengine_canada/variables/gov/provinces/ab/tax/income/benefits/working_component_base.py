@@ -12,7 +12,7 @@ class working_component_base(Variable):
         p = parameters(
             period
         ).gov.provinces.ab.tax.income.benefits.acfb.working_component
-        eligible_children = ("acfb_eligible_children", period)
+        eligible_children = household("acfb_eligible_children", period)
         return select(
             [
                 eligible_children == 1,
