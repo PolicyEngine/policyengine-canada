@@ -1,8 +1,8 @@
 - name: Child and Family benefit
   period: 2023
   input:
-    base_component_post_reduction: 1_000
+    acfb_base_component_post_reduction: 1_000
     working_component_post_reduction: 500
     province_code: AB
   output:
-    alberta_child_and_family_benefit: 1_500
+    acfb_alberta_child_and_family_benefit: 1_500
