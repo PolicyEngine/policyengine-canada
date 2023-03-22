@@ -2,7 +2,7 @@
   period: 2023
   input:
     acfb_base_component_post_reduction: 1_000
-    working_component_post_reduction: 500
+    acfb_working_component_post_reduction: 500
     province_code: AB
   output:
     acfb_alberta_child_and_family_benefit: 1_500

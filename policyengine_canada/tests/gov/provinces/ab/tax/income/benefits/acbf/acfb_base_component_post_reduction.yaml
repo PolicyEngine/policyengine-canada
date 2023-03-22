@@ -2,7 +2,7 @@
   period: 2023
   input:
     adjusted_family_net_income: 100
-    base_component_base: 1_000
+    acfb_base_component_base: 1_000
     province_code: AB
   output:
     acfb_base_component_post_reduction: 1_000
@@ -12,7 +12,7 @@
   absolute_error_margin: 0.5
   input:
     adjusted_family_net_income: 30_000
-    base_component_base: 1_000
+    acfb_base_component_base: 1_000
     province_code: AB
   output:
     acfb_base_component_post_reduction: 182.9307
@@ -21,7 +21,7 @@
   period: 2023
   input:
     adjusted_family_net_income: 42_000
-    base_component_base: 1_000
+    acfb_base_component_base: 1_000
     province_code: AB
   output:
     acfb_base_component_post_reduction: 0
