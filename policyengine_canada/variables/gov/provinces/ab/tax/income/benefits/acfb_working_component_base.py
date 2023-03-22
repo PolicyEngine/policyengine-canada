@@ -19,22 +19,3 @@ class acfb_working_component_base(Variable):
             + (p.three_children * (eligible_children > 2))
             + (p.four_or_more_children * (eligible_children > 3))
         )
-
-        # return select(
-        #     [
-        #         eligible_children == 1,
-        #         eligible_children == 2,
-        #         eligible_children == 3,
-        #         eligible_children > 3,
-        #     ],
-        #     [
-        #         p.one_child.base,
-        #         p.two_children.base + p.one_child.base,
-        #         p.three_children.base + p.two_children.base + p.one_child.base,
-        #         p.four_or_more_children.base
-        #         + p.three_children.base
-        #         + p.two_children.base
-        #         + p.one_child.base,
-        #     ],
-        #     default=0,
-        # )
