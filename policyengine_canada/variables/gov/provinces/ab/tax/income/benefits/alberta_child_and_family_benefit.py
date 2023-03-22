@@ -13,6 +13,6 @@ class acfb_alberta_child_and_family_benefit(Variable):
             "acfb_base_component_post_reduction", period
         )
         working_component = household(
-            "working_component_post_reduction", period
+            "acfb_working_component_post_reduction", period
         )
         return base_component + working_component

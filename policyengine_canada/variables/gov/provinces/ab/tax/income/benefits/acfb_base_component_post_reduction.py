@@ -13,5 +13,5 @@ class acfb_base_component_post_reduction(Variable):
             period
         ).gov.provinces.ab.tax.income.benefits.acfb.base_component
         income = household("adjusted_family_net_income", period)
-        base = household("base_component_base", period)
+        base = household("acfb_base_component_base", period)
         return max_(0, base - p.reduction.calc(income))

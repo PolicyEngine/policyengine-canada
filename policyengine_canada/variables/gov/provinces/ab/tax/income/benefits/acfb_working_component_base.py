@@ -11,23 +11,30 @@ class acfb_working_component_base(Variable):
     def formula(household, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.ab.tax.income.benefits.acfb.working_component
+        ).gov.provinces.ab.tax.income.benefits.acfb.working_component.base
         eligible_children = household("acfb_eligible_children", period)
-        return select(
-            [
-                eligible_children == 1,
-                eligible_children == 2,
-                eligible_children == 3,
-                eligible_children > 3,
-            ],
-            [
-                p.one_child.base,
-                p.two_children.base + p.one_child.base,
-                p.three_children.base + p.two_children.base + p.one_child.base,
-                p.four_or_more_children.base
-                + p.three_children.base
-                + p.two_children.base
-                + p.one_child.base,
-            ],
-            default=0,
+        return (
+            (p.one_child * (eligible_children > 0))
+            + (p.two_children * (eligible_children > 1))
+            + (p.three_children * (eligible_children > 2))
+            + (p.four_or_more_children * (eligible_children > 3))
         )
+
+        # return select(
+        #     [
+        #         eligible_children == 1,
+        #         eligible_children == 2,
+        #         eligible_children == 3,
+        #         eligible_children > 3,
+        #     ],
+        #     [
+        #         p.one_child.base,
+        #         p.two_children.base + p.one_child.base,
+        #         p.three_children.base + p.two_children.base + p.one_child.base,
+        #         p.four_or_more_children.base
+        #         + p.three_children.base
+        #         + p.two_children.base
+        #         + p.one_child.base,
+        #     ],
+        #     default=0,
+        # )
