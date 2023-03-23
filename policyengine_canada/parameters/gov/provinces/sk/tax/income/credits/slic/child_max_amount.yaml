@@ -1,0 +1,9 @@
+description: Saskatchewan low income tax credit maximum child component.
+values:
+  2023-07-01: 300
+metadata:
+  unit: currency-CAD
+  label: Saskatchewan low income tax credit max child component 
+  reference:
+  - title: Saskatchewan - Low-Income Tax Credit
+    href: https://www.saskatchewan.ca/residents/taxes-and-investments/tax-credits/low-income-tax-credit

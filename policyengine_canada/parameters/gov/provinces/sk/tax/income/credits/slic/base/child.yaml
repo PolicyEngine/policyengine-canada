@@ -1,0 +1,9 @@
+description: Saskatchewan low income tax credit base for each child.
+values:
+  2023-07-01: 150
+metadata:
+  unit: currency-CAD
+  label: Saskatchewan low income tax credit child 
+  reference:
+  - title: Saskatchewan - Low-Income Tax Credit
+    href: https://www.saskatchewan.ca/residents/taxes-and-investments/tax-credits/low-income-tax-credit

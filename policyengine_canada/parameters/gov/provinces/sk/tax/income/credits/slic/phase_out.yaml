@@ -1,0 +1,18 @@
+description: Saskatchewan low income tax credit phase out.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Saskatchewan low income tax credit phase out
+  reference:
+  - title: Saskatchewan - Low-Income Tax Credit
+    href: https://www.saskatchewan.ca/residents/taxes-and-investments/tax-credits/low-income-tax-credit
+brackets:
+  - threshold:
+      2023-07-01: 0
+    rate:
+      2023-07-01: 0
+  - threshold:
+      2023-07-01: 35_902
+    rate:
+      2023-07-01: 0.0275
