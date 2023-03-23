@@ -1,0 +1,10 @@
+description: Nunavut child benefit territorial workers' supplement is applicable to children under age 18
+values:
+  2022-07-01: 18
+metadata:
+  unit: year
+  label: Nunavut child benefit child age ineligibility threshold
+  reference:
+  - title: Government of Canada - Province of Nunavut
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html#toc20
+
