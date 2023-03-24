@@ -295,3 +295,8 @@
     changed:
     - Revised variable labels for consistency.
   date: 2023-03-20 13:59:40
+- bump: patch
+  changes:
+    changed:
+    - Bumped Core to v2.
+  date: 2023-03-24 22:49:05
