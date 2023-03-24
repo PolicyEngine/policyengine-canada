@@ -1,6 +1,7 @@
 from policyengine_core.country_template.constants import COUNTRY_DIR
 from policyengine_core.data import Dataset
 from policyengine_core.periods import ETERNITY, period
+from pathlib import Path
 
 
 class CountryTemplateDataset(Dataset):
@@ -9,6 +10,11 @@ class CountryTemplateDataset(Dataset):
     label = "Country template dataset"
     folder_path = COUNTRY_DIR / "data" / "storage"
     data_format = Dataset.TIME_PERIOD_ARRAYS
+    file_path = (
+        Path(__file__).parent.parent
+        / "storage"
+        / "country_template_dataset.h5"
+    )
 
     # The generation function is the most important part: it defines
     # how the dataset is generated from the raw data for a given year.
