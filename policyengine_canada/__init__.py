@@ -58,4 +58,3 @@ class Microsimulation(CoreMicrosimulation):
     default_tax_benefit_system_instance = system
     default_dataset_year = 2023
     default_calculation_period = 2023
-
