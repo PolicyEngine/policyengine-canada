@@ -1,0 +1,4 @@
+- bump: patch
+  changes:
+    changed:
+    - Bumped Core to v2.
