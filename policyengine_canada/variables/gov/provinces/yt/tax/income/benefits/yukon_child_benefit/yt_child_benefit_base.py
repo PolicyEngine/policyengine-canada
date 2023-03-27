@@ -2,7 +2,7 @@ from policyengine_canada.model_api import *
 
 
 class yt_child_benefit_base(Variable):
-    value_type = bool
+    value_type = float
     entity = Household
     label = "Yukon child benefit base"
     definition_period = YEAR
