@@ -1,0 +1,9 @@
+description: Canada pension plan maximum yearly contribution for employees
+values:
+  2022-01-01: 3_499.80
+metadata:
+  unit: currency-CAD
+  label: CPP employees max contribution
+  reference:
+  - title: Government of Canada - Contributions to the Canada Pension Plan
+    href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html

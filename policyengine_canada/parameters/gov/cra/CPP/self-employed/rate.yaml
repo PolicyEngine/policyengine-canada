@@ -1,0 +1,29 @@
+description: Canada pension plan contribution rate for self employment
+brackets:
+  - threshold:
+      values:
+        2022-01-01: 0
+    rate:
+      values:
+        2022-01-01: 0
+  - threshold:
+      values:
+        2022-01-01: 3500
+    rate:
+      values:
+        2022-01-01: 0.114
+  - threshold:
+      values:
+        2022-01-01: 64_900
+    rate:
+      values:
+        2022-01-01: 0
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: 
+  reference:
+  - title: Government of Canada - Contributions to the Canada Pension Plan
+    href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html
