@@ -1,0 +1,9 @@
+description: Northwest Territories child benefit older bracket base for five or more children.
+values:
+  2022-01-01: 292.92
+metadata:
+  unit: currency-CAD
+  label: Northwest Territories child benefit older bracket five or more children base
+  reference:
+  - title: Government of Canada - Child benefit
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html#toc18

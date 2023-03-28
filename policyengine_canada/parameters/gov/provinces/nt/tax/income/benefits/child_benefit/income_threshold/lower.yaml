@@ -1,0 +1,9 @@
+description: Northwest Territories child benefit lower income threshold
+values:
+  2022-01-01: 30_000
+metadata:
+  unit: currency-CAD
+  label: Northwest Territories child benefit lower income threshold
+  reference:
+  - title: Government of Canada - Child benefit
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html#toc18
