@@ -10,7 +10,7 @@
 - name: zero adjusted net income
   period: 2023
   input:
-    province_code: AB
+    province_code: NU
     individual_net_income: 1_000
     canadian_armed_forces_and_personnel_deduction: 500
   output:
