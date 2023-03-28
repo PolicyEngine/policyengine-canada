@@ -1,8 +1,0 @@
-- name: Addition
-  period: 2023
-  input:
-    province_code: NU
-    nu_cost_of_living_credit: 1_000
-    nu_cost_of_living_credit_supplement: 1_500
-  output:
-    nu_cost_of_living_credit_post_supplement: 2_500

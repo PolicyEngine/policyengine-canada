@@ -2,8 +2,7 @@
   period: 2023
   input:
     province_code: NU
-    individual_net_income: 1_000
-    canadian_armed_forces_and_personnel_deduction: 1_500
+    nu_cost_of_living_credit_adjusted_net_income: 1_000
   output:
     nu_cost_of_living_credit_supplement: 0
 
@@ -11,8 +10,7 @@
   period: 2023
   input:
     province_code: NU
-    individual_net_income: 61_500
-    canadian_armed_forces_and_personnel_deduction: 1_500
+    nu_cost_of_living_credit_adjusted_net_income: 60_000
   output:
     nu_cost_of_living_credit_supplement: 0
 
@@ -20,8 +18,7 @@
   period: 2023
   input:
     province_code: NU
-    individual_net_income: 65_000
-    canadian_armed_forces_and_personnel_deduction: 0
+    nu_cost_of_living_credit_adjusted_net_income: 65_000
   output:
     nu_cost_of_living_credit_supplement: 100
 
@@ -29,7 +26,6 @@
   period: 2023
   input:
     province_code: NU
-    individual_net_income: 100_000
-    canadian_armed_forces_and_personnel_deduction: 1_500
+    nu_cost_of_living_credit_adjusted_net_income: 100_000
   output:
     nu_cost_of_living_credit_supplement: 255.12
