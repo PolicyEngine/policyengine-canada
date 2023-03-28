@@ -1,0 +1,4 @@
+- bump: minor
+  changes:
+    added:
+      - modelled_policies.yaml with content for modal dialog.
