@@ -1,0 +1,78 @@
+core:
+  modelled:
+    - Federal income tax (except Quebec)
+    - Benefits (CCB, CDB, CWB, dental, OAS)
+    - Tax credits (age amount, GST, DTC, CAIP, etc.)
+  not_modelled:
+    - Guaranteed Income Supplement and Spousal Allowance
+filtered:
+  province_name:
+    AB:
+      modelled:
+        - Income tax brackets
+      not_modelled:
+        - Benefits, tax credits, and deductions
+    BC:
+      modelled:
+        - Income tax
+        - Some tax credits (age, tax reduction, BCCATC)
+        - BC family benefit
+      not_modelled:
+        - [fill in]
+    MB:
+      modelled:
+        - Income tax brackets
+      not_modelled:
+        - Benefits, tax credits, and deductions
+    NB:
+      modelled:
+        - Income tax brackets
+      not_modelled:
+        - Benefits, tax credits, and deductions
+    NL:
+      modelled:
+        - Income tax brackets
+      not_modelled:
+        - Benefits, tax credits, and deductions
+    NS:
+      modelled:
+        - Income tax brackets
+      not_modelled:
+        - Benefits, tax credits, and deductions
+    NT:
+      modelled:
+        - Income tax brackets
+      not_modelled:
+        - Benefits, tax credits, and deductions
+    NU:
+      modelled:
+        - Income tax brackets
+      not_modelled:
+        - Benefits, tax credits, and deductions
+    ONT:
+      modelled:
+        - Income tax
+        - Tax credits (LIFT, NOEC, OEPTC, OSTC)
+        - Benefits (OCB, Trillium)
+        - Senior homeowners property tax grant
+      not_modelled:
+        - [fill in]
+    PE:
+      modelled:
+        - Income tax brackets
+      not_modelled:
+        - Benefits, tax credits, and deductions
+    QC:
+      not_modelled:
+        - Income tax
+        - Benefits
+    SK:
+      modelled:
+        - Income tax brackets
+      not_modelled:
+        - Benefits, tax credits, and deductions
+    YT:
+      modelled:
+        - Income tax brackets
+      not_modelled:
+        - Benefits, tax credits, and deductions
