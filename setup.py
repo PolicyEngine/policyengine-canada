@@ -35,6 +35,7 @@ dev_requirements = [
     "jupyter-book<1",
     "furo<2023",
     "markupsafe==2.0.1",
+    "pydata-sphinx-theme==0.13.1",
     "sphinx>=4.5.0,<5",
     "sphinx-argparse>=0.3.2,<1",
     "sphinx-math-dollar>=1.2.1,<2",
