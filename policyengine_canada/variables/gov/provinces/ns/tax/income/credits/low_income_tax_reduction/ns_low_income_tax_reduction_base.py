@@ -9,12 +9,12 @@ class ns_low_income_tax_reduction_base(Variable):
     defined_for = ProvinceCode.NS
 
     def formula(household, period, parameters):
-        person = household.people
+        person = household.members
         p = parameters(
             period
         ).gov.provinces.ns.tax.income.credits.low_income_tax_reduction
         age = person("age", period)
-        eligible = age < p.age_eligibility
+        eligible = age > p.age_eligibility
         base = p.base.base
         spouse = person("is_spouse", period)
         spouse_amount = spouse * p.base.spouse
