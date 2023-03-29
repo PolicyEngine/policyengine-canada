@@ -27,7 +27,7 @@ general_requirements = [
     "tqdm>=4.46.0,<5",
     "requests>=2.27.1,<3",
     "pandas>=1.4.2,<2",
-    "policyengine_core>=1.11.4,<2",
+    "policyengine_core>=2,<3",
     "plotly>=5.6.0,<6",
 ]
 
@@ -42,7 +42,7 @@ dev_requirements = [
 
 setup(
     name="policyengine-canada",
-    version="0.42.2",
+    version="0.43.0",
     author="PolicyEngine",
     author_email="hello@policyengine.org",
     classifiers=[
