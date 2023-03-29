@@ -1,0 +1,31 @@
+- name: No child
+  period: 2023
+  input:
+    province_code: NS
+    ntcb_older_eligible_children: 0
+  output:
+    ntcb_older_eligible_child: 0
+
+- name: One child 
+  period: 2023
+  input:
+    province_code: NS
+    ntcb_older_eligible_children: 1
+  output:
+    ntcb_older_eligible_child: 651.96
+
+- name: Three children # 651.96 + 522 + 423
+  period: 2023
+  input:
+    province_code: NS
+    ntcb_older_eligible_children: 3
+  output:
+    ntcb_older_eligible_child: 1_596.96
+
+- name: Three children # 651.96 + 522 + 423 + 359.04 + (2* 292.92)
+  period: 2023
+  input:
+    province_code: NS
+    ntcb_older_eligible_children: 6
+  output:
+    ntcb_older_eligible_child: 2_541.84

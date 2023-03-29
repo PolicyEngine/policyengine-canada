@@ -1,0 +1,23 @@
+- name: Under lower age threshold
+  period: 2023
+  input:
+    province_code: NS
+    age: 5
+  output:
+    ntcb_older_eligible_child: false
+
+- name: Eligible
+  period: 2023
+  input:
+    province_code: NS
+    age: 6
+  output:
+    ntcb_older_eligible_child: true
+
+- name: Over upper age threshold
+  period: 2023
+  input:
+    province_code: NS
+    age: 18
+  output:
+    ntcb_older_eligible_child: false
