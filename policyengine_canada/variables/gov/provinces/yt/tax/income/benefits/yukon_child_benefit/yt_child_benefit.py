@@ -16,8 +16,8 @@ class yt_child_benefit(Variable):
         reduction = select(
             [children == 1, children > 1],
             [
-                p.one_child_reduction_rate.calc(income),
-                p.multiple_children_reduction_rate.calc(income),
+                p.one_child.reduction_rate.calc(income),
+                p.multiple_children.reduction_rate.calc(income),
             ],
             default=0,
         )

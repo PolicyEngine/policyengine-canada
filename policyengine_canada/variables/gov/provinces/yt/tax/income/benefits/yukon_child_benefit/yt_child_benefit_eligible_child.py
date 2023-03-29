@@ -9,4 +9,4 @@ class yt_child_benefit_eligible_child(Variable):
     defined_for = ProvinceCode.YT
 
     def formula(person, period, parameters):
-        return person("is_dependant", period)
+        return person("is_dependent", period)
