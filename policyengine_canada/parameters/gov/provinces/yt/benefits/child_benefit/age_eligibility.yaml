@@ -1,9 +1,0 @@
-description: Yukon Child Benefit exclusive age eligibility.
-values:
-  2015-01-01: 18
-metadata:
-  unit: year
-  label: Yukon Child Benefit exclusive age eligibility
-  reference:
-  - title: Government of Canada - Canada child benefit
-    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html#CCB_Yukon

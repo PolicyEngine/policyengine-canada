@@ -1,4 +1,4 @@
-description: Yukon child benefit one child reduction rate.
+description: Yukon reduces its child benefit at this rate for households with one child.
 metadata:
   type: marginal_rate
   threshold_unit: currency-CAD

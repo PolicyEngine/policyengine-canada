@@ -9,10 +9,4 @@ class yt_child_benefit_eligible_child(Variable):
     defined_for = ProvinceCode.YT
 
     def formula(person, period, parameters):
-        age = person("age", period)
-        return (
-            age
-            < parameters(
-                period
-            ).gov.provinces.yt.benefits.child_benefit.age_eligibility
-        )
+        return person("is_dependant", period)

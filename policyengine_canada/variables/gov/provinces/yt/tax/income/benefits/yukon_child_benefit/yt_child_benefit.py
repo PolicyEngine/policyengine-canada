@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class yt_child_benefit_post_reduction(Variable):
+class yt_child_benefit(Variable):
     value_type = float
     entity = Household
-    label = "Yukon child benefit post reduction"
+    label = "Yukon child benefit"
     definition_period = YEAR
     defined_for = ProvinceCode.YT
 
