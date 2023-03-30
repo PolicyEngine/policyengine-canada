@@ -1,0 +1,16 @@
+- name: Canada pension plan maximum contribution 
+  period: 2023
+  input:
+    employment_income: 4_000 #maximum 3_499.8
+    self_employment_income: 7_000 #maximum 6_999.6
+  output:
+    canada_pension_plan: 10_499.4
+
+
+- name: Canada pension plan under maximum contribution 
+  period: 2023
+  input:
+    employment_income: 3_000 
+    self_employment_income: 5_000 
+  output:
+    canada_pension_plan: 8_000

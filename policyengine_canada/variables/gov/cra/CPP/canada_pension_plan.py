@@ -8,10 +8,10 @@ class canada_pension_plan(Variable):
     unit = CAD
     definition_period = YEAR
 
-    def formula(person, paramaters, period):
+    def formula(person, period, paramaters):
         employment_income = person("employment_income", period)
         self_employment_income = person("self_employment_income", period)
-        p = paramaters(period).gov.benefits.CPP
+        p = paramaters(period).gov.cra.CPP
         employment_contribution = min_(
             p.employed.rate.calc(employment_income),
             p.employed.max_contribution,
@@ -21,3 +21,6 @@ class canada_pension_plan(Variable):
             p.self_employed.max_contribution,
         )
         return employment_contribution + self_employment_contribution
+
+
+# TODO: minimum income inclusion

@@ -23,7 +23,7 @@ metadata:
   type: marginal_rate
   rate_unit: /1
   threshold_unit: currency-CAD
-  label: 
+  label: Canada pension plan contribution rate self employed
   reference:
   - title: Government of Canada - Contributions to the Canada Pension Plan
     href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html
