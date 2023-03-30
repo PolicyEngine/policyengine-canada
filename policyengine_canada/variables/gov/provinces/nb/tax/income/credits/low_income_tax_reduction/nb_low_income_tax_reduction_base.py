@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class nb_litr_base(Variable):
+class nb_low_income_tax_reduction_base(Variable):
     value_type = float
     entity = Household
     label = "New Brunswick low income tax reduction base"
@@ -12,7 +12,7 @@ class nb_litr_base(Variable):
         person = household.members
         p = parameters(
             period
-        ).gov.province.nb.tax.income.credits.low_income_tax_reduction
+        ).gov.provinces.nb.tax.income.credits.low_income_tax_reduction
         married = household("is_married", period)
         dependant = person("is_dependent", period)
         return min_(
