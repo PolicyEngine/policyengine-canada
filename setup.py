@@ -43,7 +43,7 @@ dev_requirements = [
 
 setup(
     name="policyengine-canada",
-    version="0.43.1",
+    version="0.44.0",
     author="PolicyEngine",
     author_email="hello@policyengine.org",
     classifiers=[

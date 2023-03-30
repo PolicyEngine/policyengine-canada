@@ -310,3 +310,8 @@
     changed:
     - Pin pydata-sphinx-theme==0.13.1 to fix a jupyterbook build issue.
   date: 2023-03-29 23:52:19
+- bump: minor
+  changes:
+    added:
+    - Yukon child benefit.
+  date: 2023-03-30 01:24:26
