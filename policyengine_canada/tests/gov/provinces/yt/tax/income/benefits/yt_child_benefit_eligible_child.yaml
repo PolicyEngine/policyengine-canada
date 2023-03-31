@@ -1,0 +1,23 @@
+- name: Over age eligibility
+  period: 2023
+  input:
+    province_code: YT
+    is_dependent: false
+  output:
+    yt_child_benefit_eligible_child: false
+
+- name: Under age eligibility
+  period: 2023
+  input:
+    province_code: YT
+    is_dependent: true
+  output:
+    yt_child_benefit_eligible_child: true
+
+- name: Under age eligibility
+  period: 2023
+  input:
+    province_code: YT
+    age: 17
+  output:
+    yt_child_benefit_eligible_child: true

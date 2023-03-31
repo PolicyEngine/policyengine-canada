@@ -1,0 +1,18 @@
+description: Yukon reduces its child benefit at this rate for households with one child.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Yukon child benefit one child reduction rate
+  reference:
+  - title: Yukon-specific income tax measures
+    href: https://yukon.ca/en/yukon-income-tax
+brackets:
+  - threshold:
+      2015-01-01: 0
+    rate:
+      2015-01-01: 0
+  - threshold:
+      2015-01-01: 35_000
+    rate:
+      2015-01-01: 0.025
