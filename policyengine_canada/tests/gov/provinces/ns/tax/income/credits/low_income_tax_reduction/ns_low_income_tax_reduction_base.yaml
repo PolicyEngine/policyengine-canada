@@ -1,29 +1,34 @@
-# - name: Single.
-#   period: 2023
-#   input:
-#     people:
-#       head:
-#         age: 30
-#     household:
-#       members: [head]
-#       province_code: NS
-#   output:
-#     ns_low_income_tax_reduction_base: 300
+- name: Married with dependant and spouse, capped at 600
+  period: 2023
+  input:
+    people:
+      head:
+        age: 30
+      spouse:
+        age: 30
+        is_spouse: true
+      dependent:
+        age: 19
+        is_dependent: true
+    household:
+      members: [head, spouse, dependent]
+      province_code: NS
+  output:
+    ns_low_income_tax_reduction_base: 600
 
-# - name: Single with two children
-#   period: 2023
-#   input:
-#     people:
-#       head:
-#         age: 30
-#     household:
-#       members: [head]
-#       province_code: NS
-#       ns_low_income_tax_reduction_eligible_children: 2
-#   output:
-#     ns_low_income_tax_reduction_base: 630
+- name: Single 
+  period: 2023
+  input:
+    people:
+      head:
+        age: 30
+    household:
+      members: [head]
+      province_code: NS
+  output:
+    ns_low_income_tax_reduction_base: 300
 
-- name: Married with two children
+- name: Married with no children
   period: 2023
   input:
     people:
@@ -35,6 +40,5 @@
     household:
       members: [head, spouse]
       province_code: NS
-      ns_low_income_tax_reduction_eligible_children: 2
   output:
-    ns_low_income_tax_reduction_base: 930
+    ns_low_income_tax_reduction_base: 600

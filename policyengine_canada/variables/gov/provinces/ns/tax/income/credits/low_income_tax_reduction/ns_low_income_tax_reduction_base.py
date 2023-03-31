@@ -20,11 +20,9 @@ class ns_low_income_tax_reduction_base(Variable):
         spouse_amount = spouse * p.base.spouse
         dependant = person("is_dependent", period)
         dependant_amount = dependant * p.base.eligible_dependant
-        children = household(
-            "ns_low_income_tax_reduction_eligible_children", period
-        )
-        children_amount = children * p.base.dependant.base
-        return eligible * (
-            (min_(p.base.max_amount, base + spouse_amount + dependant_amount))
-            + children_amount
+        return min_(
+            p.base.max_amount,
+            household.sum(
+                eligible * (base + spouse_amount + dependant_amount)
+            ),
         )
