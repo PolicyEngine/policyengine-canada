@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class slic_post_reduction(Variable):
+class saskatchewan_low_income_credit(Variable):
     value_type = float
     entity = Household
     label = "Sasktachewan low income tax credit post reduction"
@@ -13,6 +13,3 @@ class slic_post_reduction(Variable):
         base = household("slic_base", period)
         income = household("adjusted_family_net_income", period)
         return max_(0, base - p.phase_out.calc(income))
-
-
-# 40_000 : BASE - (  (40_000 - 35_902) * 0.0275 + (35_902 - 0) * 0  )

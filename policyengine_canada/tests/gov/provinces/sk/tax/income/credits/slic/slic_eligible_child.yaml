@@ -1,0 +1,15 @@
+- name: Uneligible
+  period: 2024
+  input:
+    province_code: SK
+    age: 18
+  output:
+    slic_eligible_child: false
+
+- name: Uneligible
+  period: 2024
+  input:
+    province_code: SK
+    age: 17
+  output:
+    slic_eligible_child: true
