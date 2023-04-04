@@ -1,7 +1,0 @@
-- name: One child 
-  period: 2023
-  input:
-    province_code: NS
-    ntcb_younger_eligible_children: 1
-  output:
-    ntcb_younger_base: 814.92
