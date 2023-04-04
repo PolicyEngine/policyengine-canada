@@ -1,4 +1,4 @@
-description: Nunavut Child Benefit base per child.
+description: Nunavut Child Benefit base component base per child.
 values:
   2022-07-01: 330 #per child under age of 18 living at home
 metadata:
