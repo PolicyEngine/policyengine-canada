@@ -2,26 +2,26 @@
   period: 2023
   input:
     adjusted_family_net_income: 100
-    base_component_base: 1_000
+    acfb_base_component_base: 1_000
     province_code: AB
   output:
-    base_component_post_reduction: 1_000
+    acfb_base_component_post_reduction: 1_000
 
 - name: Reduction # (1_000 - 0.2011 * (30_000 - 25_937)) = 182.9307
   period: 2023
   absolute_error_margin: 0.5
   input:
     adjusted_family_net_income: 30_000
-    base_component_base: 1_000
+    acfb_base_component_base: 1_000
     province_code: AB
   output:
-    base_component_post_reduction: 182.9307
+    acfb_base_component_post_reduction: 182.9307
 
 - name: Over max amount
   period: 2023
   input:
     adjusted_family_net_income: 42_000
-    base_component_base: 1_000
+    acfb_base_component_base: 1_000
     province_code: AB
   output:
-    base_component_post_reduction: 0
+    acfb_base_component_post_reduction: 0
