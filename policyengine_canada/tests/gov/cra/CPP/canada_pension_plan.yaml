@@ -14,7 +14,7 @@
   output:
     canada_pension_plan: 199.5
 
-- name: Canada pension plan conrtribution when employment income under minimum income
+- name: Canada pension plan contribution when employment income under minimum income
   period: 2023
   input:
     employment_income: 3_000 
@@ -22,7 +22,7 @@
   output:
     canada_pension_plan: 171
 
-- name: Canada pension plan conrtribution when self_employment income under minimum income
+- name: Canada pension plan contribution when self_employment income under minimum income
   period: 2023
   input:
     employment_income: 5_000 #(5000-3500) * 0.057 = 85.5
@@ -30,7 +30,7 @@
   output:
     canada_pension_plan: 85.5
 
-- name: Canada pension plan conrtribution when both self_employment and employment incomes under minimum income
+- name: Canada pension plan contribution when both self_employment and employment incomes under minimum income
   period: 2023
   input:
     employment_income: 2_000 

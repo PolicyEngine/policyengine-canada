@@ -1,9 +1,0 @@
-description: Canada Pension Plan yearly minimum amount of pensionable earnings
-values:
-  2022-01-01: 3_500
-metadata:
-  unit: currency-CAD
-  label: CCP minimum amount of pensionable earnings
-  reference:
-  - title: Government of Canada - Contributions to the Canada Pension Plan
-    href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html 

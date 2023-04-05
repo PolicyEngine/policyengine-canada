@@ -1,23 +1,17 @@
 description: Canada pension plan contribution rate for employees
 brackets:
   - threshold:
-      values:
-        2022-01-01: 0
+      2022-01-01: 0
     rate:
-      values:
-        2022-01-01: 0
+      2022-01-01: 0
   - threshold:
-      values:
-        2022-01-01: 3_500
+      2022-01-01: 3_500
     rate:
-      values:
-        2022-01-01: 0.057
+      2022-01-01: 0.057
   - threshold:
-      values:
-        2022-01-01: 64_900
+      2022-01-01: 64_900
     rate:
-      values:
-        2022-01-01: 0
+      2022-01-01: 0
 metadata:
   type: marginal_rate
   rate_unit: /1
