@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class yt_cftx_disabled_child(Variable):
+class yt_cftc_disabled_child(Variable):
     value_type = bool
     entity = Person
     label = "Yukon Child Fitness Tax Credit disabled child"
