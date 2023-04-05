@@ -9,3 +9,6 @@ class sk_afb_eligible_children(Variable):
     defined_for = ProvinceCode.SK
 
     adds = ["sk_afb_eligible_child"]
+
+
+# TODO: finish variables
