@@ -1,18 +1,14 @@
 from policyengine_canada.model_api import *
 
 
-class acfb_alberta_child_and_family_benefit(Variable):
+class alberta_child_and_family_benefit(Variable):
     value_type = float
     entity = Household
     label = "Alberta child and family benefit"
     definition_period = YEAR
     defined_for = ProvinceCode.AB
 
-    def formula(household, period, parameters):
-        base_component = household(
-            "acfb_base_component_post_reduction", period
-        )
-        working_component = household(
-            "acfb_working_component_post_reduction", period
-        )
-        return base_component + working_component
+    adds = [
+        "acfb_base_component",
+        "acfb_working_component",
+    ]

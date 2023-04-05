@@ -4,7 +4,7 @@
     acfb_eligible_children: 5
     province_code: AB
   output:
-    acfb_alberta_child_and_family_benefit: 3_525
+    alberta_child_and_family_benefit: 3_525
 
 - name: No children
   period: 2023
@@ -12,7 +12,7 @@
     acfb_eligible_children: 0
     province_code: AB
   output:
-    acfb_alberta_child_and_family_benefit: 0
+    alberta_child_and_family_benefit: 0
 
 - name: 1 child
   period: 2023
@@ -20,7 +20,7 @@
     acfb_eligible_children: 1
     province_code: AB
   output:
-    acfb_alberta_child_and_family_benefit: 1_410
+    alberta_child_and_family_benefit: 1_410
 
 - name: 2 children
   period: 2023
@@ -28,7 +28,7 @@
     acfb_eligible_children: 2
     province_code: AB
   output:
-    acfb_alberta_child_and_family_benefit: 2_115
+    alberta_child_and_family_benefit: 2_115
 
 - name: 3 children
   period: 2023
@@ -36,4 +36,4 @@
     acfb_eligible_children: 3
     province_code: AB
   output:
-    acfb_alberta_child_and_family_benefit: 2_820
+    alberta_child_and_family_benefit: 2_820

@@ -5,5 +5,5 @@
     acfb_working_component_phase_in: 1_000
     province_code: AB
   output:
-    acfb_working_component_post_reduction: 1_000
+    acfb_working_component: 1_000
 
