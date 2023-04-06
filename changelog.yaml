@@ -315,3 +315,8 @@
     added:
     - Yukon child benefit.
   date: 2023-03-30 01:24:26
+- bump: minor
+  changes:
+    added:
+    - Yukon Children's arts amount.
+  date: 2023-04-06 02:49:58
