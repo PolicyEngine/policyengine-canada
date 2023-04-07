@@ -13,10 +13,12 @@ class ntcb_older_base(Variable):
             period
         ).gov.provinces.nt.tax.income.benefits.child_benefit.older.base
         children = household("ntcb_older_eligible_children", period)
+
         return (
             (p.one_child * (children > 0))
             + (p.two_children * (children > 1))
             + (p.three_children * (children > 2))
             + (p.four_children * (children > 3))
-            + (p.five_or_more_children * (children > 4))
+            # Multiply the 5th plus child amount by the number of children exceeding 4.
+            + (p.five_or_more_children * max_(children - 4, 0))
         )

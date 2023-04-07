@@ -1,18 +1,18 @@
-# - name: No child
-#   period: 2023
-#   input:
-#     province_code: NT
-#     ntcb_older_eligible_children: 0
-#   output:
-#     ntcb_older_base: 0
+- name: No child
+  period: 2023
+  input:
+    province_code: NT
+    ntcb_older_eligible_children: 0
+  output:
+    ntcb_older_base: 0
 
-# - name: One child 
-#   period: 2023
-#   input:
-#     province_code: NT
-#     ntcb_older_eligible_children: 1
-#   output:
-#     ntcb_older_base: 651.96
+- name: One child 
+  period: 2023
+  input:
+    province_code: NT
+    ntcb_older_eligible_children: 1
+  output:
+    ntcb_older_base: 651.96
 
 - name: Two child # 651.96 + 522
   period: 2023
