@@ -1,0 +1,7 @@
+- name: High income
+  period: 2023
+  input:
+    province_code: NT
+    ntltc_low_base: 50_000
+  output:
+    ntcb_older_base: 782

@@ -1,0 +1,7 @@
+- name: Middle income
+  period: 2023
+  input:
+    province_code: NT
+    ntltc_low_base: 78_000
+  output:
+    ntcb_older_base: 942
