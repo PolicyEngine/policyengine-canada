@@ -1,6 +1,6 @@
 description: Northwest Territories child benefit older bracket base for one child.
 values:
-  2022-01-01: 651.96
+  2022-07-01: 651.96
 metadata:
   unit: currency-CAD
   label: Northwest Territories child benefit older bracket one child base

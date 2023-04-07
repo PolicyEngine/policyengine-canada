@@ -1,6 +1,6 @@
 description: Northwest Territories child benefit exclusive age eligibility.
 values:
-  2022-01-01: 18
+  2022-07-01: 18
 metadata:
   unit: year
   label: Northwest Territories child benefit exclusive age eligibility.
