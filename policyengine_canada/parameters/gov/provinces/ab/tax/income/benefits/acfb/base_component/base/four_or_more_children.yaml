@@ -1,7 +1,7 @@
 description: Alberta Child and Family Benefit base amount for the 4th child.
 values:
-  2022-07-01: 665 # $55.41 monthly.
-  2023-01-01: 705 #58.75 monthly.
+  2022-07-01: 665 # $ 55.41 monthly.
+  2023-01-01: 705 # 58.75 monthly.
 metadata:
   unit: currency-CAD
   label: Alberta Child and Family Benefit for the fourth child base amount

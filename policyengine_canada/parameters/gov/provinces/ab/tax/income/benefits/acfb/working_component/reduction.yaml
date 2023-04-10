@@ -1,18 +1,14 @@
 description: Alberta child and Family Benefit base component reduction.
 brackets:
   - threshold:
-      values:
-        2022-07-01: 0
+      2022-07-01: 0
     rate:
-      values:
-        2022-07-01: 0
+      2022-07-01: 0
   - threshold:
-      values:
-        2022-07-01: 24_467
-        2023-01-01: 25_935
+      2022-07-01: 24_467
+      2023-01-01: 25_935
     rate:
-      values:
-        2023-01-01: 0.2011
+      2023-01-01: 0.2011
 
 # Calculated from source
 
