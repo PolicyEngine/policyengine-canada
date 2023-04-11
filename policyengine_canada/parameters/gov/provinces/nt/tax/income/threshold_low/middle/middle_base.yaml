@@ -1,9 +1,0 @@
-description: Northwest Territories Credit middle income threshold
-values:
-  2022-12-31: 48_000 # Not sure
-metadata:
-  unit: currency-CAD
-  label: Northwest Territories Credit middle income threshold
-  reference:
-  - title: Government of Canada - Credit
-    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/northwest-territories/5012-tc.html 

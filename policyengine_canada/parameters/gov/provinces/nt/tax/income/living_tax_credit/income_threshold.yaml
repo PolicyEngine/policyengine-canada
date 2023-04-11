@@ -1,6 +1,6 @@
 description: Northwest Territories Credit high income threshold
 values:
-  2022-12-31: 66_000 # Not sure
+  2022-12-31: 66_000 
 metadata:
   unit: currency-CAD
   label: Northwest Territories Credit high income threshold
