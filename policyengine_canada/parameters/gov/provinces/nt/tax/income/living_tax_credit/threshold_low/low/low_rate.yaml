@@ -1,0 +1,9 @@
+description: Northwest Territories Credit low income rate
+values:
+  2022-12-31:: 0.026 # Not sure
+metadata:
+  unit: year
+  label: Northwest Territories Credit low income rate
+  reference:
+  - title: Government of Canada - Credit
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/northwest-territories/5012-tc.html 
