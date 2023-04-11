@@ -1,4 +1,4 @@
-- name: Quebec income tax for 2023
+- name: Quebec income tax for 2023 for individual income <49275
   period: 2023
   input:
     province_code: QC
@@ -6,7 +6,7 @@
   output:
     qc_income_tax_before_credits: 6_898.5
 
-- name: Quebec income tax for 2023
+- name: Quebec income tax for 2023 for individuals incomes between 49275 and 98540
   period: 2023
   input:
     province_code: QC
@@ -14,7 +14,7 @@
   output:
     qc_income_tax_before_credits: 16_258.85 # 49275*0.14 + (98540-49275)*0.19
 
-- name: Quebec income tax for 2023
+- name: Quebec income tax for 2023 for individuals incomes between 98540 and 119910
   period: 2023
   input:
     province_code: QC
@@ -22,7 +22,7 @@
   output:
     qc_income_tax_before_credits: 21_387.65
 
-- name: Quebec income tax for 2023
+- name: Quebec income tax for 2023 for individuals incomes above 119910
   period: 2023
   input:
     province_code: QC
