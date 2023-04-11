@@ -10,11 +10,14 @@ class ns_child_benefit(Variable):
 
     def formula(household, period, parameters):
         children = household("ns_child_benefit_eligible_children", period)
-        p = parameters(period).gov.benefits.provinces.ns.benefits.child_benefit
+        p = parameters(period).gov.provinces.ns.benefits.child_benefit
         income = household("adjusted_family_net_income", period)
         eligible = income < p.upper_threshold
-        return where(
+        return eligible * where(
             income < p.lower_threshold,
-            eligible * children * p.base,
-            eligible * children * p.higher_income_base,
+            children * p.base,
+            (
+                (p.base * (children > 0))
+                + (p.higher_income_base * (children - 1))
+            ),
         )

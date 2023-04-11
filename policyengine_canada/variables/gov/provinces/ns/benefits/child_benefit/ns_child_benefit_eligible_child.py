@@ -14,5 +14,5 @@ class ns_child_benefit_eligible_child(Variable):
             age
             < parameters(
                 period
-            ).gov.provinces.ns.benefits.child_benifit.age_eligibility
+            ).gov.provinces.ns.benefits.child_benefit.age_eligibility
         )
