@@ -1,4 +1,4 @@
-description: Income tax rate in Quebec. 
+description: Quebec taxes income at these rates, depending on taxable income.
 metadata:
   type: marginal_rate
   threshold_unit: currency-CAD
