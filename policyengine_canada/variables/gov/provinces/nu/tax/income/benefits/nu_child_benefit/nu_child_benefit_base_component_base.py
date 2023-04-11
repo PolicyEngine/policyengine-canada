@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class nu_child_benefit_base_component_base(Variable):
     value_type = float
     entity = Household
-    label = "Nunvaut child benefit base component"
+    label = "Nunvaut child benefit base component base"
     definition_period = YEAR
     defined_for = ProvinceCode.NU
 
