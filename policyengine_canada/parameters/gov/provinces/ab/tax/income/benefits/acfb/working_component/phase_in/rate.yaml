@@ -1,9 +1,9 @@
-description: Alberta child and Family Benefit working component phase-in rate.
+description: Alberta phases in its Child and Family Benefit working component at this rate.
 values:
   2022-01-01: 0.15
 metadata:
   unit: /1
-  label: Alberta child and Family Benefit working component phase-in rate.
+  label: Alberta Child and Family Benefit working component phase-in rate
   reference:
   - title: Province of Alberta - Alberta Child and Family Benefit
     href: https://www.alberta.ca/alberta-child-and-family-benefit.aspx
