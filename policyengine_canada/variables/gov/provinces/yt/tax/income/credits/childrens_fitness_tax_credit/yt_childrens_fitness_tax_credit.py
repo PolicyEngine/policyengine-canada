@@ -11,3 +11,6 @@ class yt_childrens_fitness_tax_credit(Variable):
     def formula(household, period, parameters):
         children = household("yt_cftc_eligible_children", period)
         disabled_children = household("yt_cftc_disabled_children", period)
+
+
+# TODO: finish -

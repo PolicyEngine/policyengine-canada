@@ -10,10 +10,9 @@ class yt_cftc_disabled_child(Variable):
 
     def formula(person, period, parameters):
         disabled = person("is_disabled", period)
+        fees = person("child_physical_activities_fees", period)
         age = person("age", period)
-        return (
-            disabled & age
-            < parameters(
-                period
-            ).gov.provinces.yt.tax.income.credits.childrens_fitness_tax_credit.disability_supplement.age_eligibility
-        )
+        p = parameters(
+            period
+        ).gov.provinces.yt.tax.income.credits.childrens_fitness_tax_credit.disability_supplement
+        return fees >= p.minimum_fees & disabled & age < p.age_eligibility
