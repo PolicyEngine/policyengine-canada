@@ -1,0 +1,15 @@
+- name: Over age age eligibility
+  period: 2022
+  input:
+    province_code: SK
+    age: 18
+  output:
+    sk_afb_eligible_child: true
+
+- name: under age age eligibility
+  period: 2022
+  input:
+    province_code: SK
+    age: 19
+  output:
+    sk_afb_eligible_child: false

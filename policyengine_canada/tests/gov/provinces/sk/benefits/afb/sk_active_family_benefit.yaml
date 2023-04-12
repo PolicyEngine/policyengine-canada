@@ -1,0 +1,6 @@
+- name: Income threshold
+  period: 2022
+  input: 
+    province_code: SK
+    income: 65000
+  output: 

@@ -1,0 +1,38 @@
+- name: Disabled Over age eligibility
+  period: 2022
+  input:
+    province_code: SK
+    age: 19
+    is_disabled: 1
+  output:
+    sk_afb_disabled_child: false
+    
+
+- name: Disabled Under age eligibility
+  period: 2022
+  input:
+    province_code: SK
+    age: 18
+    is_disabled: 1
+  output:
+    sk_afb_disabled_child: true
+
+
+- name: Nondisabled Over age eligibility
+  period: 2022
+  input:
+    province_code: SK
+    age: 19
+    is_disabled: 0
+  output:
+    sk_afb_disabled_child: false
+
+
+- name: Nondisabled Under age eligibility
+  period: 2022
+  input:
+    province_code: SK
+    age: 18
+    is_disabled: 0
+  output:
+    sk_afb_disabled_child: false
