@@ -1,0 +1,9 @@
+description: Northwest Territories Credit maximum living tax credit
+values:
+  2022-12-31: 942 
+metadata:
+  unit: currency-CAD
+  label: Northwest Territories Credit maximum living tax credit
+  reference:
+  - title: Government of Canada - Credit
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/northwest-territories/5012-tc.html 
