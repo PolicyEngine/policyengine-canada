@@ -1,0 +1,12 @@
+description: Quebec Family Benefit married household base amount.
+values:
+  2022-01-01: 1_319
+metadata:
+  unit: currency-CAD
+  label: Quebec Family Benefit married base 
+  reference:
+  - title: Quebec Family Benefit
+    href: https://www.quebec.ca/en/family-and-support-for-individuals/social-assistance-social-solidarity/calculating-basic-benefit/calculation-benefit
+
+
+#TODO: married vs family comprising two adults

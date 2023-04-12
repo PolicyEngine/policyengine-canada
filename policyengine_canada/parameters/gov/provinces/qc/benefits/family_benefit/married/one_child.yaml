@@ -1,0 +1,9 @@
+description: Quebec Family Benefit married household one child amount.
+values:
+  2022-01-01: 254 #1_573 - 1_319
+metadata:
+  unit: currency-CAD
+  label: Quebec Family Benefit married one child 
+  reference:
+  - title: Quebec Family Benefit
+    href: https://www.quebec.ca/en/family-and-support-for-individuals/social-assistance-social-solidarity/calculating-basic-benefit/calculation-benefit
