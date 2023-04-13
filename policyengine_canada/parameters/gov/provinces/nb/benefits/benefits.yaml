@@ -1,0 +1,7 @@
+description: New Brunswick list of benefits.
+values:
+  2022-01-01:
+    - nb_child_benefit
+
+metadata:
+  unit: program
