@@ -30,6 +30,3 @@ class nb_child_benefit(Variable):
             )
             + supplement
         )
-
-
-# TODO: add supplement

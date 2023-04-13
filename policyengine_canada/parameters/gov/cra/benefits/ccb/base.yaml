@@ -1,9 +1,9 @@
 description: Canada Child Benefit amount by child age.
 brackets:
   - amount:
-      2022-07-01: 0
+      2022-07-01: 6_997
     threshold:
-      2022-07-01: 20_000
+      2022-07-01: 0
   - amount:
       2022-07-01: 5_903
     threshold:
@@ -22,4 +22,3 @@ metadata:
   reference:
     - title: Government of Canada - Canada Child Benefit
       href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html
-
