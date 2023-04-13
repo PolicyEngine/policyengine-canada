@@ -4,7 +4,7 @@
     province_code: NB
     age: 16
   output:
-    nb_family_benefit_eligible_child: true
+    nb_child_benefit_eligible_child: true
 
 - name: New Brunswick family benefit ineligible child 
   period: 2023
@@ -12,4 +12,4 @@
     province_code: NB
     age: 22
   output:
-    nb_family_benefit_eligible_child: false
+    nb_child_benefit_eligible_child: false
