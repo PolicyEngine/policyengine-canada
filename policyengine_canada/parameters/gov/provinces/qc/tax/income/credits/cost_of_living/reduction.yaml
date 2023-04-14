@@ -1,0 +1,14 @@
+description: Quebec reduces its cost of living tax credit at this rate.
+brackets:
+  - threshold:
+      2022-01-01: 50_000
+    rate:
+      2022-01-01: 0.05 # The credit is reduced by 5% of your income over $50,000
+  - threshold:
+      2022-01-01: 54_000
+    rate:
+      2022-01-01: 0 # keep constant when income between $54,000 to $100,000
+  - threshold:
+      2022-01-01: 100_000
+    rate:
+      2022-01-01: 0.1 #The credit is reduced by 10% of your income over $100,000 until 0
