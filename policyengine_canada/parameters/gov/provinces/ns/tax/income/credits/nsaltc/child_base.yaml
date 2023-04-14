@@ -1,0 +1,9 @@
+description: Child base NSALTC in Nova Scotia. 
+values: 
+  2022-07-01: 60
+metadata:
+  unit: currency-CAD
+  label: Nova Scotia child base affordable living tax credit
+  reference:
+    - title: Government of Canada - Nova Scotia affordable living tax credit (NSALTC)
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html

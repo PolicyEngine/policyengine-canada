@@ -1,0 +1,9 @@
+description: Individual or couple base NSALTC in Nova Scotia. 
+values: 
+  2022-07-01: 255
+metadata:
+  unit: currency-CAD
+  label: Nova Scotia individual or couple base affordable living tax credit
+  reference:
+    - title: Government of Canada - Nova Scotia affordable living tax credit (NSALTC) years
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html
