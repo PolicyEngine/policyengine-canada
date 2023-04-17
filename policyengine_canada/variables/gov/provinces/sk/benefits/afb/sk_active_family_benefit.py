@@ -14,9 +14,8 @@ class sk_active_family_benefit(Variable):
         children_disabled = household("sk_afb_disabled_children", period)
         p = parameters(period).gov.provinces.sk.benefits.afb
         return where(
-            income > p.income_threshhold,
+            income > p.income_threshold,
             0,
             p.base * children_nondisabled
             + p.disabled_base * children_disabled,
         )
-

@@ -1,6 +1,39 @@
-- name: Income threshold
+- name: Over Income threshold
   period: 2022
   input: 
     province_code: SK
-    income: 65000
+    adjusted_family_net_income: 60001
+    sk_afb_eligible_children: 1
+    sk_afb_disabled_children: 1
   output: 
+    sk_active_family_benefit: 0
+
+- name: Under Income threshold with one nondisabled child
+  period: 2022
+  input: 
+    province_code: SK
+    adjusted_family_net_income: 50000
+    sk_afb_eligible_children: 1
+    sk_afb_disabled_children: 0
+  output: 
+    sk_active_family_benefit: 150
+
+- name: Under Income threshold with one disabled child
+  period: 2022
+  input: 
+    province_code: SK
+    adjusted_family_net_income: 50000
+    sk_afb_eligible_children: 0
+    sk_afb_disabled_children: 1
+  output: 
+    sk_active_family_benefit: 200
+
+- name: Under Income threshold with two disabled children and two nondisabled children
+  period: 2022
+  input: 
+    province_code: SK
+    adjusted_family_net_income: 50000
+    sk_afb_eligible_children: 2
+    sk_afb_disabled_children: 2
+  output: 
+    sk_active_family_benefit: 700
