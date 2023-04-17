@@ -320,3 +320,8 @@
     added:
     - Yukon Children's arts amount.
   date: 2023-04-06 02:49:58
+- bump: minor
+  changes:
+    added:
+    - Quebec income tax rate.
+  date: 2023-04-17 23:12:32
