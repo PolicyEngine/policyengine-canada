@@ -5,30 +5,30 @@
   output:
     cost_of_living_credit: 600
 
-- name: Quebec cost of living tax credits for net income $50,000 to $54,000
-  period: 2022
-  input:
-    individual_net_income: 52_000 
-  output:
-    cost_of_living_credit: 500 #600 − [5% × (52,000 − 50,000)] = $500
+# - name: Quebec cost of living tax credits for net income $50,000 to $54,000
+#   period: 2022
+#   input:
+#     individual_net_income: 52_000 
+#   output:
+#     cost_of_living_credit: 500 #600 − [5% × (52,000 − 50,000)] = $500
 
-- name: Quebec cost of living tax credits for net income $54,000 to $100,000
-  period: 2022
-  input:
-    individual_net_income: 100_000
-  output:
-    cost_of_living_credit: 400
+# - name: Quebec cost of living tax credits for net income $54,000 to $100,000
+#   period: 2022
+#   input:
+#     individual_net_income: 100_000
+#   output:
+#     cost_of_living_credit: 400
 
-- name: Quebec cost of living tax credits for net income $100,000 to $104,000
-  period: 2022
-  input:
-    individual_net_income: 102_000
-  output:
-    cost_of_living_credit: 200 #400 − [10% × (102,000 − 100,000)] = $200
+# - name: Quebec cost of living tax credits for net income $100,000 to $104,000
+#   period: 2022
+#   input:
+#     individual_net_income: 102_000
+#   output:
+#     cost_of_living_credit: 200 #400 − [10% × (102,000 − 100,000)] = $200
 
-- name: Quebec cost of living tax credits for net income over $104,000
-  period: 2022
-  input:
-    individual_net_income: 104_000
-  output:
-    cost_of_living_credit: 0
+# - name: Quebec cost of living tax credits for net income over $104,000
+#   period: 2022
+#   input:
+#     individual_net_income: 104_000
+#   output:
+#     cost_of_living_credit: 0
