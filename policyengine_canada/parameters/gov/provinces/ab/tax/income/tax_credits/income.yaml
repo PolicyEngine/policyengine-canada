@@ -1,0 +1,26 @@
+description: Alberta taxes and credits. 
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Quebec income tax rates 
+  reference:
+    - title: Revenu Quebec - Income tax rate
+    - href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/alberta/5009-c.html 
+brackets:
+  - threshold:
+      2022-01-01: 13_423
+      2022-01-01: 161_086
+      2022-01-01: 214_781
+      2022-01-01: 322_171
+    rate:
+      2022-01-01: 0.1
+      2022-01-01: 0.12
+      2022-01-01: 0.13
+      2022-01-01: 0.14
+      2022-01-01: 0.15
+    supplement:
+      2022-01-01: 13_423.80
+      2022-01-01: 16_645.56
+      2022-01-01: 23_625.91
+      2022-01-01: 38_660.51
