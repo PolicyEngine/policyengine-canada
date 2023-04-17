@@ -1,0 +1,7 @@
+description: Sasktachewan list of benefits.
+values:
+  2022-01-01:
+    - sk_active_family_benefit
+
+metadata:
+  unit: program

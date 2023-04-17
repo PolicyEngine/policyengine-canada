@@ -17,4 +17,6 @@ class benefits(Variable):
         "on_benefits",
         # British Columbia programs.
         "bc_benefits",
+        # Saskatchewan programs.
+        "sk_benefits",
     ]
