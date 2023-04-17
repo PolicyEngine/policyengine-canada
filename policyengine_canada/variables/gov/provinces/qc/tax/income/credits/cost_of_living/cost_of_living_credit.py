@@ -15,4 +15,4 @@ class cost_of_living_credit(Variable):
         income = person("individual_net_income", period)
         base = person("base", period)
 
-        return base #max_(0, base - p.reduction.calc(income))
+        return max_(0, base - p.reduction.calc(income))
