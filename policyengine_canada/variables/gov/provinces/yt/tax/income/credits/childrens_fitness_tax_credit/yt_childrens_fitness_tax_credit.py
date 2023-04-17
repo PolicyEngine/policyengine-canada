@@ -9,8 +9,15 @@ class yt_childrens_fitness_tax_credit(Variable):
     defined_for = ProvinceCode.YT
 
     def formula(household, period, parameters):
-        children = household("yt_cftc_eligible_children", period)
-        disabled_children = household("yt_cftc_disabled_children", period)
+        total_children = household("yt_cftc_eligible_children", period)
+        fees = household("child_physical_activities_fees", period)
+        disability_fees = household(
+            "yt_childrens_fitness_tax_credit_disability_supplement", period
+        )
+        p = parameters(
+            period
+        ).gov.provinces.yt.tax.income.credits.childrens_fitness_tax_credit
+        return min_(fees * p.rate, total_children * p.base) + disability_fees
 
 
-# TODO: finish -
+# TODO: add disabled children to total amount?
