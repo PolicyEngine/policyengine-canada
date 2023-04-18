@@ -1,0 +1,39 @@
+- name: One child with cap applied
+  period: 2023
+  input:
+    adjusted_family_net_income: 82_578
+    bc_family_benefit_eligible_children: 1
+    bc_family_benefit_base: 1_599.96
+    province_code: BC
+  output:
+    nu_child_benefit_base_component: 
+
+- name: One child without the cap applied
+  period: 2023
+  input:
+    adjusted_family_net_income: 40_000
+    bc_family_benefit_eligible_children: 1
+    bc_family_benefit_base: 1_599.96
+    province_code: BC
+  output:
+    nu_child_benefit_base_component: 
+
+- name: Two children with cap applied
+  period: 2023
+  input:
+    adjusted_family_net_income: 82_578
+    bc_family_benefit_eligible_children: 2
+    bc_family_benefit_base: 2_599.92
+    province_code: BC
+  output:
+    bc_family_benefit_first_reduction: 1_379.88
+
+- name: Four children with cap applied
+  period: 2023
+  input:
+    adjusted_family_net_income: 82_578
+    bc_family_benefit_eligible_children: 4
+    bc_family_benefit_base: 4_199.76
+    province_code: BC
+  output:
+    bc_family_benefit_first_reduction: 2_699.88

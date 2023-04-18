@@ -10,7 +10,7 @@ class nu_child_benefit_working_component(Variable):
 
     def formula(household, period, parameters):
         children = household("nu_child_benefit_eligible_children", period)
-        income = household("adjusted_family_net_income", period)
+        income = household("family_working_income", period)
         p = parameters(
             period
         ).gov.provinces.nu.tax.benefits.nucb.working_component
