@@ -14,19 +14,19 @@ class nb_child_benefit(Variable):
         p = parameters(period).gov.provinces.nb.benefits.nbcb
         base = p.base * children
         supplement = household("nb_child_benefit_supplement", period)
-        return (
-            select(
-                # Conditions.
-                [children == 1, children > 1],
-                # Results.
-                [
-                    max_(base - p.one_child_phase_out.rate.calc(income), 0),
-                    max_(
-                        base - p.multiple_children_phase_out.rate.calc(income),
-                        0,
-                    ),
-                ],
-                default=0,
-            )
-            + supplement
+        one_child_amount = max_(base - p.phase_out.one_child.calc(income), 0)
+        multiple_children_amount = max_(
+            base - p.phase_out.multiple_children.calc(income),
+            0,
         )
+        pre_supplement_amount = select(
+            # Conditions.
+            [children == 1, children > 1],
+            # Results.
+            [
+                one_child_amount,
+                multiple_children_amount,
+            ],
+            default=0,
+        )
+        return pre_supplement_amount + supplement

@@ -14,9 +14,9 @@ class nb_child_benefit_supplement(Variable):
             period
         ).gov.provinces.nb.benefits.nbcb.working_income_supplement
         working_income = household("family_working_income", period)
-        return min_(
-            p.base,
-            max_(
-                p.phase_in.calc(working_income) - p.phase_out.calc(income), 0
-            ),
+        # the supplement amount is reduced by 4% of "family earned income" in excess of $3,750 minus 5% of "family net income" in excess of $20,921.
+        reduced_amount = max_(
+            p.phase_in.calc(working_income) - p.phase_out.calc(income), 0
         )
+        # The lesser of the base amount or teh reduced amount is utilized.
+        return min_(p.base, reduced_amount)
