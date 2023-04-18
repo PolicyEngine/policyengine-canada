@@ -1,4 +1,4 @@
-name: Income below 12_000
+- name: Income below 12_000
   period: 2023
   input:
     province_code: NT

@@ -12,7 +12,7 @@ class nt_ltc_middle_threshold(Variable):
         p = parameters(
             period
         ).gov.provinces.nt.tax.income.credits.living_tax_credit
-        net_income = Person("individual_net_income", period)
+        net_income = person("individual_net_income", period)
         eligible = (p.threshold.middle.base < net_income) & (p.threshold.high.base >= net_income)
 
         return (

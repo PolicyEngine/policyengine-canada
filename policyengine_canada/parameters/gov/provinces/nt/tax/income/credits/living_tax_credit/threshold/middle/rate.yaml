@@ -1,6 +1,6 @@
 description: Northwest Territories living tax credit middle income rate
 values:
-  2022-12-31:: 0.0125
+  2022-12-31: 0.0125
 metadata:
   unit: year
   label: Northwest Territories living tax credit middle income rate

@@ -1,6 +1,6 @@
 description: Northwest Territories living tax credit low income rate
 values:
-  2022-12-31:: 0.026
+  2022-12-31: 0.026
 metadata:
   unit: year
   label: Northwest Territories living tax credit low income rate

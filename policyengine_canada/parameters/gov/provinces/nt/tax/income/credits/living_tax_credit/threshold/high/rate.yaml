@@ -1,6 +1,6 @@
 description: Northwest Territories living tax credit high income rate
 values:
-  2022-12-31:: 0.01
+  2022-12-31: 0.01
 metadata:
   unit: year
   label: Northwest Territories living tax credit high income rate
