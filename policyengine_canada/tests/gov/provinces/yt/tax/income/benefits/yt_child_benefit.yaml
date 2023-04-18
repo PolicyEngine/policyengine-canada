@@ -1,0 +1,40 @@
+- name: No children
+  period: 2023
+  input:
+    province_code: YT
+    adjusted_family_net_income: 35_000
+    yt_child_benefit_eligible_children: 0
+    yt_child_benefit_base: 0
+  output:
+    yt_child_benefit: 0
+
+- name: One child w/ reduction #820 - ((36_000 - 35_000) * 0.025)
+  period: 2023
+  input:
+    province_code: YT
+    adjusted_family_net_income: 36_000
+    yt_child_benefit_eligible_children: 1
+    yt_child_benefit_base: 820
+  output:
+    yt_child_benefit: 795
+
+- name: more than two child w/ reduction #1_000 - ((36_000 - 35_000) * 0.05)
+  period: 2023
+  input:
+    province_code: YT
+    adjusted_family_net_income: 36_000
+    yt_child_benefit_eligible_children: 3
+    yt_child_benefit_base: 1_000
+  output:
+    yt_child_benefit: 950
+
+- name: more than two child w/ maximum reduction #1_000 - ((100_000 - 35_000) * 0.05) maxed at 0
+  period: 2023
+  input:
+    province_code: YT
+    adjusted_family_net_income: 100_000
+    yt_child_benefit_eligible_children: 2
+    yt_child_benefit_base: 1_000
+  output:
+    yt_child_benefit: 0
+  

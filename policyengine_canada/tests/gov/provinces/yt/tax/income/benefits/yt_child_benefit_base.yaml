@@ -1,0 +1,23 @@
+- name: No children 
+  period: 2023
+  input:
+    province_code: YT
+    yt_child_benefit_eligible_children: 0
+  output:
+    yt_child_benefit_base: 0
+
+- name: One child
+  period: 2023
+  input:
+    province_code: YT
+    yt_child_benefit_eligible_children: 1
+  output:
+    yt_child_benefit_base: 820
+
+- name: Two children 
+  period: 2023
+  input:
+    province_code: YT
+    yt_child_benefit_eligible_children: 2
+  output:
+    yt_child_benefit_base: 1_640

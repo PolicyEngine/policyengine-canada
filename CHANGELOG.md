@@ -5,6 +5,52 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.46.0] - 2023-04-17 23:12:32
+
+### Added
+
+- Quebec income tax rate.
+
+## [0.45.0] - 2023-04-06 02:49:58
+
+### Added
+
+- Yukon Children's arts amount.
+
+## [0.44.0] - 2023-03-30 01:24:26
+
+### Added
+
+- Yukon child benefit.
+
+## [0.43.1] - 2023-03-29 23:52:19
+
+### Changed
+
+- Pin pydata-sphinx-theme==0.13.1 to fix a jupyterbook build issue.
+
+## [0.43.0] - 2023-03-28 03:30:52
+
+### Added
+
+- modelled_policies.yaml with content for modal dialog.
+
+## [0.42.3] - 2023-03-24 22:49:05
+
+### Changed
+
+- Bumped Core to v2.
+
+## [0.42.2] - 2023-03-20 13:59:40
+
+### Added
+
+- README files for parameter folder display text.
+
+### Changed
+
+- Revised variable labels for consistency.
+
 ## [0.42.1] - 2023-03-14 22:17:09
 
 ### Added
@@ -355,6 +401,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.46.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.45.0...0.46.0
+[0.45.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.44.0...0.45.0
+[0.44.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.43.1...0.44.0
+[0.43.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.43.0...0.43.1
+[0.43.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.42.3...0.43.0
+[0.42.3]: https://github.com/PolicyEngine/policyengine-canada/compare/0.42.2...0.42.3
+[0.42.2]: https://github.com/PolicyEngine/policyengine-canada/compare/0.42.1...0.42.2
 [0.42.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.42.0...0.42.1
 [0.42.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.41.0...0.42.0
 [0.41.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.40.0...0.41.0
