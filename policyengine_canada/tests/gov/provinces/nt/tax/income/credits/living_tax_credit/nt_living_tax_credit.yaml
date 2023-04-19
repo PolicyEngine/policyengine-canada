@@ -2,7 +2,15 @@
   period: 2023
   input:
     province_code: NT
-    nt_income_tax_before_credits: 10_000
+    individual_net_income: 12_000
+  output:
+    nt_living_tax_credit: 312
+
+- name: Income below 12_000
+  period: 2023
+  input:
+    province_code: NT
+    individual_net_income: 10_000
   output:
     nt_living_tax_credit: 260
 
@@ -10,22 +18,46 @@
   period: 2023
   input:
     province_code: NT
-    nt_income_tax_before_credits: 42_000
+    individual_net_income: 42_000
   output:
     nt_living_tax_credit: 687
+
+- name: Income between 12_000 and 48_000
+  period: 2023
+  input:
+    province_code: NT
+    individual_net_income: 48_000
+  output:
+    nt_living_tax_credit: 762
 
 - name: Income between 48_000 and 66_000
   period: 2023
   input:
     province_code: NT
-    nt_income_tax_before_credits: 58_000
+    individual_net_income: 58_000
   output:
-    nt_living_tax_credit: 772
+    nt_living_tax_credit: 862
+  
+- name: Income between 48_000 and 66_000
+  period: 2023
+  input:
+    province_code: NT
+    individual_net_income: 65_999
+  output:
+    nt_living_tax_credit: 941.99
 
 - name: Income above 66_000 
   period: 2023
   input:
     province_code: NT
-    nt_income_tax_before_credits: 67_000
+    individual_net_income: 67_000
+  output:
+    nt_living_tax_credit: 942
+  
+- name: Income above 66_000 
+  period: 2023
+  input:
+    province_code: NT
+    individual_net_income: 66_001
   output:
     nt_living_tax_credit: 942
