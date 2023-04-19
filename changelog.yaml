@@ -325,3 +325,8 @@
     added:
     - Quebec income tax rate.
   date: 2023-04-17 23:12:32
+- bump: minor
+  changes:
+    added:
+    - New Brunswick Child Tax Benefit.
+  date: 2023-04-19 03:05:41
