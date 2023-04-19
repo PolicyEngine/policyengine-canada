@@ -1,0 +1,36 @@
+- name: Over eligible age
+  period: 2022
+  input:
+    province_code: YT
+    age: 16
+    is_disabled: false
+  output:
+    yt_cftc_eligible_child: false
+
+- name: Under eligible age
+  period: 2022
+  input:
+    province_code: YT
+    age: 15
+    is_disabled: false
+  output:
+    yt_cftc_eligible_child: true
+
+- name: Over eligible age for disabled children
+  period: 2022
+  input:
+    province_code: YT
+    age: 18
+    is_disabled: true
+  output:
+    yt_cftc_eligible_child: false
+
+- name: Under eligible age for disabled children
+  period: 2022
+  input:
+    province_code: YT
+    age: 17
+    is_disabled: true
+  output:
+    yt_cftc_eligible_child: true
+  

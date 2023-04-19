@@ -1,0 +1,39 @@
+- name: Over Disabled Eligible Age
+  period: 2022
+  input:
+    province_code: YT
+    age: 19
+    child_physical_activities_fees: 110
+    is_disabled: true
+  output:
+    yt_cftc_disabled_child: false
+
+- name: Over Disabled Eligible Age
+  period: 2022
+  input:
+    province_code: YT
+    age: 19
+    child_physical_activities_fees: 90
+    is_disabled: true
+  output:
+    yt_cftc_disabled_child: false
+
+- name: Under Disabled Eligible Age
+  period: 2022
+  input:
+    province_code: YT
+    age: 17
+    child_physical_activities_fees: 90
+    is_disabled: true
+  output:
+    yt_cftc_disabled_child: false
+
+- name: Under Disabled Eligible Age
+  period: 2022
+  input:
+    province_code: YT
+    age: 17
+    child_physical_activities_fees: 110
+    is_disabled: true
+  output:
+    yt_cftc_disabled_child: true

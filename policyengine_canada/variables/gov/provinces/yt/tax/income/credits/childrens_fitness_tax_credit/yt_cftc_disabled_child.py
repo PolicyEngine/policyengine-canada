@@ -15,4 +15,4 @@ class yt_cftc_disabled_child(Variable):
         p = parameters(
             period
         ).gov.provinces.yt.tax.income.credits.childrens_fitness_tax_credit.disability_supplement
-        return fees >= p.minimum_fees & disabled & age < p.age_eligibility
+        return fees >= p.minimum_fees & disabled & age < p.age

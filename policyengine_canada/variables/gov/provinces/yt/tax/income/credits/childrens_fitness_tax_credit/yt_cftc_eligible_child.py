@@ -10,9 +10,10 @@ class yt_cftc_eligible_child(Variable):
 
     def formula(person, period, parameters):
         age = person("age", period)
-        return (
-            age
-            < parameters(
-                period
-            ).gov.provinces.yt.credits.childrens_fitness_tax_credit.child_age_eligibility
+        p = parameters(
+            period
+        ).gov.provinces.yt.tax.income.credits.childrens_fitness_tax_credit
+        disabled = person("is_disabled", period) & (
+            age < p.disability_supplement.age
         )
+        return disabled | (age < p.child_age_eligibility)
