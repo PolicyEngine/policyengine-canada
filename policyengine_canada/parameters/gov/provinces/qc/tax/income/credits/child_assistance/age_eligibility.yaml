@@ -1,0 +1,9 @@
+description: Children eligible for the Quebec Child Assistance Credit.
+values:
+  2023-01-01: 18
+metadata:
+  unit: year
+  label: Quebec Child Assistance Credit eligible child.
+  reference:
+  - title: 
+    href: 

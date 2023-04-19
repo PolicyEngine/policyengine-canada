@@ -1,0 +1,9 @@
+description: Quebec Child Assistance Tax Credit minimum amount for the single household supplement.
+values:
+  2023-01-01: 372.94
+metadata:
+  unit: currency-CAD
+  label: Quebec Child Assistance Tax Credit child minimum amount for the single household supplement.
+  reference:
+  - title: 
+    href: 

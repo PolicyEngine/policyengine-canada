@@ -1,0 +1,9 @@
+description: Quebec Child Assistance Tax Credit minimum amount per child.
+values:
+  2023-01-01: 1_061.21
+metadata:
+  unit: currency-CAD
+  label: Quebec Child Assistance Tax Credit child minimum amount per child.
+  reference:
+  - title: 
+    href: 
