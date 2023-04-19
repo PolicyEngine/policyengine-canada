@@ -1,5 +1,5 @@
 - name: Nova Scotia affordable living tax credit for individual/couple
-  period: 2022
+  period: 2023
   input:
     province_code: NS
     adjusted_family_net_income: 29_999
@@ -8,7 +8,7 @@
 
 
 - name: Nova Scotia affordable living tax credit for family with 1 child
-  period: 2022
+  period: 2023
   input:
     province_code: NS
     adjusted_family_net_income: 29_999
@@ -18,7 +18,7 @@
 
 
 - name: Nova Scotia affordable living tax credit for family with 2 child
-  period: 2022
+  period: 2023
   input:
     province_code: NS
     adjusted_family_net_income: 29_999
@@ -28,7 +28,7 @@
 
 
 - name: Nova Scotia affordable living tax credit for family with 2 child; higher income
-  period: 2022
+  period: 2023
   input:
     province_code: NS
     adjusted_family_net_income: 40_000
