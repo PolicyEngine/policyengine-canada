@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class ns_affordable_living_tax_credits(Variable):
+class ns_affordable_living_tax_credit(Variable):
     value_type = float
     entity = Household
     label = "Nova Scotia affordable living tax credits"
