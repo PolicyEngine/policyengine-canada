@@ -28,9 +28,9 @@ class qc_cost_of_living_credit(Variable):
 
         eligible = (
             is_adult
-            or (is_child and is_father)
-            or (is_child and is_mother)
-            or (is_child and is_emancipated)
+            | (is_child & is_father)
+            | (is_child & is_mother)
+            | (is_child & is_emancipated)
         )
 
         return max_(0, eligible * (p.base - p.reduction.calc(income)))
