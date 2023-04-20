@@ -19,4 +19,6 @@ class benefits(Variable):
         "bc_benefits",
         # New Brunswick programs.
         "nb_benefits",
+        # Nunavut programs.
+        "nu_benefits",
     ]

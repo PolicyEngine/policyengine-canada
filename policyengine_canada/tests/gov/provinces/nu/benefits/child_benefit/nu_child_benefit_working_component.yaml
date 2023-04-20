@@ -1,0 +1,35 @@
+- name: family income over threshold with one child
+  period: 2023
+  input:
+    nu_child_benefit_eligible_children: 1
+    family_working_income: 50_000
+    province_code: NU
+  output:
+    nu_child_benefit_working_component: 500
+
+- name: family income over threshold with two or more children
+  period: 2023
+  input:
+    nu_child_benefit_eligible_children: 1_000
+    family_working_income: 500
+    province_code: NU
+  output:
+    nu_child_benefit_working_component: 500
+
+- name: family income over threshold with one child
+  period: 2023
+  input:
+    nu_child_benefit_eligible_children: 1_000
+    family_working_income: 500
+    province_code: NU
+  output:
+    nu_child_benefit_working_component: 500
+
+- name: family income over threshold with one child
+  period: 2023
+  input:
+    nu_child_benefit_eligible_children: 1_000
+    family_working_income: 500
+    province_code: NU
+  output:
+    nu_child_benefit_working_component: 500
