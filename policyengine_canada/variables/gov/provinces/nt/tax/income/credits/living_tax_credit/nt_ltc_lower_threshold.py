@@ -15,6 +15,4 @@ class nt_ltc_lower_threshold(Variable):
         net_income = person("individual_net_income", period)
         eligible = p.threshold.middle.base >= net_income
 
-        return eligible * (
-            net_income * p.threshold.low_income_rate 
-        )
+        return eligible * (net_income * p.threshold.low_income_rate)

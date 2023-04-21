@@ -13,8 +13,9 @@ class nt_ltc_higher_threshold(Variable):
             period
         ).gov.provinces.nt.tax.income.credits.living_tax_credit
         net_income = person("individual_net_income", period)
-        eligible = (p.threshold.high.base < net_income )
+        eligible = p.threshold.high.base < net_income
 
         return eligible * (
-            (net_income - p.threshold.high.base) * p.threshold.high.rate + p.threshold.high.supplement
+            (net_income - p.threshold.high.base) * p.threshold.high.rate
+            + p.threshold.high.supplement
         )

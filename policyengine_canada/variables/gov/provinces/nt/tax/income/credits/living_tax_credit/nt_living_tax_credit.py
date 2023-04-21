@@ -16,7 +16,4 @@ class nt_living_tax_credit(Variable):
         middle = person("nt_ltc_middle_threshold", period)
         higher = person("nt_ltc_higher_threshold", period)
 
-        return (
-            min_(lower + middle + higher, p.max_amount)
-        )
-
+        return min_(lower + middle + higher, p.max_amount)
