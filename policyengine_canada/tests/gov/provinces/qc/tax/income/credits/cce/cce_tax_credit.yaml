@@ -1,0 +1,63 @@
+- name: Quebec cce tax credit for family income from 0 to 21,555
+  period: 2022
+  input:
+    province_code: QC
+    household_market_income: 21_555
+  output:
+    cce_tax_credit: 16381.8 # 21,555 * 0.76
+
+# - name: Quebec cce tax credit for family income from 21,555	to 38,010	
+#   period: 2022
+#   input:
+#     province_code: QC
+#     household_market_income: 38_010
+#   output:
+#     cce_tax_credit: 28723.05 # 16381.8 + (38,010 - 21,555) * 0.75
+
+# - name: Quebec cce tax credit for family income from 38,010 to 39,415
+#   period: 2022
+#   input:
+#     province_code: QC
+#     household_market_income: 39_415
+#   output:
+#     cce_tax_credit: 29_762.75 # 28723.05 + (39,415 - 38_010) * 0.74
+
+# - name: Quebec cce tax credit for family income from 39,415	to 40,830
+#   period: 2022
+#   input:
+#     province_code: QC
+#     household_market_income: 40_830
+#   output:
+#     cce_tax_credit: 30_795.7 # 29_762.75 + (40,830 - 39,415) * 0.73
+
+# - name: Quebec cce tax credit for family income from 40,830	to 42,220
+#   period: 2022
+#   input:
+#     province_code: QC
+#     household_market_income: 42_220
+#   output:
+#     cce_tax_credit: 31_954.9 # 30_795.7 + (42,220 - 40,830) * 0.72
+  
+# - name: Quebec cce tax credit for family income from 42,220	to 43,635	
+#   period: 2022
+#   input:
+#     province_code: QC
+#     household_market_income: 43_635	
+#   output:
+#     cce_tax_credit: 32_803.35 # 30_795.7 + (43,635 - 42,220) * 0.71
+
+# - name: Quebec cce tax credit for family income from 43,635	to 104,170	
+#   period: 2022
+#   input:
+#     province_code: QC
+#     household_market_income: 104_170	
+#   output:
+#     cce_tax_credit: 75_177.85 # 30_795.7 + (104,170 - 43,635) * 0.7
+
+# - name: Quebec cce tax credit for family income from over 104,170	
+#   period: 2022
+#   input:
+#     province_code: QC
+#     household_market_income: 120_000
+#   output:
+#     cce_tax_credit: 85_783.95 # 30_795.7 + (120,000 - 104,170) * 0.67

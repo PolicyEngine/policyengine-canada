@@ -1,0 +1,42 @@
+description: Quebec tax credit rates for childcare expenses based on family income.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Quebec tax credit rates for childcare expenses
+  reference:
+    - title: Revenu Quebec - Tax Credit for Childcare Expenses
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/tax-credit-for-childcare-expenses/tax-credit-rates-for-2021/
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0.78
+  - threshold:
+      2022-01-01: 21_555
+    rate:
+      2022-01-01: 0.75
+  - threshold:
+      2022-01-01: 38_010
+    rate:
+      2022-01-01: 0.74
+  - threshold:
+      2022-01-01: 39_415
+    rate:
+      2022-01-01: 0.73
+  - threshold:
+      2022-01-01: 40_830
+    rate:
+      2022-01-01: 0.72
+  - threshold:
+      2022-01-01: 42_220
+    rate:
+      2022-01-01: 0.71
+  - threshold:
+      2022-01-01: 43_635
+    rate:
+      2022-01-01: 0.70
+  - threshold:
+      2022-01-01: 104_170
+    rate:
+      2022-01-01: 0.67
