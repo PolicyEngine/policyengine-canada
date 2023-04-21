@@ -1,9 +1,9 @@
-description: Quebec Child Assistance Tax Credit phase out for single households.
+description: Quebec Child Assistance Tax Credit phase out for the single household supplement.
 metadata:
   type: marginal_rate
   threshold_unit: currency-CAD
   rate_unit: /1
-  label: Quebec Child Assistance Tax Credit single households phase out. 
+  label: Quebec Child Assistance Tax Credit single household supplement phase out. 
   reference:
     - title: 
       href: 
