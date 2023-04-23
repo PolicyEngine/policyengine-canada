@@ -330,3 +330,9 @@
     added:
     - New Brunswick Child Tax Benefit.
   date: 2023-04-19 03:05:41
+- bump: patch
+  changes:
+    changed:
+    - Set CWB variable units to CAD.
+    - Rename dependent to dependant everywhere.
+  date: 2023-04-23 17:24:10

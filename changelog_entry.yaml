@@ -1,5 +1,0 @@
-- bump: patch
-  changes:
-    changed:
-      - Set CWB variable units to CAD.
-      - Rename dependent to dependant everywhere.
