@@ -1,0 +1,4 @@
+- bump: patch
+  changes:
+    changed:
+      - Set CWB variable units to CAD.
