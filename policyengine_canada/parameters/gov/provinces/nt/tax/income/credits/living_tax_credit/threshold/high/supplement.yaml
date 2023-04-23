@@ -1,9 +1,9 @@
-description: Northwest Territories living tax credit high income supplement
+description: Northwest Territories cost of living tax credit high income supplement
 values:
   2022-12-31: 762 
 metadata:
   unit: currency-CAD
-  label: Northwest Territories living tax credit high income supplement
+  label: Northwest Territories cost of living tax credit high income supplement
   reference:
   - title: Government of Canada - Credit
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/northwest-territories/5012-tc.html 

@@ -1,9 +1,9 @@
-description: Northwest Territories living tax credit high income rate
+description: Northwest Territories cost of living tax credit high income rate
 values:
   2022-12-31: 0.01
 metadata:
-  unit: year
-  label: Northwest Territories living tax credit high income rate
+  unit: /1
+  label: Northwest Territories cost of living tax credit high income rate
   reference:
   - title: Government of Canada - Credit
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/northwest-territories/5012-tc.html 
