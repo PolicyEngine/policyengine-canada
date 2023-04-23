@@ -6,5 +6,5 @@ class count_children(Variable):
     entity = Household
     label = "Children"
     unit = CAD
-    documentation = "Number of dependent children under the age of 19"
+    documentation = "Number of dependant children under the age of 19"
     definition_period = YEAR

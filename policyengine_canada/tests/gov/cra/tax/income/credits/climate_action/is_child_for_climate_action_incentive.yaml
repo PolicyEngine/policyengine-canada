@@ -1,24 +1,24 @@
-- name: 19-year-old dependent is not a child dependent.
+- name: 19-year-old dependant is not a child dependant.
   period: 2023
   input:
     age: 19
-    is_dependent: true
+    is_dependant: true
   output:
     is_child_for_climate_action_incentive: false
 
-- name: 18-year-old child dependent is.
+- name: 18-year-old child dependant is.
   period: 2023
   input:
     age: 18
-    is_dependent: true
+    is_dependant: true
   output:
     is_child_for_climate_action_incentive: true
 
-- name: 18-year-old non-dependent is not.
+- name: 18-year-old non-dependant is not.
   period: 2023
   input:
     age: 18
-    is_dependent: false
+    is_dependant: false
   output:
     is_child_for_climate_action_incentive: false
 
