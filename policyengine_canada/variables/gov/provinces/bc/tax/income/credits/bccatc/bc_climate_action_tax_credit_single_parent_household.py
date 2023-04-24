@@ -13,6 +13,6 @@ class bc_climate_action_tax_credit_single_parent_household(Variable):
     def formula(household, period, parameters):
         married = household("is_married", period)
         bccatc_children = household(
-            "bc_climate_action_tax_credit_dependent_children", period
+            "bc_climate_action_tax_credit_dependant_children", period
         )
         return ~married & (bccatc_children > 0)
