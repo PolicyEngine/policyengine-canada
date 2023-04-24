@@ -1,0 +1,8 @@
+description: New Brunswick provides these benefits.
+values:
+  2022-01-01:
+    - nb_child_benefit
+
+metadata:
+  unit: program
+  label: New Brunswick benefits
