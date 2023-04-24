@@ -1,0 +1,11 @@
+description: Quebec Child Assistance Tax Credit back to school amount.
+values:
+  2023-01-01: 110
+metadata:
+  unit: currency-CAD
+  label: Quebec Child Assistance Tax Credit child back to school amount.
+  reference:
+  - title: 
+    href: 
+
+#TODO: add back-to-school parameter
