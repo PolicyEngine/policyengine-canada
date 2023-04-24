@@ -1,44 +1,4 @@
-# - name: Over Income threshold
-#   period: 2022
-#   input: 
-#     province_code: SK
-#     adjusted_family_net_income: 60_001
-#     sk_afb_eligible_children: 1
-#     sk_afb_disabled_children: 1
-#   output: 
-#     sk_active_family_benefit: 0
-
-# - name: Under Income threshold with one nondisabled child
-#   period: 2022
-#   input: 
-#     province_code: SK
-#     adjusted_family_net_income: 50_000
-#     sk_afb_eligible_children: 1
-#     sk_afb_disabled_children: 0
-#   output: 
-#     sk_active_family_benefit: 150
-
-# - name: Under Income threshold with one disabled child
-#   period: 2022
-#   input: 
-#     province_code: SK
-#     adjusted_family_net_income: 50_000
-#     sk_afb_eligible_children: 0
-#     sk_afb_disabled_children: 1
-#   output: 
-#     sk_active_family_benefit: 200
-
-# - name: Under Income threshold with two disabled children and two nondisabled children
-#   period: 2022
-#   input: 
-#     province_code: SK
-#     adjusted_family_net_income: 50_000
-#     sk_afb_eligible_children: 2
-#     sk_afb_disabled_children: 2
-#   output: 
-#     sk_active_family_benefit: 700
-
-- name: Integration
+- name: One non disabled child w/ income under 60_000
   period: 2023
   input:
     people:
@@ -46,12 +6,94 @@
         age: 40
       c1:
         age: 12
-        full_custody: false
+        is_disabled: false
     household:
       members: [parent, c1]
       province_code: SK
-      adjusted_family_net_income: 20_000
-      is_married: false
-      family_working_income: 3_000
+      adjusted_family_net_income: 70_000
   output:
-    sk_active_family_benefit: 754.44
+    sk_active_family_benefit: 0
+
+- name: Two disabled parents and one non disabled child w/ income under 60_000
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 40
+        is_disabled: true
+      c1:
+        age: 16
+        is_disabled: false
+    household:
+      members: [parent, c1]
+      province_code: SK
+      adjusted_family_net_income: 40_000
+  output:
+    sk_active_family_benefit: 150
+
+
+- name: Two non disabled parents and one non disabled child and one disabled child w/ income under 60_000
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 40
+        is_disabled: true
+      c1:
+        age: 13
+        is_disabled: true
+      c2:
+        age: 15
+        is_disabled: false
+    household:
+      members: [parent, c1, c2]
+      province_code: SK
+      adjusted_family_net_income: 50_000
+  output:
+    sk_active_family_benefit: 350
+
+
+- name: Household without child
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 40
+    household:
+      members: [parent]
+      province_code: SK
+      adjusted_family_net_income: 20_000
+  output:
+    sk_active_family_benefit: 0
+
+- name: One non disabled child w/ income over 60_000
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 40
+      c1:
+        age: 12
+        is_disabled: false
+    household:
+      members: [parent, c1]
+      province_code: SK
+      adjusted_family_net_income: 70_000
+  output:
+    sk_active_family_benefit: 0
+
+- name: One disabled child w/ income over 60_000
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 40
+      c1:
+        age: 12
+        is_disabled: true
+    household:
+      members: [parent, c1]
+      province_code: SK
+      adjusted_family_net_income: 70_000
+  output:
+    sk_active_family_benefit: 0

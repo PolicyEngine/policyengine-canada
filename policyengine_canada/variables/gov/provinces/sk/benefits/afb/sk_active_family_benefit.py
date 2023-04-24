@@ -12,12 +12,12 @@ class sk_active_family_benefit(Variable):
         income = household("adjusted_family_net_income", period)
         p = parameters(period).gov.provinces.sk.benefits.afb
         person = household.members
-        child = person("age", period) <= p.age_eligibility
+        child = person("age", period) <= p.eligibility.age
         disabled = person("is_disabled", period)
         children = household.sum(child)
         disabled_children = household.sum(child & disabled)
         non_disabled_children = children - disabled_children
-        eligible = income <= p.income_threshold
+        eligible = income <= p.eligibility.income
         amount_if_eligible = (
             p.amount.non_disabled * non_disabled_children
         ) + (p.amount.disabled * disabled_children)
