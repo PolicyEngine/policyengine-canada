@@ -2,7 +2,8 @@
   period: 2022
   input:
     province_code: QC
-    household_market_income: 21_555
+    household_market_income: 21_555 
+    #diable, non-disable
   output:
     cce_tax_credit: 16381.8 # 21,555 * 0.76
 

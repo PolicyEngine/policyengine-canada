@@ -20,6 +20,8 @@ class cce_eligible_child(Variable):
 
         # (b)
         # is_dependant = person("is_dependent", period) #!!!! should also considering > 18
-        # !!! is infirmity??
+        # is_disabled
 
         return age <= p.age_eligibility
+
+        #todo: a child who was your or your spouse's dependant and whose income for the year was not more than $11,081.-> make parameter

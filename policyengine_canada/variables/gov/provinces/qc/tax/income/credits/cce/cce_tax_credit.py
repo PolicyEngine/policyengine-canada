@@ -12,8 +12,8 @@ class cce_tax_credit(Variable):
         p = parameters(period).gov.provinces.qc.tax.income.credits.cce
 
         income = household(
-            "household_market_income", period
-        )  # !! not sure if family income is the household_market_income
+            "adjusted_family_net_income", period
+        )  # adjusted_family_net_income
         eligible = household("cce_eligible_child", period)
         return eligible * (p.rate * income)
 
