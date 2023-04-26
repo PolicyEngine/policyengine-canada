@@ -1,12 +1,12 @@
 from policyengine_canada.model_api import *
 
 
-class is_dependent(Variable):
+class is_dependant(Variable):
     value_type = bool
     entity = Person
-    label = "Is a dependent"
+    label = "Is a dependant"
     definition_period = YEAR
 
-    # Impute dependent status on age.
+    # Impute dependant status on age.
     def formula(person, period, parameters):
         return person("age", period) < 18

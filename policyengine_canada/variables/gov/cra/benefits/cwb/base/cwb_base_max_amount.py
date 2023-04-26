@@ -7,6 +7,7 @@ class cwb_base_max_amount(Variable):
     label = "Canada workers benefit max base amount"
     definition_period = YEAR
     defined_for = "cwb_eligible"
+    unit = CAD
 
     def formula(household, period, parameters):
         p = parameters(period).gov.cra.benefits.cwb.amount
