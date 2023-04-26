@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class nt_living_tax_credit(Variable):
     value_type = float
     entity = Person
-    label = "Max for living tax credit"
+    label = "Northwest Territories cost of living tax credit"
     definition_period = YEAR
     defined_for = ProvinceCode.NT
 

@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class nt_ltc_lower_threshold(Variable):
     value_type = float
     entity = Person
-    label = "Lower income for living tax credit"
+    label = "Northwest Territories lower income for cost of living tax credit"
     definition_period = YEAR
     defined_for = ProvinceCode.NT
 

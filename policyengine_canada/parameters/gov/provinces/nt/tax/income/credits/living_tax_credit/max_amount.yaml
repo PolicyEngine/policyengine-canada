@@ -1,9 +1,9 @@
-description: Northwest Territories Credit cost of living tax credit maximum aount
+description: Northwest Territories Credit cost of living tax credit maximum amount in 2022
 values:
   2022-12-31: 942 
 metadata:
   unit: currency-CAD
-  label: Northwest Territories Credit cost of living tax credit maximum aount
+  label: Northwest Territories Credit cost of living tax credit maximum amount in 2022
   reference:
   - title: Government of Canada - Credit
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/northwest-territories/5012-tc.html 
