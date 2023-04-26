@@ -14,4 +14,3 @@ class yt_childrens_fitness_tax_credit_disability_supplement(Variable):
             period
         ).gov.provinces.yt.tax.income.credits.childrens_fitness_tax_credit.disability_supplement
         return disabled_children * p.base
-
