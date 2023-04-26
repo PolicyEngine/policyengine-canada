@@ -2,11 +2,7 @@ description: Quebec childcare expense limit for disabled child.
 values:
   2022-01-01: 14_605
 metadata:
-  type: single_amount
-  threshold_unit: year
-  amount_unit: currency-CAD
-  period: year
-  name: disabled_child_limit_amount
+  unit: currency-CAD
   label: Quebec childcare expense limit for disabled child
   reference:
     - title: Revenu Quebec - Calculating the Tax Credit for Childcare Expenses
