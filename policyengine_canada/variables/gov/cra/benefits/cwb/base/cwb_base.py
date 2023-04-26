@@ -6,6 +6,7 @@ class cwb_base(Variable):
     entity = Household
     label = "Canada workers benefit base amount"
     definition_period = YEAR
+    unit = CAD
 
     def formula(household, period, parameters):
         max_amount = household("cwb_base_max_amount", period)

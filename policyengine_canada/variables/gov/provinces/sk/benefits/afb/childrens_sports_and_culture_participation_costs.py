@@ -1,10 +1,9 @@
 from policyengine_canada.model_api import *
 
 
-class count_children(Variable):
+class childrens_sport_and_culture_participation_costs(Variable):
     value_type = int
     entity = Household
-    label = "Children"
     unit = CAD
-    documentation = "Number of dependant children under the age of 19"
+    label = " Childrens Sport and Culture Participation Costs"
     definition_period = YEAR
