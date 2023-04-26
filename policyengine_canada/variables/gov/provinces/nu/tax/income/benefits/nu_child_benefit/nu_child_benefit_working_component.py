@@ -14,7 +14,7 @@ class nu_child_benefit_working_component(Variable):
         p = parameters(
             period
         ).gov.provinces.nu.tax.benefits.nucb.working_component
-        phase_in_amount = p.phase_out_rate.calc(income)
+        phase_in_amount = p.phase_in_rate.calc(income)
         max_amount = select(
             [children == 1, children > 1],
             [p.single_child, p.single_child + p.two_or_more_children],

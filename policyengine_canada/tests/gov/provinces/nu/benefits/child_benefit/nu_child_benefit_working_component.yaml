@@ -1,35 +1,45 @@
-- name: family income over threshold with one child
+- name: phase in amout over child workers max supplement with one eligible child
   period: 2023
   input:
     nu_child_benefit_eligible_children: 1
+    family_working_income: 13_750
+    province_code: NU
+  output:
+    nu_child_benefit_working_component: 274.92
+
+- name: phase in amout below child workers max supplement with one eligible child
+  period: 2023
+  input:
+    nu_child_benefit_eligible_children: 1
+    family_working_income: 5_000
+    province_code: NU
+  output:
+    nu_child_benefit_working_component: 55
+
+- name: phase in amout over child workers max supplement with two eligible child
+  period: 2023
+  input:
+    nu_child_benefit_eligible_children: 2
     family_working_income: 50_000
     province_code: NU
   output:
-    nu_child_benefit_working_component: 500
+    nu_child_benefit_working_component: 349.92
 
-- name: family income over threshold with two or more children
+- name: phase in amout below child workers max supplement with two or more eligible child
   period: 2023
   input:
-    nu_child_benefit_eligible_children: 1_000
-    family_working_income: 500
+    nu_child_benefit_eligible_children: 3
+    family_working_income: 5_000
     province_code: NU
   output:
-    nu_child_benefit_working_component: 500
+    nu_child_benefit_working_component: 55
 
-- name: family income over threshold with one child
+- name: phase in amout over child workers max supplement with no eligible child
   period: 2023
   input:
-    nu_child_benefit_eligible_children: 1_000
-    family_working_income: 500
+    nu_child_benefit_eligible_children: 0
+    family_working_income: 50_000
     province_code: NU
   output:
-    nu_child_benefit_working_component: 500
+    nu_child_benefit_working_component: 0
 
-- name: family income over threshold with one child
-  period: 2023
-  input:
-    nu_child_benefit_eligible_children: 1_000
-    family_working_income: 500
-    province_code: NU
-  output:
-    nu_child_benefit_working_component: 500

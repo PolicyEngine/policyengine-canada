@@ -4,7 +4,7 @@
     province_code: NU
     age: 12
   output:
-    nb_child_benefit_eligible_child: true
+    nu_child_benefit_eligible_child: true
 
 - name: Ineligible right on threshold
   period: 2023
@@ -12,7 +12,7 @@
     province_code: NU
     age: 18
   output:
-    nb_child_benefit_eligible_child: false
+    nu_child_benefit_eligible_child: false
 
 - name: Ineligible
   period: 2023
@@ -20,4 +20,4 @@
     province_code: NU
     age: 25
   output:
-    nb_child_benefit_eligible_child: false
+    nu_child_benefit_eligible_child: false
