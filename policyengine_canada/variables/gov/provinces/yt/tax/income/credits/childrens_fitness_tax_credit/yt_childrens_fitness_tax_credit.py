@@ -12,10 +12,13 @@ class yt_childrens_fitness_tax_credit(Variable):
         total_children = household("yt_cftc_eligible_children", period)
         person = household.members
         fees = person("child_physical_activities_fees", period)
-        disability_fees = household(
+        disability_supplement = household(
             "yt_childrens_fitness_tax_credit_disability_supplement", period
         )
         p = parameters(
             period
         ).gov.provinces.yt.tax.income.credits.childrens_fitness_tax_credit
-        return min_(fees * p.rate, total_children * p.base) + disability_fees
+        return (
+            min_(fees * p.rate, total_children * p.base)
+            + disability_supplement
+        )

@@ -1,4 +1,4 @@
-- name: Over Disabled Eligible Age
+- name: Over Disabled Eligible Age & over eligible fees
   period: 2022
   input:
     province_code: YT
@@ -8,7 +8,7 @@
   output:
     yt_cftc_disabled_child: false
 
-- name: Over Disabled Eligible Age
+- name: Over Disabled Eligible Age & under eligible fees
   period: 2022
   input:
     province_code: YT
@@ -18,7 +18,7 @@
   output:
     yt_cftc_disabled_child: false
 
-- name: Under Disabled Eligible Age
+- name: Under Disabled Eligible Age & under eligible fees
   period: 2022
   input:
     province_code: YT
@@ -28,7 +28,7 @@
   output:
     yt_cftc_disabled_child: false
 
-- name: Under Disabled Eligible Age
+- name: Under Disabled Eligible Age & over eligible fees
   period: 2022
   input:
     province_code: YT
