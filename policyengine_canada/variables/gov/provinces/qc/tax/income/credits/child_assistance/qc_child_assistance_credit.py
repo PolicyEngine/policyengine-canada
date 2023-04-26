@@ -14,8 +14,6 @@ class qc_child_assistance_credit(Variable):
         children = household("qc_child_assistance_credit_children", period)
         p = parameters(period).gov.provinces.qc.tax.income.credits.child_assitance
         minimum_amount = children * p.min_amount
-        return max_(minimum_amount, base - reduction)
-        
-
-
-#TODO: Add supplement
+        supplement = household("qc_child_assistance_credit_supplement", period)
+        back_to_school = household("qc_child_assistance_credit_back_to_school_amount", period)
+        return max_(minimum_amount, base - reduction) + supplement + back_to_school

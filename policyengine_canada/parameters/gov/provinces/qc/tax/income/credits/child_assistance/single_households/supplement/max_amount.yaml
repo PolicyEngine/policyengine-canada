@@ -1,6 +1,6 @@
 description: Quebec Child Assistance Tax Credit maximum amount for the single household supplement.
 values:
-  2023-01-01: 935.49.
+  2023-01-01: 935.49
 metadata:
   unit: currency-CAD
   label: Quebec Child Assistance Tax Credit single household supplment min amount
