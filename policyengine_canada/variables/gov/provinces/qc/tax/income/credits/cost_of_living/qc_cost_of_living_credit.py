@@ -19,18 +19,12 @@ class qc_cost_of_living_credit(Variable):
         # (a) were the father or mother of a child who lived with you; or
         # (b) were recognized as an emancipated minor by a competent authority (such as a court)
         is_adult = person("is_adult", period)
-        is_child = person("is_child", period)
+
         # (a)
-        is_father = person("is_father", period)
-        is_mother = person("is_mother", period)
+        is_parent = person("own_children_in_household", period) > 0
         # (b)
         is_emancipated = person("is_emancipated", period)
 
-        eligible = (
-            is_adult
-            | (is_child & is_father)
-            | (is_child & is_mother)
-            | (is_child & is_emancipated)
-        )
-
-        return max_(0, eligible * (p.base - p.reduction.calc(income)))
+        eligible = is_adult | is_parent | is_emancipated
+        amount_if_eligible = max_(0, p.base - p.reduction.calc(income))
+        return eligible * amount_if_eligible
