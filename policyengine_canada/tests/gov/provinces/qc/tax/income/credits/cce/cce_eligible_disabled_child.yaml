@@ -1,37 +1,55 @@
-- name: The child had an infirmity and was dependent 
+- name: The child had an infirmity and was his or her parents' own child 
   period: 2022
   input:
-    is_dependent: true
+    individual_net_income: 20_000 #no matter about income
+    is_own_child: true
+    is_dependant: true
     is_disabled: true
     province_code: QC
   output:
     cce_eligible_disabled_child: true
 
-- name: The child had an infirmity but was independent
+- name: This child had an infirmity and was a dependant, but not a own child with income above limit
   period: 2022
   input:
-    is_dependent: true
+    individual_net_income: 20_000 #above limit
+    is_own_child: false
+    is_dependant: true
+    is_disabled: true
+    province_code: QC
+  output:
+    cce_eligible_disabled_child: false
+
+- name: This child had an infirmity and was a dependant, but not a own child with income below limit
+  period: 2022
+  input:
+    individual_net_income: 11_000 
+    is_own_child: false
+    is_dependant: true
+    is_disabled: true
+    province_code: QC
+  output:
+    cce_eligible_disabled_child: true
+
+- name: The child didn't had an infirmity but was a own child
+  period: 2022
+  input:
+    individual_net_income: 20_000 
+    is_own_child: true
+    is_dependant: true
     is_disabled: false
     province_code: QC
   output:
     cce_eligible_disabled_child: false
 
-- name: The child didn't had an infirmity but was dependent
+
+- name: The child didn't had an infirmity but was a dependant
   period: 2022
   input:
-    is_dependent: true
+    individual_net_income: 20_000 
+    is_own_child: false
+    is_dependant: true
     is_disabled: false
     province_code: QC
   output:
     cce_eligible_disabled_child: false
-
-- name: The child didn't had an infirmity and was independent
-  period: 2022
-  input:
-    is_dependent: false
-    is_disabled: false
-    province_code: QC
-  output:
-    cce_eligible_disabled_child: false
-
-

@@ -9,9 +9,14 @@ class cce_eligible_disabled_child(Variable):
     defined_for = ProvinceCode.QC
 
     def formula(person, period, parameters):
-        dependent = person("is_dependent", period)
+        p = parameters(period).gov.provinces.qc.tax.income.credits.cce
+
+        income = person("individual_net_income", period)
+
+        own_child = person("is_own_child", period)
+        dependant = person("is_dependant", period)
         disabled = person("is_disabled", period)
 
-        return dependent & disabled
-
-        # todo: a child who was your or your spouse's dependant and whose income for the year was not more than $11,081.-> make parameter
+        return (own_child & disabled) | (
+            dependant & disabled & (income <= p.child_income_limit)
+        )
