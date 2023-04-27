@@ -6,6 +6,7 @@ class cwb_base_phase_in(Variable):
     entity = Household
     label = "Canada workers benefit base phase in"
     definition_period = YEAR
+    unit = CAD
 
     def formula(household, period, parameters):
         income = household("family_working_income", period)
