@@ -1,67 +1,23 @@
-- name: Quebec cce tax credit for family income from 42,220	to 43,635	
+- name: Quebec cce disabled children credit for family income from 43,635	to 104,170, above limit
   period: 2022
   input:
-    # age: specific age???
-    childcare_expenses: 22_000
-    adjusted_family_net_income: 43_000 
-    cce_eligible_nondisabled_children: 0
-    cce_eligible_disabled_children: 2
+    childcare_costs: 50_000
+    adjusted_family_net_income: 80_000 
+    cce_eligible_nondisabled_young_children: 1
+    cce_eligible_nondisabled_old_children: 1
+    cce_eligible_disabled_children: 1
     province_code: QC
   output:
-    cce_tax_credit: 29_210 # 2*min(0.71*22000, 14605) = 2*14605
+    cce_tax_credit: 30_655 # min(50000*0.70, 14605+10675+5375) = min(35000,30655)
 
-# - name: Quebec cce tax credit for family income from 21,555	to 38,010	
-#   period: 2022
-#   input:
-#     province_code: QC
-#     household_market_income: 38_010
-#   output:
-#     cce_tax_credit: 28723.05 # 16381.8 + (38,010 - 21,555) * 0.75
-
-# - name: Quebec cce tax credit for family income from 38,010 to 39,415
-#   period: 2022
-#   input:
-#     province_code: QC
-#     household_market_income: 39_415
-#   output:
-#     cce_tax_credit: 29_762.75 # 28723.05 + (39,415 - 38_010) * 0.74
-
-# - name: Quebec cce tax credit for family income from 39,415	to 40,830
-#   period: 2022
-#   input:
-#     province_code: QC
-#     household_market_income: 40_830
-#   output:
-#     cce_tax_credit: 30_795.7 # 29_762.75 + (40,830 - 39,415) * 0.73
-
-# - name: Quebec cce tax credit for family income from 40,830	to 42,220
-#   period: 2022
-#   input:
-#     province_code: QC
-#     household_market_income: 42_220
-#   output:
-#     cce_tax_credit: 31_954.9 # 30_795.7 + (42,220 - 40,830) * 0.72
-  
-# - name: Quebec cce tax credit for family income from 42,220	to 43,635	
-#   period: 2022
-#   input:
-#     province_code: QC
-#     household_market_income: 43_635	
-#   output:
-#     cce_tax_credit: 32_803.35 # 30_795.7 + (43,635 - 42,220) * 0.71
-
-# - name: Quebec cce tax credit for family income from 43,635	to 104,170	
-#   period: 2022
-#   input:
-#     province_code: QC
-#     household_market_income: 104_170	
-#   output:
-#     cce_tax_credit: 75_177.85 # 30_795.7 + (104,170 - 43,635) * 0.7
-
-# - name: Quebec cce tax credit for family income from over 104,170	
-#   period: 2022
-#   input:
-#     province_code: QC
-#     household_market_income: 120_000
-#   output:
-#     cce_tax_credit: 85_783.95 # 30_795.7 + (120,000 - 104,170) * 0.67
+- name: Quebec cce disabled children credit for family income from 43,635	to 104,170, within limit
+  period: 2022
+  input:
+    childcare_costs: 40_000
+    adjusted_family_net_income: 80_000 
+    cce_eligible_nondisabled_young_children: 1
+    cce_eligible_nondisabled_old_children: 1
+    cce_eligible_disabled_children: 1
+    province_code: QC
+  output:
+    cce_tax_credit: 28_000 # min(40000*0.70, 14605+10675+5375) = min(28000,30655)

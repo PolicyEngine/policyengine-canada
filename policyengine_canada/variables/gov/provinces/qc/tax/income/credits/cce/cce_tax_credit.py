@@ -10,24 +10,26 @@ class cce_tax_credit(Variable):
 
     def formula(household, period, parameters):
         p = parameters(period).gov.provinces.qc.tax.income.credits.cce
-        age = person("age", period)
 
         income = household("adjusted_family_net_income", period)
         credit_rate = p.rate.calc(income)
 
-        expenses = person("childcare_expenses", period)
+        expenses = household("childcare_costs", period)
 
-        eligible_nondisabled_children = household(
-            "cce_eligible_nondisabled_children", period
+        eligible_nondisabled_young_children = household(
+            "cce_eligible_nondisabled_young_children", period
+        )
+        eligible_nondisabled_old_children = household(
+            "cce_eligible_nondisabled_old_children", period
         )
         eligible_disabled_children = household(
             "cce_eligible_disabled_children", period
         )
-
-        return eligible_disabled_children * min_(
-            expenses * credit_rate, p.disabled_child_credit_limit
-        ) + eligible_nondisabled_children * min_(
-            expenses * credit_rate, p.nondisabled_child_credit_limit.calc(age)
+        credit_limit = (
+            eligible_nondisabled_young_children
+            * p.nondisabled_young_child_credit_limit
+            + eligible_nondisabled_old_children
+            * p.nondisabled_old_child_credit_limit
+            + eligible_disabled_children * p.disabled_child_credit_limit
         )
-
-# todo: separate the nondisable and disable, then add[]
+        return min_(expenses * credit_rate, credit_limit)

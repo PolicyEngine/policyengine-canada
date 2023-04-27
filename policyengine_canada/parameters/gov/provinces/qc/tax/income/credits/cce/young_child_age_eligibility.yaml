@@ -1,0 +1,9 @@
+description: Quebec increase the childcare expenses limit to children bolow this age. 
+values:
+  2022-01-01: 7
+metadata:
+  unit: year
+  label: Quebec children care expenses young child age eligibility
+  reference:
+  - title: Revenu Quebec - Requirements for the Tax Credit for Children Expenses
+    href: https://www.revenuquebec.ca/en/citizens/tax-credits/tax-credit-for-childcare-expenses/requirements/ 

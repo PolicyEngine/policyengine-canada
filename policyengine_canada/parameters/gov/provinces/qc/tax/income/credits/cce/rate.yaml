@@ -2,40 +2,40 @@ description: Quebec tax credit rates for childcare expenses based on family inco
 brackets:
   - threshold:
       2022-01-01: 0
-    rate:
+    amount:
       2022-01-01: 0.78
   - threshold:
       2022-01-01: 21_555
-    rate:
+    amount:
       2022-01-01: 0.75
   - threshold:
       2022-01-01: 38_010
-    rate:
+    amount:
       2022-01-01: 0.74
   - threshold:
       2022-01-01: 39_415
-    rate:
+    amount:
       2022-01-01: 0.73
   - threshold:
       2022-01-01: 40_830
-    rate:
+    amount:
       2022-01-01: 0.72
   - threshold:
       2022-01-01: 42_220
-    rate:
+    amount:
       2022-01-01: 0.71
   - threshold:
       2022-01-01: 43_635
-    rate:
+    amount:
       2022-01-01: 0.70
   - threshold:
       2022-01-01: 104_170
-    rate:
+    amount:
       2022-01-01: 0.67
 metadata:
-  type: single_rate
+  type: single_amount
   threshold_unit: currency-CAD
-  rate_unit: /1
+  amount_unit: /1
   label: Quebec tax credit rates for childcare expenses
   reference:
     - title: Revenu Quebec - Tax Credit for Childcare Expenses
