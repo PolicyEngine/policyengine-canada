@@ -1,0 +1,44 @@
+- name: Under reduction amount
+  period: 2023
+  input:
+    adjusted_family_net_income: 25_934
+    acfb_eligible_children: 1
+    province_code: AB
+  output:
+    acfb_base_component_reduction: 0
+
+- name: One child reduction # (30_000 - 25_935) * 0.0805
+  period: 2023
+  input:
+    adjusted_family_net_income: 30_000
+    acfb_eligible_children: 1
+    province_code: AB
+  output:
+    acfb_base_component_reduction: 327.2325
+
+- name: Two children reduction # (30_000 - 25_935) * 0.1207
+  period: 2023
+  input:
+    adjusted_family_net_income: 30_000
+    acfb_eligible_children: 2
+    province_code: AB
+  output:
+    acfb_base_component_reduction: 490.6455
+
+- name: Three children reduction # (30_000 - 25_935) * 0.1609
+  period: 2023
+  input:
+    adjusted_family_net_income: 30_000
+    acfb_eligible_children: 3
+    province_code: AB
+  output:
+    acfb_base_component_reduction: 654.0585
+
+- name: Five children reduction # (30_000 - 25_935) * 0.2011
+  period: 2023
+  input:
+    adjusted_family_net_income: 30_000
+    acfb_eligible_children: 5
+    province_code: AB
+  output:
+    acfb_base_component_reduction: 817.4715
