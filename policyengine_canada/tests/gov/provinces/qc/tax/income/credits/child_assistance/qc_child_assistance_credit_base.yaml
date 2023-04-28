@@ -1,0 +1,15 @@
+- name: One child
+  period: 2023
+  input:
+    province_code: QC
+    qc_child_assistance_credit_children: 1
+  output:
+    qc_child_assistance_credit_base: 2_668.19
+
+- name: Three children
+  period: 2023
+  input:
+    province_code: QC
+    qc_child_assistance_credit_children: 3
+  output:
+    qc_child_assistance_credit_base: 8_004.57

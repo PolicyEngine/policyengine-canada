@@ -1,0 +1,23 @@
+- name: Under eligiblity at 16
+  period: 2023
+  input:
+    province_code: QC
+    age: 16
+  output:
+    qc_child_assistance_credit_child: True
+
+- name: 18 years-old
+  period: 2023
+  input:
+    province_code: QC
+    age: 18
+  output:
+    qc_child_assistance_credit_child: False
+
+- name: Over eligibility 
+  period: 2023
+  input:
+    province_code: QC
+    age: 19
+  output:
+    qc_child_assistance_credit_child: False

@@ -1,0 +1,7 @@
+# - name: 
+#   period: 2023
+#   input:
+#     province_code: QC
+#     qc_taxable_income: 49_275
+#   output:
+#     qc_income_tax_before_credits: 

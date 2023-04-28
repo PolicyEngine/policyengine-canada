@@ -10,4 +10,4 @@ class qc_child_assistance_credit_child(Variable):
 
     def formula(person, period, parameters):
         age = person("age", period)
-        return age < parameters(period).gov.provinces.qc.tax.income.credits.child_assitance.age_eligibility
+        return age < parameters(period).gov.provinces.qc.tax.income.credits.child_assistance.age_eligibility

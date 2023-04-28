@@ -13,5 +13,5 @@ class qc_child_assistance_credit_back_to_school_amount(Variable):
         child = person("qc_child_assistance_credit_child", period)
         in_school = person("is_of_school_age", period)
         eligible = child & in_school
-        p = parameters(period).gov.provinces.qc.tax.income.credits.child_assitance
+        p = parameters(period).gov.provinces.qc.tax.income.credits.child_assistance
         return eligible * p.qc_child_assistance_credit_back_to_school_amount
