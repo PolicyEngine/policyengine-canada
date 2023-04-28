@@ -305,3 +305,44 @@
     added:
     - modelled_policies.yaml with content for modal dialog.
   date: 2023-03-28 03:30:52
+- bump: patch
+  changes:
+    changed:
+    - Pin pydata-sphinx-theme==0.13.1 to fix a jupyterbook build issue.
+  date: 2023-03-29 23:52:19
+- bump: minor
+  changes:
+    added:
+    - Yukon child benefit.
+  date: 2023-03-30 01:24:26
+- bump: minor
+  changes:
+    added:
+    - Yukon Children's arts amount.
+  date: 2023-04-06 02:49:58
+- bump: minor
+  changes:
+    added:
+    - Quebec income tax rate.
+  date: 2023-04-17 23:12:32
+- bump: minor
+  changes:
+    added:
+    - New Brunswick Child Tax Benefit.
+  date: 2023-04-19 03:05:41
+- bump: patch
+  changes:
+    changed:
+    - Set CWB variable units to CAD.
+    - Rename dependent to dependant everywhere.
+  date: 2023-04-23 17:24:10
+- bump: minor
+  changes:
+    added:
+    - Active Families Benefit.
+  date: 2023-04-26 20:30:04
+- bump: minor
+  changes:
+    added:
+    - Quebec cost of living tax credit.
+  date: 2023-04-28 02:39:42
