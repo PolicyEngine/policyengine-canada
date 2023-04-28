@@ -1,0 +1,10 @@
+description: Quebec provides up to this base amount in its cost of living tax credit.
+values:
+  2022-01-01: 600
+metadata:
+  unit: currency-CAD
+  label: Quebec cost of living tax credit base amount 
+  reference:
+    - title: Revenu Quebec - New Refundable Cost of Living Tax Credit
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/new-refundable-cost-of-living-tax-credit/
+ # Can't find a legal reference.

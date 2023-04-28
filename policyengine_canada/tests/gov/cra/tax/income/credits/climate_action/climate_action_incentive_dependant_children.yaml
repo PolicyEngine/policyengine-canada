@@ -3,4 +3,4 @@
   input:
     is_child_for_climate_action_incentive: 1
   output:
-    climate_action_incentive_dependent_children: 1
+    climate_action_incentive_dependant_children: 1
