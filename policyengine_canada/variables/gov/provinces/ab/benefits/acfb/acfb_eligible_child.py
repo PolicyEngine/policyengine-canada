@@ -9,6 +9,6 @@ class acfb_eligible_child(Variable):
     defined_for = ProvinceCode.AB
 
     def formula(person, period, parameters):
-        p = parameters(period).gov.provinces.ab.tax.income.benefits.acfb
+        p = parameters(period).gov.provinces.ab.benefits.acfb
         age = person("age", period)
         return age < p.age_eligibility

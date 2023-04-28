@@ -9,9 +9,6 @@ class acfb_base_component(Variable):
     defined_for = ProvinceCode.AB
 
     def formula(household, period, parameters):
-        p = parameters(
-            period
-        ).gov.provinces.ab.tax.income.benefits.acfb.base_component
-        income = household("adjusted_family_net_income", period)
+        reduction = household("acfb_base_component_reduction", period)
         base = household("acfb_base_component_base", period)
-        return max_(0, base - p.reduction.calc(income))
+        return max_(0, base - reduction)

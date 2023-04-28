@@ -1,0 +1,35 @@
+- name: One child # (47_000 - 43_460) * 0.034
+  period: 2023
+  input:
+    acfb_eligible_children: 1
+    adjusted_family_net_income: 47_000
+    province_code: AB
+  output:
+    acfb_working_component_reduction: 120.36
+
+- name: Below phase-out start
+  period: 2023
+  input:
+    acfb_eligible_children: 3
+    adjusted_family_net_income: 43_460
+    province_code: AB
+  output:
+    acfb_working_component_reduction: 0
+
+- name: Five children # (47_000 - 43_460) * 0.0895
+  period: 2023
+  input:
+    acfb_eligible_children: 5
+    adjusted_family_net_income: 47_000
+    province_code: AB
+  output:
+    acfb_working_component_reduction: 316.83
+
+- name: Two children # (47_000 - 43_460) * 0.0649
+  period: 2023
+  input:
+    acfb_eligible_children: 2
+    adjusted_family_net_income: 47_000
+    province_code: AB
+  output:
+    acfb_working_component_reduction: 229.746

@@ -1,0 +1,26 @@
+- name: Capped at 0
+  period: 2023
+  input:
+    acfb_working_component_base: 1_000
+    acfb_working_component_reduction: 2_000
+    province_code: AB
+  output:
+    acfb_working_component: 0
+
+- name: Capped at 0
+  period: 2023
+  input:
+    acfb_working_component_base: 1_000
+    acfb_working_component_reduction: 2_000
+    province_code: AB
+  output:
+    acfb_working_component: 0
+
+- name: No reduction
+  period: 2023
+  input:
+    acfb_working_component_base: 1_000
+    acfb_working_component_reduction: 0
+    province_code: AB
+  output:
+    acfb_working_component: 1_000

@@ -1,9 +1,0 @@
-- name: Under reduction amount
-  period: 2023
-  input:
-    adjusted_family_net_income: 25_935
-    acfb_working_component_phase_in: 1_000
-    province_code: AB
-  output:
-    acfb_working_component: 1_000
-
