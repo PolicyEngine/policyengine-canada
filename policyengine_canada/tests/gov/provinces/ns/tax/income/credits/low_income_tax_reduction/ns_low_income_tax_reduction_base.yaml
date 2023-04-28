@@ -9,7 +9,7 @@
         is_spouse: true
       dependent:
         age: 19
-        is_dependent: true
+        is_dependant: true
     household:
       members: [head, spouse, dependent]
       province_code: NS
