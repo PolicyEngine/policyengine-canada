@@ -1,4 +1,4 @@
-description: Nova Scotia low-income tax reduction phase-out rate.
+description: The income dependent phase-out rate of the Nova Scotia low-income tax reduction.
 metadata:
   type: marginal_rate
   threshold_unit: currency-CAD
