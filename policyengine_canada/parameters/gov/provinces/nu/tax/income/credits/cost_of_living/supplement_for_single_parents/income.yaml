@@ -1,0 +1,9 @@
+description: Nunavut provides single parents a cost of living credit supplement if their adjusted net income is at least this amount.
+values:
+  2022-01-01: 60_000
+metadata:
+  unit: currency-CAD
+  label: Nunavut cost of living credit supplement minimum income
+  reference:
+  - title: Nunavut Credits - Form NU479 
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5014-tc/5014-tc-22e.pdf
