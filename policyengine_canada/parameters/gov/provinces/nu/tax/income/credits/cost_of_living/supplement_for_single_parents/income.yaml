@@ -1,4 +1,4 @@
-description: The minimum adjusted net income needed in Nunavut to receive the cost of living credit supplement for single parents.
+description: Nunavut provides single parents a cost of living credit supplement if their adjusted net income is at least this amount.
 values:
   2022-01-01: 60_000
 metadata:
