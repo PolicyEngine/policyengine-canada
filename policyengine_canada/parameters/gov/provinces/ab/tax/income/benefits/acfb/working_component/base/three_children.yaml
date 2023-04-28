@@ -1,9 +1,10 @@
-description: Alberta Child and Family Benefit working amount for the third childrens.
+description: Alberta provides this Child and Family Benefit working component amount for the third child.
 values:
   2022-07-01: 371 # $30.91 monthly.
   2023-01-01: 393 # $32.75 monthly
 metadata:
   unit: currency-CAD
+  period: year
   label: Alberta Child and Family Benefit the third childrens working amount
   reference:
   - title: Government of Canada - Alberta Child and Family Benefit

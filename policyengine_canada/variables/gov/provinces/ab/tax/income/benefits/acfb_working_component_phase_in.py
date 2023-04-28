@@ -11,10 +11,10 @@ class acfb_working_component_phase_in(Variable):
     def formula(household, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.ab.tax.income.benefits.acfb.working_component
+        ).gov.provinces.ab.tax.income.benefits.acfb.working_component.phase_in
         employment_income = household("family_employment_income", period)
         max_amount = household("acfb_working_component_base", period)
-        rate = p.phase_in.rate
-        start = p.phase_in.start
-        eligible = employment_income > start
-        return eligible * min_(max_amount, (employment_income * rate))
+        eligible = employment_income > p.start
+        uncapped = employment_income * p.rate
+        capped = min_(max_amount, uncapped)
+        return eligible * capped

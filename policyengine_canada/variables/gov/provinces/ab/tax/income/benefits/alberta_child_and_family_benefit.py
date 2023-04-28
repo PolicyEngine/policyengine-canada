@@ -8,7 +8,4 @@ class alberta_child_and_family_benefit(Variable):
     definition_period = YEAR
     defined_for = ProvinceCode.AB
 
-    adds = [
-        "acfb_base_component",
-        "acfb_working_component",
-    ]
+    adds = ["acfb_base_component", "acfb_working_component"]
