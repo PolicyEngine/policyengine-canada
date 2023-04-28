@@ -346,3 +346,8 @@
     added:
     - Quebec cost of living tax credit.
   date: 2023-04-28 02:39:42
+- bump: minor
+  changes:
+    added:
+    - Nunavut cost of living credit.
+  date: 2023-04-28 03:39:27
