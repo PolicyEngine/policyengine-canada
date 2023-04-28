@@ -1,0 +1,10 @@
+Description: NewFoundland and Labrador provides this amount in Prenatal Infant Nutrition Supplement under the Child Benefit.
+Values:
+  2023-01-01: 1_800
+metadata:
+  unit: currency-CAD
+  label: NewFoundland and Labrador Prenatal Infant income supplement 
+  reference:
+    - title: NewFoundland and Labrador Prenatal Infant income supplement 
+      href: https://www.gov.nl.ca/cssd/income-support/child/
+    
