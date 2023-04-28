@@ -1,0 +1,15 @@
+- name: Calculation #(20_000 - 15_000) * 0.05 = 250
+  period: 2023
+  input:
+    province_code: NS
+    adjusted_family_net_income: 20_000
+  output:
+    ns_low_income_tax_reduction_reduction: 250
+
+- name: Under reduction rate
+  period: 2023
+  input:
+    province_code: NS
+    adjusted_family_net_income: 10_000
+  output:
+    ns_low_income_tax_reduction_reduction: 0

@@ -1,0 +1,23 @@
+- name: One child
+  period: 2023
+  input:
+    province_code: NS
+    ns_low_income_tax_reduction_eligible_children: 1
+  output:
+    ns_low_income_tax_reduction_base_children: 165
+
+- name: Two children
+  period: 2023
+  input:
+    province_code: NS
+    ns_low_income_tax_reduction_eligible_children: 2
+  output:
+    ns_low_income_tax_reduction_base_children: 330
+
+- name: No children
+  period: 2023
+  input:
+    province_code: NS
+    ns_low_income_tax_reduction_eligible_children: 0
+  output:
+    ns_low_income_tax_reduction_base_children: 0

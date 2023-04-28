@@ -1,0 +1,45 @@
+- name: One child phased in
+  period: 2023
+  input:
+    acfb_eligible_children: 1
+    family_employment_income: 10_000
+    province_code: AB
+  output:
+    acfb_working_component_base: 722
+
+- name: Five children phased in (capped at 4)
+  period: 2023
+  input:
+    acfb_eligible_children: 5
+    family_employment_income: 40_000
+    province_code: AB
+  output:
+    acfb_working_component_base: 1_902
+
+- name: Below eligibility 
+  period: 2023
+  input:
+    acfb_eligible_children: 3
+    family_employment_income: 2_759
+    province_code: AB
+  output:
+    acfb_working_component_base: 0
+
+
+- name: Three children phasing in # (5_000 - 2_760) * 0.15 
+  period: 2023
+  input:
+    acfb_eligible_children: 3
+    family_employment_income: 5_000
+    province_code: AB
+  output:
+    acfb_working_component_base: 336
+
+- name: Three children phased in 
+  period: 2023
+  input:
+    acfb_eligible_children: 3
+    family_employment_income: 20_000
+    province_code: AB
+  output:
+    acfb_working_component_base: 1_772
