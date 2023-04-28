@@ -13,7 +13,7 @@ class slic_base(Variable):
         children = household("slic_eligible_children", period)
         married = household("is_married", period)
         return (
-            p.base.base
+            p.base.head
             + married * p.base.spouse
             + min_(children * p.base.child, p.child_max_amount)
         )
