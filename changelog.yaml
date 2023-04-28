@@ -341,3 +341,8 @@
     added:
     - Active Families Benefit.
   date: 2023-04-26 20:30:04
+- bump: minor
+  changes:
+    added:
+    - Quebec cost of living tax credit.
+  date: 2023-04-28 02:39:42
