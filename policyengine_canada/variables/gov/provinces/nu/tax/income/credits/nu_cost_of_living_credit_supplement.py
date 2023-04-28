@@ -16,4 +16,6 @@ class nu_cost_of_living_credit_supplement(Variable):
         adjusted_income = person(
             "nu_cost_of_living_credit_adjusted_net_income", period
         )
-        return min_(max_(0, adjusted_income - p.income) * p.rate, p.max_amount)
+        excess = max_(0, adjusted_income - p.income)
+        uncapped = excess * p.rate
+        return min_(uncapped, p.max_amount)

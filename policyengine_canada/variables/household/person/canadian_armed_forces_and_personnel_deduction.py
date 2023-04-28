@@ -7,4 +7,3 @@ class canadian_armed_forces_and_personnel_deduction(Variable):
     label = "Canadian armed forces and personnel deduction"
     unit = CAD
     definition_period = YEAR
-    defined_for = ProvinceCode.NU
