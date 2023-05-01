@@ -1,9 +1,9 @@
-description: Affordable living tax credit reduction rate in Nova Scotia. 
+description: Nova Scotia reduces its affordable living tax credit at this rate with respect to adjusted family net income.
 metadata:
   type: marginal_rate
   threshold_unit: currency-CAD
   rate_unit: /1
-  label: Nova Scotia affordable living tax credit reduction rate
+  label: NSALTC reduction rate
   reference:
     - title: Government of Canada - Nova Scotia affordable living tax credit (NSALTC)
       href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html
