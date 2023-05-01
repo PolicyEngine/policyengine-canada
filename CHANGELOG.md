@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.52.0] - 2023-04-28 19:14:24
+
+### Added
+
+- Nova Scotia low income tax reduction.
+
+## [0.51.0] - 2023-04-28 19:12:24
+
+### Added
+
+- Alberta Family and Child benefit.
+
 ## [0.50.0] - 2023-04-28 03:39:27
 
 ### Added
@@ -432,6 +444,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.52.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.51.0...0.52.0
+[0.51.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.50.0...0.51.0
 [0.50.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.49.0...0.50.0
 [0.49.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.48.0...0.49.0
 [0.48.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.47.1...0.48.0

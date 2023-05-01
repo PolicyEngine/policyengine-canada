@@ -351,3 +351,13 @@
     added:
     - Nunavut cost of living credit.
   date: 2023-04-28 03:39:27
+- bump: minor
+  changes:
+    added:
+    - Alberta Family and Child benefit.
+  date: 2023-04-28 19:12:24
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia low income tax reduction.
+  date: 2023-04-28 19:14:24
