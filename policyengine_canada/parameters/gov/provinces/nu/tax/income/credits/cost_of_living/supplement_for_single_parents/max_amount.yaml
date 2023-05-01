@@ -1,0 +1,9 @@
+description: Nunavut provides up to this amount as the supplement for single parents in its cost of living credit.
+values:
+  2022-01-01: 255.12
+metadata:
+  unit: currency-CAD
+  label: Nunavut cost of living credit supplement max amount
+  reference:
+  - title: Nunavut Credits - Form NU479 
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5014-tc/5014-tc-22e.pdf

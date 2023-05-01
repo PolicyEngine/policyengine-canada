@@ -14,14 +14,14 @@
   input:
     people:
       parent:
-        is_dependent: false
+        is_dependant: false
         is_head: true
         age: 55
       c1:
-        is_dependent: true
+        is_dependant: true
         age: 16
       c2:
-        is_dependent: true
+        is_dependant: true
         age: 17
     household:
       members: [parent, c1, c2]
@@ -45,16 +45,16 @@
         is_spouse: true
         age: 55
       c1:
-        is_dependent: true
+        is_dependant: true
         age: 7
       c2:
-        is_dependent: true
+        is_dependant: true
         age: 10
       c3:
-        is_dependent: true
+        is_dependant: true
         age: 12
       c4:
-        is_dependent: true
+        is_dependant: true
         age: 15
     household:
       members: [head, spouse, c1, c2, c3, c4]
