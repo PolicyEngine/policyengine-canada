@@ -13,7 +13,7 @@ class qc_child_assistance_credit_supplement(Variable):
         income = household("adjusted_family_net_income", period)
         p = parameters(period).gov.provinces.qc.tax.income.credits.child_assistance.single_households.supplement
         children = household("qc_child_assistance_credit_children", period)
-        eligible = ~married & children > 0
+        eligible = ~married & (children > 0)
         reduced_amount = p.max_amount - p.phase_out.calc(income)
         return eligible * (max_(reduced_amount, p.min_amount))
 

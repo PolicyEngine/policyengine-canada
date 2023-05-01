@@ -1,0 +1,49 @@
+- name: Married household under the phase-out threshold
+  period: 2023
+  input:
+    province_code: QC
+    is_married: true
+    adjusted_family_net_income: 37_695.93
+    qc_child_assistance_credit_children: 1
+  output:
+    qc_child_assistance_credit_supplement: 0
+
+- name: Single household under the phase-out threshold
+  period: 2023
+  input:
+    province_code: QC
+    is_married: false
+    adjusted_family_net_income: 37_695.93
+    qc_child_assistance_credit_children: 1
+  output:
+    qc_child_assistance_credit_supplement: 935.49
+
+- name: Single household without children under the phase-out threshold
+  period: 2023
+  input:
+    province_code: QC
+    is_married: false
+    adjusted_family_net_income: 37_695.93
+    qc_child_assistance_credit_children: 0
+  output:
+    qc_child_assistance_credit_supplement: 0
+
+- name: Single household under the minimum amount
+  period: 2023
+  input:
+    province_code: QC
+    is_married: false
+    adjusted_family_net_income: 100_000.00
+    qc_child_assistance_credit_children: 8
+  output:
+    qc_child_assistance_credit_supplement: 372.94
+
+- name: Single household under the maximum amount # 935.49 - (40_000-37_695.93)*0.04 
+  period: 2023
+  input:
+    province_code: QC
+    is_married: false
+    adjusted_family_net_income: 40_000.00
+    qc_child_assistance_credit_children: 8
+  output:
+    qc_child_assistance_credit_supplement: 843.3272
