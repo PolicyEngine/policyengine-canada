@@ -1,0 +1,9 @@
+description: Saskatchewan Housing Benefit the percentage of their income spent on shelter costs.
+values: 
+  2023-01-01: 35
+metadata:
+  unit: /1
+  label: Saskatchewan Housing Benefit Eiligible Lower Threshold
+  reference: 
+  - title: Saskatchewan Housing Benefit
+    href: https://www.saskatchewan.ca/residents/housing-and-renting/renting-and-leasing/saskatchewan-housing-benefit

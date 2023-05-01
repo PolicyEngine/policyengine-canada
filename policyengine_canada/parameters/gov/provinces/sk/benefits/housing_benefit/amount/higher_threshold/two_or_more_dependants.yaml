@@ -1,0 +1,9 @@
+description: Higher Saskatchewan Housing Benefit provides this monthly amount for eligible renters with two or more dependants.
+values: 
+  2023-01-01: 325
+metadata:
+  unit: currency-CAD
+  label: Saskatchewan Housing Benefit Eiligible Renters Base
+  reference: 
+  - title: Saskatchewan Housing Benefit
+    href: https://www.saskatchewan.ca/residents/housing-and-renting/renting-and-leasing/saskatchewan-housing-benefit

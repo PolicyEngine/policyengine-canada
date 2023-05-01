@@ -1,0 +1,12 @@
+#[parameters]: 
+#[housing_benefit]
+#[income_limit]
+  #no_dependants ; one_dependant ; two_or_more_dependant
+#[amount]
+  #[lower_threshold]
+    #no_dependants ; one_dependant ; two_or_more_dependant
+    #threshold
+  #[higher_threshold]
+    #no_dependants ; one_dependant ; two_or_more_dependant
+    #threshold
+#housing_assets_limit
