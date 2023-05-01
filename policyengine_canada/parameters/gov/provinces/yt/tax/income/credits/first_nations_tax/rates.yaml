@@ -1,0 +1,9 @@
+description: Abatement rate under the Yukon First nations Tax.
+values:
+  2022-01-01: 0.95
+metadata:
+  unit: /1
+  label: Yukon First Nations Tax Rate
+  reference:
+  - title: Government of Canada - Yukon Information Guide
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/yukon/5011-pc/information-residents-yukon.html#P5_yfnitc
