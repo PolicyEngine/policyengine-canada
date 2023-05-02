@@ -2,7 +2,7 @@ description: The taxable income eligibility for the Nova Scotia Age tax credit.
 values:
   2022-12-31: 24_000
 metadata:
-  unit: year
+  unit: currency-CAD
   label: Nova Scotia Age tax credit taxable income eligibility
   reference:
   - title: Government of Canada - Nova Scotia Information Guide - Age tax credit
