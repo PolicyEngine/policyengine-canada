@@ -20,4 +20,3 @@ class cce_eligible_disabled_child(Variable):
         return (own_child & disabled) | (
             dependant & disabled & (income <= p.child_income_limit)
         )
-
