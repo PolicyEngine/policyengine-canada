@@ -1,4 +1,4 @@
-description: Quebec limits its Children Care Expenses to children below this age.
+description: Quebec limits its Children Care Expenses to child below this age.
 values:
   2022-01-01: 16 # He or she was 16 or under at some point in the year.
 metadata:

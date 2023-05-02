@@ -21,3 +21,27 @@
     province_code: QC
   output:
     cce_tax_credit: 28_000 # min(40000*0.70, 14605+10675+5375) = min(28000,30655)
+
+- name: Quebec cce disabled children credit for family income from 42,220	to 43,635, within limit
+  period: 2022
+  input:
+    childcare_costs: 23_000
+    adjusted_family_net_income: 43_000 
+    cce_eligible_nondisabled_young_children: 0
+    cce_eligible_nondisabled_old_children: 1
+    cce_eligible_disabled_children: 1
+    province_code: QC
+  output:
+    cce_tax_credit: 16_330 # min(20000*0.71, 14605+5375) = min(16330,19980)
+
+- name: Quebec cce disabled children credit for family income from 42,220	to 43,635, no disabled child, above limit
+  period: 2022
+  input:
+    childcare_costs: 23_000
+    adjusted_family_net_income: 43_000 
+    cce_eligible_nondisabled_young_children: 1
+    cce_eligible_nondisabled_old_children: 1
+    cce_eligible_disabled_children: 0
+    province_code: QC
+  output:
+    cce_tax_credit: 16_050 # min(20000*0.71, 10675+5375) = min(16330,16050)

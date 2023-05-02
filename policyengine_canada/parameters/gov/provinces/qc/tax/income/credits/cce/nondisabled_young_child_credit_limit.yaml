@@ -1,4 +1,4 @@
-description:  Quebec childcare expense limit for non-disabled young child.
+description:  Quebec childcare expense credit limit for non-disabled young child (<8 years old).
 values:
   2022-01-01: 10_675
 metadata:
