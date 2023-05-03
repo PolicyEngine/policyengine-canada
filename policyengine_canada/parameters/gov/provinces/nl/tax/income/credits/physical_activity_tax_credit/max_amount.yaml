@@ -1,6 +1,6 @@
 description: Newfoundland Physical activity tax credit maximun amount paid from all receipts in 2022
 values:
-  2022-12-31: 20000
+  2022-12-31: 2000
 metadata:
   unit: currency-CAD
   label: Newfoundland Physical activity tax credit maximun amount paid from all receipts in 2022
