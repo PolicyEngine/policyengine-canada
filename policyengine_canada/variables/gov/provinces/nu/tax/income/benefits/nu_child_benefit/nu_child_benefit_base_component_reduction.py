@@ -10,7 +10,5 @@ class nu_child_benefit_base_component_reduction(Variable):
 
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)
-        p = parameters(
-            period
-        ).gov.provinces.nu.tax.benefits.nucb.base_component
+        p = parameters(period).gov.provinces.nu.tax.benefits.nucb.base
         return p.phase_out_rate.calc(income)

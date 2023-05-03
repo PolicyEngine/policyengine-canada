@@ -12,7 +12,5 @@ class nu_child_benefit_base_component_base(Variable):
         children = household("nu_child_benefit_eligible_children", period)
         return (
             children
-            * parameters(
-                period
-            ).gov.provinces.nu.tax.benefits.nucb.base_component.base
+            * parameters(period).gov.provinces.nu.tax.benefits.nucb.base.amount
         )

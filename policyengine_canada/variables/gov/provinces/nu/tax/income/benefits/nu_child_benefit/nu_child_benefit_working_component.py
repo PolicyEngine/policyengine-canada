@@ -11,9 +11,7 @@ class nu_child_benefit_working_component(Variable):
     def formula(household, period, parameters):
         children = household("nu_child_benefit_eligible_children", period)
         income = household("family_working_income", period)
-        p = parameters(
-            period
-        ).gov.provinces.nu.tax.benefits.nucb.working_component
+        p = parameters(period).gov.provinces.nu.tax.benefits.nucb.working
         phase_in_amount = p.phase_in_rate.calc(income)
         max_amount = select(
             [children == 1, children > 1],
