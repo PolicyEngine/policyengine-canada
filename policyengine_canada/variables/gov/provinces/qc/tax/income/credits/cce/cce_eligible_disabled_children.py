@@ -7,4 +7,4 @@ class cce_eligible_disabled_children(Variable):
     label = "Quebec childcare tax credit eligible disabled children"
     definition_period = YEAR
 
-    adds = ["cce_eligible_diasbled_child"]
+    adds = ["cce_eligible_disabled_child"]

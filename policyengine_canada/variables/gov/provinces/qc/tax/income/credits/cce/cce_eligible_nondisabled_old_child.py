@@ -11,4 +11,6 @@ class cce_eligible_nondisabled_old_child(Variable):
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.qc.tax.income.credits.cce
         age = person("age", period)
-        return age <= p.age_eligibility & age > p.young_child_age_eligibility
+        return (age <= p.age_eligibility) & (
+            age > p.young_child_age_eligibility
+        )
