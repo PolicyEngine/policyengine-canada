@@ -361,3 +361,13 @@
     added:
     - Nova Scotia low income tax reduction.
   date: 2023-04-28 19:14:24
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia affordable living tax credit.
+  date: 2023-05-03 04:19:50
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia Poverty Reduction Credit.
+  date: 2023-05-03 04:22:00

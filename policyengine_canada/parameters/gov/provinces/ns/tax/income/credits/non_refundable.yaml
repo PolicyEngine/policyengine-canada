@@ -1,0 +1,6 @@
+description: Non-refundable tax credits in Nova Scotia.
+values:
+  2022-01-01:
+    - ns_poverty_reduction_credit
+metadata:
+  unit: program
