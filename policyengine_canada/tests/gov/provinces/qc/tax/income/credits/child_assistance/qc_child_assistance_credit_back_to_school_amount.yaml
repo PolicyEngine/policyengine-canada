@@ -1,7 +1,62 @@
-# - name: 
-#   period: 2023
-#   input:
-#     province_code: QC
-#     qc_taxable_income: 49_275
-#   output:
-#     qc_income_tax_before_credits: 
+- name: One eligible child and one parent
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 40
+      child1:
+        age: 12
+        is_of_school_age: true
+    household:
+      members: [parent, child1]
+      province_code: QC
+  output:
+    qc_child_assistance_credit_back_to_school_amount: 110
+
+- name: Two elegible children and one parent
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 40
+      child1:
+        age: 12
+        is_of_school_age: true
+      child2:
+        age: 16
+        is_of_school_age: true
+    household:
+      members: [parent, child1, child2]
+      province_code: QC
+  output:
+    qc_child_assistance_credit_back_to_school_amount: 220
+
+- name: One parent and no children
+  period: 2023
+  input:
+    people:
+      person:
+        age: 19
+    household:
+      members: [person]
+      province_code: QC
+  output:
+    qc_child_assistance_credit_back_to_school_amount: 0
+
+- name: One elegible child, one inelegible child, and one parent
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 40
+      child1:
+        age: 12
+        is_of_school_age: true
+      child2:
+        age: 3
+        is_of_school_age: false
+    household:
+      members: [parent, child1, child2]
+      province_code: QC
+  output:
+    qc_child_assistance_credit_back_to_school_amount: 110

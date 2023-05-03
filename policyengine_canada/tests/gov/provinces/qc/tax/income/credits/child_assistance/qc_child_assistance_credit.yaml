@@ -1,0 +1,59 @@
+- name: One child without reduction or supplements capped at minimum amount
+  period: 2023
+  input:
+    province_code: QC
+    qc_child_assistance_credit_back_to_school_amount: 0
+    qc_child_assistance_credit_base: 1_000
+    qc_child_assistance_credit_children: 1
+    qc_child_assistance_credit_reduction: 0
+    qc_child_assistance_credit_supplement: 0
+  output:
+    qc_child_assistance_credit: 1_061.21
+
+- name: One child with reduction but no supplements
+  period: 2023
+  input:
+    province_code: QC
+    qc_child_assistance_credit_back_to_school_amount: 0
+    qc_child_assistance_credit_base: 2_000
+    qc_child_assistance_credit_children: 1
+    qc_child_assistance_credit_reduction: 500
+    qc_child_assistance_credit_supplement: 0
+  output:
+    qc_child_assistance_credit: 1_500
+
+- name: One child with reduction with supplements
+  period: 2023
+  input:
+    province_code: QC
+    qc_child_assistance_credit_back_to_school_amount: 301
+    qc_child_assistance_credit_base: 2_000
+    qc_child_assistance_credit_children: 1
+    qc_child_assistance_credit_reduction: 500
+    qc_child_assistance_credit_supplement: 250
+  output:
+    qc_child_assistance_credit: 2_051
+
+- name: Three children without reduction or supplements capped at minimum amount
+  period: 2023
+  input:
+    province_code: QC
+    qc_child_assistance_credit_back_to_school_amount: 0
+    qc_child_assistance_credit_base: 1_000
+    qc_child_assistance_credit_children: 3
+    qc_child_assistance_credit_reduction: 0
+    qc_child_assistance_credit_supplement: 0
+  output:
+    qc_child_assistance_credit: 3_183.63
+
+- name: Three children without reduction with supplements
+  period: 2023
+  input:
+    province_code: QC
+    qc_child_assistance_credit_back_to_school_amount: 0
+    qc_child_assistance_credit_base: 1_000
+    qc_child_assistance_credit_children: 3
+    qc_child_assistance_credit_reduction: 0
+    qc_child_assistance_credit_supplement: 750
+  output:
+    qc_child_assistance_credit: 3_933.63

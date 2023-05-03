@@ -16,4 +16,5 @@ class qc_child_assistance_credit(Variable):
         minimum_amount = children * p.min_amount
         supplement = household("qc_child_assistance_credit_supplement", period)
         back_to_school = household("qc_child_assistance_credit_back_to_school_amount", period)
-        return max_(minimum_amount, base - reduction) + supplement + back_to_school
+        amount = max_(minimum_amount, base - reduction)
+        return amount + supplement + back_to_school
