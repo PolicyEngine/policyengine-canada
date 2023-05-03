@@ -25,11 +25,11 @@ class cce_tax_credit(Variable):
         eligible_disabled_children = household(
             "cce_eligible_disabled_children", period
         )
-        credit_limit = (
+        expense_limit = (
             eligible_nondisabled_young_children
-            * p.nondisabled_young_child_credit_limit
+            * p.nondisabled_young_child_expense_limit
             + eligible_nondisabled_old_children
-            * p.nondisabled_old_child_credit_limit
-            + eligible_disabled_children * p.disabled_child_credit_limit
+            * p.nondisabled_old_child_expense_limit
+            + eligible_disabled_children * p.disabled_child_expense_limit
         )
-        return min_(expenses * credit_rate, credit_limit)
+        return credit_rate * min_(expenses, expense_limit)
