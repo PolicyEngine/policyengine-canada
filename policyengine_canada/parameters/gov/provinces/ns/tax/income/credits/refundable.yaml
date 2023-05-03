@@ -1,0 +1,7 @@
+description: Nova Scotia list of refundable tax credits.
+values:
+  2022-07-01:
+    - ns_affordable_living_tax_credit
+
+metadata:
+  unit: program
