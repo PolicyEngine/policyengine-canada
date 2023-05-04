@@ -1,0 +1,10 @@
+description: Saskatchewan Active Family Benefit provides this base amount for each disabled children.
+values: 
+  2021-01-01: 200
+metadata:
+  unit: currency-CAD
+  label: Saskatchewan Active Family Benefit disabled child base
+  reference: 
+  - title: Saskatchewan Active Families Benefit
+    href: https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/sport-and-recreation/programs-and-supports/active-families-benefit#:~:text=1.-,Overview,sports%2C%20cultural%20and%20recreational%20activities
+ # Can't find a legal reference.

@@ -2,7 +2,7 @@
   period: 2023
   input:
     age: 10
-    is_dependent: true
+    is_dependant: true
   output:
     is_child_for_gst_credit: true
 
@@ -10,14 +10,14 @@
   period: 2023
   input:
     age: 22
-    is_dependent: true
+    is_dependant: true
   output:
     is_child_for_gst_credit: false
 
-- name: Is not a child for GST credit because is not a dependent
+- name: Is not a child for GST credit because is not a dependant
   period: 2023
   input:
     age: 10
-    is_dependent: false
+    is_dependant: false
   output:
     is_child_for_gst_credit: false

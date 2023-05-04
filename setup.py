@@ -27,7 +27,7 @@ general_requirements = [
     "tqdm>=4.46.0,<5",
     "requests>=2.27.1,<3",
     "pandas>=1.4.2,<2",
-    "policyengine_core>=1.11.4,<2",
+    "policyengine_core>=2,<3",
     "plotly>=5.6.0,<6",
 ]
 
@@ -35,6 +35,7 @@ dev_requirements = [
     "jupyter-book<1",
     "furo<2023",
     "markupsafe==2.0.1",
+    "pydata-sphinx-theme==0.13.1",
     "sphinx>=4.5.0,<5",
     "sphinx-argparse>=0.3.2,<1",
     "sphinx-math-dollar>=1.2.1,<2",
@@ -42,7 +43,7 @@ dev_requirements = [
 
 setup(
     name="policyengine-canada",
-    version="0.42.0",
+    version="0.54.0",
     author="PolicyEngine",
     author_email="hello@policyengine.org",
     classifiers=[

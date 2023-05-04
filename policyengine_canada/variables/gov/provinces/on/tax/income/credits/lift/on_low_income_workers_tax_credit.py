@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class on_low_income_workers_tax_credit(Variable):
     value_type = float
     entity = Person
-    label = "Post reduction of Ontario Low-Income Workers Tax Credit"
+    label = "Ontario Low-Income Workers Tax Credit"
     unit = CAD
     definition_period = YEAR
     defined_for = ProvinceCode.ONT

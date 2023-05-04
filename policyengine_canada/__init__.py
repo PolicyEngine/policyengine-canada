@@ -30,6 +30,7 @@ class CountryTaxBenefitSystem(TaxBenefitSystem):
     parameters_dir = COUNTRY_DIR / "parameters"
     auto_carry_over_input_variables = True
     basic_inputs = [
+        "province_name",
         "employment_income",
     ]
 
@@ -57,8 +58,3 @@ class Microsimulation(CoreMicrosimulation):
     default_tax_benefit_system_instance = system
     default_dataset_year = 2023
     default_calculation_period = 2023
-
-
-if 2022 not in CountryTemplateDataset.years:
-    logging.warn("Default country template dataset not found. Building it.")
-    CountryTemplateDataset.generate(2022)

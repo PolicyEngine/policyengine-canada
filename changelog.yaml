@@ -283,3 +283,91 @@
     added:
     - British Columbia age credit.
   date: 2023-02-28 05:08:04
+- bump: patch
+  changes:
+    added:
+    - Province name to the basic input set.
+  date: 2023-03-14 22:17:09
+- bump: patch
+  changes:
+    added:
+    - README files for parameter folder display text.
+    changed:
+    - Revised variable labels for consistency.
+  date: 2023-03-20 13:59:40
+- bump: patch
+  changes:
+    changed:
+    - Bumped Core to v2.
+  date: 2023-03-24 22:49:05
+- bump: minor
+  changes:
+    added:
+    - modelled_policies.yaml with content for modal dialog.
+  date: 2023-03-28 03:30:52
+- bump: patch
+  changes:
+    changed:
+    - Pin pydata-sphinx-theme==0.13.1 to fix a jupyterbook build issue.
+  date: 2023-03-29 23:52:19
+- bump: minor
+  changes:
+    added:
+    - Yukon child benefit.
+  date: 2023-03-30 01:24:26
+- bump: minor
+  changes:
+    added:
+    - Yukon Children's arts amount.
+  date: 2023-04-06 02:49:58
+- bump: minor
+  changes:
+    added:
+    - Quebec income tax rate.
+  date: 2023-04-17 23:12:32
+- bump: minor
+  changes:
+    added:
+    - New Brunswick Child Tax Benefit.
+  date: 2023-04-19 03:05:41
+- bump: patch
+  changes:
+    changed:
+    - Set CWB variable units to CAD.
+    - Rename dependent to dependant everywhere.
+  date: 2023-04-23 17:24:10
+- bump: minor
+  changes:
+    added:
+    - Active Families Benefit.
+  date: 2023-04-26 20:30:04
+- bump: minor
+  changes:
+    added:
+    - Quebec cost of living tax credit.
+  date: 2023-04-28 02:39:42
+- bump: minor
+  changes:
+    added:
+    - Nunavut cost of living credit.
+  date: 2023-04-28 03:39:27
+- bump: minor
+  changes:
+    added:
+    - Alberta Family and Child benefit.
+  date: 2023-04-28 19:12:24
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia low income tax reduction.
+  date: 2023-04-28 19:14:24
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia affordable living tax credit.
+  date: 2023-05-03 04:19:50
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia Poverty Reduction Credit.
+  date: 2023-05-03 04:22:00

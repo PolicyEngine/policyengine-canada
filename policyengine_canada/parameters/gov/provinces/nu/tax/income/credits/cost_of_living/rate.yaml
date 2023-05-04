@@ -1,0 +1,9 @@
+description: Nunavut phases in its cost of living credit at this rate with respect to income.
+values:
+  2022-01-01: 0.02
+metadata:
+  unit: /1
+  label: Nunavut cost of living credit rate
+  reference:
+  - title: Nunavut Credits - Form NU479 
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5014-tc/5014-tc-22e.pdf

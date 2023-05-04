@@ -6,5 +6,4 @@ class registered_disability_savings_plan_income(Variable):
     entity = Person
     label = "Registered disability savings plan income"
     unit = CAD
-    documentation = "Registered disability savings plan income"
     definition_period = YEAR

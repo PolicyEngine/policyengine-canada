@@ -27,7 +27,7 @@ class province_code(Variable):
     label = "Province code"
     definition_period = ETERNITY
 
-    # def formula(household, period, parameters):
-    #     return ProvinceCode.encode(
-    #         household("province_name", period).decode_to_str()
-    #     )
+    def formula(household, period, parameters):
+        return ProvinceCode.encode(
+            household("province_name", period).decode_to_str()
+        )
