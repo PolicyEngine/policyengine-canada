@@ -11,8 +11,14 @@ class qc_child_assistance_credit_reduction(Variable):
     def formula(household, period, parameters):
         married = household("is_married", period)
         income = household("adjusted_family_net_income", period)
-        p = parameters(period).gov.provinces.qc.tax.income.credits.child_assistance
-        return where(married, p.couples.phase_out.calc(income), p.single_households.phase_out.calc(income))
+        p = parameters(
+            period
+        ).gov.provinces.qc.tax.income.credits.child_assistance
+        return where(
+            married,
+            p.couples.phase_out.calc(income),
+            p.single_households.phase_out.calc(income),
+        )
 
 
-#TODO: find out if couple and married is interchangable 
+# TODO: find out if couple and married is interchangable
