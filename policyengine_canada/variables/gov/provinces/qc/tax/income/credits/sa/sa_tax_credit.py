@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class cce_tax_credit(Variable):
+class sa_tax_credit(Variable):
     value_type = float
     entity = Household
     label = "Quebec senior assistance tax credit"
@@ -12,25 +12,26 @@ class cce_tax_credit(Variable):
         p = parameters(period).gov.provinces.qc.tax.income.credits.sa
 
         income = household("adjusted_family_net_income", period)
-        
-        
 
-        expenses = household("childcare_costs", period)
+        # Your spouse is an eligible individual and you were both 70 or over
+        spouse_eligibility = household("sa_couple_eligibility", period)
+        credit1 = spouse_eligibility * max_(
+            0, 2 * p.base - p.reduction_eligible_spouse.calc(income)
+        )
 
-        eligible_nondisabled_young_children = household(
-            "cce_eligible_nondisabled_young_children", period
+        # Your spouse is not an eligible individual or only one of you was 70 or over
+        single_eligibility = household("sa_single_eligibility", period)
+        credit2 = single_eligibility * max_(
+            0, p.base - p.reduction_noneligible_spouse.calc(income)
         )
-        eligible_nondisabled_old_children = household(
-            "cce_eligible_nondisabled_old_children", period
+
+        # You did not have a spouse
+        no_spouse = household("sa_no_spouse_eligibility", period)
+        credit3 = no_spouse * max_(
+            0, p.base - p.reduction_no_spouse.calc(income)
         )
-        eligible_disabled_children = household(
-            "cce_eligible_disabled_children", period
-        )
-        expense_limit = (
-            eligible_nondisabled_young_children
-            * p.nondisabled_young_child_expense_limit
-            + eligible_nondisabled_old_children
-            * p.nondisabled_old_child_expense_limit
-            + eligible_disabled_children * p.disabled_child_expense_limit
-        )
-        return credit_rate * min_(expenses, expense_limit)
+
+        return credit1 + credit2 + credit3
+
+
+        # todo: make the couple/single person level to household level

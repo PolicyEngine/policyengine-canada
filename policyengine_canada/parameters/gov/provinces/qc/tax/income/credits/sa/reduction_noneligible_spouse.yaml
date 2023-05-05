@@ -16,7 +16,3 @@ brackets:
       2022-01-01: 39_350
     rate:
       2022-01-01: 0.05 # The credit is reduced by 5% of your income over $39,350
-  - threshold:
-      2022-01-01: 79_350
-    rate:
-      2022-01-01: 1 # not eligible for the tax credit if your family income is equal to or greater than this amount

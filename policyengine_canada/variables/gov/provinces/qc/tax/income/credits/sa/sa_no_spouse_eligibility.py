@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class sa_eligibility(Variable):
+class sa_no_spouse_eligibility(Variable):
     value_type = bool
     entity = Person
     label = "Quebec senior assistance tax credits eligible senior"
@@ -13,9 +13,6 @@ class sa_eligibility(Variable):
 
         age = person("age", period)
 
-        spouse_eligibility = person("sa_spouse_eligibility", period)
+        if_spouse = person("is_spouse", period)
 
-        return (age >= p.age_eligibility) | spouse_eligibility
-
-
-# todo : considering 3 ways
+        return (age >= p.age_eligibility) & (~if_spouse)
