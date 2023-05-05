@@ -19,6 +19,3 @@ class qc_child_assistance_credit_reduction(Variable):
             p.couples.phase_out.calc(income),
             p.single_households.phase_out.calc(income),
         )
-
-
-# TODO: find out if couple and married is interchangable
