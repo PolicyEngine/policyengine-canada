@@ -1,0 +1,103 @@
+- name: Saskatchewan housing benefit (Household with no dependant and spend less than 35 percent on shelter)
+  period: 2023
+  input:
+    household:
+      province_code: SK
+      number_of_dependants: 0
+      household_assets: 29_0000
+      before_tax_income: 10_0000
+      rent & cost_on_utilities: 34_000
+
+  output:
+    sk_housing_benefit: 0
+
+- name: Saskatchewan housing benefit (Household with no dependant and spend 35% to 45% on shelter)
+  period: 2023
+  input:
+    household:
+      province_code: SK
+      number_of_dependants: 0
+      household_assets: 29_0000
+      before_tax_income: 10_0000
+      rent & cost_on_utilities: 35_000
+
+  output:
+    sk_housing_benefit: 175
+
+- name: Saskatchewan housing benefit (Household with one dependant and spend 35% to 45% on shelter)
+  period: 2023
+  input:
+    household:
+      province_code: SK
+      number_of_dependants: 1
+      household_assets: 29_0000
+      before_tax_income: 10_0000
+      rent & cost_on_utilities: 35_000
+
+  output:
+    sk_housing_benefit: 225
+
+- name: Saskatchewan housing benefit (Household with one dependant and spend more than 45% on shelter)
+  period: 2023
+  input:
+    household:
+      province_code: SK
+      number_of_dependants: 1
+      household_assets: 29_0000
+      before_tax_income: 10_0000
+      rent & cost_on_utilities: 45_001
+
+  output:
+    sk_housing_benefit: 275
+
+- name: Saskatchewan housing benefit (Household with two or more dependants and spend 35% to 45% on shelter)
+  period: 2023
+  input:
+    household:
+      province_code: SK
+      number_of_dependants: 2
+      household_assets: 29_0000
+      before_tax_income: 10_0000
+      rent & cost_on_utilities: 35_000
+
+  output:
+    sk_housing_benefit: 275
+
+- name: Saskatchewan housing benefit (Household with two or more dependants and spend more than 45% on shelter)
+  period: 2023
+  input:
+    household:
+      province_code: SK
+      number_of_dependants: 2
+      household_assets: 29_0000
+      before_tax_income: 10_0000
+      rent & cost_on_utilities: 45_001
+
+  output:
+    sk_housing_benefit: 325
+
+- name: Saskatchewan housing benefit (Household with two or more dependants and spend more than 45% on shelter)
+  period: 2023
+  input:
+    household:
+      province_code: SK
+      number_of_dependants: 3
+      household_assets: 29_0000
+      before_tax_income: 10_0000
+      rent & cost_on_utilities: 45_001
+
+  output:
+    sk_housing_benefit: 325
+
+- name: Saskatchewan housing benefit (Household with more than 30_0000 household assets)
+  period: 2023
+  input:
+    household:
+      province_code: SK
+      number_of_dependants: 3
+      household_assets: 30_0001
+      before_tax_income: 10_0000
+      rent & cost_on_utilities: 45_001
+
+  output:
+    sk_housing_benefit: 0
