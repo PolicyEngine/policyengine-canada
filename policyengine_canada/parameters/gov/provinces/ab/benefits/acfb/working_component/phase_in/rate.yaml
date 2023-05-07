@@ -1,0 +1,11 @@
+description: Alberta phases in its Child and Family Benefit working component at this rate.
+values:
+  2022-01-01: 0.15
+metadata:
+  unit: /1
+  label: Alberta Child and Family Benefit working component phase-in rate
+  reference:
+  - title: Province of Alberta - Alberta Child and Family Benefit
+    href: https://www.alberta.ca/alberta-child-and-family-benefit.aspx
+  - title: Alberta Budget 2019, Fiscal Plan p.148
+    href: https://open.alberta.ca/dataset/3d732c88-68b0-4328-9e52-5d3273527204/resource/2b82a075-f8c2-4586-a2d8-3ce8528a24e1/download/budget-2019-fiscal-plan-2019-23.pdf

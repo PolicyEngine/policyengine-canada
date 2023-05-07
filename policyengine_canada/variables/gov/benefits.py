@@ -17,6 +17,8 @@ class benefits(Variable):
         "on_benefits",
         # British Columbia programs.
         "bc_benefits",
-        # Nova Scotia programs.
-        "ns_benefits",
+        # New Brunswick programs.
+        "nb_benefits",
+        # Saskatchewan programs.
+        "sk_benefits",
     ]

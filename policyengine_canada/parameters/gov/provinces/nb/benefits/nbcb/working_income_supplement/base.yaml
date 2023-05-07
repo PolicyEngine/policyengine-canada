@@ -1,0 +1,11 @@
+description: New Brunswick provides this base for the working income supplement.
+values:
+  2023-01-01: 250
+metadata:
+  unit: currency-CAD
+  label: New Brunswick working income supplement 
+  reference:
+    - title: New Brunswick base working income supplement 
+      href: https://www2.gnb.ca/content/gnb/en/departments/finance/taxes/child_tax_benefit.html#:~:text=The%20New%20Brunswick%20Child%20Tax,under%20the%20age%20of%2018.
+    - title: New Brunswick base working income supplement
+      href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html#CCB_NewBrunswick

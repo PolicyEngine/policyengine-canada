@@ -1,0 +1,43 @@
+description: Quebec taxes income at these rates, depending on taxable income.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Quebec income tax rates 
+  reference:
+    - title: Revenu Quebec - Income tax rate
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/income-tax-rates/
+brackets:
+  - threshold:
+      2021-01-01: 0
+      2022-01-01: 0
+      2023-01-01: 0
+    rate:
+      2021-01-01: 0.15
+      2022-01-01: 0.15
+      2023-01-01: 0.14
+  - threshold:
+      2021-01-01: 45_105
+      2022-01-01: 46_295
+      2023-01-01: 49_275
+    rate:
+      2021-01-01: 0.20
+      2022-01-01: 0.20
+      2023-01-01: 0.19
+  - threshold:
+      2021-01-01: 90_200
+      2022-01-01: 92_580
+      2023-01-01: 98_540
+    rate:
+      2021-01-01: 0.24
+      2022-01-01: 0.24
+      2023-01-01: 0.24
+  - threshold:
+      2021-01-01: 109_755
+      2022-01-01: 112_655
+      2023-01-01: 119_910
+    rate:
+      2021-01-01: 0.2575
+      2022-01-01: 0.2575
+      2023-01-01: 0.2575
+

@@ -12,6 +12,6 @@ class gst_credit_single_parent_household(Variable):
     def formula(household, period, parameters):
         married = household("is_married", period)
         gst_credit_children = household(
-            "gst_credit_dependent_children", period
+            "gst_credit_dependant_children", period
         )
         return ~married & (gst_credit_children > 0)
