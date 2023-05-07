@@ -2,7 +2,7 @@
   period: 2023
   input:
     province_code: YT
-    is_dependent: false
+    is_dependant: false
   output:
     yt_child_benefit_eligible_child: false
 
@@ -10,7 +10,7 @@
   period: 2023
   input:
     province_code: YT
-    is_dependent: true
+    is_dependant: true
   output:
     yt_child_benefit_eligible_child: true
 
