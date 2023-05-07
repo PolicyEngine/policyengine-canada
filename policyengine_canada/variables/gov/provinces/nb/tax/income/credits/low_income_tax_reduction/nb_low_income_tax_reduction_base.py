@@ -17,7 +17,7 @@ class nb_low_income_tax_reduction_base(Variable):
         dependant = person("is_dependent", period)
         return min_(
             p.base.max_amount,
-            p.base.main
+            p.base.head
             + married * p.base.spouse
             + dependant * p.base.dependant,
         )
