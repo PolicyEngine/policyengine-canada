@@ -2,9 +2,9 @@
   period: 2022
   input:
     adjusted_family_net_income: 109_350
-    sa_couple_eligibility: true
-    sa_single_eligibility: false
-    sa_no_spouse_eligibility: false
+    sa_household_couple: 1
+    sa_household_individual: 0
+    sa_household_no_spouse: 0
     province_code: QC
   output:
     sa_tax_credit: 500 #max(0,2000*2-0.05*(109350-39350))
@@ -13,9 +13,9 @@
   period: 2022
   input:
     adjusted_family_net_income: 120_000
-    sa_couple_eligibility: true
-    sa_single_eligibility: false
-    sa_no_spouse_eligibility: false
+    sa_household_couple: 1
+    sa_household_individual: 0
+    sa_household_no_spouse: 0
     province_code: QC
   output:
     sa_tax_credit: 0 #max(0,2000*2-0.05*(120000-39350))
@@ -24,9 +24,9 @@
   period: 2022
   input:
     adjusted_family_net_income: 69_350
-    sa_couple_eligibility: false
-    sa_single_eligibility: true
-    sa_no_spouse_eligibility: false
+    sa_household_couple: 0
+    sa_household_individual: 1
+    sa_household_no_spouse: 0
     province_code: QC
   output:
     sa_tax_credit: 500 #max(0,2000-0.05*(69350-39350))
@@ -35,9 +35,9 @@
   period: 2022
   input:
     adjusted_family_net_income: 80_000
-    sa_couple_eligibility: false
-    sa_single_eligibility: true
-    sa_no_spouse_eligibility: false
+    sa_household_couple: 0
+    sa_household_individual: 1
+    sa_household_no_spouse: 0
     province_code: QC
   output:
     sa_tax_credit: 0 #max(0,2000-0.05*(80000-39350))
@@ -46,9 +46,9 @@
   period: 2022
   input:
     adjusted_family_net_income: 24_195
-    sa_couple_eligibility: false
-    sa_single_eligibility: false
-    sa_no_spouse_eligibility: true
+    sa_household_couple: 0
+    sa_household_individual: 0
+    sa_household_no_spouse: 1
     province_code: QC
   output:
     sa_tax_credit: 2_000 #max(0,2000-0.05*(24195-24195))
@@ -57,9 +57,9 @@
   period: 2022
   input:
     adjusted_family_net_income: 65_000
-    sa_couple_eligibility: false
-    sa_single_eligibility: false
-    sa_no_spouse_eligibility: true
+    sa_household_couple: 0
+    sa_household_individual: 0
+    sa_household_no_spouse: 1
     province_code: QC
   output:
     sa_tax_credit: 0 #max(0,2000-0.05*(65000-24195))
