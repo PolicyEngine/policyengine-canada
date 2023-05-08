@@ -1,0 +1,10 @@
+description: Alberta starts phasing in its Child and Family Benefit working component at this income level.
+values:
+  2022-07-01: 2_760
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Alberta child and Family Benefit working component phase-in start
+  reference:
+  - title: Province of Alberta - Alberta Child and Family Benefit
+    href: https://www.alberta.ca/alberta-child-and-family-benefit.aspx
