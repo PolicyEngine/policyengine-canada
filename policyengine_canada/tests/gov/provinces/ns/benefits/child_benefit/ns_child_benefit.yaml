@@ -1,0 +1,53 @@
+- name: Nova Scotia Child Benefit Amount with 1 child and low income
+  period: 2023
+  input:
+    province_code: NS
+    ns_child_benefit_eligible_children: 1
+    adjusted_family_net_income: 25_999
+  output:
+    ns_child_benefit: 1_275
+
+- name: Nova Scotia Child Benefit Amount with 3 child and low income
+  period: 2023
+  input:
+    province_code: NS
+    ns_child_benefit_eligible_children: 3
+    adjusted_family_net_income: 25_999
+  output:
+    ns_child_benefit: 3_825
+
+- name: Nova Scotia Child Benefit Amount with 1 child and high income
+  period: 2023
+  input:
+    province_code: NS
+    ns_child_benefit_eligible_children: 1
+    adjusted_family_net_income: 26_001
+  output:
+    ns_child_benefit: 1_275
+
+- name: Nova Scotia Child Benefit Amount with 3 child and high income
+  period: 2023
+  input:
+    province_code: NS
+    ns_child_benefit_eligible_children: 3
+    adjusted_family_net_income: 33_999
+  output:
+    ns_child_benefit: 2_550
+
+- name: Nova Scotia Child Benefit Amount with 2 child and ineligible income
+  period: 2023
+  input:
+    province_code: NS
+    ns_child_benefit_eligible_children: 2
+    adjusted_family_net_income: 34_001
+  output:
+    ns_child_benefit: 0
+
+- name: Nova Scotia Child Benefit without children
+  period: 2023
+  input:
+    province_code: NS
+    ns_child_benefit_eligible_children: 0
+    adjusted_family_net_income: 26_001
+  output:
+    ns_child_benefit: 0
