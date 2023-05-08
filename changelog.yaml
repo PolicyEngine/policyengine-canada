@@ -371,3 +371,8 @@
     added:
     - Nova Scotia Poverty Reduction Credit.
   date: 2023-05-03 04:22:00
+- bump: minor
+  changes:
+    added:
+    - New Brunswick low income tax credit.
+  date: 2023-05-08 04:52:03
