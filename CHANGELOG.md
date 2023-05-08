@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.56.0] - 2023-05-08 04:57:00
+
+### Changed
+
+- Add Nunavut Child Benefit.
+
 ## [0.55.0] - 2023-05-08 04:52:03
 
 ### Added
@@ -462,6 +468,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.56.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.55.0...0.56.0
 [0.55.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.54.0...0.55.0
 [0.54.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.53.0...0.54.0
 [0.53.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.52.0...0.53.0

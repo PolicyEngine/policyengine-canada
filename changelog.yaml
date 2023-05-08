@@ -376,3 +376,8 @@
     added:
     - New Brunswick low income tax credit.
   date: 2023-05-08 04:52:03
+- bump: minor
+  changes:
+    changed:
+    - Add Nunavut Child Benefit.
+  date: 2023-05-08 04:57:00
