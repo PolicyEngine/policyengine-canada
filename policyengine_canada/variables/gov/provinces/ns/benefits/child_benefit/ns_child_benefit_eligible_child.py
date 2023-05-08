@@ -10,9 +10,5 @@ class ns_child_benefit_eligible_child(Variable):
 
     def formula(person, period, parameters):
         age = person("age", period)
-        return (
-            age
-            < parameters(
-                period
-            ).gov.provinces.ns.benefits.child_benefit.age_eligibility
-        )
+        p = parameters(period).gov.provinces.ns.benefits.child_benefit
+        return age < p.age_eligibility
