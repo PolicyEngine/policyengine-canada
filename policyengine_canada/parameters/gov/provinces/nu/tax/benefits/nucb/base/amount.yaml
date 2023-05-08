@@ -1,4 +1,4 @@
-description: Nunavut provides this base component's base for each child in one family as part of the chile benefit.
+description: Nunavut provides this base component's base for each child in one family as part of the child benefit.
 values:
   2022-07-01: 330 # Per child under age of 18 living at home
 metadata:
