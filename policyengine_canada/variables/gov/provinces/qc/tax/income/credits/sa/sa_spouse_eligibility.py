@@ -15,3 +15,12 @@ class sa_spouse_eligibility(Variable):
         spouse = person("is_spouse", period)
 
         return spouse & (age >= p.age_eligibility)
+
+
+        p = parameters(period).gov.provinces.qc.tax.income.credits.sa
+
+        age_eligible = person("age", period) >= p.age_eligibility
+
+        spouse = person("is_spouse", period)
+
+        return age_eligible & (spouse)
