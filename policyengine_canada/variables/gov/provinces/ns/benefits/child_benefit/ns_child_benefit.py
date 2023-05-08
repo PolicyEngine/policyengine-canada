@@ -13,10 +13,10 @@ class ns_child_benefit(Variable):
         p = parameters(period).gov.provinces.ns.benefits.child_benefit
         income = household("adjusted_family_net_income", period)
         eligible = income < p.upper_threshold
-        # In the lower income bracket, the families are eligible to receive 
+        # In the lower income bracket, the families are eligible to receive
         # $1,275 per child.
         lower_income_amount = children * p.base
-        # In the higher income bracket, families are eligible to receive 
+        # In the higher income bracket, families are eligible to receive
         # $1,275 for the first born child.
         higher_income_base = p.base * (children > 0)
         # In the higher income bracket, families are eligible to receive
