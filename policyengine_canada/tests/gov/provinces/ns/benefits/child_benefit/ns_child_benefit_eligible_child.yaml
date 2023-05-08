@@ -1,0 +1,15 @@
+- name: Nova Scotia Child Benefit Eligible Child
+  period: 2023
+  input:
+    province_code: NS
+    age: 17
+  output:
+    ns_child_benefit_eligible_child: true
+
+- name: Nova Scotia Child Benefit Ineligible Child
+  period: 2023
+  input:
+    province_code: NS
+    age: 19
+  output:
+    ns_child_benefit_eligible_child: false
