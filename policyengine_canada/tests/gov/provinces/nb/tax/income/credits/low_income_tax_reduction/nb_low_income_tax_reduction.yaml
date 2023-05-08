@@ -1,0 +1,26 @@
+- name: Under reduction amount
+  period: 2022
+  input:
+    province_code: NB
+    adjusted_family_net_income: 19_177
+    nb_low_income_tax_reduction_base: 1_000
+  output:
+    nb_low_income_tax_reduction: 1_000
+
+- name: Over reduction amount # 1_402 - ((85_000 - 19_177) * 0.03 )
+  period: 2022
+  input:
+    province_code: NB
+    adjusted_family_net_income: 85_000
+    nb_low_income_tax_reduction_base: 1_402
+  output:
+    nb_low_income_tax_reduction: 0
+
+- name: Over reduction amount # 1_402 - ((20_000 - 19_177) * 0.03 )
+  period: 2022
+  input:
+    province_code: NB
+    adjusted_family_net_income: 20_000
+    nb_low_income_tax_reduction_base: 1_402
+  output:
+    nb_low_income_tax_reduction: 1_377.31
