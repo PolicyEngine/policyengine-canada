@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class slic_eligible_child(Variable):
+class sk_low_income_credit_eligible_child(Variable):
     value_type = bool
     entity = Person
     label = "Sasktachewan low income tax credit eligible child"
@@ -14,5 +14,5 @@ class slic_eligible_child(Variable):
             age
             < parameters(
                 period
-            ).gov.provinces.sk.tax.income.credits.slic.child_eligible_age
+            ).gov.provinces.sk.tax.income.credits.slic.child.ineligible_age
         )

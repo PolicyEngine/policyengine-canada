@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class slic_base(Variable):
+class sk_low_income_credit_base(Variable):
     value_type = float
     entity = Household
     label = "Sasktachewan low income tax credit base"
@@ -10,10 +10,11 @@ class slic_base(Variable):
 
     def formula(household, period, parameters):
         p = parameters(period).gov.provinces.sk.tax.income.credits.slic
-        children = household("slic_eligible_children", period)
+        children = household("sk_low_income_credit_eligible_children", period)
         married = household("is_married", period)
+        maximum_amount = p.child.max_number * p.child.amount
         return (
-            p.base.head
-            + married * p.base.spouse
-            + min_(children * p.base.child, p.child_max_amount)
+            p.head
+            + married * p.spouse
+            + min_(children * p.child.amount, maximum_amount)
         )

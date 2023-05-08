@@ -2,25 +2,25 @@
   period: 2024
   input:
     province_code: SK
-    slic_eligible_children: 0
+    sk_low_income_credit_eligible_children: 0
     is_married: false
   output:
-    slic_base: 380
+    sk_low_income_credit_base: 380
 
 - name: One child and not married
   period: 2024
   input:
     province_code: SK
-    slic_eligible_children: 1
+    sk_low_income_credit_eligible_children: 1
     is_married: false
   output:
-    slic_base: 530
+    sk_low_income_credit_base: 530
 
 - name: Five children and married
   period: 2024
   input:
     province_code: SK
-    slic_eligible_children: 5
+    sk_low_income_credit_eligible_children: 5
     is_married: true
   output:
-    slic_base: 1_060
+    sk_low_income_credit_base: 1_060

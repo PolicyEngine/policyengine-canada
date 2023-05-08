@@ -2,14 +2,14 @@
   period: 2024
   input:
     province_code: SK
-    age: 18
+    age: 19
   output:
-    slic_eligible_child: false
+    sk_low_income_credit_eligible_child: false
 
 - name: Uneligible
   period: 2024
   input:
     province_code: SK
-    age: 17
+    age: 18
   output:
-    slic_eligible_child: true
+    sk_low_income_credit_eligible_child: true
