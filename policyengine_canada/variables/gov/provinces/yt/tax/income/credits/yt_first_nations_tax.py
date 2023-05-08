@@ -1,3 +1,6 @@
+from policyengine_canada.model_api import *
+
+
 class yt_first_nations_tax(Variable):
     value_type = float
     entity = Household
