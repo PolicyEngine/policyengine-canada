@@ -16,7 +16,7 @@
   output:
     nu_child_benefit_working_component: 55
 
-- name: phase in amout over child workers max supplement with two eligible child
+- name: phase in amout over child workers max supplement with two eligible children
   period: 2023
   input:
     nu_child_benefit_eligible_children: 2
@@ -25,7 +25,7 @@
   output:
     nu_child_benefit_working_component: 349.92
 
-- name: phase in amout below child workers max supplement with two or more eligible child
+- name: phase in amout below child workers max supplement with two or more eligible children
   period: 2023
   input:
     nu_child_benefit_eligible_children: 3
@@ -34,7 +34,7 @@
   output:
     nu_child_benefit_working_component: 55
 
-- name: phase in amout over child workers max supplement with no eligible child
+- name: phase in amout over child workers max supplement with no eligible children
   period: 2023
   input:
     nu_child_benefit_eligible_children: 0
