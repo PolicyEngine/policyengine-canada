@@ -1,9 +1,9 @@
-description: Newfoundland Physical activity tax credit maximun amount of eligible expenses.
+description: Newfoundland child age eligiblity for the Physical activity tax credit.
 values:
-  2022-12-31: 2_000
+  2022-12-31: 18
 metadata:
-  unit: currency-CAD
-  label: Newfoundland Physical activity tax credit max amount
+  unit: age
+  label: Newfoundland Physical activity tax credit child age eligibility
   reference:
   - title: Government of Canada - Newfoundland and Labrador Credits
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/newfoundland-labrador/5001-tc.html

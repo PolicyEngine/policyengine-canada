@@ -3,15 +3,26 @@ from policyengine_canada.model_api import *
 
 class nl_physical_activity_tax_credit(Variable):
     value_type = float
-    entity = Person
+    entity = Household
     label = "Newfoundland Physical activity tax credit"
     definition_period = YEAR
     defined_for = ProvinceCode.NL
 
-    def formula(person, period, parameters):
+    def formula(household, period, parameters):
+        person = household.members
         p = parameters(
             period
         ).gov.provinces.nl.tax.income.credits.physical_activity_tax_credit
-        expense = person("individual_net_income", period)
+        # person has to be either head, spouse or child udner 18 to be eligible
+        eligible = (
+            person("is_head", period)
+            | person("is_spouse", period)
+            | (person("age", period) <= p.age_eligible)
+        )
+        inidividual_expenses = eligible * (
+            person("physical_activities_fees", period)
+        )
+        expenses = household.sum(inidividual_expenses)
+        maximum_amount = min_(expenses, p.max_amount)
 
-        return expense * p.rate
+        return maximum_amount * p.rate
