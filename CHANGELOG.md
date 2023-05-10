@@ -5,6 +5,36 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.57.0] - 2023-05-08 13:38:57
+
+### Added
+
+- Nova Scotia Child Benefit.
+
+## [0.56.0] - 2023-05-08 04:57:00
+
+### Changed
+
+- Add Nunavut Child Benefit.
+
+## [0.55.0] - 2023-05-08 04:52:03
+
+### Added
+
+- New Brunswick low income tax credit.
+
+## [0.54.0] - 2023-05-03 04:22:00
+
+### Added
+
+- Nova Scotia Poverty Reduction Credit.
+
+## [0.53.0] - 2023-05-03 04:19:50
+
+### Added
+
+- Nova Scotia affordable living tax credit.
+
 ## [0.52.0] - 2023-04-28 19:14:24
 
 ### Added
@@ -444,6 +474,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.57.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.56.0...0.57.0
+[0.56.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.55.0...0.56.0
+[0.55.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.54.0...0.55.0
+[0.54.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.53.0...0.54.0
+[0.53.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.52.0...0.53.0
 [0.52.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.51.0...0.52.0
 [0.51.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.50.0...0.51.0
 [0.50.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.49.0...0.50.0
