@@ -1,0 +1,10 @@
+decription: Saskatchewan Seniors Income Plan Client Living at Home Monthly Maximum SIP Benefit for Married Recipient whose Spouse less than 60 years of age
+values: 
+  2022-07-01: 330
+
+metadata:
+  unit: currency_CAD
+  label: Saskatchewan Seniors Income Plan Client Living at Home Monthly Maximum SIP Benefit for married recipient whose spouse below age threshold
+  reference:
+  - title: Saskatchewan Seniors Income Plan
+    href: https://www.saskatchewan.ca/residents/family-and-social-support/seniors-services/financial-help-for-seniors
