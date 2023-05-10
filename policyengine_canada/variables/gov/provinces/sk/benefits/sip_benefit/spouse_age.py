@@ -8,3 +8,5 @@ class spouse_age(Variable):
     documentation = "Spouse's Age in years since birth"
     definition_period = YEAR
     defined_for = ProvinceCode.SK
+
+#dont need new varibale - use "age.py"

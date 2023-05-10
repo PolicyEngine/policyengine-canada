@@ -30,3 +30,11 @@ class sip_eligiblility(Variable):
 
         eligibility = where(c1 | c2 | c3 | c4 | c5 | c6 | c7 | c8, True, False)
         return eligibility
+
+#sk_seniors_income_plan_at_home.py: 
+#sk_seniors_income_plan_at_in_special_care_home.py: 
+#special_care_home.py: 
+#is_penioner.py: empty variable - person level
+#recieve_allowance.py: empty variable 
+#sk_seniors_income_plan.py: add sk_seniors_income_plan_at_home.py + sk_seniors_income_plan_at_in_special_care_home.py:
+#canada_pension_plan_payouts.py: empty variable

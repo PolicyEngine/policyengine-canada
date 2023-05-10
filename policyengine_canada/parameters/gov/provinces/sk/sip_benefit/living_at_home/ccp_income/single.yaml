@@ -1,10 +1,10 @@
-decription: Saskatchewan Seniors Income Plan Client Living at Home CPP monthly income where a senior becomes ineligible for SIP for Single Pensioner
+decription: Saskatchewan Seniors Income Plan Client Living at Home CPP income where a senior becomes ineligible for SIP for Single Pensioner
 values: 
-  2022-07-01: 380
+  2022-07-01: 4_560
 
 metadata:
   unit: currency_CAD
-  label: Saskatchewan Seniors Income Plan Client Living at Home CPP monthly income for Single Pensioner
+  label: Saskatchewan Seniors Income Plan Client Living at Home CPP income for Single Pensioner
   reference:
   - title: Saskatchewan Seniors Income Plan
     href: https://www.saskatchewan.ca/residents/family-and-social-support/seniors-services/financial-help-for-seniors
