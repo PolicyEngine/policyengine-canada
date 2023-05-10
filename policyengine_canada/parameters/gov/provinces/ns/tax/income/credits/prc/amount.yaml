@@ -1,0 +1,9 @@
+description: The annual payment for Nova Scotia Poverty Reduction Credit.
+values:
+  2022-07-01: 500
+metadata:
+  unit: currency-CAD
+  label: Nova Scotia Poverty Reduction Credit Amount
+  reference:
+  - title: Government of Canada - Nova Scotia The Poverty Reduction Credit
+    href: https://novascotia.ca/coms/noteworthy/PovertyReductionCredit.html

@@ -1,0 +1,11 @@
+description: Nunavut child benefit has this child age limit for eligibility.
+values:
+  2022-07-01: 18
+metadata:
+  unit: year
+  label: Nunavut child benefit child age limit
+  reference:
+  - title: Government of Canada - Canada Child Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html
+  - title: Nunavut Child Benefit (NUCB)
+    href: https://www.gov.nu.ca/programs-services/nunavut-child-benefit-nucb
