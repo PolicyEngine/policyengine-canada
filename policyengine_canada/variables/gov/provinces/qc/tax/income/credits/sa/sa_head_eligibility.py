@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class sa_no_spouse_eligibility(Variable):
+class sa_head_eligibility(Variable):
     value_type = bool
     entity = Household
     label = "Quebec senior assistance tax credits eligible senior did not have a spouse"
@@ -13,14 +13,11 @@ class sa_no_spouse_eligibility(Variable):
 
         p = parameters(period).gov.provinces.qc.tax.income.credits.sa
 
-        head = person("sa_age_eligibility", period)
-
+        age_eligible = person("age", period) >= p.age_eligibility
         if_spouse = person("is_spouse", period)
 
-        eligible = head & (~if_spouse)
+        eligible = age_eligible & (~if_spouse)
 
         return household.any(eligible)
 
-
-# make it to head instead of no spouse
 

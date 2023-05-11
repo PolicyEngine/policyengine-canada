@@ -11,16 +11,7 @@ class sa_spouse_eligibility(Variable):
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.qc.tax.income.credits.sa
 
-        age = person("age", period)
-        spouse = person("is_spouse", period)
-
-        return spouse & (age >= p.age_eligibility)
-
-
-        p = parameters(period).gov.provinces.qc.tax.income.credits.sa
-
         age_eligible = person("age", period) >= p.age_eligibility
-
         spouse = person("is_spouse", period)
 
-        return age_eligible & (spouse)
+        return spouse & age_eligible
