@@ -1,0 +1,26 @@
+- name: Under reduction threshold
+  period: 2024
+  input:
+    province_code: SK
+    sk_low_income_credit_base: 1_000
+    adjusted_family_net_income: 35_902
+  output:
+    sk_low_income_credit: 1_000
+
+- name: Reduction # 1_000 - ((40_000 - 35_902) * 0.0275)
+  period: 2024
+  input:
+    province_code: SK
+    sk_low_income_credit_base: 1_000
+    adjusted_family_net_income: 40_000
+  output:
+    sk_low_income_credit: 887.305
+
+- name: Max Reduction # 1_000 - ((200_000 - 35_902) * 0.0275)
+  period: 2024
+  input:
+    province_code: SK
+    sk_low_income_credit_base: 1_000
+    adjusted_family_net_income: 200_000
+  output:
+    sk_low_income_credit: 0

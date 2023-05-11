@@ -386,3 +386,8 @@
     added:
     - Nova Scotia Child Benefit.
   date: 2023-05-08 13:38:57
+- bump: minor
+  changes:
+    added:
+    - Saskatchewan low income tax credit.
+  date: 2023-05-10 20:12:43
