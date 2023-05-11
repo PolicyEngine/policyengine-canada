@@ -12,6 +12,6 @@ class climate_action_incentive_single_parent_household(Variable):
     def formula(household, period, parameters):
         married = household("is_married", period)
         cai_children = household(
-            "climate_action_incentive_dependent_children", period
+            "climate_action_incentive_dependant_children", period
         )
         return ~married & (cai_children > 0)

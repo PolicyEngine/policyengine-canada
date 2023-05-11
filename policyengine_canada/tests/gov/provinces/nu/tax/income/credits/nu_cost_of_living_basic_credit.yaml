@@ -1,0 +1,32 @@
+- name: No income
+  period: 2023
+  input:
+    province_code: NU
+    nu_cost_of_living_credit_adjusted_net_income: 0
+  output:
+    nu_cost_of_living_basic_credit: 0
+
+- name: Wrong province
+  period: 2023
+  input:
+    province_code: AB
+    nu_cost_of_living_credit_adjusted_net_income: 1_000
+  output:
+    nu_cost_of_living_basic_credit: 0
+
+- name: Max amount 1_500
+  period: 2023
+  input:
+    province_code: NU
+    nu_cost_of_living_credit_adjusted_net_income: 100_000
+  output:
+    nu_cost_of_living_basic_credit: 1_500
+
+
+- name: 2 percent of 1_000
+  period: 2023
+  input:
+    province_code: NU
+    nu_cost_of_living_credit_adjusted_net_income: 1_000
+  output:
+    nu_cost_of_living_basic_credit: 20

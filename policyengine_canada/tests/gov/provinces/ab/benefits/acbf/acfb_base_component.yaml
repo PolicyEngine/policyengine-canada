@@ -1,0 +1,26 @@
+- name: Capped at 0
+  period: 2023
+  input:
+    acfb_base_component_reduction: 1_000
+    acfb_base_component_base: 100
+    province_code: AB
+  output:
+    acfb_base_component: 0
+
+- name: No reduction
+  period: 2023
+  input:
+    acfb_base_component_reduction: 0
+    acfb_base_component_base: 100
+    province_code: AB
+  output:
+    acfb_base_component: 100
+
+- name: Calculation # 1_000 - 500
+  period: 2023
+  input:
+    acfb_base_component_reduction: 500
+    acfb_base_component_base: 1_000
+    province_code: AB
+  output:
+    acfb_base_component: 500

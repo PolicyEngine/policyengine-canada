@@ -1,0 +1,9 @@
+description: The age eligibility of a dependant for the Nova Scotia low-income tax reduction.
+values:
+  2022-12-31: 18
+metadata:
+  unit: year
+  label: Nova Scotia low-income tax reduction dependant age eligibility
+  reference:
+  - title: Government of Canada - Nova Scotia Information Guide
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc/information-residents-nova-scotia.html#P138_15662

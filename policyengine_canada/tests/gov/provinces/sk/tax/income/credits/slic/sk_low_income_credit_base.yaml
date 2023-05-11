@@ -1,0 +1,26 @@
+- name: No children and not married
+  period: 2024
+  input:
+    province_code: SK
+    sk_low_income_credit_eligible_children: 0
+    is_married: false
+  output:
+    sk_low_income_credit_base: 380
+
+- name: One child and not married
+  period: 2024
+  input:
+    province_code: SK
+    sk_low_income_credit_eligible_children: 1
+    is_married: false
+  output:
+    sk_low_income_credit_base: 530
+
+- name: Five children and married
+  period: 2024
+  input:
+    province_code: SK
+    sk_low_income_credit_eligible_children: 5
+    is_married: true
+  output:
+    sk_low_income_credit_base: 1_060
