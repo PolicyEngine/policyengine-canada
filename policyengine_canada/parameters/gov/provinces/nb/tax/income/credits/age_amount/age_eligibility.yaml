@@ -1,0 +1,9 @@
+description: New Brunswick allows people to access the Age Amount credit past this age. 
+values:
+  2023-01-01: 65
+metadata:
+  unit: year
+  label: New Brunswick age amount credit age eligibility
+  reference:
+  - title: 2023 New Brunswick Personal Tax Credit Return
+    href: https://www.unb.ca/hr/_assets/documents/td1nb-e.pdf 
