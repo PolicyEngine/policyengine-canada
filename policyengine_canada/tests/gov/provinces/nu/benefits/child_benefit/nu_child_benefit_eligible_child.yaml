@@ -1,0 +1,23 @@
+- name: Eligible
+  period: 2023
+  input:
+    province_code: NU
+    age: 12
+  output:
+    nu_child_benefit_eligible_child: true
+
+- name: Ineligible right on threshold
+  period: 2023
+  input:
+    province_code: NU
+    age: 18
+  output:
+    nu_child_benefit_eligible_child: false
+
+- name: Ineligible
+  period: 2023
+  input:
+    province_code: NU
+    age: 25
+  output:
+    nu_child_benefit_eligible_child: false
