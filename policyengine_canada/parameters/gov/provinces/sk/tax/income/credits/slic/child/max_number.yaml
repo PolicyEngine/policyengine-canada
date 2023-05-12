@@ -1,0 +1,9 @@
+description: Saskatchewan provides the low income tax credit for a maximum of this many children per family.
+values:
+  2022-01-01: 2
+metadata:
+  unit: child
+  label: Saskatchewan low income tax credit max child component 
+  reference:
+  - title: GST/HST Credit and Climate Action Incentive Payment - p.9
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pub/rc4210/rc4210-22e.pdf#page=9 
