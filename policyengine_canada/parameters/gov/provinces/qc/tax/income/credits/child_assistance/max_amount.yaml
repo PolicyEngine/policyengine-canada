@@ -1,9 +1,9 @@
 description: Quebec Child Assistance Tax Credit maximum amount per child.
 values:
-  2023-01-01: 2_668.19
+  2023-01-01: 2_782
 metadata:
   unit: currency-CAD
   label: Quebec Child Assistance Tax Credit child max amount per child.
-  reference:
+  reference: Retraite Québec - Amounts and payment
   - title: 
-    href: 
+    href: https://www.rrq.gouv.qc.ca/en/programmes/soutien_enfants/paiement/Pages/montant.aspx

@@ -4,6 +4,8 @@ values:
 metadata:
   unit: year
   label: Quebec Child Assistance Credit eligible child.
-  reference:
+  reference: Retraite Québec - Amounts and payment
   - title: 
-    href: 
+    href: https://www.rrq.gouv.qc.ca/en/programmes/soutien_enfants/paiement/Pages/montant.aspx
+
+# You must be UNDER the age of 18 for the credit to apply. Need to confirm this works correctly in the test.

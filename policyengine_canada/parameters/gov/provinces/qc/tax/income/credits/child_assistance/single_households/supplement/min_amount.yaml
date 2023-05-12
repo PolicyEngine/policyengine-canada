@@ -1,9 +1,9 @@
 description: Quebec Child Assistance Tax Credit minimum amount for the single household supplement.
 values:
-  2023-01-01: 372.94
+  2023-01-01: 389
 metadata:
   unit: currency-CAD
   label: Quebec Child Assistance Tax Credit child minimum amount for the single household supplement.
-  reference:
+  reference: Retraite Québec - Amounts and payment
   - title: 
-    href: 
+    href: https://www.rrq.gouv.qc.ca/en/programmes/soutien_enfants/paiement/Pages/montant.aspx

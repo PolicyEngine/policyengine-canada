@@ -1,11 +1,11 @@
 description: Quebec Child Assistance Tax Credit minimum amount per child.
 values:
-  2023-01-01: 1_061.21
+  2023-01-01: 1_107
 metadata:
   unit: currency-CAD
   label: Quebec Child Assistance Tax Credit child minimum amount per child.
-  reference:
+  reference: Retraite Québec - Amounts and payment
   - title: 
-    href: 
+    href: https://www.rrq.gouv.qc.ca/en/programmes/soutien_enfants/paiement/Pages/montant.aspx
 
 #TODO: add back-to-school parameter
