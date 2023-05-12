@@ -1,0 +1,10 @@
+description: Newfoundland limits its Physical Activity Tax Credit to people below this age.
+values:
+  2022-12-31: 18
+metadata:
+  unit: age
+  label: Newfoundland Physical Activity Tax Credit child age eligibility
+  reference:  
+  - title: Government of Canada - Newfoundland and Labrador Credits
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/newfoundland-labrador/5001-pc/information-residents-newfoundland-labrador.html#PATC_NL
+    
