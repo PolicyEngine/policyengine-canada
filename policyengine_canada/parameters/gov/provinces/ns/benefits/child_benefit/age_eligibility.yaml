@@ -1,0 +1,9 @@
+description: Nova Scotia child benefit child eligible age
+values:
+  2022-07-01: 18
+metadata:
+  unit: year
+  label: Nova Scotia Child Benefit Child Eligible Age
+  reference:
+  - title: Nova Scotia child benefit
+    href: https://novascotia.ca/coms/families/ChildBenefit.html

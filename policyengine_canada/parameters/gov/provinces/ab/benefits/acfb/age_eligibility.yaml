@@ -1,0 +1,9 @@
+description: Alberta limits its Child and Family Benefit to people below this age.
+values:
+  2022-01-01: 18
+metadata:
+  unit: year
+  label: Alberta child and Family Benefit child age eligibility
+  reference:
+  - title: Province of Alberta - Alberta Child and Family Benefit
+    href: https://www.alberta.ca/alberta-child-and-family-benefit.aspx

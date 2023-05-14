@@ -1,0 +1,26 @@
+description: Quebec reduces its cost of living tax credit at this rate.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Quebec cost of living tax credit reduction
+  reference:
+    - title: Revenu Quebec - New Refundable Cost of Living Tax Credit
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/new-refundable-cost-of-living-tax-credit/
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0 # no reduction when income under $50,000
+  - threshold:
+      2022-01-01: 50_000
+    rate:
+      2022-01-01: 0.05 # The credit is reduced by 5% of your income between $50,000 to $54,000
+  - threshold:
+      2022-01-01: 54_000
+    rate:
+      2022-01-01: 0 # no reduction when income between $54,000 to $100,000
+  - threshold:
+      2022-01-01: 100_000
+    rate:
+      2022-01-01: 0.1 #The credit is reduced by 10% of your income over $100,000 until 0

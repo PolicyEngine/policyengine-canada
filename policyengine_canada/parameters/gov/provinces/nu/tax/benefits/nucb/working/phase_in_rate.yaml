@@ -1,0 +1,21 @@
+description: Nunavut reduces the child benefit supplement for territorial workers at this rate.
+brackets:
+  - threshold: 
+      2022-07-01: 0
+    rate:
+      2022-07-01: 0
+  - threshold:
+      2022-07-01: 3_750
+    rate:
+      2022-07-01: 0.044
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: Nunavut child benefit territorial workers' phase in rate
+  reference:
+  - title: Government of Canada - Canada Child Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html
+  - title: Nunavut Child Benefit (NUCB)
+    href: https://www.gov.nu.ca/programs-services/nunavut-child-benefit-nucb

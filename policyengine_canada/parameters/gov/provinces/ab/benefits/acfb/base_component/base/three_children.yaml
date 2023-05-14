@@ -1,0 +1,11 @@
+description: Alberta provides this Child and Family Benefit base amount for the third child.
+values:
+  2022-07-01: 665 # $55.41 monthly.
+  2023-01-01: 705 # $58.75 monthly.
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Alberta Child and Family Benefit the third child base amount
+  reference:
+  - title: Government of Canada - Alberta Child and Family Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-alberta.html

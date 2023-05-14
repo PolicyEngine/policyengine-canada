@@ -9,6 +9,7 @@ class cwb_disability_supplement_max_amount(Variable):
     reference = (
         "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-89.html#docCont"
     )
+    unit = CAD
 
     def formula(household, period, parameters):
         person = household.members

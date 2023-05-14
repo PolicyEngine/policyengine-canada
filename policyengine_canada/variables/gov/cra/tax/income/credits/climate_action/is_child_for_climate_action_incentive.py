@@ -8,7 +8,7 @@ class is_child_for_climate_action_incentive(Variable):
         "Is a for the climate action incentive eligible child in a Household"
     )
     definition_period = YEAR
-    defined_for = "is_dependent"
+    defined_for = "is_dependant"
 
     def formula(person, period, parameters):
         adult_age = parameters(

@@ -1,0 +1,19 @@
+description: The income dependent phase-out rate of the Nova Scotia low-income tax reduction.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Nova Scotia low-income tax reduction phase-out  
+  reference:
+  - title: Government of Canada - Nova Scotia Information Guide
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc/information-residents-nova-scotia.html#P138_15662
+brackets:
+  - threshold:
+      2022-12-31: 0
+    rate:
+      2022-12-31: 0
+  - threshold:
+      2022-12-31: 15_000
+    rate:
+      2022-12-31: 0.05
+  
