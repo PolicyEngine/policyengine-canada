@@ -1,0 +1,11 @@
+description: Alberta provides this Child and Family Benefit working component amount for the first child.
+values:
+  2022-07-01: 681 # $56.75 monthly.
+  2023-01-01: 722 # $60.16 monthly
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Alberta Child and Family Benefit the first childrens working amount
+  reference:
+  - title: Government of Canada - Alberta Child and Family Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-alberta.html
