@@ -3,7 +3,7 @@
   input:
     province_code: YT
     age: 19
-    child_physical_activities_fees: 110
+    physical_activities_fees: 110
     is_disabled: true
   output:
     yt_cftc_disabled_child: false
@@ -13,7 +13,7 @@
   input:
     province_code: YT
     age: 19
-    child_physical_activities_fees: 90
+    physical_activities_fees: 90
     is_disabled: true
   output:
     yt_cftc_disabled_child: false
@@ -23,7 +23,7 @@
   input:
     province_code: YT
     age: 17
-    child_physical_activities_fees: 90
+    physical_activities_fees: 90
     is_disabled: true
   output:
     yt_cftc_disabled_child: false
@@ -33,7 +33,7 @@
   input:
     province_code: YT
     age: 17
-    child_physical_activities_fees: 110
+    physical_activities_fees: 110
     is_disabled: true
   output:
     yt_cftc_disabled_child: true

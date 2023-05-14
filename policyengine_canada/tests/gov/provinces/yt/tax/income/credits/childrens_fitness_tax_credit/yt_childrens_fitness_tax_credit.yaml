@@ -3,7 +3,7 @@
   input:
     province_code: YT
     yt_cftc_eligible_children: 0
-    child_physical_activities_fees: 1000
+    physical_activities_fees: 1000
     yt_childrens_fitness_tax_credit_disability_supplement: 0
   output:
     yt_childrens_fitness_tax_credit: 0
@@ -13,7 +13,7 @@
   input:
     province_code: YT
     yt_cftc_eligible_children: 1
-    child_physical_activities_fees: 1000
+    physical_activities_fees: 1000
   output:
     yt_childrens_fitness_tax_credit: 64
 
@@ -22,7 +22,7 @@
   input:
     province_code: YT
     yt_cftc_eligible_children: 1
-    child_physical_activities_fees: 1000
+    physical_activities_fees: 1000
     yt_childrens_fitness_tax_credit_disability_supplement: 500
   output:
     yt_childrens_fitness_tax_credit: 564
@@ -32,7 +32,7 @@
   input:
     province_code: YT
     yt_cftc_eligible_children: 3
-    child_physical_activities_fees: 5000
+    physical_activities_fees: 5000
     yt_childrens_fitness_tax_credit_disability_supplement: 1000
   output:
     yt_childrens_fitness_tax_credit: 1320
@@ -42,7 +42,7 @@
   input:
     province_code: YT
     yt_cftc_eligible_children: 3
-    child_physical_activities_fees: 50000
+    physical_activities_fees: 50000
     yt_childrens_fitness_tax_credit_disability_supplement: 0
   output:
     yt_childrens_fitness_tax_credit: 3000

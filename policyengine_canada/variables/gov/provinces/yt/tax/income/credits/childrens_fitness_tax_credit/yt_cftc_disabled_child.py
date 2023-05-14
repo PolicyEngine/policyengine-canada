@@ -10,7 +10,7 @@ class yt_cftc_disabled_child(Variable):
 
     def formula(person, period, parameters):
         disabled = person("is_disabled", period)
-        fees = person("child_physical_activities_fees", period)
+        fees = person("physical_activities_fees", period)
         age = person("age", period)
         p = parameters(
             period

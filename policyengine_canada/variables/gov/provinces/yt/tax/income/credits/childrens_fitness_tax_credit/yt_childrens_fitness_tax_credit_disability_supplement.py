@@ -6,6 +6,7 @@ class yt_childrens_fitness_tax_credit_disability_supplement(Variable):
     entity = Household
     label = "Yukon children fitness tax credit disability supplement"
     definition_period = YEAR
+    unit = CAD
     defined_for = ProvinceCode.YT
 
     def formula(household, period, parameters):
