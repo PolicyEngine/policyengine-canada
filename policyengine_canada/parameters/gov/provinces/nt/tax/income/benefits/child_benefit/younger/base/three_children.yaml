@@ -1,4 +1,4 @@
-description: Northwest Territories child benefit younger bracket three children base.
+description: Northwest Territories provides this base amount under the child benefit for three children in the younger bracket.
 values:
   2022-07-01: 529.92
 metadata:
@@ -7,3 +7,5 @@ metadata:
   reference:
   - title: Government of Canada - Child benefit
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html#toc18
+  - title: Northwest Territories - Income Tax Act - Part 1, Division A, 3.2, (2)
+    href: https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf?t1621265645728

@@ -4,7 +4,7 @@
     province_code: NT
     age: 5
   output:
-    ntcb_younger_eligible_child: true
+    nt_child_benefit_younger_eligible_child: true
 
 
 - name: Over age threshold
@@ -13,4 +13,4 @@
     province_code: NT
     age: 6
   output:
-    ntcb_younger_eligible_child: false
+    nt_child_benefit_younger_eligible_child: false

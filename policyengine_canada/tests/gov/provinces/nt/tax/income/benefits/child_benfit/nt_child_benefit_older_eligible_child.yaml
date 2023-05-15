@@ -4,7 +4,7 @@
     province_code: NT
     age: 5
   output:
-    ntcb_older_eligible_child: false
+    nt_child_benefit_older_eligible_child: false
 
 - name: Eligible
   period: 2023
@@ -12,7 +12,7 @@
     province_code: NT
     age: 6
   output:
-    ntcb_older_eligible_child: true
+    nt_child_benefit_older_eligible_child: true
 
 - name: Over upper age threshold
   period: 2023
@@ -20,4 +20,4 @@
     province_code: NT
     age: 18
   output:
-    ntcb_older_eligible_child: false
+    nt_child_benefit_older_eligible_child: false

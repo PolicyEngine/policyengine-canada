@@ -2,39 +2,39 @@
   period: 2023
   input:
     province_code: NT
-    ntcb_older_eligible_children: 0
+    nt_child_benefit_older_eligible_children: 0
   output:
-    ntcb_older_base: 0
+    nt_child_benefit_older_base: 0
 
 - name: One child 
   period: 2023
   input:
     province_code: NT
-    ntcb_older_eligible_children: 1
+    nt_child_benefit_older_eligible_children: 1
   output:
-    ntcb_older_base: 651.96
+    nt_child_benefit_older_base: 651.96
 
 - name: Two child # 651.96 + 522
   period: 2023
   input:
     province_code: NT
-    ntcb_older_eligible_children: 2
+    nt_child_benefit_older_eligible_children: 2
   output:
-    ntcb_older_base: 1_173.96
+    nt_child_benefit_older_base: 1_173.96
 
 
 - name: Three children # 651.96 + 522 + 423
   period: 2023
   input:
     province_code: NT
-    ntcb_older_eligible_children: 3
+    nt_child_benefit_older_eligible_children: 3
   output:
-    ntcb_older_base: 1_596.96
+    nt_child_benefit_older_base: 1_596.96
 
 - name: Six children # 651.96 + 522 + 423 + 359.04 + (2* 292.92)
   period: 2023
   input:
     province_code: NT
-    ntcb_older_eligible_children: 6
+    nt_child_benefit_older_eligible_children: 6
   output:
-    ntcb_older_base: 2_541.84
+    nt_child_benefit_older_base: 2_541.84
