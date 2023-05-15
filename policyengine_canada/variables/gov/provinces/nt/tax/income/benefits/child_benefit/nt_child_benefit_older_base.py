@@ -13,7 +13,9 @@ class nt_child_benefit_older_base(Variable):
         p = parameters(
             period
         ).gov.provinces.nt.tax.income.benefits.child_benefit.older.base
-        children = household("nt_child_benefit_older_eligible_children", period)
+        children = household(
+            "nt_child_benefit_older_eligible_children", period
+        )
 
         return (
             (p.one_child * (children > 0))
