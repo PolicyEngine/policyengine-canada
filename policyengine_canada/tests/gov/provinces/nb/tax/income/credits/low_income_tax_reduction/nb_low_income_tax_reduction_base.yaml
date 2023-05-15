@@ -1,0 +1,26 @@
+- name: Single no dependant
+  period: 2022
+  input:
+    province_code: NB
+    is_married: false
+    is_dependant: false
+  output:
+    nb_low_income_tax_reduction_base: 701
+
+- name: Married with a dependant 
+  period: 2022
+  input:
+    province_code: NB
+    is_married: true
+    is_dependant: true
+  output:
+    nb_low_income_tax_reduction_base: 1_402
+
+- name: Married with a dependant 
+  period: 2022
+  input:
+    province_code: NB
+    is_married: true
+    is_dependant: false
+  output:
+    nb_low_income_tax_reduction_base: 1_402
