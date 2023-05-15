@@ -2,7 +2,7 @@
   period: 2023
   input:
     province_code: NT
-    nt_chil_benefit_younger_base: 1_500
+    nt_child_benefit_younger_base: 1_500
     nt_child_benefit_older_base: 1_000
     adjusted_family_net_income: 30_000
   output:
@@ -12,7 +12,7 @@
   period: 2023
   input:
     province_code: NT
-    nt_chil_benefit_younger_base: 1_500
+    nt_child_benefit_younger_base: 1_500
     nt_child_benefit_older_base: 1_000
     adjusted_family_net_income: 0
   output:
@@ -22,7 +22,7 @@
   period: 2023
   input:
     province_code: NT
-    nt_chil_benefit_younger_base: 1_500
+    nt_child_benefit_younger_base: 1_500
     nt_child_benefit_older_base: 1_000
     adjusted_family_net_income: 80_001
   output:
@@ -32,7 +32,7 @@
   period: 2023
   input:
     province_code: NT
-    nt_chil_benefit_younger_base: 1_500
+    nt_child_benefit_younger_base: 1_500
     nt_child_benefit_older_base: 1_000
     adjusted_family_net_income: 40_000
   output:
@@ -42,7 +42,7 @@
   period: 2023
   input:
     province_code: NT
-    nt_chil_benefit_younger_base: 1_500
+    nt_child_benefit_younger_base: 1_500
     nt_child_benefit_older_base: 1_000
     adjusted_family_net_income: 60_000
   output:

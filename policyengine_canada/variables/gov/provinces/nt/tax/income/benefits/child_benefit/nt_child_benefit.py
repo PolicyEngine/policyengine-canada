@@ -10,7 +10,7 @@ class nt_child_benefit(Variable):
     defined_for = ProvinceCode.NT
 
     def formula(household, period, parameters):
-        younger_amount = household("nt_chil_benefit_younger_base", period)
+        younger_amount = household("nt_child_benefit_younger_base", period)
         older_amount = household("nt_child_benefit_older_base", period)
         p = parameters(
             period

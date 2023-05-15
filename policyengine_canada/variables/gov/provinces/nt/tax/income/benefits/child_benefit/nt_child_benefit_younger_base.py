@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class nt_chil_benefit_younger_base(Variable):
+class nt_child_benefit_younger_base(Variable):
     value_type = float
     entity = Household
     label = "Base amount for all younger children under the Northwest Territories Child Benefit"
