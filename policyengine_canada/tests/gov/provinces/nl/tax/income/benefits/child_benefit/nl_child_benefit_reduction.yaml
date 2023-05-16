@@ -1,0 +1,35 @@
+- name: Newfoundland one child benefit reduction
+  period: 2023
+  input:
+    province_code: NL
+    adjusted_family_net_income:
+    nl_child_benefit_supplement_children: 1
+  output:
+    nl_child_benefit_reduction: 0
+
+- name: Newfoundland two children benefit reduction
+  period: 2023
+  input:
+    province_code: NL
+    adjusted_family_net_income:
+    nl_child_benefit_supplement_children: 2
+  output:
+    nl_child_benefit_reduction: 
+  
+- name: Newfoundland three children benefit reduction
+  period: 2023
+  input:
+    province_code: NL
+    adjusted_family_net_income:
+    nl_child_benefit_supplement_children: 3
+  output:
+    nl_child_benefit_reduction: 
+
+- name: Newfoundland four children benefit reduction
+  period: 2023
+  input:
+    province_code: NL
+    adjusted_family_net_income:
+    nl_child_benefit_supplement_children: 4
+  output:
+    nl_child_benefit_reduction: 

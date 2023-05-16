@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class nl_child_benefit_supplement(Variable):
+class nb_child_benefit_supplement(Variable):
     value_type = int
     entity = Household
     label = "New Brunswick child benefit supplement"
