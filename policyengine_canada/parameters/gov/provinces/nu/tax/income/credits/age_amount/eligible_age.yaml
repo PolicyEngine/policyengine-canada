@@ -1,0 +1,9 @@
+description: Nunavut allows people who are over this age to receive the age amount credit. 
+values:
+  2023-01-01: 65
+metadata:
+  unit: year
+  label: Nunavut age amount credit eligible age
+  reference:
+  - title: Consolidation of Income Tax Act, Part I Division A 2.2
+    href: https://www.nunavutlegislation.ca/en/consolidated-law/income-tax-act-consolidation
