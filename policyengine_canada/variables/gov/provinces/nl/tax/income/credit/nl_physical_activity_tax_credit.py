@@ -24,7 +24,7 @@ class nl_physical_activity_tax_credit(Variable):
         individual_expenses = eligible * (
             person("physical_activities_fees", period)
         )
-        
+
         expenses = household.sum(individual_expenses)
         maximum_amount = min_(expenses, p.max_amount)
 
