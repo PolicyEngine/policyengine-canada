@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class is_rent_socialhousing(Variable):
+class low_income_housing(Variable):
     value_type = bool
     entity = Person
     label = "Rent Under Program"

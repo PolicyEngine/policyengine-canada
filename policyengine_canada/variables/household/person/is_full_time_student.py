@@ -1,9 +1,9 @@
 from policyengine_canada.model_api import *
 
 
-class sponsored_newcomer(Variable):
+class is_full_time_student(Variable):
     value_type = bool
-    entity = Household
-    label = "Is household a sponsored newcomer to Canada"
+    entity = Person
+    label = "Is the person a full-time post-secondary student or not?"
     definition_period = YEAR
     defined_for = ProvinceCode.SK

@@ -1,9 +1,9 @@
 from policyengine_canada.model_api import *
 
 
-class is_multiple_support_resources(Variable):
+class saskatchewan_income_assistance(Variable):
     value_type = bool
-    entity = Person
+    entity = Household
     label = "Support Resources"
     unit = CAD
     documentation = "whether receive support from another Government of Saskatchewan income assistance or training program"
