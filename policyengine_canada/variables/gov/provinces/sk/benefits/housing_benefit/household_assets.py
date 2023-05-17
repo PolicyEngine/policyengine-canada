@@ -7,4 +7,3 @@ class household_assets(Variable):
     unit = CAD
     label = "The value of household assets"
     definition_period = YEAR
-    defined_for = ProvinceCode.SK
