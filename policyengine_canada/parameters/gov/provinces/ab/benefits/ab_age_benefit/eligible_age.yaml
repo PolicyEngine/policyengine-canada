@@ -1,0 +1,10 @@
+description: Alberta age benefit eligibility.
+values:
+  2023-01-01: 65
+metadata:
+  unit: year
+  label: Alberta age benefit eligibility.
+  reference:
+    - title: Alberta age benefit.
+      href: https://media.icims.com/training/iForms%20Library/Candidate%20Management/Onboarding%20Solution/Alberta%20Personal%20Tax%20Credit.pdf
+    

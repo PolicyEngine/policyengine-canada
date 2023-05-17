@@ -1,0 +1,15 @@
+- name: Alberta age benefit ineiligible
+  period: 2023
+  input:
+    province_code: AB
+    age: 60
+  output:
+    ab_age_benefit_eligibility: false
+
+- name:  Alberta age benefit eiligible
+  period: 2023
+  input:
+    province_code: AB
+    age: 68
+  output:
+    ab_age_benefit_eligibility: true
