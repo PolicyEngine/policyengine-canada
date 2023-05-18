@@ -1,0 +1,101 @@
+- name: Expense below 2_000
+  period: 2023
+  input:
+    people:
+      p1:
+        age: 40
+        is_head: true
+        physical_activities_fees: 1_000
+    household:
+      members: p1
+      province_code: NL
+  output:
+    nl_physical_activity_tax_credit: 87
+
+- name: Expense over 2_000
+  period: 2023
+  input:
+    people:
+      p1:
+        age: 28
+        is_head: true
+        physical_activities_fees: 3_000
+    household:
+      members: p1
+      province_code: NL
+  output:
+    nl_physical_activity_tax_credit: 174
+
+- name: No Expense
+  period: 2023
+  input:
+    people:
+      p1:
+        age: 28
+        is_head: true
+        physical_activities_fees: 0
+    household:
+      members: p1
+      province_code: NL
+  output:
+    nl_physical_activity_tax_credit: 0
+
+- name: Two people with eligible expenses
+  period: 2023
+  input:
+    people:
+      p1:
+        age: 40
+        is_head: true
+        physical_activities_fees: 1_000
+      p2:
+        physical_activities_fees: 200
+        age: 17
+    household:
+      members: [p1, p2]
+      province_code: NL
+  output:
+    nl_physical_activity_tax_credit: 104.4
+
+- name: Two people with eligible expenses and one ineligible
+  period: 2023
+  input:
+    people:
+      p1:
+        age: 40
+        is_spouse: true
+        physical_activities_fees: 1_000
+      p2:
+        physical_activities_fees: 200
+        age: 17
+      p3:
+        physical_activities_fees: 300
+        age: 19
+    household:
+      members: [p1, p2, p3]
+      province_code: NL
+  output:
+    nl_physical_activity_tax_credit: 104.4
+
+- name: Two people with eligible expenses and two ineligible
+  period: 2023
+  input:
+    people:
+      p1:
+        age: 40
+        is_spouse: true
+        physical_activities_fees: 1_000
+      p2:
+        physical_activities_fees: 200
+        age: 17
+      p3:
+        physical_activities_fees: 400
+        age: 18
+      p4:
+        physical_activities_fees: 500
+        age: 19
+    household:
+      members: [p1, p2, p3, p4]
+      province_code: NL
+  output:
+    nl_physical_activity_tax_credit: 104.4

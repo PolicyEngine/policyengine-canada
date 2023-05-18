@@ -391,3 +391,8 @@
     added:
     - Saskatchewan low income tax credit.
   date: 2023-05-10 20:12:43
+- bump: minor
+  changes:
+    added:
+    - Newfoundland Physical Activity Tax Credit.
+  date: 2023-05-18 02:03:51
