@@ -12,7 +12,7 @@ class yt_cftc_eligible_child(Variable):
         age = person("age", period)
         p = parameters(
             period
-        ).gov.provinces.yt.tax.income.credits.childrens_fitness_tax_credit
+        ).gov.provinces.yt.tax.income.credits.childrens_fitness
         disabled = person("is_disabled", period) & (
             age < p.disability_supplement.age
         )

@@ -13,5 +13,5 @@ class yt_childrens_fitness_tax_credit_disability_supplement(Variable):
         disabled_children = household("yt_cftc_disabled_children", period)
         p = parameters(
             period
-        ).gov.provinces.yt.tax.income.credits.childrens_fitness_tax_credit.disability_supplement
+        ).gov.provinces.yt.tax.income.credits.childrens_fitness.disability_supplement
         return disabled_children * p.base

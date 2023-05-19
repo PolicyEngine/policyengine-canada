@@ -18,7 +18,7 @@ class yt_childrens_fitness_tax_credit(Variable):
         )
         p = parameters(
             period
-        ).gov.provinces.yt.tax.income.credits.childrens_fitness_tax_credit
+        ).gov.provinces.yt.tax.income.credits.childrens_fitness
         # maximum of $ 1,000 per child tof eligible fees can be multiplied by
         # the refundable rate of % 6.4
         maximum_fees = total_children * p.base
