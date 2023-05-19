@@ -16,7 +16,6 @@ class nt_child_benefit_younger_base(Variable):
         children = household(
             "nt_child_benefit_younger_eligible_children", period
         )
-        print(p.five_or_more_children * (children > 4))
         return (
             (p.one_child * (children > 0))
             + (p.two_children * (children > 1))
