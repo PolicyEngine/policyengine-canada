@@ -1,0 +1,9 @@
+description: Newfoundland provides this share of the physical activity fees as the Physical Activity Tax Credit.
+values:
+  2022-12-31: 0.087
+metadata:
+  unit: /1
+  label: Newfoundland Physical Activity Tax Credit rate
+  reference:
+  - title: Government of Canada - Newfoundland and Labrador Credits
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/newfoundland-labrador/5001-tc.html
