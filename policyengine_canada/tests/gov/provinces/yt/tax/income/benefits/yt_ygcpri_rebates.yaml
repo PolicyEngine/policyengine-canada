@@ -1,0 +1,19 @@
+- name: No supplement # 4 * 320 = 1280
+  period: 2023
+  input:
+    province_code: YT
+    yt_ygcpri_eligible_children: 2
+    yt_ygcpri_spouses: 1
+    lived_outside_of_Whitehorse: False
+  output:
+    gycpri_rebates: 1280
+
+- name: Have supplement # 4 * (320+32) = 1408
+  period: 2023
+  input:
+    province_code: YT
+    yt_ygcpri_eligible_children: 2
+    yt_ygcpri_spouses: 1
+    lived_outside_of_Whitehorse: True
+  output:
+    gycpri_rebates: 1408

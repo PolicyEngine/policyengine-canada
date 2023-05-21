@@ -1,0 +1,9 @@
+description: Yukon provides this base amount for each child in Yukon Government carbon price rebate - Individuals (YGCPRI)
+values:
+  2023-01-01: 320
+metadata:
+  unit: currency-CAD
+  label: Yukon child YGCPRI base
+  reference:
+  - title: Yukon Government carbon price rebate - Individuals (YGCPRI)
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/yukon.html#YGCPRI
