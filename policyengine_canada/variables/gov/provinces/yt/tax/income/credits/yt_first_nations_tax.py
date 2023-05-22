@@ -13,5 +13,5 @@ class yt_first_nations_tax(Variable):
         p = parameters(
             period
         ).gov.provinces.yt.tax.income.credits.first_nations_tax
-        eligiblity = household("resides_on_settlement_land", period)
-        return (income * p.rates) * eligiblity
+        eligible = household("resides_on_settlement_land", period)
+        return income * p.rates * eligible
