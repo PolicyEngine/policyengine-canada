@@ -9,4 +9,9 @@ class yt_ygcpri_eligible_child(Variable):
     defined_for = ProvinceCode.YT
 
     def formula(person, period, parameters):
-        return person("age", period) < 19
+        return (
+            person("age", period)
+            < parameters(
+                period
+            ).gov.provinces.yt.benefits.rebates.ygcpri.child_eligible_age
+        )

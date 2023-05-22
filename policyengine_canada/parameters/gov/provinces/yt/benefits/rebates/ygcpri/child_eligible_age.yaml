@@ -1,9 +1,9 @@
-description: Yukon provides this base amount for the individual filer under the Yukon Government carbon price rebate (YGCPRI).
+description: Yukon provides this eligible age for each child in Yukon Government carbon price rebate - Individuals (YGCPRI)
 values:
-  2023-01-01: 320
+  2023-01-01: 19
 metadata:
-  unit: currency-CAD
-  label: Yukon individual YGCPRI base
+  unit: year
+  label: Yukon YGCPRI child eligible age
   reference:
   - title: Yukon Government carbon price rebate - Individuals (YGCPRI)
     href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/yukon.html#YGCPRI

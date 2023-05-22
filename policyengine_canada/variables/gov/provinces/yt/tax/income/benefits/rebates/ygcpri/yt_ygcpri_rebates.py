@@ -12,8 +12,19 @@ class gycpri_rebates(Variable):
 
     def formula(household, period, parameters):
         children = household("yt_ygcpri_eligible_children", period)
-        spouses = household("yt_ygcpri_spouses", period)
-        remote = household("lived_outside_of_Whitehorse", period)
+        person = household.members
+        spouse = person("is_spouse", period)
+        spouses = household.sum(spouse)
+        remote = household("lived_outside_of_whitehorse", period)
         p = parameters(period).gov.provinces.yt.benefits.rebates.ygcpri
-        supplement = remote*(p.supplement.child*children + p.supplement.spouse*spouses + p.supplement.self)
-        return p.amount.child*children + p.amount.spouse*spouses + p.amount.self + supplement
+        supplement = remote * (
+            p.supplement.child * children
+            + p.supplement.spouse * spouses
+            + p.supplement.self
+        )
+        return (
+            p.amount.child * children
+            + p.amount.spouse * spouses
+            + p.amount.self
+            + supplement
+        )
