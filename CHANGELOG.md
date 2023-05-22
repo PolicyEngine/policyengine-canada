@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.60.0] - 2023-05-19 20:22:40
+
+### Added
+
+- Yukon Childrens Fitness Tax Credit.
+
+## [0.59.0] - 2023-05-18 02:03:51
+
+### Added
+
+- Newfoundland Physical Activity Tax Credit.
+
 ## [0.58.0] - 2023-05-10 20:12:43
 
 ### Added
@@ -480,6 +492,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.60.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.59.0...0.60.0
+[0.59.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.58.0...0.59.0
 [0.58.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.57.0...0.58.0
 [0.57.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.56.0...0.57.0
 [0.56.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.55.0...0.56.0
