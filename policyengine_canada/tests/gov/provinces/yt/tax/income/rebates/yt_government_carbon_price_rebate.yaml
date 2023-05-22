@@ -1,4 +1,4 @@
-- name: Have supplement # 4 * (320+32) = 1408
+- name: 1 head + 1 spouse + 2 children + have supplement # 4 * (320+32) = 1408
   period: 2023
   input:
     people:
@@ -18,7 +18,7 @@
   output:
     yt_government_carbon_price_rebate: 1_408
 
-- name: No supplement # 4 * 320 = 1280
+- name: 1 head + 1 spouse + 2 children + no supplement # 4 * 320 = 1280
   period: 2023
   input:
     people:
@@ -38,7 +38,7 @@
   output:
     yt_government_carbon_price_rebate: 1_280
 
-- name: No spouse + Have supplement # 3 * (320+32) = 1056
+- name: 1 head + 0 spouse + 2 children + have supplement # 3 * (320+32) = 1056
   period: 2023
   input:
     people:
@@ -56,7 +56,7 @@
   output:
     yt_government_carbon_price_rebate: 1_056
 
-- name: No spouse + No supplement # 4 * 320 = 1280
+- name: 1 head + 0 spouse + 3 children + no supplement # 4 * 320 = 1280
   period: 2023
   input:
     people:
