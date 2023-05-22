@@ -7,3 +7,4 @@ class count_dependants(Variable):
     label = "Number of dependants in a household"
     unit = CAD
     documentation = "Number of dependants"
+    definition_period = YEAR

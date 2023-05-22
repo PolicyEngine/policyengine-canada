@@ -50,27 +50,5 @@ class sk_housing_benefit_eligible(Variable):
 
         return shelter_costs_eligibility & household_assets_eligibility & income_eligibility & income_assistance_eligibility & social_housing_eligibility & student_eligibility
 
-        where(
-            eligibility = 0, 
-            housing_benefit = 0, 
-            where(
-                housing_percentage <= p1.amount.higher_threshold.threshold,
-                housing_benefit = where(
-                    household("count_dependants",period)=0, 
-                    p1.amount.lower_threshold.no_dependants,
-                    where(
-                        household("count_dependants",period)=1,
-                        p1.amount.lower_threshold.one_dependants,
-                        p1.amount.lower_threshold.two_or_more_dependants))
-                housing_benefit = where(
-                    household("count_dependants",period)=0, 
-                    p1.amount.higher_threshold.no_dependants,
-                    where(
-                        household("count_dependants",period)=1,
-                        p1.amount.higher_threshold.one_dependants,
-                        p1.amount.higher_threshold.two_or_more_dependants))
-                )
-            )
-            
-        return housing_benefit
+
        
