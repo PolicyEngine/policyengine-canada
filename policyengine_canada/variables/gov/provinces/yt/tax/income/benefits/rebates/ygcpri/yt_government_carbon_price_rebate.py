@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class gycpri_rebates(Variable):
+class yt_government_carbon_price_rebate(Variable):
     value_type = float
     entity = Household
-    label = "Yukon ygcpri rebates"
+    label = "Yukon government carbon price rebate"
     unit = CAD
     definition_period = YEAR
     reference = "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/yukon.html#YGCPRI"

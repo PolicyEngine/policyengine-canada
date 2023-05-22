@@ -1,4 +1,5 @@
 description: Yukon provides this remote supplement amount for each child if the household resides outside of Whitehorse under the YGCPRI.
+values:
   2023-01-01: 32
 metadata:
   unit: currency-CAD

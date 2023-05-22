@@ -1,0 +1,78 @@
+- name: Have supplement # 4 * (320+32) = 1408
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: false
+      spouse:
+        is_spouse: true
+      child:
+        is_spouse: false
+      child2:
+        is_spouse: false
+    household:
+      members: [head, spouse, child, child2]
+      province_code: YT
+      yt_ygcpri_eligible_children: 2
+      lived_outside_of_whitehorse: true
+  output:
+    yt_government_carbon_price_rebate: 1_408
+
+- name: No supplement # 4 * 320 = 1280
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: false
+      spouse:
+        is_spouse: true
+      child:
+        is_spouse: false
+      child2:
+        is_spouse: false
+    household:
+      members: [head, spouse, child, child2]
+      province_code: YT
+      yt_ygcpri_eligible_children: 2
+      lived_outside_of_whitehorse: false
+  output:
+    yt_government_carbon_price_rebate: 1_280
+
+- name: No spouse + Have supplement # 3 * (320+32) = 1056
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: false
+      child:
+        is_spouse: false
+      child2:
+        is_spouse: false
+    household:
+      members: [head, child, child2]
+      province_code: YT
+      yt_ygcpri_eligible_children: 2
+      lived_outside_of_whitehorse: true
+  output:
+    yt_government_carbon_price_rebate: 1_056
+
+- name: No spouse + No supplement # 4 * 320 = 1280
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: false
+      child:
+        is_spouse: false
+      child2:
+        is_spouse: false
+      child3:
+        is_spouse: false
+      
+    household:
+      members: [head, child, child2]
+      province_code: YT
+      yt_ygcpri_eligible_children: 3
+      lived_outside_of_whitehorse: false
+  output:
+    yt_government_carbon_price_rebate: 1_280
