@@ -9,7 +9,7 @@ class nl_child_benefit(Variable):
     defined_for = ProvinceCode.NL
 
     def formula(household, period, parameters):
-        children = household("nl_child_benefit_supplement_children", period)
+        children = household("nl_child_benefit_eligible_children", period)
         p = parameters(
             period
         ).gov.provinces.nl.benefits.child_benefits
@@ -27,4 +27,4 @@ class nl_child_benefit(Variable):
             default=0,
         )
         reduction = household("nl_child_benefit_reduction", period)
-        return min_((benefit_amount - reduction), 0) + supplement_amount
+        return max_((benefit_amount - reduction), 0) + supplement_amount

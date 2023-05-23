@@ -10,7 +10,7 @@ class nl_child_benefit_reduction(Variable):
 
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)
-        children = household("nl_child_benefit_supplement_children", period)
+        children = household("nl_child_benefit_eligible_children", period)
         p = parameters(
             period
         ).gov.provinces.nl.benefits.child_benefits.phase_out
