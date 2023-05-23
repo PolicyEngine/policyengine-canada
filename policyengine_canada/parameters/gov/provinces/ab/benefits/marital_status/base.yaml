@@ -1,0 +1,10 @@
+description: Alberta marital status base credit
+values:
+  2023-01-01: 19_369
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Alberta marital status base amount
+  reference:
+  - title: Government of Canada - Alberta marital status base credit
+    href: https://kings-printer.alberta.ca/1266.cfm?page=a30.cfm&leg_type=Acts&isbncln=9780779841790
