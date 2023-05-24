@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+
 class nl_child_benefit_eligible_child(Variable):
     value_type = bool
     entity = Person
