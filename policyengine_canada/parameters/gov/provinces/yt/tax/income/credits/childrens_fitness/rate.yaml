@@ -1,0 +1,9 @@
+description: Rate of the refundable part for children's fitness tax credit in Yukon. 
+values:
+  2022-01-01: 0.064
+metadata:
+  unit: /1
+  label: Yukon child fitness credit refundable percentage
+  reference:
+  - title: Yukon-specific fitness credit measures
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/yukon/5011-pc/information-residents-yukon.html#P5_cftc
