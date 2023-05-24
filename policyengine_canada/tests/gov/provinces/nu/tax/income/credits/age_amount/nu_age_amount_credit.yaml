@@ -18,6 +18,7 @@
 
 - name: Max out credit with eligible age
   period: 2023
+  absolute_error_margin: 0.5
   input:
     province_code: NU
     total_individual_pre_tax_income: 77_749

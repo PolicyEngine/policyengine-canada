@@ -12,5 +12,7 @@ class nu_age_amount_credit_eligible_person(Variable):
         age = person("age", period)
         return (
             age
-            >= parameters(period).gov.provinces.nu.tax.income.credits.age_amount.eligible_age
+            >= parameters(
+                period
+            ).gov.provinces.nu.tax.income.credits.age_amount.eligible_age
         )
