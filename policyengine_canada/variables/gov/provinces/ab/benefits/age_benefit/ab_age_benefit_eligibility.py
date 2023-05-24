@@ -12,5 +12,7 @@ class ab_age_benefit_eligibility(Variable):
         age = person("age", period)
         return (
             age
-            > parameters(period).gov.provinces.ab.benefits.ab_age_benefit.eligible_age
+            > parameters(
+                period
+            ).gov.provinces.ab.benefits.ab_age_benefit.eligible_age
         )

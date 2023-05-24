@@ -12,13 +12,12 @@ class ab_age_benefit(Variable):
         income = Person("individual_net_income", period)
         eligibility = Person("ab_age_benefit_eligible_count", period)
         p = parameters(period).gov.provinces.ab.benefits.ab_age_benefit
-        prebenefit = max_((p.base - p.phase_out_rate.calc(income)), 0) 
-        
+        prebenefit = max_((p.base - p.phase_out_rate.calc(income)), 0)
+
         benefit_amount = select(
             # Conditions.
             [eligibility == 0, eligibility > 0],
             # Results.
-            
             [
                 0,
                 prebenefit * eligibility,
@@ -26,4 +25,5 @@ class ab_age_benefit(Variable):
             default=0,
         )
         return benefit_amount
-    #benefit_amount
+
+    # benefit_amount
