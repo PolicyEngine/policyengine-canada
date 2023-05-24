@@ -1,0 +1,15 @@
+- name: Eligible
+  period: 2023
+  input:
+    province_code: NU
+    age: 65
+  output:
+    nu_child_benefit_eligible_child: true
+
+- name: Ineligible
+  period: 2023
+  input:
+    province_code: NU
+    age: 60
+  output:
+    nu_child_benefit_eligible_child: false

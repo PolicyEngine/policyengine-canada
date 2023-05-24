@@ -1,0 +1,20 @@
+description: Nunavut age amount credit's maximum amount is phased out at this reduction rate.
+brackets:
+  - threshold: 
+      2022-07-01: 0
+    rate:
+      2022-07-01: 0
+  - threshold:
+      2022-07-01: 27_749
+    rate:
+      2022-07-01: 0.15
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: Nunavut age amount credit maximum amount reduction
+  reference:
+  - title: Consolidation of Income Tax Act, Part I Division A 2.2
+    href: https://www.nunavutlegislation.ca/en/consolidated-law/income-tax-act-consolidation
+
