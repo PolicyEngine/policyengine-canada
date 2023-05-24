@@ -30,4 +30,4 @@
       province_code: AB
       filing_status: SEPARATE
   output:
-    separated_spouse_income: 1_000
+    separated_spouse_income: [0, 1_000]

@@ -1,4 +1,4 @@
-from policyengine_us.model_api import *
+from policyengine_canada.model_api import *
 
 
 class FilingStatus(Enum):
@@ -31,4 +31,4 @@ class filing_status(Variable):
 
 
 # For Tax-Calculator.
-mars = variable_alias("mars", filing_status)
+# mars = variable_alias("mars", filing_status)

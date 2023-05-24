@@ -9,9 +9,8 @@ class ab_marital_status_credit(Variable):
     defined_for = ProvinceCode.AB
 
     def formula(household, period, parameters):
-        person = household.memebers
-        spouse_income = person("separated_spouse_income", period)
+        spouse_income = (add(household, period, ["separated_spouse_income"]) )
         p = parameters(
             period
         ).gov.provinces.ab.benefits.marital_status
-        return max_(0, p.base - spouse_income)
+        return max_(0, (p.base - spouse_income))

@@ -1,0 +1,43 @@
+- name: No spouse income
+  period: 2023
+  input:
+    people:
+      head:
+        separated_spouse_income: 0
+      spouse:
+        separated_spouse_income: 0
+    household:
+      members: [head, spouse]
+      province_code: AB
+  output:
+    ab_marital_status_credit: 19_369
+
+- name: Spouse income of $10,000
+  period: 2023
+  input:
+    province_code: AB
+    separated_spouse_income: 10_000
+  output:
+    ab_marital_status_credit: 9_369
+
+- name: Capped at 0
+  period: 2023
+  input:
+    province_code: AB
+    separated_spouse_income: 40_000
+  output:
+    ab_marital_status_credit: 0
+
+- name: No spouse income
+  period: 2023
+  input:
+    people:
+      head:
+        separated_spouse_income: 0
+      spouse:
+        separated_spouse_income: 10_000
+    household:
+      members: [head, spouse]
+      province_code: AB
+  output:
+    ab_marital_status_credit: 9_369
