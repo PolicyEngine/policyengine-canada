@@ -22,7 +22,7 @@ class nl_child_benefit_reduction(Variable):
                 p.one_child.calc(income),
                 p.two_children.calc(income),
                 p.three_children.calc(income),
-                p.four_children.calc(income)
+                p.four_children.calc(income),
             ],
             default=0,
         )

@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+
 class nl_child_benefit_supplement_child(Variable):
     value_type = bool
     entity = Person
@@ -11,5 +12,7 @@ class nl_child_benefit_supplement_child(Variable):
         age = person("age", period)
         return (
             age
-            < parameters(period).gov.provinces.nl.benefits.child_benefits.supplement.eligible_age
+            < parameters(
+                period
+            ).gov.provinces.nl.benefits.child_benefits.supplement.eligible_age
         )

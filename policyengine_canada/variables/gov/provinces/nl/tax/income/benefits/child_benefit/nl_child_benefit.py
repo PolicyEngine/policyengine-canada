@@ -10,9 +10,7 @@ class nl_child_benefit(Variable):
 
     def formula(household, period, parameters):
         children = household("nl_child_benefit_eligible_children", period)
-        p = parameters(
-            period
-        ).gov.provinces.nl.benefits.child_benefits
+        p = parameters(period).gov.provinces.nl.benefits.child_benefits
         supplement_amount = household("nl_child_benefit_supplement", period)
         benefit_amount = select(
             # Conditions.
@@ -22,8 +20,10 @@ class nl_child_benefit(Variable):
                 p.base.one_child,
                 p.base.two_children + p.base.one_child,
                 p.base.three_children + p.base.two_children + p.base.one_child,
-                p.base.four_children + p.base.three_children + \
-                p.base.two_children + p.base.one_child
+                p.base.four_children
+                + p.base.three_children
+                + p.base.two_children
+                + p.base.one_child,
             ],
             default=0,
         )

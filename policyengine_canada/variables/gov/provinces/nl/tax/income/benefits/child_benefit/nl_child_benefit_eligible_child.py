@@ -12,5 +12,7 @@ class nl_child_benefit_eligible_child(Variable):
         age = person("age", period)
         return (
             age
-            < parameters(period).gov.provinces.nl.benefits.child_benefits.child_eligible
+            < parameters(
+                period
+            ).gov.provinces.nl.benefits.child_benefits.child_eligible
         )
