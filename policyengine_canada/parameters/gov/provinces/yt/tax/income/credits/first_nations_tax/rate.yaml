@@ -1,0 +1,9 @@
+description: Yukon shifts this portion of the income tax paid by residents of settlement land to First Nations.
+values:
+  2022-01-01: 0.95
+metadata:
+  unit: /1
+  label: Yukon First Nations Tax Rate
+  reference:
+  - title: Government of Canada - Yukon Information Guide - Abatement Rate
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5011-c1/5011-c1-22e.pdf

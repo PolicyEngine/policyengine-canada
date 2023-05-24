@@ -401,3 +401,8 @@
     added:
     - Yukon Childrens Fitness Tax Credit.
   date: 2023-05-19 20:22:40
+- bump: minor
+  changes:
+    added:
+    - Yukon First Nation Tax.
+  date: 2023-05-23 05:05:59
