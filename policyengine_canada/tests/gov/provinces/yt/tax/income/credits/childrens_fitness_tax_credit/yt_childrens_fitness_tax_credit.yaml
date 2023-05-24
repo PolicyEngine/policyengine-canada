@@ -1,0 +1,48 @@
+- name: 0 child
+  period: 2022
+  input:
+    province_code: YT
+    yt_cftc_eligible_children: 0
+    physical_activities_fees: 1000
+    yt_childrens_fitness_tax_credit_disability_supplement: 0
+  output:
+    yt_childrens_fitness_tax_credit: 0
+
+- name: Normal Child with Credits under Limitations
+  period: 2022
+  input:
+    province_code: YT
+    yt_cftc_eligible_children: 1
+    physical_activities_fees: 1000
+  output:
+    yt_childrens_fitness_tax_credit: 64
+
+- name: 1 disabled child
+  period: 2022
+  input:
+    province_code: YT
+    yt_cftc_eligible_children: 1
+    physical_activities_fees: 1000
+    yt_childrens_fitness_tax_credit_disability_supplement: 500
+  output:
+    yt_childrens_fitness_tax_credit: 564
+    
+- name: 1 normal child and 2 disabled children
+  period: 2022
+  input:
+    province_code: YT
+    yt_cftc_eligible_children: 3
+    physical_activities_fees: 5000
+    yt_childrens_fitness_tax_credit_disability_supplement: 1000
+  output:
+    yt_childrens_fitness_tax_credit: 1320
+
+- name: 3 normal children
+  period: 2022
+  input:
+    province_code: YT
+    yt_cftc_eligible_children: 3
+    physical_activities_fees: 50000
+    yt_childrens_fitness_tax_credit_disability_supplement: 0
+  output:
+    yt_childrens_fitness_tax_credit: 3000
