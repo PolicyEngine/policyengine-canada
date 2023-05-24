@@ -13,4 +13,4 @@ class separated_spouse_income(Variable):
         status = filing_status.possible_values
         spouse = person("is_spouse", period)
         income = person("individual_net_income", period)
-        return spouse * where(filing_status == status.SEPARATE, income , 0)
+        return spouse * where(filing_status == status.SEPARATE, income, 0)
