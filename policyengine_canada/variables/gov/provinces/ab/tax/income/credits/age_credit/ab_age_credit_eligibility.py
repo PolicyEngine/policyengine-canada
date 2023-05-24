@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class ab_age_benefit_eligibility(Variable):
+class ab_age_credit_eligibility(Variable):
     value_type = bool
     entity = Person
-    label = "Alberta age benefit eligibility"
+    label = "Alberta age credit eligibility"
     definition_period = YEAR
     defined_for = ProvinceCode.AB
 
@@ -14,5 +14,5 @@ class ab_age_benefit_eligibility(Variable):
             age
             > parameters(
                 period
-            ).gov.provinces.ab.benefits.ab_age_benefit.eligible_age
+            ).gov.provinces.ab.tax.income.credits.age_credit.eligible_age
         )

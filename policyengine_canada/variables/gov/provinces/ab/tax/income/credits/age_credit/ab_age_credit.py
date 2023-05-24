@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class ab_age_benefit(Variable):
+class ab_age_credit(Variable):
     value_type = float
     entity = Person
     label = "Alberta age benefit"
@@ -10,8 +10,8 @@ class ab_age_benefit(Variable):
 
     def formula(Person, period, parameters):
         income = Person("individual_net_income", period)
-        eligibility = Person("ab_age_benefit_eligible_count", period)
-        p = parameters(period).gov.provinces.ab.benefits.ab_age_benefit
+        eligibility = Person("ab_age_credit_eligible_count", period)
+        p = parameters(period).gov.provinces.ab.tax.income.credits.age_credit
         prebenefit = max_((p.base - p.phase_out_rate.calc(income)), 0)
 
         benefit_amount = select(

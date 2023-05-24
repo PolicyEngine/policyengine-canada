@@ -1,11 +1,11 @@
-description: Alberta age credit base amount. 
+description: Alberta provides this base amount under the age credit. 
 values:
   2023-01-01: 5_853
 metadata:
   unit: currency-CAD
-  label: Alberta age credit base amount. 
+  label: Alberta age credit base amount 
   reference:
-    - title: Alberta age credit base amount
+    - title: 2023 Alberta Tax Return Form TD1AB
       href: https://media.icims.com/training/iForms%20Library/Candidate%20Management/Onboarding%20Solution/Alberta%20Personal%20Tax%20Credit.pdf
     
 
