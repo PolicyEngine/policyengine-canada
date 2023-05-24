@@ -1,0 +1,9 @@
+description: Yukon allows dsiabled children under this age to be eligible for the child fitness tax credit.
+values:
+  2022-01-01: 18
+metadata:
+  unit: year
+  label: Yukon disabled child fitness fee age eligibility
+  reference:
+  - title: Children's fitness tax credit
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/yukon/5011-pc/information-residents-yukon.html#P5_cftc

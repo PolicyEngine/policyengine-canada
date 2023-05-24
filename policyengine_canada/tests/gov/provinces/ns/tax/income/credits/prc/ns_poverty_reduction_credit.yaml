@@ -1,0 +1,39 @@
+- name: Nova Scotia Poverty Reduction Credit; with 0 children and lower than income threshold; with income assistance
+  period: 2023
+  input:
+    province_code: NS
+    adjusted_family_net_income: 15_999
+    count_children: 0
+    ns_income_assistance: 1
+  output:
+    ns_poverty_reduction_credit: 500
+
+- name: Nova Scotia Poverty Reduction Credit; with 1 children and lower than income threshold; with 0 income assistance
+  period: 2023
+  input:
+    province_code: NS
+    adjusted_family_net_income: 15_999
+    count_children: 1
+    ns_income_assistance: 0
+  output:
+    ns_poverty_reduction_credit: 0
+
+- name: Nova Scotia Poverty Reduction Credit; with 0 children and higher than income threshold; with 0 income assistance
+  period: 2023
+  input:
+    province_code: NS
+    adjusted_family_net_income: 16_001
+    count_children: 0
+    ns_income_assistance: 0
+  output:
+    ns_poverty_reduction_credit: 0
+
+- name: Nova Scotia Poverty Reduction Credit; with 1 children and higher than income threshold; with 0 income assistance
+  period: 2023
+  input:
+    province_code: NS
+    adjusted_family_net_income: 16_001
+    count_children: 1
+    ns_income_assistance: 0
+  output:
+    ns_poverty_reduction_credit: 0
