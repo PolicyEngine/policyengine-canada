@@ -1,20 +1,4 @@
-- name: Married household - joint filing
-  period: 2023
-  input:
-    people:
-      head:
-        is_spouse: false
-        individual_net_income: 10_000
-      spouse:
-        is_spouse: true
-        individual_net_income: 1_000
-    household:
-      members: [head, spouse]
-      province_code: AB
-  output:
-    spouse_income: 0
-
-- name: Married household - separate filing
+- name: One person eligible and one not
   period: 2023
   input:
     people:
@@ -29,3 +13,21 @@
       province_code: AB
   output:
     spouse_income: [0, 1_000]
+
+- name: Eligible spouse
+  period: 2023
+  input:
+    province_code: AB
+    is_spouse: true
+    individual_net_income: 10_000
+  output:
+    spouse_income: 10_000
+
+- name: Ineligible spouse
+  period: 2023
+  input:
+    province_code: AB
+    is_spouse: false
+    individual_net_income: 10_000
+  output:
+    spouse_income: 0
