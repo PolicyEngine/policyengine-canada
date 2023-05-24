@@ -25,5 +25,3 @@ class ab_age_benefit(Variable):
             default=0,
         )
         return benefit_amount
-
-    # benefit_amount
