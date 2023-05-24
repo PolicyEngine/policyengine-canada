@@ -8,3 +8,4 @@ class count_dependants(Variable):
     unit = CAD
     documentation = "Number of dependants"
     definition_period = YEAR
+    adds = ["is_dependant"]

@@ -11,9 +11,8 @@
     household:
       members: [head, spouse]
       province_code: AB
-      filing_status: JOINT
   output:
-    separated_spouse_income: 0
+    spouse_income: 0
 
 - name: Married household - separate filing
   period: 2023
@@ -28,6 +27,5 @@
     household:
       members: [head, spouse]
       province_code: AB
-      filing_status: SEPARATE
   output:
-    separated_spouse_income: [0, 1_000]
+    spouse_income: [0, 1_000]
