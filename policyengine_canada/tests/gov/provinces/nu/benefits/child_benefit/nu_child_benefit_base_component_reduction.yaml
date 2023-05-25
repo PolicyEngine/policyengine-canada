@@ -1,0 +1,23 @@
+- name: Nunavut Child Benefit Reduction under Threshold
+  period: 2023
+  input:
+    province_code: NU
+    adjusted_family_net_income: 10_000
+  output:
+    nu_child_benefit_base_component_reduction: 0
+
+- name: Nunavut Child Benefit Reduction on Threshold
+  period: 2023
+  input:
+    province_code: NU
+    adjusted_family_net_income: 20_921
+  output:
+    nu_child_benefit_base_component_reduction: 0   
+
+- name: Nunavut Child Benefit Reduction over Threshold
+  period: 2023
+  input:
+    province_code: NU
+    adjusted_family_net_income: 30_921
+  output:
+    nu_child_benefit_base_component_reduction: 300.0

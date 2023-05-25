@@ -371,3 +371,38 @@
     added:
     - Nova Scotia Poverty Reduction Credit.
   date: 2023-05-03 04:22:00
+- bump: minor
+  changes:
+    added:
+    - New Brunswick low income tax credit.
+  date: 2023-05-08 04:52:03
+- bump: minor
+  changes:
+    changed:
+    - Add Nunavut Child Benefit.
+  date: 2023-05-08 04:57:00
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia Child Benefit.
+  date: 2023-05-08 13:38:57
+- bump: minor
+  changes:
+    added:
+    - Saskatchewan low income tax credit.
+  date: 2023-05-10 20:12:43
+- bump: minor
+  changes:
+    added:
+    - Newfoundland Physical Activity Tax Credit.
+  date: 2023-05-18 02:03:51
+- bump: minor
+  changes:
+    added:
+    - Yukon Childrens Fitness Tax Credit.
+  date: 2023-05-19 20:22:40
+- bump: minor
+  changes:
+    added:
+    - Yukon First Nation Tax.
+  date: 2023-05-23 05:05:59
