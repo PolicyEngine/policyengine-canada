@@ -1,0 +1,45 @@
+description: New Brunswick reduces the tuition amount by this rate.
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0
+  - threshold:
+      2022-01-01: 44_887
+    rate:
+      2022-01-01: 0.094
+
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: New Brunswick tuition amount reduction rate
+  reference:
+    - title: New Brunswick Tuition and Education Amounts
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-s11/5004-s11-22e.pdf
+
+
+# 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+
+# 1 unused_amont
+# 2 amount from line 9 of federal s 11
+# 3 1+2
+# 4 if value<=44887 line 26000(tax income)
+#   else (line 8 of From NB428)/0.094
+# 5 line 31 from form NB428
+# 6 max(0, (4)-(5))
+# 7 min((1),(6))
+# 8 (6)-(7)
+# 9 min((2),(8))
+# 10 (7+9)
+# 11 (3)
+# 12 (10)
+# 13 (11-12)
+# if transfer:
+#   14 min(5000,(2))
+#   15 (9)
+#   16 max(0,(14)-(15))
+#   17 input the provincial amount
+#   18 (13)-(17)
+# else:
+#   18 (13)
