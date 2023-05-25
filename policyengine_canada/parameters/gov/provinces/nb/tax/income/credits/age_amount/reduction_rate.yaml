@@ -1,4 +1,4 @@
-description: New Brunswick reduces its low age amount credit at this rate.
+description: New Brunswick reduces the age amount tax credit at this rate.
 metadata:
   type: marginal_rate
   threshold_unit: currency-CAD
@@ -16,5 +16,3 @@ brackets:
       2023-01-01: 41_799
     rate:
       2023-01-01: 0.15 #calculated ((79_233 - 41_799) * 0.15) = 5_615 - max amount of credit
-
-#TODO: reduction rate legal source
