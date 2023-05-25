@@ -1,0 +1,9 @@
+description: Nova Scotia allows for the follwoing dependant age eligibility under the Income Assistance (IA).
+values:
+  2021-01-01: 21
+metadata:
+  unit: year
+  label: Nova Scotia Income Assistance dependant age eligibility 
+  reference:
+  - title: Employment Support and Income Assistance Regulations
+    href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_2
