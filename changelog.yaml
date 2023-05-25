@@ -406,3 +406,8 @@
     added:
     - Yukon First Nation Tax.
   date: 2023-05-23 05:05:59
+- bump: minor
+  changes:
+    added:
+    - Alberta spouse and common-law partner amount.
+  date: 2023-05-25 22:46:06
