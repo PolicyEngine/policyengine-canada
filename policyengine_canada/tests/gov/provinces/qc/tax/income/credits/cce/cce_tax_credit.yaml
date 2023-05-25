@@ -3,45 +3,45 @@
   input:
     childcare_costs: 40_000
     adjusted_family_net_income: 80_000 
-    cce_eligible_nondisabled_young_children: 1
-    cce_eligible_nondisabled_old_children: 1
-    cce_eligible_disabled_children: 1
+    qc_cce_eligible_nondisabled_young_children: 1
+    qc_cce_eligible_nondisabled_old_children: 1
+    qc_cce_eligible_disabled_children: 1
     province_code: QC
   output:
-    cce_tax_credit: 21_458.5 # 0.7*min(40000, 14605+10675+5375) = min(40000,30655)
+    qc_cce_tax_credit: 21_458.5 # 0.7*min(40000, 14605+10675+5375) = min(40000,30655)
 
 - name: Quebec cce disabled children credit for family income from 43,635	to 104,170, within limit
   period: 2022
   input:
     childcare_costs: 30_000
     adjusted_family_net_income: 80_000 
-    cce_eligible_nondisabled_young_children: 1
-    cce_eligible_nondisabled_old_children: 1
-    cce_eligible_disabled_children: 1
+    qc_cce_eligible_nondisabled_young_children: 1
+    qc_cce_eligible_nondisabled_old_children: 1
+    qc_cce_eligible_disabled_children: 1
     province_code: QC
   output:
-    cce_tax_credit: 21_000 # 0.7*min(30000, 14605+10675+5375) = min(30000,30655)
+    qc_cce_tax_credit: 21_000 # 0.7*min(30000, 14605+10675+5375) = min(30000,30655)
 
 - name: Quebec cce disabled children credit for family income from 42,220	to 43,635, within limit
   period: 2022
   input:
     childcare_costs: 18_000
     adjusted_family_net_income: 43_000 
-    cce_eligible_nondisabled_young_children: 0
-    cce_eligible_nondisabled_old_children: 1
-    cce_eligible_disabled_children: 1
+    qc_cce_eligible_nondisabled_young_children: 0
+    qc_cce_eligible_nondisabled_old_children: 1
+    qc_cce_eligible_disabled_children: 1
     province_code: QC
   output:
-    cce_tax_credit: 12_780 # 0.71 * min(18000, 14605+5375) = min(18000,19980)
+    qc_cce_tax_credit: 12_780 # 0.71 * min(18000, 14605+5375) = min(18000,19980)
 
 - name: Quebec cce disabled children credit for family income from 42,220	to 43,635, no disabled child, above limit
   period: 2022
   input:
     childcare_costs: 20_000
     adjusted_family_net_income: 43_000 
-    cce_eligible_nondisabled_young_children: 1
-    cce_eligible_nondisabled_old_children: 1
-    cce_eligible_disabled_children: 0
+    qc_cce_eligible_nondisabled_young_children: 1
+    qc_cce_eligible_nondisabled_old_children: 1
+    qc_cce_eligible_disabled_children: 0
     province_code: QC
   output:
-    cce_tax_credit: 11_395.5 # 0.71 * min(23000, 10675+5375) = min(20000,16050)
+    qc_cce_tax_credit: 11_395.5 # 0.71 * min(23000, 10675+5375) = min(20000,16050)

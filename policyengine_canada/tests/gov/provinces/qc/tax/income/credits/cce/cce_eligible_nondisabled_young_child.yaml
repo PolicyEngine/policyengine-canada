@@ -4,7 +4,7 @@
     age: 5
     province_code: QC
   output:
-    cce_eligible_nondisabled_young_child: true
+    qc_cce_eligible_nondisabled_young_child: true
 
 - name: Over age eligibility
   period: 2022
@@ -12,4 +12,4 @@
     age: 10
     province_code: QC
   output:
-    cce_eligible_nondisabled_young_child: false
+    qc_cce_eligible_nondisabled_young_child: false

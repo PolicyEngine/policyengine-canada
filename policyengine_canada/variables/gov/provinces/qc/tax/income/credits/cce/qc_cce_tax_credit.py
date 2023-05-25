@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class cce_tax_credit(Variable):
+class qc_qc_cce_tax_credit(Variable):
     value_type = float
     entity = Household
     label = "Quebec childcare expenses tax credit"
@@ -17,13 +17,13 @@ class cce_tax_credit(Variable):
         expenses = household("childcare_costs", period)
 
         eligible_nondisabled_young_children = household(
-            "cce_eligible_nondisabled_young_children", period
+            "qc_cce_eligible_nondisabled_young_children", period
         )
         eligible_nondisabled_old_children = household(
-            "cce_eligible_nondisabled_old_children", period
+            "qc_cce_eligible_nondisabled_old_children", period
         )
         eligible_disabled_children = household(
-            "cce_eligible_disabled_children", period
+            "qc_cce_eligible_disabled_children", period
         )
         expense_limit = (
             eligible_nondisabled_young_children
