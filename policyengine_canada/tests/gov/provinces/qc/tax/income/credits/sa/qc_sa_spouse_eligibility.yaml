@@ -5,7 +5,7 @@
     is_spouse: true
     province_code: QC
   output:
-    sa_spouse_eligibility: false
+    qc_sa_spouse_eligibility: false
 
 - name: Above age eligibility and is spouse
   period: 2022
@@ -14,7 +14,7 @@
     is_spouse: true
     province_code: QC
   output:
-    sa_spouse_eligibility: true
+    qc_sa_spouse_eligibility: true
 
 - name: Above age eligibility but is not spouse
   period: 2022
@@ -23,4 +23,4 @@
     is_spouse: false
     province_code: QC
   output:
-    sa_spouse_eligibility: false
+    qc_sa_spouse_eligibility: false

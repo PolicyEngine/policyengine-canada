@@ -1,29 +1,29 @@
 - name: Below age eligibility and no spouse
   period: 2022
   input:
-    sa_age_eligibility: false
+    age: 60
     is_spouse: false
     province_code: QC
   output:
-    sa_no_spouse_eligibility: false
+    qc_sa_head_eligibility: false
 
 - name: At age eligibility and no spouse
   period: 2022
   input:
-    sa_age_eligibility: true
+    age: 70
     is_spouse: false
     province_code: QC
   output:
-    sa_no_spouse_eligibility: true
+    qc_sa_head_eligibility: true
 
-- name: Above age eligibility and has spouse
+- name: Above age eligibility but had spouse
   period: 2022
   input:
-    sa_age_eligibility: true
+    age: 80
     is_spouse: true
     province_code: QC
   output:
-    sa_no_spouse_eligibility: false
+    qc_sa_head_eligibility: false
 
 
 
