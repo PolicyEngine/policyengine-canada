@@ -1,0 +1,10 @@
+description: Alberta pension income credit base amountamount
+values:
+  2023-01-01: 1_617
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Alberta Child and Family Benefit for the fourth child base amount
+  reference:
+  - title: Government of Canada - Alberta Child and Family Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-alberta.html
