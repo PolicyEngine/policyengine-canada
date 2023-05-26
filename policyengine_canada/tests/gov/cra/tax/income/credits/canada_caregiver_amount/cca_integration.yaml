@@ -1,0 +1,28 @@
+- name: Spouse and two dependents- both disabled 
+  period: 2022
+  input:
+    people:
+      head:
+        age: 40
+        basic_personal_amount: 15_000
+      spouse:
+        is_spouse: true
+        spouse_net_income: 10_000
+        is_disabled: false
+      c1:
+        age: 20
+        is_dependent: true
+        is_disabled: true
+        dependent_net_income: 12_000
+      c2: 
+        age: 13
+        dependent_net_income: 0
+        is_dependent: true
+        is_disabled: false
+    household:
+      members: [head, spouse, c1, c2]
+  output:
+    eligible_dependent_amount: 0
+    spouse_or_common_law_partner_amount: 5_000
+    canada_caregiver_amount: 8_195
+    other_infirm_dependants: 0

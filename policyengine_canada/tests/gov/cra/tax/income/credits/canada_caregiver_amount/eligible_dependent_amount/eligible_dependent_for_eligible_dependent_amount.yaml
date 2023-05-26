@@ -1,0 +1,23 @@
+- name: Too old and not disabled - uneligible
+  period: 2022
+  input:
+    is_disabled: false
+    age: 18
+  output:
+    eligible_dependent_for_eligible_dependent_amount: false
+
+- name: disabled - eligible
+  period: 2022
+  input:
+    is_disabled: true
+    age: 18
+  output:
+    eligible_dependent_for_eligible_dependent_amount: true
+
+- name: Under age cutoff - eligible
+  period: 2022
+  input:
+    is_disabled: false
+    age: 17
+  output:
+    eligible_dependent_for_eligible_dependent_amount: true
