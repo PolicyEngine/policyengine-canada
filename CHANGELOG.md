@@ -5,6 +5,54 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.62.0] - 2023-05-25 22:46:06
+
+### Added
+
+- Alberta spouse and common-law partner amount.
+
+## [0.61.0] - 2023-05-23 05:05:59
+
+### Added
+
+- Yukon First Nation Tax.
+
+## [0.60.0] - 2023-05-19 20:22:40
+
+### Added
+
+- Yukon Childrens Fitness Tax Credit.
+
+## [0.59.0] - 2023-05-18 02:03:51
+
+### Added
+
+- Newfoundland Physical Activity Tax Credit.
+
+## [0.58.0] - 2023-05-10 20:12:43
+
+### Added
+
+- Saskatchewan low income tax credit.
+
+## [0.57.0] - 2023-05-08 13:38:57
+
+### Added
+
+- Nova Scotia Child Benefit.
+
+## [0.56.0] - 2023-05-08 04:57:00
+
+### Changed
+
+- Add Nunavut Child Benefit.
+
+## [0.55.0] - 2023-05-08 04:52:03
+
+### Added
+
+- New Brunswick low income tax credit.
+
 ## [0.54.0] - 2023-05-03 04:22:00
 
 ### Added
@@ -456,6 +504,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.62.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.61.0...0.62.0
+[0.61.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.60.0...0.61.0
+[0.60.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.59.0...0.60.0
+[0.59.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.58.0...0.59.0
+[0.58.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.57.0...0.58.0
+[0.57.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.56.0...0.57.0
+[0.56.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.55.0...0.56.0
+[0.55.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.54.0...0.55.0
 [0.54.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.53.0...0.54.0
 [0.53.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.52.0...0.53.0
 [0.52.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.51.0...0.52.0
