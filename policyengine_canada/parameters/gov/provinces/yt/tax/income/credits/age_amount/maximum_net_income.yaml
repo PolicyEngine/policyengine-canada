@@ -1,0 +1,9 @@
+description: Yukon maximum net income for one to get the age amount of Yukon Personal Tax Credits Return.
+values:
+  2022-01-01: 98_309
+metadata:
+  unit: currency-CAD
+  label: Yukon age amount maximum net income
+  reference:
+  - title: Worksheet for the Yukon 2023 Personal Tax Credits Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1yt-ws/td1yt-ws-23e.pdf
