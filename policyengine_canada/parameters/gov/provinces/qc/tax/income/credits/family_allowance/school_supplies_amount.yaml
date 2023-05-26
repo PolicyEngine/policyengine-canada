@@ -1,0 +1,22 @@
+description: Quebec provides this yearly amount for the purchase of school supplies based on the age of child.
+brackets:
+  - amount:
+      2022-01-01: 0
+    threshold:
+      2022-01-01: 0
+  - amount:
+      2022-01-01: 115
+    threshold:
+      2022-01-01: 4
+  - amount:
+      2022-01-01: 0
+    threshold:
+      2022-01-01: 16
+metadata:
+  type: single_amount
+  threshold_unit: year
+  amount_unit: currency-CAD
+  label: Quebec yearly amount for the purchase of school supplies
+  reference:
+    - title: Retraite Québec - Amounts and payment of Family Allowance
+      href: https://www.rrq.gouv.qc.ca/en/programmes/soutien_enfants/paiement/Pages/montant.aspx

@@ -1,0 +1,55 @@
+description: Quebec limits the two-parent family allowance payments amount for two children family based on family income.
+brackets:
+  - threshold:
+      2022-01-01: 0
+    amount:
+      2022-01-01: 5_564
+  - threshold:
+      2022-01-01: 55_000
+    amount:
+      2022-01-01: 5_371
+  - threshold:
+      2022-01-01: 60_000
+    amount:
+      2022-01-01: 4_971
+  - threshold:
+      2022-01-01: 70_000
+    amount:
+      2022-01-01: 4_571
+  - threshold:
+      2022-01-01: 80_000
+    amount:
+      2022-01-01: 4_171
+  - threshold:
+      2022-01-01: 90_000
+    amount:
+      2022-01-01: 3_851
+  - threshold:
+      2022-01-01: 98_000
+    amount:
+      2022-01-01: 3_771
+  - threshold:
+      2022-01-01: 100_000
+    amount:
+      2022-01-01: 3_371
+  - threshold:
+      2022-01-01: 110_000
+    amount:
+      2022-01-01: 2_971
+  - threshold:
+      2022-01-01: 120_000
+    amount:
+      2022-01-01: 2_571
+  - threshold:
+      2022-01-01: 130_000
+    amount:
+      2022-01-01: 2_214
+metadata:
+  type: single_amount
+  threshold_unit: currency-CAD
+  amount_unit: /1
+  label: Quebec two-parent family allowance amount for two children
+  reference:
+    - title: Retraite Québec - 2023 amounts of Family Allowance payments based on family income
+      href: https://www.rrq.gouv.qc.ca/en/programmes/soutien_enfants/paiement/Pages/montant-selon-revenu-familial.aspx
+  
