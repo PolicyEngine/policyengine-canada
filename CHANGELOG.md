@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.63.0] - 2023-05-27 15:38:10
+
+### Added
+
+- Python 3.10 support.
+
 ## [0.62.0] - 2023-05-25 22:46:06
 
 ### Added
@@ -504,6 +510,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.63.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.62.0...0.63.0
 [0.62.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.61.0...0.62.0
 [0.61.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.60.0...0.61.0
 [0.60.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.59.0...0.60.0
