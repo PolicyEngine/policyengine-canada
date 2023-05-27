@@ -10,7 +10,7 @@ long_description = (this_directory / "README.md").read_text()
 # functional and integration breaks caused by external code updates.
 
 general_requirements = [
-    "pytest>=4,<6",
+    "pytest",
     "numpy>=1.11,<1.23",
     "black[jupyter]<23",
     "linecheck<1",
@@ -27,7 +27,7 @@ general_requirements = [
     "tqdm>=4.46.0,<5",
     "requests>=2.27.1,<3",
     "pandas>=1.4.2,<2",
-    "policyengine_core>=2,<3",
+    "policyengine_core>=2.1,<3",
     "plotly>=5.6.0,<6",
 ]
 
@@ -51,10 +51,10 @@ setup(
         "License :: OSI Approved :: GNU Affero General Public License v3",
         "Operating System :: POSIX",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
         "Topic :: Scientific/Engineering :: Information Analysis",
     ],
     description="Microsimulation model for Canada's tax-benefit system.",
@@ -67,6 +67,8 @@ setup(
     extras_require={
         "dev": dev_requirements,
     },
+    # Windows CI requires Python 3.9.
+    python_requires=">=3.7",
     install_requires=general_requirements,
     packages=find_packages(),
     include_package_data=True,
