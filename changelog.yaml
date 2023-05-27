@@ -416,3 +416,8 @@
     added:
     - Python 3.10 support.
   date: 2023-05-27 15:38:10
+- bump: minor
+  changes:
+    added:
+    - Quebec childcare expenses tax credit.
+  date: 2023-05-27 23:28:36
