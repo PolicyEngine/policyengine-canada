@@ -1,0 +1,31 @@
+- name: Three disabled children with different expenses and dependency
+  period: 2022
+  input:
+    people: 
+      c1:
+        childcare_expense: 15_000
+        individual_net_income: 12_000 
+        is_child_of_filer: true
+        is_dependant: true
+        is_disabled: true
+      c2:
+        childcare_expense: 14_000
+        individual_net_income: 12_000
+        is_child_of_filer: false
+        is_dependant: true
+        is_disabled: true
+      c3:
+        childcare_expense: 14_000
+        individual_net_income: 11_000
+        is_child_of_filer: false
+        is_dependant: true
+        is_disabled: true
+    household:
+      members: [c1, c2, c3]
+      adjusted_family_net_income: 50_000
+      province_code: QC
+  output:
+    qc_cce_disabled_child_tax_credit: 20_023.5 # 0.7*1*14_605 + 0.7*0*14_000+ 0.7*1*14_000
+
+
+
