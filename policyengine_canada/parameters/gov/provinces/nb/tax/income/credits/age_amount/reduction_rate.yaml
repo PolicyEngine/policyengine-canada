@@ -5,8 +5,8 @@ metadata:
   rate_unit: /1
   label: New Brunswick age amount credit reduction rate.
   reference:
-  - title: 2023 New Brunswick Personal Tax Credit Return
-    href: https://www.unb.ca/hr/_assets/documents/td1nb-e.pdf 
+  - title:  Worksheet for the 2023 New Brunswick Personal Tax Credits Return
+    href: hhttps://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nb-ws/td1nb-ws-23e.pdf
 brackets:
   - threshold:
       2023-01-01: 0
@@ -15,4 +15,4 @@ brackets:
   - threshold:
       2023-01-01: 41_799
     rate:
-      2023-01-01: 0.15 #calculated ((79_233 - 41_799) * 0.15) = 5_615 - max amount of credit
+      2023-01-01: 0.15 

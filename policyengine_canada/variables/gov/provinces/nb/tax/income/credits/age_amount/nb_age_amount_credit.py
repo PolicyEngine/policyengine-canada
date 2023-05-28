@@ -12,6 +12,6 @@ class nb_age_amount_credit(Variable):
         age = person("age", period)
         income = person("individual_net_income", period)
         p = parameters(period).gov.provinces.nb.tax.income.credits.age_amount
-        eligibility = age >= p.age_eligibility
+        eligible = age >= p.age_eligibility
         reduced_amount = p.amount - p.reduction_rate.calc(income)
-        return eligibility * (max_(0, reduced_amount))
+        return eligible * max_(0, reduced_amount)
