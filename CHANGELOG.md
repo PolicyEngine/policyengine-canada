@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.65.0] - 2023-05-28 20:47:19
+
+### Added
+
+- New Brunswick age amount credit.
+
 ## [0.64.0] - 2023-05-27 23:28:36
 
 ### Added
@@ -516,6 +522,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.65.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.64.0...0.65.0
 [0.64.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.63.0...0.64.0
 [0.63.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.62.0...0.63.0
 [0.62.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.61.0...0.62.0
