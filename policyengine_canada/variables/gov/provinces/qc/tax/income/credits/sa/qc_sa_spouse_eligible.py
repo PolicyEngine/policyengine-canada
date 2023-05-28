@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class qc_sa_spouse_eligibility(Variable):
+class qc_sa_spouse_eligible(Variable):
     value_type = bool
     entity = Person
     label = "Quebec senior assistance tax credits eligible senior's spouse"
