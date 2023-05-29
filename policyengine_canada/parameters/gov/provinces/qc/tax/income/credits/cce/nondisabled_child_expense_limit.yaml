@@ -1,0 +1,22 @@
+description:  Quebec childcare expenses limit for nondisabled child based on the age.
+brackets:
+  - amount:
+      2022-01-01: 10_675
+    threshold:
+      2022-01-01: 0
+  - amount:
+      2022-01-01: 5_375
+    threshold:
+      2022-01-01: 7
+  - amount:
+      2022-01-01: 0
+    threshold:
+      2022-01-01: 16
+metadata:
+  type: single_amount
+  threshold_unit: year
+  amount_unit: currency-CAD
+  label: Quebec childcare expenses limit for nondisabled children
+  reference:
+    - title: Revenu Quebec - Calculating the Tax Credit for Childcare Expenses
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/tax-credit-for-childcare-expenses/calculating-the-tax-credit-for-childcare-expenses/

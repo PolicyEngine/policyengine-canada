@@ -391,3 +391,38 @@
     added:
     - Saskatchewan low income tax credit.
   date: 2023-05-10 20:12:43
+- bump: minor
+  changes:
+    added:
+    - Newfoundland Physical Activity Tax Credit.
+  date: 2023-05-18 02:03:51
+- bump: minor
+  changes:
+    added:
+    - Yukon Childrens Fitness Tax Credit.
+  date: 2023-05-19 20:22:40
+- bump: minor
+  changes:
+    added:
+    - Yukon First Nation Tax.
+  date: 2023-05-23 05:05:59
+- bump: minor
+  changes:
+    added:
+    - Alberta spouse and common-law partner amount.
+  date: 2023-05-25 22:46:06
+- bump: minor
+  changes:
+    added:
+    - Python 3.10 support.
+  date: 2023-05-27 15:38:10
+- bump: minor
+  changes:
+    added:
+    - Quebec childcare expenses tax credit.
+  date: 2023-05-27 23:28:36
+- bump: minor
+  changes:
+    added:
+    - New Brunswick age amount credit.
+  date: 2023-05-28 20:47:19

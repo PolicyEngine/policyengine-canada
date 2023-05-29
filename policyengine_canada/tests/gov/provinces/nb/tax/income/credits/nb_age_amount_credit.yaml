@@ -1,0 +1,35 @@
+- name: Ineligible
+  period: 2023
+  input:
+    province_code: NB
+    age: 64
+    individual_net_income: 20_000
+  output:
+    nb_age_amount_credit: 0
+
+- name: Eligible under phase-out income
+  period: 2023
+  input:
+    province_code: NB
+    age: 65
+    individual_net_income: 41_799
+  output:
+    nb_age_amount_credit: 5_615
+
+- name: Eligible over phase-out income # 5_615 - ((50_000 - 41_799) * 0.15)
+  period: 2023
+  input:
+    province_code: NB
+    age: 65
+    individual_net_income: 50_000
+  output:
+    nb_age_amount_credit: 4_384.85
+
+- name: Eligible over maximum phase-out income 
+  period: 2023
+  input:
+    province_code: NB
+    age: 65
+    individual_net_income: 100_000
+  output:
+    nb_age_amount_credit: 0
