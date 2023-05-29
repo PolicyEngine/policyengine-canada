@@ -18,8 +18,10 @@ class nl_seniors_benefit(Variable):
         person_eligibility = (person("age", period) >= p.age_eligible) | (person("age", period) >= p.age_eligible & person("is_spouse", period))
 
         net_income = person("household_net_income", period)
-        income_eligibility = (net_income > p.lower_income_threshold) & (net_income <= p.higher_income_threshold)
+        total_family_income = household.sum(net_income)
 
-        senior_benefit = p.max_amount * person_eligibility * income_eligibility * p.rate
+        income_eligibility = (total_family_income > p.lower_income_threshold) & (total_family_income < p.higher_income_threshold)
 
-        return min_(senior_benefit, p.max_amount)
+        senior_benefit = p.max_amount * person_eligibility * income_eligibility * p.rate * (p.max_amount + total_family_income - p.higher_income_threshold)
+
+        return senior_benefit
