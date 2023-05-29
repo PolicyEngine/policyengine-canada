@@ -2,7 +2,7 @@ from policyengine_canada.model_api import *
 
 
 class sk_social_housing_program(Variable):
-    value_type = float
+    value_type = bool
     entity = Person
     label = "Saskatchewan Social Housing Program"
     unit = CAD
