@@ -1,0 +1,9 @@
+description: Newfoundland and Labrador seniors’ benefit phase out rate.
+values:
+  2022-12-31: 0.1166
+metadata:
+  unit: /1
+  label: Newfoundland and Labrador seniors' phase out rate
+  reference:
+    - title: Government of Canada - Newfoundland and Labrador Seniors Benefit
+      href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/

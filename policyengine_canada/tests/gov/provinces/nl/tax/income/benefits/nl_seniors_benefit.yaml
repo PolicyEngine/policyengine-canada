@@ -1,0 +1,12 @@
+- name: One single senior with net income below 29_402
+  period: 2023
+  input:
+    people:
+      p1:
+        age: 66
+        household_net_income: 29_401
+    household:
+      members: p1
+      province_code: NL
+  output:
+    nl_seniors_benefit: 1_516

@@ -1,0 +1,9 @@
+description: Newfoundland and Labrador seniors’ benefit lower income threshold amount.
+values:
+  2022-12-31: 29_402
+metadata:
+  unit: currency-CAD
+  label: Newfoundland and Labrador seniors' lower income threshold
+  reference:
+    - title: Government of Canada - Newfoundland and Labrador Seniors Benefit
+      href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/
