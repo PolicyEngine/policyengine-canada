@@ -19,15 +19,13 @@ class sk_housing_benefit(Variable):
         precentage_spend_housing = (household_rent + utility_costs) / income
         p = parameters(period).gov.provinces.sk.benefits.housing_benefit
 
-        shelter_costs_lower_bracket = p.amount.higher_threshold.threshold >= precentage_spend_housing >= p.amount.lower_threshold.threshold
-        shelter_costs_higher_bracket = precentage_spend_housing > p.amount.higher_threshold.threshold
+        shelter_costs_lower_bracket = (p.amount.higher_threshold.threshold >= precentage_spend_housing >= p.amount.lower_threshold.threshold)
+        shelter_costs_higher_bracket = (precentage_spend_housing > p.amount.higher_threshold.threshold)
         # If a household spends between 45% and 35% of their income on housing expenditures 
         # it is eligible for a benefit amount depending on the number of dependants
         lower_bracket_amount = shelter_costs_lower_bracket * (select(
             [dependants == 0, dependants == 1, dependants >= 2],
-            [p.amount.lower_threshold.no_dependants,
-            p.amount.lower_threshold.one_dependants,
-            p.amount.lower_threshold.two_or_more_dependants])
+            [p.amount.lower_threshold.no_dependants, p.amount.lower_threshold.one_dependants, p.amount.lower_threshold.two_or_more_dependants])
         )
         # If a household spends over 45% of their income on housing expenditures 
         # it is eligible for a higher benefit amount depending on the number of dependants
@@ -43,4 +41,5 @@ class sk_housing_benefit(Variable):
                 p.amount.higher_threshold.two_or_more_dependants
             ]))
 
-        return eligible * (higher_bracket_amount + lower_bracket_amount)
+        sk_housing_benefit = eligible * (higher_bracket_amount + lower_bracket_amount)
+        return sk_housing_benefit

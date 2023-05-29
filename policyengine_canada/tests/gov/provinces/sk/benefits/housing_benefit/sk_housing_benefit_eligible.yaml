@@ -64,7 +64,7 @@
     people:
       person:
         is_full_time_student: false
-        sk_social_housing_program: False
+        sk_social_housing_program: false
         rent: 25_000
     household:
       members: [person]
@@ -73,10 +73,10 @@
       household_assets: 290_000
       adjusted_family_net_income: 43_000
       utilities_costs: 5_000
-      sk_income_assistance: False
+      sk_income_assistance: false
   output: 
-    sk_housing_benefit_eligible: True
-#test fail
+    sk_housing_benefit_eligible: true
+#test passed
 
 # - name: Saskatchewan housing benefit Eligibility (Household with one dependant and income beyond 52900)
 #   period: 2023
