@@ -10,8 +10,10 @@ class mb_pension_amount_credit(Variable):
     defined_for = ProvinceCode.MB
 
     def formula(person, period, parameters):
-        pension_income = person("pension_income", period)
+        pension_and_savings_income = person(
+            "pension_and_savings_plan_income", period
+        )
         max_amount = parameters(
             period
         ).gov.provinces.mb.tax.income.credits.pension_amount.max_amount
-        return min_(pension_income, max_amount)
+        return min_(pension_and_savings_income, max_amount)
