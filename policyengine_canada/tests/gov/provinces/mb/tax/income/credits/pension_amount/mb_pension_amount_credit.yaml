@@ -2,7 +2,7 @@
   period: 2022
   input:
     province_code: MB
-    pension_income: 0
+    pension_and_savings_plan_income: 0
   output:
     mb_pension_amount_credit: 0
 
@@ -10,7 +10,7 @@
   period: 2022
   input:
     province_code: MB
-    pension_income: 2_000
+    pension_and_savings_plan_income: 2_000
   output:
     mb_pension_amount_credit: 1_000
 
@@ -18,6 +18,6 @@
   period: 2022
   input:
     province_code: MB
-    pension_income: 500
+    pension_and_savings_plan_income: 500
   output:
     mb_pension_amount_credit: 500
