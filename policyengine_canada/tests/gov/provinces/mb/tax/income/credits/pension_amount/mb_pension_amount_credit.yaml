@@ -1,0 +1,23 @@
+- name: No pension income
+  period: 2022
+  input:
+    province_code: MB
+    pension_and_savings_plan_income: 0
+  output:
+    mb_pension_amount_credit: 0
+
+- name: Pension income of $2_000 - capped at 1_000
+  period: 2022
+  input:
+    province_code: MB
+    pension_and_savings_plan_income: 2_000
+  output:
+    mb_pension_amount_credit: 1_000
+
+- name: Pension income of $500 - capped at 1_000
+  period: 2022
+  input:
+    province_code: MB
+    pension_and_savings_plan_income: 500
+  output:
+    mb_pension_amount_credit: 500
