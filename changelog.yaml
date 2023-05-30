@@ -411,3 +411,18 @@
     added:
     - Alberta spouse and common-law partner amount.
   date: 2023-05-25 22:46:06
+- bump: minor
+  changes:
+    added:
+    - Python 3.10 support.
+  date: 2023-05-27 15:38:10
+- bump: minor
+  changes:
+    added:
+    - Quebec childcare expenses tax credit.
+  date: 2023-05-27 23:28:36
+- bump: minor
+  changes:
+    added:
+    - New Brunswick age amount credit.
+  date: 2023-05-28 20:47:19
