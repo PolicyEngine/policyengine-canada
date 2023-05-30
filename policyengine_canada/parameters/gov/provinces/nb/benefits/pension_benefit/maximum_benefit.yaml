@@ -1,6 +1,6 @@
-description: New Brunswick Maximum Pension Benefit
+description: New Brunswick provides this maximum pension benefit.
 values:
-  2022-01-01: 1000 
+  2022-01-01: 1_000 
 metadata:
   unit: currency-CAD
   label: New Brunswick Maximum Pension Benefit
