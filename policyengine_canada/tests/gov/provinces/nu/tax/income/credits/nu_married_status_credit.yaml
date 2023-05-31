@@ -1,0 +1,59 @@
+- name: No spouse in the household
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+    household:
+      members: [head]
+      province_code: NU
+  output:
+    nu_married_status_credit: 0
+
+- name: Spouse in the household but independent
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+      spouse:
+        is_spouse: true
+        is_dependant: false
+        individual_net_income: 1_000
+    household:
+      members: [head, spouse]
+      province_code: NU
+  output:
+    nu_married_status_credit: 0
+
+- name: Dependent spouse in the household with income less than 1600
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+      spouse:
+        is_spouse: true
+        is_dependant: true
+        individual_net_income: 1_000
+    household:
+      members: [head, spouse]
+      province_code: NU
+  output:
+    nu_married_status_credit: 2_200
+
+- name: Dependent spouse in the household with income more than 1600
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+      spouse:
+        is_spouse: true
+        is_dependant: true
+        individual_net_income: 2_000
+    household:
+      members: [head, spouse]
+      province_code: NU
+  output:
+    nu_married_status_credit: 1_600
