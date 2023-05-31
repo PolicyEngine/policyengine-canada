@@ -14,6 +14,5 @@ class qc_sa_single(Variable):
         p = parameters(period).gov.provinces.qc.tax.income.credits.sa
 
         age_eligible = person("age", period) >= p.age_eligibility
-        if_spouse = person("is_spouse", period)
 
-        return age_eligible & (~if_spouse)
+        return age_eligible & ~person("is_spouse", period)
