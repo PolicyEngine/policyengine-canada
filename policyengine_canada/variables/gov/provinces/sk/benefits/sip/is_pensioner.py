@@ -9,3 +9,5 @@ class is_pensioner(Variable):
 
 
 # TODO: find out pension age in sk
+# 55?
+# 65?
