@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+
 class nu_married_status_credit(Variable):
     value_type = float
     entity = Household
@@ -17,4 +18,6 @@ class nu_married_status_credit(Variable):
         eligible = household.any(spouse & dependent)
         income = eligible * person("individual_net_income", period)
         eligible_income = household.sum(income)
-        return (p.base + max_(0, p.addon_max_amount - eligible_income))*eligible  
+        return (
+            p.base + max_(0, p.addon_max_amount - eligible_income)
+        ) * eligible
