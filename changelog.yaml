@@ -426,3 +426,8 @@
     added:
     - New Brunswick age amount credit.
   date: 2023-05-28 20:47:19
+- bump: minor
+  changes:
+    added:
+    - Manitoba Pension amount credit.
+  date: 2023-05-30 16:16:25
