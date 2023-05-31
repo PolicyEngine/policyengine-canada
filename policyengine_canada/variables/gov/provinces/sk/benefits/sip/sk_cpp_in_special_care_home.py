@@ -11,7 +11,6 @@ class sk_cpp_in_special_care_home(Variable):
     def formula(household, period, parameters):
         p = parameters(period).gov.provinces.sk.benefits.sip
         cpp = household("canada_pension_plan_payout", period)
-        income = household("adjusted_family_net_income", period)
         person = household.members
         age = person("age", period)
         eligible = (person("special_care_home", period))
