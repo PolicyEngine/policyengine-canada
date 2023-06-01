@@ -16,5 +16,7 @@ class qc_sa_married_one_eligible(Variable):
         age_eligible = person("age", period) >= p.age_eligibility
         spouse_eligible = person("qc_sa_spouse_eligible", period)
 
+        # ^ is XOR (Exclusive OR)
+        # only one senior in the household is eligible (either the spouse or the head of the household, not both)
         eligible = age_eligible ^ spouse_eligible
         return household.sum(eligible)
