@@ -1,0 +1,31 @@
+- name: No spouse income
+  period: 2023
+  input:
+    people:
+      head:
+        spouse_income: 0
+      spouse:
+        spouse_income: 0
+    household:
+      members: [head, spouse]
+      province_code: AB
+  output:
+    ab_spouse_and_common_law_partner_amount_credit: 21_003
+
+- name: Spouse income of $10,000
+  period: 2023
+  input:
+    province_code: AB
+    spouse_income: 10_000
+  output:
+    ab_spouse_and_common_law_partner_amount_credit: 11_003
+
+- name: Capped at 0
+  period: 2023
+  input:
+    province_code: AB
+    spouse_income: 40_000
+  output:
+    ab_spouse_and_common_law_partner_amount_credit: 0
+
+
