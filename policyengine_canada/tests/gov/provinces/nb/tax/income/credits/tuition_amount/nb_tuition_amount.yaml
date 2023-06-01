@@ -2,6 +2,14 @@
   period: 2022
   input:
     province_code: NB
-    nb_taxable_income: 
+    nb_taxable_income: 0
+  output:
+    nb_tuition_amount: 0
+
+- name: Over reduction amount # 
+  period: 2022
+  input:
+    province_code: NB
+    nb_taxable_income: 2_000
   output:
     nb_tuition_amount: 
