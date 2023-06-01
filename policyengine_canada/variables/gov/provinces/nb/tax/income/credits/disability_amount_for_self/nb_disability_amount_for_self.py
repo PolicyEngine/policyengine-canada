@@ -1,6 +1,8 @@
+from policyengine_canada.model_api import *
+
 class nb_disability_amount_for_self(Variable):
     value_type = float
-    entity = Person
+    entity = Household
     label = "New Brunswick disability amount for self"
     definition_period = YEAR
     defined_for = ProvinceCode.NB
@@ -10,11 +12,11 @@ class nb_disability_amount_for_self(Variable):
         p = parameters(
             period
         ).gov.provinces.nb.tax.income.credits.low_income_tax_reduction
-        married = household("is_married", period)
-        dependant = person("is_dependant", period)
+        age = household("under_18", period)
+        
         return min_(
-            p.base.max_amount,
-            p.base.head
-            + married * p.base.spouse
-            + dependant * p.base.dependant,
+            p.base.total_max_amount,
+            p.base.base
+            + max_amount 
+            - total_expense + expense_threshold,
         )
