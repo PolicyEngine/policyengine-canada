@@ -1,0 +1,19 @@
+- name: The family with three nondisabled children
+  period: 2022
+  input:
+    people:
+      c1:
+       age: 7
+       childcare_expense: 5_000
+      c2:
+       age: 5
+       childcare_expense: 11_000
+      c3:
+       age: 10
+       childcare_expense: 10_000
+    household:
+      members: [c1,c2,c3]
+      adjusted_family_net_income: 50_000
+      province_code: QC
+  output:
+    qc_cce_nondisabled_child_tax_credit: 14_735 #0.7*1*10675 + 0.7*1*5000 + 0.7*1*5375
