@@ -10,7 +10,9 @@ class nb_pension_benefit(Variable):
     adds = "gov.provinces.nb.benefits.benefits"
      
     def formula(person, period, parameters):
-        income = person ("adjusted_personal_income", period)
-        return parameters(period).gov.provinces.nb.benefits.benefits(
-            income
-        )
+        age = person("age", period)
+        pension_income = person("pension_and_savings_plan_income", period)
+        threshold = parameters(period).gov.provinces.nb.benefits.pension_benefit.age_eligibility
+        age_eligibility = age > threshold
+    
+    
