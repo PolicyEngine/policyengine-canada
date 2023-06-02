@@ -1,6 +1,6 @@
 description: Quebec provides this base amount in its family allowance tax credit for each handicapped child.
 values:
-  2022-01-01: 2_616
+  2023-01-01: 2_616
 metadata:
   unit: currency-CAD
   label: Quebec family allowance tax credit handicapped child base amount 

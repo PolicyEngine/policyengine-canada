@@ -1,6 +1,6 @@
 description: Quebec provides this amount in its family allowance tax credit for each handicapped child with exceptional care tier 1.
 values:
-  2022-01-01: 13_224
+  2023-01-01: 13_224
 metadata:
   unit: currency-CAD
   label: Quebec family allowance tax credit tire 1 exceptional care handicapped child base amount 

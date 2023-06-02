@@ -13,32 +13,36 @@ class qc_fa_supplement(Variable):
 
         person = household.members
 
+        # check if the child is full custody of the head
+        full_custody = person("full_custody", period)
+        reduction_rate = max_(full_custody, p.shared_custody_reduction)
+
         # Supplement for the Purchase of School Supplies
-        age = person["age", period]
+        age = person("age", period)
         supplement_school_supplies = p.school_supplies_amount.calc(age)
 
         # Supplement for Handicapped Children
-        handicapped = person["is_disabled", period]
+        handicapped = person("is_disabled", period)
         supplement_handicapped = (
             handicapped * p.handicapped_child_supplement.base_amount
         )
 
         # Supplement for Handicapped Children Requiring Exceptional Care
-        handicapped_tier1 = person["qc_fa_exceptional_care_tier1", period]
+        handicapped_tier1 = person("qc_fa_exceptional_care_tier1", period)
         supplement_handicapped_tier1 = (
             handicapped
             * handicapped_tier1
             * p.handicapped_child_supplement.exceptional_care_tier1_amount
         )
 
-        handicapped_tier2 = person["qc_fa_exceptional_care_tier2", period]
+        handicapped_tier2 = person("qc_fa_exceptional_care_tier2", period)
         supplement_handicapped_tier2 = (
             handicapped
             * handicapped_tier2
             * p.handicapped_child_supplement.exceptional_care_tier2_amount
         )
 
-        supplements = (
+        supplements = reduction_rate * (
             supplement_school_supplies
             + supplement_handicapped
             + supplement_handicapped_tier1

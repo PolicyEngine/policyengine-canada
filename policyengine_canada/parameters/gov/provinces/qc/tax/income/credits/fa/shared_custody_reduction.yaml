@@ -1,0 +1,11 @@
+description: Quebec provides this reduction rate in its family allowance tax credit for each shared custody child.
+values:
+  2023-01-01: 0.5
+metadata:
+  unit: /1
+  label: Quebec family allowance tax credit shared custody reduction rate
+  reference:
+    - title: Retraite Québec - Retraite Québec and Family Allowance
+      href: https://www.rrq.gouv.qc.ca/en/programmes/soutien_enfants/Pages/soutien_enfants.aspx
+    - title: Retraite Québec - CalculAide for Family Allowance payments
+      href: https://www.rrq.gouv.qc.ca/en/services/services_en_ligne/soutien_aux_enfants/Pages/calcul_aide.aspx

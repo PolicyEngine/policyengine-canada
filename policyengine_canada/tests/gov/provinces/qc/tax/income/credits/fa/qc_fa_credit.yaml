@@ -1,0 +1,8 @@
+- name: Quebec family allowance credit amount
+  period: 2023
+  input:
+    qc_fa_payment: 1_000
+    qc_fa_supplement: 2_000
+    province_code: QC
+  output:
+    qc_fa_credit: 3_000

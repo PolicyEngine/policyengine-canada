@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class qc_fa_amount(Variable):
+class qc_fa_payment(Variable):
     value_type = float
     entity = Household
-    label = "Quebec family allowance amount"
+    label = "Quebec family allowance payment amount"
     definition_period = YEAR
     defined_for = ProvinceCode.QC
 
@@ -67,3 +67,7 @@ class qc_fa_amount(Variable):
         #         ),
         #     ],
         # )
+
+
+# todo: check for the path of double selection
+# todo: check for how to calculate shared custoby fa payments - not 0.5

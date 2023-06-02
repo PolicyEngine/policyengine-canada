@@ -1,37 +1,37 @@
 description: Quebec limits the single-parent family allowance payments amount for one child family based on family income.
 brackets:
   - threshold:
-      2022-01-01: 0
+      2023-01-01: 0
     amount:
-      2022-01-01: 3_758
+      2023-01-01: 3_758
   - threshold:
-      2022-01-01: 40_000
+      2023-01-01: 40_000
     amount:
-      2022-01-01: 3_725
+      2023-01-01: 3_725
   - threshold:
-      2022-01-01: 41_000
+      2023-01-01: 41_000
     amount:
-      2022-01-01: 3_365
+      2023-01-01: 3_365
   - threshold:
-      2022-01-01: 50_000
+      2023-01-01: 50_000
     amount:
-      2022-01-01: 2_965
+      2023-01-01: 2_965
   - threshold:
-      2022-01-01: 60_000
+      2023-01-01: 60_000
     amount:
-      2022-01-01: 2_565
+      2023-01-01: 2_565
   - threshold:
-      2022-01-01: 70_000
+      2023-01-01: 70_000
     amount:
-      2022-01-01: 2_165
+      2023-01-01: 2_165
   - threshold:
-      2022-01-01: 80_000
+      2023-01-01: 80_000
     amount:
-      2022-01-01: 1_765
+      2023-01-01: 1_765
   - threshold:
-      2022-01-01: 90_000
+      2023-01-01: 90_000
     amount:
-      2022-01-01: 1_496
+      2023-01-01: 1_496
 metadata:
   type: single_amount
   threshold_unit: currency-CAD
