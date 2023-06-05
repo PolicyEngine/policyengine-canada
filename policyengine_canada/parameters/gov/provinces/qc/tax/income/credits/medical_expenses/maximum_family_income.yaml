@@ -1,0 +1,62 @@
+description: Quebec limits the maximum family income corresponding to the amount of medical expenses.
+brackets:
+  - threshold:
+      2022-01-01: 1
+    amount:
+      2022-01-01: 29_035
+  - threshold:
+      2022-01-01: 1_751
+    amount:
+      2022-01-01: 30_535
+  - threshold:
+      2022-01-01: 2_096
+    amount:
+      2022-01-01: 32_035
+  - threshold:
+      2022-01-01: 2_441
+    amount:
+      2022-01-01: 33_535
+  - threshold:
+      2022-01-01: 2_786
+    amount:
+      2022-01-01: 35_035
+  - threshold:
+      2022-01-01: 3_131
+    amount:
+      2022-01-01: 36_535
+  - threshold:
+      2022-01-01: 3_476
+    amount:
+      2022-01-01: 38_035
+  - threshold:
+      2022-01-01: 3_821
+    amount:
+      2022-01-01: 39_535
+  - threshold:
+      2022-01-01: 4_166
+    amount:
+      2022-01-01: 41_035
+  - threshold:
+      2022-01-01: 4_511
+    amount:
+      2022-01-01: 42_535
+  - threshold:
+      2022-01-01: 4_856
+    amount:
+      2022-01-01: 44_035
+  - threshold:
+      2022-01-01: 5_201
+    amount:
+      2022-01-01: 45_535
+  - threshold:
+      2022-01-01: 5_546
+    amount:
+      2022-01-01: 50_115
+metadata:
+  type: single_amount
+  threshold_unit: currency-CAD
+  amount_unit: currency-CAD
+  label: Quebec medical expenses tax credit maximum family income limit
+  reference:
+    - title: Revenu Quebec - Refundable Tax Credit for Medical Expenses (Line 462 - Point 1)
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/451-to-480-refund-or-balance-due/line-462/point-1/
