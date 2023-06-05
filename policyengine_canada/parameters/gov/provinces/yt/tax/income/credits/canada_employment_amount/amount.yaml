@@ -1,9 +1,0 @@
-description: Canada Employment Amount.
-values:
-  2022-01-01: 1_287
-metadata:
-  unit: currency-CAD
-  label: Canada Employment Amount
-  reference:
-  - title: Government of Canada - Canada Employment Amount
-    href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-31260-canada-employment-amount.html
