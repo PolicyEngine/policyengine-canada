@@ -13,12 +13,14 @@ class qc_fa_payment(Variable):
         children = household("count_children", period)
         spouse = household("is_married", period)
 
-        p = parameters(period).gov.provinces.qc.tax.income.credits.fa
+        one_parent = parameters(period).gov.provinces.qc.tax.income.credits.fa.single_parent_family
+
 
         # check family condition
-        # family_condition = select([spouse == 1, spouse == 0], [parameters(period).gov.provinces.qc.tax.income.credits.fa.two_parent_family, parameters(period).gov.provinces.qc.tax.income.credits.fa.single_parent_family])
-
-        return p.two_parent_family.two_children_amount.calc(income)
+        family_condition = select([spouse == 1, spouse == 0], [p.two_parent_family, p.single_parent_family])
+        print(family_condition)
+        return family_condition.one_child_amount.calc(income)
+        #return p.two_parent_family.two_children_amount.calc(income)
 
         # return select(
         #     # number of children.
@@ -33,7 +35,6 @@ class qc_fa_payment(Variable):
         #     ],
         #     default=0,
         # )
-
         # select(
         #     [spouse == 1, spouse == 0],
         #     [
@@ -70,4 +71,4 @@ class qc_fa_payment(Variable):
 
 
 # todo: check for the path of double selection
-# todo: check for how to calculate shared custoby fa payments - not 0.5
+# todo: check for how to calculate shared custoby fa payments - take half from two-parent family + single_parent family
