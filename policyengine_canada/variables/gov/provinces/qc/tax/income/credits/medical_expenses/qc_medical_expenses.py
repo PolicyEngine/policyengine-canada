@@ -20,7 +20,7 @@ class qc_medical_expenses(Variable):
 
         # work income eligibility
         work_income_eligible = (
-            person("employment_income", period) >= p.work_income_base
+            person("working_income", period) >= p.work_income_base
         )
 
         # compare family income with maximum family income

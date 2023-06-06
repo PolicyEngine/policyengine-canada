@@ -3,7 +3,7 @@
   input:
     medical_expenses: 3_000
     is_adult: true
-    employment_income: 4_000 
+    working_income: 4_000 
     individual_net_income: 20_000
     qc_medical_expenses_spouse_income: 15_000
     province_code: QC
@@ -15,7 +15,7 @@
   input:
     medical_expenses: 3_000
     is_adult: true
-    employment_income: 3_000 # below the base work income
+    working_income: 3_000 # below the base work income
     individual_net_income: 20_000
     qc_medical_expenses_spouse_income: 15_000
     province_code: QC
@@ -27,7 +27,7 @@
   input:
     medical_expenses: 3_000
     is_adult: true
-    employment_income: 5_000
+    working_income: 5_000
     individual_net_income: 20_000
     qc_medical_expenses_spouse_income: 20_000 # over the maximum family income
     province_code: QC
