@@ -1,9 +1,10 @@
-description: Inclusive age at with a person is eligible for the age credit.
+description: Maximum amount for the age credit.
 values:
-  2021-01-01: 65
+  2002-12-31: 4_566
+  2003-12-31: 5_405
 metadata:
   unit: currency-CAD
-  label: Age credit age eligibility
+  label: Age credit maximum reduction amount
   reference:
   - title: Income Tax Act - Age Credit page 28
     href: https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf
