@@ -1,0 +1,9 @@
+description: Nova Scotia child benefit base amount
+values:
+  2022-07-01: 1_275
+metadata:
+  unit: currency-CAD
+  label: Nova Scotia Child Benefit Base Amount
+  reference:
+  - title: Nova Scotia child benefit
+    href: https://novascotia.ca/coms/families/ChildBenefit.html

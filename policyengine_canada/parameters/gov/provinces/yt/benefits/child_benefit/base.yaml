@@ -1,0 +1,9 @@
+description: Yukon provides this base amount in its child benefit.
+values:
+  2015-01-01: 820
+metadata:
+  unit: currency-CAD
+  label: Yukon child benefit base
+  reference:
+  - title: Yukon-specific income tax measures
+    href: https://yukon.ca/en/yukon-income-tax

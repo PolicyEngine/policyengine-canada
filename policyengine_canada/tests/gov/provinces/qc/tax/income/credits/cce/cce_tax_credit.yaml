@@ -1,0 +1,9 @@
+- name: Quebec cce disabled children credit for family income from 43,635	to 104,170, above limit
+  period: 2022
+  input:
+    qc_cce_disabled_child_tax_credit: 2_000
+    qc_cce_nondisabled_child_tax_credit: 3_000
+    province_code: QC
+  output:
+    qc_cce_tax_credit: 5_000
+
