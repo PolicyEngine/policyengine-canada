@@ -1,0 +1,12 @@
+- name: One single senior with net income below 15000
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    people:
+      p1:
+        individual_net_income: 10_000
+    household:
+      members: p1
+      province_code: NL
+  output:
+    nl_income_supplement: 254
