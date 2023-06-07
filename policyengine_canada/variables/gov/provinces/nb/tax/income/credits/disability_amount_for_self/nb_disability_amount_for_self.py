@@ -8,15 +8,12 @@ class nb_disability_amount_for_self(Variable):
     defined_for = ProvinceCode.NB
 
     def formula(household, period, parameters):
-        person = household.members
+        eligible = household("nb_disability_amount_eligible")
         p = parameters(
             period
-        ).gov.provinces.nb.tax.income.credits.low_income_tax_reduction
-        age = household("under_18", period)
+        ).gov.provinces.nb.tax.income.credits.disability_amount
+        expenses = household(""childcare costs", period)
+        expense_threshold = max_(expenses - p.younger_amount.expense_threshold, 0)
+        total_max_amount = max_(p.younger_amount.max_amount - expense_threshold, 0)
         
-        return min_(
-            p.base.total_max_amount,
-            p.base.base
-            + max_amount 
-            - total_expense + expense_threshold,
-        )
+        return eligible * min_(p.base + total_max_amount, p.younger_amount.total_max_amount)

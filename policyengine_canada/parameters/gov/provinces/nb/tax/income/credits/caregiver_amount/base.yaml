@@ -1,0 +1,9 @@
+description: New Brunswick provide this base amount for caregiver amount.
+values:
+  2022-01-01: 22_555
+metadata:
+  unit: year
+  label: New Brunswick base amount for caregiver amount
+  reference:
+  - title: Worksheet NB428
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-d/5004-d-22e.pdf
