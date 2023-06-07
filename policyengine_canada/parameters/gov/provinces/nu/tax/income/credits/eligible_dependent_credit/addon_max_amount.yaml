@@ -1,0 +1,9 @@
+description: Nunavut provides this addon max amount for individual who is supporting for a dependent who is living in the same household. 
+values:
+  2022-01-01: 16_000
+metadata:
+  unit: currency-CAD
+  label: Nunavut eligible dependent addon max amount
+  reference:
+  - title: Nunavut Income Tax Act Subvision C Section 2.15
+    href: https://www.nunavutlegislation.ca/en/consolidated-law/income-tax-act-consolidation

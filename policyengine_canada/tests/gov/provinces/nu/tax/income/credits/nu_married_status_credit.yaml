@@ -19,7 +19,7 @@
       spouse:
         is_spouse: true
         is_dependant: false
-        individual_net_income: 1_000
+        individual_net_income: 10_000
     household:
       members: [head, spouse]
       province_code: NU
@@ -35,12 +35,12 @@
       spouse:
         is_spouse: true
         is_dependant: true
-        individual_net_income: 1_000
+        individual_net_income: 10_000
     household:
       members: [head, spouse]
       province_code: NU
   output:
-    nu_married_status_credit: 2_200
+    nu_married_status_credit: 22_000
 
 - name: Dependent spouse in the household with income more than 1600
   period: 2023
@@ -51,9 +51,9 @@
       spouse:
         is_spouse: true
         is_dependant: true
-        individual_net_income: 2_000
+        individual_net_income: 20_000
     household:
       members: [head, spouse]
       province_code: NU
   output:
-    nu_married_status_credit: 1_600
+    nu_married_status_credit: 16_000
