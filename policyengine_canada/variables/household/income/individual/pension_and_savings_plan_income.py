@@ -8,4 +8,3 @@ class pension_and_savings_plan_income(Variable):
     unit = CAD
     documentation = "Income from pensions and savings plans"
     definition_period = YEAR
-    reference = "https://www.canada.ca/en/financial-consumer-agency/services/financial-toolkit/taxes/taxes-2/4.html"

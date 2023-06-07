@@ -1,0 +1,9 @@
+description: The annual adjusted income threshold for Nova Scotia Poverty Reduction Credit.
+values:
+  2022-07-01: 16_000
+metadata:
+  unit: currency-CAD
+  label: Nova Scotia Poverty Reduction Credit Income Threshold
+  reference:
+  - title: Government of Canada - Nova Scotia The Poverty Reduction Credit
+    href: https://novascotia.ca/coms/noteworthy/PovertyReductionCredit.html
