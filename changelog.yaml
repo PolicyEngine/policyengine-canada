@@ -431,3 +431,8 @@
     added:
     - Manitoba Pension amount credit.
   date: 2023-05-30 16:16:25
+- bump: minor
+  changes:
+    added:
+    - Quebec Senior Assistance Tax Credit.
+  date: 2023-06-01 03:05:10
