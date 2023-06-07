@@ -8,4 +8,3 @@ class household_assets(Variable):
     documentation = "Total liquid household assets."
     unit = CAD
     definition_period = YEAR
-  

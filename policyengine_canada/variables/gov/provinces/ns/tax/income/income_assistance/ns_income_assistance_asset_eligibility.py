@@ -9,10 +9,11 @@ class ns_income_assistance_asset_eligibility(Variable):
     defined_for = ProvinceCode.NS
 
     def formula(household, period, parameters):
-        household_size = household("household_size",period)
+        household_size = household("household_size", period)
         p = parameters(
             period
         ).gov.provinces.ns.tax.income.income_assistance.eligibility.assets
-        max_asset_limit = p.max_assets.calc(household_size)
-        ns_applicable_asset_amount = add(household, period, p.applicable_assets)
-        return  max_asset_limit >= ns_applicable_asset_amount
+        asset_limit = p.max_assets.calc(household_size)
+        assets = household("ns_applicable_asset_amount", period)
+        print(asset_limit)
+        return asset_limit >= assets

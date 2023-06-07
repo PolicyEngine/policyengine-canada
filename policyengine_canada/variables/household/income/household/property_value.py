@@ -8,4 +8,3 @@ class property_value(Variable):
     documentation = "Total equity in any real or personal property."
     unit = CAD
     definition_period = YEAR
-  

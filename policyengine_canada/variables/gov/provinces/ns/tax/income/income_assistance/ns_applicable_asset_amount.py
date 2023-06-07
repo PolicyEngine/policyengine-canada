@@ -7,11 +7,9 @@ class ns_applicable_asset_amount(Variable):
     label = "Nova Scotia income assistance applicable asset amount"
     unit = CAD
     definition_period = YEAR
-    reference = "https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4"
+    reference = (
+        "https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4"
+    )
     defined_for = ProvinceCode.NS
-    
-    def formula(household, period, parameters):
-        p = parameters(
-            period
-        ).gov.provinces.ns.tax.income.income_assistance.eligibility.assets
-        return add(household, period, p.applicable_assets)
+
+    adds = "gov.provinces.ns.tax.income.income_assistance.applicable_assets"

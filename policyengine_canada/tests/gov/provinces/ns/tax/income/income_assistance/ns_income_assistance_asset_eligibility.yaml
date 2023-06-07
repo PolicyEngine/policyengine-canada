@@ -37,3 +37,12 @@
   output:
     ns_income_assistance_asset_eligibility: False
 
+
+- name: Nova Scotia Income Assistance asset eligibility; 0-person household and ineligible asset
+  period: 2023
+  input:
+    province_code: NS
+    household_size: 0
+    ns_applicable_asset_amount: 4_001
+  output:
+    ns_income_assistance_asset_eligibility: False
