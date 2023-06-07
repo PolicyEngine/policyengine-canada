@@ -1,0 +1,9 @@
+description: Newfoundland and Labrador income supplement phase in rate.
+values:
+  2022-12-31: 0.09
+metadata:
+  unit: /1
+  label: Newfoundland and Labrador Income Supplement Phase In Rate
+  reference:
+    - title: Government of Canada - Newfoundland and Labrador Income Supplement
+      href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/

@@ -1,0 +1,9 @@
+description: Newfoundland and Labrador income supplement phase-in income threshold.
+values:
+  2022-12-31: 15_000
+metadata:
+  unit: currency-CAD
+  label: Newfoundland and Labrador Income Supplement Phase-in Income Threshold
+  reference:
+    - title: Government of Canada - Newfoundland and Labrador Income Supplement
+      href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/
