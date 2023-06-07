@@ -1,9 +1,9 @@
-description: Nova Scotia allows for the following lower age eligibility under the Income Assistance (IA).
+description: Nova Scotia qualifies fillers above the following age limit for the Income Assistance (IA).
 values:
   2021-01-01: 16
 metadata:
   unit: year
   label: Nova Scotia Income Assistance lower age eligibility
   reference:
-  - title: Employment Support and Income Assistance Regulations
+  - title: Employment Support and Income Assistance Act, Section 21, Eligibility (8), (1)
     href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_2
