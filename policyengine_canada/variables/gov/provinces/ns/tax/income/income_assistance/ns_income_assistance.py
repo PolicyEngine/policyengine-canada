@@ -7,5 +7,5 @@ class ns_income_assistance(Variable):
     label = "Nova Scotia Income Assistance"
     unit = CAD
     definition_period = YEAR
-    reference = "https://novascotia.ca/coms/employment/income_assistance/Eligibility.html#19"
+    reference = "https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4"
     defined_for = ProvinceCode.NS

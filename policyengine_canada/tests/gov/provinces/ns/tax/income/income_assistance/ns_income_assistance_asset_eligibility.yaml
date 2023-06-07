@@ -1,0 +1,39 @@
+- name: Nova Scotia Income Assistance asset eligibility; 1-person household and eligible asset
+  period: 2023
+  input:
+    province_code: NS
+    household_size: 1
+    ns_applicable_asset_amount: 1_999
+  output:
+    ns_income_assistance_asset_eligibility: True
+
+
+- name: Nova Scotia Income Assistance asset eligibility; multi-person household and eligible asset
+  period: 2023
+  input:
+    province_code: NS
+    household_size: 2
+    ns_applicable_asset_amount: 3_999
+  output:
+    ns_income_assistance_asset_eligibility: True
+
+
+- name: Nova Scotia Income Assistance asset eligibility; 1-person household and ineligible asset
+  period: 2023
+  input:
+    province_code: NS
+    household_size: 1
+    ns_applicable_asset_amount: 2_001
+  output:
+    ns_income_assistance_asset_eligibility: False
+
+
+- name: Nova Scotia Income Assistance asset eligibility; multi-person household and ineligible asset
+  period: 2023
+  input:
+    province_code: NS
+    household_size: 3
+    ns_applicable_asset_amount: 4_001
+  output:
+    ns_income_assistance_asset_eligibility: False
+
