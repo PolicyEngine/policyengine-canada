@@ -2,13 +2,9 @@
   period: 2023
   absolute_error_margin: 0.1
   input:
-    people:
-      p1:
-        age: 66
-        individual_net_income: 29_405
-    household:
-      members: p1
-      province_code: NL
+    age: 66
+    individual_net_income: 29_405
+    province_code: NL
   output:
     nl_seniors_benefit: 1_515.65
   
@@ -16,13 +12,9 @@
   period: 2023
   absolute_error_margin: 0.1
   input:
-    people:
-      p1:
-        age: 66
-        individual_net_income: 29_401
-    household:
-      members: p1
-      province_code: NL
+    age: 66
+    individual_net_income: 29_401
+    province_code: NL
   output:
     nl_seniors_benefit: 1_516
 
@@ -30,13 +22,9 @@
   period: 2023
   absolute_error_margin: 0.1
   input:
-    people:
-      p1:
-        age: 66
-        individual_net_income: 30_000
-    household:
-      members: p1
-      province_code: NL
+    age: 66
+    individual_net_income: 30_000
+    province_code: NL
   output:
     nl_seniors_benefit: 1446.27
 
@@ -44,13 +32,9 @@
   period: 2023
   absolute_error_margin: 0.1
   input:
-    people:
-      p1:
-        age: 66
-        individual_net_income: 42_405
-    household:
-      members: p1
-      province_code: NL
+    age: 66
+    individual_net_income: 42_405
+    province_code: NL
   output:
     nl_seniors_benefit: 0
 
@@ -58,16 +42,11 @@
   period: 2023
   absolute_error_margin: 0.1
   input:
-    people:
-      p1:
-        age: 66
-        individual_net_income: 29_380
-      p2:
-        is_spouse: true
-        spouse_income: 5
-    household:
-      members: [p1, p2]
-      province_code: NL
+    age: 66
+    individual_net_income: 29_380
+    is_spouse: true
+    spouse_income: 5
+    province_code: NL
   output:
     nl_seniors_benefit: 1_516
 
@@ -75,16 +54,11 @@
   period: 2023
   absolute_error_margin: 0.1
   input:
-    people:
-      p1:
-        age: 66
-        individual_net_income: 30_000
-      p2:
-        is_spouse: true
-        spouse_income: 10_000
-    household:
-      members: [p1, p2]
-      province_code: NL
+    age: 66
+    individual_net_income: 30_000
+    is_spouse: true
+    spouse_income: 10_000
+    province_code: NL
   output:
     nl_seniors_benefit: 280.3
 
@@ -92,16 +66,11 @@
   period: 2023
   absolute_error_margin: 0.1
   input:
-    people:
-      p1:
-        age: 66
-        individual_net_income: 50_400
-      p2:
-        is_spouse: false
-        spouse_income: 0
-    household:
-      members: [p1, p2]
-      province_code: NL
+    age: 66
+    individual_net_income: 50_400
+    is_spouse: false
+    spouse_income: 0
+    province_code: NL
   output:
     nl_seniors_benefit: 0
 
@@ -109,16 +78,11 @@
   period: 2023
   absolute_error_margin: 0.1
   input:
-    people:
-      p1:
-        age: 60
-        individual_net_income: 50_400
-      p2:
-        is_spouse: true
-        spouse_income: 0
-    household:
-      members: [p1, p2]
-      province_code: NL
+    age: 60
+    individual_net_income: 50_400
+    is_spouse: true
+    spouse_income: 0
+    province_code: NL
   output:
     nl_seniors_benefit: 0
 
@@ -126,12 +90,8 @@
   period: 2023
   absolute_error_margin: 0.1
   input:
-    people:
-      p1:
-        age: 60
-        individual_net_income: 29_405
-    household:
-      members: p1
-      province_code: NL
+    age: 60
+    individual_net_income: 29_405
+    province_code: NL
   output:
     nl_seniors_benefit: 0
