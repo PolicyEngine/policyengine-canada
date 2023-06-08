@@ -13,130 +13,60 @@
   output:
     nl_income_supplement: 254
 
-- name: One and spouse with net income between 15000 and 20000 and have three children
+- name: One disabled with net income below 15000
   period: 2023
   absolute_error_margin: 0.1
   input:
     people:
       p1:
         is_head: true
+        is_disabled: true
         age: 40
         individual_net_income: 10_000
-      p2:
-        is_spouse: true
-        age: 38
-        spouse_income: 9_000
-      p3:
-        age: 18
-      p4:
-        age: 15
-      p5:
-        age: 10
     household:
       members: [p1]
       province_code: NL
   output:
-    nl_income_supplement: 1,459.8
+    nl_income_supplement: 485
 
-# - name: One with net income between 20000 and 40000
-#   period: 2023
-#   absolute_error_margin: 0.1
-#   input:
-#     people:
-#       p1:
-#         individual_net_income: 30_000
-#     household:
-#       members: p1
-#       province_code: NL
-#   output:
-#     nl_income_supplement: 520
+- name: One disabled and his spouse with net income between 15000 and 20000
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    people:
+      p1:
+        is_head: true
+        is_disabled: true
+        age: 40
+        individual_net_income: 10_000
+      p2:
+        is_spouse: true
+        age: 40
+        individual_net_income: 10_000
+    household:
+      members: [p1, p2]
+      province_code: NL
+  output:
+    nl_income_supplement: 820
 
-# - name: One with net income above 40000
-#   period: 2023
-#   absolute_error_margin: 0.1
-#   input:
-#     people:
-#       p1:
-#         individual_net_income: 50_000
-#     household:
-#       members: p1
-#       province_code: NL
-#   output:
-#     nl_income_supplement: 0
-
-# - name: One with net income above 40000
-#   period: 2023
-#   absolute_error_margin: 0.1
-#   input:
-#     people:
-#       p1:
-#         individual_net_income: 44_000
-#     household:
-#       members: p1
-#       province_code: NL
-#   output:
-#     nl_income_supplement: 160
-
-# - name: One and spouse with net income below 15000
-#   period: 2023
-#   absolute_error_margin: 0.1
-#   input:
-#     people:
-#       p1:
-#         individual_net_income: 10_000
-#       p2:
-#         is_spouse: true
-#         spouse_income: 0
-#     household:
-#       members: [p1, p2]
-#       province_code: NL
-#   output:
-#     nl_income_supplement: 323
-
-# - name: One and spouse with net income between 15000 and 20000
-#   period: 2023
-#   absolute_error_margin: 0.1
-#   input:
-#     people:
-#       p1:
-#         individual_net_income: 10_000
-#       p2:
-#         is_spouse: true
-#         spouse_income: 16_000
-#     household:
-#       members: [p1, p2]
-#       province_code: NL
-#   output:
-#     nl_income_supplement: 589
-
-# - name: One and spouse with net income between 20000 and 40000
-#   period: 2023
-#   absolute_error_margin: 0.1
-#   input:
-#     people:
-#       p1:
-#         individual_net_income: 20_000
-#       p2:
-#         is_spouse: true
-#         spouse_income: 16_000
-#     household:
-#       members: [p1, p2]
-#       province_code: NL
-#   output:
-#     nl_income_supplement: 589
-  
-# - name: One and spouse with net income above 40000
-#   period: 2023
-#   absolute_error_margin: 0.1
-#   input:
-#     people:
-#       p1:
-#         individual_net_income: 20_000
-#       p2:
-#         is_spouse: true
-#         spouse_income: 26_000
-#     household:
-#       members: [p1, p2]
-#       province_code: NL
-#   output:
-#     nl_income_supplement: 49
+- name: One disabled and his spouse with one child and their net income between 15000 and 20000
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    people:
+      p1:
+        is_head: true
+        is_disabled: true
+        age: 40
+        individual_net_income: 10_000
+      p2:
+        is_spouse: true
+        age: 40
+        individual_net_income: 10_000
+      p3:
+        age: 19
+    household:
+      members: [p1, p2, p3]
+      province_code: NL
+  output:
+    nl_income_supplement: 820
