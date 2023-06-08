@@ -1,4 +1,4 @@
-- name: One single senior with net income below 15000
+- name: One with net income below 15000
   period: 2023
   absolute_error_margin: 0.1
   input:
@@ -10,3 +10,119 @@
       province_code: NL
   output:
     nl_income_supplement: 254
+
+- name: One with net income between 15000 and 20000
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    people:
+      p1:
+        individual_net_income: 18_000
+    household:
+      members: p1
+      province_code: NL
+  output:
+    nl_income_supplement: 413.6
+
+- name: One with net income between 20000 and 40000
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    people:
+      p1:
+        individual_net_income: 30_000
+    household:
+      members: p1
+      province_code: NL
+  output:
+    nl_income_supplement: 520
+
+- name: One with net income above 40000
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    people:
+      p1:
+        individual_net_income: 50_000
+    household:
+      members: p1
+      province_code: NL
+  output:
+    nl_income_supplement: 0
+
+- name: One with net income above 40000
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    people:
+      p1:
+        individual_net_income: 44_000
+    household:
+      members: p1
+      province_code: NL
+  output:
+    nl_income_supplement: 160
+
+- name: One and spouse with net income below 15000
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    people:
+      p1:
+        individual_net_income: 10_000
+      p2:
+        is_spouse: true
+        spouse_income: 0
+    household:
+      members: [p1, p2]
+      province_code: NL
+  output:
+    nl_income_supplement: 323
+
+- name: One and spouse with net income between 15000 and 20000
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    people:
+      p1:
+        individual_net_income: 10_000
+      p2:
+        is_spouse: true
+        spouse_income: 16_000
+    household:
+      members: [p1, p2]
+      province_code: NL
+  output:
+    nl_income_supplement: 589
+
+- name: One and spouse with net income between 20000 and 40000
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    people:
+      p1:
+        individual_net_income: 20_000
+      p2:
+        is_spouse: true
+        spouse_income: 16_000
+    household:
+      members: [p1, p2]
+      province_code: NL
+  output:
+    nl_income_supplement: 589
+  
+- name: One and spouse with net income above 40000
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    people:
+      p1:
+        individual_net_income: 20_000
+      p2:
+        is_spouse: true
+        spouse_income: 26_000
+    household:
+      members: [p1, p2]
+      province_code: NL
+  output:
+    nl_income_supplement: 49
