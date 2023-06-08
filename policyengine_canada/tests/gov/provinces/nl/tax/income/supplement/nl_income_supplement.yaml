@@ -5,6 +5,7 @@
     people:
       p1:
         is_head: true
+        is_spouse: false
         age: 40
         individual_net_income: 10_000
     household:
@@ -58,15 +59,13 @@
         is_head: true
         is_disabled: true
         age: 40
+        is_spouse: true
+        spouse_income: 10_000
         individual_net_income: 10_000
       p2:
-        is_spouse: true
-        age: 40
-        individual_net_income: 10_000
-      p3:
         age: 19
     household:
-      members: [p1, p2, p3]
+      members: [p1, p2]
       province_code: NL
   output:
     nl_income_supplement: 820
