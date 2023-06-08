@@ -14,5 +14,7 @@ class nb_pension_benefit(Variable):
         pension_income = person("pension_and_savings_plan_income", period)
         threshold = parameters(period).gov.provinces.nb.benefits.pension_benefit.age_eligibility
         age_eligibility = age > threshold
-    
+
+      #min of 1_000 or less    
+    return min_(parameters(period).gov.cra.provinces.nb.benefits.pension_benefit.maximum_benefit, age_eligibility * pension_income)
     
