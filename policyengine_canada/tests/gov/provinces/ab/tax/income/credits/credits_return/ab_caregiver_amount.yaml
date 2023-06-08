@@ -1,0 +1,18 @@
+- name: Over 18 
+  period: 2023
+  input:
+    age: 19
+    is_disabled: true
+    is_parent_or_grandparent: false
+    individual_net_income: 20_000
+    province_code: AB
+  output:
+    ab_caregiver_amount: 11_489
+
+# - name: Under age eligibility
+#   period: 2023
+#   input:
+#     age: 17
+#     province_code: AB
+#   output:
+#     acfb_eligible_child: true
