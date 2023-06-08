@@ -10,11 +10,13 @@ class nl_seniors_benefit(Variable):
 
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.nl.tax.income.benefits
-        
+
         senior_eligibility = person("age", period) >= p.age_eligibility
 
         # Calculate the senior's income & their spouses' income
-        spouse_income = person("spouse_income", period) * person("is_spouse", period)
+        spouse_income = person("spouse_income", period) * person(
+            "is_spouse", period
+        )
         personal_income = person("individual_net_income", period)
         total_family_income = spouse_income + personal_income
 
