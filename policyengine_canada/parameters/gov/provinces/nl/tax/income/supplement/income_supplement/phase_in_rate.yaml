@@ -1,8 +1,17 @@
 description: Newfoundland and Labrador income supplement phase in rate.
-values:
-  2022-12-31: 0.0532
+brackets:
+  - threshold: 
+      2023-01-01: 0
+    rate:
+      2023-01-01: 0
+  - threshold:
+      2023-01-01: 15_000
+    rate:
+      2023-01-01: 0.0532
 metadata:
-  unit: /1
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
   label: Newfoundland and Labrador Income Supplement Phase In Rate
   reference:
     - title: Government of Canada - Newfoundland and Labrador Income Supplement

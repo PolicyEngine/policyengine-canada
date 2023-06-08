@@ -1,9 +1,9 @@
-description: Newfoundland and Labrador income supplement lower phase-in income threshold.
+description: Newfoundland and Labrador income supplement maximum addition amount.
 values:
-  2022-12-31: 20_000
+  2022-12-31: 266
 metadata:
   unit: currency-CAD
-  label: Newfoundland and Labrador Income Supplement Lower Phase-in Income Threshold
+  label: Newfoundland and Labrador Income Supplement max addition amount
   reference:
     - title: Government of Canada - Newfoundland and Labrador Income Supplement
       href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/

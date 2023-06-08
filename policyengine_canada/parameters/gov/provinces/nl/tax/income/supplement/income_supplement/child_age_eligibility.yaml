@@ -1,9 +1,9 @@
-description: Newfoundland and Labrador income supplement lower phase-out income.
+description: Newfoundland and Labrador income supplement children age eligibility.
 values:
-  2022-12-31: 40_000
+  2022-12-31: 19
 metadata:
-  unit: currency-CAD
-  label: Newfoundland and Labrador Income Supplement Lower Phase-out Income
+  unit: age
+  label: Newfoundland and Labrador Income Supplement Children Age Eligibility
   reference:
     - title: Government of Canada - Newfoundland and Labrador Income Supplement
       href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/
