@@ -6,3 +6,4 @@ class canada_pension_plan_payout(Variable):
     entity = Person
     label = "Canada Pension Plan yearly payout"
     definition_period = YEAR
+    unit = CAD

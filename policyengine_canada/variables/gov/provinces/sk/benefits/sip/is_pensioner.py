@@ -7,7 +7,5 @@ class is_pensioner(Variable):
     label = "Is a pensioner"
     definition_period = YEAR
 
-
-# TODO: find out pension age in sk
-# 55?
-# 65?
+    def formula(person, period, parameters):
+        return person("age", period) > 65
