@@ -23,7 +23,7 @@ class sk_seniors_income_plan_in_special_care_home(Variable):
         gis_reduction = person("gis_reduction", period)
         sip_benefit_in_special_care_home = eligible * (select(
             # Conditions.
-            [(~married) & (pensioner == true) & (cpp < p.living_in_special_care_home.cpp_income.single) & (income < p.living_in_special_care_home.annual_income_limit.single), 
+            [(~married) & (pensioner == 1) & (cpp < p.living_in_special_care_home.cpp_income.single) & (income < p.living_in_special_care_home.annual_income_limit.single), 
              (married) & (count_pensioners == 2) & (cpp < p.living_in_special_care_home.cpp_income.married_both_pensioners) & (income < p.living_in_special_care_home.annual_income_limit.married_both_pensioners), 
              (married) & spouse_ineligible & (cpp < p.living_in_special_care_home.cpp_income.married_spouse_below_age_threshold) & (income < p.living_in_special_care_home.annual_income_limit.married_spouse_below_age_threshold), 
              (married) & (received_allowance > 0) & (cpp < p.living_in_special_care_home.cpp_income.married_spouse_receiving_allowance) & (income < p.living_in_special_care_home.annual_income_limit.married_spouse_receiving_allowance)],
@@ -34,7 +34,7 @@ class sk_seniors_income_plan_in_special_care_home(Variable):
                 p.living_in_special_care_home.max_amount.married_spouse_below_age_threshold - gis_reduction * p.living_in_special_care_home.reduction_rate.married_spouse_below_age_threshold,
                 p.living_in_special_care_home.max_amount.married_spouse_receiving_allowance - gis_reduction * p.living_in_special_care_home.reduction_rate.married_spouse_receiving_allowance,
             ],
-            default=0,
+            default=0
         ))
         sip_benefit_in_special_care_home = where(sip_benefit_in_special_care_home < 0, 0, sip_benefit_in_special_care_home)
 
