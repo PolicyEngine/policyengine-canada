@@ -1,0 +1,9 @@
+description: Quebec limits its nondisabled children's activities tax credits for eligible registration or membership fees at or below this amount.
+values:
+  2022-01-01: 500
+metadata:
+  unit: currency-CAD
+  label: Quebec nondisabled children's activities eligible fee limit
+  reference:
+    - title: Revenu Quebec - Tax Credit for Children's Activities (Line 462)
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/451-to-480-refund-or-balance-due/line-462/point-25/
