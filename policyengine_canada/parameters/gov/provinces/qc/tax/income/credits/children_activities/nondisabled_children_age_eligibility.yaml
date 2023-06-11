@@ -1,21 +1,21 @@
 description: Age eligibility of non-disabled children for the Quebec children's activities tax credit.
 brackets:
-  - rate:
+  - amount:
       2022-01-01: 0
     threshold:
       2022-01-01: 0
-  - rate:
+  - amount:
       2022-01-01: 1
     threshold:
       2022-01-01: 6
-  - rate:
+  - amount:
       2022-01-01: 0
     threshold:
       2022-01-01: 17
 metadata:
   type: single_amount
   threshold_unit: year
-  rate_unit: /1
+  amount_unit: /1
   label: Quebec children's activities non-disabled child age eligibility
   reference:
     - title: Revenu Quebec - Tax Credit for Children's Activities (Line 462)
