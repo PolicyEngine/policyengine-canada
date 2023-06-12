@@ -1,7 +1,12 @@
 - changes:
     added:
     - Repo created
-  date: 2022-10-18 17:02:00
+  date: 2022-11-05 20:58:56
+bump: minor
+  changes:
+    added:
+    - Canada employment amount.
+
 - bump: minor
   changes:
     added:
