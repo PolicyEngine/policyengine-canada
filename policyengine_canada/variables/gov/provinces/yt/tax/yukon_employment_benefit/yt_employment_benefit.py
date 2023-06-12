@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class yt_employment_benefit(Variable):
+class yt_employment_amount(Variable):
     value_type = float
     entity = Person
     label = "Yukon Employment Amount"
@@ -13,7 +13,7 @@ class yt_employment_benefit(Variable):
     def formula(person, period, parameters):
         maximun_return_amount = parameters(
             period
-        ).gov.provinces.yt.benefits.employment_benefit
+        ).gov.provinces.yt.tax.income.credits.yt_employment_amount.yt_employment_amount
 
         employment_income = person("employment_income", period)
 

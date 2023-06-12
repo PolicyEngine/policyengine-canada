@@ -4,7 +4,7 @@
     province_code: YT
     employment_income: 30000
   output:
-    yt_employment_benefit: 1_287
+    yt_employment_amount: 1_287
 
 - name: tax return for no income
   period: 2022
@@ -12,7 +12,7 @@
     province_code: YT
     employment_income: 0
   output:
-    yt_employment_benefit: 0
+    yt_employment_amount: 0
 
 - name: tax return for income under maximum amount
   period: 2022
@@ -20,5 +20,5 @@
     province_code: YT
     employment_income: 1_000
   output:
-    yt_employment_benefit: 1_000
+    yt_employment_amount: 1_000
 
