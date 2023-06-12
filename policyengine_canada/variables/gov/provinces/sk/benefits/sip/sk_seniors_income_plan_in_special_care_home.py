@@ -3,16 +3,16 @@ from policyengine_canada.model_api import *
 
 class sk_seniors_income_plan_in_special_care_home(Variable):
     value_type = float
-    entity = Household
+    entity = Person
     label = "Saskatchewan seniors income plan client category - living in special care home"
     definition_period = YEAR
     defined_for = ProvinceCode.SK
 
-    def formula(household, period, parameters):
+    def formula(person, period, parameters):
         p = parameters(period).gov.provinces.sk.benefits.sip
-        income = household("adjusted_family_net_income", period)
-        cpp = household.members("canada_pension_plan_payout", period)
-        person = household.members
+        household = person.household
+        income = person("individual_net_income", period)
+        cpp = person("canada_pension_plan_payout", period)
         age = person("age", period)
         eligible = (person("special_care_home", period))
         pensioner = person("is_pensioner", period)

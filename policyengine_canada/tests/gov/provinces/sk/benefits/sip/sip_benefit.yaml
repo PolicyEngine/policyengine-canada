@@ -12,6 +12,7 @@
         special_care_home: false
         gis_reduction: 1_000
         canada_pension_plan_payout: 4_000
+        individual_net_income: 4_000
       spouse:
         age: 64
         is_spouse: false
@@ -21,8 +22,7 @@
       members: [senior, spouse]
       province_code: SK
       is_married: false
-      adjusted_family_net_income: 4_000
-  
+
   output:
     sk_seniors_income_plan: 2_220
 
