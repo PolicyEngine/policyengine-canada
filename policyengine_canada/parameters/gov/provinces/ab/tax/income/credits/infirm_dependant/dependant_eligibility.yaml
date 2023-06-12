@@ -1,0 +1,9 @@
+description: Alberta limits its infirm dependant credit to this age.
+values:
+  2022-01-01: 18
+metadata:
+  unit: year
+  label: Alberta infirm dependant age eligibility
+  reference:
+  - title: Alberta infirm dependant age eligibility
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf
