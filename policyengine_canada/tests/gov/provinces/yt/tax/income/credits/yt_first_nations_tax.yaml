@@ -1,0 +1,26 @@
+- name: Eligible
+  period: 2022
+  input:
+    province_code: YT
+    resides_on_settlement_land: true
+    adjusted_family_net_income: 10_000
+  output:
+    yt_first_nations_tax: 9_500
+
+- name: Not eligible
+  period: 2022
+  input:
+    province_code: YT
+    resides_on_settlement_land: false
+    adjusted_family_net_income: 10_000
+  output:
+    yt_first_nations_tax: 0
+
+- name:  Eligible but no income
+  period: 2022
+  input:
+    province_code: YT
+    resides_on_settlement_land: true
+    adjusted_family_net_income: 0
+  output:
+    yt_first_nations_tax: 0

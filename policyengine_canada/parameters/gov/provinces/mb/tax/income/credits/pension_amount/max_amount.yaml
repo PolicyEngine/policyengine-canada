@@ -1,0 +1,9 @@
+description: Manitoba provides this maximum amount under the Pension amount credit. 
+values:
+  2022-01-01: 1_000
+metadata:
+  unit: currency-CAD
+  label: Manitoba pension amount credit max amount
+  reference:
+    - title: Government of Canada - Manitoba Information Guide
+      href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/manitoba/5007-pc/information-residents-manitoba.html#P70_5092
