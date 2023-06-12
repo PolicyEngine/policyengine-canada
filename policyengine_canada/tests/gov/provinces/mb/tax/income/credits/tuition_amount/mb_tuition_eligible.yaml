@@ -1,0 +1,15 @@
+- name: Manitoba students credit tuition eligible  
+  period: 2023
+  input:
+    province_code: MB
+    tuition: 150
+  output:
+    mb_student_tuition_credit_eligible: true
+
+- name: Manitoba students credit tuition ineligible 
+  period: 2023
+  input:
+    province_code: MB
+    tuition: 50
+  output:
+    mb_student_tuition_credit_ineligible: false
