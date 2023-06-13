@@ -1,0 +1,37 @@
+- name: Manitoba students credit tuition ineligible  
+  period: 2023
+  input:
+    province_code: MB
+    tuition_expenses: 50
+  output:
+    mb_tuition_amount_credit: 0
+
+- name: Manitoba students credit tuition eligible (Full time students)
+  period: 2023
+  input:
+    province_code: MB
+    is_full_time_student: true
+    tuition_expenses: 20_000
+  output:
+    mb_tuition_amount_credit: 24_800 # 20_000 + 4_800 = 24_800
+
+- name: Manitoba students credit tuition eligible (Part time students with disabilities)
+  period: 2023
+  input:
+    province_code: MB
+    is_full_time_student: false
+    is_disabled: true
+    tuition_expenses: 20_000
+  output:
+    mb_tuition_amount_credit: 24_800 # 20_000 + 4_800 = 24_800
+
+
+- name: Manitoba students credit tuition eligible (Part time students without disabilities)
+  period: 2023
+  input:
+    province_code: MB
+    is_full_time_student: false 
+    is_disabled: false
+    tuition_expenses: 20_000
+  output:
+    mb_tuition_amount_credit: 21_440 # 20_000 + 1_440 = 21_440

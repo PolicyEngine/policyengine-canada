@@ -21,4 +21,4 @@ class mb_tuition_amount_credit(Variable):
         disabled = person("is_disabled", period)
         nondisabled = ~disabled
 
-        return tuition_eligible * (tuition + full_time * p.full_time_students + part_time * nondisabled * p.part_time_students + part_time * disabled * p.part_time_disabled)
+        return tuition_eligible * (tuition + full_time * p.full_time_students_amount + part_time * nondisabled * p.part_time_students_amount + part_time * disabled * p.part_time_disabled_students_amount)
