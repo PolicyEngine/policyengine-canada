@@ -1,0 +1,23 @@
+- name: No spouse income
+  period: 2023
+  input:
+    province_code: MB
+    spouse_income: 0
+  output:
+    mb_spouse_and_common_law_partner_amount_credit: 9_134
+
+- name: Spouse income of $5,000
+  period: 2023
+  input:
+    province_code: MB
+    spouse_income: 5_000
+  output:
+    mb_spouse_and_common_law_partner_amount_credit: 4_134
+
+- name: Capped at 0
+  period: 2023
+  input:
+    province_code: MB
+    spouse_income: 40_000
+  output:
+    mb_spouse_and_common_law_partner_amount_credit: 0
