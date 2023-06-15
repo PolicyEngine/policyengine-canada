@@ -1,15 +1,15 @@
 from policyengine_canada.model_api import *
 
 
-class qc_nondisabled_caregiver_lived_person_eligibility(Variable):
+class qc_caregiver_living_with_nondisabled_person_eligibility(Variable):
     value_type = bool
     entity = Person
-    label = "Quebec eligibility for people living with nondisabled caregivers"
+    label = "Quebec eligibility for care receivers living with nondisabled caregivers"
     definition_period = YEAR
     defined_for = ProvinceCode.QC
 
     def formula(person, period, parameters):
-        p = parameters(period).gov.provinces.qc.tax.income.credits.caregiovers
+        p = parameters(period).gov.provinces.qc.tax.income.credits.caregivers
         # not his or her spouse
         nonspouse = ~person("is_spouse", period)
         # without an impairment

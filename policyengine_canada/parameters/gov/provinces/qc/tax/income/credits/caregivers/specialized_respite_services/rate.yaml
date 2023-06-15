@@ -1,9 +1,9 @@
-description: Quebec limits its tax credits to caregivers providing care to and living with a relative at or above this age.
+description: Quebec limits its caregiver tax credits to expenses providing specialized respite services at this rate.
 values:
-  2022-01-01: 70
+  2022-01-01: 0.3
 metadata:
-  unit: year
-  label: Quebec caregivers tax credit age eligibility
+  unit: /1
+  label: Quebec caregivers tax credit specialized respite services expenses rate
   reference:
     - title: Revenu Quebec - Tax Credit for Caregivers (Line 462)
       href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/451-to-480-refund-or-balance-due/line-462/point-2/
