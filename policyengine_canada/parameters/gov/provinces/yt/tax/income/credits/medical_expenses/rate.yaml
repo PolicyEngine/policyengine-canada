@@ -1,9 +1,9 @@
-description: Medical Expenses in Yukon. 
+description: Applicable Rate for Medical Expenses in Yukon. 
 values:
   2022-01-01: 0.03
 metadata:
   unit: /1
-  label: Yukon Medical Expenses
+  label: Yukon Medical Expenses Applicable Rate
   reference:
   - title: Yukon Tax-Medical Expenses
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5011-c/5011-c-22e.pdf
