@@ -1,0 +1,12 @@
+description: The recipient's chargeable income consists of a specified monthly income from all the following sources.
+values:
+  2021-01-01:
+    - unearned_income
+    - fiduciary_income
+    - earned_income
+    - training_allowance
+metadata:
+  unit: list
+  reference:
+    - title: Employment Support and Income Assistance Act, Section 32, Definitions (1)
+      href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4

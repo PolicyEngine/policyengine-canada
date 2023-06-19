@@ -1,0 +1,19 @@
+description: Earned income for a recipient is exempted in accordance with the following and the remainder is chargeable income.
+brackets:
+  - threshold:
+      2021-01-01: 0
+    amount:
+      2021-01-01: 2_000
+  - threshold:
+      2021-01-01: 2
+    amount:
+      2021-01-01: 4_000
+metadata:
+  type: single_amount
+  threshold_unit: people
+  amount_unit: currency-CAD
+  period: year
+  label: Nova Scotia Income Assistance asset limit 
+  reference:
+    - title: Employment Support and Income Assistance Act, Section 21, Assets (26), (1)
+      href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4

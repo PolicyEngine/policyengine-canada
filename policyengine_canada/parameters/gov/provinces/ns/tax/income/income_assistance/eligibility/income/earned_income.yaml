@@ -1,0 +1,13 @@
+description: “Earned income” includes all of the following.
+values:
+  2021-01-01:
+    - net_wages
+    - tips
+    - gratuities
+    - net_commissions
+    - net_business_income
+metadata:
+  unit: list
+  reference:
+    - title: Employment Support and Income Assistance Act, Definitions
+      href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4

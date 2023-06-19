@@ -1,0 +1,9 @@
+description: A training allowance received by a recipient is chargeable income, except that the first $150 of the allowance is exempt.
+values:
+  2021-01-01: 150
+metadata:
+  unit: currency-CAD
+  label: Nova Scotia Training Allowance Exempt
+  reference:
+  - title: Employment Support and Income Assistance Act, Section 34, Definitions (2)
+    href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4
