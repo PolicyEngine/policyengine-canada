@@ -1,0 +1,18 @@
+- name: subtraction max out
+  period: 2023
+  input:
+    province_code: NU
+    individual_net_income: 1_000
+    canadian_armed_forces_and_personnel_deduction: 2_000
+  output:
+    nu_cost_of_living_credit_adjusted_net_income: 0
+
+- name: zero adjusted net income
+  period: 2023
+  input:
+    province_code: NU
+    individual_net_income: 1_000
+    canadian_armed_forces_and_personnel_deduction: 500
+  output:
+    nu_cost_of_living_credit_adjusted_net_income: 500
+
