@@ -1,6 +1,6 @@
-description: Manitoba provides this maximum amount under the caregiver amount credit. 
+description: Manitoba provides this maximum amount under the caregiver amount credit.
 values:
-  2022-01-01: 3_605
+  2023-01-01: 3_605
 metadata:
   unit: currency-CAD
   label: Manitoba care giver amount credit max amount

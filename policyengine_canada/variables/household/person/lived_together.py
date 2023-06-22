@@ -1,8 +1,9 @@
 from policyengine_canada.model_api import *
 
 
-class is_caregiver(Variable):
+class lived_together(Variable):
     value_type = bool
     entity = Person
-    label = "Is the caregiver"
+    label = "Lived together with the tax filer"
+    unit = CAD
     definition_period = YEAR
