@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+
 class mb_tuition_amount_credit(Variable):
     value_type = float
     entity = Person
@@ -8,7 +9,9 @@ class mb_tuition_amount_credit(Variable):
     defined_for = ProvinceCode.MB
 
     def formula(person, period, parameters):
-        p = parameters(period).gov.provinces.mb.tax.income.credits.tuition_amount
+        p = parameters(
+            period
+        ).gov.provinces.mb.tax.income.credits.tuition_amount
 
         tuition = person("tuition_expenses", period)
         tuition_eligible = tuition > p.eligible_tuition_amount
@@ -21,4 +24,9 @@ class mb_tuition_amount_credit(Variable):
         disabled = person("is_disabled", period)
         nondisabled = ~disabled
 
-        return tuition_eligible * (tuition + full_time * p.full_time_students_amount + part_time * nondisabled * p.part_time_students_amount + part_time * disabled * p.part_time_disabled_students_amount)
+        return tuition_eligible * (
+            tuition
+            + full_time * p.full_time_students_amount
+            + part_time * nondisabled * p.part_time_students_amount
+            + part_time * disabled * p.part_time_disabled_students_amount
+        )
