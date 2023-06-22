@@ -1,0 +1,18 @@
+description: Manitoba reduces its tax credit on caregiver amount at this rate according to dependent's annual net income.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Manitoba caregiver tax credit reduction
+  reference:
+    - title: Manitoba Personal Tax Credits Return
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb-ws/td1mb-ws-23e.pdf
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0 # no reduction when dependent's annual net income under $12,312
+  - threshold:
+      2022-01-01: 12_312
+    rate:
+      2022-01-01: AAA # The credit is reduced by AAA% of dependent's annual income between $12,312 to $15,917
