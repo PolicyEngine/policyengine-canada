@@ -2,12 +2,12 @@
   period: 2023
   input:
     province_code: NB
-    age: 030
-    pension_and_savings_plan_income: 50000
+    age: 30
+    pension_and_savings_plan_income: 50_000
   output:
     nb_pension_benefit: 0
 
-- name: Eligible but less
+- name: Full Pension Benefit Eligibility
   period: 2023
   input:
     province_code: NB
@@ -16,12 +16,12 @@
   output:
     nb_pension_benefit: 1_000
 
-- name: Eligible but more
+- name: Pension Benefit Below Maximum Amount
   period: 2023
   input:
     province_code: NB
     age: 74
-    pension_and_savings_plan_income: 80_000
+    pension_and_savings_plan_income: 800
   output:
-    nb_pension_benefit: 0
+    nb_pension_benefit: 800
 
