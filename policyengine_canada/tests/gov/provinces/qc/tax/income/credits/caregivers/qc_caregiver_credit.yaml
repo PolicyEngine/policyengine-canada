@@ -1,35 +1,21 @@
-- name: Quebec caregiver tax credit for expenses of specialized respite services within the limit
+- name: Quebec caregiver tax credit for a caregiver
   period: 2022
   input:
     is_caregiver: true
-    qc_caregiver_living_with_disabled_person_eligibility: true
-    specialized_respite_services_expenses: 5_000
-    qc_caregiver_not_living_with_disabled_person_eligibility: true
-    qc_caregiver_living_with_nondisabled_person_eligibility: false
+    qc_caregiver_living_with_disabled_care_receiver: 1_299
+    qc_caregiver_not_living_with_disabled_care_receiver: 0
+    qc_caregiver_living_with_nondisabled_care_receiver: 1_299
     province_code: QC
   output:
-    qc_caregiver_credit: 4_098 #1299+1299+5000*0.3
+    qc_caregiver_credit: 2_598 # 1 *(1299+1299)
 
-- name: Quebec caregiver tax credit for expenses of specialized respite services above the limit
+- name: Quebec caregiver tax credit for a non-caregiver
   period: 2022
   input:
-    is_caregiver: true
-    qc_caregiver_living_with_disabled_person_eligibility: true
-    specialized_respite_services_expenses: 6_000 #limit 5200
-    qc_caregiver_not_living_with_disabled_person_eligibility: true
-    qc_caregiver_living_with_nondisabled_person_eligibility: false
+    is_caregiver: false
+    qc_caregiver_living_with_disabled_care_receiver: 1_299
+    qc_caregiver_not_living_with_disabled_care_receiver: 0
+    qc_caregiver_living_with_nondisabled_care_receiver: 1_299
     province_code: QC
   output:
-    qc_caregiver_credit: 4_158 #1299+1299+5200*0.3
-
-- name: Quebec caregiver tax credit for care receiver with specialized respite services but not living together nor disabled
-  period: 2022
-  input:
-    is_caregiver: true
-    qc_caregiver_living_with_disabled_person_eligibility: false
-    specialized_respite_services_expenses: 5_000 
-    qc_caregiver_not_living_with_disabled_person_eligibility: false
-    qc_caregiver_living_with_nondisabled_person_eligibility: true
-    province_code: QC
-  output:
-    qc_caregiver_credit: 1_299 
+    qc_caregiver_credit: 0 # 0 *(1299+1299)

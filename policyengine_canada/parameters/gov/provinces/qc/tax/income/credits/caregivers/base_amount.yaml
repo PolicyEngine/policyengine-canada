@@ -2,8 +2,11 @@ description: Quebec limits its tax credits to eligible caregivers at this amount
 values:
   2022-01-01: 1_299
 metadata:
-  unit: year
+  unit: curreny-CAD
   label: Quebec caregivers tax credit base amount
   reference:
     - title: Revenu Quebec - Tax Credit for Caregivers (Line 462)
       href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/451-to-480-refund-or-balance-due/line-462/point-2/
+    - title: TP-1-V - Schedule H – Tax Credit for Caregivers
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.H-V%282022-12%29.pdf
+      

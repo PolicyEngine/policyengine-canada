@@ -1,0 +1,77 @@
+- name: Quebec caregiver tax credit for caregiver living with disabled non care receiver
+  period: 2022
+  input:
+    is_disabled: true
+    is_care_receiver: false
+    is_adult: true
+    lived_together: true
+    individual_net_income: 30_000
+    specialized_respite_services_expenses: 5_000
+    province_code: QC
+  output:
+    qc_caregiver_living_with_disabled_care_receiver: 0
+
+- name: Quebec caregiver tax credit for caregiver living with nondisabled care receiver
+  period: 2022
+  input:
+    is_disabled: false
+    is_care_receiver: true
+    is_adult: true
+    lived_together: true
+    individual_net_income: 30_000
+    specialized_respite_services_expenses: 5_000
+    province_code: QC
+  output:
+    qc_caregiver_living_with_disabled_care_receiver: 0
+
+- name: Quebec caregiver tax credit for caregiver living with disabled non-adult care receiver 
+  period: 2022
+  input:
+    is_disabled: true
+    is_care_receiver: true
+    is_adult: false
+    lived_together: true
+    individual_net_income: 30_000
+    specialized_respite_services_expenses: 5_000
+    province_code: QC
+  output:
+    qc_caregiver_living_with_disabled_care_receiver: 0
+
+- name: Quebec caregiver tax credit for caregiver not living with disabled care receiver
+  period: 2022
+  input:
+    is_disabled: true
+    is_care_receiver: true
+    is_adult: true
+    lived_together: false
+    individual_net_income: 30_000
+    specialized_respite_services_expenses: 5_000
+    province_code: QC
+  output:
+    qc_caregiver_living_with_disabled_care_receiver: 0
+
+- name: Quebec caregiver tax credit for caregiver living with disabled care receiver below income and specialized respite services expenses limit
+  period: 2022
+  input:
+    is_disabled: true
+    is_care_receiver: true
+    is_adult: true
+    lived_together: true
+    individual_net_income: 20_000
+    specialized_respite_services_expenses: 5_000
+    province_code: QC
+  output:
+    qc_caregiver_living_with_disabled_care_receiver: 4_098 # 2598-min(0.16*max(0,20000-23500),1299)+min(5000,5200)*0.3
+
+- name: Quebec caregiver tax credit for caregiver living with disabled care receiver above income and specialized respite services expenses limit
+  period: 2022
+  input:
+    is_disabled: true
+    is_care_receiver: true
+    is_adult: true
+    lived_together: true
+    individual_net_income: 50_000
+    specialized_respite_services_expenses: 6_000
+    province_code: QC
+  output:
+    qc_caregiver_living_with_disabled_care_receiver: 2_859 # 2598-min(0.16*max(0,50000-23500),1299)+min(5200,6000)*0.3
