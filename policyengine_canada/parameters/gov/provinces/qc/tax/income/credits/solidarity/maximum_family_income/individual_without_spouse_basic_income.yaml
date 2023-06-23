@@ -1,0 +1,9 @@
+description: Quebec solidarity tax credits basic family income for individual without a spouse.
+values:
+  2022-01-01: 58_527
+metadata:
+  unit: currency-CAD
+  label: Quebec solidarity tax credits basic family income forindividual without a spouse
+  reference:
+    - title: Revenu Quebec - Solidarity Tax Credit - Calculation of the Credit
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/solidarity-tax-credit/calculation-of-the-credit/

@@ -1,0 +1,54 @@
+- name: Quebec solidarity eligibility for adult tax filer
+  period: 2022
+  input:
+    is_adult: true
+    has_spouse: false
+    own_children_in_household: true
+    is_emancipated: false
+    province_code: QC
+  output:
+    qc_solidarity_tax_filer_self_eligibility: true
+
+- name: Quebec solidarity eligibility for non-adult tax filer without a spouse
+  period: 2022
+  input:
+    is_adult: false
+    has_spouse: false
+    own_children_in_household: true
+    is_emancipated: true
+    province_code: QC
+  output:
+    qc_solidarity_tax_filer_self_eligibility: false
+
+- name: Quebec solidarity eligibility for non-adult tax filer not own a child
+  period: 2022
+  input:
+    is_adult: false
+    has_spouse: true
+    own_children_in_household: false
+    is_emancipated: true
+    province_code: QC
+  output:
+    qc_solidarity_tax_filer_self_eligibility: false
+
+- name: Quebec solidarity eligibility for non-adult tax filer not recognized as an emancipated
+  period: 2022
+  input:
+    is_adult: false
+    has_spouse: true
+    own_children_in_household: true
+    is_emancipated: false
+    province_code: QC
+  output:
+    qc_solidarity_tax_filer_self_eligibility: false
+
+- name: Quebec solidarity eligibility for non-adult tax filer 
+  period: 2022
+  input:
+    is_adult: false
+    has_spouse: true
+    own_children_in_household: true
+    is_emancipated: true
+    province_code: QC
+  output:
+    qc_solidarity_tax_filer_self_eligibility: true
