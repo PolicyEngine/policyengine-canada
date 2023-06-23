@@ -1,0 +1,35 @@
+- name: Ineligible
+  period: 2023
+  input:
+    province_code: SK
+    age: 64
+    individual_net_income: 20_000
+  output:
+    sk_age_amount: 0
+
+- name: Eligible and net income below base amount
+  period: 2023
+  input:
+    province_code: SK
+    age: 70
+    individual_net_income: 40_000
+  output:
+    sk_age_amount: 5_380
+
+- name: Eligible and net income between base net income amount and maximum net income amount # 5_380 - ((60_000 - 40_051) * 0.15)
+  period: 2023
+  input:
+    province_code: SK
+    age: 65
+    individual_net_income: 60_000
+  output:
+    sk_age_amount: 2387.65
+
+- name: Eligible over maximum net income amount
+  period: 2023
+  input:
+    province_code: SK
+    age: 68
+    individual_net_income: 100_000
+  output:
+    sk_age_amount: 0

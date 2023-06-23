@@ -1,9 +1,0 @@
-description: Saskatchewan Personal Tax Credits Return Amount for a person who is supporting an infirm dependent at or over this age.
-values: 
-  2023-01-01: 18
-metadata:
-  unit: year
-  label: 2023 Saskatchewan Personal Tax Credits Return Amount for Infirm Dependents Age Eligibility
-  reference:
-  -title: 2023 Saskatchewan Personal Tax Credit Return
-   href: https://www.canada.ca/en/revenue-agency/services/forms-publications/td1-personal-tax-credits-returns/td1-forms-pay-received-on-january-1-later/td1sk.html
