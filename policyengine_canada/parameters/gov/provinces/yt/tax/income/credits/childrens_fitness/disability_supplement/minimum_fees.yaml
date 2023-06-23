@@ -1,0 +1,9 @@
+description: Yukon requirest this minimum amount of fees for disabled children to be eligible for the child fitnesstex credit.
+values:
+  2022-01-01: 100
+metadata:
+  unit: currency-CAD
+  label: Yukon child fitness fee for child with diability
+  reference:
+  - title: Children's fitness tax credit
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/yukon/5011-pc/information-residents-yukon.html#P5_cftc

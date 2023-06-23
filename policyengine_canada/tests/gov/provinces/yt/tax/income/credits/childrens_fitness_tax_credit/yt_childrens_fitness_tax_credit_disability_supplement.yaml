@@ -1,0 +1,23 @@
+- name: 0 disabled child
+  period: 2022
+  input:
+    province_code: YT
+    yt_cftc_disabled_children: 0
+  output:
+    yt_childrens_fitness_tax_credit_disability_supplement: 0
+
+- name: One Disabled Child
+  period: 2022
+  input:
+    province_code: YT
+    yt_cftc_disabled_children: 1
+  output:
+    yt_childrens_fitness_tax_credit_disability_supplement: 500
+
+- name: 3 disabled children
+  period: 2022
+  input:
+    province_code: YT
+    yt_cftc_disabled_children: 3
+  output:
+    yt_childrens_fitness_tax_credit_disability_supplement: 1500

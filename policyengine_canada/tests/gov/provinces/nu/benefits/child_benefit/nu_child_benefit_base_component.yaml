@@ -1,0 +1,17 @@
+- name: base over reduction
+  period: 2023
+  input:
+    nu_child_benefit_base_component_base: 1_000
+    nu_child_benefit_base_component_reduction: 500
+    province_code: NU
+  output:
+    nu_child_benefit_base_component: 500
+
+- name: reduction over base
+  period: 2023
+  input:
+    nu_child_benefit_base_component_base: 500
+    nu_child_benefit_base_component_reduction: 1_500
+    province_code: NU
+  output:
+    nu_child_benefit_base_component: 0

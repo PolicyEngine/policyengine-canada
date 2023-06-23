@@ -6,6 +6,7 @@ class cwb_base_phase_out(Variable):
     entity = Household
     label = "Canada workers benefit base phase out"
     definition_period = YEAR
+    unit = CAD
 
     def formula(household, period, parameters):
         afni = household("adjusted_family_net_income", period)

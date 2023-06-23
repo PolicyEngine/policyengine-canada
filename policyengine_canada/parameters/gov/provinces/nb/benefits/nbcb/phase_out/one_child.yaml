@@ -1,0 +1,23 @@
+description: New Brunswick Child Benefit phase out rate for families with one child.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: New Brunswick Child Benefit one child phase out rate
+  reference:
+    - title: New Brunswick child tax benefit 
+      href: https://www2.gnb.ca/content/gnb/en/departments/finance/taxes/child_tax_benefit.html#:~:text=The%20New%20Brunswick%20Child%20Tax,under%20the%20age%20of%2018.
+    - title: New Brunswick child tax benefit
+      href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html#CCB_NewBrunswick
+brackets:
+  - threshold:
+      2023-01-01: 0
+    rate:
+      2023-01-01: 0
+  - threshold:
+      2023-01-01: 20_000
+    rate:
+      2023-01-01: 0.025
+ 
+  
+  
