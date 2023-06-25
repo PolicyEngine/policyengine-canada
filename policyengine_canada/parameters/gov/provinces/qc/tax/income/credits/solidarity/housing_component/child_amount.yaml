@@ -1,0 +1,10 @@
+description: Quebec adds solidarity tax credit housing component for eacb eligible dependent at this amount.
+values:
+  2022-01-01: 128.29
+metadata:
+  unit: currency-CAD
+  label: Quebec Solidarity Tax Credit QST housing component child amount
+  reference:
+    - title: Revenu Quebec - Solidarity Tax Credit - Housing Component
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/solidarity-tax-credit/components-of-the-solidarity-tax-credit/housing-component/
+    - title: SPSD/M - 1.3.25.4.10.8 QSTCHCQuebec Solidarity Tax Credit housing component child amount (Page 1650)

@@ -1,0 +1,8 @@
+description: Quebec reduces its solidarity tax credit for family or individuals eligible for both QST and housing components based on the income. 
+values:
+  2022-01-01: 0.06
+metadata:
+  unit: /1
+  label: Quebec Solidarity Tax Credit reduction rate if eligible for both QST and housing
+  reference:
+    - title: SPSD/M - 1.3.25.4.10.9 QSTCRRFQuebec Solidarity Tax Credit reduction rate if eligible for both QST and housing (Page 1651)
