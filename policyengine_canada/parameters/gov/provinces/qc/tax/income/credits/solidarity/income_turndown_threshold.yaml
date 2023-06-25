@@ -1,8 +1,0 @@
-description: Quebec reduces the solidarity tax credit if the household income excess this amount.
-values:
-  2022-01-01: 36_789.66
-metadata:
-  unit: currency-CAD
-  label: Quebec Solidarity Tax Credit income turndown threshold 
-  reference:
-    - title: SPSD/M - 1.3.25.4.10.11 QSTCTDQuebec Solidarity Tax Credit income turndown threshold (Page 1654)
