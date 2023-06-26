@@ -9,7 +9,8 @@ class sk_senior_supplementary_credit(Variable):
     defined_for = ProvinceCode.SK
 
     def formula(person, period, parameters):
-        p = parameters(period).gov.provinces.sk.tax.income.credits.sk_senior_supplementary
+        p = parameters(
+            period
+        ).gov.provinces.sk.tax.income.credits.sk_senior_supplementary
         age = person("age", period)
-        amount = where(age >= p.age_threshold, p.amount, 0)
-        return amount
+        return where(age >= p.age_threshold, p.amount, 0)

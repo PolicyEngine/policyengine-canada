@@ -2,8 +2,7 @@
   period: 2024
   input:
     province_code: SK
-    person:
-      age: 64
+    age: 64
   output:
     sk_senior_supplementary_credit: 0
 
@@ -11,8 +10,7 @@
   period: 2024
   input:
     province_code: SK
-    person:
-      age: 65
+    age: 65
   output:
     sk_senior_supplementary_credit: 1_421
 
@@ -20,7 +18,6 @@
   period: 2024
   input:
     province_code: SK
-    person:
-      age: 66
+    age: 66
   output:
     sk_senior_supplementary_credit: 1_421
