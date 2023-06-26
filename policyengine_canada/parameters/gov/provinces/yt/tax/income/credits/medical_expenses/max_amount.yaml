@@ -1,6 +1,6 @@
 description: The Maximum Amount in Medical Expenses in Yukon. 
 values:
-  2022-01-01: 2,479
+  2022-01-01: 2_479
 metadata:
   unit: currency-CAD
   label: Yukon Medical Expenses

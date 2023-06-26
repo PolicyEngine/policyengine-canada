@@ -2,8 +2,8 @@
   period: 2022
   input:
     province_code: YT
-    claimed_medical_expenses: 0
-    net_income: 10000000000
+    household_medical_expenses: 0
+    household_net_income: 10_000_000_000
   output:
     yt_medical_expenses: 0
 
@@ -11,8 +11,8 @@
   period: 2022
   input:
     province_code: YT
-    claimed_medical_expenses: 0
-    net_income: 100
+    household_medical_expenses: 0
+    household_net_income: 100
   output:
     yt_medical_expenses: 0
 
@@ -20,17 +20,17 @@
   period: 2022
   input:
     province_code: YT
-    claimed_medical_expenses: 10000
-    net_income: 100
+    household_medical_expenses: 10_000
+    household_net_income: 100
   output:
-    yt_medical_expenses: 9997
+    yt_medical_expenses: 9_997
 
 - name: Medeical Expenses of Net Income over Maximum Amount
   period: 2022
   input:
     province_code: YT
-    claimed_medical_expenses: 4000
-    net_income: 1000000000000000
+    household_medical_expenses: 4_000
+    household_net_income: 10_000_000_000
   output:
     yt_medical_expenses: 1_521
 
