@@ -1,0 +1,9 @@
+- name:Medical Amount below Maximum:
+  period: 2022
+  input:
+    province_code:YT
+    age: 19
+    is_disabled: true
+  output:
+
+
