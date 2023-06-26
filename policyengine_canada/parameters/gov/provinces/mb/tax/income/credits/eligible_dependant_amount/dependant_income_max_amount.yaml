@@ -1,4 +1,5 @@
 description: Manitoba provides tax credit to eligible dependants whose annual net income is less than a certain amount.
+values:
   2023-01-01: 9_134
 metadata:
   unit: currency-CAD

@@ -5,5 +5,4 @@ class lived_together(Variable):
     value_type = bool
     entity = Person
     label = "Lived together with the tax filer"
-    unit = CAD
-    definition_period = YEAR 
+    definition_period = YEAR

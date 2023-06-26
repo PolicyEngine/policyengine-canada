@@ -1,0 +1,34 @@
+- name: ineligible dependant with ineligible head of household
+  period: 2023
+  input:
+    province_code: MB
+    mb_head_eligibility: false
+    mb_dependant_eligibility: false
+    dependant_income: 9_000
+
+  output:
+    mb_dependant_amount: 0
+
+- name: eligible dependant with ineligible head of household 
+  period: 2023
+  input:
+    province_code: MB
+    mb_head_eligibility: false
+    mb_dependant_eligibility: true
+    dependant_income: 9_000
+
+
+  output:
+    mb_dependant_amount: 0
+
+- name: eligible dependant with eligible head of household 
+  period: 2023
+  input:
+    province_code: MB
+    mb_head_eligibility: true
+    mb_dependant_eligibility: true
+    dependant_income: 9_000
+
+
+  output:
+    mb_dependant_amount: 134

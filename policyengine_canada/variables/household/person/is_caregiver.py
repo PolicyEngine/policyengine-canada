@@ -5,4 +5,4 @@ class is_caregiver(Variable):
     value_type = bool
     entity = Person
     label = "Is the caregiver"
-    definition_period = YEAR 
+    definition_period = YEAR
