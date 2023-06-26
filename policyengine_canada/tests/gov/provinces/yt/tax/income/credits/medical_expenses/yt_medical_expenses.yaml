@@ -1,9 +1,38 @@
-- name:Medical Amount below Maximum:
+- name: Zero Medeical Expenses of Net Income over Maximum Amount
   period: 2022
   input:
-    province_code:YT
-    age: 19
-    is_disabled: true
+    province_code: YT
+    claimed_medical_expenses: 0
+    net_income: 10000000000
   output:
+    yt_medical_expenses: 0
+
+- name: Zero Medeical Expenses of Net Income below Maximum Amount
+  period: 2022
+  input:
+    province_code: YT
+    claimed_medical_expenses: 0
+    net_income: 100
+  output:
+    yt_medical_expenses: 0
+
+- name: Medeical Expenses of Net Income below Maximum Amount
+  period: 2022
+  input:
+    province_code: YT
+    claimed_medical_expenses: 10000
+    net_income: 100
+  output:
+    yt_medical_expenses: 9997
+
+- name: Medeical Expenses of Net Income over Maximum Amount
+  period: 2022
+  input:
+    province_code: YT
+    claimed_medical_expenses: 4000
+    net_income: 1000000000000000
+  output:
+    yt_medical_expenses: 1_521
+
 
 
