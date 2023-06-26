@@ -1,11 +1,8 @@
 description: “Earned income” includes all of the following.
 values:
   2021-01-01:
-    - net_wages
-    - tips
-    - gratuities
-    - net_commissions
-    - net_business_income
+    - employment_income
+    - self_employment_income
 metadata:
   unit: list
   reference:

@@ -1,0 +1,8 @@
+description: Nova Scotia considers a percentage of rent as chargeable income when recipients live with roomers under the Income Assistance program.
+  2021-01-01: 0.7
+metadata:
+  unit: /1
+  label: Nova Scotia Income Assistance chargeable rent from boarders
+  reference:
+  - title: Employment Support and Income Assistance Act, Section 32， (f)
+    href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4

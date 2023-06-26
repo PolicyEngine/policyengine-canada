@@ -1,12 +1,12 @@
-description: “Unearned income” includes all of the following.
+description: Nova Scotia exempts the following unearned income under the Income Assistance program.
 values:
   2021-01-01:
-    - government_income_payments
+    - government_financial_assistance_payments
     - workers_compensation
-    - regular_periodic_insurance_payments
-    - mortgages_income
+    - benefits_income
+    - mortgage_income
     - spousal_support_payments
-    - superannuation
+    - pension_and_savings_plan_income
     - investment_income
 metadata:
   unit: list
