@@ -1,0 +1,9 @@
+description: Yukon uses this scale value for the basic personal amount.
+values:
+  2023-01-01: 70_245
+metadata:
+  unit: currency-CAD
+  label: Yukon basic personal amount scale value
+  reference:
+  - title: Worksheet for the Yukon 2023 Personal Tax Credits Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1yt-ws/td1yt-ws-23e.pdf
