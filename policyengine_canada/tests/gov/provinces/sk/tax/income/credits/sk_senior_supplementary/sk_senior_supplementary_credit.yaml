@@ -1,0 +1,26 @@
+- name: SK senior supplementary tax credit - Under age threshold
+  period: 2024
+  input:
+    province_code: SK
+    person:
+      age: 64
+  output:
+    sk_senior_supplementary_credit: 0
+
+- name: SK senior supplementary tax credit - At age threshold
+  period: 2024
+  input:
+    province_code: SK
+    person:
+      age: 65
+  output:
+    sk_senior_supplementary_credit: 1_421
+
+- name: SK senior supplementary tax credit - Above age threshold
+  period: 2024
+  input:
+    province_code: SK
+    person:
+      age: 66
+  output:
+    sk_senior_supplementary_credit: 1_421
