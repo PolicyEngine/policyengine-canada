@@ -4,7 +4,7 @@
     province_code: YT
     individual_net_income: 160_000
   output:
-    yt_first_nations_tax: 0
+    yt_basic_personal_amount: 0
 
 - name: Eligible
   period: 2023
@@ -12,7 +12,7 @@
     province_code: YT
     individual_net_income: 165_430
   output:
-    yt_first_nations_tax: 15_000
+    yt_basic_personal_amount: 15_000
   
 - name: Eligible & Exceeding
   period: 2023
@@ -20,4 +20,4 @@
     province_code: YT
     individual_net_income: 300_000
   output:
-    yt_first_nations_tax: 13_521
+    yt_basic_personal_amount: 13_521
