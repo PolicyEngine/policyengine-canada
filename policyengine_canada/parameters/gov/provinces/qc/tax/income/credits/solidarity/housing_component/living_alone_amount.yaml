@@ -1,6 +1,6 @@
 description: Quebec limits its solidarity tax credit housing component at this amount for unmarried individial living alone.
 values:
-  2022-01-01: 599.39
+  2022-07-01: 599
 metadata:
   unit: currency-CAD
   label: Quebec Solidarity Tax Credit QST housing component living alone amount

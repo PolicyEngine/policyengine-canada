@@ -28,12 +28,12 @@ class qc_solidarity_credit(Variable):
         housing_living_alone_amount = (
             ~married * p.housing_component.living_alone_amount
         )
-        children_amount = children * p.housing_component.child_amount
+        housing_children_amount = children * p.housing_component.child_amount
 
         housing_component = housing_component_eligible * (
             housing_family_amount
             + housing_living_alone_amount
-            + children_amount
+            + housing_children_amount
         )
 
         # The QST component
@@ -50,8 +50,27 @@ class qc_solidarity_credit(Variable):
             + qst_living_alone_amount
         )
 
+        # Components for individuals living in a northern village
+        northern_village_component_eligible = (
+            add(household, period, ["qc_living_in_northern_villages"]) > 0
+        )
+        northern_village_children_amount = (
+            children * p.northern_village_component.child_amount
+        )
+        northern_village_spouse_amount = (
+            married * p.northern_village_component.base_amount
+        )
+
+        northern_village_amount = northern_village_component_eligible * (
+            p.northern_village_component.base_amount
+            + northern_village_spouse_amount
+            + northern_village_children_amount
+        )
+
         # total credit
-        total_credit = qst_component + housing_component
+        total_credit = (
+            qst_component + housing_component + northern_village_amount
+        )
 
         reduction_amount = select(
             [

@@ -1,5 +1,5 @@
 - name: Quebec solidarity credit for eligible only housing component with no spouse
-  period: 2022
+  period: 2023
   input:
     qc_solidarity_eligibility: true
     adjusted_family_net_income: 30_000
@@ -8,12 +8,13 @@
     property_tax: 100
     rent: 0
     qc_qst: 0
+    qc_living_in_northern_villages: false
     province_code: QC
   output:
-    qc_solidarity_credit: 855.97 #128.29*2+599.39
+    qc_solidarity_credit: 855 #128*2+599
 
 - name: Quebec solidarity credit for eligible only housing component with spouse
-  period: 2022
+  period: 2023
   input:
     qc_solidarity_eligibility: true
     adjusted_family_net_income: 50_000
@@ -22,12 +23,13 @@
     property_tax: 100
     rent: 0
     qc_qst: 0
+    qc_living_in_northern_villages: false
     province_code: QC
   output:
-    qc_solidarity_credit: 983.24 #128.29*2+726.66
+    qc_solidarity_credit: 983 #128*2+726
 
 - name: Quebec solidarity credit for eligible housing component and qst component with income below the turndown threshold 
-  period: 2022
+  period: 2023
   input:
     qc_solidarity_eligibility: true
     adjusted_family_net_income: 30_000
@@ -36,12 +38,13 @@
     property_tax: 100
     rent: 0
     qc_qst: 200
+    qc_living_in_northern_villages: true
     province_code: QC
   output:
-    qc_solidarity_credit: 1311.67 #(128.29*2+599.39)+ (308.93+146.77)
+    qc_solidarity_credit: 3_915 #(128*2+599)+ (309+147)+(1818+393*2)
 
 - name: Quebec solidarity credit for eligible housing component and qst component with income over the turndown threshold 
-  period: 2022
+  period: 2023
   input:
     qc_solidarity_eligibility: true
     adjusted_family_net_income: 50_000
@@ -50,12 +53,13 @@
     property_tax: 100
     rent: 0
     qc_qst: 100
+    qc_living_in_northern_villages: true
     province_code: QC
   output:
-    qc_solidarity_credit: 519.0496 #128.29*2+599.39+308.93+146.77 - (50000-36789.66)*0.06
+    qc_solidarity_credit: 3_122.4 #(128*2+599)+ (309+147)+(1818+393*2)- (50000-36790)*0.06
 
 - name: Quebec solidarity credit for eligible qst component only with income below the turndown threshold 
-  period: 2022
+  period: 2023
   input:
     qc_solidarity_eligibility: true
     adjusted_family_net_income: 30_000
@@ -64,12 +68,13 @@
     property_tax: 0
     rent: 0
     qc_qst: 200
+    qc_living_in_northern_villages: false
     province_code: QC
   output:
-    qc_solidarity_credit: 455.7 #308.93+146.77
+    qc_solidarity_credit: 456 #309+147
 
 - name: Quebec solidarity credit for eligible qst component only with income over the turndown threshold 
-  period: 2022
+  period: 2023
   input:
     qc_solidarity_eligibility: true
     adjusted_family_net_income: 50_000
@@ -78,12 +83,13 @@
     property_tax: 0
     rent: 0
     qc_qst: 200
+    qc_living_in_northern_villages: false
     province_code: QC
   output:
-    qc_solidarity_credit: 59.3898 #308.93+146.77 - (50000-36789.66)*0.03
+    qc_solidarity_credit: 59.7 #309+147- (50000-36790)*0.03
 
 - name: Quebec solidarity credit for noneligible individual/family
-  period: 2022
+  period: 2023
   input:
     qc_solidarity_eligibility: false
     adjusted_family_net_income: 50_000
@@ -92,6 +98,7 @@
     property_tax: 0
     rent: 0
     qc_qst: 200
+    qc_living_in_northern_villages: true
     province_code: QC
   output:
     qc_solidarity_credit: 0
