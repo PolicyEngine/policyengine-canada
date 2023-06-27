@@ -4,7 +4,7 @@
     province_code: SK
     pension_and_savings_plan_income: 0
   output:
-    sk_pension_income_amount: 0
+    sk_pension_income_credit: 0
 
 - name: Pension Payments less than Maximum Pension Income Amount
   period: 2023
@@ -12,7 +12,7 @@
     province_code: SK
     pension_and_savings_plan_income: 500
   output:
-    sk_pension_income_amount: 500
+    sk_pension_income_credit: 500
 
 - name: Pension Payments more than Maximum Pension Income Amount
   period: 2023
@@ -20,4 +20,4 @@
     province_code: SK
     pension_and_savings_plan_income: 1_500
   output:
-    sk_pension_income_amount: 1_000
+    sk_pension_income_credit: 1_000
