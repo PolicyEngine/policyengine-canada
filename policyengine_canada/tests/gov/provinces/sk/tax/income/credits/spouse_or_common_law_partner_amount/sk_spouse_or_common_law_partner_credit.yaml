@@ -1,0 +1,35 @@
+- name: Ineligible because a person does not live with spouse
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 1_000
+    live_together_with_spouse: false
+  output:
+    sk_spouse_or_common_law_partner_credit: 0
+
+- name: Spouse's income less than net income base amount
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 1_000
+    live_together_with_spouse: true
+  output:
+    sk_spouse_or_common_law_partner_credit: 17_661
+
+- name: Spouse's income more than net income base amount
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 3_000
+    live_together_with_spouse: true
+  output:
+    sk_spouse_or_common_law_partner_credit: 14_661
+
+- name: No spouse or common-law partner credit
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 20_000
+    live_together_with_spouse: true
+  output:
+    sk_spouse_or_common_law_partner_credit: 0
