@@ -14,13 +14,24 @@ class nt_tuition_education_amounts(Variable):
         p = parameters(
             period
         ).gov.provinces.nt.tax.income.credits.tuition_education_amounts
-        
-        tuition = person('tuition_expenses', period)
+
+        tuition = person("tuition_expenses", period)
         eligible = tuition > p.base_tuition_amount
 
-        full_time_amount = person('is_full_time_student', period) * p.full_time_amount + person('is_part_time_student', period) * person('is_disabled', period) * p.full_time_amount
-        part_time_amount = person('is_part_time_student', period) * (~person('is_disabled', period)) * p.part_time_amount
+        full_time_amount = (
+            person("is_full_time_student", period) * p.full_time_amount
+            + person("is_part_time_student", period)
+            * person("is_disabled", period)
+            * p.full_time_amount
+        )
+        part_time_amount = (
+            person("is_part_time_student", period)
+            * (~person("is_disabled", period))
+            * p.part_time_amount
+        )
 
-        tuition_education_amounts = tuition + (full_time_amount + part_time_amount) * 12
+        tuition_education_amounts = (
+            tuition + (full_time_amount + part_time_amount) * 12
+        )
 
         return eligible * tuition_education_amounts
