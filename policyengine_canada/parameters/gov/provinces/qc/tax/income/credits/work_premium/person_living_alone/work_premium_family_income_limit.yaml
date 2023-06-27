@@ -1,0 +1,9 @@
+description: Quebec limits its work premium credit to single person living alone with family income less than this amount.
+values:
+  2022-01-01: 21_490
+metadata:
+  unit: currency-CAD
+  label: Quebec work premium maximum family income for person living alone
+  reference:
+    - title: Revenu Quebec - Eligibility Requirements for the Work Premium Tax Credit
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/work-premium-tax-credits/eligibility-requirements-for-the-work-premium-tax-credits/
