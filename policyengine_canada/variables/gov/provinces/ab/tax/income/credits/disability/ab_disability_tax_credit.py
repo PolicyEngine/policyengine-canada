@@ -4,7 +4,15 @@ from policyengine_canada.model_api import *
 class ab_disability_tax_credit(Variable):
     value_type = float
     entity = Person
-    label = "Disability tax credit"
+    label = "Alberta disability tax credit"
     unit = CAD
     definition_period = YEAR
-    adds = ["ab_disability_base"]
+
+    def formula(person, period, parameters):
+        disability = person("is_disabled", period)
+        return (
+            disability
+            * parameters(
+                period
+            ).gov.provinces.ab.tax.income.credits.disability.base
+        )
