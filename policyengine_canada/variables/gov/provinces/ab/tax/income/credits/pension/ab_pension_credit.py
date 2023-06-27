@@ -11,4 +11,4 @@ class ab_pension_credit(Variable):
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.ab.tax.income.credits.pension
         pension_income = person("pension_and_savings_plan_income", period)
-        return min_(pension_income, p.base)
+        return min_(pension_income, p.max_amount)
