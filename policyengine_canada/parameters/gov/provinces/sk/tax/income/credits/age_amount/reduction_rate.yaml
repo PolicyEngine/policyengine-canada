@@ -1,0 +1,12 @@
+description: Saskatchewan reduces the age amount tax credit at this rate.
+values:
+  2023-01-01: 0.15
+
+metadata:
+  unit: currency-CAD
+  period: year
+  rate_unit: /1
+  label: Saskatchewan age amount reduction rate
+  reference:
+  - title:  2023 Saskatchewan Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1-ws/td1-ws-23e.pdf

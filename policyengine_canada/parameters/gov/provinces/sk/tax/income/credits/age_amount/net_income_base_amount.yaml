@@ -1,10 +1,10 @@
-description: Saskatchewan Personal Tax Credits Return Age Amount Base Net Income Amount
+description: Saskatchewan reduces the age amount credit above this income threshold.
 values: 
   2023-01-01: 40_051
 
 metadata:
   unit: currency-CAD
-  label: 2023 Saskatchewan Personal Tax Credits Return Age Amount Base Net Income Amount
+  label: 2023 Saskatchewan age amount reduction threshold 
   reference:
   - title: 2023 Saskatchewan Personal Tax Credit Return
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf
