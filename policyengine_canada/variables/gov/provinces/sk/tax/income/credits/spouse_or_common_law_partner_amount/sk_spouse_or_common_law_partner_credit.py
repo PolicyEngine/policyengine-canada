@@ -20,4 +20,3 @@ class sk_spouse_or_common_law_partner_credit(Variable):
         )
         reduced_amount = p.maximum_amount - reduction
         return eligible * max_(0, reduced_amount)
-    
