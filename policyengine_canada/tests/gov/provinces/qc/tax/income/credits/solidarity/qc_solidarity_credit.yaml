@@ -7,7 +7,7 @@
     count_children: 2
     property_tax: 100
     rent: 0
-    qc_qst: 0
+    qc_sales_tax: 0
     qc_living_in_northern_villages: false
     province_code: QC
   output:
@@ -22,7 +22,7 @@
     count_children: 2
     property_tax: 100
     rent: 0
-    qc_qst: 0
+    qc_sales_tax: 0
     qc_living_in_northern_villages: false
     province_code: QC
   output:
@@ -37,7 +37,7 @@
     count_children: 2
     property_tax: 100
     rent: 0
-    qc_qst: 200
+    qc_sales_tax: 200
     qc_living_in_northern_villages: true
     province_code: QC
   output:
@@ -52,7 +52,7 @@
     count_children: 2
     property_tax: 100
     rent: 0
-    qc_qst: 100
+    qc_sales_tax: 100
     qc_living_in_northern_villages: true
     province_code: QC
   output:
@@ -67,7 +67,7 @@
     count_children: 2
     property_tax: 0
     rent: 0
-    qc_qst: 200
+    qc_sales_tax: 200
     qc_living_in_northern_villages: false
     province_code: QC
   output:
@@ -82,7 +82,7 @@
     count_children: 2
     property_tax: 0
     rent: 0
-    qc_qst: 200
+    qc_sales_tax: 200
     qc_living_in_northern_villages: false
     province_code: QC
   output:
@@ -97,7 +97,7 @@
     count_children: 2
     property_tax: 0
     rent: 0
-    qc_qst: 200
+    qc_sales_tax: 200
     qc_living_in_northern_villages: true
     province_code: QC
   output:

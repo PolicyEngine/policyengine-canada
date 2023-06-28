@@ -15,24 +15,27 @@ class qc_solidarity_eligibility(Variable):
 
         income = household("adjusted_family_net_income", period)
 
-        # family situation
+        person = household.members
+        # Tax filer eligibility
+        # You were 18 or older
+        adult = person("is_adult", period)
+        # You were younger than 18 and met all following requirements
         has_spouse = household("is_married", period)
-
         children = household("count_children", period)
+        has_child = children > 0
+        emancipated = person("is_emancipated", period)
+
+        eligible = adult | (has_spouse & has_child & emancipated)
+
+        # family income eligibility
         addtional_income = children * p.dependent_child
 
-        if has_spouse == True:
-            maximum_income_limit = (
-                p.individual_with_spouse_basic_income + addtional_income
-            )
-        else:
-            maximum_income_limit = (
-                p.individual_without_spouse_basic_income + addtional_income
-            )
+        maximum_income_limit = select(
+            [has_spouse == True, has_spouse == False],
+            [
+                p.individual_with_spouse_basic_income + addtional_income,
+                p.individual_without_spouse_basic_income + addtional_income,
+            ],
+        )
 
-        return (
-            add(
-                household, period, ["qc_solidarity_tax_filer_self_eligibility"]
-            )
-            > 0
-        ) & (income < maximum_income_limit)
+        return eligible & (income < maximum_income_limit)

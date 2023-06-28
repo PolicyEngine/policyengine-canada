@@ -37,7 +37,7 @@ class qc_solidarity_credit(Variable):
         )
 
         # The QST component
-        qst_component_eligible = add(household, period, ["qc_qst"]) > 0
+        qst_component_eligible = add(household, period, ["qc_sales_tax"]) > 0
 
         qst_spouse_amount = married * p.qst_component.spouse_amount
         qst_living_alone_amount = (

@@ -6,6 +6,4 @@ class qc_living_in_northern_villages(Variable):
     entity = Person
     label = "If an individual living in northern villages of Quebec"
     definition_period = YEAR
-
-
-# Ref: https://www.revenuquebec.ca/en/citizens/tax-credits/solidarity-tax-credit/components-of-the-solidarity-tax-credit/component-for-individuals-living-in-northern-villages/
+    reference = "https://www.revenuquebec.ca/en/citizens/tax-credits/solidarity-tax-credit/components-of-the-solidarity-tax-credit/component-for-individuals-living-in-northern-villages/"

@@ -1,8 +1,8 @@
 from policyengine_canada.model_api import *
 
 
-class has_spouse(Variable):
-    value_type = bool
+class qc_sales_tax(Variable):
+    value_type = float
     entity = Person
-    label = "The household has spouse"
+    label = "Québec sales tax (QST)"
     definition_period = YEAR

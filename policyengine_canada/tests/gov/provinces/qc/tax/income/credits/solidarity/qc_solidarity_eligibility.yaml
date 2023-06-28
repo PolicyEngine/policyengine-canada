@@ -1,32 +1,47 @@
-- name: Quebec solidarity eligibility for eligible tax filer
+- name: Quebec solidarity eligibility for eligible adult tax filer with income within the limit
   period: 2022
   input:
     adjusted_family_net_income: 50_000
+    is_adult: true
     is_married: false
-    count_children: 2
-    qc_solidarity_tax_filer_self_eligibility: true
+    count_children: 0
+    is_emancipated: false
     province_code: QC
   output:
     qc_solidarity_eligibility: true
 
-- name: Quebec solidarity eligibility for noneligible tax filer
+- name: Quebec solidarity eligibility for eligible nonadult tax filer with income within the limit
   period: 2022
   input:
     adjusted_family_net_income: 50_000
-    is_married: false
+    is_adult: false
+    is_married: true
     count_children: 2
-    qc_solidarity_tax_filer_self_eligibility: false
+    is_emancipated: true
+    province_code: QC
+  output:
+    qc_solidarity_eligibility: true
+
+- name: Quebec solidarity eligibility for eligible dult tax filer with income above the limit
+  period: 2022
+  input:
+    adjusted_family_net_income: 60_000
+    is_adult: true
+    is_married: false
+    count_children: 0
+    is_emancipated: true
     province_code: QC
   output:
     qc_solidarity_eligibility: false
 
-- name: Quebec solidarity eligibility for neligible tax filer above income limit
+- name: Quebec solidarity eligibility for non eligible tax filer 
   period: 2022
   input:
-    adjusted_family_net_income: 60_000
-    is_married: false
-    count_children: 0
-    qc_solidarity_tax_filer_self_eligibility: true
+    adjusted_family_net_income: 30_000
+    is_adult: false
+    is_married: true
+    count_children: 2
+    is_emancipated: false
     province_code: QC
   output:
     qc_solidarity_eligibility: false
