@@ -3,7 +3,7 @@
   input:
     province_code: SK
     spouse_income: 1_000
-    live_together_with_spouse: false
+    joint_living: false
   output:
     sk_spouse_or_common_law_partner_credit: 0
 
@@ -12,7 +12,7 @@
   input:
     province_code: SK
     spouse_income: 1_000
-    live_together_with_spouse: true
+    joint_living: true
   output:
     sk_spouse_or_common_law_partner_credit: 17_661
 
@@ -21,7 +21,7 @@
   input:
     province_code: SK
     spouse_income: 3_000
-    live_together_with_spouse: true
+    joint_living: true
   output:
     sk_spouse_or_common_law_partner_credit: 14_661
 
@@ -30,6 +30,6 @@
   input:
     province_code: SK
     spouse_income: 20_000
-    live_together_with_spouse: true
+    joint_living: true
   output:
     sk_spouse_or_common_law_partner_credit: 0

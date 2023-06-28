@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class live_together_with_spouse(Variable):
+class joint_living(Variable):
     value_type = bool
     entity = Person
     label = "Live with Spouse"
