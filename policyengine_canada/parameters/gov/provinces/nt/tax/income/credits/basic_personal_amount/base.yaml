@@ -1,0 +1,10 @@
+description: Northwest Territories Basic Personal Amount.
+values:
+  2023-01-01: 16_593
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Basic personal amount
+  reference:
+    - title: Northwest Territories Personal Tax Credits Return - Basic Personal amount
+      href: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nt/td1nt-23e.pdf

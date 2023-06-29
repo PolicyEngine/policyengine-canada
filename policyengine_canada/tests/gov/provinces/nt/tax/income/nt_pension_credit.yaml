@@ -1,0 +1,23 @@
+- name: Under maximum amount
+  period: 2022
+  input:
+    province_code: NT
+    nt_taxable_income: 999
+  output:
+    nt_age_credit: 999
+
+  - name: Maximum amount
+  period: 2022
+  input:
+    province_code: NT
+    nt_taxable_income: 1_000
+  output:
+    nt_age_credit: 0
+
+  - name: Above maximum amount
+  period: 2022
+  input:
+    province_code: NT
+    nt_taxable_income: 1_001
+  output:
+    nt_age_credit: 0
