@@ -9,33 +9,29 @@ class qc_solidarity_eligibility(Variable):
     defined_for = ProvinceCode.QC
 
     def formula(household, period, parameters):
-        p = parameters(
-            period
-        ).gov.provinces.qc.tax.income.credits.solidarity.maximum_family_income
+        p = parameters(period).gov.provinces.qc.tax.income.credits.solidarity
 
         income = household("adjusted_family_net_income", period)
 
         person = household.members
         # Tax filer eligibility
         # You were 18 or older
-        adult = person("is_adult", period)
+        age_eligible = person("age", period) >= p.age_eligibility
         # You were younger than 18 and met all following requirements
         has_spouse = household("is_married", period)
         children = household("count_children", period)
         has_child = children > 0
         emancipated = person("is_emancipated", period)
 
-        eligible = adult | (has_spouse & has_child & emancipated)
+        eligible = age_eligible | (has_spouse & has_child & emancipated)
 
         # family income eligibility
-        addtional_income = children * p.dependent_child
+        additional_income = children * p.maximum_family_income.dependent_child
 
-        maximum_income_limit = select(
-            [has_spouse == True, has_spouse == False],
-            [
-                p.individual_with_spouse_basic_income + addtional_income,
-                p.individual_without_spouse_basic_income + addtional_income,
-            ],
+        income_limit = additional_income + where(
+            has_spouse,
+            p.maximum_family_income.individual_with_spouse_basic_income,
+            p.maximum_family_income.individual_without_spouse_basic_income,
         )
 
-        return eligible & (income < maximum_income_limit)
+        return eligible & (income < income_limit)

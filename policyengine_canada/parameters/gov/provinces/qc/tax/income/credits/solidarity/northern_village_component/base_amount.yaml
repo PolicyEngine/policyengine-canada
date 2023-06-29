@@ -1,6 +1,6 @@
 description: Quebec increases the solidarity tax credit for individuals living in northern villages by this amount for each eligible adult.
 values:
-  2022-07-01: 1818
+  2022-07-01: 1_818
 metadata:
   unit: currency-CAD
   label: Quebec Solidarity Tax Credit base amount for individuals living in a northern village 
@@ -9,3 +9,4 @@ metadata:
       href: https://www.revenuquebec.ca/en/citizens/tax-credits/solidarity-tax-credit/components-of-the-solidarity-tax-credit/component-for-individuals-living-in-northern-villages/
     - title: Parameters of the Personal Income Tax System for 2022 - Table 4
       href: http://www.finances.gouv.qc.ca/MAJ2021/documents/en/AUTEN_IncomeTax2022.pdf
+# lastest legal reference unavailable

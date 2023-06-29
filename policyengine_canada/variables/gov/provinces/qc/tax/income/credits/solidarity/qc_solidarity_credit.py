@@ -51,9 +51,10 @@ class qc_solidarity_credit(Variable):
         )
 
         # Components for individuals living in a northern village
-        northern_village_component_eligible = (
-            add(household, period, ["qc_living_in_northern_villages"]) > 0
+        northern_village_component_eligible = household(
+            "qc_living_in_northern_villages", period
         )
+
         northern_village_children_amount = (
             children * p.northern_village_component.child_amount
         )

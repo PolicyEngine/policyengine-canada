@@ -2,7 +2,7 @@
   period: 2022
   input:
     adjusted_family_net_income: 50_000
-    is_adult: true
+    age: 18
     is_married: false
     count_children: 0
     is_emancipated: false
@@ -14,7 +14,7 @@
   period: 2022
   input:
     adjusted_family_net_income: 50_000
-    is_adult: false
+    age: 17
     is_married: true
     count_children: 2
     is_emancipated: true
@@ -26,7 +26,7 @@
   period: 2022
   input:
     adjusted_family_net_income: 60_000
-    is_adult: true
+    age: 18
     is_married: false
     count_children: 0
     is_emancipated: true
@@ -38,7 +38,7 @@
   period: 2022
   input:
     adjusted_family_net_income: 30_000
-    is_adult: false
+    age: 17
     is_married: true
     count_children: 2
     is_emancipated: false

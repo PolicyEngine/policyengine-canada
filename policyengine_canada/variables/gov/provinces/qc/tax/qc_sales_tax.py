@@ -6,3 +6,4 @@ class qc_sales_tax(Variable):
     entity = Person
     label = "Québec sales tax (QST)"
     definition_period = YEAR
+    unit = CAD
