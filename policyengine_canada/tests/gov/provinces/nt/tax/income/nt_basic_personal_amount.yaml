@@ -1,6 +1,0 @@
-- name: Northwest Territories Personal Tax Credits Return - Basic Personal Amount
-  period: 2023
-  input:
-    province_code: NT
-  output:
-    nt_basic_personal_amount: 16_593
