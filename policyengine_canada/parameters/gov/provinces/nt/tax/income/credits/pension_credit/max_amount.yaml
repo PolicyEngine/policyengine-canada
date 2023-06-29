@@ -1,9 +1,0 @@
-description: Maximum amount for the Northwest Territories pension credit.
-values:
-  2021-01-01: 1_000
-metadata:
-  unit: currency-CAD
-  label: Northwest Territories Pension Credit Maximum Reduction Amount
-  reference:
-  - title: Income Tax Act - Age Credit page 29
-    href: https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf
