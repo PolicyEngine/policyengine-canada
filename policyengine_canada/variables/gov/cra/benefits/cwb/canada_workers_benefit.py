@@ -6,5 +6,6 @@ class canada_workers_benefit(Variable):
     entity = Household
     label = "Canada workers benefit"
     definition_period = YEAR
+    unit = CAD
 
     adds = ["cwb_base", "cwb_disability_supplement"]

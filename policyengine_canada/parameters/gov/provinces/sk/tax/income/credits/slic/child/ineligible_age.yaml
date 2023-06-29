@@ -1,0 +1,9 @@
+description: Saskatchewan child age ineligibility for the low income tax credit.
+values:
+  2022-01-01: 19
+metadata:
+  unit: year
+  label: Saskatchewan lwo income tax credit child eligible age
+  reference:
+  - title: GST/HST Credit and Climate Action Incentive Payment - p.9
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pub/rc4210/rc4210-22e.pdf#page=9 

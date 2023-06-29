@@ -1,0 +1,19 @@
+description: Quebec reduces its senior assistance tax credit at this rate based on family income for single seniors.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Quebec senior assistance tax credit reduction for seniors with noneligible spouse or no spouse
+  reference:
+    - title: Revenu Quebec - Amount of the Senior Assistance Tax Credit
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/senior-assistance-tax-credit/amount-of-the-credit/
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0 # no reduction when income under $39,350
+  - threshold:
+      2022-01-01: 24_195
+    rate:
+      2022-01-01: 0.05 # The credit is reduced by 5% of your income over $39,350
+

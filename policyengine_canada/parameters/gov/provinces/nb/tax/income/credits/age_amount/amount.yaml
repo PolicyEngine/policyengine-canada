@@ -1,0 +1,9 @@
+description: New Brunswick provides this base amount for the age amount tax credit.
+values:
+  2023-01-01: 5_615
+metadata:
+  unit: currency-CAD
+  label: New Brunswick age amount tax credit base
+  reference:
+  - title: 2023 New Brunswick Personal Tax Credit Return
+    href: https://www.unb.ca/hr/_assets/documents/td1nb-e.pdf 

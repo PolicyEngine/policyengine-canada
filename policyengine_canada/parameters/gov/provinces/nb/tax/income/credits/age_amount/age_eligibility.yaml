@@ -1,0 +1,9 @@
+description: New Brunswick provides an age amount tax credit to people this age or older. 
+values:
+  2023-01-01: 65
+metadata:
+  unit: year
+  label: New Brunswick age amount credit age minimum
+  reference:
+  - title: 2023 New Brunswick Personal Tax Credit Return
+    href: https://www.unb.ca/hr/_assets/documents/td1nb-e.pdf 

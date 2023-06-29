@@ -6,7 +6,7 @@ class is_child_for_bc_climate_action_tax_credit(Variable):
     entity = Person
     label = "Is the first born child in a Household"
     definition_period = YEAR
-    defined_for = "is_dependent"
+    defined_for = "is_dependant"
 
     def formula(person, period, parameters):
         adult_age = parameters(
