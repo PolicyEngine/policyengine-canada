@@ -1,0 +1,18 @@
+description: New Brunswick reduces the age amount tax credit at this rate.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: New Brunswick age amount credit reduction rate.
+  reference:
+  - title:  Worksheet for the 2023 New Brunswick Personal Tax Credits Return
+    href: hhttps://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nb-ws/td1nb-ws-23e.pdf
+brackets:
+  - threshold:
+      2023-01-01: 0
+    rate:
+      2023-01-01: 0
+  - threshold:
+      2023-01-01: 41_799
+    rate:
+      2023-01-01: 0.15 

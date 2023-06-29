@@ -1,0 +1,28 @@
+- name: Calculation without children
+  period: 2023
+  input:
+    province_code: NS
+    ns_low_income_tax_reduction_base: 600
+    ns_low_income_tax_reduction_base_children: 0
+    ns_low_income_tax_reduction_reduction: 100
+  output:
+    ns_low_income_tax_reduction: 500
+
+- name: Calculation with children
+  period: 2023
+  input:
+    province_code: NS
+    ns_low_income_tax_reduction_base: 20_000
+    ns_low_income_tax_reduction_base_children: 1_000
+    ns_low_income_tax_reduction_reduction: 10_000
+  output:
+    ns_low_income_tax_reduction: 11_000
+
+- name: Minimum at 0
+  period: 2023
+  input:
+    province_code: NS
+    ns_low_income_tax_reduction_base: 20_000
+    ns_low_income_tax_reduction_reduction: 30_000
+  output:
+    ns_low_income_tax_reduction: 0

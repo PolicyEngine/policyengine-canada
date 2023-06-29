@@ -28,10 +28,10 @@
         age: 30
       c1:
         age: 18
-        is_dependent: true
+        is_dependant: true
       c2:
         age: 18
-        is_dependent: true
+        is_dependant: true
     household:
       members: [parent, c1, c2]
   output:

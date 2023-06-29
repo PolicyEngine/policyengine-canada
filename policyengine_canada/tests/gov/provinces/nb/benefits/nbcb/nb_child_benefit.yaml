@@ -1,0 +1,59 @@
+- name: One child w/ supplement
+  period: 2023
+  input:
+    province_code: NB
+    adjusted_family_net_income: 18_950
+    nb_child_benefit_eligible_children: 1
+    nb_child_benefit_supplement: 250
+  output:
+    nb_child_benefit: 500
+  
+- name: Multiple child
+  period: 2023
+  input:
+    province_code: NB
+    adjusted_family_net_income: 30_000
+    nb_child_benefit_eligible_children: 2
+    nb_child_benefit_supplement: 0
+  output:
+    nb_child_benefit: 0
+
+- name: Multiple child w/o supplement below max threshold 
+  period: 2023
+  input:
+    province_code: NB
+    adjusted_family_net_income: 10_000
+    nb_child_benefit_eligible_children: 2
+    nb_child_benefit_supplement: 0
+  output:
+    nb_child_benefit: 500
+  
+- name: One child w/o supplement
+  period: 2023
+  input:
+    province_code: NB
+    adjusted_family_net_income: 18_950
+    nb_child_benefit_eligible_children: 1
+    nb_child_benefit_supplement: 0
+  output:
+    nb_child_benefit: 250
+  
+- name: One child w/o supplement & income over 
+  period: 2023
+  input:
+    province_code: NB
+    adjusted_family_net_income: 30_000
+    nb_child_benefit_eligible_children: 1
+    nb_child_benefit_supplement: 0
+  output:
+    nb_child_benefit: 0
+
+- name: No child w/o supplement
+  period: 2023
+  input:
+    province_code: NB
+    adjusted_family_net_income: 10_000
+    nb_child_benefit_eligible_children: 0
+    nb_child_benefit_supplement: 0
+  output:
+    nb_child_benefit: 0

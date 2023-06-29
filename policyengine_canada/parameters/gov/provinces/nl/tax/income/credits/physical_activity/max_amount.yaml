@@ -1,0 +1,9 @@
+description: Newfoundland counts up to this amount of physical activity fees under the Physical Activity Tax Credit.
+values:
+  2022-12-31: 2_000
+metadata:
+  unit: currency-CAD
+  label: Newfoundland Physical Activity Tax Credit max amount
+  reference:
+  - title: Government of Canada - Newfoundland and Labrador Credits
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/newfoundland-labrador/5001-tc.html
