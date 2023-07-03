@@ -436,3 +436,8 @@
     added:
     - Quebec Senior Assistance Tax Credit.
   date: 2023-06-01 03:05:10
+- bump: minor
+  changes:
+    added:
+    - Alberta pension credit.
+  date: 2023-06-29 16:50:09
