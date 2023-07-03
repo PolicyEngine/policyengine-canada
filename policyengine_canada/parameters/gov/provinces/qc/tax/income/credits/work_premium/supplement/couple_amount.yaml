@@ -1,0 +1,9 @@
+description: Quebec provides this amount of supplement to eligible couple for work premium tax credit.
+values:
+  2022-01-01: 4_800
+metadata:
+  unit: currency-CAD
+  label: Quebec work premium supplement amount for couple
+  reference:
+    - title: Revenu Quebec - Amount of the Work Premium Tax Credit
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/work-premium-tax-credits/tax-credit-amounts/

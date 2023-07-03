@@ -1,9 +1,9 @@
-description: Quebec limits its work premium credit to a single annual work income above this amount.
+description: Quebec limits its work premium tax credit to people at or above this age.
 values:
-  2022-01-01: 3_600
+  2022-01-01: 18
 metadata:
-  unit: currency-CAD
-  label: Quebec adapted anual work premium work income requirement
+  unit: year
+  label: Quebec work premium tax credit age eligibility
   reference:
     - title: Revenu Quebec - Eligibility Requirements for the Work Premium Tax Credit
       href: https://www.revenuquebec.ca/en/citizens/tax-credits/work-premium-tax-credits/eligibility-requirements-for-the-work-premium-tax-credits/
