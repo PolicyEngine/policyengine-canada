@@ -4,7 +4,7 @@
     province_code: YT
     individual_net_income: 160_000
   output:
-    yt_basic_personal_amount: 0
+    yt_basic_personal_amount: 13_521
 
 - name: Eligible
   period: 2023

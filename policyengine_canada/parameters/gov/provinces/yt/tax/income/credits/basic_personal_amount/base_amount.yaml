@@ -1,4 +1,4 @@
-description: Yukon uses this base amount for the basic personal amount.
+description: Yukon provides this base amount under the basic personal amount.
 values:
   2023-01-01: 13_521
 metadata:

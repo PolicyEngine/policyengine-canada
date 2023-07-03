@@ -1,4 +1,4 @@
-description: Yukon uses this income threshold for the basic personal amount.
+description: Yukon provides a calculation for the basic personal amount for filer with income above this threshold.
 values:
   2023-01-01: 165_430
 metadata:
