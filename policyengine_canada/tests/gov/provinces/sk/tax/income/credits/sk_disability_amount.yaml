@@ -1,0 +1,17 @@
+- name:  Have Disability Tax Credit Certificate
+  period: 2024
+  input:
+    province_code: SK
+    is_disable_certificate: True
+
+  output:
+    sk_disability_amount: 10_405
+
+- name:  Do Not Have Disability Tax Credit Certificate
+  period: 2024
+  input:
+    province_code: SK
+    is_disable_certificate: False
+
+  output:
+    sk_disability_amount: 0
