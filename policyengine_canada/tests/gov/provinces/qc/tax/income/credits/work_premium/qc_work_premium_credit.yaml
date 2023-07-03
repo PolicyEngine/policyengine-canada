@@ -1,0 +1,10 @@
+- name: Quebec work premium credit
+  period: 2022
+  input:
+    qc_work_premium_single_amount: 200
+    qc_work_premium_couple_amount: 0
+    qc_adapted_work_premium_single_amount: 100
+    qc_adapted_work_premium_couple_amount: 360
+    province_code: QC
+  output:
+    qc_work_premium_credit: 660

@@ -1,0 +1,71 @@
+- name: Quebec work premium tax credit requirements for people over age limit
+  period: 2022
+  input:
+    age: 18
+    is_married: true
+    count_children: 0
+    is_emancipated: false
+    is_full_time_student: false
+    province_code: QC
+  output:
+    qc_work_premium_requirements: true
+
+- name: Quebec work premium tax credit requirements for people over age limit but is full time student
+  period: 2022
+  input:
+    age: 18
+    is_married: true
+    count_children: 0
+    is_emancipated: false
+    is_full_time_student: true
+    province_code: QC
+  output:
+    qc_work_premium_requirements: false
+
+- name: Quebec work premium tax credit requirements for people below age limit and unmarried
+  period: 2022
+  input:
+    age: 17
+    is_married: false
+    count_children: 0
+    is_emancipated: false
+    is_full_time_student: false
+    province_code: QC
+  output:
+    qc_work_premium_requirements: false
+
+- name: Quebec work premium tax credit requirements for people below age limit and married with children and emancipated
+  period: 2022
+  input:
+    age: 17
+    is_married: true
+    count_children: 2
+    is_emancipated: true
+    is_full_time_student: false
+    province_code: QC
+  output:
+    qc_work_premium_requirements: true
+
+- name: Quebec work premium tax credit requirements for people below age limit and married with children and but not emancipated
+  period: 2022
+  input:
+    age: 17
+    is_married: true
+    count_children: 2
+    is_emancipated: false
+    is_full_time_student: false
+    province_code: QC
+  output:
+    qc_work_premium_requirements: false
+
+- name: Quebec work premium tax credit requirements for people below age limit and married without children
+  period: 2022
+  input:
+    age: 17
+    is_married: true
+    count_children: 0
+    is_emancipated: true
+    is_full_time_student: false
+    province_code: QC
+  output:
+    qc_work_premium_requirements: false

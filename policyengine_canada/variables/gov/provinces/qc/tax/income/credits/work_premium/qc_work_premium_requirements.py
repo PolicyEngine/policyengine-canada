@@ -14,7 +14,7 @@ class qc_work_premium_requirements(Variable):
         person = household.members
 
         # You were 18 or older
-        age_eligible = person("age", period) > p.age_eligibility
+        age_eligible = person("age", period) >= p.age_eligibility
 
         # You were younger than 18 and met all following requirements
         has_spouse = household("is_married", period)
@@ -25,5 +25,5 @@ class qc_work_premium_requirements(Variable):
         not_full_time_student = ~person("is_full_time_student", period)
 
         return (
-            adult | (has_spouse & has_child & emancipated)
+            age_eligible | (has_spouse & has_child & emancipated)
         ) & not_full_time_student

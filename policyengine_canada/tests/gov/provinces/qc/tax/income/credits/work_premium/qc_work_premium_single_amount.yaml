@@ -1,0 +1,12 @@
+# - name: Quebec work premium amount for single parent with family income above the limit
+#   period: 2022
+#   input:
+#     qc_work_premium_requirements: true
+#     is_married: false
+#     count_children: 1
+#     adjusted_family_net_income: 30_000
+#     is_disabled: false
+#     working_income: 25_00
+#     province_code: QC
+#   output:
+#     qc_work_premium_single_amount: 
