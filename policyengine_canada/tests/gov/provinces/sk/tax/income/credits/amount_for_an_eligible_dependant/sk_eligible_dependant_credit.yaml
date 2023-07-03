@@ -1,85 +1,51 @@
-- name: Ineligible because a spouse lives with household and support household.
-  period: 2023
-  input:
-    people:
-      spouse:
-        is_spouse: true
-        is_supportive: true
-        joint_living: true
-      dependant:
-        is_dependant: true
-        is_relative: true
-        joint_living: true
-        dependant_income: 1_000
-    household:
-      members: [spouse, dependant]
-      province_code: SK
+ - name: Ineligible because of Head Ineligibility
+   period: 2023
+   input:
+     sk_head_eligibility: false
+     sk_dependant_eligibility: true
+     dependant_income: 1_000
+     province_code: SK
 
-  output:
-    sk_eligible_dependant_credit: 0
-
-
-- name: Ineligible dependant
-  period: 2023
-  input:
-    people:
-      spouse:
-        is_spouse: false
-        is_supportive: false
-        joint_living: false
-      dependant:
-        is_dependant: true
-        is_relative: false
-        joint_living: false
-        dependant_income: 1_000
-    household:
-      members: [spouse, dependant]
-      province_code: SK
-
-  output:
-    sk_eligible_dependant_credit: 0
+   output:
+     sk_eligible_dependant_credit: 0
 
 
 
+ - name: Ineligible because of Dependant Ineligibility
+   period: 2023
+   input:
+     sk_head_eligibility: true
+     sk_dependant_eligibility: false
+     dependant_income: 1_000
+     province_code: SK
 
-- name: Eligible dependant with dependant's income less than net income base amount
-  period: 2023
-  input:
-    people:
-      spouse:
-        is_spouse: false
-      dependant:
-        is_dependant: true
-        is_relative: true
-        joint_living: true
-        dependant_income: 1_000
-    household:
-      members: [spouse, dependant]
-      province_code: SK
-
-  output:
-    sk_eligible_dependant_credit: 17_661
+   output:
+     sk_eligible_dependant_credit: 0
 
 
 
-- name: Eligible dependant with dependant's income more than net income base amount
-  period: 2023
-  input:
-    people:
-      spouse:
-        is_spouse: false
-      dependant:
-        is_dependant: true
-        is_relative: true
-        joint_living: true
-        dependant_income: 3_000
-    household:
-      members: [spouse, dependant]
-      province_code: SK
+ - name: Eligible dependant with dependant's income less than net income base amount
+   period: 2023
+   input:
+     sk_head_eligibility: true
+     sk_dependant_eligibility: true
+     dependant_income: 1_000
+     province_code: SK
 
-  output:
-    sk_eligible_dependant_credit: 14_661
+   output:
+     sk_eligible_dependant_credit: 17_661
 
 
+
+ - name: Eligible dependant with dependant's income more than net income base amount
+   period: 2023
+   input:
+     sk_head_eligibility: true
+     sk_dependant_eligibility: true
+     dependant_income: 3_000
+     province_code: SK
+
+   output:
+     sk_eligible_dependant_credit: 14_661
 
 
