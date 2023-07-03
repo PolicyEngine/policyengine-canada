@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class sk_senior_supplementary_credit(Variable):
     value_type = float
     entity = Person
-    label = "Sasktachewan senior supplementary tax credit refund"
+    label = "Sasktachewan senior supplementary tax credit"
     definition_period = YEAR
     defined_for = ProvinceCode.SK
 

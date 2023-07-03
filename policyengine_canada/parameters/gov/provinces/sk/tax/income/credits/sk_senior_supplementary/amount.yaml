@@ -1,6 +1,6 @@
-description:  Saskatchewan provides this amount for residents will be 65 years or older on December 31, 2023.
+description:  Saskatchewan provides this amount under the senior supplement credit.
 values:
-  2023-12-31: 1_421
+  2023-01-01: 1_421
 metadata:
   unit: currency-CAD
   label: Saskatchewan Senior Supplementary tax credits return amount
