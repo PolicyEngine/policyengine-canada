@@ -29,7 +29,6 @@ class ab_caregiver_amount(Variable):
             dependant_net_income <= p.upper_dependant_income_threshold
         )
 
-        # https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab-ws/td1ab-ws-23e.pdf Deduct line 6
         caregiver_amount = (
             p.upper_dependant_income_threshold - dependant_net_income
         ) * income_eligibility
