@@ -11,7 +11,6 @@ class ab_caregiver_amount(Variable):
     defined_for = ProvinceCode.AB
 
     def formula(person, period, parameters):
-
         p = parameters(
             period
         ).gov.provinces.ab.tax.income.credits.credits_return
