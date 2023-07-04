@@ -16,6 +16,7 @@ class nt_tuition_education_amounts(Variable):
         ).gov.provinces.nt.tax.income.credits.tuition_education_amounts
 
         tuition = person("tuition_expenses", period)
+        months = person("number_of_months_student", period)
         eligible = tuition > p.base_tuition_amount
 
         full_time_amount = (
@@ -31,7 +32,7 @@ class nt_tuition_education_amounts(Variable):
         )
 
         tuition_education_amounts = (
-            tuition + (full_time_amount + part_time_amount) * 12
+            tuition + (full_time_amount + part_time_amount) * months
         )
 
         return eligible * tuition_education_amounts

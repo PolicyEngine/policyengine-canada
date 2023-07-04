@@ -6,9 +6,10 @@
     is_full_time_student: true
     is_part_time_student: false
     is_disabled: true
+    number_of_months_student: 5
     tuition_expenses: 10_000
   output:
-    nt_tuition_education_amounts: 14_800
+    nt_tuition_education_amounts: 12_000
 
 - name: Full time student with less than $100 tuition
   period: 2023
@@ -18,6 +19,7 @@
     is_full_time_student: true
     is_part_time_student: false
     is_disabled: true
+    number_of_months_student: 5
     tuition_expenses: 90
   output:
     nt_tuition_education_amounts: 0
@@ -29,9 +31,10 @@
     province_code: NT
     is_part_time_student: true
     is_disabled: true
+    number_of_months_student: 5
     tuition_expenses: 10_000
   output:
-    nt_tuition_education_amounts: 14_800
+    nt_tuition_education_amounts: 12_000
 
 - name: Part time student with disabled and has less than $100 tuition
   period: 2023
@@ -40,6 +43,7 @@
     province_code: NT
     is_part_time_student: true
     is_disabled: true
+    number_of_months_student: 5
     tuition_expenses: 90
   output:
     nt_tuition_education_amounts: 0
@@ -51,9 +55,10 @@
     province_code: NT
     is_part_time_student: true
     is_disabled: false
+    number_of_months_student: 5
     tuition_expenses: 10_000
   output:
-    nt_tuition_education_amounts: 11_440
+    nt_tuition_education_amounts: 10_600
 
 - name: Part time student without disabled and has less than $100 tuition
   period: 2023
@@ -62,6 +67,7 @@
     province_code: NT
     is_part_time_student: true
     is_disabled: false
+    number_of_months_student: 5
     tuition_expenses: 90
   output:
     nt_tuition_education_amounts: 0
