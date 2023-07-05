@@ -19,9 +19,13 @@ class yt_government_carbon_price_rebate(Variable):
         spouses = household.sum(spouse)
         in_whitehorse = household("in_whitehorse", period)
         non_whitehorse_supplement = ~in_whitehorse * (
-            p.non_whitehorse_supplement.child * children
-            + p.non_whitehorse_supplement.spouse * spouses
+            (p.non_whitehorse_supplement.child * children)
+            + (p.non_whitehorse_supplement.spouse * spouses)
             + p.non_whitehorse_supplement.self
         )
-        base = (p.amount.child * children) + (p.amount.spouse * spouses) + p.amount.self
+        base = (
+            (p.amount.child * children)
+            + (p.amount.spouse * spouses)
+            + p.amount.self
+        )
         return base + non_whitehorse_supplement
