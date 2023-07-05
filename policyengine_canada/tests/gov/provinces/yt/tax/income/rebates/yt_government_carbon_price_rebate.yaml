@@ -14,7 +14,7 @@
       members: [head, spouse, child, child2]
       province_code: YT
       yt_ygcpri_eligible_children: 2
-      lived_outside_of_whitehorse: true
+      in_whitehorse: false
   output:
     yt_government_carbon_price_rebate: 1_408
 
@@ -34,7 +34,7 @@
       members: [head, spouse, child, child2]
       province_code: YT
       yt_ygcpri_eligible_children: 2
-      lived_outside_of_whitehorse: false
+      in_whitehorse: true
   output:
     yt_government_carbon_price_rebate: 1_280
 
@@ -52,7 +52,7 @@
       members: [head, child, child2]
       province_code: YT
       yt_ygcpri_eligible_children: 2
-      lived_outside_of_whitehorse: true
+      in_whitehorse: false
   output:
     yt_government_carbon_price_rebate: 1_056
 
@@ -73,6 +73,6 @@
       members: [head, child, child2]
       province_code: YT
       yt_ygcpri_eligible_children: 3
-      lived_outside_of_whitehorse: false
+      in_whitehorse: true
   output:
     yt_government_carbon_price_rebate: 1_280
