@@ -16,4 +16,4 @@ class yt_basic_personal_amount(Variable):
         exceedance = income - p.income_threshold
         eligible = exceedance >= 0
         percent = max_(0, (p.scale_value - exceedance) / p.scale_value)
-        return (percent * p.applicable_amount) * eligible + p.base_amount
+        return (percent * p.applicable_amount) * eligible + p.base_amount + p.applicable_amount * ~eligible
