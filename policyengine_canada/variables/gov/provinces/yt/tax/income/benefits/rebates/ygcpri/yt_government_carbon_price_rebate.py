@@ -11,20 +11,17 @@ class yt_government_carbon_price_rebate(Variable):
     defined_for = ProvinceCode.YT
 
     def formula(household, period, parameters):
-        children = household("yt_ygcpri_eligible_children", period)
+        p = parameters(period).gov.provinces.yt.benefits.rebates.ygcpri
         person = household.members
+        child = person("age", period) < p.child_ineligible_age
+        children = household.sum(child)
         spouse = person("is_spouse", period)
         spouses = household.sum(spouse)
-        not_remote = household("in_whitehorse", period)
-        p = parameters(period).gov.provinces.yt.benefits.rebates.ygcpri
-        supplement = ~not_remote * (
-            p.supplement.child * children
-            + p.supplement.spouse * spouses
-            + p.supplement.self
+        in_whitehorse = household("in_whitehorse", period)
+        non_whitehorse_supplement = ~in_whitehorse * (
+            p.non_whitehorse_supplement.child * children
+            + p.non_whitehorse_supplement.spouse * spouses
+            + p.non_whitehorse_supplement.self
         )
-        return (
-            p.amount.child * children
-            + p.amount.spouse * spouses
-            + p.amount.self
-            + supplement
-        )
+        base = (p.amount.child * children) + (p.amount.spouse * spouses) + p.amount.self
+        return base + non_whitehorse_supplement
