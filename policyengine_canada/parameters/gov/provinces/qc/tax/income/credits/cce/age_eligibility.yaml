@@ -1,0 +1,9 @@
+description: Quebec limits its Children Care Expenses Credit to children at or below this age.
+values:
+  2022-01-01: 16 # He or she was 16 or under at some point in the year.
+metadata:
+  unit: year
+  label: Quebec children care expenses child age eligibility
+  reference:
+    - title: Revenu Quebec - Requirements for the Tax Credit for Children Expenses
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/tax-credit-for-childcare-expenses/requirements/ 
