@@ -15,9 +15,9 @@ class yt_government_carbon_price_rebate(Variable):
         person = household.members
         spouse = person("is_spouse", period)
         spouses = household.sum(spouse)
-        remote = household("lived_outside_of_whitehorse", period)
+        not_remote = household("in_whitehorse", period)
         p = parameters(period).gov.provinces.yt.benefits.rebates.ygcpri
-        supplement = remote * (
+        supplement = (-not_remote+1) * (
             p.supplement.child * children
             + p.supplement.spouse * spouses
             + p.supplement.self
