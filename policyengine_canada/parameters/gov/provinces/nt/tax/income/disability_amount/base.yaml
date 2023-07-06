@@ -1,0 +1,12 @@
+description: Northwest Territories provides this Disability Amount in its Personal Tax Credits Return.
+values:
+  2023-01-01: 13_456
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Disability Amount
+  reference:
+    - title: Northwest Territories Disability Amount
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nt/td1nt-23e.pdf
+    - title: CPP/QPP disability benefits and other lumpsum payments for previous years
+      href: https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf
