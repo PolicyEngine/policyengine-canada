@@ -1,4 +1,4 @@
-description: Northwest Territories allows families above this threshold to receive the child benefit.
+description: Northwest Territories allows families above this income threshold to receive the child benefit.
 values:
   2022-07-01: 30_000
 metadata:
