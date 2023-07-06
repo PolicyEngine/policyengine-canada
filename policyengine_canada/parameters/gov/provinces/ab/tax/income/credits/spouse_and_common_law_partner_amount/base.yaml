@@ -1,0 +1,12 @@
+description: Alberta provides this spouse and common-law partner amount, which is equivalent to the spouses basic personal amount.
+values:
+  2023-01-01: 21_003
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Alberta spouse and commonlaw partner amount credit.
+  reference:
+  - title: Government of Canada - Alberta spouse and commonlaw partner amount credit
+    href: https://media.icims.com/training/iForms%20Library/Candidate%20Management/Onboarding%20Solution/Alberta%20Personal%20Tax%20Credit.pdf
+
+    

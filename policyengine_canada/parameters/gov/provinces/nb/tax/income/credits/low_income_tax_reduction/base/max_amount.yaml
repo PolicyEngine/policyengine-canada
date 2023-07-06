@@ -1,0 +1,9 @@
+description: New Brunswick provides this maximum amount under the low income tax reduction credit.
+values:
+  2022-01-01: 1_402
+metadata:
+  unit: currency-CAD
+  label: New Brunswick low income tax max amount
+  reference:
+  - title: Government of Canada - New Brunswick Information Guide
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/new-brunswick/5004-pc/information-residents-new-brunswick.html
