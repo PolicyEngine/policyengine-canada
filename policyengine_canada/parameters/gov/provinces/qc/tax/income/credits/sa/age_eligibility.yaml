@@ -1,0 +1,9 @@
+description: Quebec limits its Senior Assistance Credit to seniors at or above this age.
+values:
+  2022-01-01: 70
+metadata:
+  unit: year
+  label: Quebec senior assistance seniors age eligibility
+  reference:
+    - title: Revenu Quebec - Eligibility Conditinos for the Senior Assistance Tax Credit
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/senior-assistance-tax-credit/eligibility-conditions/

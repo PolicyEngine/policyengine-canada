@@ -1,0 +1,65 @@
+- name: Tax credit for eligible couples whose income within maximum family income
+  period: 2022
+  input:
+    adjusted_family_net_income: 109_350
+    qc_sa_married_both_eligible: 1
+    qc_sa_married_one_eligible: 0
+    qc_sa_single: 0
+    province_code: QC
+  output:
+    qc_sa_tax_credit: 500 #max(0,2000*2-0.05*(109350-39350))
+
+- name: Tax credit for eligible couples whose income above maximum family income
+  period: 2022
+  input:
+    adjusted_family_net_income: 120_000
+    qc_sa_married_both_eligible: 1
+    qc_sa_married_one_eligible: 0
+    qc_sa_single: 0
+    province_code: QC
+  output:
+    qc_sa_tax_credit: 0 #max(0,2000*2-0.05*(120000-39350))
+
+- name: Tax credit for eligible individual and non-eligible spouse whose income within maximum family income
+  period: 2022
+  input:
+    adjusted_family_net_income: 69_350
+    qc_sa_married_both_eligible: 0
+    qc_sa_married_one_eligible: 1
+    qc_sa_single: 0
+    province_code: QC
+  output:
+    qc_sa_tax_credit: 500 #max(0,2000-0.05*(69350-39350))
+
+- name: Tax credit for eligible individual and non-eligible spouse whose income above maximum family income
+  period: 2022
+  input:
+    adjusted_family_net_income: 80_000
+    qc_sa_married_both_eligible: 0
+    qc_sa_married_one_eligible: 1
+    qc_sa_single: 0
+    province_code: QC
+  output:
+    qc_sa_tax_credit: 0 #max(0,2000-0.05*(80000-39350))
+
+- name: Tax credit for eligible individual with no spouse whose income within maximum family income
+  period: 2022
+  input:
+    adjusted_family_net_income: 24_195
+    qc_sa_married_both_eligible: 0
+    qc_sa_married_one_eligible: 0
+    qc_sa_single: 1
+    province_code: QC
+  output:
+    qc_sa_tax_credit: 2_000 #max(0,2000-0.05*(24195-24195))
+
+- name: Tax credit for eligible individual with no spouse whose income above maximum family income
+  period: 2022
+  input:
+    adjusted_family_net_income: 65_000
+    qc_sa_married_both_eligible: 0
+    qc_sa_married_one_eligible: 0
+    qc_sa_single: 1
+    province_code: QC
+  output:
+    qc_sa_tax_credit: 0 #max(0,2000-0.05*(65000-24195))
