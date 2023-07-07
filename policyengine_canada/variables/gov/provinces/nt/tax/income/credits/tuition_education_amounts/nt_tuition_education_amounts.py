@@ -18,6 +18,7 @@ class nt_tuition_education_amounts(Variable):
         tuition = person("tuition_expenses", period)
         months = person("number_of_months_student", period)
         eligible = tuition > p.base_tuition_amount
+        taxable_income = person("nt_income_tax_before_credits", period)
 
         full_time_amount = (
             person("is_full_time_student", period) * p.full_time_amount
@@ -35,4 +36,23 @@ class nt_tuition_education_amounts(Variable):
             tuition + (full_time_amount + part_time_amount) * months
         )
 
-        return eligible * tuition_education_amounts
+        total_available_tuition_education_amounts = (
+            eligible * tuition_education_amounts
+        )
+
+        adjusted_taxable_income = (
+            taxable_income
+            if taxable_income <= p.taxable_income_threshold
+            else (
+                (p.taxable_income_threshold / p.taxable_income_rate)
+                - p.taxable_income_threshold
+            )
+        )
+
+        return (
+            min_(
+                total_available_tuition_education_amounts,
+                adjusted_taxable_income,
+            )
+            + adjusted_taxable_income
+        )

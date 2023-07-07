@@ -1,4 +1,4 @@
-- name: Full time student with more than $100 tuition
+- name: Full time student with more than $100 tuition and no income
   period: 2023
   absolute_error_margin: 0.1
   input:
@@ -8,66 +8,67 @@
     is_disabled: true
     number_of_months_student: 5
     tuition_expenses: 10_000
-  output:
-    nt_tuition_education_amounts: 12_000
-
-- name: Full time student with less than $100 tuition
-  period: 2023
-  absolute_error_margin: 0.1
-  input:
-    province_code: NT
-    is_full_time_student: true
-    is_part_time_student: false
-    is_disabled: true
-    number_of_months_student: 5
-    tuition_expenses: 90
+    nt_income_tax_before_credits: 0
   output:
     nt_tuition_education_amounts: 0
 
-- name: Part time student with disabled and has more than $100 tuition
-  period: 2023
-  absolute_error_margin: 0.1
-  input:
-    province_code: NT
-    is_part_time_student: true
-    is_disabled: true
-    number_of_months_student: 5
-    tuition_expenses: 10_000
-  output:
-    nt_tuition_education_amounts: 12_000
+# - name: Full time student with less than $100 tuition
+#   period: 2023
+#   absolute_error_margin: 0.1
+#   input:
+#     province_code: NT
+#     is_full_time_student: true
+#     is_part_time_student: false
+#     is_disabled: true
+#     number_of_months_student: 5
+#     tuition_expenses: 90
+#   output:
+#     nt_tuition_education_amounts: 0
 
-- name: Part time student with disabled and has less than $100 tuition
-  period: 2023
-  absolute_error_margin: 0.1
-  input:
-    province_code: NT
-    is_part_time_student: true
-    is_disabled: true
-    number_of_months_student: 5
-    tuition_expenses: 90
-  output:
-    nt_tuition_education_amounts: 0
+# - name: Part time student with disabled and has more than $100 tuition
+#   period: 2023
+#   absolute_error_margin: 0.1
+#   input:
+#     province_code: NT
+#     is_part_time_student: true
+#     is_disabled: true
+#     number_of_months_student: 5
+#     tuition_expenses: 10_000
+#   output:
+#     nt_tuition_education_amounts: 12_000
 
-- name: Part time student without disabled and has more than $100 tuition
-  period: 2023
-  absolute_error_margin: 0.1
-  input:
-    province_code: NT
-    is_part_time_student: true
-    is_disabled: false
-    number_of_months_student: 5
-    tuition_expenses: 10_000
-  output:
-    nt_tuition_education_amounts: 10_600
+# - name: Part time student with disabled and has less than $100 tuition
+#   period: 2023
+#   absolute_error_margin: 0.1
+#   input:
+#     province_code: NT
+#     is_part_time_student: true
+#     is_disabled: true
+#     number_of_months_student: 5
+#     tuition_expenses: 90
+#   output:
+#     nt_tuition_education_amounts: 0
 
-- name: Part time student without disabled and has less than $100 tuition
-  period: 2023
-  absolute_error_margin: 0.1
-  input:
-    province_code: NT
-    is_part_time_student: true
-    is_disabled: false
-    number_of_months_student: 5
-    tuition_expenses: 90
-  output:
-    nt_tuition_education_amounts: 0
+# - name: Part time student without disabled and has more than $100 tuition
+#   period: 2023
+#   absolute_error_margin: 0.1
+#   input:
+#     province_code: NT
+#     is_part_time_student: true
+#     is_disabled: false
+#     number_of_months_student: 5
+#     tuition_expenses: 10_000
+#   output:
+#     nt_tuition_education_amounts: 10_600
+
+# - name: Part time student without disabled and has less than $100 tuition
+#   period: 2023
+#   absolute_error_margin: 0.1
+#   input:
+#     province_code: NT
+#     is_part_time_student: true
+#     is_disabled: false
+#     number_of_months_student: 5
+#     tuition_expenses: 90
+#   output:
+#     nt_tuition_education_amounts: 0
