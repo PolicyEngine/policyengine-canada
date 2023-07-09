@@ -1,0 +1,10 @@
+description: Saskatchewan Tax Credit Lower Income threshold for the dependant.
+values: 
+  2023-01-01: 17_770
+metadata:
+  unit: currency-CAD
+  label: Saskatchewan Caregiver Tax Credit Lower Income Threshold for the dependant
+  reference: 
+  - title: Sasktachewan Caregiver Amount
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf
+
