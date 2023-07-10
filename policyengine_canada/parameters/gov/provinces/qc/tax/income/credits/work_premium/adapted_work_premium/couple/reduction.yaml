@@ -17,3 +17,9 @@ metadata:
     - title: SPSD/M - 1.3.25.4.13.6 QAWPRRQuebec Adapted Work Premium for Disabled Reduction Rate(Page 1698)
     - title: Parameters of the Personal Income Tax System for 2022 - Table 3
       href: http://www.finances.gouv.qc.ca/MAJ2021/documents/en/AUTEN_IncomeTax2022.pdf
+    - title: Taxation Act(CQLR c I-3), Part I, Book IX, Title III, Division II.17.1 §2.1029.8.116.5.0.1.(c)
+      href: https://www.canlii.org/en/qc/laws/stat/cqlr-c-i-3/latest/cqlr-c-i-3.html#se:1029_8_116_5_0_1
+      # 10% * the amount by which the eligible individual’s total income for the year exceeds the reduction threshold for the adjusted work premium
+    - title: Taxation Act(CQLR c I-3), Part I, Book IX, Title III, Division II.17.1 §2.1029.8.116.5.1.(a)
+      href: https://www.canlii.org/en/qc/laws/stat/cqlr-c-i-3/latest/cqlr-c-i-3.html#se:1029_8_116_5_1
+      # For the year 2023, the amount of the adapted work premium reduction threshold applicable to an individual who has an eligible spouse for the year is changed from $23,816 to $25,198
