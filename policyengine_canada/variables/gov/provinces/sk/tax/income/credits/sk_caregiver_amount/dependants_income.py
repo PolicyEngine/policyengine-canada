@@ -1,8 +1,8 @@
 from policyengine_canada.model_api import *
 
 
-class is_live_together(Variable):
-    value_type = bool
+class dependants_income(Variable):
+    value_type = float
     entity = Person
     label = "Saskatchewan Caregiver Amount"
     unit = CAD

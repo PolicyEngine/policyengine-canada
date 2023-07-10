@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class is_live_together(Variable):
+class is_infirm_dependant(Variable):
     value_type = bool
     entity = Person
     label = "Saskatchewan Caregiver Amount"
