@@ -13,7 +13,7 @@ class mb_dependant_eligibility(Variable):
             period
         ).gov.provinces.mb.tax.income.credits.eligible_dependant_amount
 
-        # eligible dependant condition 2
+        # eligible dependant is related to you and lives with you
 
         relative = person("is_relative", period)
         live_together = person("lived_together", period)

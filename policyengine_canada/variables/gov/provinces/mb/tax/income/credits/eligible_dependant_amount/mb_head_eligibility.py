@@ -13,10 +13,10 @@ class mb_head_eligibility(Variable):
             period
         ).gov.provinces.mb.tax.income.credits.eligible_dependant_amount
 
-        # eligible dependant condition 1
+        #  do not have a spouse or common-law partner, or you have a spouse or common-law partner who does not live with you and who you are not supporting or being supported by
         no_spouse = ~person("is_spouse", period)
 
-        has_spouse = person("is_spouse", period)
+        has_spouse = ~no_spouse
         not_live_together = ~person("lived_together", period)
         not_care_receiver = ~person("is_care_receiver", period)
         not_care_giver = ~person("is_caregiver", period)
@@ -27,7 +27,7 @@ class mb_head_eligibility(Variable):
 
         head_eligibility = no_spouse | spouse_eligible
 
-        # eligible dependant condition 3
+        # The dependant's net income for the year will be less than $9,134
         dependant_income_eligibility = (
             person("dependant_income", period) < p.dependant_income_max_amount
         )

@@ -9,7 +9,7 @@
     dependant_income: 9_000
 
   output:
-    mb_head_eligibility: 0
+    mb_head_eligibility: false
 
 - name: head of household eligible for eligible dependant tax credit amount
   period: 2023
@@ -22,5 +22,5 @@
     dependant_income: 9_000
 
   output:
-    mb_head_eligibility: 1
+    mb_head_eligibility: true
 

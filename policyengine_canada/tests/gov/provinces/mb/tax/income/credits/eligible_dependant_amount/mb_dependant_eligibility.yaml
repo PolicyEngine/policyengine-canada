@@ -6,7 +6,7 @@
     lived_together: true
 
   output:
-    mb_dependant_eligibility: 1
+    mb_dependant_eligibility: true
 
 - name: ineligible dependant 
   period: 2023
@@ -17,4 +17,4 @@
 
 
   output:
-    mb_dependant_eligibility: 0
+    mb_dependant_eligibility: false

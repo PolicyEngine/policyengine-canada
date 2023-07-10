@@ -5,9 +5,8 @@
     mb_head_eligibility: false
     mb_dependant_eligibility: false
     dependant_income: 9_000
-
   output:
-    mb_dependant_amount: 0
+    mb_dependant_amount: 0 # ineligible head of the household and dependent only get $0 no matter the net income
 
 - name: eligible dependant with ineligible head of household 
   period: 2023
@@ -16,10 +15,8 @@
     mb_head_eligibility: false
     mb_dependant_eligibility: true
     dependant_income: 9_000
-
-
   output:
-    mb_dependant_amount: 0
+    mb_dependant_amount: 0 # ineligible head of the household with eligible dependent only get $0 no matter the net income
 
 - name: eligible dependant with eligible head of household 
   period: 2023
@@ -28,7 +25,5 @@
     mb_head_eligibility: true
     mb_dependant_eligibility: true
     dependant_income: 9_000
-
-
   output:
-    mb_dependant_amount: 134
+    mb_dependant_amount: 134 # $9,134 - $9,000 = $134
