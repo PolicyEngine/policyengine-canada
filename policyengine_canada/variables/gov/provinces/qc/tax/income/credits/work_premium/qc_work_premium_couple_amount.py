@@ -13,7 +13,7 @@ class qc_work_premium_couple_amount(Variable):
             period
         ).gov.provinces.qc.tax.income.credits.work_premium.general_work_premium.couple
 
-        meet_requirement = household("qc_work_premium_requirements", period)
+        meet_requirement = household("qc_work_premium_eligibility", period)
 
         # family situation
         has_spouse = household("is_married", period)

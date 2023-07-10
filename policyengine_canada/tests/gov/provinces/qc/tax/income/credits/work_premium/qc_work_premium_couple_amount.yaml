@@ -1,7 +1,7 @@
 - name: Quebec work premium amount for couple with children with family income below the turndown threshold and work income above the requirement
   period: 2022
   input:
-    qc_work_premium_requirements: true
+    qc_work_premium_eligibility: true
     is_married: true
     count_children: 1
     adjusted_family_net_income: 11_000 
@@ -13,7 +13,7 @@
 - name: Quebec work premium amount for couple with children with family income below the turndown threshold but work income below the requirement
   period: 2022
   input:
-    qc_work_premium_requirements: true
+    qc_work_premium_eligibility: true
     is_married: true
     count_children: 1
     adjusted_family_net_income: 11_000
@@ -25,7 +25,7 @@
 - name: Quebec work premium amount for couple with children with family income above the turndown threshold and work income above the requirement
   period: 2022
   input:
-    qc_work_premium_requirements: true
+    qc_work_premium_eligibility: true
     is_married: true
     count_children: 1
     adjusted_family_net_income: 30_000
@@ -37,7 +37,7 @@
 - name: Quebec work premium amount for couple with children with family income above the maximum income and work income above the requirement
   period: 2022
   input:
-    qc_work_premium_requirements: true
+    qc_work_premium_eligibility: true
     is_married: true
     count_children: 1
     adjusted_family_net_income: 60_000
@@ -49,7 +49,7 @@
 - name: Quebec work premium amount for couple without child with family income below the turndown threshold and work income above the requirement
   period: 2022
   input:
-    qc_work_premium_requirements: true
+    qc_work_premium_eligibility: true
     is_married: true
     count_children: 0
     adjusted_family_net_income: 11_000 
@@ -61,7 +61,7 @@
 - name: Quebec work premium amount for couple without child with family income below the turndown threshold but work income below the requirement
   period: 2022
   input:
-    qc_work_premium_requirements: true
+    qc_work_premium_eligibility: true
     is_married: true
     count_children: 0
     adjusted_family_net_income: 11_000
@@ -73,7 +73,7 @@
 - name: Quebec work premium amount for couple without child with family income above the turndown threshold and work income above the requirement
   period: 2022
   input:
-    qc_work_premium_requirements: true
+    qc_work_premium_eligibility: true
     is_married: true
     count_children: 0
     adjusted_family_net_income: 30_000
@@ -85,7 +85,7 @@
 - name: Quebec work premium amount for couple without child with family income above the maximum income and work income above the requirement
   period: 2022
   input:
-    qc_work_premium_requirements: true
+    qc_work_premium_eligibility: true
     is_married: true
     count_children: 0
     adjusted_family_net_income: 50_000
