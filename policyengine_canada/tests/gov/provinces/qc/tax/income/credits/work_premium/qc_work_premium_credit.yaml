@@ -1,10 +1,71 @@
-- name: Quebec work premium credit
+- name: Quebec work premium credit for couple with no disabled member
   period: 2022
   input:
-    qc_work_premium_single_amount: 200
-    qc_work_premium_couple_amount: 0
-    qc_adapted_work_premium_single_amount: 100
-    qc_adapted_work_premium_couple_amount: 360
-    province_code: QC
+    people:
+      head:
+        is_disabled: false
+      spouse:
+        is_disabled: false
+    household:
+      members: [head, spouse]
+      qc_work_premium_single_amount: 0
+      qc_work_premium_couple_amount: 300
+      qc_adapted_work_premium_single_amount: 0
+      qc_adapted_work_premium_couple_amount: 450
+      qc_work_premium_supplement_amount: 300
+      province_code: QC
   output:
-    qc_work_premium_credit: 660
+    qc_work_premium_credit: 600 # 300+300
+
+- name: Quebec work premium credit for non-disabled single 
+  period: 2022
+  input:
+    people:
+      head:
+        is_disabled: false
+    household:
+      members: [head]
+      qc_work_premium_single_amount: 300
+      qc_work_premium_couple_amount: 0
+      qc_adapted_work_premium_single_amount: 400
+      qc_adapted_work_premium_couple_amount: 0
+      qc_work_premium_supplement_amount: 300
+      province_code: QC
+  output:
+    qc_work_premium_credit: 600 # 300+300
+
+- name: Quebec work premium credit for Quebec work premium credit for couple with disabled member 
+  period: 2022
+  input:
+    people:
+      head:
+        is_disabled: false
+      spouse:
+        is_disabled: true
+    household:
+      members: [head, spouse]
+      qc_work_premium_single_amount: 0
+      qc_work_premium_couple_amount: 400
+      qc_adapted_work_premium_single_amount: 0
+      qc_adapted_work_premium_couple_amount: 399
+      qc_work_premium_supplement_amount: 0
+      province_code: QC
+  output:
+    qc_work_premium_credit: 400
+
+- name: Quebec work premium credit for disabled single
+  period: 2022
+  input:
+    people:
+      head:
+        is_disabled: true
+    household:
+      members: [head]
+      qc_work_premium_single_amount: 300
+      qc_work_premium_couple_amount: 0
+      qc_adapted_work_premium_single_amount: 400
+      qc_adapted_work_premium_couple_amount: 0
+      qc_work_premium_supplement_amount: 0
+      province_code: QC
+  output:
+    qc_work_premium_credit: 400

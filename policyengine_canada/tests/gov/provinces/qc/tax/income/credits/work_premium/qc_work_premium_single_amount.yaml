@@ -1,12 +1,95 @@
-# - name: Quebec work premium amount for single parent with family income above the limit
-#   period: 2022
-#   input:
-#     qc_work_premium_requirements: true
-#     is_married: false
-#     count_children: 1
-#     adjusted_family_net_income: 30_000
-#     is_disabled: false
-#     working_income: 25_00
-#     province_code: QC
-#   output:
-#     qc_work_premium_single_amount: 
+- name: Quebec work premium amount for single parent with family income below the turndown threshold and work income above the requirement
+  period: 2022
+  input:
+    qc_work_premium_requirements: true
+    is_married: false
+    count_children: 1
+    adjusted_family_net_income: 11_000 
+    family_working_income: 2_500
+    province_code: QC
+  output:
+    qc_work_premium_single_amount: 2_651.40
+
+- name: Quebec work premium amount for single parent with family income below the turndown threshold but work income below the requirement
+  period: 2022
+  input:
+    qc_work_premium_requirements: true
+    is_married: false
+    count_children: 1
+    adjusted_family_net_income: 11_000
+    family_working_income: 2_000
+    province_code: QC
+  output:
+    qc_work_premium_single_amount: 0
+
+- name: Quebec work premium amount for single parent with family income above the turndown threshold and work income above the requirement
+  period: 2022
+  input:
+    qc_work_premium_requirements: true
+    is_married: false
+    count_children: 1
+    adjusted_family_net_income: 30_000
+    family_working_income: 2_500
+    province_code: QC
+  output:
+    qc_work_premium_single_amount: 775.2 # 2651.40 - 0.1*(30000-11238)
+
+- name: Quebec work premium amount for single parent with family income above the maximum income and work income above the requirement
+  period: 2022
+  input:
+    qc_work_premium_requirements: true
+    is_married: false
+    count_children: 1
+    adjusted_family_net_income: 50_000
+    family_working_income: 2_500
+    province_code: QC
+  output:
+    qc_work_premium_single_amount: 0 # max(0,2651.40 - 0.1*(50000-11238))
+
+- name: Quebec work premium amount for person living alone with family income below the turndown threshold and work income above the requirement
+  period: 2022
+  input:
+    qc_work_premium_requirements: true
+    is_married: false
+    count_children: 0
+    adjusted_family_net_income: 11_000 
+    family_working_income: 2_500
+    province_code: QC
+  output:
+    qc_work_premium_single_amount: 1_025.21
+
+- name: Quebec work premium amount for person living alone with family income below the turndown threshold but work income below the requirement
+  period: 2022
+  input:
+    qc_work_premium_requirements: true
+    is_married: false
+    count_children: 0
+    adjusted_family_net_income: 11_000
+    family_working_income: 2_000
+    province_code: QC
+  output:
+    qc_work_premium_single_amount: 0
+
+- name: Quebec work premium amount for person living alone with family income above the turndown threshold and work income above the requirement
+  period: 2022
+  input:
+    qc_work_premium_requirements: true
+    is_married: false
+    count_children: 0
+    adjusted_family_net_income: 20_000
+    family_working_income: 2_500
+    province_code: QC
+  output:
+    qc_work_premium_single_amount: 149.01 # 1025.21 - 0.1*(20000-11238)
+
+- name: Quebec work premium amount for person living alone with family income above the maximum income and work income above the requirement
+  period: 2022
+  input:
+    qc_work_premium_requirements: true
+    is_married: false
+    count_children: 0
+    adjusted_family_net_income: 50_000
+    family_working_income: 2_500
+    province_code: QC
+  output:
+    qc_work_premium_single_amount: 0 # max(0,1025.21 - 0.1*(50000-11238))

@@ -15,7 +15,7 @@ class qc_adapted_work_premium_couple_amount(Variable):
 
         meet_requirement = household("qc_work_premium_requirements", period)
 
-        # family situation
+        # family income eligibility
         has_spouse = household("is_married", period)
         had_child = household("count_children", period) > 0
 
@@ -27,42 +27,20 @@ class qc_adapted_work_premium_couple_amount(Variable):
         income = household("adjusted_family_net_income", period)
         family_income_eligible = income < family_income_limit
 
-        # personal situation
-        person = household.members
-        disabled = person("is_disabled", period)
-        has_disabled_member = household.sum(nondisabled) > 0
-
-        work_income = person("working_income", period)
-        work_income_eligible = household.sum(work_income) > p.work_income_limit
+        # work income eligibility
+        work_income_eligible = (
+            household("family_working_income", period) > p.work_income_limit
+        )
 
         eligible = (
-            has_disabled_member
-            & meet_requirement
-            & work_income_eligible
-            & family_income_eligible
-        )
-
-        # supplement
-        supplement = parameters(
-            period
-        ).gov.provinces.qc.tax.income.credits.work_premium.supplement
-        # check if both spouses entered the labour market
-        supplement_eligible = (
-            household.sum(work_income > supplement.work_income_eligibility) > 1
-        )
-        supplement_amount = where(
-            supplement_eligible,
-            supplement.couple_amount,
-            supplement.single_amount,
+            meet_requirement & work_income_eligible & family_income_eligible
         )
 
         # credit amount
-        basic_amount = where(
+        credit = where(
             had_child,
             p.couple.with_children.amount,
             p.couple.without_children.amount,
         )
 
-        return eligible * max_(
-            0, basic_amount + has_disabled_member - p.reduction.calc(income)
-        )
+        return eligible * max_(0, credit - p.couple.reduction.calc(income))
