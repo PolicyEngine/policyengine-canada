@@ -1,9 +1,0 @@
-description: Quebec limits its adapted work premium credit to couplw with children with family income less than this amount.
-values:
-  2022-01-01: 69_048
-metadata:
-  unit: currency-CAD
-  label: Quebec adapted work premium maximum family income for couple with children
-  reference:
-    - title: Revenu Quebec - Eligibility Requirements for the Work Premium Tax Credit
-      href: https://www.revenuquebec.ca/en/citizens/tax-credits/work-premium-tax-credits/eligibility-requirements-for-the-work-premium-tax-credits/

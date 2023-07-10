@@ -1,11 +1,12 @@
-description: Quebec limits its work premium credit to individual living alone at or below this amount.
+description: Quebec limits its adapted work premium credit to individual living alone at or below this amount.
 values:
-  2022-01-01: 1_025.21
+  2022-01-01: 1_973.90
 metadata:
   unit: currency-CAD
-  label: Quebec maximum anual work premium amount for individual living alone
+  label: Quebec maximum anual adapted work premium amount for individual living alone
   reference:
     - title: Revenu Quebec - Amount of the Work Premium Tax Credit
       href: https://www.revenuquebec.ca/en/citizens/tax-credits/work-premium-tax-credits/tax-credit-amounts/
     - title: Parameters of the Personal Income Tax System for 2022 - Table 3
       href: http://www.finances.gouv.qc.ca/MAJ2021/documents/en/AUTEN_IncomeTax2022.pdf
+  # Legal reference unavaliable

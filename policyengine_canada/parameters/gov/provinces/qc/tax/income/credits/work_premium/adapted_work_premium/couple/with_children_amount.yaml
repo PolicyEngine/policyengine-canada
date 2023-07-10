@@ -1,11 +1,12 @@
-description: Quebec limits its work premium credit to single parent at or below this amount.
+description: Quebec limits its adapted work premium credit to eligible couple with at least one child at or below this amount.
 values:
-  2022-01-01: 2_651.40
+  2022-01-01: 4_523.20
 metadata:
   unit: currency-CAD
-  label: Quebec maximum anual work premium amount for single parent
+  label: Quebec maximum anual adapted work premium amount for couple with at least one child
   reference:
     - title: Revenu Quebec - Amount of the Work Premium Tax Credit
       href: https://www.revenuquebec.ca/en/citizens/tax-credits/work-premium-tax-credits/tax-credit-amounts/
     - title: Parameters of the Personal Income Tax System for 2022 - Table 3
       href: http://www.finances.gouv.qc.ca/MAJ2021/documents/en/AUTEN_IncomeTax2022.pdf
+  # Legal reference unavaliable

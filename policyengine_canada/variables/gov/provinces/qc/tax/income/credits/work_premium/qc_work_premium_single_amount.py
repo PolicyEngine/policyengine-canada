@@ -15,32 +15,24 @@ class qc_work_premium_single_amount(Variable):
 
         meet_requirement = household("qc_work_premium_requirements", period)
 
-        # family income eligibility
+        # family situation
         single = ~household("is_married", period)
         had_child = household("count_children", period) > 0
 
-        family_income_limit = where(
-            had_child,
-            p.single_parent.family_income_limit,
-            p.person_living_alone.family_income_limit,
-        )
         income = household("adjusted_family_net_income", period)
-        family_income_eligible = income < family_income_limit
 
         # work income eligibility
         work_income_eligible = (
             household("family_working_income", period) > p.work_income_limit
         )
 
-        eligible = (
-            meet_requirement & work_income_eligible & family_income_eligible
-        )
+        eligible = meet_requirement & work_income_eligible & single
 
         # credit amount
         credit = where(
             had_child,
-            p.single_parent.amount,
-            p.person_living_alone.amount,
+            p.single_parent_amount,
+            p.person_living_alone_amount,
         )
 
         return eligible * max_(0, credit - p.reduction.calc(income))
