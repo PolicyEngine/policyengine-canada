@@ -34,8 +34,8 @@ class nl_income_supplement(Variable):
 
         # Supplement phases in at 5.32% between $15,000 and $20,000 of income maxed at $266
         phased_in_income_supplement = min_(
-            p.phase_in_rate.calc(total_family_income),
-            p.income_supplement_max_amount,
+            p.additional_amount.phase_in_rate.calc(total_family_income),
+            p.additional_amount.max_amount,
         )
 
         # Maximum credit
@@ -47,4 +47,8 @@ class nl_income_supplement(Variable):
         )
 
         # Amount phases out at 9% over $40,000
-        return max_(max_amount - p.phase_out_rate.calc(total_family_income), 0)
+        return max_(
+            max_amount
+            - p.additional_amount.phase_out_rate.calc(total_family_income),
+            0,
+        )

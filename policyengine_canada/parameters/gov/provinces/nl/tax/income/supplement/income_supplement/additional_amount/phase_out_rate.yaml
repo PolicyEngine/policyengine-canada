@@ -1,4 +1,4 @@
-description: Newfoundland and Labrador income supplement phase out rate.
+description: Newfoundland and Labrador phases the income supplement out at this rate.
 brackets:
   - threshold: 
       2023-01-01: 0

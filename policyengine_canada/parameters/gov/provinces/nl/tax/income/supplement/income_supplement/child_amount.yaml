@@ -1,9 +1,9 @@
-description: Newfoundland and Labrador income supplement children amount.
+description: Newfoundland and Labrador provides this income supplement amount for children.
 values:
   2022-12-31: 231
 metadata:
   unit: currency-CAD
-  label: Newfoundland and Labrador Income Supplement Children Amount
+  label: Newfoundland and Labrador Income Supplement child amount
   reference:
     - title: Government of Canada - Newfoundland and Labrador Income Supplement
       href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/

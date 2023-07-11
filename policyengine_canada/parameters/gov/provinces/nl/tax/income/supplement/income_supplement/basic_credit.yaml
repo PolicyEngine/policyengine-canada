@@ -1,9 +1,9 @@
-description: Newfoundland and Labrador income supplement basic credit.
+description: Newfoundland and Labrador provides this basic income supplement amount.
 values:
   2022-12-31: 254
 metadata:
   unit: currency-CAD
-  label: Newfoundland and Labrador Income Supplement Basic Credit
+  label: Newfoundland and Labrador Income Supplement basic credit amount
   reference:
     - title: Government of Canada - Newfoundland and Labrador Income Supplement
       href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/
