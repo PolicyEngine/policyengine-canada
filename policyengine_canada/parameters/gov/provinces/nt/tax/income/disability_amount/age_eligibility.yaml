@@ -1,10 +1,10 @@
-description: Northwest Territories provides this base disability amount for self in its Personal Tax Credits Return.
+description: Northwest Territories's disability amount for self needs to check the age eligibility.
 values:
-  2022-12-31: 12_658
+  2022-12-31: 18
 metadata:
-  unit: currency-CAD
+  unit: year
   period: year
-  label: Northwest Territories disability amount base
+  label: Northwest Territories disability amount age eligibility
   reference:
     - title: Northwest Territories Disability Amount For Self (Line 58440)
       href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/northwest-territories/5012-pc/information-residents-northwest-territories.html#P67_5441

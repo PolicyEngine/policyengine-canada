@@ -1,0 +1,36 @@
+- name: 18 years old
+  period: 2022
+  input:
+    province_code: NT
+    age: 18
+    disability?
+  output:
+    nt_disability_amount: 12_658
+
+- name: Above 18 years old
+  period: 2022
+  input:
+    province_code: NT
+    age: 19
+    disability?
+  output:
+    nt_disability_amount: 12_658
+
+- name: Under 18 years old WITHOUT claimed child care and attendant care expenses
+  period: 2022
+  input:
+    province_code: NT
+    age: 17
+    disability?
+  output:
+    nt_disability_amount: 17_832
+
+  - name: Under 18 years old WITH claimed child care and attendant care expenses
+    period: 2022
+    input:
+      province_code: NT
+      age: 17
+      disability?
+      total_expense?
+    output:
+      nt_disability_amount: 
