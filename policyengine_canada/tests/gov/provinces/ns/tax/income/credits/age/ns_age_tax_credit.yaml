@@ -1,0 +1,35 @@
+- name: Nova Scotia Age tax credit; eligible age with eligible taxable income
+  period: 2023
+  input:
+    province_code: NS
+    age: 65
+    ns_taxable_income: 23_999
+  output:
+    ns_age_tax_credit: 1_000
+
+- name: Nova Scotia Age tax credit; ineligible age with eligible taxable income
+  period: 2023
+  input:
+    province_code: NS
+    age: 64
+    ns_taxable_income: 23_999
+  output:
+    ns_age_tax_credit: 0
+
+- name: Nova Scotia Age tax credit; eligible age with ineligible taxable income
+  period: 2023
+  input:
+    province_code: NS
+    age: 65
+    ns_taxable_income: 24_000 
+  output:
+    ns_age_tax_credit: 0
+
+- name: Nova Scotia Age tax credit; ineligible age with ineligible taxable income
+  period: 2023
+  input:
+    province_code: NS
+    age: 64
+    ns_taxable_income: 24_000
+  output:
+    ns_age_tax_credit: 0

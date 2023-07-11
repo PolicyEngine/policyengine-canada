@@ -1,0 +1,23 @@
+- name: pension credit max amount 1617
+  period: 2023
+  input:
+    pension_and_savings_plan_income: 3_525
+    province_code: AB
+  output:
+    ab_pension_credit: 1_617
+
+- name: pension credit pension income amount
+  period: 2023
+  input:
+    pension_and_savings_plan_income: 500
+    province_code: AB
+  output:
+    ab_pension_credit: 500
+
+- name: without pension credit 
+  period: 2023
+  input:
+    pension_and_savings_plan_income: 0
+    province_code: AB
+  output:
+    ab_pension_credit: 0
