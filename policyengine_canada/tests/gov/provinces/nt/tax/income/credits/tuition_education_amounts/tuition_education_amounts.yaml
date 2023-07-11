@@ -1,4 +1,4 @@
-- name: Full time student with more than $100 tuition and no income
+- name: Full time student with tuition more than 100 and no income
   period: 2023
   absolute_error_margin: 0.1
   input:
@@ -12,7 +12,7 @@
   output:
     nt_tuition_education_amounts: 0
 
-# - name: Full time student with less than $100 tuition
+# - name: Full time student with tuition less than 100 and income less than 45462
 #   period: 2023
 #   absolute_error_margin: 0.1
 #   input:
@@ -22,6 +22,7 @@
 #     is_disabled: true
 #     number_of_months_student: 5
 #     tuition_expenses: 90
+#     nt_income_tax_before_credits: 100
 #   output:
 #     nt_tuition_education_amounts: 0
 

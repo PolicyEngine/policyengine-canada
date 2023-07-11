@@ -32,22 +32,14 @@ class nt_tuition_education_amounts(Variable):
             * p.part_time_amount
         )
 
-        tuition_education_amounts = (
-            tuition + (full_time_amount + part_time_amount) * months
-        )
+        tuition_education_amounts = (tuition + (full_time_amount + part_time_amount) * months)
 
-        total_available_tuition_education_amounts = (
-            eligible * tuition_education_amounts
-        )
+        total_available_tuition_education_amounts = eligible * tuition_education_amounts
 
         adjusted_taxable_income = (
             taxable_income
-            if taxable_income <= p.taxable_income_threshold
-            else (
-                (p.taxable_income_threshold / p.taxable_income_rate)
-                - p.taxable_income_threshold
-            )
-        )
+            if taxable_income <= p.reduction.income_threshold
+            else (p.reduction.income_threshold / p.reduction.rate - p.reduction.income_threshold))
 
         return (
             min_(
