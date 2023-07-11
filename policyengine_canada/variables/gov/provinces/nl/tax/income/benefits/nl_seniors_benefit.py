@@ -24,9 +24,7 @@ class nl_seniors_benefit(Variable):
 
         senior_benefit = income_eligibility * (
             p.max_amount
-            - income_eligibility
-            * p.rate
-            * (total_family_income - p.lower_income_threshold)
+            - p.rate * (total_family_income - p.lower_income_threshold)
         )
 
-        return min_(senior_eligibility * senior_benefit, p.max_amount)
+        return senior_eligibility * min_(senior_benefit, p.max_amount)

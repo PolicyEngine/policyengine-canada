@@ -1,4 +1,4 @@
-description: Newfoundland and Labrador seniors’ benefit upper income threshold amount.
+description: Newfoundland and Labrador phases the seniors’ benefit eligible for seniors with income less than this amount.
 values:
   2022-12-31: 42_404
 metadata:
