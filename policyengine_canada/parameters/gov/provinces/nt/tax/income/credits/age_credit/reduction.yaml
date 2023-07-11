@@ -1,5 +1,5 @@
-description: Northwest Territories provides the age credit for filers at and over this age. 
-brackets:
+description: Northwest Territories phases the age credit out at this rate based on the filers income. 
+
   - threshold:
       2021-01-01: 26_941
     rate:
@@ -13,7 +13,7 @@ metadata:
   threshold_unit: currency-CAD
   rate_unit: /1
   unit: currency-CAD
-  label: Nrothwest Territories Age Credit Reduction
+  label: Northwest Territories Age Credit phase out rate
   reference:
   - title: Income Tax Act - Age Credit
     href: https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf

@@ -15,4 +15,4 @@ class nt_age_credit(Variable):
         income = person("nt_taxable_income", period)
         age = person("age", period)
         eligible = age >= p.age_eligibility  # this is a bool
-        return eligible * max_((p.max_amount - p.reduction.calc(income)), 0)
+        return eligible * max_(p.max_amount - p.reduction.calc(income), 0)
