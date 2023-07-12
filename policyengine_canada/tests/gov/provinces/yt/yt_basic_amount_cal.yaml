@@ -1,0 +1,16 @@
+- name: Negative
+  period: 2022
+  input:
+    province_code: YT
+    yt_taxable_income: 235_675
+  output:
+    yt_basic_amount_cal: 13_521
+
+- name: Positive
+  period: 2022
+  absolute_error_margin: 0.01
+  input:
+    province_code: YT
+    yt_taxable_income: 235_674
+  output:
+    yt_basic_amount_cal: 13_521.0210549

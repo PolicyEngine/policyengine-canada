@@ -1,9 +1,9 @@
-description: Every person employed in the Yukon and every pensioner residing in the Yukon can enter a basic personal amount of $15,000.
+description: If Yukon resident estimated net income will be more than $165,430, this is a checking amount
 values:
-  2022-01-01: 15_000
+  2022-01-01: 70_245
 metadata:
   unit: currency-CAD
-  label: Yukon Basic Personal Amount
+  label: Yukon checking amount
   reference:
   - title: Government of Canada - Yukon Personal Tax Credits Return
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1yt/td1yt-23e.pdf 
