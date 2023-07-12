@@ -4,7 +4,6 @@ values:
 metadata:
   unit: currency-CAD
   period: year
-  name: Alberta disability credit.
   label: Alberta disability credit amount.
   reference:
   - title: Alberta personal tax credits return
