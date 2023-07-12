@@ -1,0 +1,40 @@
+- name: Tax Income Below 50_197
+  period: 2023
+  input:
+    province_code: YT
+    yt_taxable_income: 0
+  output:
+    yt_tax_taxable_income: 0
+
+- name: Tax Income Between 50_197 and 100_392
+  period: 2023
+  input:
+    province_code: YT
+    yt_taxable_income: 60_000
+  output:
+    yt_tax_taxable_income: 4_094.88
+
+- name: Tax Income Between 100_392 and 155_625
+  period: 2023
+  input:
+    province_code: YT
+    yt_taxable_income: 110_000
+  output:
+    yt_tax_taxable_income: 8777.432
+
+- name: Tax Income Between 155_625 and 500_000
+  period: 2023
+  input:
+    province_code: YT
+    yt_taxable_income: 200_000
+  output:
+    yt_tax_taxable_income: 19_430.56
+
+- name: Tax Income Above 500_000
+  period: 2023
+  input:
+    province_code: YT
+    yt_taxable_income: 600_000
+  output:
+    yt_tax_taxable_income: 147_830.56
+  

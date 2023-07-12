@@ -24,4 +24,4 @@ class yt_medical_expenses(Variable):
         )
 
         total_amount = claimed_medical_expenses - applicable_amount
-        return max_(total_amount, 0)
+        return max_(claimed_medical_expenses - applicable_amount, 0)
