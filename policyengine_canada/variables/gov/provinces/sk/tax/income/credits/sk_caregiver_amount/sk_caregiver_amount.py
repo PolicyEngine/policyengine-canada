@@ -19,11 +19,12 @@ class sk_caregiver_amount(Variable):
         elderly_age = person("elderly_age", period)
         p = parameters(period).gov.provinces.sk.tax.income.credits.sk_caregiver_amount
 
-        age_threshold = select([is_elderly_dependant == 1, is_infirm_dependant == 1], [p.elderly_age_threshold, p.infirm_age_threshold])
+        age_threshold = select([is_elderly_dependant == 1 & is_infirm_dependant == 0,
+        is_elderly_dependant == 0 & is_infirm_dependant == 1,], 
+        [p.elderly_age_threshold, p.infirm_age_threshold])
         age_eligibility = where(dependant_age >= age_threshold, 1, 0)
         dependants_income_eligibility = where(dependants_income <= p.lower_income_threshold, 1, 0)
 
-        eligibility = relative_live_eligibility & age_eligibility
-
+        eligibility = relative_live_eligibility & age_eligibility & dependants_income_eligibility
 
         return where(eligibility == 1, p.amount, 0)
