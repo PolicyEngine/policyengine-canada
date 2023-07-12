@@ -441,3 +441,8 @@
     added:
     - Alberta pension credit.
   date: 2023-06-29 16:50:09
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia Age tax credit.
+  date: 2023-07-03 02:09:04
