@@ -1,9 +1,50 @@
+- name: 18 years old without disability and dependant
+  period: 2022
+  input:
+    province_code: NT
+    age: 18
+    is_disabled: false
+    childcare_costs: 0
+  output:
+    nt_disability_amount: 0
+
+- name: 18 years old without disability and with dependant
+  period: 2022
+  input:
+    province_code: NT
+    age: 18
+    is_disabled: true
+    childcare_costs: 0
+  output:
+    nt_disability_amount: 0
+
+- name: 18 years old with disability and dependant
+  period: 2022
+  input:
+    province_code: NT
+    age: 18
+    is_disabled: true
+    childcare_costs: 0
+  output:
+    nt_disability_amount: 12_658
+
+- name: 18 years old with disability and without dependant
+  period: 2022
+  input:
+    province_code: NT
+    age: 18
+    is_disabled: true
+    childcare_costs: 0
+  output:
+    nt_disability_amount: 12_658
+
 - name: 18 years old
   period: 2022
   input:
     province_code: NT
     age: 18
-    disability?
+    is_disabled: true
+    childcare_costs: 0
   output:
     nt_disability_amount: 12_658
 
@@ -12,7 +53,8 @@
   input:
     province_code: NT
     age: 19
-    disability?
+    is_disabled: true
+    childcare_costs: 0
   output:
     nt_disability_amount: 12_658
 
@@ -21,7 +63,9 @@
   input:
     province_code: NT
     age: 17
-    disability?
+    is_dependant: true
+    is_disabled: true
+    childcare_costs: 0
   output:
     nt_disability_amount: 17_832
 
@@ -30,7 +74,8 @@
     input:
       province_code: NT
       age: 17
-      disability?
-      total_expense?
+      is_dependant: true
+      is_disabled: true
+      childcare_costs: 0
     output:
       nt_disability_amount: 
