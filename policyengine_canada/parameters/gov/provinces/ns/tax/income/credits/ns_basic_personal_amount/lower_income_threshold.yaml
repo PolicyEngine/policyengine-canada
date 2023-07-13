@@ -3,7 +3,7 @@ values:
   2022-01-01: 25_000
 metadata:
   unit: currency-CAD
-  label: Nova Scotia Basic Personal Amount
+  label: Nova Scotia Basic Personal Amount Lower Income Threshold
   reference: 
   - title: Nova Scotia Basic Personal Amount
     href: https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf

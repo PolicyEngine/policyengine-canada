@@ -1,0 +1,11 @@
+description: Nova Scotia higher income threshold for minimum basic personal amount in basic personal amount.
+values: 
+  2022-01-01: 75_000
+metadata:
+  unit: currency-CAD
+  label: Nova Scotia Basic Personal Amount Higher Income Threshold
+  reference: 
+  - title: Nova Scotia Basic Personal Amount
+    href: https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf
+  - title: Nova Scotia Basic Personal Amount
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5003-d/5003-d-22e.pdf

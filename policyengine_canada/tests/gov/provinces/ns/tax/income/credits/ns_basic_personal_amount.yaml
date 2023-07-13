@@ -1,0 +1,7 @@
+- name: Person has taxable income lower than 25_000
+  period: 2023
+  input:
+    province_code: NS
+    total_individual_pre_tax_income: 24_999
+  output:
+    ns_basic_personal_credits: 11_481
