@@ -1,0 +1,4 @@
+- bump: minor
+  changes:
+    added:
+    - Quebec age amount, amount for a person living alone and amount for retirement income.

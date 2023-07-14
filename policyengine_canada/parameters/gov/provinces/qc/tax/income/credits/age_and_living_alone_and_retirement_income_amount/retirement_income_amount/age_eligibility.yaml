@@ -1,0 +1,11 @@
+description: Quebec provides the amount of retirement income for filers at or above this age.
+values:
+  2022-01-01: 65
+metadata:
+  unit: year
+  label: Quebec amount of retirement income age eligibility
+  reference:
+    - title: Quebec 2022 Income Tax Return Guide - Non-refundable tax credits
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.G-V%282022-12%29.pdf
+    - title: Revenu Quebec – Age amount, amount for a person living alone and amount for retirement income (Line 361)
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/350-to-398-1-non-refundable-tax-credits/line-361/

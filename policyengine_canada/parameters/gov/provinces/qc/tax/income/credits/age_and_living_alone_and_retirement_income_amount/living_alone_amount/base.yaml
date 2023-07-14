@@ -1,0 +1,9 @@
+description: Quebec provides this base amount for individual living alone.
+values:
+  2022-01-01: 1_850
+metadata:
+  unit: currency-CAD
+  label: Quebec living alone amount
+  reference:
+    - title: Schedule B – Tax Relief Measures
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf

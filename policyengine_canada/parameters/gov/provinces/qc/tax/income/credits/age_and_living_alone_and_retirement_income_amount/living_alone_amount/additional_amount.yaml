@@ -1,0 +1,9 @@
+description: Quebec provides this additional amount for a person living alone (single-parent family).
+values:
+  2022-01-01: 2_284
+metadata:
+  unit: currency-CAD
+  label: Quebec living alone amount additional amount for single-parent family
+  reference:
+    - title: Schedule B – Tax Relief Measures
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf

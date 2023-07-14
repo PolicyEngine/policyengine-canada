@@ -1,0 +1,9 @@
+description: Quebec limits its living alone amount for person living with individuals under this age.
+values:
+  2022-01-01: 18
+metadata:
+  unit: year
+  label: Quebec living alone amount cohabitant age limit
+  reference:
+    - title: Schedule B – Tax Relief Measures
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf

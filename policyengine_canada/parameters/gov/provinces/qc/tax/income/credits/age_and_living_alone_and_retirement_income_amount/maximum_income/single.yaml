@@ -1,0 +1,10 @@
+description: Quebec limits its age amount, amount for a person living alone and amount for retirement income for income of household without spouse at or below this amount.
+values:
+  2022-01-01: 92_835
+metadata:
+  unit: currency-CAD
+  label: Quebec age amount, amount for a person living alone and amount for retirement income family income limit for single
+  reference:
+    - title: Schedule B – Tax Relief Measures
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf
+      # You are not entitled to any of these amounts if you did not have a spouse on December 31, 2022, and the amount on line 18 is more than $56,245.

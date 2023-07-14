@@ -1,0 +1,9 @@
+description: Quebec provides this base amount for age amount credit.
+values:
+  2022-01-01: 3_395
+metadata:
+  unit: currency-CAD
+  label: Quebec age amount credit
+  reference:
+    - title: Schedule B – Tax Relief Measures
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf

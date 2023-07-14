@@ -1,0 +1,20 @@
+description: Quebec reduces its age amount,amount for a person living alone and amount for retirement income at this rate based on family income.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Quebec age amount tax credit reduction
+  reference:
+    - title: Schedule B – Tax Relief Measures
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf
+    - title: Revenu Quebec – Age amount, amount for a person living alone and amount for retirement income (Line 361)
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/350-to-398-1-non-refundable-tax-credits/line-361/
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0 # no reduction when income under $36,590
+  - threshold:
+      2022-01-01: 36_590
+    rate:
+      2022-01-01: 0.1875 # The credit is reduced by 18.75% of your income above $36,590
