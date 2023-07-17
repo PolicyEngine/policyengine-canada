@@ -1,0 +1,9 @@
+description: Nova Scotia limits its Age Tax Credit to people this age or older.
+values:
+  2022-12-31: 65
+metadata:
+  unit: year
+  label: Nova Scotia Age tax credit age eligibility
+  reference:
+  - title: Government of Canada - Nova Scotia Information Guide - Age tax credit
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc/information-residents-nova-scotia.html#P90-4569
