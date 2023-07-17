@@ -9,9 +9,9 @@ class sk_head_eligibility(Variable):
     defined_for = ProvinceCode.SK
 
     def formula(person, period, parameters):
-        live_together = person("joint_living", period)
+        household = person.household
+        live_together = household("joint_living", period)
         spouse = person("is_spouse", period)
         support = person("is_supportive", period)
-        spouse_eligible = (~spouse) | (spouse & ~live_together & ~support)
 
-        return spouse_eligible
+        return (~spouse) | (spouse & ~live_together & ~support)
