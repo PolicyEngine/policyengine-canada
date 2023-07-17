@@ -1,0 +1,21 @@
+- name: Ineligible because spouse must make the claim
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 20_000
+    individual_net_income: 30_000
+    sk_count_children: 1
+
+  output:
+    sk_child_amount: 0
+
+- name: Eligible because head make the claim for two children
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 30_000
+    individual_net_income: 20_000
+    sk_count_children: 2
+
+  output:
+    sk_child_amount: 13_400
