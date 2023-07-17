@@ -12,7 +12,7 @@ class sk_spouse_or_common_law_partner_credit(Variable):
         p = parameters(
             period
         ).gov.provinces.sk.tax.income.credits.spouse_or_common_law_partner_amount
-        person = household.people
+        person = household.members
         spouse_income = person("spouse_income", period)
         live_with_spouse = household("joint_living", period) & person(
             "is_spouse", period
