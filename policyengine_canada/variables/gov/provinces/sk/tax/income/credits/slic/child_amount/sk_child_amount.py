@@ -16,6 +16,9 @@ class sk_child_amount(Variable):
         count_children = household("sk_count_children", peroid)
         spouse_income = person("spouse_income", period)
         head_income = person("individual_net_income", period)
-        eligible = head_income < spouse_income
+        claim = head_income < spouse_income
+        head_eligible = person("sk_head_eligibility", period)
+        dependant_eligible = person("sk_dependant_eligibility", period)
+        eligible = (head_eligible * dependant_eligible == 0)
 
-        return eligible * count_children * p.maximum_child_amount
+        return eligible * claim * count_children * p.maximum_child_amount

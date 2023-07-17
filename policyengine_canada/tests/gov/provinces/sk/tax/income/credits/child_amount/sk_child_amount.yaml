@@ -5,9 +5,26 @@
     spouse_income: 20_000
     individual_net_income: 30_000
     sk_count_children: 1
+    sk_head_eligibility: false
+    sk_dependant_eligibility: false
 
   output:
     sk_child_amount: 0
+
+
+- name: Ineligible because the amount for an eligible dependant has been claimed.
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 30_000
+    individual_net_income: 20_000
+    sk_count_children: 1
+    sk_head_eligibility: true
+    sk_dependant_eligibility: true
+
+  output:
+    sk_child_amount: 0
+
 
 - name: Eligible because head make the claim for two children
   period: 2023
@@ -16,6 +33,22 @@
     spouse_income: 30_000
     individual_net_income: 20_000
     sk_count_children: 2
+    sk_head_eligibility: false
+    sk_dependant_eligibility: false
 
   output:
     sk_child_amount: 13_400
+
+
+- name: Eligible because head make the claim for two children
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 30_000
+    individual_net_income: 20_000
+    sk_count_children: 1
+    sk_head_eligibility: false
+    sk_dependant_eligibility: false
+
+  output:
+    sk_child_amount: 6_700
