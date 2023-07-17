@@ -3,9 +3,8 @@
   input:
     province_code: SK
     is_live_together: False
-    child_credit: 
   output:
-    sk_caregiver_credit: 0
+    sk_caregiver_amount: 0
 
 - name: One Elderly 64-years-old Dependant with less than 17_770 income
   period: 2024
@@ -15,9 +14,9 @@
     is_live_together: true
     is_elderly_dependant: ture
     is_infirm_dependant: Fasle
-    dependants_age: 64
+    dependant_age: 64
   output:
-    sk_caregiver_credit: 0
+    sk_caregiver_amount: 0
 
 - name: One Elderly 65-years-old Dependant with less than 17_770 income
   period: 2024
@@ -27,9 +26,9 @@
     is_live_together: true
     is_elderly_dependant: ture
     is_infirm_dependant: Fasle
-    dependants_age: 65
+    dependant_age: 65
   output:
-    sk_caregiver_credit: 10_405
+    sk_caregiver_amount: 10_405
 
 - name: One Elderly 66-years-old Dependant with an income of 17_770 
   period: 2024
@@ -39,9 +38,9 @@
     is_live_together: true
     is_elderly_dependant: ture
     is_infirm_dependant: Fasle
-    dependants_age: 66
+    dependant_age: 66
   output:
-    sk_caregiver_credit: 10_405
+    sk_caregiver_amount: 10_405
 
 - name: One Elderly 65-years-old Dependant with an income between 17_770 and 28_175
   period: 2024
@@ -51,9 +50,9 @@
     is_live_together: true
     is_elderly_dependant: ture
     is_infirm_dependant: Fasle
-    dependants_age: 65
+    dependant_age: 65
   output:
-    sk_caregiver_credit: 8_175
+    sk_caregiver_amount: 8_175
 
 - name: One Elderly 65-years-old Dependant with an income of 28_175
   period: 2024
@@ -63,9 +62,9 @@
     is_live_together: true
     is_elderly_dependant: ture
     is_infirm_dependant: Fasle
-    dependants_age: 65
+    dependant_age: 65
   output:
-    sk_caregiver_credit: 0
+    sk_caregiver_amount: 0
 
 - name: One Elderly 65-years-old Dependant with an income more than 28_175
   period: 2024
@@ -75,9 +74,9 @@
     is_live_together: true
     is_elderly_dependant: ture
     is_infirm_dependant: Fasle
-    dependants_age: 65
+    dependant_age: 65
   output:
-    sk_caregiver_credit: 0
+    sk_caregiver_amount: 0
 
 - name: One infirm 17-years-old Dependant with less than 17_770 income
   period: 2024
@@ -87,9 +86,9 @@
     is_live_together: true
     is_elderly_dependant: false
     is_infirm_dependant: true
-    dependants_age: 17
+    dependant_age: 17
   output:
-    sk_caregiver_credit: 0
+    sk_caregiver_amount: 0
 
 - name: One infirm 18-years-old Dependant with less than 17_770 income
   period: 2024
@@ -99,9 +98,9 @@
     is_live_together: true
     is_elderly_dependant: false
     is_infirm_dependant: true
-    dependants_age: 18
+    dependant_age: 18
   output:
-    sk_caregiver_credit: 10_405
+    sk_caregiver_amount: 10_405
 
 - name: One infirm 19-years-old Dependant with 17_770 income
   period: 2024
@@ -111,9 +110,9 @@
     is_live_together: true
     is_elderly_dependant: false
     is_infirm_dependant: true
-    dependants_age: 19
+    dependant_age: 19
   output:
-    sk_caregiver_credit: 10_405
+    sk_caregiver_amount: 10_405
 
 - name: One infirm 19-years-old Dependant with an income between 17_770 and 28_175
   period: 2024
@@ -123,9 +122,9 @@
     is_live_together: true
     is_elderly_dependant: false
     is_infirm_dependant: true
-    dependants_age: 19
+    dependant_age: 19
   output:
-    sk_caregiver_credit: 7_175
+    sk_caregiver_amount: 7_175
 
 - name: One infirm 21-years-old Dependant with an income of 28_175
   period: 2024
@@ -135,9 +134,9 @@
     is_live_together: true
     is_elderly_dependant: false
     is_infirm_dependant: true
-    dependants_age: 21
+    dependant_age: 21
   output:
-    sk_caregiver_credit: 0
+    sk_caregiver_amount: 0
 
 - name: One infirm 18-years-old Dependant with an income more than 28_175
   period: 2024
@@ -147,6 +146,6 @@
     is_live_together: true
     is_elderly_dependant: false
     is_infirm_dependant: true
-    dependants_age: 18
+    dependant_age: 18
   output:
-    sk_caregiver_credit: 0
+    sk_caregiver_amount: 0
