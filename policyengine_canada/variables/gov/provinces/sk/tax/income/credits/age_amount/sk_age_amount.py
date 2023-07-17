@@ -20,5 +20,6 @@ class sk_age_amount(Variable):
             * (income - p.net_income_base_amount)
             * p.reduction_rate
         )
+        reduced_amount = p.maximum_age_amount - reduction
 
-        return max_(0, eligible * (p.maximum_age_amount - reduction))
+        return max_(0, eligible * reduced_amount)
