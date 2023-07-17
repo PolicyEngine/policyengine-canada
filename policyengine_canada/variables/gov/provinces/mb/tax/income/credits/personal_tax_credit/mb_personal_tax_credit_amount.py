@@ -3,15 +3,17 @@ from policyengine_canada.model_api import *
 
 class mb_personal_tax_credit_amount(Variable):
     value_type = bool
-    entity = Person
+    entity = Household
     label = "Manitoba personal tax credit"
     definition_period = YEAR
     defined_for = ProvinceCode.MB
 
-    def formula(person, period, parameters):
+    def formula(household period, parameters):
         p = parameters(
             period
         ).gov.provinces.mb.tax.income.credits.personal_tax_credit
+
+
 
         spouse = person("is_spouse", period)
         head = person("is_head", period)
@@ -48,9 +50,23 @@ class mb_personal_tax_credit_amount(Variable):
         total_credits = head_spouse_amount + eligible_dependant_amount + disability_claims_amount + disabled_dependants_amount + eligible_children_amount
 
         #household net income
-        net_income = household("household_net_income", period)
+        net_income = household("adjusted_family_net_income", period)
 
         total_personal_tax_credit = total_credits - (0.01 * net_income)
 
 
         return total_personal_tax_credit
+
+        person = household.members
+
+        # check if dependant
+        dependant = person("")
+        # disablity
+        disabled = person("is_disabled", period)
+        # age
+        age = person("age", period) 
+
+        age_eligible = age < p.age_eligibility
+
+        disabled_claim = household.sum(dependant * disabled)
+        
