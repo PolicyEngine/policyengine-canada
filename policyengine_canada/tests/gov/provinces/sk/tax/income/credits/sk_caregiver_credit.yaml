@@ -1,8 +1,152 @@
-- name: Dependants do not live with the person
+- name: Do not have dependants living with the person
   period: 2024
   input:
     province_code: SK
-    sk_low_income_credit_base: 1_000
-    adjusted_family_net_income: 35_902
+    is_live_together: False
+    child_credit: 
+  output:
+    sk_caregiver_credit: 0
+
+- name: One Elderly 64-years-old Dependant with less than 17_770 income
+  period: 2024
+  input:
+    province_code: SK
+    dependants_income: 17_769
+    is_live_together: true
+    is_elderly_dependant: ture
+    is_infirm_dependant: Fasle
+    dependants_age: 64
+  output:
+    sk_caregiver_credit: 0
+
+- name: One Elderly 65-years-old Dependant with less than 17_770 income
+  period: 2024
+  input:
+    province_code: SK
+    dependants_income: 17_769
+    is_live_together: true
+    is_elderly_dependant: ture
+    is_infirm_dependant: Fasle
+    dependants_age: 65
+  output:
+    sk_caregiver_credit: 10_405
+
+- name: One Elderly 66-years-old Dependant with an income of 17_770 
+  period: 2024
+  input:
+    province_code: SK
+    dependants_income: 17_770
+    is_live_together: true
+    is_elderly_dependant: ture
+    is_infirm_dependant: Fasle
+    dependants_age: 66
+  output:
+    sk_caregiver_credit: 10_405
+
+- name: One Elderly 65-years-old Dependant with an income between 17_770 and 28_175
+  period: 2024
+  input:
+    province_code: SK
+    dependants_income: 20_000
+    is_live_together: true
+    is_elderly_dependant: ture
+    is_infirm_dependant: Fasle
+    dependants_age: 65
+  output:
+    sk_caregiver_credit: 8_175
+
+- name: One Elderly 65-years-old Dependant with an income of 28_175
+  period: 2024
+  input:
+    province_code: SK
+    dependants_income: 28_175
+    is_live_together: true
+    is_elderly_dependant: ture
+    is_infirm_dependant: Fasle
+    dependants_age: 65
+  output:
+    sk_caregiver_credit: 0
+
+- name: One Elderly 65-years-old Dependant with an income more than 28_175
+  period: 2024
+  input:
+    province_code: SK
+    dependants_income: 30_000
+    is_live_together: true
+    is_elderly_dependant: ture
+    is_infirm_dependant: Fasle
+    dependants_age: 65
+  output:
+    sk_caregiver_credit: 0
+
+- name: One infirm 17-years-old Dependant with less than 17_770 income
+  period: 2024
+  input:
+    province_code: SK
+    dependants_income: 17_769
+    is_live_together: true
+    is_elderly_dependant: false
+    is_infirm_dependant: true
+    dependants_age: 17
+  output:
+    sk_caregiver_credit: 0
+
+- name: One infirm 18-years-old Dependant with less than 17_770 income
+  period: 2024
+  input:
+    province_code: SK
+    dependants_income: 17_769
+    is_live_together: true
+    is_elderly_dependant: false
+    is_infirm_dependant: true
+    dependants_age: 18
+  output:
+    sk_caregiver_credit: 10_405
+
+- name: One infirm 19-years-old Dependant with 17_770 income
+  period: 2024
+  input:
+    province_code: SK
+    dependants_income: 17_770
+    is_live_together: true
+    is_elderly_dependant: false
+    is_infirm_dependant: true
+    dependants_age: 19
+  output:
+    sk_caregiver_credit: 10_405
+
+- name: One infirm 19-years-old Dependant with an income between 17_770 and 28_175
+  period: 2024
+  input:
+    province_code: SK
+    dependants_income: 21_000
+    is_live_together: true
+    is_elderly_dependant: false
+    is_infirm_dependant: true
+    dependants_age: 19
+  output:
+    sk_caregiver_credit: 7_175
+
+- name: One infirm 21-years-old Dependant with an income of 28_175
+  period: 2024
+  input:
+    province_code: SK
+    dependants_income: 28_175
+    is_live_together: true
+    is_elderly_dependant: false
+    is_infirm_dependant: true
+    dependants_age: 21
+  output:
+    sk_caregiver_credit: 0
+
+- name: One infirm 18-years-old Dependant with an income more than 28_175
+  period: 2024
+  input:
+    province_code: SK
+    dependants_income: 28_176
+    is_live_together: true
+    is_elderly_dependant: false
+    is_infirm_dependant: true
+    dependants_age: 18
   output:
     sk_caregiver_credit: 0

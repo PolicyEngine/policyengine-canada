@@ -23,8 +23,10 @@ class sk_caregiver_amount(Variable):
         is_elderly_dependant == 0 & is_infirm_dependant == 1,], 
         [p.elderly_age_threshold, p.infirm_age_threshold])
         age_eligibility = where(dependant_age >= age_threshold, 1, 0)
-        dependants_income_eligibility = where(dependants_income <= p.lower_income_threshold, 1, 0)
+        
+        eligibility = relative_live_eligibility & age_eligibility
 
-        eligibility = relative_live_eligibility & age_eligibility & dependants_income_eligibility
-
-        return where(eligibility == 1, p.amount, 0)
+        return select([eligibility == 0 | dependants_income >= p.higher_income_threshold,
+                       eligibility == 1 & dependants_income <= p.lower_income_threshold,
+                       eligibility == 1 & p.higher_income_threshold > dependants_income > p.lower_income_threshold],
+                    [0, p.amount, max(0,p.higher_income_threshold-dependants_income)])
