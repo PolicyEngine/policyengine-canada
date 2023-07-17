@@ -15,7 +15,8 @@ class yt_basic_personal_amount(Variable):
         ).gov.provinces.yt.tax.income.credits.basic_personal_amount
         exceedance = income - p.income_threshold
         eligible = exceedance >= 0
-        percent = max_(0, (p.scale_value - exceedance) / p.scale_value)
+        pct = (p.scale_value - exceedance) / p.scale_value
+        percent = max_(0, pct)
         return (
             (percent * p.applicable_amount) * eligible
             + p.base_amount
