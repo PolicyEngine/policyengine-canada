@@ -13,12 +13,12 @@ class sk_child_amount(Variable):
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.sk.tax.income.credits.child_amount
         household = person.household
-        count_children = household("sk_count_children", peroid)
+        count_children = household("sk_count_children", period)
         spouse_income = person("spouse_income", period)
         head_income = person("individual_net_income", period)
         claim = head_income < spouse_income
         head_eligible = person("sk_head_eligibility", period)
         dependant_eligible = person("sk_dependant_eligibility", period)
-        eligible = (head_eligible * dependant_eligible == 0)
+        eligible = head_eligible * dependant_eligible == 0
 
         return eligible * claim * count_children * p.maximum_child_amount
