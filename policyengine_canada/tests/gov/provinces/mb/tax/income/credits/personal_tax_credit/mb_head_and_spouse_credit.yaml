@@ -1,0 +1,47 @@
+- name: Manitoba spouse and non-disabled, non-elderly head tax credit
+  period: 2022
+  input:
+    people:
+      c1:
+        age: 50
+        is_head: true
+        is_disabled: false
+        mb_spouse_credit_amount: 308
+    households:
+      household:
+        members: [c1]
+        province_code: MB
+  output:
+    mb_head_and_spouse_amount: 503 # 308 + 195 = 503
+
+- name: Manitoba spouse and disabled, non-elderly head tax credit
+  period: 2022
+  input:
+    people:
+      c1:
+        age: 50
+        is_disabled: true
+        is_head: true
+        mb_spouse_credit_amount: 308
+    households:
+      household:
+        members: [c1]
+        province_code: MB
+  output:
+    mb_head_and_spouse_amount: 616 # 308 + 195 + 113 = 616
+
+- name: Manitoba spouse and disabled, elderly head tax credit
+  period: 2022
+  input:
+    people:
+      c1: 
+        age: 70
+        is_disabled: true
+        is_head: true
+        mb_spouse_credit_amount: 308
+    households:
+      household:
+        members: [c1]
+        province_code: MB
+  output:
+    mb_head_and_spouse_amount: 729 # 308 + 195 + 113 + 113 = 729

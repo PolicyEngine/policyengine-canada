@@ -1,4 +1,4 @@
-- name: 
+- name: Manitoba personal tax credit amount with two dependants
   period: 2022
   input:
     people:
@@ -6,13 +6,11 @@
         is_dependant: true
         age: 10
         is_disabled: true
-      c2:
-        is_dependnt: true
-        age: 20
-        is_disabled: false
-    household:
+        mb_head_and_spouse_amount: 616
+    households:
+      household:
+        members: [c1]
         province_code: MB
-        members: [c1,c2]
-        income
+        adjusted_family_net_income: 50_000
   output:
-    child_disability_benefit:
+    mb_personal_tax_credit: 450 # 950 - 50000 * 0.01 = 450

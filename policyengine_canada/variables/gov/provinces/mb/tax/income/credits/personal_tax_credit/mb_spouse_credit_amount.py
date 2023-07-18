@@ -2,7 +2,7 @@ from policyengine_canada.model_api import *
 
 
 class mb_spouse_credit_amount(Variable):
-    value_type = bool
+    value_type = float
     entity = Person
     label = "Manitoba spouse tax credit"
     definition_period = YEAR
@@ -14,12 +14,16 @@ class mb_spouse_credit_amount(Variable):
         ).gov.provinces.mb.tax.income.credits.personal_tax_credit
 
         spouse = person("is_spouse", period)
-        age_eligibility = person("age", period) >= 65
-        disabled = person("is_disabled", period) 
+        age_eligibility = person("age", period) >= p.elderly_age_amount
+        disabled = person("is_disabled", period)
 
         age_eligible_spouse = spouse & age_eligibility
         disabled_spouse = spouse & disabled
 
-        spouse_credit_amount = age_eligible_spouse * p.age_credit + disabled_spouse * p.disability_credit
+        spouse_credit_amount = (
+            spouse * p.basic_credit
+            + age_eligible_spouse * p.age_credit
+            + disabled_spouse * p.disability_credit
+        )
 
         return spouse_credit_amount
