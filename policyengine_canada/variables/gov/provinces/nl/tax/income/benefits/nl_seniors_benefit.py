@@ -20,11 +20,8 @@ class nl_seniors_benefit(Variable):
         personal_income = person("individual_net_income", period)
         total_family_income = spouse_income + personal_income
 
-        income_eligibility = total_family_income < p.upper_income_threshold
-
-        senior_benefit = income_eligibility * (
-            p.max_amount
-            - p.rate * (total_family_income - p.lower_income_threshold)
+        senior_benefit = p.max_amount - (
+            p.rate * (total_family_income - p.lower_income_threshold)
         )
 
-        return senior_eligibility * min_(senior_benefit, p.max_amount)
+        return max_(senior_eligibility * min_(senior_benefit, p.max_amount), 0)
