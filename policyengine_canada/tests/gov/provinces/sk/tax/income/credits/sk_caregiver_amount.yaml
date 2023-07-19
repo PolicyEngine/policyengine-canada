@@ -11,9 +11,9 @@
   input:
     province_code: SK
     dependants_income: 17_769
-    is_live_together: true
-    is_elderly_dependant: ture
-    is_infirm_dependant: Fasle
+    is_live_together: True
+    is_elderly_dependant: True
+    is_infirm_dependant: False
     dependant_age: 64
   output:
     sk_caregiver_amount: 0
@@ -23,9 +23,9 @@
   input:
     province_code: SK
     dependants_income: 17_769
-    is_live_together: true
-    is_elderly_dependant: ture
-    is_infirm_dependant: Fasle
+    is_live_together: True
+    is_elderly_dependant: True
+    is_infirm_dependant: False
     dependant_age: 65
   output:
     sk_caregiver_amount: 10_405
@@ -35,9 +35,9 @@
   input:
     province_code: SK
     dependants_income: 17_770
-    is_live_together: true
-    is_elderly_dependant: ture
-    is_infirm_dependant: Fasle
+    is_live_together: True
+    is_elderly_dependant: True
+    is_infirm_dependant: False
     dependant_age: 66
   output:
     sk_caregiver_amount: 10_405
@@ -47,9 +47,9 @@
   input:
     province_code: SK
     dependants_income: 20_000
-    is_live_together: true
-    is_elderly_dependant: ture
-    is_infirm_dependant: Fasle
+    is_live_together: True
+    is_elderly_dependant: True
+    is_infirm_dependant: False
     dependant_age: 65
   output:
     sk_caregiver_amount: 8_175
@@ -59,9 +59,9 @@
   input:
     province_code: SK
     dependants_income: 28_175
-    is_live_together: true
-    is_elderly_dependant: ture
-    is_infirm_dependant: Fasle
+    is_live_together: True
+    is_elderly_dependant: True
+    is_infirm_dependant: False
     dependant_age: 65
   output:
     sk_caregiver_amount: 0
@@ -71,9 +71,9 @@
   input:
     province_code: SK
     dependants_income: 30_000
-    is_live_together: true
-    is_elderly_dependant: ture
-    is_infirm_dependant: Fasle
+    is_live_together: True
+    is_elderly_dependant: True
+    is_infirm_dependant: False
     dependant_age: 65
   output:
     sk_caregiver_amount: 0
@@ -83,9 +83,9 @@
   input:
     province_code: SK
     dependants_income: 17_769
-    is_live_together: true
-    is_elderly_dependant: false
-    is_infirm_dependant: true
+    is_live_together: True
+    is_elderly_dependant: False
+    is_infirm_dependant: True
     dependant_age: 17
   output:
     sk_caregiver_amount: 0
@@ -95,9 +95,9 @@
   input:
     province_code: SK
     dependants_income: 17_769
-    is_live_together: true
-    is_elderly_dependant: false
-    is_infirm_dependant: true
+    is_live_together: True
+    is_elderly_dependant: False
+    is_infirm_dependant: True
     dependant_age: 18
   output:
     sk_caregiver_amount: 10_405
@@ -107,9 +107,9 @@
   input:
     province_code: SK
     dependants_income: 17_770
-    is_live_together: true
-    is_elderly_dependant: false
-    is_infirm_dependant: true
+    is_live_together: True
+    is_elderly_dependant: False
+    is_infirm_dependant: True
     dependant_age: 19
   output:
     sk_caregiver_amount: 10_405
@@ -119,9 +119,9 @@
   input:
     province_code: SK
     dependants_income: 21_000
-    is_live_together: true
-    is_elderly_dependant: false
-    is_infirm_dependant: true
+    is_live_together: True
+    is_elderly_dependant: False
+    is_infirm_dependant: True
     dependant_age: 19
   output:
     sk_caregiver_amount: 7_175
@@ -131,9 +131,9 @@
   input:
     province_code: SK
     dependants_income: 28_175
-    is_live_together: true
-    is_elderly_dependant: false
-    is_infirm_dependant: true
+    is_live_together: True
+    is_elderly_dependant: False
+    is_infirm_dependant: True
     dependant_age: 21
   output:
     sk_caregiver_amount: 0
@@ -143,9 +143,9 @@
   input:
     province_code: SK
     dependants_income: 28_176
-    is_live_together: true
-    is_elderly_dependant: false
-    is_infirm_dependant: true
+    is_live_together: True
+    is_elderly_dependant: False
+    is_infirm_dependant: True
     dependant_age: 18
   output:
     sk_caregiver_amount: 0
