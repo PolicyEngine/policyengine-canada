@@ -6,5 +6,5 @@ class in_whitehorse(Variable):
     entity = Household
     label = "Household that resides in Whitehorse"
     unit = CAD
-    documentation = "A person who lived in Whitehorse"
     definition_period = YEAR
+    defined_for = ProvinceCode.YT
