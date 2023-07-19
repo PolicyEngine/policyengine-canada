@@ -1,13 +1,13 @@
 from policyengine_canada.model_api import *
 
 
-class ns_training_allowance(Variable):
+class rent_from_boarders(Variable):
     value_type = float
     entity = Person
-    label = "Nova Scotia training allowance"
+    label = "rent income from boarders living"
     unit = CAD
+    documentation = "rent income received from boarders living"
     definition_period = YEAR
     reference = (
         "https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4"
     )
-    defined_for = ProvinceCode.NS

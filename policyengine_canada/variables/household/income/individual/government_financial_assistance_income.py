@@ -10,4 +10,6 @@ class government_financial_assistance_payments(Variable):
         "Income from financial assistance provided by the government"
     )
     definition_period = YEAR
-    reference = ""
+    reference = (
+        "https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4"
+    )
