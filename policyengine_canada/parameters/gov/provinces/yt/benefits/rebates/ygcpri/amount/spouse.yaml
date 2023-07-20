@@ -1,0 +1,15 @@
+description: Yukon provides this base amount for the spouse in Yukon Government carbon price rebate (YGCPRI).
+values:
+  2019-07-01: 86
+  2020-07-01: 192
+  2021-07-01: 176
+  2022-07-01: 320
+  2023-07-01: 372
+metadata:
+  unit: currency-CAD
+  label: Yukon spouse YGCPRI base
+  reference:
+  - title: Yukon Government carbon price rebate - Individuals (YGCPRI)
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/yukon.html#YGCPRI
+  - title: Rebates for Yukon individuals
+    href: https://yukon.ca/en/carbon-rebate#rebates-for-yukon-individuals
