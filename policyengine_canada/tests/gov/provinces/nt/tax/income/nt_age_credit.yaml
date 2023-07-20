@@ -1,26 +1,53 @@
-- name: Under age amount
+- name: Under age amount 2022
   period: 2022
   input:
     province_code: NT
     age: 64
-    nt_taxable_income: 26_941
+    nt_taxable_income: 39_826
   output:
     nt_age_credit: 0
 
-- name: Under taxable income
+- name: Under taxable income 2022
   period: 2022
   input:
     province_code: NT
     age: 65
-    nt_taxable_income: 26_941
+    nt_taxable_income: 39_825
   output:
-    nt_age_credit: 5_405   
+    nt_age_credit: 7_635
 
-- name: Calculation #5_405 - (27_000 - 26_941) * 0.15
+- name: Calculation 2022
   period: 2022
   input:
     province_code: NT
     age: 65
-    nt_taxable_income: 27_000
+    nt_taxable_income: 40_100
   output:
-    nt_age_credit: 5396.3  
+    nt_age_credit: 1_620
+
+- name: Under age amount 2023
+  period: 2023
+  input:
+    province_code: NT
+    age: 64
+    nt_taxable_income: 42_335
+  output:
+    nt_age_credit: 0
+
+- name: Under taxable income 2023
+  period: 2023
+  input:
+    province_code: NT
+    age: 65
+    nt_taxable_income: 42_334
+  output:
+    nt_age_credit: 8_116
+
+- name: Calculation 2023
+  period: 2023
+  input:
+    province_code: NT
+    age: 65
+    nt_taxable_income: 45_000
+  output:
+    nt_age_credit: 1_366
