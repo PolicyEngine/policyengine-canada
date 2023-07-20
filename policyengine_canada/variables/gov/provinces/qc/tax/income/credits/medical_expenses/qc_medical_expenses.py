@@ -16,7 +16,7 @@ class qc_medical_expenses(Variable):
         medical_expenses = person("medical_expenses", period)
 
         # age eligibility
-        age_eligible = person("is_adult", period)
+        age_eligible = person("age", period) >= p.age_eligibility
 
         # work income eligibility
         work_income_eligible = (
@@ -25,7 +25,7 @@ class qc_medical_expenses(Variable):
 
         # compare family income with maximum family income
         income = person("individual_net_income", period)
-        spouse_income = person("qc_medical_expenses_spouse_income", period)
+        spouse_income = person("spouse_income", period)
         family_income_eligible = (
             income + spouse_income
         ) < p.maximum_family_income.calc(medical_expenses)

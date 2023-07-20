@@ -60,3 +60,7 @@ metadata:
   reference:
     - title: Revenu Quebec - Refundable Tax Credit for Medical Expenses (Line 462 - Point 1)
       href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/451-to-480-refund-or-balance-due/line-462/point-1/
+    - title: Quebec I-3 - Taxation Act, Part I, Book IX, Title III, Chapter III.1, DIVISION II.18, 1029.8.118.
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#ga:l_i-gb:l_ix-gc:l_iii-gd:l_iii_1-ge:l_ii_18-h1
+      # The credit is reduced by 5% when household income reaches $18,600
+      # Exact numbers of credits and family income are unavaliable

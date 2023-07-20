@@ -2,10 +2,10 @@
   period: 2022
   input:
     medical_expenses: 3_000
-    is_adult: true
+    age: 18
     working_income: 4_000 
     individual_net_income: 20_000
-    qc_medical_expenses_spouse_income: 15_000
+    spouse_income: 15_000
     province_code: QC
   output:
     qc_medical_expenses: 3_000
@@ -14,10 +14,10 @@
   period: 2022
   input:
     medical_expenses: 3_000
-    is_adult: true
+    age: 19
     working_income: 3_000 # below the base work income
     individual_net_income: 20_000
-    qc_medical_expenses_spouse_income: 15_000
+    spouse_income: 15_000
     province_code: QC
   output:
     qc_medical_expenses: 0
@@ -26,10 +26,22 @@
   period: 2022
   input:
     medical_expenses: 3_000
-    is_adult: true
+    age: 20
     working_income: 5_000
     individual_net_income: 20_000
-    qc_medical_expenses_spouse_income: 20_000 # over the maximum family income
+    spouse_income: 20_000 # over the maximum family income
+    province_code: QC
+  output:
+    qc_medical_expenses: 0
+
+- name: Quebec non-eligible medical expenses tax credit due to age
+  period: 2022
+  input:
+    medical_expenses: 3_000
+    age: 16
+    working_income: 5_000
+    individual_net_income: 20_000
+    spouse_income: 10_000
     province_code: QC
   output:
     qc_medical_expenses: 0
