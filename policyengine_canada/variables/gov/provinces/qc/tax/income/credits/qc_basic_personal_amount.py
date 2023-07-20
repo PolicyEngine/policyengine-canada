@@ -10,4 +10,7 @@ class qc_basic_personal_amount(Variable):
     defined_for = ProvinceCode.QC
     reference = "https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D-V%282022-12%29.pdf"
 
-    adds = "gov.provinces.qc.tax.income.credits.basic_personal_amount"
+    def formula(household, period, parameters):
+        p = parameters(period).gov.provinces.qc.tax.income.credits
+
+        return p.basic_personal_amount
