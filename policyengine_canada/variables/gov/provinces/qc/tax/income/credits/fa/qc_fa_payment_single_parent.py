@@ -32,44 +32,40 @@ class qc_fa_payment_single_parent(Variable):
                 ],
                 # Results.
                 [
-                    p.single_parent_family.one_child_amount.calc(income),
-                    p.single_parent_family.two_children_amount.calc(income),
-                    p.single_parent_family.three_children_amount.calc(income),
-                    p.single_parent_family.four_children_amount.calc(income),
-                    p.single_parent_family.five_children_amount.calc(income),
+                    p.amount.single_parent_family.one_child.calc(income),
+                    p.amount.single_parent_family.two_children.calc(income),
+                    p.amount.single_parent_family.three_children.calc(income),
+                    p.amount.single_parent_family.four_children.calc(income),
+                    p.amount.single_parent_family.five_children.calc(income),
                 ],
                 default=0,
             )
         )
 
         # number of shared custody children in the household
-        shared_custody_children = children - full_custody_children
-        shared_custody_payment = (
-            p.shared_custody_reduction
-            * no_spouse
-            * (
-                select(
-                    # number of children.
-                    [
-                        shared_custody_children == 1,
-                        shared_custody_children == 2,
-                        shared_custody_children == 3,
-                        shared_custody_children == 4,
-                        shared_custody_children == 5,
-                    ],
-                    # Results.
-                    [
-                        p.two_parent_family.one_child_amount.calc(income),
-                        p.two_parent_family.two_children_amount.calc(income),
-                        p.two_parent_family.three_children_amount.calc(income),
-                        p.two_parent_family.four_children_amount.calc(income),
-                        p.two_parent_family.five_children_amount.calc(income),
-                    ],
-                    default=0,
-                )
-            )
+        shared_custody_children = max_(children - full_custody_children, 0)
+        shared_custody_amount = select(
+            # number of children.
+            [
+                shared_custody_children == 1,
+                shared_custody_children == 2,
+                shared_custody_children == 3,
+                shared_custody_children == 4,
+                shared_custody_children == 5,
+            ],
+            # Results.
+            [
+                p.amount.two_parent_family.one_child.calc(income),
+                p.amount.two_parent_family.two_children.calc(income),
+                p.amount.two_parent_family.three_children.calc(income),
+                p.amount.two_parent_family.four_children.calc(income),
+                p.amount.two_parent_family.five_children.calc(income),
+            ],
+            default=0,
         )
-
+        shared_custody_payment = (
+            p.shared_custody_reduction * no_spouse * shared_custody_amount
+        )
         return shared_custody_payment + full_custody_payment
 
 

@@ -5,7 +5,10 @@ metadata:
   unit: /1
   label: Quebec family allowance tax credit shared custody reduction rate
   reference:
-    - title: Retraite Québec - Retraite Québec and Family Allowance
-      href: https://www.rrq.gouv.qc.ca/en/programmes/soutien_enfants/Pages/soutien_enfants.aspx
+    - title: Retraite Québec - You share custody of the child
+      href: https://www.rrq.gouv.qc.ca/en/enfants/changement_garde/Pages/obtenez_garde_partagee.aspx
+      # a child is in shared custody when the child lives alternately with each parent between 40% and 60% of the time each month.
     - title: Retraite Québec - CalculAide for Family Allowance payments
       href: https://www.rrq.gouv.qc.ca/en/services/services_en_ligne/soutien_aux_enfants/Pages/calcul_aide.aspx
+      # this tool assume 50% of the credit for each parent
+    # Legal reference unavaliable

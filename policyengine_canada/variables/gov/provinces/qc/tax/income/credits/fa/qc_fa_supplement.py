@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class qc_fa_supplement(Variable):
     value_type = float
     entity = Household
-    label = "Quebec family allowance supplements"
+    label = "Quebec family allowance supplement"
     definition_period = YEAR
     defined_for = ProvinceCode.QC
 
@@ -15,7 +15,9 @@ class qc_fa_supplement(Variable):
 
         # check if the child is full custody of the head
         full_custody = person("full_custody", period)
-        reduction_rate = max_(full_custody, p.shared_custody_reduction)
+        reduction_rate = where(
+            full_custody, full_custody, p.shared_custody_reduction
+        )
 
         # Supplement for the Purchase of School Supplies
         age = person("age", period)
@@ -32,14 +34,14 @@ class qc_fa_supplement(Variable):
         supplement_handicapped_tier1 = (
             handicapped
             * handicapped_tier1
-            * p.handicapped_child_supplement.exceptional_care_tier1_amount
+            * p.handicapped_child_supplement.exceptional_care_amount.tier1
         )
 
         handicapped_tier2 = person("qc_fa_exceptional_care_tier2", period)
         supplement_handicapped_tier2 = (
             handicapped
             * handicapped_tier2
-            * p.handicapped_child_supplement.exceptional_care_tier2_amount
+            * p.handicapped_child_supplement.exceptional_care_amount.tier2
         )
 
         supplements = reduction_rate * (

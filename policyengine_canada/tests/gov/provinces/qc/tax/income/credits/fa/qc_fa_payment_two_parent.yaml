@@ -1,4 +1,4 @@
-- name: Quebec family allowance payment amount for two parent family with spouse
+- name: Quebec family allowance payment amount for two parent family with spouse with 2 children
   period: 2023
   input:
     adjusted_family_net_income: 99_000
@@ -8,7 +8,7 @@
   output:
     qc_fa_payment_two_parent: 3_771
 
-- name: Quebec family allowance payment amount for two parent family without spouse
+- name: Quebec family allowance payment amount for two parent family without spouse with 2 children
   period: 2023
   input:
     adjusted_family_net_income: 99_000
@@ -17,3 +17,23 @@
     province_code: QC
   output:
     qc_fa_payment_two_parent: 0
+
+- name: Quebec family allowance payment amount for two parent family with spouse with no child
+  period: 2023
+  input:
+    adjusted_family_net_income: 99_000
+    count_children: 0
+    is_married: true
+    province_code: QC
+  output:
+    qc_fa_payment_two_parent: 0
+
+- name: Quebec family allowance payment amount for two parent family with spouse with 5 children
+  period: 2023
+  input:
+    adjusted_family_net_income: 100_000
+    count_children: 5
+    is_married: true
+    province_code: QC
+  output:
+    qc_fa_payment_two_parent: 11_717

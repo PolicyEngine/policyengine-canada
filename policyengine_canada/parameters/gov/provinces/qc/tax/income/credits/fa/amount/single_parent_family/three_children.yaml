@@ -72,4 +72,7 @@ metadata:
   reference:
     - title: Retraite Québec - 2023 amounts of Family Allowance payments based on family income
       href: https://www.rrq.gouv.qc.ca/en/programmes/soutien_enfants/paiement/Pages/montant-selon-revenu-familial.aspx
-  
+    - title: Quebec I-3 - Taxation Act, Part I, Book IX, Title III, Chapter III.1, DIVISION II.11.2, 1029.8.61.18. formulas provided for in subparagraph a, (a)(b)
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#ga:l_i-gb:l_ix-gc:l_iii-gd:l_iii_1-ge:l_ii_11_2-h1
+      # monthly $2,515 each eligible dependent children + $882 if no cohabiting spouse, reduced by family income
+      # Exact numbers are unavaliable in the legal reference  

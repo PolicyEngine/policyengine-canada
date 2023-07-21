@@ -15,7 +15,7 @@ class qc_fa_payment_two_parent(Variable):
 
         p = parameters(
             period
-        ).gov.provinces.qc.tax.income.credits.fa.two_parent_family
+        ).gov.provinces.qc.tax.income.credits.fa.amount.two_parent_family
 
         return spouse * (
             select(
@@ -29,11 +29,11 @@ class qc_fa_payment_two_parent(Variable):
                 ],
                 # payment amount
                 [
-                    p.one_child_amount.calc(income),
-                    p.two_children_amount.calc(income),
-                    p.three_children_amount.calc(income),
-                    p.four_children_amount.calc(income),
-                    p.five_children_amount.calc(income),
+                    p.one_child.calc(income),
+                    p.two_children.calc(income),
+                    p.three_children.calc(income),
+                    p.four_children.calc(income),
+                    p.five_children.calc(income),
                 ],
                 default=0,
             )
