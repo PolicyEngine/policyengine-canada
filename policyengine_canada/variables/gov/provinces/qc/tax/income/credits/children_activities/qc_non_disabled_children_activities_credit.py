@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class qc_nondisabled_children_activities_credit(Variable):
+class qc_non_disabled_children_activities_credit(Variable):
     value_type = float
     entity = Person
     label = "Quebec nondisabled children's activities tax credit"
@@ -14,13 +14,13 @@ class qc_nondisabled_children_activities_credit(Variable):
         ).gov.provinces.qc.tax.income.credits.children_activities
 
         age = person("age", period)
-        nondisabled = ~person("is_disabled", period)
-        eligible = nondisabled * p.nondisabled_children_age_eligibility.calc(
+        non_disabled = ~person("is_disabled", period)
+        eligible = non_disabled * p.non_disabled_children.age_eligibility.calc(
             age
         )
 
         eligible_fee = min_(
-            person("children_activities_fees", period),
-            p.nondisabled_children_activities_fee_limit,
+            person("physical_activities_fees", period),
+            p.non_disabled_children.fee_limit,
         )
         return eligible * eligible_fee * p.rate

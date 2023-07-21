@@ -27,7 +27,7 @@ class qc_children_activities_credit(Variable):
 
         # non-disabled child
         nondisabled_child_credit = eligible * person(
-            "qc_nondisabled_children_activities_credit", period
+            "qc_non_disabled_children_activities_credit", period
         )
         # disabled child
         disabled_child_credit = eligible * person(

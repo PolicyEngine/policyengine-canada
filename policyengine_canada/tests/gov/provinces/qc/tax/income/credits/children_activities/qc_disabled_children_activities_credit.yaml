@@ -3,7 +3,7 @@
   input:
     age: 10
     is_disabled: false
-    children_activities_fees: 300
+    physical_activities_fees: 300
     province_code: QC
   output:
     qc_disabled_children_activities_credit: 0
@@ -13,7 +13,7 @@
   input:
     age: 20
     is_disabled: true
-    children_activities_fees: 300
+    physical_activities_fees: 300
     province_code: QC
   output:
     qc_disabled_children_activities_credit: 0
@@ -23,7 +23,7 @@
   input:
     age: 18
     is_disabled: true
-    children_activities_fees: 700
+    physical_activities_fees: 700
     province_code: QC
   output:
     qc_disabled_children_activities_credit: 200 # 0.2*min(700+500,1000)
@@ -33,7 +33,7 @@
   input:
     age: 10
     is_disabled: true
-    children_activities_fees: 200
+    physical_activities_fees: 200
     province_code: QC
   output:
     qc_disabled_children_activities_credit: 140 #(200+500)*0.2
