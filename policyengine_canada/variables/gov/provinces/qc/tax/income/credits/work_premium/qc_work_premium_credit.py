@@ -12,7 +12,7 @@ class qc_work_premium_credit(Variable):
         person = household.members
         # check if the household has disabled member
         disabled = person("is_disabled", period)
-        has_disabled_member = household.sum(disabled) > 0
+        has_disabled_member = household.any(disabled)
 
         qc_work_premium_single_amount = household(
             "qc_work_premium_single_amount", period
@@ -28,19 +28,24 @@ class qc_work_premium_credit(Variable):
         )
 
         # assume household with disabled member would choose the credit with most beneficial
-        work_premium_credit = where(
+        single_amount = where(
             has_disabled_member,
             max_(
                 qc_work_premium_single_amount,
                 qc_adapted_work_premium_single_amount,
-            )
-            + max_(
+            ),
+            qc_work_premium_single_amount,
+        )
+
+        couple_amount = where(
+            has_disabled_member,
+            max_(
                 qc_work_premium_couple_amount,
                 qc_adapted_work_premium_couple_amount,
             ),
-            qc_work_premium_single_amount + qc_work_premium_couple_amount,
+            qc_work_premium_couple_amount,
         )
 
         supplement = household("qc_work_premium_supplement_amount", period)
 
-        return work_premium_credit + supplement
+        return single_amount + couple_amount + supplement

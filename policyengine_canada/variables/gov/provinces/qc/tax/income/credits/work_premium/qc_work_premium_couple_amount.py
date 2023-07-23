@@ -17,7 +17,7 @@ class qc_work_premium_couple_amount(Variable):
 
         # family situation
         has_spouse = household("is_married", period)
-        had_child = household("count_children", period) > 0
+        has_child = household("count_children", period) > 0
 
         income = household("adjusted_family_net_income", period)
 
@@ -30,9 +30,9 @@ class qc_work_premium_couple_amount(Variable):
 
         # credit amount
         credit = where(
-            had_child,
-            p.with_children_amount,
-            p.without_children_amount,
+            has_child,
+            p.amount.with_children,
+            p.amount.without_children,
         )
 
         return eligible * max_(0, credit - p.reduction.calc(income))

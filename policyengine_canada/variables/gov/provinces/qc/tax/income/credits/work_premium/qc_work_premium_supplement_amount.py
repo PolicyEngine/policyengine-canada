@@ -21,6 +21,6 @@ class qc_work_premium_supplement_amount(Variable):
 
         return select(
             [supplement_eligible == 2, supplement_eligible == 1],
-            [p.couple_amount, p.single_amount],
+            [p.amount.couple, p.amount.single],
             default=0,
         )

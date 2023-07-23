@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class qc_adapted_work_premium_single_amount(Variable):
     value_type = float
     entity = Household
-    label = "Quebec adapted work premium tax credit for singles"
+    label = "Quebec adapted work premium tax credit for singles filers"
     definition_period = YEAR
     defined_for = ProvinceCode.QC
 
@@ -17,7 +17,7 @@ class qc_adapted_work_premium_single_amount(Variable):
 
         # family situation
         single = ~household("is_married", period)
-        had_child = household("count_children", period) > 0
+        has_child = household("count_children", period) > 0
 
         income = household("adjusted_family_net_income", period)
 
@@ -30,9 +30,9 @@ class qc_adapted_work_premium_single_amount(Variable):
 
         # credit amount
         credit = where(
-            had_child,
-            p.single.single_parent_amount,
-            p.single.person_living_alone_amount,
+            has_child,
+            p.single.amount.single_parent,
+            p.single.amount.person_living_alone,
         )
 
         return eligible * max_(0, credit - p.single.reduction.calc(income))
