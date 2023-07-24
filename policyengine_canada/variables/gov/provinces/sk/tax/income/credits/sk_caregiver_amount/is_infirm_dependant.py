@@ -7,5 +7,9 @@ class is_infirm_dependant(Variable):
     label = "Saskatchewan Caregiver Amount Infirm Dependant"
     documentation = "Whthere your spouse's or common-law partner's dependant is an infirm dependant or not."
     definition_period = YEAR
-    reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf""file:///C:/Users/yaoke/OneDrive/Desktop/PolicyEngine/SK/SK%20Tax%20Credit%20Return/td1sk-ws-23e%20(SK%20Tax%20Credit%20Calculation).pdf""file:///C:/Users/yaoke/OneDrive/Desktop/PolicyEngine/SK/SK%20Tax%20Credit%20Return/I2-01.pdf"
+    reference = (
+        "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf",
+        "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk-ws/td1sk-ws-23e.pdf",
+        "https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf",
+    )
     defined_for = ProvinceCode.SK
