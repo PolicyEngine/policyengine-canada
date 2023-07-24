@@ -1,4 +1,4 @@
-description: Nova Scotia lower income threshold for maximum basic personal amount in basic personal amount.
+description: Nova Scotia limits this lower income threshold under the basic personal amount eligibility.
 values: 
   2022-01-01: 25_000
 metadata:
