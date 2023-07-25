@@ -13,6 +13,7 @@
     sk_transferred_from_spouse_or_common_law_partner_credit: 0
 
 
+
 - name: Amounts transferred from your spouse or common-law partner when spouse or common-law partner will not use all of their age amount, senior supplementary amount, pension income amount, disability amount, and child amount.
   period: 2023
   input:
@@ -26,6 +27,7 @@
 
   output:
     sk_transferred_from_spouse_or_common_law_partner_credit: 24_906
+    
 
 
 - name: Amounts transferred from your spouse or common-law partner when spouse or common-law partner will not use age amount, senior supplementary amount, and child amount.
