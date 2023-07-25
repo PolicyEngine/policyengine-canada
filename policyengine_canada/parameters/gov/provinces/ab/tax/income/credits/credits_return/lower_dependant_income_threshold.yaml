@@ -1,9 +1,9 @@
-description: Alberta Lower Income threshold for dependants.
+description: Alberta provides the caregiver amount for dependants with income below this threshold.
 values:
   2023-01-01: 19_331 
 metadata:
   unit: currency-CAD
-  label: Alberta Dependent Lower Income Threshold
+  label: Alberta caregiver amount dependent lower income threshold
   reference:
     - title: Government of Canada - Alberta Caregiver Amount
       href:  https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf
