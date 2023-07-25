@@ -1,5 +1,5 @@
 - name: under 18 years old without disability, not head of the family, no childcare cost
-  period: 2022
+  period: 2023
   input:
     province_code: NT
     age: 17
@@ -10,7 +10,7 @@
     nt_disability_amount_self: 0
 
 - name: under 18 years old without disability, not head of the family, with childcare cost over 3030
-  period: 2022
+  period: 2023
   input:
     province_code: NT
     age: 17
@@ -21,7 +21,7 @@
     nt_disability_amount_self: 0
 
 - name: under 18 years old with disability, not head of the family, with childcare cost over 3030
-  period: 2022
+  period: 2023
   input:
     province_code: NT
     age: 17
@@ -32,7 +32,7 @@
     nt_disability_amount_self: 0
 
 - name: under 18 years old with disability, is head of the family, with childcare cost over 3030
-  period: 2022
+  period: 2023
   input:
     province_code: NT
     age: 17
@@ -43,7 +43,7 @@
     nt_disability_amount_self: 17_812
 
 - name: under 18 years old with disability, is head of the family, without childcare cost
-  period: 2022
+  period: 2023
   input:
     province_code: NT
     age: 17
@@ -54,7 +54,7 @@
     nt_disability_amount_self: 17_832
 
 - name: 18 years old with disability, is head of the family, with childcare cost over 3030
-  period: 2022
+  period: 2023
   input:
     province_code: NT
     age: 18
@@ -65,7 +65,7 @@
     nt_disability_amount_self: 12_658
 
 - name: over 18 years old with disability, is head of the family, with childcare cost over 3030
-  period: 2022
+  period: 2023
   input:
     province_code: NT
     age: 19

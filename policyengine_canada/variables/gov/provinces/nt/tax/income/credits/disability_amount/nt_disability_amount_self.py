@@ -19,5 +19,5 @@ class nt_disability_amount_self(Variable):
         total_expenses = household("childcare_costs", period)
         expense_threshold = max_(total_expenses - p.child_care_expense_cap, 0)
         base = p.base
-        additional_max_with_child_care = max_(p.additional_max - expense_threshold, 0)
+        additional_max_with_child_care = max_(p.max_additional_amount - expense_threshold, 0)
         return eligible * where(age_eligible, base + additional_max_with_child_care, base)
