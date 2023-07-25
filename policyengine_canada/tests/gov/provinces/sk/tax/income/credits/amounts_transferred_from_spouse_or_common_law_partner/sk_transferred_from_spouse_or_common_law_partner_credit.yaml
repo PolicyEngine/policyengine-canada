@@ -1,0 +1,48 @@
+- name:  Amounts transferred from your spouse or common-law partner when spouse or common-law partner will use all of their age amount, senior supplementary amount, pension income amount, disability amount, and child amount.
+  period: 2023
+  input:
+    province_code: SK
+    sk_age_amount: 5_380
+    sk_senior_supplementary_credit: 1_421
+    sk_pension_income_credit: 1_000
+    sk_disability_amount: 10_405
+    sk_child_amount: 6_700
+    is_spouse: True
+
+  output:
+    sk_transferred_from_spouse_or_common_law_partner_credit: 0
+
+
+- name: Amounts transferred from your spouse or common-law partner when spouse or common-law partner will not use all of their age amount, senior supplementary amount, pension income amount, disability amount, and child amount.
+  period: 2023
+  input:
+    province_code: SK
+    sk_age_amount: 5_380
+    sk_senior_supplementary_credit: 1_421
+    sk_pension_income_credit: 1_000
+    sk_disability_amount: 10_405
+    sk_child_amount: 6_700
+    is_spouse: False
+
+  output:
+    sk_transferred_from_spouse_or_common_law_partner_credit: 24_906
+
+
+- name: Amounts transferred from your spouse or common-law partner when spouse or common-law partner will not use age amount, senior supplementary amount, and child amount.
+  period: 2023
+  input:
+    province_code: SK
+    sk_age_amount: 5_380
+    sk_senior_supplementary_credit: 1_421
+    sk_pension_income_credit: 0
+    sk_disability_amount: 0
+    sk_child_amount: 6_700
+    is_spouse: False
+
+  output:
+    sk_transferred_from_spouse_or_common_law_partner_credit: 13_501
+
+
+
+
+
