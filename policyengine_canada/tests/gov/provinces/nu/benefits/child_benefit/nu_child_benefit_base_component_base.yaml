@@ -1,0 +1,39 @@
+- name: Nunavut one child
+  period: 2023
+  input:
+    province_code: NU
+    nu_child_benefit_eligible_children: 1
+  output:
+    nu_child_benefit_base_component_base: 330
+
+- name: Wrong province
+  period: 2023
+  input:
+    province_code: NB
+    nu_child_benefit_eligible_children: 1
+  output:
+    nu_child_benefit_base_component_base: 0
+
+- name: No children
+  period: 2023
+  input:
+    province_code: NU
+    nu_child_benefit_eligible_children: 0
+  output:
+    nu_child_benefit_base_component_base: 0
+
+- name: Nunavut family benefit two children
+  period: 2023
+  input:
+    province_code: NU
+    nu_child_benefit_eligible_children: 2
+  output:
+    nu_child_benefit_base_component_base: 660
+
+- name: Nunavut child benefit four children
+  period: 2023
+  input:
+    province_code: NU
+    nu_child_benefit_eligible_children: 4
+  output:
+    nu_child_benefit_base_component_base: 1_320

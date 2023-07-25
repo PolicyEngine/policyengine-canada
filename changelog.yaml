@@ -361,3 +361,93 @@
     added:
     - Nova Scotia low income tax reduction.
   date: 2023-04-28 19:14:24
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia affordable living tax credit.
+  date: 2023-05-03 04:19:50
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia Poverty Reduction Credit.
+  date: 2023-05-03 04:22:00
+- bump: minor
+  changes:
+    added:
+    - New Brunswick low income tax credit.
+  date: 2023-05-08 04:52:03
+- bump: minor
+  changes:
+    changed:
+    - Add Nunavut Child Benefit.
+  date: 2023-05-08 04:57:00
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia Child Benefit.
+  date: 2023-05-08 13:38:57
+- bump: minor
+  changes:
+    added:
+    - Saskatchewan low income tax credit.
+  date: 2023-05-10 20:12:43
+- bump: minor
+  changes:
+    added:
+    - Newfoundland Physical Activity Tax Credit.
+  date: 2023-05-18 02:03:51
+- bump: minor
+  changes:
+    added:
+    - Yukon Childrens Fitness Tax Credit.
+  date: 2023-05-19 20:22:40
+- bump: minor
+  changes:
+    added:
+    - Yukon First Nation Tax.
+  date: 2023-05-23 05:05:59
+- bump: minor
+  changes:
+    added:
+    - Alberta spouse and common-law partner amount.
+  date: 2023-05-25 22:46:06
+- bump: minor
+  changes:
+    added:
+    - Python 3.10 support.
+  date: 2023-05-27 15:38:10
+- bump: minor
+  changes:
+    added:
+    - Quebec childcare expenses tax credit.
+  date: 2023-05-27 23:28:36
+- bump: minor
+  changes:
+    added:
+    - New Brunswick age amount credit.
+  date: 2023-05-28 20:47:19
+- bump: minor
+  changes:
+    added:
+    - Manitoba Pension amount credit.
+  date: 2023-05-30 16:16:25
+- bump: minor
+  changes:
+    added:
+    - Quebec Senior Assistance Tax Credit.
+  date: 2023-06-01 03:05:10
+- bump: minor
+  changes:
+    added:
+    - Alberta pension credit.
+  date: 2023-06-29 16:50:09
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia Age tax credit.
+  date: 2023-07-03 02:09:04
+- bump: minor
+  changes:
+    added:
+    - Yukon Government carbon price rebate - Individuals (YGCPRI)
+  date: 2023-07-19 18:54:15
