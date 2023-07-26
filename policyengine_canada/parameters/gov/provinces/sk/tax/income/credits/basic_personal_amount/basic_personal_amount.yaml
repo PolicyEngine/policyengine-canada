@@ -1,0 +1,12 @@
+description: Saskatchewan provides the this Basic Personal Amount.
+values: 
+  2023-01-01: 17_661
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Saskatchewan Basic Personal Amount
+  reference:
+  - title: 2023 Saskatchewan Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf
+  - title: The Income Tax Act, 2000 DIVISION 2 Section 11 Basic Personal Credit
+    href: https://publications.saskatchewan.ca/api/v1/products/583/formats/806/download

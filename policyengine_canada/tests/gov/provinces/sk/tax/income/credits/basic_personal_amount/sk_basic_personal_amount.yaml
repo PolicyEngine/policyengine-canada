@@ -1,0 +1,7 @@
+- name: Every person employed in Saskatchewan and every pensioner residing in Saskatchewan can claim this amount.
+  period: 2023
+  input:
+    province_code: SK
+
+  output:
+    sk_basic_personal_amount: 17_661
