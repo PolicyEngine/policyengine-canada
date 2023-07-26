@@ -8,7 +8,6 @@
     sk_disability_amount: 10_405
     sk_child_amount: 6_700
     is_spouse: True
-
   output:
     sk_transferred_from_spouse_or_common_law_partner_credit: 0
 
@@ -24,7 +23,6 @@
     sk_disability_amount: 10_405
     sk_child_amount: 6_700
     is_spouse: False
-
   output:
     sk_transferred_from_spouse_or_common_law_partner_credit: 24_906
     
@@ -40,11 +38,6 @@
     sk_disability_amount: 0
     sk_child_amount: 6_700
     is_spouse: False
-
   output:
     sk_transferred_from_spouse_or_common_law_partner_credit: 13_501
-
-
-
-
-
+    
