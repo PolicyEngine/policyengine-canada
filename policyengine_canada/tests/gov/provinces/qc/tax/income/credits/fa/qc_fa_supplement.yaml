@@ -4,7 +4,7 @@
     people:
       c1: # no school supplement but handicapped - 0.5 * (2616 + 8796) = 5706
         full_custody: false
-        age: 17
+        age: 3
         is_disabled: true
         qc_fa_exceptional_care_tier1: false
         qc_fa_exceptional_care_tier2: true
@@ -16,7 +16,7 @@
         qc_fa_exceptional_care_tier2: false
       c3: # eligible for school supplement and handicapped - 115 + 2616
         full_custody: true
-        age: 10
+        age: 17
         is_disabled: true
         qc_fa_exceptional_care_tier1: false
         qc_fa_exceptional_care_tier2: false
@@ -45,7 +45,7 @@
         qc_fa_exceptional_care_tier2: false
       c2: # no school supplement but disabled full custody with tire 1 care - 2616 + 13224 = 15,840
         full_custody: true
-        age: 17
+        age: 3
         is_disabled: true
         qc_fa_exceptional_care_tier1: true
         qc_fa_exceptional_care_tier2: false

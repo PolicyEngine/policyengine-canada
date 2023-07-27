@@ -27,6 +27,8 @@ class qc_fa_payment_two_parent(Variable):
                     children == 4,
                     children == 5,
                 ],
+                # Law does not specify the amount for each additional child after 5
+                # we assume the amount for the 5th child to be the additional amount for each child, given that the calculator assumes an increase
                 # payment amount
                 [
                     p.one_child.calc(income),

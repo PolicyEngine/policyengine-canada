@@ -30,7 +30,9 @@ class qc_fa_payment_single_parent(Variable):
                     full_custody_children == 4,
                     full_custody_children == 5,
                 ],
-                # Results.
+                # Law does not specify the amount for each additional child after 5
+                # we assume the amount for the 5th child to be the additional amount for each child, given that the calculator assumes an increase
+                # amount
                 [
                     p.amount.single_parent_family.one_child.calc(income),
                     p.amount.single_parent_family.two_children.calc(income),

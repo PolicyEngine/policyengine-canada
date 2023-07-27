@@ -11,7 +11,7 @@ brackets:
   - amount:
       2023-01-01: 0
     threshold:
-      2023-01-01: 16
+      2023-01-01: 17
 metadata:
   type: single_amount
   threshold_unit: year
@@ -22,6 +22,7 @@ metadata:
       href: https://www.rrq.gouv.qc.ca/en/programmes/soutien_enfants/paiement/Pages/montant.aspx
     - title: Retraite Québec - Supplement for the Purchase of School Supplies
       href: https://www.rrq.gouv.qc.ca/en/enfants/Pages/supplement-achat-fournitures-scolaires.aspx
+      # your child is aged 4 to 16 
     - title: Quebec I-3 - Taxation Act, Part I, Book IX, Title III, Chapter III.1, DIVISION II.11.2, 1029.8.61.18. (d)
       href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#ga:l_i-gb:l_ix-gc:l_iii-gd:l_iii_1-ge:l_ii_11_2-h1
       # $104 in the legal reference,  increased due to the inflation adjustments
