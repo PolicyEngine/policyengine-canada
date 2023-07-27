@@ -6,8 +6,8 @@ metadata:
   period: year
   label: Alberta infirm dependant phase out start
   reference:
-  - title: Alberta personal tax credits return
+  - title: Alberta 2023 personal tax credits return TD1AB
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf
-  - title: Alberta personal tax credits return
+  - title: Alberta personal tax credits return worksheet TD1AB-WS
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab-ws/td1ab-ws-23e.pdf
     
