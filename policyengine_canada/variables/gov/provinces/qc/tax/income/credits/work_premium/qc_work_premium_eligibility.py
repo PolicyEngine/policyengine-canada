@@ -24,6 +24,9 @@ class qc_work_premium_eligibility(Variable):
         # You were not a full-time student
         not_full_time_student = ~person("is_full_time_student", period)
 
+        has_emancipated_member = household.any(emancipated)
+        no_full_time_students = household.any(not_full_time_student)
+
         return (
-            age_eligible | (has_spouse & has_child & emancipated)
-        ) & not_full_time_student
+            age_eligible | (has_spouse & has_child & has_emancipated_member)
+        ) & no_full_time_students
