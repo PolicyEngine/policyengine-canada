@@ -1,13 +1,13 @@
-description: Alberta use this infirm dependant credit net income as maximum therhold.
+description: Alberta provides the infirm dependant amount for filers with income of up to this threshold.
 values:
   2023-01-01: 20_190
 metadata:
   unit: currency-CAD
   period: year
-  label: Alberta infirm dependant credit maximum net income
+  label: Alberta infirm dependant credit max income
   reference:
-  - title: Alberta infirm dependant credit amount 
+  - title: Alberta personal tax credits return
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf
-  - title: Alberta infirm dependant credit amount 
+  - title: Alberta personal tax credits return
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab-ws/td1ab-ws-23e.pdf
     
