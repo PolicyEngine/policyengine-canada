@@ -26,8 +26,8 @@ class qc_person_living_alone_amount(Variable):
 
         cohabitant_eligible = age_eligible | (decendant & full_time_student)
 
-        eligible = living_alone | cohabitant_eligible
+        eligible = living_alone | household.any(cohabitant_eligible)
 
         living_alone_amount = eligible * p.base
 
-        # todo: additional amount
+        # todo: additional amount (line 367)
