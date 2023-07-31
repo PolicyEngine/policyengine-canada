@@ -1,9 +1,10 @@
-description: Yukon Maximum amount that one can get for the age amount of Yukon Personal Tax Credits Return.
-values:
-  2022-01-01: 8_396
+description: Yukon provides this maximum amount that one can get under the age amount credit.
+  2023-01-01: 8_396
 metadata:
   unit: currency-CAD
   label: Yukon age amount maximum amount
   reference:
   - title: Worksheet for the Yukon 2023 Personal Tax Credits Return
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1yt-ws/td1yt-ws-23e.pdf
+  - title: Income Tax Act
+    href: https://laws.yukon.ca/cms/images/LEGISLATION/PRINCIPAL/2002/2002-0118/2002-0118.pdf
