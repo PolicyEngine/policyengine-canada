@@ -20,6 +20,7 @@ class ns_chargeable_rent_income(Variable):
         roomers_rent = person("rent_from_roomers", period)
         roomers_rent_rate = roomers_rent * p.live_with_roomers_rate
         properties_rent = person("rent_from_properties", period)
+        
         amount_with_boarders = where(
             boarder_rent > 0,
             max_(base, boarder_rent_rate),
