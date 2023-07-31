@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class ns_applicable_asset_amount(Variable):
+class ns_applicable_assets(Variable):
     value_type = float
     entity = Household
-    label = "Nova Scotia income assistance applicable asset amount"
+    label = "Nova Scotia income assistance applicable assets"
     unit = CAD
     definition_period = YEAR
     reference = (
