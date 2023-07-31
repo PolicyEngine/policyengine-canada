@@ -9,8 +9,6 @@ class sk_disability_amount(Variable):
     defined_for = ProvinceCode.SK
 
     def formula(person, period, parameters):
-        p = parameters(
-            period
-        ).gov.provinces.sk.tax.income.credits.sk_disability_amount
+        p = parameters(period).gov.provinces.sk.tax.income.credits.sk_disability_amount
         eligibility = person("is_disable_certificate", period)
         return where(eligibility == 1, p.amount, 0)
