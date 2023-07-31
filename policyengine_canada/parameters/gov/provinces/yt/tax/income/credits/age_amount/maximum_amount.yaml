@@ -1,4 +1,5 @@
 description: Yukon provides this maximum amount that one can get under the age amount credit.
+values:
   2023-01-01: 8_396
 metadata:
   unit: currency-CAD

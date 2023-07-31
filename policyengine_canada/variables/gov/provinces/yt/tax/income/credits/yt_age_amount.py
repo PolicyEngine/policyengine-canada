@@ -17,6 +17,6 @@ class yt_age_amount(Variable):
         )
         return (
             (age >= p.age)
-            * (income < p.maximum_net_income)
+            * (income < p.income_threshold)
             * (p.maximum_amount - reduction)
         )

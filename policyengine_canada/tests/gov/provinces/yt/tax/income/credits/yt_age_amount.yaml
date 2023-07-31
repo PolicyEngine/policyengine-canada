@@ -1,5 +1,5 @@
 - name: Not eligible for age
-  period: 2022
+  period: 2023
   input:
     province_code: YT
     individual_net_income: 10_000
@@ -8,7 +8,7 @@
     yt_age_amount: 0
 
 - name: Not eligible for net income
-  period: 2022
+  period: 2023
   input:
     province_code: YT
     individual_net_income: 100_000
@@ -17,7 +17,7 @@
     yt_age_amount: 0
 
 - name: Eligible & maximum age amount (net income < base amount)
-  period: 2022
+  period: 2023
   input:
     province_code: YT
     individual_net_income: 10_000
@@ -26,7 +26,7 @@
     yt_age_amount: 8_396
   
 - name: Eligible & net income between base amount and maximum amount (8396-(62335-42335)*0.15 = 5396)
-  period: 2022
+  period: 2023
   input:
     province_code: YT
     individual_net_income: 62_335
