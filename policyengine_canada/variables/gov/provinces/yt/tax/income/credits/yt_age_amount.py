@@ -17,8 +17,4 @@ class yt_age_amount(Variable):
         # )
         reduction = income * p.rate
         reduced_amount = max_(p.maximum_amount - reduction, 0)
-        return (
-            (age >= p.age)
-            * (income < p.income_threshold)
-            * reduced_amount
-        )
+        return (age >= p.age) * (income < p.income_threshold) * reduced_amount
