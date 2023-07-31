@@ -1,9 +1,9 @@
-description: Yukon provides this employment amount. 
+description: Yukon provides this employment benefit amount. 
 values:
   2022-01-01: 1_287
 metadata:
   unit: currency-CAD
-  label: Yukon Employment Amount
+  label: Yukon employment benefit amount
   reference:
   - title: Canada Employment Amount Benefit for Yukon
-    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/yukon/5011-pc/information-residents-yukon.html#P4_58310
+    href: https://laws.yukon.ca/cms/images/LEGISLATION/PRINCIPAL/2002/2002-0118/2002-0118.pdf
