@@ -1,11 +1,27 @@
 description: Yukon provides this rate under the age amount credit.
-values:
-  2023-01-01: 0.15
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0
+  - threshold:
+      2022-01-01: 39_826
+    rate:
+      2022-01-01: 0.15
+  - threshold:
+      2023-01-01: 42_335
+    rate:
+      2023-01-01: 0.15
+
 metadata:
-  unit: /1
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
   label: Yukon age amount applicable rate
   reference:
   - title: Worksheet for the Yukon 2023 Personal Tax Credits Return
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1yt-ws/td1yt-ws-23e.pdf
   - title: Income Tax Act
     href: https://laws.yukon.ca/cms/images/LEGISLATION/PRINCIPAL/2002/2002-0118/2002-0118.pdf
+  - title: Worksheet for the Yukon 2022 Personal Tax Credits Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1yt-ws/td1yt-ws-22e.pdf
