@@ -7,6 +7,8 @@ class ns_basic_personal_credits(Variable):
     label = "Nova Scotia Basic Personal Amount"
     definition_period = YEAR
     defined_for = ProvinceCode.NS
+    reference = ("https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf", 
+                 "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5003-d/5003-d-22e.pdf")
 
     def formula(person, period, parameters):
         p = parameters(

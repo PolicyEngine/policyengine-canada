@@ -1,5 +1,5 @@
-- bump: minor
+- bump: patch
   changes:
     added:
-    - Nova Scotia Basic personal amount.
+    - Chage names to proper expressions for title, label, reference and folder.
   
