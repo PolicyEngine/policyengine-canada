@@ -6,7 +6,7 @@
   output:
     yt_employment_amount: 1_287
 
-- name: tax return for no income
+- name: tax return with no income
   period: 2022
   input:
     province_code: YT
@@ -14,7 +14,7 @@
   output:
     yt_employment_amount: 0
 
-- name: tax return for income under maximum amount
+- name: tax return with income under maximum amount
   period: 2022
   input:
     province_code: YT
