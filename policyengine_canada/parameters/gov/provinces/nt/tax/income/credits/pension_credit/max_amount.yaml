@@ -5,7 +5,7 @@ metadata:
   unit: currency-CAD
   label: Northwest Territories Pension Credit max amount
   reference:
-  - title: Income Tax Act - Age Credit page 29, Section 2.2
+  - title: Income Tax Act - Pension Credit page 29, Section 2.21
     href: https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf
   - title: 2023 Northwest Territories Personal Tax Credits Return - pension income amount
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nt/td1nt-23e.pdf
