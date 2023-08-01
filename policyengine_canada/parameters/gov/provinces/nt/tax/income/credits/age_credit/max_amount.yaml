@@ -5,7 +5,7 @@ values:
   2023-01-01: 8_116
 metadata:
   unit: currency-CAD
-  label: Age credit maximum reduction amount
+  label: Age credit maximum amount
   reference:
   - title: Income Tax Act - Age Credit
     href: https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf
