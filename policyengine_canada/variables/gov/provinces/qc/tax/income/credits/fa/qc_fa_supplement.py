@@ -22,15 +22,15 @@ class qc_fa_supplement(Variable):
         # Supplement for Handicapped Children
         handicapped = person("is_disabled", period)
         supplement_handicapped = (
-            handicapped * p.handicapped_child_supplement.base_amount
+            handicapped * p.supplement.handicapped_child.base_amount
         )
 
         # Supplement for the Purchase of School Supplies
         age = person("age", period)
         supplement_school_supplies = where(
             handicapped,
-            p.school_supplies_supplement.handicapped_child.calc(age),
-            p.school_supplies_supplement.non_handicapped_child.calc(age),
+            p.supplement.school_supplies.handicapped_child.calc(age),
+            p.supplement.school_supplies.non_handicapped_child.calc(age),
         )
 
         # Supplement for Handicapped Children Requiring Exceptional Care
@@ -38,14 +38,14 @@ class qc_fa_supplement(Variable):
         supplement_handicapped_tier1 = (
             handicapped
             * handicapped_tier1
-            * p.handicapped_child_supplement.exceptional_care_amount.tier1
+            * p.supplement.handicapped_child.exceptional_care_amount.tier1
         )
 
         handicapped_tier2 = person("qc_fa_exceptional_care_tier2", period)
         supplement_handicapped_tier2 = (
             handicapped
             * handicapped_tier2
-            * p.handicapped_child_supplement.exceptional_care_amount.tier2
+            * p.supplement.handicapped_child.exceptional_care_amount.tier2
         )
 
         supplements = reduction_rate * (

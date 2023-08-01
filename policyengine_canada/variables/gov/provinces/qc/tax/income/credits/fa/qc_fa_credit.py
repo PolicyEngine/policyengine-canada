@@ -9,10 +9,7 @@ class qc_fa_credit(Variable):
     defined_for = ProvinceCode.QC
 
     def formula(household, period, parameters):
-        single_parent_payment = household(
-            "qc_fa_payment_single_parent", period
-        )
-        two_parent_payment = household("qc_fa_payment_two_parent", period)
+        payment = household("qc_fa_payment", period)
         supplement = household("qc_fa_supplement", period)
 
-        return single_parent_payment + two_parent_payment + supplement
+        return payment + supplement
