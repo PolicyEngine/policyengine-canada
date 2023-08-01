@@ -1,9 +1,12 @@
 description: Nunavut provides this maximum age amount credit for eligible people.
 values:
-  2022-07-01: 7_500
+  2022-07-01: 10_764
 metadata:
   unit: currency-CAD
   label: Nunavut age amount credit maximum amount
   reference:
-  - title: Consolidation of Income Tax Act, Part I Division B 2.2
+  - title: Consolidation of Income Tax Act, Part I Division B Subdivision c 2.2
     href: https://www.nunavutlegislation.ca/en/consolidated-law/income-tax-act-consolidation
+- title: 5014-C NU428 - Nunavut Tax
+  href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5014-c/5014-c-22e.pdf
+
