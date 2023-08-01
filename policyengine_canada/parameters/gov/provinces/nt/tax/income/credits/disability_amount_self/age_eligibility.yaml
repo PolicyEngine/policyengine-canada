@@ -1,4 +1,5 @@
-description: Northwest Territories's disability amount for self needs to check the age eligibility.
+description: Northwest Territories's provides the additional disability amount for filers below this age.
+
 values:
   2022-12-31: 18
 metadata:

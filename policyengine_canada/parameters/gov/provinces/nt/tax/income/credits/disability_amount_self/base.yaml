@@ -1,5 +1,4 @@
-description: Northwest Territories provides this base disability amount for self in its Personal Tax Credits Return.
-values:
+description: Northwest Territories provides this base disability amount for self.
   2022-12-31: 12_658
 metadata:
   unit: currency-CAD

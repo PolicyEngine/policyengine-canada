@@ -1,10 +1,11 @@
-description: Northwest Territories provides this maximum threshold for child and attendant care expenses in disability amount for self.
-values:
+description: Northwest Territories provides this maximum threshold for child and attendant care expenses under the disability amount for self.
+
   2022-12-31: 3_030
 metadata:
   unit: currency-CAD
   period: year
-  label: Northwest Territories maximum threshold for child and attendant care expenses in disability amount for self
+  label: Northwest Territories disability amount maximum child and attendant care expenses threshold
+
   reference:
     - title: Northwest Territories Disability Amount For Self (Line 58440)
       href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/northwest-territories/5012-pc/information-residents-northwest-territories.html#P67_5441

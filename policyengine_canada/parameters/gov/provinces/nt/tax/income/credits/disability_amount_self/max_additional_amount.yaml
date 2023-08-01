@@ -1,5 +1,4 @@
-description: Northwest Territories' maximum amount of disability amount for self in its Personal Tax Credits Return for people under 18 years age
-values:
+description: Northwest Territories' provides this maximum amount of disability amount for self for younger filers.
   2022-12-31: 5_174
 metadata:
   unit: currency-CAD
