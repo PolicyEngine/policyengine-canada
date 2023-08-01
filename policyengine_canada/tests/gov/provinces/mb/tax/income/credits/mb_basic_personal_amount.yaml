@@ -1,4 +1,4 @@
-- name: basic personal amount
+- name: Basic personal amount
   period: 2023
   input:
     province_code: MB
