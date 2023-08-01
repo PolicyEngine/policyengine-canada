@@ -1,0 +1,9 @@
+description: Nunavut provides this amount to person with single status
+values:
+  2022-01-01: 16_000
+metadata:
+  unit: currency-CAD
+  label: Nunavut single status credit amount
+  reference:
+  - title: Nunavut Income Tax Act Part I Division B Subvision c 2.16
+    href: https://www.nunavutlegislation.ca/en/consolidated-law/income-tax-act-consolidation
