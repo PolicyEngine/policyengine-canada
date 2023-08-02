@@ -5,23 +5,23 @@
     total_individual_pre_tax_income: 0
     age: 65
   output:
-    nu_age_amount_credit: 7_500
+    nu_age_amount_credit: 10_764
 
 - name: Over threshold income with eligible age
   period: 2023
   input:
     province_code: NU
-    total_individual_pre_tax_income: 37_749
+    total_individual_pre_tax_income: 69_826
     age: 65
   output: 
-    nu_age_amount_credit: 6_000
+    nu_age_amount_credit: 6_264
 
 - name: Max out credit with eligible age
   period: 2023
   absolute_error_margin: 0.5
   input:
     province_code: NU
-    total_individual_pre_tax_income: 77_749
+    total_individual_pre_tax_income: 111_586
     age: 65
   output: 
     nu_age_amount_credit: 0
@@ -40,7 +40,7 @@
   period: 2023
   input:
     province_code: NU
-    total_individual_pre_tax_income: 37_749
+    total_individual_pre_tax_income: 69_826
     age: 20
   output: 
     nu_age_amount_credit: 0

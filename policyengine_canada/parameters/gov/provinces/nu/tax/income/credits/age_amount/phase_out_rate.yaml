@@ -5,7 +5,7 @@ brackets:
     rate:
       2022-07-01: 0
   - threshold:
-      2022-07-01: 27_749
+      2022-07-01: 39_826
     rate:
       2022-07-01: 0.15
 
@@ -15,6 +15,6 @@ metadata:
   threshold_unit: currency-CAD
   label: Nunavut age amount credit maximum amount reduction
   reference:
-  - title: Consolidation of Income Tax Act, Part I Division A 2.2
+  - title: Consolidation of Income Tax Act, Part I Division B Subdivision c 2.2
     href: https://www.nunavutlegislation.ca/en/consolidated-law/income-tax-act-consolidation
 
