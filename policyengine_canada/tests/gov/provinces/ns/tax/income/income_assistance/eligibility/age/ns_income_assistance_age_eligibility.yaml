@@ -1,44 +1,44 @@
-- name: Nova Scotia income assistance age eligibility; above 19-year-old
+- name: Above 19-year-old
   period: 2022
   input:
     province_code: NS
     age: 19
-    in_need_of_protective_services: false
+    ns_ia_in_need_of_protective_services: false
   output:
     ns_income_assistance_age_eligibility: true
 
-- name: Nova Scotia income assistance age eligibility; below 19-year-old
+- name: Below 19-year-old
   period: 2022
   input:
     province_code: NS
     age: 18
-    in_need_of_protective_services: false
+    ns_ia_in_need_of_protective_services: false
   output:
     ns_income_assistance_age_eligibility: false
 
-- name: Nova Scotia income assistance age eligibility; below 19-year-old and in need of protective services
+- name: Below 19-year-old and in need of protective services
   period: 2022
   input:
     province_code: NS
     age: 18
-    in_need_of_protective_services: true
+    ns_ia_in_need_of_protective_services: true
   output:
     ns_income_assistance_age_eligibility: true
 
-- name: Nova Scotia income assistance age eligibility; above 16-year-old and in need of protective services
+- name: Above 16-year-old and in need of protective services
   period: 2022
   input:
     province_code: NS
     age: 16
-    in_need_of_protective_services: true
+    ns_ia_in_need_of_protective_services: true
   output:
     ns_income_assistance_age_eligibility: true
 
-- name: Nova Scotia income assistance age eligibility; below 16-year-old in need of protective services
+- name: Below 16-year-old in need of protective services
   period: 2022
   input:
     province_code: NS
     age: 15
-    in_need_of_protective_services: true
+    ns_ia_in_need_of_protective_services: true
   output:
     ns_income_assistance_age_eligibility: false

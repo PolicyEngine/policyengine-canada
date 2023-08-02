@@ -13,10 +13,13 @@ class ns_income_assistance_age_eligibility(Variable):
         p = parameters(
             period
         ).gov.provinces.ns.tax.income.income_assistance.eligibility.age
-        protective_services = person("in_need_of_protective_services", period)
+        protective_services = person(
+            "ns_ia_in_need_of_protective_services", period
+        )
         # Person is eligible if at or over 19 years of age
         age_eligible = age >= p.main
-        # Person is eligible if between 16 and 19, and is in need of protective services
+        # Person is eligible if between 16 and 19 years of age,
+        # and is in need of protective services
         lower_age_eligible = p.lower <= age & age < p.main
         protective_services_eligible = protective_services * lower_age_eligible
         # The person in need of protective services is additionally required to:
@@ -24,7 +27,7 @@ class ns_income_assistance_age_eligibility(Variable):
         # participate in an employment plan;
         # access counselling or mediation services that was identified as necessary;
         # access medical services necessary to preserve their physical health;
-        # live in a setting that provides a degree of supervision, accountability
+        # live in a setting that provides a degree of supervision, accountability,
         # and guidance in accordance with their age and needs.
         # which are not modeled in the program.
         return age_eligible | protective_services_eligible
