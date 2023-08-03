@@ -16,9 +16,9 @@ metadata:
   unit: currency-CAD
   label: Northwest Territories Age Credit phase out rate
   reference:
-  - title: Income Tax Act - Age Credit
+  - title: Income Tax Act - Age Credit Page 28, Section 2.2
     href: https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf
-  - title: Worksheet NT428 - 2022
+  - title: 2022 Worksheet NT428 - line 58080
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5012-d/5012-d-22e.pdf
-  - title: 2023 Personal Tax Credits Return - Age amount
+  - title: 2023 Personal Tax Credits Return - line 2 Age amount
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nt-ws/td1nt-ws-23e.pdf
