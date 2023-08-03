@@ -5,6 +5,7 @@ class qc_fa_supplement(Variable):
     value_type = float
     entity = Household
     label = "Quebec family allowance supplement"
+    reference = "https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:1029_8_61_18"
     definition_period = YEAR
     defined_for = ProvinceCode.QC
 
