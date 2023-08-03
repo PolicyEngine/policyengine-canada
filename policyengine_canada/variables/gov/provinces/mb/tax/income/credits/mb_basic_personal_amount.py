@@ -10,6 +10,7 @@ class mb_basic_personal_amount(Variable):
     reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb/td1mb-23e.pdf"
     defined_for = ProvinceCode.MB
 
-    def formula(household, period, parameters):
+    def formula(person, period, parameters):
+        is_head = person("is_head", period)
         p = parameters(period).gov.provinces.mb.credits
-        return p.basic_personal_amount
+        return is_head * p.basic_personal_amount

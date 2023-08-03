@@ -1,6 +1,15 @@
-- name: Basic personal amount
+- name: Is household head
   period: 2023
   input:
     province_code: MB
+    is_head: true
   output:
     mb_basic_personal_amount: 15_000
+
+- name: Is not household head
+  period: 2023
+  input:
+    province_code: MB
+    is_head: false
+  output:
+    mb_basic_personal_amount: 0
