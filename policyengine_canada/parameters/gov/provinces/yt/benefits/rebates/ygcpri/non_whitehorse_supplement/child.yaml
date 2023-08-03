@@ -1,0 +1,9 @@
+description: Yukon provides this remote supplement amount for each child if the household resides outside of Whitehorse under the YGCPRI.
+values:
+  2023-01-01: 32
+metadata:
+  unit: currency-CAD
+  label: Yukon child YGCPRI supplement
+  reference:
+  - title: Yukon Government carbon price rebate - Individuals (YGCPRI)
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/yukon.html#YGCPRI
