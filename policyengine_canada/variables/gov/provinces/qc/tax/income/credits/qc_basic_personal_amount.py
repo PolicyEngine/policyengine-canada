@@ -13,6 +13,7 @@ class qc_basic_personal_amount(Variable):
         "https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/350-to-398-1-non-refundable-tax-credits/line-350/",
     )
 
-    def formula(household, period, parameters):
+    def formula(person, period, parameters):
         p = parameters(period).gov.provinces.qc.tax.income.credits
-        return p.basic_personal_amount
+        head = person("is_head", period)
+        return head * p.basic_personal_amount
