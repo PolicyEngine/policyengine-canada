@@ -1,4 +1,4 @@
-- name: SK senior supplementary tax credit - Under age threshold
+- name: 2023 SK senior supplementary tax credit - Under age threshold
   period: 2024
   input:
     province_code: SK
@@ -6,7 +6,7 @@
   output:
     sk_senior_supplementary_credit: 0
 
-- name: SK senior supplementary tax credit - At age threshold
+- name: 2023 SK senior supplementary tax credit - At age threshold
   period: 2024
   input:
     province_code: SK
@@ -14,10 +14,18 @@
   output:
     sk_senior_supplementary_credit: 1_421
 
-- name: SK senior supplementary tax credit - Above age threshold
+- name: 2023 SK senior supplementary tax credit - Above age threshold
   period: 2024
   input:
     province_code: SK
     age: 68
   output:
     sk_senior_supplementary_credit: 1_421
+
+- name: 2022 SK senior supplementary tax credit - Above age threshold
+  period: 2022
+  input:
+    province_code: SK
+    age: 68
+  output:
+    sk_senior_supplementary_credit: 1_336

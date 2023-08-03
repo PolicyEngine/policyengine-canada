@@ -1,5 +1,6 @@
 description: Saskatchewan provides the senior supplementary tax credit for filers of or above this age threshold.
 values:
+  2022-01-01: 65
   2023-01-01: 65
 metadata:
   unit: year
@@ -11,4 +12,6 @@ metadata:
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk-ws/td1sk-ws-23e.pdf
   - title: Saskatchewan I2-01 The Income Tax Act, 2000
     href: https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf
+  - title: 2022 Saskatchewan TD1SK Personal Tax Credits Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-22e.pdf
 
