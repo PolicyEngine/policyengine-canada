@@ -1,6 +1,6 @@
 description: Northwest Territories provides this maximum amount under the age credit.
 values:
-  # amount increase with inflation every year
+  # Amount increases with inflation every year
   2022-01-01: 7_635
   2023-01-01: 8_116
 metadata:
