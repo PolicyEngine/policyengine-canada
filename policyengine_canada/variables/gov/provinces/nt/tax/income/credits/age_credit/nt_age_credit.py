@@ -14,5 +14,9 @@ class nt_age_credit(Variable):
         p = parameters(period).gov.provinces.nt.tax.income.credits.age_credit
         income = person("nt_taxable_income", period)
         age = person("age", period)
-        eligible = age >= p.age_eligibility  # this is a bool
-        return eligible * max_(p.max_amount - p.reduction.calc(income), 0)
+        age_eligible = age >= p.age_eligibility  # this is a bool
+        is_head = person("is_head", period)
+        eligible = age_eligible & is_head
+        full_credit = p.max_amount
+        reduced_credit = max_(full_credit - p.reduction.calc(income), 0)
+        return eligible * reduced_credit

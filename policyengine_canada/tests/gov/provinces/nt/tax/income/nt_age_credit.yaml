@@ -4,6 +4,7 @@
     province_code: NT
     age: 64
     nt_taxable_income: 39_826
+    is_head: true
   output:
     nt_age_credit: 0
 
@@ -13,6 +14,7 @@
     province_code: NT
     age: 65
     nt_taxable_income: 39_825
+    is_head: true
   output:
     nt_age_credit: 7_635
 
@@ -22,6 +24,7 @@
     province_code: NT
     age: 65
     nt_taxable_income: 40_100
+    is_head: true
   output:
     nt_age_credit: 7_593.9
 
@@ -31,6 +34,7 @@
     province_code: NT
     age: 64
     nt_taxable_income: 42_335
+    is_head: true
   output:
     nt_age_credit: 0
 
@@ -40,6 +44,7 @@
     province_code: NT
     age: 65
     nt_taxable_income: 42_334
+    is_head: true
   output:
     nt_age_credit: 8_116
 
@@ -49,5 +54,16 @@
     province_code: NT
     age: 65
     nt_taxable_income: 45_000
+    is_head: true
   output:
     nt_age_credit: 7_716.25
+
+- name: Not head
+  period: 2023
+  input:
+    province_code: NT
+    age: 65
+    nt_taxable_income: 45_000
+    is_head: false
+  output:
+    nt_age_credit: 0
