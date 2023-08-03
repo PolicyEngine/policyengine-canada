@@ -4,7 +4,7 @@ metadata:
   type: marginal_rate
   threshold_unit: currency-CAD
   rate_unit: /1
-  label: Saskatchewan age amount reduction rate
+  label: Saskatchewan age amount credit reduction rate
   reference:
   - title: Worksheet for the 2022 Personal Tax Credit Return
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1-ws/td1-ws-22e.pdf
