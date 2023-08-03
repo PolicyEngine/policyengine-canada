@@ -1,7 +1,6 @@
 description: Saskatchewan provides the age amount credit for filers at or above this age.
 values: 
   2022-01-01: 65
-  2023-01-01: 65
 
 metadata:
   unit: year

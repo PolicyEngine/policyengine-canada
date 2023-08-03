@@ -5,7 +5,7 @@ values:
 
 metadata:
   unit: currency-CAD
-  label: 2023 Saskatchewan age amount credit max amount
+  label: Saskatchewan age amount credit max amount
   reference:
   - title: 2022 Saskatchewan Personal Tax Credit Return
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-22e.pdf

@@ -4,6 +4,7 @@
     province_code: SK
     age: 64
     individual_net_income: 20_000
+    is_head: false
   output:
     sk_age_amount: 0
 
@@ -13,6 +14,7 @@
     province_code: SK
     age: 70
     individual_net_income: 35_000
+    is_head: true
   output:
     sk_age_amount: 5_061
 
@@ -22,6 +24,7 @@
     province_code: SK
     age: 65
     individual_net_income: 60_000
+    is_head: true
   output:
     sk_age_amount: 1_712.55
 
@@ -31,6 +34,7 @@
     province_code: SK
     age: 68
     individual_net_income: 100_000
+    is_head: true
   output:
     sk_age_amount: 0
 
@@ -41,6 +45,7 @@
     province_code: SK
     age: 64
     individual_net_income: 20_000
+    is_head: true
   output:
     sk_age_amount: 0
 
@@ -48,8 +53,9 @@
   period: 2023
   input:
     province_code: SK
-    age: 70
+    age: 65
     individual_net_income: 40_000
+    is_head: true
   output:
     sk_age_amount: 5_380
 
@@ -59,14 +65,26 @@
     province_code: SK
     age: 65
     individual_net_income: 60_000
+    is_head: true
   output:
-    sk_age_amount: 2387.65
+    sk_age_amount: 2_387.65
+
+- name: Not head - ineligible
+  period: 2023
+  input:
+    province_code: SK
+    age: 65
+    individual_net_income: 60_000
+    is_head: false
+  output:
+    sk_age_amount: 0
 
 - name: Eligible over maximum net income amount
   period: 2023
   input:
     province_code: SK
-    age: 68
+    age: 65
     individual_net_income: 100_000
+    is_head: true
   output:
     sk_age_amount: 0

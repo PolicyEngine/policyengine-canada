@@ -20,8 +20,9 @@ class sk_age_amount(Variable):
         p = parameters(period).gov.provinces.sk.tax.income.credits.age_amount
         income = person("individual_net_income", period)
         age = person("age", period)
-        eligible = age >= p.age_eligibility
+        age_eligible = age >= p.age_eligibility
         reduction = p.reduction.rate.calc(income)
         reduced_amount = max_(p.max_amount - reduction, 0)
-
+        is_head = person("is_head", period)
+        eligible = is_head & age_eligible
         return eligible * reduced_amount
