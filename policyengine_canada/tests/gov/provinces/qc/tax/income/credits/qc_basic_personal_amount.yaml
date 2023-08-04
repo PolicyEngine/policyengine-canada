@@ -2,7 +2,7 @@
   period: 2022
   input:
     province_code: QC
-    is_head: True
+    is_head: true
   output:
     qc_basic_personal_amount: 16_143
 
@@ -10,6 +10,6 @@
   period: 2022
   input:
     province_code: QC
-    is_head: False
+    is_head: false
   output:
     qc_basic_personal_amount: 0
