@@ -1,0 +1,31 @@
+- name: Income below 60_000
+  period: 2023
+  input:
+    province_code: NU
+    nu_cost_of_living_credit_adjusted_net_income: 1_000
+  output:
+    nu_cost_of_living_credit_supplement: 0
+
+- name: Income equal to 60_000
+  period: 2023
+  input:
+    province_code: NU
+    nu_cost_of_living_credit_adjusted_net_income: 60_000
+  output:
+    nu_cost_of_living_credit_supplement: 0
+
+- name: Income above 60_000 # (65_000 - 60_000) * 0.02 = 100
+  period: 2023
+  input:
+    province_code: NU
+    nu_cost_of_living_credit_adjusted_net_income: 65_000
+  output:
+    nu_cost_of_living_credit_supplement: 100
+
+- name: Max out credits
+  period: 2023
+  input:
+    province_code: NU
+    nu_cost_of_living_credit_adjusted_net_income: 100_000
+  output:
+    nu_cost_of_living_credit_supplement: 255.12

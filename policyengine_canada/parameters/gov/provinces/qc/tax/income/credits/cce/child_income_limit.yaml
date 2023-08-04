@@ -1,0 +1,9 @@
+description: Quebec limits its childcare expense credit to children of the filer or child dependents with income below this amount.
+values:
+  2022-01-01: 11_081
+metadata:
+  unit: currency-CAD
+  label: Quebec childcare expense credit child income limit 
+  reference:
+    - title: Revenu Quebec - Requirements for the Tax Credit for Children Expenses
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/tax-credit-for-childcare-expenses/requirements/ 

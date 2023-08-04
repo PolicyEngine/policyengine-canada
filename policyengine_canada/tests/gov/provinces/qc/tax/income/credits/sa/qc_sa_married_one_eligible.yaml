@@ -1,0 +1,31 @@
+- name: Head is below the age eligibility 
+  period: 2022
+  input:
+    people:
+      c1:
+        age: 60
+        qc_sa_spouse_eligible: true
+      c2:
+        age: 50
+        qc_sa_spouse_eligible: false
+    household:
+      members: [c1, c2]
+      province_code: QC
+  output:
+    qc_sa_married_one_eligible: 1
+
+- name: Head is at or above age eligibility 
+  period: 2022
+  input:
+    people:
+      c1:
+        age: 70
+        qc_sa_spouse_eligible: false
+      c2:
+        age: 75
+        qc_sa_spouse_eligible: true
+    household:
+      members: [c1, c2]
+      province_code: QC
+  output:
+    qc_sa_married_one_eligible: 1
