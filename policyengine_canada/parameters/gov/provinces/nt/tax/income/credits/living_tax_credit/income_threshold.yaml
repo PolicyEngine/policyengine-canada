@@ -1,9 +1,0 @@
-description: Northwest Territories cost of living tax credit income threshold in 2022
-values:
-  2022-12-31: 66_000 
-metadata:
-  unit: currency-CAD
-  label: Northwest Territories cost of living tax credit income threshold in 2022
-  reference:
-  - title: Government of Canada - Credit
-    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/northwest-territories/5012-tc.html 

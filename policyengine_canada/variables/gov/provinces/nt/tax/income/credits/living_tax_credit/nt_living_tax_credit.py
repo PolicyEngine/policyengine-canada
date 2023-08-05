@@ -12,8 +12,9 @@ class nt_living_tax_credit(Variable):
         p = parameters(
             period
         ).gov.provinces.nt.tax.income.credits.living_tax_credit
-        lower = person("nt_ltc_lower_threshold", period)
-        middle = person("nt_ltc_middle_threshold", period)
-        higher = person("nt_ltc_higher_threshold", period)
 
-        return min_(lower + middle + higher, p.max_amount)
+        net_income = person("individual_net_income", period)
+
+        living_tax_credit = p.reduction.calc(net_income)
+
+        return min_(living_tax_credit, p.max_amount)
