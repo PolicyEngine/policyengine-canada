@@ -10,7 +10,7 @@ class canada_employment_amount(Variable):
     reference = "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-31260-canada-employment-amount.html"
 
     def formula(person, period, parameters):
-        max_amount = parameters(
+        p = parameters(
             period
         ).gov.cra.tax.income.credits.canada_employment_amount.max_amount
 
