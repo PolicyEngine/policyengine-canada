@@ -16,8 +16,8 @@ class qc_fa_supplement(Variable):
 
         # check if the child is full custody of the head
         full_custody = person("full_custody", period)
-        reduction_rate = where(
-            full_custody, full_custody, p.shared_custody_reduction
+        shared_custody_multiplier = where(
+            full_custody, 1, p.shared_custody_multiplier
         )
 
         # Supplement for Handicapped Children
@@ -49,7 +49,7 @@ class qc_fa_supplement(Variable):
             * p.supplement.handicapped_child.exceptional_care_amount.tier2
         )
 
-        supplements = reduction_rate * (
+        supplements = shared_custody_multiplier * (
             supplement_school_supplies
             + supplement_handicapped
             + supplement_handicapped_tier1

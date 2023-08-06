@@ -1,4 +1,4 @@
-description: Quebec provides this reduction rate in its family allowance tax credit for each shared custody child.
+description: Quebec multiplies its family allowance tax credit by this factor for parents with shared custody of a child.
 values:
   2023-01-01: 0.5
 metadata:

@@ -3,16 +3,19 @@
   input:
     people:
       c1:
+        age: 16
         full_custody: true
       c2:
+        age: 10
         full_custody: true
       c3:
+        age: 5
         full_custody: false
     household:
       members: [c1, c2, c3]
       adjusted_family_net_income: 40_000
-      count_children: 3
       is_married: false
+      qc_fa_eligibility: true
       province_code: QC
   output:
     qc_fa_payment: 7_931 #max[(2,782 * (2+1*0.5) + 976),(1107*（2+1*0.5)+389)]
@@ -22,15 +25,21 @@
   input:
     people:
       c1:
+        age: 16
         full_custody: true
       c2:
+        age: 10
         full_custody: true
       c3:
+        age: 8
         full_custody: false
+      c4:
+        age: 18 # age not eligible
+        full_custody: true     
     household:
-      members: [c1, c2, c3]
+      members: [c1, c2, c3, c4]
       adjusted_family_net_income: 50_000
-      count_children: 3
+      qc_fa_eligibility: true
       is_married: true
       province_code: QC
   output:
@@ -41,15 +50,18 @@
   input:
     people:
       c1:
+        age: 8
         full_custody: true
       c2:
+        age: 10
         full_custody: true
       c3:
+        age: 17
         full_custody: false
     household:
       members: [c1, c2, c3]
       adjusted_family_net_income: 100_000
-      count_children: 3
+      qc_fa_eligibility: true
       is_married: false
       province_code: QC
   output:
@@ -60,15 +72,18 @@
   input:
     people:
       c1:
+        age: 17
         full_custody: true
       c2:
+        age: 1
         full_custody: true
       c3:
+        age: 15
         full_custody: false
     household:
       members: [c1, c2, c3]
       adjusted_family_net_income: 100_000
-      count_children: 3
+      qc_fa_eligibility: true
       is_married: true
       province_code: QC
   output:
@@ -79,15 +94,18 @@
   input:
     people:
       c1:
+        age: 17
         full_custody: true
       c2:
+        age: 1
         full_custody: true
       c3:
+        age: 15
         full_custody: false
     household:
       members: [c1, c2, c3]
       adjusted_family_net_income: 300_000
-      count_children: 3
+      qc_fa_eligibility: true
       is_married: false
       province_code: QC
   output:
@@ -98,15 +116,18 @@
   input:
     people:
       c1:
+        age: 17
         full_custody: true
       c2:
+        age: 1
         full_custody: true
       c3:
+        age: 15
         full_custody: false
     household:
       members: [c1, c2, c3]
       adjusted_family_net_income: 300_000
-      count_children: 3
+      qc_fa_eligibility: true
       is_married: true
       province_code: QC
   output:
@@ -116,7 +137,7 @@
   period: 2023
   input:
     adjusted_family_net_income: 100_000
-    count_children: 0
+    qc_fa_eligibility: false
     is_married: false
     province_code: QC
   output:
@@ -127,22 +148,30 @@
   input:
     people:
       c1:
+        age: 17
         full_custody: true
       c2:
+        age: 1
         full_custody: true
       c3:
+        age: 15
         full_custody: false
       c4:
+        age: 15
         full_custody: false
       c5:
+        age: 10
         full_custody: false
       c6:
+        age: 11
         full_custody: true
       c7:
+        age: 13
         full_custody: true
     household:
       members: [c1, c2, c3, c4, c5, c6, c7]
       adjusted_family_net_income: 220_000
+      qc_fa_eligibility: true
       count_children: 7
       is_married: false
       province_code: QC
@@ -154,23 +183,30 @@
   input:
     people:
       c1:
+        age: 17
         full_custody: true
       c2:
+        age: 1
         full_custody: true
       c3:
+        age: 15
         full_custody: false
       c4:
+        age: 15
         full_custody: false
       c5:
+        age: 10
         full_custody: false
       c6:
+        age: 11
         full_custody: true
       c7:
+        age: 13
         full_custody: true
     household:
       members: [c1, c2, c3, c4, c5, c6, c7]
       adjusted_family_net_income: 220_000
-      count_children: 7
+      qc_fa_eligibility: true
       is_married: true
       province_code: QC
   output:
