@@ -3,7 +3,7 @@
   input:
     province_code: NS
     age: 19
-    ns_ia_in_need_of_protective_services: false
+    in_need_of_protective_services: false
   output:
     ns_income_assistance_age_eligibility: true
 
@@ -12,7 +12,7 @@
   input:
     province_code: NS
     age: 18
-    ns_ia_in_need_of_protective_services: false
+    in_need_of_protective_services: false
   output:
     ns_income_assistance_age_eligibility: false
 
@@ -21,7 +21,7 @@
   input:
     province_code: NS
     age: 18
-    ns_ia_in_need_of_protective_services: true
+    in_need_of_protective_services: true
   output:
     ns_income_assistance_age_eligibility: true
 
@@ -30,7 +30,7 @@
   input:
     province_code: NS
     age: 16
-    ns_ia_in_need_of_protective_services: true
+    in_need_of_protective_services: true
   output:
     ns_income_assistance_age_eligibility: true
 
@@ -39,6 +39,6 @@
   input:
     province_code: NS
     age: 15
-    ns_ia_in_need_of_protective_services: true
+    in_need_of_protective_services: true
   output:
     ns_income_assistance_age_eligibility: false
