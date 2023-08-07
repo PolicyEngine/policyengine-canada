@@ -1,4 +1,4 @@
-description: Northwest Territories Cost of Living Credit different phase rate and threshold
+description: Northwest Territories extends the following cost of living credit as a fraction of the adjusted net income.
 brackets:
   - threshold: 
       2022-12-31: 0
@@ -16,8 +16,8 @@ metadata:
   type: marginal_rate
   rate_unit: /1
   threshold_unit: currency-CAD
-  label: Northwest Territories Cost of Living Credit different phase rate
+  label: Northwest Territories cost of living rate
   reference:
     - title: Government of Canada - Northwest Territories Cost of Living Credit
       href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/northwest-territories/5012-tc.html
-      link: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5012-tc/5012-tc-22e.pdf
+            https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5012-tc/5012-tc-22e.pdf

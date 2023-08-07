@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class nt_living_tax_credit(Variable):
+class nt_cost_of_living_tax_credit(Variable):
     value_type = float
     entity = Person
     label = "Northwest Territories cost of living tax credit"
@@ -15,6 +15,6 @@ class nt_living_tax_credit(Variable):
 
         net_income = person("individual_net_income", period)
 
-        living_tax_credit = p.reduction.calc(net_income)
+        uncapped_credit = p.rate.calc(net_income)
 
-        return min_(living_tax_credit, p.max_amount)
+        return min_(uncapped_credit, p.max_amount)
