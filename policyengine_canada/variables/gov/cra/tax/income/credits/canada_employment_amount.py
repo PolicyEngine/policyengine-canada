@@ -12,10 +12,8 @@ class canada_employment_amount(Variable):
     def formula(person, period, parameters):
         p = parameters(
             period
-        ).gov.cra.tax.income.credits.canada_employment_amount.max_amount
-
-        employment_income = person("employment_income", period)
-        other_employment_income = person("other_employment_income", period)
-        total_income = employment_income + other_employment_income
-
-        return min_(total_income, max_amount)
+        ).gov.cra.tax.income.credits.canada_employment_amount
+        # While the government website states that the Canada Employment Amount is designed
+        # to support workers with work-related expenses, those expenses are not part of the formula.
+        countable_income = add(person, period, p.income_sources)
+        return min_(countable_income, p.max_amount)
