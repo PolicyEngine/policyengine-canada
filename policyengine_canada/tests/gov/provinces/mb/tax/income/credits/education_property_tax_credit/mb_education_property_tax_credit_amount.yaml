@@ -1,0 +1,23 @@
+- name: Education property tax credit with eligible age amount
+  period: 2022
+  input:
+    province_code: MB
+    education_property_tax_received: 2_000
+    net_school_tax: 3_000
+    age: 70
+    adjusted_family_net_income: 100_000
+    days_owning_education_property: 1_825
+  output:
+    mb_education_property_tax_credit_amount: 187.5
+
+- name: Education property tax credit with ineligible age amount
+  period: 2022
+  input:
+    province_code: MB
+    education_property_tax_received: 2_000
+    net_school_tax: 3_000
+    age: 60
+    adjusted_family_net_income: 100_000
+    days_owning_education_property: 365
+  output:
+    mb_education_property_tax_credit_amount: 187.5
