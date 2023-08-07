@@ -8,7 +8,6 @@ class qc_fa_payment(Variable):
     reference = "https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:1029_8_61_18"
     definition_period = YEAR
     defined_for = "qc_fa_eligibility"
-    adds = ["own_children_in_household"]
 
     def formula(household, period, parameters):
         p = parameters(period).gov.provinces.qc.tax.income.credits.fa
