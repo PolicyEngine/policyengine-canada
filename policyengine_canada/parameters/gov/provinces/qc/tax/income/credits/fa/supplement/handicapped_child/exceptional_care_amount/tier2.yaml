@@ -3,7 +3,7 @@ values:
   2023-01-01: 8_796
 metadata:
   unit: currency-CAD
-  label: Quebec family allowance tax credit tire 2 exceptional care disabled child base amount 
+  label: Quebec family allowance tax credit tier 2 exceptional care disabled child base amount 
   reference:
     - title: Retraite Québec - Retraite Québec
       href: https://www.rrq.gouv.qc.ca/en/enfants/enfant_handicape/Pages/enfant_handicape.aspx

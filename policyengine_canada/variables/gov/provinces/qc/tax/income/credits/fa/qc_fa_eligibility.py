@@ -2,9 +2,9 @@ from policyengine_canada.model_api import *
 
 
 class qc_fa_eligibility(Variable):
-    value_type = float
+    value_type = bool
     entity = Household
-    label = "Quebec family allowance eligible indivudual"
+    label = "Quebec family allowance eligible household"
     reference = "https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:1029_8_61_8"
     definition_period = YEAR
     defined_for = ProvinceCode.QC

@@ -7,7 +7,8 @@ class qc_fa_payment(Variable):
     label = "Quebec family allowance payment amount"
     reference = "https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:1029_8_61_18"
     definition_period = YEAR
-    defined_for = ProvinceCode.QC
+    defined_for = "qc_fa_eligibility"
+    adds = ["own_children_in_household"]
 
     def formula(household, period, parameters):
         p = parameters(period).gov.provinces.qc.tax.income.credits.fa
@@ -27,7 +28,8 @@ class qc_fa_payment(Variable):
             full_custody, 1, p.shared_custody_multiplier
         )
 
-        # method 1: calculate using max amount with reduction threshold, (C + D) − 4% (E − F) in taxation axt
+        # method 1: calculate using max amount with reduction threshold
+        # (C + D) − 4% (E − F) in taxation axt
         maximum_child_amount = household.sum(
             age_eligible * p.child_amount.max * shared_custody_multiplier
         )
