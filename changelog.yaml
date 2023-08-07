@@ -436,3 +436,23 @@
     added:
     - Quebec Senior Assistance Tax Credit.
   date: 2023-06-01 03:05:10
+- bump: minor
+  changes:
+    added:
+    - Alberta pension credit.
+  date: 2023-06-29 16:50:09
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia Age tax credit.
+  date: 2023-07-03 02:09:04
+- bump: minor
+  changes:
+    added:
+    - Yukon Government carbon price rebate - Individuals (YGCPRI)
+  date: 2023-07-19 18:54:15
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia Income Assistance Age Eligibility.
+  date: 2023-08-07 00:48:20

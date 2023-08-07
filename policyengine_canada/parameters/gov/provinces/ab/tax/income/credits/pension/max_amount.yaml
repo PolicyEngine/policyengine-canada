@@ -1,0 +1,10 @@
+description: Alberta provides this maximum amount under the pension income credit.
+values:
+  2023-01-01: 1_617
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Alberta pension income max amount
+  reference:
+  - title: Government of Canada - Alberta Personal Tax Credits Return 
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdfml
