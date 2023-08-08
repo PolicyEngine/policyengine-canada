@@ -4,7 +4,7 @@
     adjusted_family_net_income: 50_000
     age: 18
     is_married: false
-    count_children: 0
+    own_children_in_household: 0
     is_emancipated: false
     province_code: QC
   output:
@@ -16,7 +16,7 @@
     adjusted_family_net_income: 50_000
     age: 17
     is_married: true
-    count_children: 2
+    own_children_in_household: 2
     is_emancipated: true
     province_code: QC
   output:
@@ -28,7 +28,7 @@
     adjusted_family_net_income: 60_000
     age: 18
     is_married: false
-    count_children: 0
+    own_children_in_household: 0
     is_emancipated: true
     province_code: QC
   output:
@@ -40,7 +40,7 @@
     adjusted_family_net_income: 30_000
     age: 17
     is_married: true
-    count_children: 2
+    own_children_in_household: 2
     is_emancipated: false
     province_code: QC
   output:

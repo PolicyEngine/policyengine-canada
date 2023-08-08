@@ -21,7 +21,7 @@ class qc_solidarity_eligibility(Variable):
         age_eligible = person("age", period) >= p.age
         # You were younger than 18 and met all following requirements
         has_spouse = household("is_married", period)
-        children = household("count_children", period)
+        children = person("own_children_in_household", period)
         has_child = children > 0
         emancipated = person("is_emancipated", period)
 
