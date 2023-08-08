@@ -1,9 +1,12 @@
-description: Nova Scotia limits this lower income threshold under the basic personal amount eligibility.
+description: Nova Scotia reduces its additional basic personal amount out at this rate.
 values: 
-  2022-01-01: 25_000
+  2022-01-01: 0.06
 metadata:
-  unit: currency-CAD
-  label: Nova Scotia Basic Personal Amount Lower Income Threshold
+  unit: currency-CAD 
+  period: year 
+  rate_unit: /1
+  label: Nova Scotia basic personal amount reduction rate
+
   reference: 
   - title: 2022 Nova Scotia Personal Tax Credits Return
     href: https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf

@@ -4,7 +4,7 @@
     province_code: NS
     total_individual_pre_tax_income: 24_999
   output:
-    ns_basic_personal_credits: 11_481
+    ns_basic_personal_amount: 11_481
 
 - name: Person has taxable income between 25_000 and 75_000
   period: 2023
@@ -12,7 +12,7 @@
     province_code: NS
     total_individual_pre_tax_income: 27_000
   output:
-    ns_basic_personal_credits: 11_361
+    ns_basic_personal_amount: 11_361
 
 - name: Person has taxable income between 25_000 and 75_000
   period: 2023
@@ -20,7 +20,7 @@
     province_code: NS
     total_individual_pre_tax_income: 70_000
   output:
-    ns_basic_personal_credits: 8_781
+    ns_basic_personal_amount: 8_781
 
 - name: Person has taxable income higher than 75_000 
   period: 2023
@@ -28,4 +28,4 @@
     province_code: NS
     total_individual_pre_tax_income: 76_000
   output:
-    ns_basic_personal_credits: 8_481
+    ns_basic_personal_amount: 8_481

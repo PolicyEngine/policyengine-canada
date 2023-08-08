@@ -1,9 +1,9 @@
-description: Nova Scotia provides this basic amount under basic personal amount.
+description: Nova Scotia provides this additional amount under the basic personal amount.
 values: 
-  2022-01-01: 8_481
+  2022-01-01: 3_000
 metadata:
   unit: currency-CAD
-  label: Nova Scotia Basic Personal Amount
+  label: Nova Scotia basic personal amount additional amount
   reference: 
   - title: 2022 Nova Scotia Personal Tax Credits Return
     href: https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf
