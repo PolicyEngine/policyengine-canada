@@ -1,6 +1,6 @@
 description: Manitoba extends this tuition amount to full-time students at educational institutions.
 values:
-  2023-01-01: 4800 #400/month * 12
+  2023-01-01: 4_800 # 400/month * 12
 metadata:
   unit: currency-CAD
   label: Manitoba credit for full-time students
