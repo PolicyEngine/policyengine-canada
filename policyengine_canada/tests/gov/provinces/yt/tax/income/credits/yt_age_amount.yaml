@@ -21,7 +21,7 @@
   input:
     province_code: YT
     individual_net_income: 10_000
-    age: 70
+    age: 65
   output:
     yt_age_amount: 8_396
   
