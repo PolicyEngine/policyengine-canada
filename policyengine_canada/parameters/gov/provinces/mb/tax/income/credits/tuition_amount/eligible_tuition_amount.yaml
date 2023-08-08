@@ -3,7 +3,7 @@ values:
   2023-01-01: 100
 metadata:
   unit: currency-CAD
-  label: Manitoba students benefit eligibility
+  label: Manitoba tuition amount credit expense eligibility
   reference:
     - title: Government of Canada - Manitoba Information Guide
       href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb/td1mb-23e.pdf
