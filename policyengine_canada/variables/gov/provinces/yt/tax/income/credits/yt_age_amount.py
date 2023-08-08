@@ -15,6 +15,4 @@ class yt_age_amount(Variable):
         reduction = p.rate.calc(income)
         reduced_amount = max_(p.maximum_amount - reduction, 0)
         age_eligible = age >= p.age
-        income_eligible = income < p.income_threshold
-        eligible = age_eligible & income_eligible
-        return eligible * reduced_amount
+        return age_eligible * reduced_amount
