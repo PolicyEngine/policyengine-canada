@@ -5,6 +5,72 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.72.0] - 2023-08-08 01:39:11
+
+### Added
+
+- Manitoba basic personal amount.
+
+## [0.71.0] - 2023-08-07 00:48:20
+
+### Added
+
+- Nova Scotia Income Assistance Age Eligibility.
+
+## [0.70.0] - 2023-07-19 18:54:15
+
+### Added
+
+- Yukon Government carbon price rebate - Individuals (YGCPRI)
+
+## [0.69.0] - 2023-07-03 02:09:04
+
+### Added
+
+- Nova Scotia Age tax credit.
+
+## [0.68.0] - 2023-06-29 16:50:09
+
+### Added
+
+- Alberta pension credit.
+
+## [0.67.0] - 2023-06-01 03:05:10
+
+### Added
+
+- Quebec Senior Assistance Tax Credit.
+
+## [0.66.0] - 2023-05-30 16:16:25
+
+### Added
+
+- Manitoba Pension amount credit.
+
+## [0.65.0] - 2023-05-28 20:47:19
+
+### Added
+
+- New Brunswick age amount credit.
+
+## [0.64.0] - 2023-05-27 23:28:36
+
+### Added
+
+- Quebec childcare expenses tax credit.
+
+## [0.63.0] - 2023-05-27 15:38:10
+
+### Added
+
+- Python 3.10 support.
+
+## [0.62.0] - 2023-05-25 22:46:06
+
+### Added
+
+- Alberta spouse and common-law partner amount.
+
 ## [0.61.0] - 2023-05-23 05:05:59
 
 ### Added
@@ -498,6 +564,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.72.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.71.0...0.72.0
+[0.71.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.70.0...0.71.0
+[0.70.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.69.0...0.70.0
+[0.69.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.68.0...0.69.0
+[0.68.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.67.0...0.68.0
+[0.67.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.66.0...0.67.0
+[0.66.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.65.0...0.66.0
+[0.65.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.64.0...0.65.0
+[0.64.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.63.0...0.64.0
+[0.63.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.62.0...0.63.0
+[0.62.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.61.0...0.62.0
 [0.61.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.60.0...0.61.0
 [0.60.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.59.0...0.60.0
 [0.59.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.58.0...0.59.0

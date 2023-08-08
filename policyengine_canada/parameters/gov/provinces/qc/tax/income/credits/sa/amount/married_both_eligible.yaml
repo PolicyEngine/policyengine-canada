@@ -1,0 +1,9 @@
+description: Quebec limits its Senior Assistance Credit to eligible seniors and spouses at or below this amount.
+values:
+  2022-01-01: 4_000 
+metadata:
+  unit: currency-CAD
+  label: Quebec senior assistance credits base amount for both eligible seniors and spouse 
+  reference:
+    - title: Revenu Quebec - Amount of the Senior Assistance Tax Credit
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/senior-assistance-tax-credit/amount-of-the-credit/
