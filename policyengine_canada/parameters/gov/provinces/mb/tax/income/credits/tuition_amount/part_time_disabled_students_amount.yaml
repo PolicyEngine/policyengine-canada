@@ -1,6 +1,6 @@
 description: Manitoba provides personal tax credit returns to disabled part time student at educational institutions.
 values:
-  2023-01-01: 4800 #400/month * 12
+  2023-01-01: 4_800 # 400/month * 12
 metadata:
   unit: currency-CAD
   label: Manitoba credit for disabled part-time students
