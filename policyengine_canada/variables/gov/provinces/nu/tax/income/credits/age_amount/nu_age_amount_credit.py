@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class nu_age_amount_credit(Variable):
     value_type = float
     entity = Person
-    label = "Nunvaut age amount credit"
+    label = "Nunavut age amount credit"
     unit = CAD
     definition_period = YEAR
     defined_for = "nu_age_amount_credit_eligible_person"
