@@ -12,9 +12,9 @@ class yt_age_amount(Variable):
         income = person("individual_net_income", period)
         age = person("age", period)
         p = parameters(period).gov.provinces.yt.tax.income.credits.age_amount
-        # reduction = (
-        #     (income > p.base_amount) * (income - p.base_amount) * p.rate
-        # )
-        reduction = income * p.rate
+        reduction = p.rate.calc(income)
         reduced_amount = max_(p.maximum_amount - reduction, 0)
-        return (age >= p.age) * (income < p.income_threshold) * reduced_amount
+        age_eligible = age >= p.age
+        income_eligible = income < p.income_threshold
+        eligible = age_eligible & income_eligible
+        return eligible * reduced_amount

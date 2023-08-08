@@ -1,4 +1,4 @@
-description: Yukon provides this rate under the age amount credit.
+description: Yukon provides this rate under the age amounhttps://ruoqitan-didactic-engine-gvx7v4694ppcp47x.github.dev/t credit.
 brackets:
   - threshold:
       2022-01-01: 0
@@ -6,12 +6,9 @@ brackets:
       2022-01-01: 0
   - threshold:
       2022-01-01: 39_826
-    rate:
-      2022-01-01: 0.15
-  - threshold:
       2023-01-01: 42_335
     rate:
-      2023-01-01: 0.15
+      2022-01-01: 0.15
 
 metadata:
   type: marginal_rate

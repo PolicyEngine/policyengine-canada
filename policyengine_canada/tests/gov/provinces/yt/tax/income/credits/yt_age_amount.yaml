@@ -1,13 +1,13 @@
-- name: Not eligible for age
+- name: Not eligible for age amount
   period: 2023
   input:
     province_code: YT
     individual_net_income: 10_000
-    age: 60
+    age: 64
   output:
     yt_age_amount: 0
 
-- name: Not eligible for net income
+- name: Not eligible through net income
   period: 2023
   input:
     province_code: YT
