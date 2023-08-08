@@ -4,8 +4,8 @@ from policyengine_canada.model_api import *
 class sk_disability_amount(Variable):
     value_type = float
     entity = Person
-    unit: CAD
-    label = "Saskatchewan Disability Amount Tax Credit"
+    unit = CAD
+    label = "Saskatchewan disability amount tax credit"
     definition_period = YEAR
     defined_for = ProvinceCode.SK
 
@@ -16,4 +16,4 @@ class sk_disability_amount(Variable):
         disabled = person("is_disabled", period)
         is_head = person("is_head", period)
         eligbile = is_head & disabled
-        return where(eligbile, p.amount, 0)
+        return eligible * p.amount
