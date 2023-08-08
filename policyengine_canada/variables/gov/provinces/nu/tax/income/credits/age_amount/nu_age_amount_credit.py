@@ -11,7 +11,6 @@ class nu_age_amount_credit(Variable):
 
     def formula(person, period, parameters):
         income = person("total_individual_pre_tax_income", period)
-        eligible = person("nu_age_amount_credit_eligible_person", period)
         p = parameters(period).gov.provinces.nu.tax.income.credits.age_amount
         phase_out_amount = p.phase_out_rate.calc(income)
         max_amount = p.amount
