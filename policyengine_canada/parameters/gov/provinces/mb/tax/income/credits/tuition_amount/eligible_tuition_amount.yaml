@@ -1,4 +1,4 @@
-description: Manitoba student tuition amount eligibility for accepting credit.
+description: Manitoba allows students with tuition above this amount to file for the tuition amount credit.
 values:
   2023-01-01: 100
 metadata:
