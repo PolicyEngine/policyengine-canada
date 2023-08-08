@@ -15,5 +15,4 @@ class qc_basic_personal_amount(Variable):
 
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.qc.tax.income.credits
-        head = person("is_head", period)
-        return head * p.basic_personal_amount
+        return p.basic_personal_amount

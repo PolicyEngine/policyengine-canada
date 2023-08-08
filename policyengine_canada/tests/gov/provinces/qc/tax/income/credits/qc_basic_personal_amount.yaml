@@ -1,15 +1,6 @@
-- name: Quebec basic personal amount for household head
+- name: Quebec basic personal amount 
   period: 2022
   input:
     province_code: QC
-    is_head: true
   output:
     qc_basic_personal_amount: 16_143
-
-- name: Quebec basic personal amount for non-head of household individuals
-  period: 2022
-  input:
-    province_code: QC
-    is_head: false
-  output:
-    qc_basic_personal_amount: 0
