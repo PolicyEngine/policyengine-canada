@@ -12,8 +12,6 @@ class qc_fa_payment(Variable):
     def formula(household, period, parameters):
         p = parameters(period).gov.provinces.qc.tax.income.credits.fa
 
-        eligibility = household("qc_fa_eligibility", period)
-
         # check if the household has cohabiting spouse
         has_spouse = household("is_married", period)
 
@@ -57,4 +55,4 @@ class qc_fa_payment(Variable):
 
         min_credit_amount = minimum_child_amount + single_parent_min_amount
 
-        return eligibility * max_(min_credit_amount, max_credit_amount)
+        return max_(min_credit_amount, max_credit_amount)
