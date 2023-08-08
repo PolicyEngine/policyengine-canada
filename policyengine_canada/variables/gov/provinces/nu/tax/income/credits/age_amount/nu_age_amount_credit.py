@@ -14,4 +14,4 @@ class nu_age_amount_credit(Variable):
         p = parameters(period).gov.provinces.nu.tax.income.credits.age_amount
         phase_out_amount = p.phase_out_rate.calc(income)
         max_amount = p.amount
-        return eligible * max_(max_amount - phase_out_amount, 0)
+        return max_(max_amount - phase_out_amount, 0)
