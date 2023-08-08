@@ -2,14 +2,14 @@
   period: 2023
   input:
     province_code: AB
-    age: 60
+    age: 64
   output:
-    ab_age_credit_eligibility: false
+    ab_age_credit_eligibile: false
 
 - name: Eligible
   period: 2023
   input:
     province_code: AB
-    age: 68
+    age: 65
   output:
-    ab_age_credit_eligibility: true
+    ab_age_credit_eligibile: true

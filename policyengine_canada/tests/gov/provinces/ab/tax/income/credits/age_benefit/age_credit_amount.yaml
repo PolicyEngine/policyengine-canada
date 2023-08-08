@@ -2,7 +2,7 @@
   period: 2023
   input:
     province_code: AB
-    ab_age_credit_eligible_count: 0
+    ab_age_credit_eligibile: false
     individual_net_income: 43_000
   output:
     ab_age_credit: 0
@@ -11,8 +11,8 @@
   period: 2023
   input:
     province_code: AB
-    ab_age_credit_eligible_count: 1
-    individual_net_income: 43_000
+    ab_age_credit_eligibile: true
+    individual_net_income: 43_570
   output:
     ab_age_credit: 5_853
 
@@ -21,17 +21,17 @@
   period: 2023
   input:
     province_code: AB
-    ab_age_credit_eligible_count: 1
+    ab_age_credit_eligibile: true
     individual_net_income: 44_000
   output:
     ab_age_credit: 5_788.5
-  # 5853 - (44000 - 43570)*0.15  = 5_788.5
+  # 5,853 - (44,000 - 43,570) * 0.15  = 5,788.5
 
-- name: Eligible for credit and never negative 
+- name: Eligible for credit and capped at 0
   period: 2023
   input:
     province_code: AB
-    ab_age_credit_eligible_count: 1
+    ab_age_credit_eligibile: true
     individual_net_income: 82_591 
   output:
     ab_age_credit: 0
