@@ -1,4 +1,4 @@
-description: Nunavut age amount credit's maximum amount is phased out at this reduction rate.
+description: Nunavut phases the age amount credit out at this rate, based on income.
 brackets:
   - threshold: 
       2022-07-01: 0
