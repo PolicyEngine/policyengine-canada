@@ -1,6 +1,6 @@
 description: Manitoba extends this tuition amount to non-disabled part-time students at educational institutions.
 values:
-  2023-01-01: 1440 #120/month * 12
+  2023-01-01: 1_440 # 120/month * 12
 metadata:
   unit: currency-CAD
   label: Manitoba tuition credit non-disabled part-time student amount
