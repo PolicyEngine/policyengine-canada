@@ -1,4 +1,4 @@
-description: Manitoba provides personal tax credit returns to disabled part time student at educational institutions.
+description: Manitoba extends this tuition amount to non-disabled part-time students at educational institutions.
 values:
   2023-01-01: 4_800 # 400/month * 12
 metadata:
