@@ -10,14 +10,10 @@ class yt_basic_personal_amount(Variable):
 
     def formula(person, period, parameters):
         income = person("individual_net_income", period)
+        head = person("is_head", period)
         p = parameters(
             period
         ).gov.provinces.yt.tax.income.credits.basic_personal_amount
-        exceedance = income - p.reduction.income_threshold
-        pct = (p.reduction.scale_value - exceedance) / p.reduction.scale_value
-        percent = max_(0, pct)
-        percent = min_(pct, 1)
-        return (
-            (percent * p.reduction.applicable_amount)
-            + p.base_amount
-        )
+        reduction = p.reduction_rate.calc(income)
+        base = p.basic_personal_amount
+        return (base + reduction) * head

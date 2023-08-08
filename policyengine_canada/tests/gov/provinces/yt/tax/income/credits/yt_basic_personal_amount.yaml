@@ -3,6 +3,7 @@
   input:
     province_code: YT
     individual_net_income: 160_000
+    is_head: true
   output:
     yt_basic_personal_amount: 15_000
 
@@ -11,6 +12,7 @@
   input:
     province_code: YT
     individual_net_income: 165_430
+    is_head: true
   output:
     yt_basic_personal_amount: 15_000
   
@@ -19,5 +21,15 @@
   input:
     province_code: YT
     individual_net_income: 300_000
+    is_head: true
   output:
     yt_basic_personal_amount: 13_521
+
+- name: Not head
+  period: 2023
+  input:
+    province_code: YT
+    individual_net_income: 300_000
+    is_head: false
+  output:
+    yt_basic_personal_amount: 0

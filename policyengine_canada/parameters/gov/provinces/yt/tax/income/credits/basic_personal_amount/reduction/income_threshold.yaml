@@ -1,9 +1,0 @@
-description: Yukon provides a calculation for the basic personal amount for filer with income above this threshold.
-values:
-  2023-01-01: 165_430
-metadata:
-  unit: currency-CAD
-  label: Yukon basic personal amount income threshold
-  reference:
-  - title: Worksheet for the Yukon 2023 Personal Tax Credits Return
-    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1yt-ws/td1yt-ws-23e.pdf
