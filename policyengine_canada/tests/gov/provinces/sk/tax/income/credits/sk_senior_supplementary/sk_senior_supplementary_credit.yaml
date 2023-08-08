@@ -3,14 +3,16 @@
   input:
     province_code: SK
     age: 64
+    is_head: true
   output:
     sk_senior_supplementary_credit: 0
 
 - name: 2023 SK senior supplementary tax credit - At age threshold
-  period: 2024
+  period: 2023
   input:
     province_code: SK
     age: 65
+    is_head: true
   output:
     sk_senior_supplementary_credit: 1_421
 
@@ -19,6 +21,7 @@
   input:
     province_code: SK
     age: 68
+    is_head: true
   output:
     sk_senior_supplementary_credit: 1_421
 
@@ -27,5 +30,15 @@
   input:
     province_code: SK
     age: 68
+    is_head: true
   output:
     sk_senior_supplementary_credit: 1_336
+
+- name: 2023 SK senior supplementary tax credit - Not the household host
+  period: 2024
+  input:
+    province_code: SK
+    age: 65
+    is_head: false
+  output:
+    sk_senior_supplementary_credit: 0

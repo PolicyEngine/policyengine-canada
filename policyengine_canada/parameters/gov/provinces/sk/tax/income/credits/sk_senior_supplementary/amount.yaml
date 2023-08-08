@@ -6,11 +6,11 @@ metadata:
   unit: currency-CAD
   label: Saskatchewan Senior Supplementary tax credit amount
   reference:
-  - title: 2023 Saskatchewan TD1SK Personal Tax Credits Return
-    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf
+  - title: 2023 Saskatchewan TD1SK Personal Tax Credits Return, line 3
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page1
   - title: 2023 Saskatchewan TD1SK-WS Personal Tax Credits Return
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk-ws/td1sk-ws-23e.pdf
   - title: Saskatchewan I2-01 The Income Tax Act, 2000
     href: https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf
-  - title: 2022 Saskatchewan TD1SK Personal Tax Credits Return
-    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-22e.pdf
+  - title: 2022 Saskatchewan TD1SK Personal Tax Credits Return, line 3
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-22e.pdf#page1
