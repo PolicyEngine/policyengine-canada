@@ -7,7 +7,7 @@ class nu_age_amount_credit(Variable):
     label = "Nunvaut age amount credit"
     unit = CAD
     definition_period = YEAR
-    defined_for = ProvinceCode.NU
+    defined_for = "nu_age_amount_credit_eligible_person"
 
     def formula(person, period, parameters):
         income = person("total_individual_pre_tax_income", period)
