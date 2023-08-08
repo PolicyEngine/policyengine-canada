@@ -14,8 +14,3 @@ class nu_age_amount_credit_eligible_person(Variable):
                 period
             ).gov.provinces.nu.tax.income.credits.age_amount
         return age >= p.eligible_age
-            age
-            >= parameters(
-                period
-            ).gov.provinces.nu.tax.income.credits.age_amount.eligible_age
-        )
