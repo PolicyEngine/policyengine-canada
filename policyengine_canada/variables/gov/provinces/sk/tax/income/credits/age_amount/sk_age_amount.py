@@ -23,6 +23,5 @@ class sk_age_amount(Variable):
         age_eligible = age >= p.age_eligibility
         reduction = p.reduction.rate.calc(income)
         reduced_amount = max_(p.max_amount - reduction, 0)
-        is_head = person("is_head", period)
-        eligible = is_head & age_eligible
+        eligible = age_eligible
         return eligible * reduced_amount
