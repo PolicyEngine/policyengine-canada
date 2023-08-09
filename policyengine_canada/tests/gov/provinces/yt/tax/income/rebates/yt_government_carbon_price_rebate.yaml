@@ -1,0 +1,89 @@
+- name: 1 head + 1 spouse + 2 children + have supplement # 4 * (320+32) = 1408
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: false
+        age: 40
+      spouse:
+        is_spouse: true
+        age: 40
+      child:
+        is_spouse: false
+        age: 10
+      child2:
+        is_spouse: false
+        age: 15
+    household:
+      members: [head, spouse, child, child2]
+      province_code: YT
+      in_whitehorse: false
+  output:
+    yt_government_carbon_price_rebate: 1_408
+
+- name: 1 head + 1 spouse + 2 children + no supplement # 4 * 320 = 1280
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: false
+        age: 40
+      spouse:
+        is_spouse: true
+        age: 40
+      child:
+        is_spouse: false
+        age: 5
+      child2:
+        is_spouse: false
+        age: 10
+    household:
+      members: [head, spouse, child, child2]
+      province_code: YT
+      in_whitehorse: true
+  output:
+    yt_government_carbon_price_rebate: 1_280
+
+- name: 1 head + 0 spouse + 2 children + have supplement # 3 * (320+32) = 1056
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: false
+        age: 40
+      child:
+        is_spouse: false
+        age: 13
+      child2:
+        is_spouse: false
+        age: 18
+    household:
+      members: [head, child, child2]
+      province_code: YT
+      in_whitehorse: false
+  output:
+    yt_government_carbon_price_rebate: 1_056
+
+- name: 1 head + 0 spouse + 2 children + no supplement # 3 * 320 = 960
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: false
+        age: 40
+      child:
+        is_spouse: false
+        age: 13
+      child2:
+        is_spouse: false
+        age: 15
+      child3:
+        is_spouse: false
+        age: 20
+      
+    household:
+      members: [head, child, child2, child3]
+      province_code: YT
+      in_whitehorse: true
+  output:
+    yt_government_carbon_price_rebate: 960
