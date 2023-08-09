@@ -1,5 +1,5 @@
-description: Canada allows for the following income sources for the computation of the employment amount credit.
-values:
+description: Canada considers the following income sources when computing the employment amount credit.
+lues:
   2022-01-01:
     - employment_income
     - other_employment_income
