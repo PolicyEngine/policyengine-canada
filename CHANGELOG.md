@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.73.0] - 2023-08-09 23:04:22
+
+### Added
+
+- Canada employment amount.
+
 ## [0.72.0] - 2023-08-08 01:39:11
 
 ### Added
@@ -564,6 +570,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.73.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.72.0...0.73.0
 [0.72.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.71.0...0.72.0
 [0.71.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.70.0...0.71.0
 [0.70.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.69.0...0.70.0
