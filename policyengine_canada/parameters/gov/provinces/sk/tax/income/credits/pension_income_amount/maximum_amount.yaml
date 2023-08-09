@@ -1,4 +1,4 @@
-description: Saskatchewan provides this maximum amount under the pension income credit.
+description: Saskatchewan provides this maximum pension income credit.
 values:
   2023-01-01: 1_000
 metadata:
@@ -6,6 +6,6 @@ metadata:
   label: Saskatchewan pension income maximun amount
   reference:
   - title: 2023 Saskatchewan Tax Credits Return
-    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf
-  - title: The Income Tax Act, 2000 DIVISION 2 Section 18 Pension Credit
-    href: https://publications.saskatchewan.ca/api/v1/products/583/formats/806/download
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1
+  - title: The Income Tax Act, 2000 DIVISION 2 Section 18, Pension Credit 18(1)
+    href: https://publications.saskatchewan.ca/api/v1/products/583/formats/806/download#page=16

@@ -7,6 +7,10 @@ class sk_pension_income_credit(Variable):
     label = "Saskatchewan pension income credit"
     unit = CAD
     definition_period = YEAR
+    reference = (
+        "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1",
+        "https://publications.saskatchewan.ca/api/v1/products/583/formats/806/download#page=16",
+    )
     defined_for = ProvinceCode.SK
 
     def formula(person, period, parameters):
