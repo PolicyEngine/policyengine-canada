@@ -20,24 +20,26 @@ class nl_income_supplement(Variable):
         total_family_income = spouse_income + personal_income
 
         # Get an amount for spouse
-        spouse_supplement = person("is_spouse", period) * p.spouse_amount
+        spouse_supplement = (
+            person("is_spouse", period) * p.amount.spouse_amount
+        )
 
         # Base amount for self and spouse
         self_and_spouse_credit = p.basic_credit + spouse_supplement
 
         # Households can get an additional amount per child udner 19
         child_amount = (
-            person("own_children_in_household", period) * p.child_amount
+            person("own_children_in_household", period) * p.amount.child_amount
         )
 
         # Households can receive an additional amount if received the disability tax credit
         disability_credit = person("is_disabled", period)
-        disability_amount = disability_credit * p.disability_amount
+        disability_amount = disability_credit * p.amount.disability_amount
 
         # Supplement phases in at 5.32% between $15,000 and $20,000 of income maxed at $266
         phased_in_income_supplement = min_(
-            p.additional_amount.phase_in_rate.calc(total_family_income),
-            p.additional_amount.max_amount,
+            p.phase_in_rate.calc(total_family_income),
+            p.amount.max_amount,
         )
 
         # Maximum credit
@@ -50,7 +52,6 @@ class nl_income_supplement(Variable):
 
         # Amount phases out at 9% over $40,000
         return max_(
-            max_amount
-            - p.additional_amount.phase_out_rate.calc(total_family_income),
+            max_amount - p.phase_out_rate.calc(total_family_income),
             0,
         )

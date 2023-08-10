@@ -12,7 +12,7 @@ metadata:
   type: marginal_rate
   rate_unit: /1
   threshold_unit: currency-CAD
-  label: Newfoundland and Labrador Income Supplement Phase In Rate
+  label: Newfoundland and Labrador Income Supplement phase in rate
   reference:
     - title: Government of Canada - Newfoundland and Labrador Income Supplement
       href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/
