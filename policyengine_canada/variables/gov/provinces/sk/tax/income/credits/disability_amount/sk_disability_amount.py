@@ -15,5 +15,5 @@ class sk_disability_amount(Variable):
         ).gov.provinces.sk.tax.income.credits.disability_amount
         disabled = person("is_disabled", period)
         is_head = person("is_head", period)
-        eligbile = is_head & disabled
+        eligible = is_head & disabled
         return eligible * p.amount
