@@ -26,7 +26,9 @@ class nl_income_supplement(Variable):
         self_and_spouse_credit = p.basic_credit + spouse_supplement
 
         # Households can get an additional amount per child udner 19
-        child_amount = person("own_children_under_19", period) * p.child_amount
+        child_amount = (
+            person("own_children_in_household", period) * p.child_amount
+        )
 
         # Households can receive an additional amount if received the disability tax credit
         disability_credit = person("is_disabled", period)
