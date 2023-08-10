@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class sk_age_amount(Variable):
-    value_type = float
+class sk_age_amount_eligible(Variable):
+    value_type = bool
     entity = Person
-    label = "Saskatchewan age amount credit"
+    label = "Saskatchewan age amount eligibility"
     unit = CAD
     definition_period = YEAR
     reference = (
@@ -20,8 +20,6 @@ class sk_age_amount(Variable):
 
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.sk.tax.income.credits.age_amount
-        income = person("individual_net_income", period)
-        defined_for = person("sk_age_amount_eligible", period)
-        reduction = p.reduction.rate.calc(income)
-        reduced_amount = max_(p.max_amount - reduction, 0)
-        return defined_for * reduced_amount
+        age = person("age", period)
+        age_eligible = age >= p.age_eligibility
+        return age_eligible
