@@ -1,0 +1,9 @@
+description: Manitoba child benefit child age eligibility.
+values:
+  2023-01-01: 18
+metadata:
+  unit: year
+  label: Manitoba child benefit age benefit eligibility
+  reference:
+    - title: Manitoba basic child age benefit
+      href: https://www.gov.mb.ca/fs/eia/mcb.html
