@@ -5,7 +5,8 @@ metadata:
   unit: currency-CAD
   label: Northwest Territories cost of living tax credit max amount
   reference:
-  - title: Government of Canada - Credit
+  - title: Government of Canada - Northwest Territories Cost of Living Credit
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/northwest-territories/5012-tc.html 
-          https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/northwest-territories/5012-pc/information-residents-northwest-territories.html 
+  - title: Government of Canada - Income Tax Act
+    href: https://www.canlii.org/en/nt/laws/regu/rrnwt-1990-c-i-1/latest/rrnwt-1990-c-i-1.html  
 
