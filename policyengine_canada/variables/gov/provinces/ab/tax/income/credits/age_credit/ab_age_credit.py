@@ -6,7 +6,7 @@ class ab_age_credit(Variable):
     entity = Person
     label = "Alberta age benefit"
     definition_period = YEAR
-    defined_for = "ab_age_credit_eligibile"
+    defined_for = "ab_age_credit_eligible"
 
     def formula(person, period, parameters):
         income = person("individual_net_income", period)
