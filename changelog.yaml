@@ -471,3 +471,8 @@
     added:
     - Quebec family allowance tax credit.
   date: 2023-08-10 01:10:48
+- bump: minor
+  changes:
+    added:
+    - Quebec basic personal amount.
+  date: 2023-08-10 01:36:53
