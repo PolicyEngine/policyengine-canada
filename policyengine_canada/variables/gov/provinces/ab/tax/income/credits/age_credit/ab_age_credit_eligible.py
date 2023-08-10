@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class ab_age_credit_eligibile(Variable):
+class ab_age_credit_eligible(Variable):
     value_type = bool
     entity = Person
     label = "Eligible for the Alberta age credit"
