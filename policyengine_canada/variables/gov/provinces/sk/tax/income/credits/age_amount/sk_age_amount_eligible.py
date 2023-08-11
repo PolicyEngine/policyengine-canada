@@ -21,5 +21,4 @@ class sk_age_amount_eligible(Variable):
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.sk.tax.income.credits.age_amount
         age = person("age", period)
-        age_eligible = age >= p.age_eligibility
-        return age_eligible
+        return age >= p.age_eligibility

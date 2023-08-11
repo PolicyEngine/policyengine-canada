@@ -16,12 +16,10 @@ class sk_age_amount(Variable):
         "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1-ws/td1-ws-23e.pdf#page=1",
         "https://publications.saskatchewan.ca/api/v1/products/583/formats/806/download#page=15",
     )
-    defined_for = ProvinceCode.SK
+    defined_for = "sk_age_amount_eligible"
 
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.sk.tax.income.credits.age_amount
         income = person("individual_net_income", period)
-        defined_for = person("sk_age_amount_eligible", period)
         reduction = p.reduction.rate.calc(income)
-        reduced_amount = max_(p.max_amount - reduction, 0)
-        return defined_for * reduced_amount
+        return max_(p.max_amount - reduction, 0)

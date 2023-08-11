@@ -2,7 +2,7 @@
   period: 2021
   input:
     province_code: SK
-    age: 64
+    sk_age_amount_eligible = false
     individual_net_income: 20_000
   output:
     sk_age_amount: 0
@@ -12,7 +12,7 @@
   period: 2021
   input:
     province_code: SK
-    age: 70
+    sk_age_amount_eligible = true
     individual_net_income: 35_000
   output:
     sk_age_amount: 4_942
@@ -22,7 +22,7 @@
   period: 2021
   input:
     province_code: SK
-    age: 65
+    sk_age_amount_eligible = true
     individual_net_income: 60_000
   output:
     sk_age_amount: 1_461.1
@@ -32,7 +32,7 @@
   period: 2021
   input:
     province_code: SK
-    age: 68
+    sk_age_amount_eligible = true
     individual_net_income: 100_000
   output:
     sk_age_amount: 0
@@ -41,7 +41,7 @@
   period: 2022
   input:
     province_code: SK
-    age: 64
+    sk_age_amount_eligible = false
     individual_net_income: 20_000
   output:
     sk_age_amount: 0
@@ -51,7 +51,7 @@
   period: 2022
   input:
     province_code: SK
-    age: 70
+    sk_age_amount_eligible = true
     individual_net_income: 35_000
   output:
     sk_age_amount: 5_061
@@ -61,7 +61,7 @@
   period: 2022
   input:
     province_code: SK
-    age: 65
+    sk_age_amount_eligible = true
     individual_net_income: 60_000
   output:
     sk_age_amount: 1_712.55
@@ -71,7 +71,7 @@
   period: 2022
   input:
     province_code: SK
-    age: 68
+    sk_age_amount_eligible = true
     individual_net_income: 100_000
   output:
     sk_age_amount: 0
@@ -81,7 +81,7 @@
   period: 2023
   input:
     province_code: SK
-    age: 64
+    sk_age_amount_eligible = false
     individual_net_income: 20_000
   output:
     sk_age_amount: 0
@@ -91,7 +91,7 @@
   period: 2023
   input:
     province_code: SK
-    age: 65
+    sk_age_amount_eligible = true
     individual_net_income: 40_000
   output:
     sk_age_amount: 5_380
@@ -101,7 +101,7 @@
   period: 2023
   input:
     province_code: SK
-    age: 65
+    sk_age_amount_eligible = true
     individual_net_income: 60_000
   output:
     sk_age_amount: 2_387.65
@@ -111,7 +111,7 @@
   period: 2023
   input:
     province_code: SK
-    age: 65
+    sk_age_amount_eligible = true
     individual_net_income: 100_000
   output:
     sk_age_amount: 0
