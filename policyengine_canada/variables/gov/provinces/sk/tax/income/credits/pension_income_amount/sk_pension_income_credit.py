@@ -18,6 +18,7 @@ class sk_pension_income_credit(Variable):
         p = parameters(
             period
         ).gov.provinces.sk.tax.income.credits.pension_income_amount
+        # Payments exclude Canada Pension Plan, Quebec Pension Plan, Old Age Security, or Guaranteed Income Supplement payments
         pension_payments = person("pension_and_savings_plan_income", period)
         max_amount = p.maximum_amount
         return min_(pension_payments, max_amount)
