@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class ns_applicable_assets(Variable):
+class ns_income_assistance_applicable_assets(Variable):
     value_type = float
     entity = Household
     label = "Nova Scotia income assistance applicable assets"

@@ -14,5 +14,5 @@ class ns_income_assistance_asset_eligibility(Variable):
             period
         ).gov.provinces.ns.tax.income.income_assistance.eligibility.assets
         asset_limit = p.limit.calc(household_size)
-        assets = household("ns_applicable_assets", period)
+        assets = household("ns_income_assistance_applicable_assets", period)
         return assets <= asset_limit

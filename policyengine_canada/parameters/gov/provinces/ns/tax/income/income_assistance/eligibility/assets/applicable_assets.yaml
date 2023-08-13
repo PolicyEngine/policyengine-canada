@@ -2,7 +2,7 @@ description: Nova Scotia considers these assets when determining eligibility for
 values:
   2021-01-01:
     - property_value
-    - household_assets
+    - household_liquid_assets
 metadata:
   unit: list
   reference:
