@@ -7,3 +7,4 @@ class qc_living_in_northern_villages(Variable):
     label = "If the household living in northern villages of Quebec"
     definition_period = YEAR
     reference = "https://www.revenuquebec.ca/en/citizens/tax-credits/solidarity-tax-credit/components-of-the-solidarity-tax-credit/component-for-individuals-living-in-northern-villages/"
+    defined_for = ProvinceCode.QC

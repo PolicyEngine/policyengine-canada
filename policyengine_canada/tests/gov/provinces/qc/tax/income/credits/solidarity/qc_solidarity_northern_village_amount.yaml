@@ -1,0 +1,39 @@
+- name: Quebec solidarity credit living in Northern villages component amount for non-eligible household
+  period: 2023
+  input:
+    is_married: false
+    count_children: 2
+    qc_living_in_northern_villages: false
+    province_code: QC
+  output:
+    qc_solidarity_northern_village_amount: 0
+
+- name: Quebec solidarity credit living in Northern villages component amount for unmarried individual with 2 children
+  period: 2023
+  input:
+    is_married: false
+    count_children: 2
+    qc_living_in_northern_villages: true
+    province_code: QC
+  output:
+    qc_solidarity_northern_village_amount: 2_604 #1818+2*393
+
+- name: Quebec solidarity credit living in Northern villages component amount for married individual 
+  period: 2023
+  input:
+    is_married: true
+    count_children: 0
+    qc_living_in_northern_villages: true
+    province_code: QC
+  output:
+    qc_solidarity_northern_village_amount: 3_636 #1818+1818
+
+- name: Quebec solidarity credit living in Northern villages component amount for married individual with a child
+  period: 2023
+  input:
+    is_married: true
+    count_children: 1
+    qc_living_in_northern_villages: true
+    province_code: QC
+  output:
+    qc_solidarity_northern_village_amount: 4_029 #1818+1818+393

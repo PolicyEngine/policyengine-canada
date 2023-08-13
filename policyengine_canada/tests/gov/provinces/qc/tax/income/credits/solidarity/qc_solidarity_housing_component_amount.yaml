@@ -1,0 +1,32 @@
+- name: Quebec solidarity credit housing component for non-eligible individual
+  period: 2023
+  input:
+    is_married: false
+    count_children: 2
+    property_tax: 0
+    rent: 0
+    province_code: QC
+  output:
+    qc_solidarity_housing_component_amount: 0
+
+- name: Quebec solidarity credit housing component for unmarried individual with 2 children
+  period: 2023
+  input:
+    is_married: false
+    count_children: 2
+    property_tax: 100
+    rent: 0
+    province_code: QC
+  output:
+    qc_solidarity_housing_component_amount: 855 #128*2+599
+
+- name: Quebec solidarity credit housing component for married individual with 2 children
+  period: 2023
+  input:
+    is_married: true
+    count_children: 2
+    property_tax: 100
+    rent: 0
+    province_code: QC
+  output:
+    qc_solidarity_housing_component_amount: 983 #128*2+726
