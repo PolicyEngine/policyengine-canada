@@ -12,4 +12,4 @@ class ns_applicable_assets(Variable):
     )
     defined_for = ProvinceCode.NS
 
-    adds = "gov.provinces.ns.tax.income.income_assistance.applicable_assets"
+    adds = "gov.provinces.ns.tax.income.income_assistance.eligibility.assets.applicable_assets"
