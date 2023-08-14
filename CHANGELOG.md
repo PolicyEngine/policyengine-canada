@@ -5,6 +5,36 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.76.0] - 2023-08-11 04:31:59
+
+### Added
+
+- Alberta age credit.
+
+## [0.75.0] - 2023-08-10 01:36:53
+
+### Added
+
+- Quebec basic personal amount.
+
+## [0.74.0] - 2023-08-10 01:10:48
+
+### Added
+
+- Quebec family allowance tax credit.
+
+## [0.73.0] - 2023-08-09 23:04:22
+
+### Added
+
+- Canada employment amount.
+
+## [0.72.0] - 2023-08-08 01:39:11
+
+### Added
+
+- Manitoba basic personal amount.
+
 ## [0.71.0] - 2023-08-07 00:48:20
 
 ### Added
@@ -558,6 +588,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.76.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.75.0...0.76.0
+[0.75.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.74.0...0.75.0
+[0.74.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.73.0...0.74.0
+[0.73.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.72.0...0.73.0
+[0.72.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.71.0...0.72.0
 [0.71.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.70.0...0.71.0
 [0.70.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.69.0...0.70.0
 [0.69.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.68.0...0.69.0

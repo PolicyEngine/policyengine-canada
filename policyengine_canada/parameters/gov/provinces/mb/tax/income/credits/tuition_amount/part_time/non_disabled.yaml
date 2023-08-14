@@ -1,0 +1,11 @@
+description: Manitoba extends this tuition amount to non-disabled part-time students at educational institutions.
+values:
+  2023-01-01: 1_440 # 120/month * 12
+metadata:
+  unit: currency-CAD
+  label: Manitoba tuition credit non-disabled part-time student amount
+  reference:
+    - title: Government of Canada - Manitoba Information Guide
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb/td1mb-23e.pdf#page=1
+    - title: Government of Canada - Manitoba Personal Income Tax
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/provincial-territorial-tax-credits-individuals/manitoba.html#page1

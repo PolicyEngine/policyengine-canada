@@ -1,0 +1,12 @@
+description: Canada provides the following maximum amount under the Canada employment amount. 
+values:
+  2022-01-01: 1_287
+metadata:
+  unit: currency-CAD
+  label: Canada Employment Amount max amount
+  reference:
+  - title: Government of Canada, Line 31260 – Canada employment amount
+    href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-31260-canada-employment-amount.html
+    # The law specifies $1,000.
+  - title: Canada Income Tax Act, 118 (10) - Canada employment credit
+    href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-118.html
