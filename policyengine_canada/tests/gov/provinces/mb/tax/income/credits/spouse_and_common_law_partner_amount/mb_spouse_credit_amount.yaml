@@ -1,19 +1,29 @@
-- name: Eligible spouse with household's head not taking care of her
+- name: Eligible income spouse lived with household's head
   period: 2023
   input:
     province_code: MB
     spouse_income: 5_000
-    is_caregiver: false
-    mb_spouse_eligibility: true
+    lived_together: true
+    mb_head_eligibility: true
+  output:
+    mb_spouse_credit_amount: 4_134
+
+- name: Eligible income spouse does not lived with household's head
+  period: 2023
+  input:
+    province_code: MB
+    spouse_income: 5_000
+    lived_together: false
+    mb_head_eligibility: true
   output:
     mb_spouse_credit_amount: 0
 
-- name: Eligible spouse with household's head taking care of her
+- name: ineligible income spouse lived with household's head
   period: 2023
   input:
     province_code: MB
-    spouse_income: 5_000
-    is_caregiver: true
-    mb_spouse_eligibility: true
+    spouse_income: 10_000
+    lived_together: true
+    mb_head_eligibility: true
   output:
-    mb_spouse_credit_amount: 4_134
+    mb_spouse_credit_amount: 0

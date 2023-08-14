@@ -1,0 +1,15 @@
+- name: Household's head is taking care of the spouse
+  period: 2023
+  input:
+    province_code: MB
+    is_caregiver: true
+  output:
+    mb_head_eligibility: true
+
+- name: Household's head is not taking care of the spouse
+  period: 2023
+  input:
+    province_code: MB
+    is_caregiver: false
+  output:
+    mb_head_eligibility: false

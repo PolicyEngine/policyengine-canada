@@ -6,7 +6,7 @@ class mb_spouse_credit_amount(Variable):
     entity = Person
     label = "Manitoba spouse and commonlaw partner net income"
     definition_period = YEAR
-    defined_for = ProvinceCode.MB
+    defined_for = "mb_head_eligibility"
 
     def formula(person, period, parameters):
 
@@ -14,14 +14,7 @@ class mb_spouse_credit_amount(Variable):
             period
         ).gov.provinces.mb.tax.income.credits.spouse_or_common_law_partner_amount
 
-        caregiver = person("is_caregiver", period)
-
         spouse_income = person("spouse_income", period)
+        living_together = person("lived_together", period)
 
-        spouse_credit_amount = (
-            caregiver
-            * person("mb_spouse_eligibility", period)
-            * (p.base_amount - spouse_income)
-        )
-
-        return spouse_credit_amount
+        return living_together * (max_(0, (p.base_amount - spouse_income)))
