@@ -18,15 +18,17 @@ class mb_tuition_amount_credit(Variable):
 
         # check if full-time student
         full_time = person("is_full_time_student", period)
-        part_time = ~full_time
 
         # check if disabled
         disabled = person("is_disabled", period)
-        nondisabled = ~disabled
 
-        return tuition_eligible * (
-            tuition
-            + full_time * p.full_time_students_amount
-            + part_time * nondisabled * p.part_time_students_amount
-            + part_time * disabled * p.part_time_disabled_students_amount
+        tuition_addition = select(
+            [full_time, ~full_time & disabled, ~full_time & ~disabled],
+            [
+                p.amount.full_time,
+                p.part_time.disabled,
+                p.part_time.non_disabled,
+            ],
         )
+
+        return tuition_eligible * (tuition + tuition_addition)
