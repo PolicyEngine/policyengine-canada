@@ -15,7 +15,7 @@ class nu_eligible_dependent_credit(Variable):
         ).gov.provinces.nu.tax.income.credits.eligible_dependent_credit
         spouse = person("is_spouse", period)
         dependent = person("is_dependant", period)
-        income_eligible = ~spouse & dependent
+        eligible_dependent = ~spouse & dependent
         household_eligible = household.any(income_eligible)
         eligible2 = ~household.any(spouse & dependent)
         income = income_eligible * person("individual_net_income", period)
