@@ -48,7 +48,7 @@
       members: [head, spouse, dependent]
       province_code: NU
   output:
-    nu_eligible_dependent_credit: 22_000
+    nu_eligible_dependent_credit: 23_724
 
 - name: Dependent spouse and dependent third person in the household with less than 16000 income
   period: 2023
@@ -84,7 +84,7 @@
       members: [head, dependent]
       province_code: NU
   output:
-    nu_eligible_dependent_credit: 22_000
+    nu_eligible_dependent_credit: 23_724
 
 - name: Independent spouse and dependent third person in the household with more than 16000 income
   period: 2023
@@ -104,4 +104,4 @@
       members: [head, spouse, dependent]
       province_code: NU
   output:
-    nu_eligible_dependent_credit: 16_000
+    nu_eligible_dependent_credit: 16_862
