@@ -1,17 +1,15 @@
 from policyengine_canada.model_api import *
 
 
-class nt_age_credit(Variable):
-    value_type = float
+class nt_age_credit_eligible(Variable):
+    value_type = bool
     entity = Person
-    label = "Northwest Territories age credit"
-    unit = CAD
+    label = "Northwest Territories age credit eligibility"
     definition_period = YEAR
-    defined_for = "nt_age_credit_eligible"
+    defined_for = ProvinceCode.NT
     reference = "https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf"
 
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.nt.tax.income.credits.age_credit
-        income = person("nt_taxable_income", period)
-        full_credit = p.max_amount
-        return max_(full_credit - p.reduction.calc(income), 0)
+        age = person("age", period)
+        return age >= p.age_eligibility  # this is a bool 
