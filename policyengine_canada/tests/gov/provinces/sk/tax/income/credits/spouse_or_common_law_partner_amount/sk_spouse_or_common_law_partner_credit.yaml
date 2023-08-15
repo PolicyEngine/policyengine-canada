@@ -26,14 +26,14 @@
     joint_living: true
     is_spouse: true
   output:
-    sk_spouse_or_common_law_partner_credit: 14_661
+    sk_spouse_or_common_law_partner_credit: 16_428
 
 - name: No spouse or common-law partner credit
   period: 2023
   input:
     province_code: SK
-    spouse_income: 20_000
+    spouse_income: 2_000
     joint_living: true
-    is_spouse: true
+    is_spouse: false
   output:
     sk_spouse_or_common_law_partner_credit: 0

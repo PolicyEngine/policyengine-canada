@@ -19,7 +19,9 @@ class sk_spouse_or_common_law_partner_credit(Variable):
         )
         eligible = live_with_spouse
         reduction = where(
-            spouse_income <= p.net_income_base_amount, 0, spouse_income
+            spouse_income <= p.net_income_base_amount,
+            p.net_income_base_amount,
+            spouse_income,
         )
-        reduced_amount = p.maximum_amount - reduction
+        reduced_amount = p.reduction.base - reduction
         return eligible * max_(0, reduced_amount)
