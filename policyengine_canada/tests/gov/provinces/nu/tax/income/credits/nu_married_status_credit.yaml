@@ -40,7 +40,7 @@
       members: [head, spouse]
       province_code: NU
   output:
-    nu_married_status_credit: 22_000
+    nu_married_status_credit: 23_724
 
 - name: Dependent spouse in the household with income more than 1600
   period: 2023
@@ -56,4 +56,4 @@
       members: [head, spouse]
       province_code: NU
   output:
-    nu_married_status_credit: 16_000
+    nu_married_status_credit: 16_862
