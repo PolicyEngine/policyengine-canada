@@ -1,6 +1,6 @@
 description: Nunavut provides this base amount for individuals who are supporting a dependent living in the same household. 
 values:
-  2022-01-01: 16_000
+  2022-01-01: 16_862
 metadata:
   unit: currency-CAD
   label: Nunavut married status base amount
