@@ -1,14 +1,5 @@
 description: Manitoba Child Benefit phase out rate for families with five children.
-metadata:
-  type: marginal_rate
-  threshold_unit: currency-CAD
-  rate_unit: /1
-  label: Manibota Child Benefit five children phase out rate
-  reference:
-    - title: Manibota child tax benefit 
-      href: https://www.gov.mb.ca/fs/eia/mcb_table.html
-    - title: Manibota child tax benefit regulation
-      href: https://www.gov.mb.ca/fs/eia_manual/regs/4.html
+brackets:
   - threshold:
       2023-01-01: 0
     rate:
@@ -20,4 +11,16 @@ metadata:
   - threshold:
       2023-01-01: 24_052
     rate:
-      2023-01-01: 1 
+      2023-01-01: 1
+      
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Manibota Child Benefit five children phase out rate
+  reference:
+    - title: Manibota child tax benefit 
+      href: https://www.gov.mb.ca/fs/eia/mcb_table.html
+    - title: Manibota child tax benefit regulation
+      href: https://www.gov.mb.ca/fs/eia_manual/regs/4.html
+ 

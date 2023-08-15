@@ -1,0 +1,15 @@
+- name: Manitoba child benefit eligible child 
+  period: 2023
+  input:
+    province_code: MB
+    age: 16
+  output:
+    mb_child_benefit_eligible_child: true
+
+- name: Manibota child benefit ineligible child 
+  period: 2023
+  input:
+    province_code: MB
+    age: 22
+  output:
+    mb_child_benefit_eligible_child: false
