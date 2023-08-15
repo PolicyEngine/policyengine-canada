@@ -15,9 +15,9 @@ class nu_married_status_credit(Variable):
         ).gov.provinces.nu.tax.income.credits.married_status_credit
         spouse = person("is_spouse", period)
         dependent = person("is_dependant", period)
-        income_eligible = spouse & dependent
+        eligible_dependent = spouse & dependent
         household_eligible = household.any(income_eligible)
-        income = income_eligible * person("individual_net_income", period)
+        income = eligible_dependent * person("individual_net_income", period)
         eligible_income = household.sum(income)
         return (
             p.base + max_(0, p.addon_max_amount - eligible_income)
