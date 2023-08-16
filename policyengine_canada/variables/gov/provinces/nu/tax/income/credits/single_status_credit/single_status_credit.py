@@ -10,7 +10,7 @@ class nu_single_status_credit(Variable):
 
     def formula(person, period, parameters):
         single_status = ~person.household("is_married", period)
-        no_dependants = person.household("count_dependents", period) == 0
+        no_dependants = person.household("count_dependants", period) == 0
         eligible = (single_status & no_dependants)
         amount = parameters(
             period
