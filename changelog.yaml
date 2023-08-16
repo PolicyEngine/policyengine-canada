@@ -476,3 +476,8 @@
     added:
     - Quebec basic personal amount.
   date: 2023-08-10 01:36:53
+- bump: minor
+  changes:
+    added:
+    - Alberta age credit.
+  date: 2023-08-11 04:31:59
