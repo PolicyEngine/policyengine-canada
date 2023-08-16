@@ -4,12 +4,13 @@
     people:
       head:
         is_head: true
-    household:
-      members: [head]
-      province_code: NU
+    households:
+      household:
+        members: [head]
+        province_code: NU
   output:
     nu_eligible_dependent_credit: 0
-
+'''
 - name: Independent spouse and independent third person in the household
   period: 2023
   input:
@@ -105,3 +106,4 @@
       province_code: NU
   output:
     nu_eligible_dependent_credit: 16_862
+'''
