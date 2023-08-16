@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class yt_employment_amount(Variable):
     value_type = float
     entity = Person
-    label = "Yukon Employment Benefit Amount"
+    label = "Yukon Employment Amount"
     unit = CAD
     definition_period = YEAR
     defined_for = ProvinceCode.YT
@@ -13,6 +13,6 @@ class yt_employment_amount(Variable):
     def formula(person, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.yt.ta.income.credits.employment_amount
+        ).gov.provinces.yt.tax.income.credits.employment_amount
         canada_employment_amount = person("cananda_employment_amount", period)
         return min_(canada_employment_amount, p.amount)
