@@ -10,7 +10,9 @@ class nu_single_status_credit(Variable):
 
     def formula(person, period, parameters):
         single_status = ~person.household("is_married", period)
+        no_dependants = person.household("count_dependents", period) == 0
+        eligible = (single_status & no_dependants)
         amount = parameters(
             period
         ).gov.provinces.nu.tax.income.credits.single_status_credit.amount
-        return amount * single_status
+        return amount * eligible
