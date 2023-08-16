@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class qc_solidarity_housing_component_amount(Variable):
     value_type = float
     entity = Household
-    label = "Quebec solidarity tax credit"
+    label = "Quebec solidarity tax credit housing component"
     definition_period = YEAR
     defined_for = ProvinceCode.QC
 
@@ -18,9 +18,7 @@ class qc_solidarity_housing_component_amount(Variable):
         children = household("count_children", period)
 
         # Housing component
-        pays_property_tax = add(household, period, ["property_tax"]) > 0
-        pays_rent = add(household, period, ["rent"]) > 0
-        housing_eligible = pays_property_tax | pays_rent
+        housing_eligible = add(household, period, ["property_tax", "rent"]) > 0
 
         housing_family_amount = married * p.family
         housing_living_alone_amount = ~married * p.living_alone

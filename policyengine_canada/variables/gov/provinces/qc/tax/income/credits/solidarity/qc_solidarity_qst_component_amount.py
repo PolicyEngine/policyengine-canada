@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class qc_solidarity_qst_component_amount(Variable):
     value_type = float
     entity = Household
-    label = "Quebec solidarity tax credit"
+    label = "Quebec solidarity tax credit qst component"
     definition_period = YEAR
     defined_for = ProvinceCode.QC
 
