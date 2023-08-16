@@ -2,7 +2,7 @@
   period: 2022
   input:
     province_code: YT
-    employment_income: 30000
+    canada_employment_amount: 30_000
   output:
     yt_employment_amount: 1_287
 
@@ -10,7 +10,7 @@
   period: 2022
   input:
     province_code: YT
-    employment_income: 0
+    canada_employment_amount: 0
   output:
     yt_employment_amount: 0
 
@@ -18,7 +18,7 @@
   period: 2022
   input:
     province_code: YT
-    employment_income: 1_000
+    canada_employment_amount: 1_000
   output:
     yt_employment_amount: 1_000
 
