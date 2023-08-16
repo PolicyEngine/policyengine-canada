@@ -1,0 +1,14 @@
+description: Quebec multiplies its family allowance tax credit by this factor for parents with shared custody of a child.
+values:
+  2023-01-01: 0.5
+metadata:
+  unit: /1
+  label: Quebec family allowance tax credit shared custody multiplier
+  reference:
+    - title: Retraite Québec - You share custody of the child
+      href: https://www.rrq.gouv.qc.ca/en/enfants/changement_garde/Pages/obtenez_garde_partagee.aspx
+      # a child is in shared custody when the child lives alternately with each parent between 40% and 60% of the time each month.
+    - title: Retraite Québec - CalculAide for Family Allowance payments
+      href: https://www.rrq.gouv.qc.ca/en/services/services_en_ligne/soutien_aux_enfants/Pages/calcul_aide.aspx
+      # this tool assume 50% of the credit for each parent
+    # Legal reference unavailable

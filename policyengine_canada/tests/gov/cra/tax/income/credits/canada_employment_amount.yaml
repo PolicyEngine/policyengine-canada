@@ -1,0 +1,23 @@
+- name: Capped at 1,287
+  period: 2022
+  input:
+    employment_income: 1_100
+    other_employment_income: 200
+  output:
+    canada_employment_amount: 1_287
+
+- name: No income
+  period: 2022
+  input:
+    employment_income: 0
+    other_employment_income: 0
+  output:
+    canada_employment_amount: 0
+
+- name: Below cap
+  period: 2022
+  input:
+    employment_income: 1_000
+    other_employment_income: 200
+  output:
+    canada_employment_amount: 1_200
