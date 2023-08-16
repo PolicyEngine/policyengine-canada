@@ -26,6 +26,6 @@
   period: 2023
   input:
     province_code: NS
-    total_individual_pre_tax_income: 76_000
+    total_individual_pre_tax_income: 75_001
   output:
     ns_basic_personal_amount: 8_481

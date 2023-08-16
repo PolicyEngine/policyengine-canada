@@ -20,7 +20,9 @@ class ns_basic_personal_amount(Variable):
         taxable_income = person("total_individual_pre_tax_income", period)
 
         # Calculate additional amount added to base amount
-        exceedance = taxable_income - p.additional_amount.income_threshold
+        exceedance = max_(
+            taxable_income - p.additional_amount.income_threshold, 0
+        )
         reduced_additional_amount = (
             p.additional_amount.additional_amount
             - p.additional_amount.applicable_rate * exceedance
