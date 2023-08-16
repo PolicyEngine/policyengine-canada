@@ -14,5 +14,5 @@ class yt_employment_amount(Variable):
         p = parameters(
             period
         ).gov.provinces.yt.tax.income.credits.employment_amount
-        canada_employment_amount = person("cananda_employment_amount", period)
+        canada_employment_amount = person("canada_employment_amount", period)
         return min_(canada_employment_amount, p.amount)
