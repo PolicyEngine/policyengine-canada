@@ -14,6 +14,5 @@ class sk_senior_supplementary_credit(Variable):
             period
         ).gov.provinces.sk.tax.income.credits.sk_senior_supplementary
         age = person("age", period)
-        is_head = person("is_head", period)
-        eligibility = where((age >= p.age_threshold) & is_head, 1, 0)
+        eligibility = where(age >= p.age_threshold, 1, 0)
         return eligibility * p.amount
