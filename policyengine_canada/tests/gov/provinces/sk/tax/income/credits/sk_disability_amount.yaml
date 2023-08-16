@@ -2,7 +2,6 @@
   period: 2023
   input:
     province_code: SK
-    is_head: true
     is_disabled: true
   output:
     sk_disability_amount: 10_405
@@ -11,7 +10,6 @@
   period: 2024
   input:
     province_code: SK
-    is_head: true
     is_disabled: false
   output:
     sk_disability_amount: 0
@@ -20,16 +18,6 @@
   period: 2022
   input:
     province_code: SK
-    is_head: true
     is_disabled: true
   output:
     sk_disability_amount: 9_789
-
-- name: Disabled, not head
-  period: 2024
-  input:
-    province_code: SK
-    is_head: false
-    is_disabled: true
-  output:
-    sk_disability_amount: 0
