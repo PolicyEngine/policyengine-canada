@@ -4,7 +4,7 @@
     province_code: SK
     age: 64
   output: 
-    sk_age_amount_eligible = false
+    sk_age_amount_eligible: false
 
 
 - name: Eligible Age
@@ -13,7 +13,7 @@
     province_code: SK
     age: 70
   output:
-    sk_age_amount_eligible = true
+    sk_age_amount_eligible: true
 
 
 - name: Ineligible Age
@@ -22,7 +22,7 @@
     province_code: SK
     age: 64
   output: 
-    sk_age_amount_eligible = false
+    sk_age_amount_eligible: false
 
 
 - name: Eligible Age
@@ -31,7 +31,7 @@
     province_code: SK
     age: 70
   output:
-    sk_age_amount_eligible = true
+    sk_age_amount_eligible: true
 
 
 - name: Ineligible Age
@@ -40,7 +40,7 @@
     province_code: SK
     age: 64
   output: 
-    sk_age_amount_eligible = false
+    sk_age_amount_eligible: false
 
 
 - name: Eligible Age
@@ -49,4 +49,4 @@
     province_code: SK
     age: 70
   output:
-    sk_age_amount_eligible = true
+    sk_age_amount_eligible: true
