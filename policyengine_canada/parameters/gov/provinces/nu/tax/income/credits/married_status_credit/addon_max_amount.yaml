@@ -3,7 +3,7 @@ values:
   2022-01-01: 16_862
 metadata:
   unit: currency-CAD
-  label: Nunavut married status addon max amount
+  label: Nunavut married status additional max amount
   reference:
   - title: Nunavut Income Tax Act Subvision C Section 2.14
     href: https://www.nunavutlegislation.ca/en/consolidated-law/income-tax-act-consolidation
