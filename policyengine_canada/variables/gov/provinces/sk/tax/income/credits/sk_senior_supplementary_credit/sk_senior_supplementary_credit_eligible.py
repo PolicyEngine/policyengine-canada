@@ -1,11 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class sk_senior_supplementary_credit(Variable):
-    value_type = float
-    unit = CAD
+class sk_senior_supplementary_credit_eligible(Variable):
+    value_type = bool
     entity = Person
-    label = "Sasktachewan senior supplementary tax credit"
+    label = "Sasktachewan senior supplementary tax credit eligibility"
     definition_period = YEAR
     defined_for = "sk_senior_supplementary_credit"
 
@@ -13,5 +12,5 @@ class sk_senior_supplementary_credit(Variable):
         p = parameters(
             period
         ).gov.provinces.sk.tax.income.credits.sk_senior_supplementary
-        eligibility = person("sk_senior_supplementary_credit_eligible", period)
-        return eligibility * p.amount
+        age = person("age", period)
+        return age >= p.age_threshold
