@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class nu_age_amount_credit_eligible_person(Variable):
+class nu_age_amount_credit_eligible(Variable):
     value_type = bool
     entity = Person
     label = "Eligible for the Nunavut age amount credit"
