@@ -1,0 +1,12 @@
+description: Quebec provides this base amount under the family allowance tax credit for each disabled child.
+values:
+  2023-01-01: 2_616
+metadata:
+  unit: currency-CAD
+  label: Quebec family allowance tax credit disabled child base amount 
+  reference:
+    - title: Retraite Québec - Retraite Québec
+      href: https://www.rrq.gouv.qc.ca/en/enfants/enfant_handicape/Pages/enfant_handicape.aspx
+    - title: Quebec I-3 - Taxation Act, Part I, Book IX, Title III, Chapter III.1, DIVISION II.11.2, 1029.8.61.18. (b)
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#ga:l_i-gb:l_ix-gc:l_iii-gd:l_iii_1-ge:l_ii_11_2-h1
+      # $198 monthly($2376 yearly) in the legal reference,  increased due to the inflation adjustments
