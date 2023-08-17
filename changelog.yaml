@@ -441,3 +441,43 @@
     added:
     - Alberta pension credit.
   date: 2023-06-29 16:50:09
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia Age tax credit.
+  date: 2023-07-03 02:09:04
+- bump: minor
+  changes:
+    added:
+    - Yukon Government carbon price rebate - Individuals (YGCPRI)
+  date: 2023-07-19 18:54:15
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia Income Assistance Age Eligibility.
+  date: 2023-08-07 00:48:20
+- bump: minor
+  changes:
+    added:
+    - Manitoba basic personal amount.
+  date: 2023-08-08 01:39:11
+- bump: minor
+  changes:
+    added:
+    - Canada employment amount.
+  date: 2023-08-09 23:04:22
+- bump: minor
+  changes:
+    added:
+    - Quebec family allowance tax credit.
+  date: 2023-08-10 01:10:48
+- bump: minor
+  changes:
+    added:
+    - Quebec basic personal amount.
+  date: 2023-08-10 01:36:53
+- bump: minor
+  changes:
+    added:
+    - Alberta age credit.
+  date: 2023-08-11 04:31:59
