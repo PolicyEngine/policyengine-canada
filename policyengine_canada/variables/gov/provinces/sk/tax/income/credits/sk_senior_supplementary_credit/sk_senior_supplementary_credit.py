@@ -7,7 +7,7 @@ class sk_senior_supplementary_credit(Variable):
     entity = Person
     label = "Sasktachewan senior supplementary tax credit"
     definition_period = YEAR
-    defined_for = "sk_senior_supplementary_credit"
+    defined_for = "sk_senior_supplementary_credit_eligible"
 
     def formula(person, period, parameters):
         p = parameters(

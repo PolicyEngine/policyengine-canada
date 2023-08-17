@@ -6,7 +6,7 @@ class sk_senior_supplementary_credit_eligible(Variable):
     entity = Person
     label = "Sasktachewan senior supplementary tax credit eligibility"
     definition_period = YEAR
-    defined_for = "sk_senior_supplementary_credit"
+    defined_for = ProvinceCode.SK
 
     def formula(person, period, parameters):
         p = parameters(
