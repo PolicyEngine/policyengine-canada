@@ -11,4 +11,6 @@ class nt_basic_personal_amount(Variable):
     reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nt/td1nt-23e.pdf"
 
     def formula(person, period, parameters):
-        return parameters(period).gov.provinces.nt.tax.income.credits.basic_personal_amount.base
+        return parameters(
+            period
+        ).gov.provinces.nt.tax.income.credits.basic_personal_amount.base
