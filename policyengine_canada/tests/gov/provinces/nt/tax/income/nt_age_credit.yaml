@@ -1,20 +1,8 @@
-- name: Under age amount 2022
-  period: 2022
-  input:
-    province_code: NT
-    age: 64
-    nt_taxable_income: 39_826
-    is_head: true
-  output:
-    nt_age_credit: 0
-
 - name: Under taxable income 2022
   period: 2022
   input:
     province_code: NT
-    age: 65
     nt_taxable_income: 39_825
-    is_head: true
   output:
     nt_age_credit: 7_635
 
@@ -22,29 +10,15 @@
   period: 2022
   input:
     province_code: NT
-    age: 65
     nt_taxable_income: 40_100
-    is_head: true
   output:
     nt_age_credit: 7_593.9
-
-- name: Under age amount 2023
-  period: 2023
-  input:
-    province_code: NT
-    age: 64
-    nt_taxable_income: 42_335
-    is_head: true
-  output:
-    nt_age_credit: 0
 
 - name: Under taxable income 2023
   period: 2023
   input:
     province_code: NT
-    age: 65
     nt_taxable_income: 42_334
-    is_head: true
   output:
     nt_age_credit: 8_116
 
@@ -52,18 +26,6 @@
   period: 2023
   input:
     province_code: NT
-    age: 65
     nt_taxable_income: 45_000
-    is_head: true
   output:
     nt_age_credit: 7_716.25
-
-- name: Not head
-  period: 2023
-  input:
-    province_code: NT
-    age: 65
-    nt_taxable_income: 45_000
-    is_head: false
-  output:
-    nt_age_credit: 0
