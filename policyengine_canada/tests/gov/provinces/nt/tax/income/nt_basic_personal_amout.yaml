@@ -1,0 +1,6 @@
+- name: NT basic personal amount
+  period: 2023
+  input:
+    province_code: NT
+  output:
+    nt_basic_personal_amount: 16_593
