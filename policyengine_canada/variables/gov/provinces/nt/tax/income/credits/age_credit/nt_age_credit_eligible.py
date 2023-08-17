@@ -12,4 +12,4 @@ class nt_age_credit_eligible(Variable):
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.nt.tax.income.credits.age_credit
         age = person("age", period)
-        return age >= p.age_eligibility  # this is a bool 
+        return age >= p.age_eligibility  # this is a bool
