@@ -1,4 +1,4 @@
-description: Manitoba Child Benefit phase out rate for families with one child.
+description: Manitoba phases the child benefit out for families with one child at this rate.
 brackets:
   - threshold:
       2023-01-01: 0
