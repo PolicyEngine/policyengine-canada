@@ -4,7 +4,6 @@
     province_code: SK
     spouse_income: 1_000
     cohabitating_spouses: false
-    is_spouse: true
   output:
     sk_spouse_or_common_law_partner_credit: 0
 
@@ -14,7 +13,6 @@
     province_code: SK
     spouse_income: 1_000
     cohabitating_spouses: true
-    is_spouse: true
   output:
     sk_spouse_or_common_law_partner_credit: 16_615
 
@@ -24,20 +22,8 @@
     province_code: SK
     spouse_income: 3_000
     cohabitating_spouses: true
-    is_spouse: true
   output:
     sk_spouse_or_common_law_partner_credit: 15_277
-
-- name: No spouse or common-law partner credit
-  period: 2022
-  input:
-    province_code: SK
-    spouse_income: 2_000
-    cohabitating_spouses: true
-    is_spouse: false
-  output:
-    sk_spouse_or_common_law_partner_credit: 0
-
 
 
 - name: Ineligible because a person does not live with spouse
@@ -46,7 +32,6 @@
     province_code: SK
     spouse_income: 1_000
     cohabitating_spouses: false
-    is_spouse: true
   output:
     sk_spouse_or_common_law_partner_credit: 0
 
@@ -56,7 +41,6 @@
     province_code: SK
     spouse_income: 1_000
     cohabitating_spouses: true
-    is_spouse: true
   output:
     sk_spouse_or_common_law_partner_credit: 17_661
 
@@ -66,16 +50,6 @@
     province_code: SK
     spouse_income: 3_000
     cohabitating_spouses: true
-    is_spouse: true
   output:
     sk_spouse_or_common_law_partner_credit: 16_428
 
-- name: No spouse or common-law partner credit
-  period: 2023
-  input:
-    province_code: SK
-    spouse_income: 2_000
-    cohabitating_spouses: true
-    is_spouse: false
-  output:
-    sk_spouse_or_common_law_partner_credit: 0
