@@ -481,3 +481,8 @@
     added:
     - Alberta age credit.
   date: 2023-08-11 04:31:59
+- bump: minor
+  changes:
+    added:
+    - Saskatchewan disability amount.
+  date: 2023-08-18 03:48:59
