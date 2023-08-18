@@ -486,3 +486,8 @@
     added:
     - Saskatchewan disability amount.
   date: 2023-08-18 03:48:59
+- bump: minor
+  changes:
+    added:
+    - Saskatchewan Senior Supplementary amount Tax Credit.
+  date: 2023-08-18 03:53:19
