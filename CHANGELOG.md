@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.79.0] - 2023-08-18 04:11:47
+
+### Added
+
+- Saskatchewan age amount tax credit.
+
+## [0.78.0] - 2023-08-18 03:53:19
+
+### Added
+
+- Saskatchewan Senior Supplementary amount Tax Credit.
+
+## [0.77.0] - 2023-08-18 03:48:59
+
+### Added
+
+- Saskatchewan disability amount.
+
 ## [0.76.0] - 2023-08-11 04:31:59
 
 ### Added
@@ -588,6 +606,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.79.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.78.0...0.79.0
+[0.78.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.77.0...0.78.0
+[0.77.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.76.0...0.77.0
 [0.76.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.75.0...0.76.0
 [0.75.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.74.0...0.75.0
 [0.74.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.73.0...0.74.0
