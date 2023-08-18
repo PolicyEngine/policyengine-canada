@@ -1,0 +1,23 @@
+- name: Head and disabled
+  period: 2023
+  input:
+    province_code: SK
+    is_disabled: true
+  output:
+    sk_disability_amount: 10_405
+
+- name: Head, not disabled
+  period: 2024
+  input:
+    province_code: SK
+    is_disabled: false
+  output:
+    sk_disability_amount: 0
+
+- name: Head and disabled 2022
+  period: 2022
+  input:
+    province_code: SK
+    is_disabled: true
+  output:
+    sk_disability_amount: 9_789
