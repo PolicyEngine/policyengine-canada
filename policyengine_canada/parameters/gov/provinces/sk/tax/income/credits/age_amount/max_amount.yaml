@@ -1,0 +1,18 @@
+description: Saskatchewan provides this maximum age amount credit.
+values: 
+  2021-01-01: 4_942
+  2022-01-01: 5_061
+  2023-01-01: 5_380
+
+metadata:
+  unit: currency-CAD
+  label: Saskatchewan age amount credit max amount
+  reference:
+  - title: 2021 Saskatchewan Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-21e.pdf#page=1
+  - title: 2022 Saskatchewan Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-22e.pdf#page=1
+  - title: 2023 Saskatchewan Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1
+  - title: The Income Tax Act, 2000 DIVISION 2 Section 17, Age Credit 17(1)
+    href: https://publications.saskatchewan.ca/api/v1/products/583/formats/806/download#page=15
