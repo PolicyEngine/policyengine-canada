@@ -4,6 +4,7 @@
     province_code: SK
     spouse_income: 1_000
     cohabitating_spouses: false
+    is_head: true
   output:
     sk_spouse_or_common_law_partner_credit: 0
 
@@ -13,6 +14,7 @@
     province_code: SK
     spouse_income: 1_000
     cohabitating_spouses: true
+    is_head: true
   output:
     sk_spouse_or_common_law_partner_credit: 16_615
 
@@ -22,6 +24,7 @@
     province_code: SK
     spouse_income: 3_000
     cohabitating_spouses: true
+    is_head: true
   output:
     sk_spouse_or_common_law_partner_credit: 15_277
 
@@ -32,6 +35,7 @@
     province_code: SK
     spouse_income: 1_000
     cohabitating_spouses: false
+    is_head: true
   output:
     sk_spouse_or_common_law_partner_credit: 0
 
@@ -41,6 +45,7 @@
     province_code: SK
     spouse_income: 1_000
     cohabitating_spouses: true
+    is_head: true
   output:
     sk_spouse_or_common_law_partner_credit: 17_661
 
@@ -50,6 +55,7 @@
     province_code: SK
     spouse_income: 3_000
     cohabitating_spouses: true
+    is_head: true
   output:
     sk_spouse_or_common_law_partner_credit: 16_428
 

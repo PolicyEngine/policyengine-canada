@@ -21,4 +21,6 @@ class sk_spouse_or_common_law_partner_credit(Variable):
             spouse_income,
         )
         reduced_amount = max_(p.base_amount - reduction, 0)
-        return live_with_spouse * reduced_amount
+        head = person("is_head", period)
+
+        return household.any(head) * live_with_spouse * reduced_amount
