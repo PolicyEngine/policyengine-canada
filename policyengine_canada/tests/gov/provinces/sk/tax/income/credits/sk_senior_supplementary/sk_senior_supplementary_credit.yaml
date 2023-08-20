@@ -1,0 +1,31 @@
+- name: 2024 SK senior supplementary tax credit - non eligible
+  period: 2024
+  input:
+    province_code: SK
+    sk_senior_supplementary_credit_eligible: false
+  output:
+    sk_senior_supplementary_credit: 0
+
+- name: 2023 SK senior supplementary tax credit - eligible
+  period: 2023
+  input:
+    province_code: SK
+    sk_senior_supplementary_credit_eligible: true
+  output:
+    sk_senior_supplementary_credit: 1_421
+
+- name: 2024 SK senior supplementary tax credit - eligible
+  period: 2024
+  input:
+    province_code: SK
+    sk_senior_supplementary_credit_eligible: true
+  output:
+    sk_senior_supplementary_credit: 1_421
+
+- name: 2022 SK senior supplementary tax credit - eligible
+  period: 2022
+  input:
+    province_code: SK
+    sk_senior_supplementary_credit_eligible: true
+  output:
+    sk_senior_supplementary_credit: 1_336
