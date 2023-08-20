@@ -481,3 +481,18 @@
     added:
     - Alberta age credit.
   date: 2023-08-11 04:31:59
+- bump: minor
+  changes:
+    added:
+    - Saskatchewan disability amount.
+  date: 2023-08-18 03:48:59
+- bump: minor
+  changes:
+    added:
+    - Saskatchewan Senior Supplementary amount Tax Credit.
+  date: 2023-08-18 03:53:19
+- bump: minor
+  changes:
+    added:
+    - Saskatchewan age amount tax credit.
+  date: 2023-08-18 04:11:47
