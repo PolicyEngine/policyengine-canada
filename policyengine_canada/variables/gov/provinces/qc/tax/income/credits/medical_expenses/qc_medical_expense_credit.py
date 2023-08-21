@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class qc_medical_expenses(Variable):
+class qc_medical_expense_credit(Variable):
     value_type = float
     entity = Person
     label = "Quebec medical expenses tax credit"
