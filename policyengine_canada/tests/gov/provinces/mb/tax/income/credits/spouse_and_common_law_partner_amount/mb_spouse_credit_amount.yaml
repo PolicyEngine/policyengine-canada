@@ -3,7 +3,7 @@
   input:
     province_code: MB
     spouse_income: 5_000
-    lived_together: true
+    cohabitating_spouses: true
     mb_head_eligibility: true
   output:
     mb_spouse_credit_amount: 4_134
@@ -13,7 +13,7 @@
   input:
     province_code: MB
     spouse_income: 5_000
-    lived_together: false
+    cohabitating_spouses: false
     mb_head_eligibility: true
   output:
     mb_spouse_credit_amount: 0
@@ -23,7 +23,7 @@
   input:
     province_code: MB
     spouse_income: 10_000
-    lived_together: true
+    cohabitating_spouses: true
     mb_head_eligibility: true
   output:
     mb_spouse_credit_amount: 0

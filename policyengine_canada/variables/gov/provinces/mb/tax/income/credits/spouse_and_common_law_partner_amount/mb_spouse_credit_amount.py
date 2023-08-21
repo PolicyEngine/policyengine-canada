@@ -15,6 +15,8 @@ class mb_spouse_credit_amount(Variable):
         ).gov.provinces.mb.tax.income.credits.spouse_or_common_law_partner_amount
 
         spouse_income = person("spouse_income", period)
-        living_together = person("lived_together", period)
+        living_together = person("cohabitating_spouses", period) ###household?
 
-        return living_together * (max_(0, (p.base_amount - spouse_income)))
+        credit_amount = max_(0, (p.base_amount - spouse_income))
+
+        return living_together * credit_amount
