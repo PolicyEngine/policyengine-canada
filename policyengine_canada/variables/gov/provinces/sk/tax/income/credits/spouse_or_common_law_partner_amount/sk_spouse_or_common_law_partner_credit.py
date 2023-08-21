@@ -14,12 +14,13 @@ class sk_spouse_or_common_law_partner_credit(Variable):
         ).gov.provinces.sk.tax.income.credits.spouse_or_common_law_partner_amount
         person = household.members
         spouse_income = household.sum(person("spouse_income", period))
-        reduction_threshold = spouse_income <= p.reduction.income_threshold
-        reduced_amount = max_(p.reduction.base_amount - spouse_income, 0)
-        amount = where(
-            reduction_threshold,
-            reduced_amount,
-            p.max_amount,
+        live_with_spouse = household("cohabitating_spouses", period)
+        reduction = where(
+            spouse_income <= p.reduction.income_threshold,
+            p.reduction.income_threshold,
+            spouse_income,
         )
+        reduced_amount = max_(p.base_amount - reduction, 0)
+        head = person("is_head", period)
 
-        return amount
+        return household.any(head) * live_with_spouse * reduced_amount
