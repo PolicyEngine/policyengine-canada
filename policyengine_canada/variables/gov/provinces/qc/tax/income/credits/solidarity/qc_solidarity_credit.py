@@ -26,11 +26,13 @@ class qc_solidarity_credit(Variable):
             qst_component + housing_component + northern_village_amount
         )
 
-        # If household receives QST component, reduce depending on the housing component.
-        reduction_amount = (qst_component > 0) * where(
-            (housing_component == 0) & (northern_village_amount == 0),
+        # The credit may be reduced on the basis of the family income and different component eligibility
+        reduction_amount = where(
+            (qst_component > 0)
+            & (housing_component == 0)
+            & (northern_village_amount == 0),
             p.reduction.qst_only.calc(income),
-            p.reduction.qst_and_others.calc(income),
+            p.reduction.others.calc(income),
         )
 
         return max_(total_credit - reduction_amount, 0)
