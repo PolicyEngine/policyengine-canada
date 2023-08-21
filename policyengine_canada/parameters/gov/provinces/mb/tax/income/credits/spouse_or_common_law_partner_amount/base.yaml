@@ -1,7 +1,6 @@
 description: Manitoba provides this spouse and common-law partner amount, which is equivalent to the spouses basic personal amount.
 values:
   2022-01-01: 9_134
-  2023-01-01: 9_134
 metadata:
   unit: currency-CAD
   period: year
