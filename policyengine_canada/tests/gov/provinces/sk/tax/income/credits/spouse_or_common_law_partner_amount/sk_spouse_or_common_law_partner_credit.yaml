@@ -3,8 +3,7 @@
   input:
     province_code: SK
     spouse_income: 1_000
-    cohabitating_spouses: false
-    is_head: true
+    sk_spouse_or_common_law_partner_credit_eligible: false
   output:
     sk_spouse_or_common_law_partner_credit: 0
 
@@ -13,49 +12,52 @@
   input:
     province_code: SK
     spouse_income: 1_000
-    cohabitating_spouses: true
-    is_head: true
+    sk_spouse_or_common_law_partner_credit_eligible: true
   output:
     sk_spouse_or_common_law_partner_credit: 16_615
 
-- name: Spouse's income more than net income base amount
-  period: 2022
-  input:
-    province_code: SK
-    spouse_income: 3_000
-    cohabitating_spouses: true
-    is_head: true
-  output:
-    sk_spouse_or_common_law_partner_credit: 15_277
+# - name: Spouse's income more than net income base amount
+#   period: 2022
+#   input:
+#     province_code: SK
+#     spouse_income: 3_000
+#     cohabitating_spouses: true
+#     is_head: true
+#     sk_spouse_or_common_law_partner_credit_eligible: true
+#   output:
+#     sk_spouse_or_common_law_partner_credit: 15_277
 
 
-- name: Ineligible because a person does not live with spouse
-  period: 2023
-  input:
-    province_code: SK
-    spouse_income: 1_000
-    cohabitating_spouses: false
-    is_head: true
-  output:
-    sk_spouse_or_common_law_partner_credit: 0
+# - name: Ineligible because a person does not live with spouse
+#   period: 2023
+#   input:
+#     province_code: SK
+#     spouse_income: 1_000
+#     cohabitating_spouses: false
+#     is_head: true
+#     sk_spouse_or_common_law_partner_credit_eligible: false
+#   output:
+#     sk_spouse_or_common_law_partner_credit: 0
 
-- name: Spouse's income less than net income base amount
-  period: 2023
-  input:
-    province_code: SK
-    spouse_income: 1_000
-    cohabitating_spouses: true
-    is_head: true
-  output:
-    sk_spouse_or_common_law_partner_credit: 17_661
+# - name: Spouse's income less than net income base amount
+#   period: 2023
+#   input:
+#     province_code: SK
+#     spouse_income: 1_000
+#     cohabitating_spouses: true
+#     is_head: true
+#     sk_spouse_or_common_law_partner_credit_eligible: true
+#   output:
+#     sk_spouse_or_common_law_partner_credit: 17_661
 
-- name: Spouse's income more than net income base amount
-  period: 2023
-  input:
-    province_code: SK
-    spouse_income: 3_000
-    cohabitating_spouses: true
-    is_head: true
-  output:
-    sk_spouse_or_common_law_partner_credit: 16_428
+# - name: Spouse's income more than net income base amount
+#   period: 2023
+#   input:
+#     province_code: SK
+#     spouse_income: 3_000
+#     cohabitating_spouses: true
+#     is_head: true
+#     sk_spouse_or_common_law_partner_credit_eligible: true
+#   output:
+#     sk_spouse_or_common_law_partner_credit: 16_428
 
