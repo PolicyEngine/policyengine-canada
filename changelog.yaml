@@ -506,3 +506,8 @@
     fixed:
     - Manitoba BPA parameter folder structure.
   date: 2023-08-21 20:22:09
+- bump: patch
+  changes:
+    fixes:
+    - Canada Basic Personal Amount Supplement label.
+  date: 2023-08-21 20:36:42
