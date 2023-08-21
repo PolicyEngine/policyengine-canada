@@ -19,4 +19,5 @@ metadata:
       href: http://www.finances.gouv.qc.ca/MAJ2021/documents/en/AUTEN_IncomeTax2022.pdf#page=16
     - title: Taxation Act(CQLR c I-3), Part I, Book IX, Title III, Division II.17.2 Solidarity Credit, § 2.1029.8.116.16.(d)
       href: https://www.canlii.org/en/qc/laws/stat/cqlr-c-i-3/latest/cqlr-c-i-3.html#se:1029_8_116_16
+      # 3%, if B(housing component amount) and C(Northern village component amount) in the formula have a value equal to zero
       # 3% reduction when over 34,800 in the legal reference, threshold increased due to the inflation adjustments
