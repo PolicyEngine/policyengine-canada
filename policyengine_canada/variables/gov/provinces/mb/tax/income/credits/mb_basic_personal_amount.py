@@ -11,5 +11,5 @@ class mb_basic_personal_amount(Variable):
     defined_for = ProvinceCode.MB
 
     def formula(person, period, parameters):
-        p = parameters(period).gov.provinces.mb.credits
+        p = parameters(period).gov.provinces.mb.tax.income.credits
         return p.basic_personal_amount

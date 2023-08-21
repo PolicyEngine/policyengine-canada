@@ -1,0 +1,4 @@
+- bump: patch
+  changes:
+    fixed:
+    - Manitoba BPA parameter folder structure.
