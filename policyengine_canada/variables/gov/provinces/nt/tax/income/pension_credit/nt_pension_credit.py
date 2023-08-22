@@ -8,7 +8,7 @@ class nt_pension_credit(Variable):
     unit = CAD
     definition_period = YEAR
     defined_for = ProvinceCode.NT
-    reference = "https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf"
+    reference = "https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf#page=29"
 
     def formula(person, period, parameters):
         p = parameters(
