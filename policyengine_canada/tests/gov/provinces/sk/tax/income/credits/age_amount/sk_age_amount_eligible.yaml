@@ -1,0 +1,52 @@
+- name: Ineligible Age
+  period: 2021
+  input:
+    province_code: SK
+    age: 64
+  output: 
+    sk_age_amount_eligible: false
+
+
+- name: Eligible Age
+  period: 2021
+  input:
+    province_code: SK
+    age: 70
+  output:
+    sk_age_amount_eligible: true
+
+
+- name: Ineligible Age
+  period: 2022
+  input:
+    province_code: SK
+    age: 64
+  output: 
+    sk_age_amount_eligible: false
+
+
+- name: Eligible Age
+  period: 2022
+  input:
+    province_code: SK
+    age: 70
+  output:
+    sk_age_amount_eligible: true
+
+
+- name: Ineligible Age
+  period: 2023
+  input:
+    province_code: SK
+    age: 64
+  output: 
+    sk_age_amount_eligible: false
+
+
+- name: Eligible Age
+  period: 2023
+  input:
+    province_code: SK
+    age: 70
+  output:
+    sk_age_amount_eligible: true

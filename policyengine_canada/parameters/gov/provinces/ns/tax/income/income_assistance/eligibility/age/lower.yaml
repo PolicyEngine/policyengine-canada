@@ -1,0 +1,9 @@
+description: Nova Scotia extends Income Assistance to individuals this age or older if they are in need of protective services.
+values:
+  2021-01-01: 16
+metadata:
+  unit: year
+  label: Nova Scotia Income Assistance lower age eligibility
+  reference:
+  - title: Employment Support and Income Assistance Act, Section 21, Eligibility (8), (3)
+    href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_2

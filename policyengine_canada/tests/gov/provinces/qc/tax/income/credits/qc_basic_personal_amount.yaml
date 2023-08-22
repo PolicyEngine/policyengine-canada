@@ -1,0 +1,6 @@
+- name: Quebec basic personal amount 
+  period: 2022
+  input:
+    province_code: QC
+  output:
+    qc_basic_personal_amount: 16_143
