@@ -1,11 +1,11 @@
 description: Newfoundland and Labrador provides the following income supplement amount for filers with disability.
 values:
-  2022-12-31: 231
+  2023-01-01: 231
 metadata:
   unit: currency-CAD
   label: Newfoundland and Labrador Income Supplement disability amount
   reference:
     - title: Government of Canada - Newfoundland and Labrador Income Supplement
       href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/
-    - title: Government of Canada - Newfoundland and Labrador Income Tax Act
+    - title: Government of Canada - Newfoundland and Labrador Income Tax Act §34
       href: https://www.assembly.nl.ca/Legislation/sr/statutes/i01-1.htm#34_ 

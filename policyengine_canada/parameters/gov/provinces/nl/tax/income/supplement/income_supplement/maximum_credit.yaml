@@ -1,11 +1,11 @@
 description: Newfoundland and Labrador provides the following income supplement maximum credit.
 values:
-  2022-12-31: 520
+  2023-01-01: 520
 metadata:
   unit: currency-CAD
   label: Newfoundland and Labrador Income Supplement maximum credit
   reference:
     - title: Government of Canada - Newfoundland and Labrador Income Supplement
       href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/
-    - title: Government of Canada - Newfoundland and Labrador Income Tax Act
+    - title: Government of Canada - Newfoundland and Labrador Income Tax Act §34
       href: https://www.assembly.nl.ca/Legislation/sr/statutes/i01-1.htm#34_ 
