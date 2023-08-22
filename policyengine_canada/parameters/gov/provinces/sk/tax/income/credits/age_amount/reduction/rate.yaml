@@ -1,0 +1,28 @@
+description: Saskatchewan reduces the age amount tax credit at this rate based on the income.
+
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Saskatchewan age amount credit reduction rate
+  reference:
+  - title: Worksheet for the 2021 Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1-ws/td1-ws-21e.pdf#page=1
+  - title: Worksheet for the 2022 Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1-ws/td1-ws-22e.pdf#page=1
+  - title: Worksheet for the 2023 Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1-ws/td1-ws-23e.pdf#page=1
+  - title: The Income Tax Act, 2000 DIVISION 2 Section 17, Age Credit 17(1)
+    href: https://publications.saskatchewan.ca/api/v1/products/583/formats/806/download#page=15
+
+brackets:
+  - threshold:
+      2021-01-01: 0
+    rate:
+      2021-01-01: 0
+  - threshold:
+      2021-01-01: 36_794
+      2022-01-01: 37_677
+      2023-01-01: 40_051
+    rate:
+      2021-01-01: 0.15
