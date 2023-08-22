@@ -8,10 +8,9 @@ class nt_age_credit(Variable):
     unit = CAD
     definition_period = YEAR
     defined_for = "nt_age_credit_eligible"
-    reference = "https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf"
+    reference = "https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf"  # page=28
 
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.nt.tax.income.credits.age_credit
         income = person("nt_taxable_income", period)
-        full_credit = p.max_amount
-        return max_(full_credit - p.reduction.calc(income), 0)
+        return max_(p.max_amount - p.reduction.calc(income), 0)
