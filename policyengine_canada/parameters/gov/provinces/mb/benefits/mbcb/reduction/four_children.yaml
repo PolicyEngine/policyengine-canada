@@ -2,16 +2,22 @@ description: Manitoba phases the child benefit out for families with four childr
 
 brackets:
   - threshold:
+      2022-01-01: 0
       2023-01-01: 0
     rate:
+      2022-01-01: 0
       2023-01-01: 0
   - threshold:
+      2022-01-01: 15_000
       2023-01-01: 15_000
     rate:
+      2022-01-01: 0.2318
       2023-01-01: 0.2318
   - threshold:
+      2022-01-01: 22_242
       2023-01-01: 22_242
     rate:
+      2022-01-01: 1 
       2023-01-01: 1 
 
 metadata:

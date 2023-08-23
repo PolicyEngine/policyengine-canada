@@ -1,7 +1,8 @@
-description: Manitoba provides this base amount for its Child Tax Benefit.
+description: Manitoba provides this base amount under the Child Tax Benefit.
 values:
-  2022-01-01: 420
-  2023-01-01: 420 #35 per month
+  2022-01-01: 420 # 35 per month
+  2023-01-01: 420 # 35 per month
+
 metadata:
   unit: currency-CAD
   label: Manitoba child benefit base
