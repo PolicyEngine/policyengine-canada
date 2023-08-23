@@ -5,5 +5,8 @@ metadata:
   unit: /1
   label: Quebec caregivers tax credit specialized respite services expenses rate
   reference:
-    - title: Revenu Quebec - Tax Credit for Caregivers (Line 462)
+    - title: Revenu Quebec - Tax Credit for Caregivers - Line 462
       href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/451-to-480-refund-or-balance-due/line-462/point-2/
+    - title: Quebec I-3 - Taxation Act, Part I, Book IX, Title III, Chapter III.1, DIVISION II.11.7.2, 1029.8.61.96.12. (a)iii
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:1029_8_61_96_12
+      # 30%

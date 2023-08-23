@@ -2,70 +2,70 @@
   period: 2022
   input:
     is_disabled: false
-    is_care_receiver: false
+    is_carereceiver: false
     age: 70
     is_spouse: false
     lived_together: true
     province_code: QC
   output:
-    qc_caregiver_living_with_nondisabled_care_receiver: 0
+    qc_caregiver_living_with_nondisabled_carereceiver: 0
 
 - name: Quebec caregiver tax credit for caregiver living with disabled care receiver
   period: 2022
   input:
     is_disabled: true
-    is_care_receiver: true
+    is_carereceiver: true
     age: 70
     is_spouse: false
     lived_together: true
     province_code: QC
   output:
-    qc_caregiver_living_with_nondisabled_care_receiver: 0
+    qc_caregiver_living_with_nondisabled_carereceiver: 0
 
 - name: Quebec caregiver tax credit for caregiver living with nondisabled care receiver below age eligibility
   period: 2022
   input:
     is_disabled: false
-    is_care_receiver: true
+    is_carereceiver: true
     age: 60
     is_spouse: false
     lived_together: true
     province_code: QC
   output:
-    qc_caregiver_living_with_nondisabled_care_receiver: 0
+    qc_caregiver_living_with_nondisabled_carereceiver: 0
 
 - name: Quebec caregiver tax credit for caregiver living with nondisabled care receiver (is his/her spouse)
   period: 2022
   input:
     is_disabled: false
-    is_care_receiver: true
+    is_carereceiver: true
     age: 70
     is_spouse: true
     lived_together: true
     province_code: QC
   output:
-    qc_caregiver_living_with_nondisabled_care_receiver: 0
+    qc_caregiver_living_with_nondisabled_carereceiver: 0
 
 - name: Quebec caregiver tax credit for caregiver not living with nondisabled care receiver (not his/her spouse)
   period: 2022
   input:
     is_disabled: false
-    is_care_receiver: true
+    is_carereceiver: true
     age: 70
     is_spouse: false
     lived_together: false
     province_code: QC
   output:
-    qc_caregiver_living_with_nondisabled_care_receiver: 0
+    qc_caregiver_living_with_nondisabled_carereceiver: 0
 
 - name: Quebec caregiver tax credit for caregiver living with nondisabled care receiver (not his/her spouse)
   period: 2022
   input:
     is_disabled: false
-    is_care_receiver: true
+    is_carereceiver: true
     age: 70
     is_spouse: false
     lived_together: true
     province_code: QC
   output:
-    qc_caregiver_living_with_nondisabled_care_receiver: 1_299
+    qc_caregiver_living_with_nondisabled_carereceiver: 1_299

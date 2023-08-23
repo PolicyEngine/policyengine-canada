@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class qc_caregiver_living_with_nondisabled_care_receiver(Variable):
+class qc_caregiver_living_with_nondisabled_carereceiver(Variable):
     value_type = float
     entity = Person
     label = "Quebec caregiver tax credit for caregivers living with nondisabled care receivers"
@@ -15,14 +15,16 @@ class qc_caregiver_living_with_nondisabled_care_receiver(Variable):
         # without an impairment
         nondisabled = ~person("is_disabled", period)
         # is care receiver
-        care_receiver = person("is_care_receiver", period)
+        carereceiver = person("is_carereceiver", period)
         # age eligibility
-        age_eligible = person("age", period) >= p.age_eligibility
+        age_eligible = (
+            person("age", period) >= p.eligibility.senior_relative_age
+        )
         # lived together
         cohabiting = person("lived_together", period)
 
         eligible = (
-            nonspouse & nondisabled & care_receiver & age_eligible & cohabiting
+            nonspouse & nondisabled & carereceiver & age_eligible & cohabiting
         )
 
         return eligible * p.base_amount
