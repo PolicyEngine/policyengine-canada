@@ -1,0 +1,62 @@
+- name: Quebec family allowance supplement for three children family 
+  period: 2023
+  input:
+    people:
+      c1: # no school supplement but handicapped - 0.5 * (2616 + 8796) = 5706
+        full_custody: false
+        age: 3
+        is_disabled: true
+        qc_fa_exceptional_care_tier1: false
+        qc_fa_exceptional_care_tier2: true
+      c2: # eligible for school supplement - 115
+        full_custody: true
+        age: 10
+        is_disabled: false
+        qc_fa_exceptional_care_tier1: false
+        qc_fa_exceptional_care_tier2: false
+      c3: # eligible for school supplement and handicapped - 115 + 2616
+        full_custody: true
+        age: 17
+        is_disabled: true
+        qc_fa_exceptional_care_tier1: false
+        qc_fa_exceptional_care_tier2: false
+    household:
+      members: [c1, c2, c3]
+      province_code: QC
+  output:
+    qc_fa_supplement: 8_552
+
+- name: Quebec family allowance supplement for no children family 
+  period: 2023
+  input:
+    province_code: QC
+  output:
+    qc_fa_supplement: 0
+
+- name: Quebec family allowance supplement for three children family 
+  period: 2023
+  input:
+    people:
+      c1: # no school supplement and non-disabled
+        full_custody: false
+        age: 17
+        is_disabled: false
+        qc_fa_exceptional_care_tier1: false
+        qc_fa_exceptional_care_tier2: false
+      c2: # no school supplement but disabled full custody with tire 1 care - 2616 + 13224 = 15,840
+        full_custody: true
+        age: 3
+        is_disabled: true
+        qc_fa_exceptional_care_tier1: true
+        qc_fa_exceptional_care_tier2: false
+      c3: # eligible for school supplement and non disabled shared custody - 0.5*115 = 57.5
+        full_custody: false
+        age: 10
+        is_disabled: false
+        qc_fa_exceptional_care_tier1: false
+        qc_fa_exceptional_care_tier2: false
+    household:
+      members: [c1, c2, c3]
+      province_code: QC
+  output:
+    qc_fa_supplement: 15_897.5
