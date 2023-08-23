@@ -1,35 +1,35 @@
-- name: Zero Medeical Expenses of Net Income over Maximum Amount
+- name: Zero Medical Expenses of Net Income over Maximum Amount
   period: 2022
   input:
     province_code: YT
-    household_medical_expenses: 0
+    medical_expenses: 0
     household_net_income: 10_000_000_000
   output:
     yt_medical_expenses: 0
 
-- name: Zero Medeical Expenses of Net Income below Maximum Amount
+- name: Zero Medical Expenses of Net Income below Maximum Amount
   period: 2022
   input:
     province_code: YT
-    household_medical_expenses: 0
+    medical_expenses: 0
     household_net_income: 100
   output:
     yt_medical_expenses: 0
 
-- name: Medeical Expenses of Net Income below Maximum Amount
+- name: Medical Expenses of Net Income below Maximum Amount
   period: 2022
   input:
     province_code: YT
-    household_medical_expenses: 10_000
+    medical_expenses: 10_000
     household_net_income: 100
   output:
     yt_medical_expenses: 9_997
 
-- name: Medeical Expenses of Net Income over Maximum Amount
+- name: Medical Expenses of Net Income over Maximum Amount
   period: 2022
   input:
     province_code: YT
-    household_medical_expenses: 4_000
+    medical_expenses: 4_000
     household_net_income: 10_000_000_000
   output:
     yt_medical_expenses: 1_521

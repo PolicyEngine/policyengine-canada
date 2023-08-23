@@ -13,9 +13,7 @@ class yt_medical_expenses(Variable):
             period
         ).gov.provinces.yt.tax.income.credits.medical_expenses
 
-        claimed_medical_expenses = household(
-            "household_medical_expenses", period
-        )
+        claimed_medical_expenses = household("medical_expenses", period)
         net_income = household("household_net_income", period)
         medical_expenses_rate = p.rate
 
@@ -23,5 +21,4 @@ class yt_medical_expenses(Variable):
             p.max_amount, net_income * medical_expenses_rate
         )
 
-        total_amount = claimed_medical_expenses - applicable_amount
         return max_(claimed_medical_expenses - applicable_amount, 0)
