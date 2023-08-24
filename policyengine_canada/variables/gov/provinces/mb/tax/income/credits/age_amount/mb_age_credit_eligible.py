@@ -6,10 +6,7 @@ class mb_age_credit_eligible(Variable):
     entity = Person
     label = "Manitoba age credit eligibility"
     definition_period = YEAR
-    reference = (
-        "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb/td1mb-23e.pdf#page=1",
-        "https://web2.gov.mb.ca/laws/statutes/ccsm/_pdf.php?cap=i10",
-    )
+    reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb/td1mb-22e.pdf#page=1"
     defined_for = ProvinceCode.MB
 
     def formula(person, period, parameters):

@@ -7,6 +7,7 @@ class mb_age_credit(Variable):
     label = "Manitoba age credit amount"
     definition_period = YEAR
     defined_for = "mb_age_credit_eligible"
+    reference = "https://www.cchwebsites.com/content/pdf/tax_forms/ca/en/td1mbws_en.pdf#page=1"
 
     def formula(person, period, parameters):
         age = person("age", period)
