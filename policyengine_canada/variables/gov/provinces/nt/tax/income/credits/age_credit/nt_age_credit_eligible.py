@@ -7,9 +7,9 @@ class nt_age_credit_eligible(Variable):
     label = "Northwest Territories age credit eligibility"
     definition_period = YEAR
     defined_for = ProvinceCode.NT
-    reference = "https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf#page=28" 
+    reference = "https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf#page=31"
 
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.nt.tax.income.credits.age_credit
         age = person("age", period)
-        return age >= p.age_eligibility  # this is a bool
+        return age >= p.age_eligibility
