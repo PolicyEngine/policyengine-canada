@@ -1,0 +1,82 @@
+- name: under 18 years old without disability, not disable, not head of the family
+  period: 2023
+  input:
+    province_code: NT
+    age: 17
+    is_disabled: false
+    is_head: false
+    childcare_costs: 3_050
+  output:
+    nt_disability_amount_self_eligible: false
+
+- name: under 18 years old with disability, is disable, not head of the family
+  period: 2023
+  input:
+    province_code: NT
+    age: 17
+    is_disabled: true
+    is_head: false
+  output:
+    nt_disability_amount_self_eligible: false
+
+- name: under 18 years old with disability, is disable, not head of the family
+  period: 2023
+  input:
+    province_code: NT
+    age: 17
+    is_disabled: true
+    is_head: false
+    childcare_costs: 3_050
+  output:
+    nt_disability_amount_self_eligible: false
+
+- name: under 18 years old with disability, is disable, is head of the family
+  period: 2023
+  input:
+    province_code: NT
+    age: 17
+    is_disabled: true
+    is_head: true
+  output:
+    nt_disability_amount_self_eligible: false
+
+- name: is 18 years old with disability, is disable, is head of the family
+  period: 2023
+  input:
+    province_code: NT
+    age: 18
+    is_disabled: true
+    is_head: true
+  output:
+    nt_disability_amount_self_eligible: true
+
+- name: is 18 years old with disability, is disable, not head of the family
+  period: 2023
+  input:
+    province_code: NT
+    age: 17
+    is_disabled: true
+    is_head: false
+  output:
+    nt_disability_amount_self_eligible: false
+
+- name: is 18 years old with disability, is disable, not head of the family
+  period: 2023
+  input:
+    province_code: NT
+    age: 17
+    is_disabled: true
+    is_head: false
+    childcare_costs: 3_050
+  output:
+    nt_disability_amount_self_eligible: false
+
+- name: under 18 years old with disability, is disable, is head of the family
+  period: 2023
+  input:
+    province_code: NT
+    age: 17
+    is_disabled: true
+    is_head: true
+  output:
+    nt_disability_amount_self_eligible: false
