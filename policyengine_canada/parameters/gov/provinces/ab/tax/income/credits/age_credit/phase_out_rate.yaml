@@ -1,0 +1,24 @@
+description: Alberta phases the age credit out at this rate.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Alberta age credit phase out rate
+  reference:
+    - title: 2023 Alberta Tax Return Form TD1AB
+      href: https://media.icims.com/training/iForms%20Library/Candidate%20Management/Onboarding%20Solution/Alberta%20Personal%20Tax%20Credit.pdf#page=1
+    - title: Worksheet for the 2023 Alberta Personal Tax Credits Return TD1AB-WS
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab-ws/td1ab-ws-23e.pdf#page=1
+    # Income tax act specifies amount before inflation adjustments
+    - title: Alberta Income Tax Act - Age Credit
+      href: https://www.canlii.org/en/ab/laws/stat/rsa-2000-c-a-30/latest/rsa-2000-c-a-30.html
+
+brackets:
+  - threshold:
+      2023-01-01: 0
+    rate:
+      2023-01-01: 0
+  - threshold:
+      2023-01-01: 43_570
+    rate:
+      2023-01-01: 0.15
