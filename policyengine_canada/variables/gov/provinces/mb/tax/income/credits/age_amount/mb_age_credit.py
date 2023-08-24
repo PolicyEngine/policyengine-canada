@@ -1,17 +1,15 @@
 from policyengine_canada.model_api import *
 
 
-class mb_age_amount_credit(Variable):
+class mb_age_credit(Variable):
     value_type = float
     entity = Person
-    label = "Manitoba age amount credit"
+    label = "Manitoba age credit amount"
     definition_period = YEAR
-    defined_for = ProvinceCode.MB
+    defined_for = "mb_age_credit_eligible"
 
     def formula(person, period, parameters):
         age = person("age", period)
         income = person("individual_net_income", period)
         p = parameters(period).gov.provinces.mb.tax.income.credits.age_amount
-        eligible = age >= p.age_eligibility
-        reduced_amount = p.amount - p.reduction_rate.calc(income)
-        return eligible * max_(0, reduced_amount)
+        return max_(p.max_amount - p.phase_out_rate.calc(income), 0)
