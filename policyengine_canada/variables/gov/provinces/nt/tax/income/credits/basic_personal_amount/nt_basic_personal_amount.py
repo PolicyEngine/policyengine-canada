@@ -8,7 +8,7 @@ class nt_basic_personal_amount(Variable):
     unit = CAD
     definition_period = YEAR
     defined_for = ProvinceCode.NT
-    reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nt/td1nt-23e.pdf"  # page=1
+    reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nt/td1nt-23e.pdf#page=1"
 
     def formula(person, period, parameters):
         return parameters(
