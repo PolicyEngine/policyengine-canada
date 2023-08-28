@@ -1,4 +1,4 @@
-description: Nova Scotia qualifies filers with assets below this limit for the Income Assistance (IA) based on household size.
+description: Nova Scotia limits its Income Assistance program to households with assets valued at less than this amount, based on household size.
 brackets:
   - threshold:
       2021-01-01: 0
