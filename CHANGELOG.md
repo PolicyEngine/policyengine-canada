@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.82.0] - 2023-08-25 15:15:09
+
+### Added
+
+- Manitoba age amount credit.
+
+## [0.81.0] - 2023-08-24 21:35:50
+
+### Added
+
+- Northwest Territories Age Credit.
+
+## [0.80.2] - 2023-08-21 20:36:42
+
+## [0.80.1] - 2023-08-21 20:22:09
+
+### Fixed
+
+- Manitoba BPA parameter folder structure.
+
 ## [0.80.0] - 2023-08-20 20:37:37
 
 ### Added
@@ -612,6 +632,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.82.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.81.0...0.82.0
+[0.81.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.80.2...0.81.0
+[0.80.2]: https://github.com/PolicyEngine/policyengine-canada/compare/0.80.1...0.80.2
+[0.80.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.80.0...0.80.1
 [0.80.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.79.0...0.80.0
 [0.79.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.78.0...0.79.0
 [0.78.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.77.0...0.78.0
