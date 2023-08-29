@@ -1,0 +1,15 @@
+description: Northwest Territories provides this maximum amount under the age credit.
+values:
+  # Amount increases with inflation every year
+  2022-01-01: 7_635
+  2023-01-01: 8_116
+metadata:
+  unit: currency-CAD
+  label: Northwest Territories age credit maximum amount
+  reference:
+  - title: Income Tax Act - Section 2.2 Age Credit
+    href: https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf#page=31
+  - title: 2022 Worksheet NT428 - line 58080
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5012-d/5012-d-22e.pdf#page=1
+  - title: 2023 Personal Tax Credits Return - line 2 Age amount
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nt-ws/td1nt-ws-23e.pdf#page=1
