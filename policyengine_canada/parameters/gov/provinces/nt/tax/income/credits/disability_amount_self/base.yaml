@@ -1,4 +1,5 @@
 description: Northwest Territories provides this base disability amount for self.
+values:
   2022-12-31: 12_658
 metadata:
   unit: currency-CAD

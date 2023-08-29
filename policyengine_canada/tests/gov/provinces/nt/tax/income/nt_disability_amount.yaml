@@ -1,76 +1,44 @@
-- name: under 18 years old without disability, not head of the family, no childcare cost
+- name: under 18 years old, with childcare cost over 3030
   period: 2023
   input:
-    province_code: NT
+    nt_disability_amount_self_eligible: true
     age: 17
-    is_disabled: false
-    is_head: false
-    childcare_costs: 0
-  output:
-    nt_disability_amount_self: 0
-
-- name: under 18 years old without disability, not head of the family, with childcare cost over 3030
-  period: 2023
-  input:
-    province_code: NT
-    age: 17
-    is_disabled: false
-    is_head: false
-    childcare_costs: 3_050
-  output:
-    nt_disability_amount_self: 0
-
-- name: under 18 years old with disability, not head of the family, with childcare cost over 3030
-  period: 2023
-  input:
-    province_code: NT
-    age: 17
-    is_disabled: true
-    is_head: false
-    childcare_costs: 3_050
-  output:
-    nt_disability_amount_self: 0
-
-- name: under 18 years old with disability, is head of the family, with childcare cost over 3030
-  period: 2023
-  input:
-    province_code: NT
-    age: 17
-    is_disabled: true
-    is_head: true
     childcare_costs: 3_050
   output:
     nt_disability_amount_self: 17_812
 
-- name: under 18 years old with disability, is head of the family, without childcare cost
+- name: under 18 years old, without childcare cost
   period: 2023
   input:
-    province_code: NT
+    nt_disability_amount_self_eligible: true
     age: 17
-    is_disabled: true
-    is_head: true
     childcare_costs: 0
   output:
     nt_disability_amount_self: 17_832
 
-- name: 18 years old with disability, is head of the family, with childcare cost over 3030
+- name: 18 years old, with childcare cost over 3030
   period: 2023
   input:
-    province_code: NT
+    nt_disability_amount_self_eligible: true
     age: 18
-    is_disabled: true
-    is_head: true
     childcare_costs: 3_050
   output:
     nt_disability_amount_self: 12_658
 
-- name: over 18 years old with disability, is head of the family, with childcare cost over 3030
+- name: over 18 years old, with childcare cost over 3030
   period: 2023
   input:
-    province_code: NT
+    nt_disability_amount_self_eligible: true
     age: 19
-    is_disabled: true
-    is_head: true
     childcare_costs: 3_050
   output:
     nt_disability_amount_self: 12_658
+
+- name: disability not eligible
+  period: 2023
+  input:
+    nt_disability_amount_self_eligible: false
+    age: 19
+    childcare_costs: 3_050
+  output:
+    nt_disability_amount_self: 0
