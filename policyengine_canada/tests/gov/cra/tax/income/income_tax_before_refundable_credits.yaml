@@ -1,0 +1,15 @@
+- name: Non-refundable credits below income tax.
+  period: 2022
+  input:
+    income_tax_before_credits: 25_000
+    non_refundable_tax_credits: 1_000
+  output:
+    income_tax_before_refundable_credits: 24_000
+
+- name: Capped at 0
+  period: 2022
+  input:
+    income_tax_before_credits: 1_000
+    non_refundable_tax_credits: 2_000
+  output:
+    income_tax_before_refundable_credits: 0

@@ -1,0 +1,9 @@
+description: Nova Scotia child benefit lower income threshold
+values:
+  2022-07-01: 26_000
+metadata:
+  unit: currency-CAD
+  label: Nova Scotia Child Benefit Lower Income Threshold
+  reference:
+  - title: Nova Scotia child benefit
+    href: https://novascotia.ca/coms/families/ChildBenefit.html

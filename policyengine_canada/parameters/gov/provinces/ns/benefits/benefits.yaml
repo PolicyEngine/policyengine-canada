@@ -1,0 +1,7 @@
+description: Nova Scotia list of benefits.
+values:
+  2023-01-01:
+    - ns_child_benefit
+
+metadata:
+  unit: program

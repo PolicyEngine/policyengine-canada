@@ -2,16 +2,17 @@ description: Ontario sales tax credit reduction for single filers
 brackets:
   - threshold:
       values:
-        2022-01-01: 0
+        2021-01-01: 0
     rate:
       values:
-        2022-01-01: 0
+        2021-01-01: 0
   - threshold:
       values:
-        2022-01-01: 24_916
+        2022-01-01: 26_535
+        2021-01-01: 24_916
     rate:
       values:
-        2022-01-01: 0.04
+        2021-01-01: 0.04
 
 
 metadata:

@@ -1,0 +1,11 @@
+description: British Columbia age credit inclusive eligibility.
+values:
+  2022-01-01: 65
+metadata:
+  unit: year
+  label: British Columbia age credit eligibile
+  reference:
+    - title: B.C. basic personal income tax credits
+      href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/basic
+    - title: Income Tax Act (4.31)
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96215_00_multi#section4.31

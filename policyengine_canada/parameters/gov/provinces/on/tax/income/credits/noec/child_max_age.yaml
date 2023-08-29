@@ -1,0 +1,9 @@
+description: Northern Ontario energy tax credit exclusive child age maximum.
+values:
+  2022-01-01: 18
+metadata:
+  unit: year
+  label: Northern Ontario energy tax credit maximum child age
+  reference:
+  - title: Government of Canada - Northern Ontario Energy Credit Questions and Answers (19)
+    href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/northern-ontario-energy-credit-questions-answers.html

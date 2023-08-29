@@ -3,6 +3,7 @@
   input:
     adjusted_family_net_income: 90_000
     bc_family_benefit_first_reduction: 1_000
+    province_code: BC
   output:
     bc_family_benefit: 703.12
 
@@ -11,6 +12,7 @@
   input:
     adjusted_family_net_income: 190_000
     bc_family_benefit_first_reduction: 1_000
+    province_code: BC
   output:
     bc_family_benefit: 0
 
@@ -20,6 +22,7 @@
   input:
     adjusted_family_net_income: 83_000
     bc_family_benefit_first_reduction: 0
+    province_code: BC
   output:
     bc_family_benefit: 0
 
@@ -28,5 +31,6 @@
   input:
     adjusted_family_net_income: 82_000
     bc_family_benefit_first_reduction: 1_000
+    province_code: BC
   output:
     bc_family_benefit: 1_000

@@ -1,0 +1,40 @@
+- name: No employment income
+  period: 2023
+  input:
+    employment_income: 0
+  output:
+    on_low_income_workers_tax_credit_base: 0
+
+- name: One eligible person with income under full phase-in amount
+  absolute_error_margin: 0.0001
+  period: 2023
+  input:
+    employment_income: 10_000
+    on_low_income_workers_tax_credit_eligible_people: 1
+  output:
+    on_low_income_workers_tax_credit_base: 505
+
+- name: One eligible person with income over full phase-in amount
+  period: 2023
+  input:
+    employment_income: 32_500
+    on_low_income_workers_tax_credit_eligible_people: 1
+  output:
+    on_low_income_workers_tax_credit_base: 875
+
+- name: Two eligible people with income over full phase-in amount
+  period: 2023
+  input:
+    employment_income: 65_000
+    on_low_income_workers_tax_credit_eligible_people: 2
+  output:
+    on_low_income_workers_tax_credit_base: 1_750
+
+- name: Two eligible people with income under full phase-in amount
+  absolute_error_margin: 0.0001
+  period: 2023
+  input:
+    employment_income: 20_000
+    on_low_income_workers_tax_credit_eligible_people: 2
+  output:
+    on_low_income_workers_tax_credit_base: 1_010

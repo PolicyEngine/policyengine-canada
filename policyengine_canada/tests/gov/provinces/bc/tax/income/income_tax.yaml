@@ -1,7 +1,7 @@
 - name: British Columbia income tax 
   period: 2022
   input:
-    province: BRITISH_COLUMBIA
+    province_code: BC
     bc_taxable_income: 43_069
   output:
     bc_income_tax_before_credits: 2_179.2914
@@ -9,7 +9,7 @@
 - name: British Columbia income tax; wrong province
   period: 2022
   input:
-    province: ALBERTA
+    province_code: AB
     bc_taxable_income: 46_225
   output:
     bc_income_tax_before_credits: 0
@@ -17,7 +17,7 @@
 - name: British Columbia income tax higher bracket
   period: 2022
   input:
-    province: BRITISH_COLUMBIA
+    province_code: BC
     bc_taxable_income: 230_000
   output:
     bc_income_tax_before_credits: 27_114.572

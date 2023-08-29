@@ -1,0 +1,11 @@
+description: Ontario Child Benefit shared custody devisior.
+values:
+  2022-01-01: 2
+metadata:
+  unit: /1
+  label: Ontario Child Benefit shared custody devisior
+  reference:
+  - title: Government of Canada - Canada Child Benefit
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html
+  - title: Taxation Act Part V 104  
+    href: https://www.ontario.ca/laws/statute/07t11?search=child+benefit#BK190

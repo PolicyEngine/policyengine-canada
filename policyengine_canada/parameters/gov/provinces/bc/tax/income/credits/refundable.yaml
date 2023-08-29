@@ -1,0 +1,7 @@
+description: British Columbia list of refundable tax credits.
+values:
+  2022-01-01:
+    - bc_climate_action_tax_credit
+
+metadata:
+  unit: program

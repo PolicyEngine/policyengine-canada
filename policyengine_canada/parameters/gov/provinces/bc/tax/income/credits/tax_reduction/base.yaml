@@ -1,0 +1,11 @@
+description:  British Columbia tax reduction credit base amount.
+values:
+  2022-01-01: 491
+  2023-01-01: 521 
+metadata:
+  unit: currency-CAD
+  label: British Columbia tax reduction credit base
+  reference:
+  - title: British Columbia basic personal income tax credits
+    href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/basic
+

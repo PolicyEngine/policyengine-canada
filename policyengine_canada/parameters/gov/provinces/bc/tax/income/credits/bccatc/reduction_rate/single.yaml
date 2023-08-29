@@ -1,0 +1,21 @@
+description: British Columbia climate action tax credit reduction rate for singles with no children
+brackets:
+  - threshold:
+      2022-07-01: 0
+    rate:
+      2022-07-01: 0
+  - threshold:
+      2022-07-01: 36_901
+    rate:
+      2022-07-01: 0.02
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: British Columbia climate action tax credit single reduction rate 
+  reference:
+    - title: Government of Canada - Province of British Columbia
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-british-columbia.html
+    - title: Income Tax Act 
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96215_01#section8.1 

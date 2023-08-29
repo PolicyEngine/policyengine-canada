@@ -6,6 +6,7 @@ class is_in_northern_ontario(Variable):
     entity = Household
     label = "Is located in Northern Ontario"
     definition_period = YEAR
+    defined_for = ProvinceCode.ONT
 
 
 # placeholder until district enum is made

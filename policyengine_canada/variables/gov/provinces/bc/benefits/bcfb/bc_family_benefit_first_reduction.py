@@ -7,6 +7,7 @@ class bc_family_benefit_first_reduction(Variable):
     label = "British Columbia family benefit first reduction"
     unit = CAD
     definition_period = YEAR
+    defined_for = ProvinceCode.BC
 
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)
@@ -14,7 +15,7 @@ class bc_family_benefit_first_reduction(Variable):
         p = parameters(period).gov.provinces.bc.benefits.bcfb.first_reduction
         base = household("bc_family_benefit_base", period)
         reduction = p.rate.calc(income)
-        # The maximum family benefit is reduced to an amount dependent on the amount of children.
+        # The maximum family benefit is reduced to an amount dependant on the amount of children.
         # Each child has a designated amount, varying for the first two children.
         reduction_cap = (
             ((children > 0) * p.max_amount.one_child)

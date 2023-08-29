@@ -1,0 +1,18 @@
+description: Nunavut provides this maximum child benefit supplement for territorial workers (per family).
+brackets:
+  - threshold:
+      2022-07-01: 1
+    amount:
+      2022-07-01: 274.92 # $22.91 monthly
+  - threshold:
+      2022-07-01: 2
+    amount:
+      2022-07-01: 349.92 # $6.25 monthly
+metadata:
+  type: single_amount
+  threshold_unit: child
+  amount_unit: currency-CAD
+  label: Nunavut child benefit territorial workers' max supplement for one child
+  reference:
+  - title: Government of Canada - Province of Nunavut
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4114/canada-child-benefit.html#toc20

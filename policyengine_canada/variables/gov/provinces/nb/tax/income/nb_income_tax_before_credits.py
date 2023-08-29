@@ -8,10 +8,9 @@ class nb_income_tax_before_credits(Variable):
     unit = CAD
     definition_period = YEAR
     reference = "https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html"
+    defined_for = ProvinceCode.NB
 
     def formula(person, period, parameters):
-        province = person.household("province", period)
-        in_nb = province == province.possible_values.NEW_BRUNSWICK
         income = person("nb_taxable_income", period)
         p = parameters(period).gov.provinces.nb.tax.income.rate
-        return in_nb * p.calc(income)
+        return p.calc(income)

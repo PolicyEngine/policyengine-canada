@@ -4,9 +4,10 @@ from policyengine_canada.model_api import *
 class bc_family_benefit(Variable):
     value_type = float
     entity = Household
-    label = "British Columbia family benefit second reduction"
+    label = "British Columbia family benefit"
     unit = CAD
     definition_period = YEAR
+    defined_for = ProvinceCode.BC
 
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)

@@ -1,0 +1,16 @@
+description: Quebec provides this Basic Personal Amount.
+values:
+  2022-01-01: 16_143
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Quebec Basic Personal Amount
+  reference:
+    - title: Quebec 2022 Income Tax Return - Non-refundable tax credits - Line 350
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D-V%282022-12%29.pdf#page=3
+    - title: Revenu Quebec – Basic Personal Amount (Line 350)
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/350-to-398-1-non-refundable-tax-credits/line-350/
+    - title: Taxation Act(CQLR c I-3), Part I, Book V, Title I, Chapter I.0.1, 752.0.0.1
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=fr#se:752_0_0_1
+      # $14,890 in the legal reference, increased due to the inflation adjustments
+

@@ -1,0 +1,21 @@
+- name: Under reduction amount
+  period: 2023
+  input:
+    bc_taxable_income: 23_179
+    province_code: BC
+  output:
+    bc_tax_reduction_credit: 521
+
+- name: Over reduction amount
+  period: 2023
+  input:
+    bc_taxable_income: 37_814
+  output:
+    bc_tax_reduction_credit: 0
+
+- name: Capped at 0
+  period: 2023
+  input:
+    bc_taxable_income: 50_000
+  output:
+    bc_tax_reduction_credit: 0

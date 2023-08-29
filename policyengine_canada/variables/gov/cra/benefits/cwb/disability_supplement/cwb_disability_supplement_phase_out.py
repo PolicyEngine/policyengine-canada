@@ -6,6 +6,7 @@ class cwb_disability_supplement_phase_out(Variable):
     entity = Household
     label = "Canada workers benefit disability supplement phase out"
     definition_period = YEAR
+    unit = CAD
 
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)
