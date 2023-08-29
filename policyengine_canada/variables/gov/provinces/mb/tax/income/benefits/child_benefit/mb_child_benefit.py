@@ -10,8 +10,9 @@ class mb_child_benefit(Variable):
 
     def formula(household, period, parameters):
         children = household("mb_child_benefit_eligible_children", period)
-        children = min_(children, 6)  # <= 6
         p = parameters(period).gov.provinces.mb.benefits.mbcb
+        children = min_(children, p.max_child_count)  # <= 6
+
         income = household("adjusted_family_net_income", period)
         base = children * p.base
         reduction = select(

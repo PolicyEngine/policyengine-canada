@@ -1,7 +1,6 @@
 description: Manitoba provides child benefit with children under this age.
 values:
   2022-01-01: 18
-  2023-01-01: 18
 metadata:
   unit: year
   label: Manitoba child benefit age benefit eligibility

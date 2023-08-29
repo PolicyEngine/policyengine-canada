@@ -1,0 +1,9 @@
+description: Manitoba provides child benefit with children under this count.
+values:
+  2022-01-01: 6
+metadata:
+  unit: year
+  label: Manitoba child benefit maximum child count
+  reference:
+    - title: Manitoba basic child age benefit
+      href: https://www.gov.mb.ca/fs/eia/mcb.html
