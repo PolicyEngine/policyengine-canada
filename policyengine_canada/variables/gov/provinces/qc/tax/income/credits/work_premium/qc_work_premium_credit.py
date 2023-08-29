@@ -9,10 +9,6 @@ class qc_work_premium_credit(Variable):
     defined_for = ProvinceCode.QC
 
     def formula(household, period, parameters):
-        person = household.members
-        # check if the household has disabled member
-        disabled = person("is_disabled", period)
-        has_disabled_member = household.any(disabled)
 
         qc_work_premium_single_amount = household(
             "qc_work_premium_single_amount", period
@@ -27,23 +23,14 @@ class qc_work_premium_credit(Variable):
             "qc_adapted_work_premium_couple_amount", period
         )
 
-        # assume household with disabled member would choose the credit with most beneficial
-        single_amount = where(
-            has_disabled_member,
-            max_(
-                qc_work_premium_single_amount,
-                qc_adapted_work_premium_single_amount,
-            ),
+        # If you are entitled to both the work premium and the adapted work premium, you will receive the greater of the two
+        single_amount = max_(
             qc_work_premium_single_amount,
+            qc_adapted_work_premium_single_amount,
         )
-
-        couple_amount = where(
-            has_disabled_member,
-            max_(
-                qc_work_premium_couple_amount,
-                qc_adapted_work_premium_couple_amount,
-            ),
+        couple_amount = max_(
             qc_work_premium_couple_amount,
+            qc_adapted_work_premium_couple_amount,
         )
 
         supplement = household("qc_work_premium_supplement_amount", period)

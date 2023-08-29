@@ -4,16 +4,14 @@ from policyengine_canada.model_api import *
 class qc_work_premium_single_amount(Variable):
     value_type = float
     entity = Household
-    label = "Quebec general work premium tax credit for singles"
+    label = "Quebec general work premium tax credit for single filers"
     definition_period = YEAR
-    defined_for = ProvinceCode.QC
+    defined_for = "qc_work_premium_eligibility"
 
     def formula(household, period, parameters):
         p = parameters(
             period
         ).gov.provinces.qc.tax.income.credits.work_premium.general_work_premium.single
-
-        meet_requirement = household("qc_work_premium_eligibility", period)
 
         # family situation
         single = ~household("is_married", period)
@@ -26,7 +24,7 @@ class qc_work_premium_single_amount(Variable):
             household("family_working_income", period) > p.work_income_limit
         )
 
-        eligible = meet_requirement & work_income_eligible & single
+        eligible = work_income_eligible & single
 
         # credit amount
         credit = where(

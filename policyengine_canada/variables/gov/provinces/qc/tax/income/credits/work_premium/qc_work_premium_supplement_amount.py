@@ -6,7 +6,7 @@ class qc_work_premium_supplement_amount(Variable):
     entity = Household
     label = "Quebec supplement to the work premium"
     definition_period = YEAR
-    defined_for = ProvinceCode.QC
+    defined_for = "qc_work_premium_eligibility"
 
     def formula(household, period, parameters):
         p = parameters(

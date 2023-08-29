@@ -7,6 +7,7 @@
       spouse:
         working_income: 3_000
     household:
+      qc_work_premium_eligibility: true
       members: [head, spouse]
       province_code: QC
   output:
@@ -22,6 +23,7 @@
         working_income: 2_000
     household:
       members: [head, spouse]
+      qc_work_premium_eligibility: true
       province_code: QC
   output:
     qc_work_premium_supplement_amount: 2_400
@@ -35,6 +37,22 @@
       spouse:
         working_income: 2_000
     household:
+      members: [head, spouse]
+      qc_work_premium_eligibility: true
+      province_code: QC
+  output:
+    qc_work_premium_supplement_amount: 0
+
+- name: Quebec work premium supplement forhousehold with spouse enter the labour market but are not eligible for this credit
+  period: 2022
+  input:
+    people:
+      head:
+        working_income: 3_000
+      spouse:
+        working_income: 3_000
+    household:
+      qc_work_premium_eligibility: false
       members: [head, spouse]
       province_code: QC
   output:
