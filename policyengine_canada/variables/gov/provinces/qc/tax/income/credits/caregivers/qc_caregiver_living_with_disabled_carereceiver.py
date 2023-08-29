@@ -6,22 +6,12 @@ class qc_caregiver_living_with_disabled_carereceiver(Variable):
     entity = Person
     label = "Quebec caregiver tax credit for caregivers living with disabled care receivers"
     definition_period = YEAR
-    defined_for = ProvinceCode.QC
+    defined_for = "qc_caregiver_living_with_disabled_carereceiver_eligible"
 
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.qc.tax.income.credits.caregivers
-        # with an impairment
-        disabled = person("is_disabled", period)
-        # is care receiver
-        carereceiver = person("is_carereceiver", period)
-        # age eligibility
-        age_eligible = person("age", period) >= p.eligibility.carereceiver_age
-        # lived together
-        cohabiting = person("lived_together", period)
 
-        eligible = disabled & carereceiver & age_eligible & cohabiting
-
-        # care giver's income eligibility (line 254)
+        # care giver's income eligibility
         income_eligible = max_(
             person("individual_net_income", period)
             - p.eligibility.income_limit,
@@ -42,4 +32,4 @@ class qc_caregiver_living_with_disabled_carereceiver(Variable):
             * specialized_respite_services_expenses
         )
 
-        return eligible * (base_credit + specialized_respite_services_credit)
+        return base_credit + specialized_respite_services_credit
