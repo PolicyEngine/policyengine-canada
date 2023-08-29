@@ -13,16 +13,18 @@ class nu_eligible_dependent_credit(Variable):
         p = parameters(
             period
         ).gov.provinces.nu.tax.income.credits.eligible_dependent_credit
+        
         spouse = person("is_spouse", period)
         dependent = person("is_dependant", period)
-        eligible_dependent = ~spouse & dependent
-        household_eligible = household.any(income_eligible)
         spouse_absent = ~household.any(spouse & dependent)
+        income_eligble = person("nu_eligible_dependent_credit_eligible", period)
+        household_eligible = household.any(income_eligible)
         income = income_eligible * person("individual_net_income", period)
         eligible_income = household.sum(income)
         max_amount = max_(0, p.addon_max_amount - eligible_income)
+        amount = p.base + max_amount
         return (
-            (p.base + max_amount)
+            amount
             * household_eligible
             * spouse_absent
         )

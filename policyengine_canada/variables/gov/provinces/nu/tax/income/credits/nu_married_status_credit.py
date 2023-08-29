@@ -16,10 +16,10 @@ class nu_married_status_credit(Variable):
         spouse = person("is_spouse", period)
         dependent = person("is_dependant", period)
         eligible_dependent = spouse & dependent
-        household_eligible = household.any(income_eligible)
         income = eligible_dependent * person("individual_net_income", period)
         eligible_income = household.sum(income)
         max_amount = max_(0, p.addon_max_amount - eligible_income)
+        amount = p.base + max_amount
         return (
-            p.base + max_amount
+            amount
         ) * household_eligible
