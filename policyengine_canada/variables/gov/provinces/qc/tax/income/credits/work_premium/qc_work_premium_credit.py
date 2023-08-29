@@ -9,7 +9,6 @@ class qc_work_premium_credit(Variable):
     defined_for = ProvinceCode.QC
 
     def formula(household, period, parameters):
-
         qc_work_premium_single_amount = household(
             "qc_work_premium_single_amount", period
         )
@@ -28,6 +27,7 @@ class qc_work_premium_credit(Variable):
             qc_work_premium_single_amount,
             qc_adapted_work_premium_single_amount,
         )
+
         couple_amount = max_(
             qc_work_premium_couple_amount,
             qc_adapted_work_premium_couple_amount,
