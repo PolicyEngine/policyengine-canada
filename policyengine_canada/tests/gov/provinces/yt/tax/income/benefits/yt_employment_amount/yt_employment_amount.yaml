@@ -1,0 +1,24 @@
+- name: tax return with maximum amount
+  period: 2022
+  input:
+    province_code: YT
+    canada_employment_amount: 30_000
+  output:
+    yt_employment_amount: 1_287
+
+- name: tax return with no income
+  period: 2022
+  input:
+    province_code: YT
+    canada_employment_amount: 0
+  output:
+    yt_employment_amount: 0
+
+- name: tax return with income under maximum amount
+  period: 2022
+  input:
+    province_code: YT
+    canada_employment_amount: 1_000
+  output:
+    yt_employment_amount: 1_000
+

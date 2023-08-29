@@ -1,0 +1,15 @@
+- name: Quebec family allowance eligible individual
+  period: 2023
+  input:
+    own_children_in_household: 3
+    province_code: QC
+  output:
+    qc_fa_eligibility: true
+
+- name: Quebec family allowance non-eligible individual
+  period: 2023
+  input:
+    own_children_in_household: 0
+    province_code: QC
+  output:
+    qc_fa_eligibility: false
