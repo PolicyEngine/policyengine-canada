@@ -1,0 +1,54 @@
+- name: 2023 Do not have eligible dependants
+  period: 2023
+  input:
+    province_code: SK
+    sk_caregiver_amount_eligibility: false
+    individual_net_income: 10_000
+  output:
+    sk_caregiver_amount: 0
+
+- name: 2023 Have eligible dependants with income at lower income threshold
+  period: 2023
+  input:
+    province_code: SK
+    sk_caregiver_amount_eligibility: true
+    individual_net_income: 17_770
+  output:
+    sk_caregiver_amount: 10_405
+
+- name: 2023 Have eligible dependants with income below lower income threshold
+  period: 2023
+  input:
+    province_code: SK
+    sk_caregiver_amount_eligibility: true
+    individual_net_income: 17_669
+  output:
+    sk_caregiver_amount: 10_405
+
+- name: 2023 Have eligible dependants with income between the lower income threshold and the higher income threshold
+  period: 2023
+  input:
+    province_code: SK
+    sk_caregiver_amount_eligibility: true
+    individual_net_income: 20_000
+  output:
+    sk_caregiver_amount: 8_175
+
+- name: 2023 Have eligible dependants with income at higher income threshold
+  period: 2023
+  input:
+    province_code: SK
+    sk_caregiver_amount_eligibility: true
+    individual_net_income: 28_175
+  output:
+    sk_caregiver_amount: 0
+
+- name: 2023 Have eligible dependants with income above higher income threshold
+  period: 2023
+  input:
+    province_code: SK
+    sk_caregiver_amount_eligibility: true
+    individual_net_income: 28_220
+  output:
+    sk_caregiver_amount: 0
+
