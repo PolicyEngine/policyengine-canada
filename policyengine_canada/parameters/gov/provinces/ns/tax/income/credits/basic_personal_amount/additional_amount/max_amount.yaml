@@ -1,12 +1,24 @@
 description: Nova Scotia phases its additional basic personal amount out at this rate.
-values: 
-  2022-01-01: 0.06
+brackets:
+  - threshold:
+      values:
+        2022-01-01: 0
+    rate:
+      values:
+        2022-01-01: 0
+  - threshold:
+      values:
+        2022-01-01: 25_000
+    rate:
+      values:
+        2022-01-01: 0.06
+  
 metadata:
-  unit: currency-CAD 
-  period: year 
+  type: marginal_rate
   rate_unit: /1
+  threshold_unit: currency-CAD
+  period: year 
   label: Nova Scotia basic personal amount reduction rate
-
   reference: 
   - title: 2022 Nova Scotia Personal Tax Credits Return
     href: https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf#page=1
