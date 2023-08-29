@@ -6,21 +6,15 @@ class qc_non_disabled_children_activities_credit(Variable):
     entity = Person
     label = "Quebec nondisabled children's activities tax credit"
     definition_period = YEAR
-    defined_for = ProvinceCode.QC
+    defined_for = "qc_non_disabled_children_activities_credit_eligible"
 
     def formula(person, period, parameters):
         p = parameters(
             period
         ).gov.provinces.qc.tax.income.credits.children_activities
 
-        age = person("age", period)
-        non_disabled = ~person("is_disabled", period)
-        eligible = non_disabled * p.non_disabled_children.age_eligibility.calc(
-            age
-        )
-
         eligible_fee = min_(
             person("physical_activities_fees", period),
             p.non_disabled_children.fee_limit,
         )
-        return eligible * eligible_fee * p.rate
+        return eligible_fee * p.rate

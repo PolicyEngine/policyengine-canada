@@ -1,38 +1,25 @@
-- name: Quebec disabled children's activities tax credit for nondisabled child
+- name: Quebec disabled children's activities tax credit for non eligible child
   period: 2022
   input:
-    age: 10
-    is_disabled: false
+    qc_disabled_children_activities_credit_eligible: false
     physical_activities_fees: 300
     province_code: QC
   output:
     qc_disabled_children_activities_credit: 0
 
-- name: Quebec disabled children's activities tax credit for child not in the age range
+- name: Quebec disabled children's activities tax credit for physical activity fee above limit
   period: 2022
   input:
-    age: 20
-    is_disabled: true
-    physical_activities_fees: 300
-    province_code: QC
-  output:
-    qc_disabled_children_activities_credit: 0
-
-- name: Quebec disabled children's activities tax credit for fees above limit
-  period: 2022
-  input:
-    age: 18
-    is_disabled: true
+    qc_disabled_children_activities_credit_eligible: true
     physical_activities_fees: 700
     province_code: QC
   output:
     qc_disabled_children_activities_credit: 200 # 0.2*min(700+500,1000)
 
-- name: Quebec nondisabled children's activities tax credit for fees within limit
+- name: Quebec nondisabled children's activities tax credit for physical activity fee within limit
   period: 2022
   input:
-    age: 10
-    is_disabled: true
+    qc_disabled_children_activities_credit_eligible: true
     physical_activities_fees: 200
     province_code: QC
   output:

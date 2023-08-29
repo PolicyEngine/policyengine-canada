@@ -14,6 +14,6 @@ metadata:
   amount_unit: currency-CAD
   label: Quebec children's activities disabled childen tax credit subsidy
   reference:
-    - title: Revenu Quebec - Tax Credit for Children's Activities (Line 462)
+    - title: Revenu Quebec - Tax Credit for Children's Activities - Line 462
       href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/451-to-480-refund-or-balance-due/line-462/point-25/
-    # Legal reference unavaliable
+    # Legal reference unavailable
