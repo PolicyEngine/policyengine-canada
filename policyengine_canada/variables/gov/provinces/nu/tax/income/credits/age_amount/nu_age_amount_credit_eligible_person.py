@@ -10,7 +10,5 @@ class nu_age_amount_credit_eligible(Variable):
 
     def formula(person, period, parameters):
         age = person("age", period)
-        p = parameters(
-                period
-            ).gov.provinces.nu.tax.income.credits.age_amount
+        p = parameters(period).gov.provinces.nu.tax.income.credits.age_amount
         return age >= p.eligible_age
