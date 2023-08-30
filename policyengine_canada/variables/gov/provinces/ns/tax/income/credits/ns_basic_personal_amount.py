@@ -21,13 +21,13 @@ class ns_basic_personal_amount(Variable):
 
         # Calculate additional amount added to base amount
 
-        reduced_additional_amount = (
+        reduced_additional_amount = max_(
+            0,
             p.additional_amount.additional_amount
-            - p.additional_amount.max_amount.calc(taxable_income)
+            - p.additional_amount.max_amount.calc(taxable_income),
         )
-        additional_amount = max_(0, reduced_additional_amount)
         additional_amount = min_(
-            additional_amount, p.additional_amount.additional_amount
+            reduced_additional_amount, p.additional_amount.additional_amount
         )
 
         return p.base + additional_amount

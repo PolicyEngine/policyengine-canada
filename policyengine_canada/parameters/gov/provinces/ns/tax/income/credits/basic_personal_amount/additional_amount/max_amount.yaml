@@ -1,17 +1,13 @@
 description: Nova Scotia phases its additional basic personal amount out at this rate.
 brackets:
   - threshold:
-      values:
-        2022-01-01: 0
+      2022-01-01: 0
     rate:
-      values:
-        2022-01-01: 0
+      2022-01-01: 0
   - threshold:
-      values:
-        2022-01-01: 25_000
+      2022-01-01: 25_000
     rate:
-      values:
-        2022-01-01: 0.06
+      2022-01-01: 0.06
   
 metadata:
   type: marginal_rate
