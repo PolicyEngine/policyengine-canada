@@ -1,17 +1,17 @@
 from policyengine_canada.model_api import *
 
 
-class yt_medical_expenses(Variable):
+class yt_medical_expense_credit(Variable):
     value_type = float
     entity = Household
-    label = "Yukon Medical Expenses"
+    label = "Yukon Medical Expense Credit"
     definition_period = YEAR
     defined_for = ProvinceCode.YT
 
     def formula(household, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.yt.tax.income.credits.medical_expenses
+        ).gov.provinces.yt.tax.income.credits.medical_expense
 
         claimed_medical_expenses = household("medical_expenses", period)
         net_income = household("household_net_income", period)

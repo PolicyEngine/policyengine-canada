@@ -5,7 +5,7 @@
     medical_expenses: 0
     household_net_income: 10_000_000_000
   output:
-    yt_medical_expenses: 0
+    yt_medical_expense_credit: 0
 
 - name: Zero Medical Expenses of Net Income below Maximum Amount
   period: 2022
@@ -14,7 +14,7 @@
     medical_expenses: 0
     household_net_income: 100
   output:
-    yt_medical_expenses: 0
+    yt_medical_expense_credit: 0
 
 - name: Medical Expenses of Net Income below Maximum Amount
   period: 2022
@@ -23,7 +23,7 @@
     medical_expenses: 10_000
     household_net_income: 100
   output:
-    yt_medical_expenses: 9_997
+    yt_medical_expense_credit: 9_997
 
 - name: Medical Expenses of Net Income over Maximum Amount
   period: 2022
@@ -32,7 +32,4 @@
     medical_expenses: 4_000
     household_net_income: 10_000_000_000
   output:
-    yt_medical_expenses: 1_521
-
-
-
+    yt_medical_expense_credit: 1_521
