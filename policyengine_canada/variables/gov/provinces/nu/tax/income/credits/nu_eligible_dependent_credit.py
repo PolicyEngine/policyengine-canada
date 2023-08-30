@@ -21,8 +21,8 @@ class nu_eligible_dependent_credit(Variable):
         household_eligible = household.any(income_eligible)
         income = income_eligible * person("individual_net_income", period)
         eligible_income = household.sum(income)
-        max_amount = max_(0, p.addon_max_amount - eligible_income)
-        amount = p.base + max_amount
+        max_amount = max_(0, p.amount.additional - eligible_income)
+        amount = p.amount.base + max_amount
         return (
             amount
             * household_eligible
