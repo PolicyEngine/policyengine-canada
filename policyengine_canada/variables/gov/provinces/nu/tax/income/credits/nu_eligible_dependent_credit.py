@@ -17,7 +17,7 @@ class nu_eligible_dependent_credit(Variable):
         spouse = person("is_spouse", period)
         dependent = person("is_dependant", period)
         spouse_absent = ~household.any(spouse & dependent)
-        income_eligble = person("nu_eligible_dependent_credit_eligible", period)
+        income_eligible = person("nu_eligible_dependent_credit_eligible", period)
         household_eligible = household.any(income_eligible)
         income = income_eligible * person("individual_net_income", period)
         eligible_income = household.sum(income)
