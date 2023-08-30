@@ -32,6 +32,7 @@ class ns_chargeable_income(Variable):
                 - p.harvest_connection_program_wages_exempt
             ),
         )
+        not_chargeable_income = person("ns_not_chargeable_income", period)
 
         return (
             p.unearned_income
@@ -39,4 +40,5 @@ class ns_chargeable_income(Variable):
             + rent_received
             + net_training_allowance
             + net_harvest_connection_program_wages
+            - not_chargeable_income
         )

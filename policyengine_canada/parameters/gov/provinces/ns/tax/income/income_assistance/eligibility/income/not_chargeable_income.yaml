@@ -1,0 +1,19 @@
+description: Not chargeable income includes all of the following.
+values:
+  2021-01-01:
+    - child_benefit
+    - child_disability_benefit
+    - child_support_payments
+    - children_family_services_act_payments
+    - alternative_family_care_program_payments
+    # - gst_credit # goods and services tax credit
+    - canada_workers_benefit
+    - poverty_reduction_credit
+    - affordable_living_tax_credit
+    - dependant_child_wages
+    - canada_nova_scotia_targeted_housing_benefit
+metadata:
+  unit: list
+  reference:
+    - title: Employment Support and Income Assistance Act, Section 35
+      href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4
