@@ -47,7 +47,52 @@
   period: 2023
   input:
     province_code: SK
+    sk_caregiver_amount_eligibility: false
+    individual_net_income: 28_220
+  output:
+    sk_caregiver_amount: 0
+
+- name: 2022 Have eligible dependants with income at lower income threshold
+  period: 2022
+  input:
+    province_code: SK
     sk_caregiver_amount_eligibility: true
+    individual_net_income: 16_717
+  output:
+    sk_caregiver_amount: 9789
+
+- name: 2022 Have eligible dependants with income below lower income threshold
+  period: 2022
+  input:
+    province_code: SK
+    sk_caregiver_amount_eligibility: true
+    individual_net_income: 15_669
+  output:
+    sk_caregiver_amount: 9789
+
+- name: 2022 Have eligible dependants with income between the lower income threshold and the higher income threshold
+  period: 2022
+  input:
+    province_code: SK
+    sk_caregiver_amount_eligibility: true
+    individual_net_income: 20_000
+  output:
+    sk_caregiver_amount: 6_506
+
+- name: 2022 Have eligible dependants with income at higher income threshold
+  period: 2022
+  input:
+    province_code: SK
+    sk_caregiver_amount_eligibility: true
+    individual_net_income: 26_506
+  output:
+    sk_caregiver_amount: 0
+
+- name: 2022 Have eligible dependants with income above higher income threshold
+  period: 2022
+  input:
+    province_code: SK
+    sk_caregiver_amount_eligibility: false
     individual_net_income: 28_220
   output:
     sk_caregiver_amount: 0

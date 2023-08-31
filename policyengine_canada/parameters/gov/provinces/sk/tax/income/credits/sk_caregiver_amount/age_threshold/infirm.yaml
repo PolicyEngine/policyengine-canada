@@ -1,6 +1,6 @@
 description: Saskatchewan provides the Caregiver Tax Credit Amount for filer with infirm dependants at or below this age threshold.
 values: 
-  2023-01-01: 18
+  2022-01-01: 18
 metadata:
   unit: year
   label: Saskatchewan Caregiver Tax Credit Infirm Dependant Age Eligibility

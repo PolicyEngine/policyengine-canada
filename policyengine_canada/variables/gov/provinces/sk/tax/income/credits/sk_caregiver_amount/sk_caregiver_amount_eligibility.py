@@ -16,15 +16,17 @@ class sk_caregiver_amount_eligibility(Variable):
     defined_for = ProvinceCode.SK
 
     def formula(person, period, parameters):
-         p = parameters(
+        p = parameters(
             period
         ).gov.provinces.sk.tax.income.credits.sk_caregiver_amount
 
         dependant = person("is_dependant", period)
         age = person("age", period)
-        infirm_dependant_eligible = dependant & age <= p.age_threshold.infirm
-        elderly_dependant_eligible = dependant & age >= p.age_threshold.elderly
-        age_eligibility = infirm_dependant_eligible | elderly_dependant_eligible
+        infirm_dependant_eligible = age <= p.age_threshold.infirm
+        elderly_dependant_eligible = age >= p.age_threshold.elderly
+        age_eligibility = dependant & (
+            infirm_dependant_eligible | elderly_dependant_eligible
+        )
 
         dependants_income = person("individual_net_income", period)
         income_eligibility = dependants_income <= p.higher_income_threshold
