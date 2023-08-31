@@ -3,7 +3,8 @@ values:
   2022-01-01: 2_479
 metadata:
   unit: currency-CAD
-  label: Yukon Medical Expenses
+  label: Yukon medical expense credit max amount
+  # Credit is not mentioned in the in Yukon Income Tax Act
   reference:
   - title: Yukon Tax-Medical Expenses
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5011-c/5011-c-22e.pdf#page=2 
