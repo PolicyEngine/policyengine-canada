@@ -2,12 +2,10 @@
   period: 2022
   input:
     people:
-      head:
-        is_head: true
       spouse:
         is_spouse: true
     household: 
-      members: [head, spouse]
+      members: [spouse]
       province_code: SK
       cohabitating_spouses: true
   output:
@@ -17,12 +15,10 @@
   period: 2022
   input:
     people:
-      head:
-        is_head: true
       spouse:
         is_spouse: false
     household: 
-      members: [head, spouse]
+      members: [spouse]
       province_code: SK
       cohabitating_spouses: false
   output:
