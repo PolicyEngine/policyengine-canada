@@ -1,0 +1,24 @@
+description: Manitoba phases the age credit out at this rate based on income.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Manitoba age amount credit phase out rate
+  reference:
+  - title:  Worksheet for the 2022 Manitoba Personal Tax Credits Return
+    href: https://www.cchwebsites.com/content/pdf/tax_forms/ca/en/td1mbws_en.pdf#page=1
+  - title:  Worksheet for the 2023 Manitoba Personal Tax Credits Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb-ws/td1mb-ws-23e.pdf#page=1
+  - title: 2023 Manitoba, The Income Tax Act § 4.6(4)
+    href: https://web2.gov.mb.ca/laws/statutes/ccsm/_pdf.php?cap=i10
+
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0
+  - threshold:
+      2022-01-01: 27_749
+    rate:
+      2022-01-01: 0.15 
+

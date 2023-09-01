@@ -1,0 +1,21 @@
+description: Quebec reduces its family allowance tax credit at this rate for a two-parent family based on family income.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Quebec family allowance tax credit reduction for two parent family
+  reference:
+    - title: Quebec I-3 - Taxation Act, Part I, Book IX, Title III, Chapter III.1, DIVISION II.11.2, 1029.8.61.18. (a)
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#ga:l_i-gb:l_ix-gc:l_iii-gd:l_iii_1-ge:l_ii_11_2-h1
+    - title: Quebec I-3 - Taxation Act, Part I, Book IX, Title III, Chapter III.1, DIVISION II.11.2, 1029.8.61.22.1.
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#ga:l_i-gb:l_ix-gc:l_iii-gd:l_iii_1-ge:l_ii_11_2-h1
+      # For the taxation year 2023, the amount of the family allowance reduction threshold applicable to an individual who has a cohabiting spouse at the beginning of a particular month of the year is changed from $51,893 to $55,183.
+brackets:
+  - threshold:
+      2023-01-01: 0
+    rate:
+      2023-01-01: 0 # no reduction when income under $55,183
+  - threshold:
+      2023-01-01: 55_183
+    rate:
+      2023-01-01: 0.04
