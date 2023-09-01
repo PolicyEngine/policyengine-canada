@@ -1,0 +1,83 @@
+- name: Quebec livign alone amount eligibility for indivudial living alone
+  period: 2022
+  input: 
+    living_alone: true
+    province_code: QC
+  output:
+    qc_person_living_alone_eligibility: true
+
+- name: Quebec livign alone amount eligibility for indivudial living with non adult
+  period: 2022
+  input:
+    people:
+      c1:
+        age: 15
+        is_decendant: false
+        is_full_time_student: false
+      c2:
+        age: 20
+        is_decendant: false
+        is_full_time_student: false
+    household:
+      members: [c1, c2]
+      living_alone: false
+      province_code: QC
+  output:
+    qc_person_living_alone_eligibility: true
+
+- name: Quebec livign alone amount eligibility for indivudial living with full-time student decendants 
+  period: 2022
+  input:
+    people:
+      c1:
+        age: 21
+        is_decendant: true
+        is_full_time_student: true
+      c2:
+        age: 20
+        is_decendant: true
+        is_full_time_student: true
+    household:
+      members: [c1, c2]
+      living_alone: false
+      province_code: QC
+  output:
+    qc_person_living_alone_eligibility: true
+
+- name: Quebec livign alone amount eligibility for indivudial living with not full-time student decendants 
+  period: 2022
+  input:
+    people:
+      c1:
+        age: 21
+        is_decendant: true
+        is_full_time_student: false
+      c2:
+        age: 20
+        is_decendant: true
+        is_full_time_student: false
+    household:
+      members: [c1, c2]
+      living_alone: false
+      province_code: QC
+  output:
+    qc_person_living_alone_eligibility: false
+
+- name: Quebec livign alone amount eligibility for indivudial living with full-time student non-decendants 
+  period: 2022
+  input:
+    people:
+      c1:
+        age: 21
+        is_decendant: false
+        is_full_time_student: true
+      c2:
+        age: 20
+        is_decendant: false
+        is_full_time_student: true
+    household:
+      members: [c1, c2]
+      living_alone: false
+      province_code: QC
+  output:
+    qc_person_living_alone_eligibility: false

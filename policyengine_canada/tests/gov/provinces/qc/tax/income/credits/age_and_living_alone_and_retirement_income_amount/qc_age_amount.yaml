@@ -1,23 +1,28 @@
-- name: Quebec age amount for eligible single without spouse
-  period: 2022
-  input:
-    age: 65
-    is_married: false
-    province_code: QC
-  output:
-    qc_age_amount: 3_395
-
-- name: Quebec age amount for eligible single with noneligible spouse
+- name: Quebec age amount for eligible individual with no spouse
   period: 2022
   input:
     people:
       head:
+        is_head_or_spouse: ture
+        age: 65
+    household:
+      members: [head]
+      province_code: QC
+  output:
+    qc_age_amount: 3_395
+
+- name: Quebec age amount for eligible individual and non-eligible spouse
+  period: 2022
+  input:
+    people:
+      head:
+        is_head_or_spouse: ture
         age: 65
       spouse:
+        is_head_or_spouse: ture
         age: 60
     household:
       members: [head, spouse]
-      is_married: true
       province_code: QC
   output:
     qc_age_amount: 3_395
@@ -27,12 +32,29 @@
   input:
     people:
       head:
+        is_head_or_spouse: ture
         age: 65
       spouse:
+        is_head_or_spouse: ture
         age: 70
     household:
       members: [head, spouse]
-      is_married: true
       province_code: QC
   output:
     qc_age_amount: 6_790 #3395+3395
+
+- name: Quebec age amount for eligible individual living with other members
+  period: 2022
+  input:
+    people:
+      head:
+        is_head_or_spouse: ture
+        age: 65
+      relative:
+        is_head_or_spouse: false
+        age: 70
+    household:
+      members: [head, relative]
+      province_code: QC
+  output:
+    qc_age_amount: 3_395

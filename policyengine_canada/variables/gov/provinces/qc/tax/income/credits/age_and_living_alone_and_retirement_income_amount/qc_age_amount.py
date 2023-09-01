@@ -14,11 +14,10 @@ class qc_age_amount(Variable):
         ).gov.provinces.qc.tax.income.credits.age_and_living_alone_and_retirement_income_amount.age_amount
 
         person = household.members
-        # if the household has spouse
-        spouse = household("is_married", period)
 
+        is_head_or_spouse = person("is_head_or_spouse", period)
         age_eligible = person("age", period) >= p.age_eligibility
 
-        eligible_person = household.sum(age_eligible)
+        eligible_person = household.sum(is_head_or_spouse & age_eligible)
 
         return eligible_person * p.base

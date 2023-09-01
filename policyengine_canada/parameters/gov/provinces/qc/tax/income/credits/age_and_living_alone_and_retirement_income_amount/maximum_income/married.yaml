@@ -6,5 +6,7 @@ metadata:
   label: Quebec age amount, amount for a person living alone and amount for retirement income family income limit for married people
   reference:
     - title: Schedule B – Tax Relief Measures
-      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf#page=1
       # You are not entitled to any of these amounts if you had a spouse on December 31, 2022, and the amount on line 18 is more than $78,261
+      # $36,590 + $78,261 = $114,851
+    # Legal reference unavailable
