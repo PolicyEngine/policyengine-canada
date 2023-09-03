@@ -6,7 +6,7 @@ class mb_tuition_amount_credit(Variable):
     entity = Person
     label = "Manitoba tuition amount credit"
     definition_period = YEAR
-    defined_for = ProvinceCode.MB
+    defined_for = "mb_tuition_amount_credit_eligible"
 
     def formula(person, period, parameters):
         p = parameters(
@@ -14,7 +14,6 @@ class mb_tuition_amount_credit(Variable):
         ).gov.provinces.mb.tax.income.credits.tuition_amount
 
         tuition = person("tuition_expenses", period)
-        tuition_eligible = tuition > p.eligible_tuition_amount
 
         # check if full-time student
         full_time = person("is_full_time_student", period)
@@ -31,4 +30,4 @@ class mb_tuition_amount_credit(Variable):
             ],
         )
 
-        return tuition_eligible * (tuition + tuition_addition)
+        return tuition + tuition_addition

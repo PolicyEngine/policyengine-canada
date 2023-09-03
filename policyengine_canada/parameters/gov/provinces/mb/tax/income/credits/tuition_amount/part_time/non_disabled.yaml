@@ -1,4 +1,4 @@
-description: Manitoba extends this tuition amount to non-disabled part-time students at educational institutions.
+description: Manitoba extends this tuition amount to non-disabled part-time students.
 values:
   2022-01-01: 1_440 # 120/month * 12
 metadata:
