@@ -13,7 +13,9 @@ class yt_medical_expense_credit(Variable):
             period
         ).gov.provinces.yt.tax.income.credits.medical_expense
 
-        claimed_medical_expenses = household("medical_expenses", period)
+        claimed_medical_expenses = household(
+            "household_medical_expenses", period
+        )
         net_income = household("household_net_income", period)
         medical_expenses_rate = p.rate
 

@@ -2,7 +2,7 @@
   period: 2022
   input:
     province_code: YT
-    medical_expenses: 0
+    household_medical_expenses: 0
     household_net_income: 10_000_000_000
   output:
     yt_medical_expense_credit: 0
@@ -11,7 +11,7 @@
   period: 2022
   input:
     province_code: YT
-    medical_expenses: 0
+    household_medical_expenses: 0
     household_net_income: 100
   output:
     yt_medical_expense_credit: 0
@@ -20,7 +20,7 @@
   period: 2022
   input:
     province_code: YT
-    medical_expenses: 10_000
+    household_medical_expenses: 10_000
     household_net_income: 100
   output:
     yt_medical_expense_credit: 9_997
@@ -29,7 +29,7 @@
   period: 2022
   input:
     province_code: YT
-    medical_expenses: 4_000
+    household_medical_expenses: 4_000
     household_net_income: 10_000_000_000
   output:
     yt_medical_expense_credit: 1_521
