@@ -1,10 +1,10 @@
-description: Northwest Territories' provides this maximum amount of disability amount for self for younger filers.
+description: Northwest Territories' allows for this additional maximum disability amount for self for younger filers.
 values:
   2022-12-31: 5_174
 metadata:
   unit: currency-CAD
   period: year
-  label: Northwest Territories maximum additional amount disability amount for self
+  label: Northwest Territories disability amount for self maximum additional amount 
   reference:
     - title: Income Tax Act - Section 2.12 CPP/QPP disability benefits and other lumpsum payments for previous years
       href: www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf#page=23

@@ -1,11 +1,11 @@
-- name: under 18 years old, with childcare cost over 3030
+- name: under 18 years old, disability not eligible
   period: 2023
   input:
-    nt_disability_amount_self_eligible: true
+    nt_disability_amount_self_eligible: false
     age: 17
     childcare_costs: 3_050
   output:
-    nt_disability_amount_self: 17_812
+    nt_disability_amount_self: 0
 
 - name: under 18 years old, without childcare cost
   period: 2023
@@ -16,6 +16,51 @@
   output:
     nt_disability_amount_self: 17_832
 
+- name: under 18 years old, with childcare cost 5000
+  period: 2023
+  input:
+    nt_disability_amount_self_eligible: true
+    age: 17
+    childcare_costs: 5_000
+  output:
+    nt_disability_amount_self: 15_862
+
+- name: under 18 years old, with childcare cost 10000
+  period: 2023
+  input:
+    nt_disability_amount_self_eligible: true
+    age: 17
+    childcare_costs: 10_000
+  output:
+    nt_disability_amount_self: 12_658
+
+- name: under 18 years old, with childcare cost over 3030
+  period: 2023
+  input:
+    nt_disability_amount_self_eligible: true
+    age: 17
+    childcare_costs: 3_050
+  output:
+    nt_disability_amount_self: 17_812
+
+- name: 18 years old, disability not eligible
+  period: 2023
+  input:
+    nt_disability_amount_self_eligible: false
+    age: 18
+    childcare_costs: 3_050
+  output:
+    nt_disability_amount_self: 0
+
+- name: 18 years old, without childcare cost
+  period: 2023
+  input:
+    nt_disability_amount_self_eligible: true
+    age: 18
+    childcare_costs: 0
+  output:
+    nt_disability_amount_self: 12_658
+
 - name: 18 years old, with childcare cost over 3030
   period: 2023
   input:
@@ -24,21 +69,3 @@
     childcare_costs: 3_050
   output:
     nt_disability_amount_self: 12_658
-
-- name: over 18 years old, with childcare cost over 3030
-  period: 2023
-  input:
-    nt_disability_amount_self_eligible: true
-    age: 19
-    childcare_costs: 3_050
-  output:
-    nt_disability_amount_self: 12_658
-
-- name: disability not eligible
-  period: 2023
-  input:
-    nt_disability_amount_self_eligible: false
-    age: 19
-    childcare_costs: 3_050
-  output:
-    nt_disability_amount_self: 0

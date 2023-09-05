@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class nt_disability_amount_self(Variable):
     value_type = float
     entity = Person
-    label = "Northwest Territories Disability Amount for self"
+    label = "Northwest Territories Disability amount for self"
     unit = CAD
     definition_period = YEAR
     defined_for = "nt_disability_amount_self_eligible"
@@ -15,12 +15,18 @@ class nt_disability_amount_self(Variable):
         p = parameters(
             period
         ).gov.provinces.nt.tax.income.credits.disability_amount_self
-        age_eligible = person("age", period) < p.age_eligibility
+        reduction_age_threshold = (
+            person("age", period) < p.additional_amount.age_eligibility
+        )
         total_expenses = household("childcare_costs", period)
-        expense_threshold = max_(total_expenses - p.child_care_expense_cap, 0)
+        expense_threshold = max_(
+            total_expenses - p.additional_amount.child_care_expense_cap, 0
+        )
         additional_max_with_child_care = max_(
-            p.max_additional_amount - expense_threshold, 0
+            p.additional_amount.max_amount - expense_threshold, 0
         )
         return where(
-            age_eligible, p.base + additional_max_with_child_care, p.base
+            reduction_age_threshold,
+            p.base + additional_max_with_child_care,
+            p.base,
         )
