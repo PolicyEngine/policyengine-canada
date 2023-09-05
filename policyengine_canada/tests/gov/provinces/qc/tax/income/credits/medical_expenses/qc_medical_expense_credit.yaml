@@ -3,7 +3,6 @@
   input:
     medical_expenses: 3_000
     qc_medical_expense_credit_eligible: true
-    province_code: QC
   output:
     qc_medical_expense_credit: 3_000
 
@@ -12,6 +11,5 @@
   input:
     medical_expenses: 3_000
     qc_medical_expense_credit_eligible: false
-    province_code: QC
   output:
     qc_medical_expense_credit: 0

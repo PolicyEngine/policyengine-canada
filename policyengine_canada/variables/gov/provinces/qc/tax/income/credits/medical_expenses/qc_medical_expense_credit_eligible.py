@@ -16,11 +16,11 @@ class qc_medical_expense_credit_eligible(Variable):
         medical_expenses = person("medical_expenses", period)
 
         # age eligibility
-        age_eligible = person("age", period) >= p.age_eligibility
+        age_eligible = person("age", period) >= p.threshold.age
 
         # work income eligibility
         work_income_eligible = (
-            person("working_income", period) >= p.work_income_base
+            person("working_income", period) >= p.threshold.work_income
         )
 
         # compare family income with maximum family income

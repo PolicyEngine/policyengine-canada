@@ -9,5 +9,4 @@ class qc_medical_expense_credit(Variable):
     defined_for = "qc_medical_expense_credit_eligible"
 
     def formula(person, period, parameters):
-        medical_expenses = person("medical_expenses", period)
-        return medical_expenses
+        return person("medical_expenses", period)
