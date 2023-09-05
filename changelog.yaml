@@ -511,3 +511,18 @@
     fixes:
     - Canada Basic Personal Amount Supplement label.
   date: 2023-08-21 20:36:42
+- bump: minor
+  changes:
+    added:
+    - Northwest Territories Age Credit.
+  date: 2023-08-24 21:35:50
+- bump: minor
+  changes:
+    added:
+    - Manitoba age amount credit.
+  date: 2023-08-25 15:15:09
+- bump: minor
+  changes:
+    added:
+    - Nunavut age amount credit.
+  date: 2023-09-04 23:15:38
