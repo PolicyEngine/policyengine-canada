@@ -1,7 +1,7 @@
 - name: Basic
   period: 2023
   input:
-    employment_income: 20000
-    self_employment_income: 5000
+    employment_income: 20_000
+    self_employment_income: 5_000
   output:
-    gis_exemption: 10000
+    gis_exemption: 10_000

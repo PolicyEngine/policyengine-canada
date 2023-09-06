@@ -1,7 +1,7 @@
 - name:  The default rate of 75% of net household income after the first 48 dollars.
   period: 2023
   input:
-    individual_net_income: 1048
+    individual_net_income: 1_048
   output:
     spa_oas_reduction: 750
 

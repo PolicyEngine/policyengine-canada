@@ -1,6 +1,6 @@
-description: Reduction rate for the GIS portion of the SPA. 
+description: Canada reduces the GIS portion of the SPA at this rate.
 values:
-  1999-12-31: .25
+  1999-12-31: 0.25
 metadata:
   period: year
   label: Reduction rate for the GIS portion of the SPA. 

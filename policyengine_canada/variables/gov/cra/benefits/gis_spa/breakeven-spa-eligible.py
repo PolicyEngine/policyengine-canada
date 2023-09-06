@@ -10,13 +10,15 @@ class breakeven_spa_eligible(Variable):
     definition_period = YEAR
 
     def formula(person, period, parameters):
-        p_gis_spa = parameters(period).gov.cra.benefits.gis_spa
+        p_benefits = parameters(period).gov.cra.benefits
+        p_gis_spa = p_benefits.gis_spa
+        p_oas = p_benefits.old_age_security_pension
         p_oas = parameters(period).gov.cra.benefits.old_age_security_pension
 
         return (
             (
-                (2 * p_gis_spa.gis_cap.two_pensioners)
-                / (2 * p_gis_spa.gis_reduction.two_pensioners.rates[1])
+                (p_gis_spa.gis_cap.two_pensioners)
+                / (p_gis_spa.gis_reduction.two_pensioners.rates[1])
             )
             + (
                 p_oas.amount.base

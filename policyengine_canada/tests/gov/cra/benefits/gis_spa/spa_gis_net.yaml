@@ -1,15 +1,15 @@
 - name:  Not a total reduction
   period: 2022
   input:
-    spa_gis_portion: 2000
-    spa_gis_reduction: 1000
+    spa_gis_portion: 2_000
+    spa_gis_reduction: 1_000
   output:
-    spa_gis_net: 1000
+    spa_gis_net: 1_000
 
 - name:  Total reduction
   period: 2022
   input:
-    spa_gis_portion: 1000
-    spa_gis_reduction: 2000
+    spa_gis_portion: 1_000
+    spa_gis_reduction: 2_000
   output:
     spa_gis_net: 0

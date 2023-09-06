@@ -19,7 +19,6 @@ metadata:
   period: year
   documentation: Corresponds to GISEMPEXP and GISEMPEXM
   label: Percentage of income exempt from inclusion in calculating the GIS reduction. 
-  name: gis_basic_income_exemption_rate
 
 
    
