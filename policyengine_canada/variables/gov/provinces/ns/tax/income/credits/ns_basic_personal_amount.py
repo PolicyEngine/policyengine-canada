@@ -30,4 +30,10 @@ class ns_basic_personal_amount(Variable):
             reduced_additional_amount, p.additional_amount.additional_amount
         )
 
-        return p.base + additional_amount
+        return where(
+            taxable_income <= p.additional_amount.income_threshold,
+            p.additional_amount.max_personal_amount,
+            p.base + additional_amount,
+        )
+
+    # p.base + additional_amount
