@@ -1,0 +1,28 @@
+description: Quebec provides this yearly amount for the purchase of school supplies based on the age of handicapped child.
+brackets:
+  - amount:
+      2023-01-01: 0
+    threshold:
+      2023-01-01: 0
+  - amount:
+      2023-01-01: 115
+    threshold:
+      2023-01-01: 4
+  - amount:
+      2023-01-01: 0
+    threshold:
+      2023-01-01: 18
+metadata:
+  type: single_amount
+  threshold_unit: year
+  amount_unit: currency-CAD
+  label: Quebec family allowance handicapped child school supplies amount
+  reference:
+    - title: Retraite Québec - Amounts and payment of Family Allowance
+      href: https://www.rrq.gouv.qc.ca/en/programmes/soutien_enfants/paiement/Pages/montant.aspx
+    - title: Retraite Québec - Supplement for the Purchase of School Supplies
+      href: https://www.rrq.gouv.qc.ca/en/enfants/Pages/supplement-achat-fournitures-scolaires.aspx
+      # you receive the Supplement for Handicapped Children for a child aged 4 to 17
+    - title: Quebec I-3 - Taxation Act, Part I, Book IX, Title III, Chapter III.1, DIVISION II.11.2, 1029.8.61.18. (d)
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#ga:l_i-gb:l_ix-gc:l_iii-gd:l_iii_1-ge:l_ii_11_2-h1
+      # $104 in the legal reference,  increased due to the inflation adjustments
