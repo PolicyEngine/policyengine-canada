@@ -1,0 +1,15 @@
+- name: Eligible
+  period: 2023
+  input:
+    province_code: NU
+    age: 65
+  output:
+    nu_age_amount_credit_eligible: true
+
+- name: Ineligible
+  period: 2023
+  input:
+    province_code: NU
+    age: 60
+  output:
+    nu_age_amount_credit_eligible: false
