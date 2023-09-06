@@ -23,11 +23,11 @@ class ns_basic_personal_amount(Variable):
 
         reduced_additional_amount = max_(
             0,
-            p.additional_amount.additional_amount
-            - p.additional_amount.max_amount.calc(taxable_income),
+            p.additional_amount.base
+            - p.additional_amount.phase_out_rate.calc(taxable_income),
         )
         additional_amount = min_(
-            reduced_additional_amount, p.additional_amount.additional_amount
+            reduced_additional_amount, p.additional_amount.base
         )
 
         return where(
