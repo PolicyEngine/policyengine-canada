@@ -20,15 +20,21 @@ class sk_caregiver_amount_eligibility(Variable):
             period
         ).gov.provinces.sk.tax.income.credits.sk_caregiver_amount
 
-        dependant = person("is_dependant", period)
-        age = person("age", period)
-        infirm_dependant_eligible = age <= p.age_threshold.infirm
-        elderly_dependant_eligible = age >= p.age_threshold.elderly
-        age_eligibility = dependant & (
-            infirm_dependant_eligible | elderly_dependant_eligible
+        infirm_age_eligibility = (
+            person("age", period) >= p.age_threshold.infirm
+        )
+        elderly_age_eligibility = (
+            person("age", period) >= p.age_threshold.elderly
+        )
+
+        infirm_eligibility = (
+            person("is_infirm_dependant", period) & infirm_age_eligibility
+        )
+        elderly_eligibility = (
+            person("is_elderly_dependant", period) & elderly_age_eligibility
         )
 
         dependants_income = person("individual_net_income", period)
         income_eligibility = dependants_income <= p.higher_income_threshold
 
-        return age_eligibility & income_eligibility
+        return income_eligibility & (infirm_eligibility | elderly_eligibility)
