@@ -1,0 +1,35 @@
+- name: Under taxable income 2022
+  period: 2022
+  input:
+    province_code: NT
+    nt_age_credit_eligible: true
+    nt_taxable_income: 39_825
+  output:
+    nt_age_credit: 7_635
+
+- name: Calculation 2022 # 7,635 - ((40,100 - 39,826) * 0.15)
+  period: 2022
+  input:
+    province_code: NT
+    nt_age_credit_eligible: true
+    nt_taxable_income: 40_100
+  output:
+    nt_age_credit: 7_593.9
+
+- name: Under taxable income 2023
+  period: 2023
+  input:
+    province_code: NT
+    nt_age_credit_eligible: true
+    nt_taxable_income: 42_334
+  output:
+    nt_age_credit: 8_116
+
+- name: Calculation 2023 # 8_116 - ((45_000 - 42_335) * 0.15)
+  period: 2023
+  input:
+    province_code: NT
+    nt_age_credit_eligible: true
+    nt_taxable_income: 45_000
+  output:
+    nt_age_credit: 7_716.25
