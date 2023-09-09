@@ -36,4 +36,3 @@ class ns_basic_personal_amount(Variable):
             p.base + additional_amount,
         )
 
-    # p.base + additional_amount
