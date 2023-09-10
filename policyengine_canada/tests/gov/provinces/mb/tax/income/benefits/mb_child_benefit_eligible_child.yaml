@@ -6,7 +6,7 @@
   output:
     mb_child_benefit_eligible_child: true
 
-- name: Manibota child benefit ineligible child 
+- name: Manitoba child benefit ineligible child 
   period: 2023
   input:
     province_code: MB
