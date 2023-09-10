@@ -5,6 +5,7 @@ class ns_basic_personal_amount(Variable):
     value_type = float
     entity = Person
     label = "Nova Scotia Basic Personal Amount"
+    unit = CAD
     definition_period = YEAR
     defined_for = ProvinceCode.NS
     reference = (
