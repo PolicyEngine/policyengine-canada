@@ -1,0 +1,17 @@
+description: Quebec provides this base amount for age amount credit.
+values:
+  2022-01-01: 3_395
+metadata:
+  unit: currency-CAD
+  label: Quebec age amount credit
+  reference:
+    - title: Schedule B – Tax Relief Measures
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf#page=1
+    - title: Revenu Quebec – Age amount, amount for a person living alone and amount for retirement income (Line 361)
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/350-to-398-1-non-refundable-tax-credits/line-361/
+    - title: Quebec I-3 - Taxation Act, Part I, Book V, Title I, Chapter I.0.2, DIVISION II.11.2, 752.0.7.4, (a)iii
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:752_0_7_4
+      # eligible individual: $3,132 in the legal reference, increased due to the inflation adjustments
+    - title: Quebec I-3 - Taxation Act, Part I, Book V, Title I, Chapter I.0.2, DIVISION II.11.2, 752.0.7.4, (b)iii
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:752_0_7_4
+      # individual's eligible spouse: $3,132 in the legal reference, increased due to the inflation adjustments

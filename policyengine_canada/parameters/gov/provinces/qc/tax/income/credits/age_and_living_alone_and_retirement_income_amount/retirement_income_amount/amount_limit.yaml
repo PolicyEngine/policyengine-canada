@@ -1,0 +1,15 @@
+description: Quebec provides this limit for amount of retirement income. 
+values:
+  2022-01-01: 3_017
+metadata:
+  unit: currency-CAD
+  label: Quebec amount of retirement income limit
+  reference:
+    - title: Schedule B – Tax Relief Measures
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf#page=1
+    - title: Quebec I-3 - Taxation Act, Part I, Book V, Title I, Chapter I.0.2, DIVISION II.11.2, 752.0.7.4, (a)ii
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:752_0_7_4
+      # eligible individual: $2,787 in the legal reference, increased due to the inflation adjustments
+    - title: Quebec I-3 - Taxation Act, Part I, Book V, Title I, Chapter I.0.2, DIVISION II.11.2, 752.0.7.4, (b)ii
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:752_0_7_4
+      # individual's eligible spouse: $2,787 in the legal reference, increased due to the inflation adjustments

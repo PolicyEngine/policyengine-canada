@@ -1,0 +1,71 @@
+- name: Quebec age amount, amount for a person living alone and amount for retirement income for couple with income below turndown threshold
+  period: 2022
+  input:
+    adjusted_family_net_income: 30_000 # < 36,590
+    is_married: true
+    qc_age_amount: 1_000
+    qc_person_living_alone_amount: 1_000
+    qc_retirement_income_amount: 2_000
+    province_code: QC
+  output:
+    qc_age_and_living_alone_and_retirement_income_amount: 4_000
+
+- name: Quebec age amount, amount for a person living alone and amount for retirement income for couple with income above turndown threshold
+  period: 2022
+  input:
+    adjusted_family_net_income: 60_000 # >36,590 and <114,851
+    is_married: true
+    qc_age_amount: 6_000
+    qc_person_living_alone_amount: 2_000
+    qc_retirement_income_amount: 2_000
+    province_code: QC
+  output:
+    qc_age_and_living_alone_and_retirement_income_amount: 5_610.625
+
+- name: Quebec age amount, amount for a person living alone and amount for retirement income for couple with income above maximum income
+  period: 2022
+  input:
+    adjusted_family_net_income: 120_000 # >114,851
+    is_married: true
+    qc_age_amount: 6_000
+    qc_person_living_alone_amount: 2_000
+    qc_retirement_income_amount: 2_000
+    province_code: QC
+  output:
+    qc_age_and_living_alone_and_retirement_income_amount: 0
+
+- name: Quebec age amount, amount for a person living alone and amount for retirement income for single with income below turndown threshold
+  period: 2022
+  input:
+    adjusted_family_net_income: 30_000 # < 36,590
+    is_married: true
+    qc_age_amount: 1_000
+    qc_person_living_alone_amount: 1_000
+    qc_retirement_income_amount: 2_000
+    province_code: QC
+  output:
+    qc_age_and_living_alone_and_retirement_income_amount: 4_000
+
+- name: Quebec age amount, amount for a person living alone and amount for retirement income for couple with income above turndown threshold
+  period: 2022
+  input:
+    adjusted_family_net_income: 60_000 # >36,590 and <92,835
+    is_married: true
+    qc_age_amount: 6_000
+    qc_person_living_alone_amount: 2_000
+    qc_retirement_income_amount: 2_000
+    province_code: QC
+  output:
+    qc_age_and_living_alone_and_retirement_income_amount: 5_610.625
+
+- name: Quebec age amount, amount for a person living alone and amount for retirement income for couple with income above maximum income
+  period: 2022
+  input:
+    adjusted_family_net_income: 100_000 # >92,835
+    is_married: true
+    qc_age_amount: 6_000
+    qc_person_living_alone_amount: 2_000
+    qc_retirement_income_amount: 2_000
+    province_code: QC
+  output:
+    qc_age_and_living_alone_and_retirement_income_amount: 0
