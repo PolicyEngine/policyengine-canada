@@ -1,0 +1,39 @@
+- name: Quebec refundable medical expenses tax credit eligibility for non-adult
+  period: 2022
+  input:
+    age: 15
+    working_income: 4_000 
+    qc_non_refundable_medical_expense: true
+    province_code: QC
+  output:
+    qc_refundable_medical_expense_credit_eligible: false
+
+- name: Quebec refundable medical expenses tax credit eligibility for individual working income below limit
+  period: 2022
+  input:
+    age: 18
+    working_income: 2_000 
+    qc_non_refundable_medical_expense: true
+    province_code: QC
+  output:
+    qc_refundable_medical_expense_credit_eligible: false
+
+- name: Quebec refundable medical expenses tax credit eligibility for individual not eligble for non-refundable medical expense
+  period: 2022
+  input:
+    age: 18
+    working_income: 5_000 
+    qc_non_refundable_medical_expense: false
+    province_code: QC
+  output:
+    qc_refundable_medical_expense_credit_eligible: false
+
+- name: Quebec refundable medical expenses tax credit eligible individual 
+  period: 2022
+  input:
+    age: 18
+    working_income: 5_000 
+    qc_non_refundable_medical_expense: true
+    province_code: QC
+  output:
+    qc_refundable_medical_expense_credit_eligible: true
