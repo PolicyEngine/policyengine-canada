@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class property_value(Variable):
+class real_and_personal_property(Variable):
     value_type = float
     entity = Household
     label = "Property value"
