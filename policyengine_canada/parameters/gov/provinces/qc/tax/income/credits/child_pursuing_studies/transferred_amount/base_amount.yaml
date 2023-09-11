@@ -5,9 +5,9 @@ metadata:
   unit: currency-CAD
   label: Quebec post-secondary studies transfered base amount
   reference:
-    - title: Revenu Quebec - Amount for dependants and amount transferred by a child 18 or over enrolled in post-secondary studies (Line 367)
+    - title: Revenu Quebec - Amount for dependants and amount transferred by a child 18 or over enrolled in post-secondary studies - Line 367
       href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/350-to-398-1-non-refundable-tax-credits/line-367/
     - title: Schedule S – Amount Transferred by a Child 18 or Over Enrolled in Post-Secondary Studies
       href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.S-V%282022-12%29.pdf
     - title: Schedule A - Amount for Dependants and Amount Transferred by a Child Pursuing Studies
-      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.A-V%282022-12%29.pdf
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.A-V%282022-12%29.pdf#page=1

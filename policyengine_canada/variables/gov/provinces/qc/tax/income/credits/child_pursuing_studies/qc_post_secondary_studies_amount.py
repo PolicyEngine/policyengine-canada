@@ -8,19 +8,12 @@ class qc_post_secondary_studies_amount(Variable):
         "Quebec amount for a child under 18 enrolled in post-secondary studies"
     )
     definition_period = YEAR
-    defined_for = ProvinceCode.QC
+    defined_for = "qc_post_secondary_studies_amount_eligibility"
 
     def formula(person, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.qc.tax.income.credits.depedant_amount
-
-        # Child under 18 enrolled in post-secondary studies
-        age_eligible = person("age", period) < p.age_eligibility
-        full_time_student = person("is_full_time_student", period)
-        unmarried = ~person("has_spouse", period)
-
-        eligible = age_eligible & full_time_student & unmarried
+        ).gov.provinces.qc.tax.income.credits.child_pursuing_studies.amount
 
         # Dependent child’s income
         net_income = person("individual_net_income", period)
