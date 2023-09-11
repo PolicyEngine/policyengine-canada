@@ -1,0 +1,14 @@
+description: Northwest Territories provides the age credit to filers at or above this age threshold.
+
+values:
+  2022-01-01: 65
+metadata:
+  unit: year
+  label: Northwest Territories age credit age eligibility
+  reference: 
+  - title: Income Tax Act - Section 2.2 Age Credit 
+    href: https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf#page=31
+  - title: 2022 Worksheet NT428 - line 58080
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5012-d/5012-d-22e.pdf#page=1
+  - title: 2023 Personal Tax Credits Return - line 2 Age amount
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nt-ws/td1nt-ws-23e.pdf#page=1

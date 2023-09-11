@@ -1,0 +1,41 @@
+- name: Under threshold with eligible age
+  period: 2023
+  input:
+    nu_age_amount_credit_eligible: true
+    total_individual_pre_tax_income: 0
+  output:
+    nu_age_amount_credit: 10_764
+
+- name: Over threshold income with eligible age
+  period: 2023
+  input:
+    total_individual_pre_tax_income: 69_826
+    nu_age_amount_credit_eligible: true
+  output: 
+    nu_age_amount_credit: 6_264
+
+- name: Max out credit with eligible age
+  period: 2023
+  absolute_error_margin: 0.5
+  input:
+    total_individual_pre_tax_income: 111_586
+    nu_age_amount_credit_eligible: true
+  output: 
+    nu_age_amount_credit: 0
+
+
+- name: Under threshold with ineligible age
+  period: 2023
+  input:
+    total_individual_pre_tax_income: 0
+    nu_age_amount_credit_eligible: false
+  output:
+    nu_age_amount_credit: 0
+
+- name: Over threshold income with ineligible age
+  period: 2023
+  input:
+    total_individual_pre_tax_income: 69_826
+    nu_age_amount_credit_eligible: false
+  output: 
+    nu_age_amount_credit: 0

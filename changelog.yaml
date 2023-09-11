@@ -451,3 +451,78 @@
     added:
     - Yukon Government carbon price rebate - Individuals (YGCPRI)
   date: 2023-07-19 18:54:15
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia Income Assistance Age Eligibility.
+  date: 2023-08-07 00:48:20
+- bump: minor
+  changes:
+    added:
+    - Manitoba basic personal amount.
+  date: 2023-08-08 01:39:11
+- bump: minor
+  changes:
+    added:
+    - Canada employment amount.
+  date: 2023-08-09 23:04:22
+- bump: minor
+  changes:
+    added:
+    - Quebec family allowance tax credit.
+  date: 2023-08-10 01:10:48
+- bump: minor
+  changes:
+    added:
+    - Quebec basic personal amount.
+  date: 2023-08-10 01:36:53
+- bump: minor
+  changes:
+    added:
+    - Alberta age credit.
+  date: 2023-08-11 04:31:59
+- bump: minor
+  changes:
+    added:
+    - Saskatchewan disability amount.
+  date: 2023-08-18 03:48:59
+- bump: minor
+  changes:
+    added:
+    - Saskatchewan Senior Supplementary amount Tax Credit.
+  date: 2023-08-18 03:53:19
+- bump: minor
+  changes:
+    added:
+    - Saskatchewan age amount tax credit.
+  date: 2023-08-18 04:11:47
+- bump: minor
+  changes:
+    added:
+    - Yukon Employment Amount.
+  date: 2023-08-20 20:37:37
+- bump: patch
+  changes:
+    fixed:
+    - Manitoba BPA parameter folder structure.
+  date: 2023-08-21 20:22:09
+- bump: patch
+  changes:
+    fixes:
+    - Canada Basic Personal Amount Supplement label.
+  date: 2023-08-21 20:36:42
+- bump: minor
+  changes:
+    added:
+    - Northwest Territories Age Credit.
+  date: 2023-08-24 21:35:50
+- bump: minor
+  changes:
+    added:
+    - Manitoba age amount credit.
+  date: 2023-08-25 15:15:09
+- bump: minor
+  changes:
+    added:
+    - Nunavut age amount credit.
+  date: 2023-09-04 23:15:38
