@@ -12,4 +12,3 @@ class nu_single_status_credit_eligible(Variable):
         single_status = ~person.household("is_married", period)
         no_dependants = person.household("count_dependants", period) == 0
         return (single_status & no_dependants)
-        return eligible
