@@ -1,0 +1,12 @@
+description: Yukon provides this employment amount. 
+values:
+  2022-01-01: 1_287
+metadata:
+  unit: currency-CAD
+  label: Yukon employment amount
+  reference:
+  - title: Yukon Tax Form YT428 - Line 58310
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5011-c/5011-c-22e.pdf#page=1
+    # Credit is not mentioned in the Yukon income tax act
+  - title: Government of Canada - Yukon Information Guide
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/yukon/5011-pc/information-residents-yukon.html#P4_58310

@@ -1,0 +1,47 @@
+- name: Under age amount 2022
+  period: 2022
+  input:
+    province_code: NT
+    age: 64
+  output:
+    nt_age_credit_eligible: false
+
+- name: 65 years old 2022
+  period: 2022
+  input:
+    province_code: NT
+    age: 65
+  output:
+    nt_age_credit_eligible: true
+
+- name: Above age amount 2022
+  period: 2022
+  input:
+    province_code: NT
+    age: 66
+  output:
+    nt_age_credit_eligible: true
+
+- name: Under age amount 2023
+  period: 2023
+  input:
+    province_code: NT
+    age: 64
+  output:
+    nt_age_credit_eligible: false
+
+- name: 65 years old 2022
+  period: 2022
+  input:
+    province_code: NT
+    age: 65
+  output:
+    nt_age_credit_eligible: true
+
+- name: Above age amount 2023
+  period: 2023
+  input:
+    province_code: NT
+    age: 66
+  output:
+    nt_age_credit_eligible: true
