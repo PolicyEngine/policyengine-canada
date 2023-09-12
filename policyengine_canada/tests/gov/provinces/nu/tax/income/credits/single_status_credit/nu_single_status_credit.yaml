@@ -4,7 +4,7 @@
     province_code: NU
     is_married: false
   output:
-    nu_single_status_credit: 16_000
+    nu_single_status_credit: 16_862
 
 - name: Person with married status
   period: 2023
