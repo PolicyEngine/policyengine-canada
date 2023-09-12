@@ -1,0 +1,9 @@
+description: Newfoundland and Labrador child benefit eligibility. 
+values:
+  2023-01-01: 18
+metadata:
+  unit: year
+  label: Newfoundland and Labrador child benefit eligibility. 
+  reference:
+    - title: NewFoundland and Labrador Prenatal Infant income supplement 
+      href: https://www.gov.nl.ca/cssd/income-support/child/
