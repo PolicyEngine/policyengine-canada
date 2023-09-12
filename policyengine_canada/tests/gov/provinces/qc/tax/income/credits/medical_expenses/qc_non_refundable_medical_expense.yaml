@@ -2,7 +2,7 @@
   period: 2022
   input:
     medical_expenses: 3_000
-    individual_net_income: 20_000
+    head_income: 20_000
     spouse_income: 15_000
     province_code: QC
   output:
@@ -12,7 +12,7 @@
   period: 2022
   input:
     medical_expenses: 1_000
-    individual_net_income: 30_000
+    head_income: 30_000
     spouse_income: 30_000
     province_code: QC
   output:

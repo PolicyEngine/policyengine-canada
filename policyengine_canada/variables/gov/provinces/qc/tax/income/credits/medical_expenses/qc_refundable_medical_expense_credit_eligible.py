@@ -11,7 +11,7 @@ class qc_refundable_medical_expense_credit_eligible(Variable):
     def formula(person, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.qc.tax.income.credits.medical_expenses.refundable_medical_expense.eligibility
+        ).gov.provinces.qc.tax.income.credits.medical_expenses.refundable.eligibility
 
         # age eligibility
         age_eligible = person("age", period) >= p.age

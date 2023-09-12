@@ -11,13 +11,13 @@ class qc_refundable_medical_expense_credit(Variable):
     def formula(person, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.qc.tax.income.credits.medical_expenses.refundable_medical_expense
+        ).gov.provinces.qc.tax.income.credits.medical_expenses.refundable
 
         non_refundable_medical_expense = person(
             "qc_non_refundable_medical_expense", period
         )
         disability_supports_expense = person(
-            "disability_supports_expense", period
+            "qc_disability_supports_expense", period
         )
         medical_expense = min_(
             p.rate
@@ -26,7 +26,7 @@ class qc_refundable_medical_expense_credit(Variable):
         )
 
         # reduction
-        head_income = person("individual_net_income", period)
+        head_income = person("head_income", period)
         spouse_income = person("spouse_income", period)
         reduction = max_(0, p.reduction.calc(head_income + spouse_income))
 
