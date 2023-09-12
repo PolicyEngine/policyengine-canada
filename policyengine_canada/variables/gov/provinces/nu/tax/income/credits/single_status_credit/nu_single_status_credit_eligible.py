@@ -11,5 +11,5 @@ class nu_single_status_credit_eligible(Variable):
     def formula(person, period, parameters):
         single_status = ~person.household("is_married", period)
         no_dependants = person.household("count_dependants", period) == 0
-        eligible = (single_status & no_dependants)
+        return (single_status & no_dependants)
         return eligible
