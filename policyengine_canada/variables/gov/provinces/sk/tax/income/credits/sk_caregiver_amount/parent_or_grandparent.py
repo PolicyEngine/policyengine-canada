@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class is_infirm_dependant(Variable):
+class parent_or_grandparent(Variable):
     value_type = bool
     entity = Person
-    label = "Is an infirm dependant"
+    label = " Is the filers' parent or grandparent"
     definition_period = YEAR
     reference = (
         "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1",

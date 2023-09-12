@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class sk_caregiver_amount_eligibility(Variable):
+class sk_caregiver_amount_eligibile_person(Variable):
     value_type = bool
     entity = Person
     label = "Saskatchewan Caregiver Amount Eligibility"
@@ -20,19 +20,19 @@ class sk_caregiver_amount_eligibility(Variable):
             period
         ).gov.provinces.sk.tax.income.credits.sk_caregiver_amount
 
-        infirm_age_eligibility = (
-            person("age", period) >= p.age_threshold.infirm
-        )
-        elderly_age_eligibility = (
-            person("age", period) >= p.age_threshold.elderly
-        )
+        age = person("age", period)
+        dependant = person("is_live_together_dependant", period)
+        disabled = person("is_disabled", period)
+        parent_or_grandparent = person("parent_or_grandparent", period)
 
-        infirm_eligibility = (
-            person("is_infirm_dependant", period) & infirm_age_eligibility
-        )
-        elderly_eligibility = (
-            person("is_elderly_dependant", period) & elderly_age_eligibility
-        )
+        is_infirm_dependant = dependant & disabled
+        is_elderly_dependant = dependant & parent_or_grandparent
+
+        infirm_age_eligibility = age >= p.age_threshold.infirm
+        elderly_age_eligibility = age >= p.age_threshold.elderly
+
+        infirm_eligibility = is_infirm_dependant & infirm_age_eligibility
+        elderly_eligibility = is_elderly_dependant & elderly_age_eligibility
 
         dependants_income = person("individual_net_income", period)
         income_eligibility = dependants_income <= p.higher_income_threshold

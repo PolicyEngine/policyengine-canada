@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class is_elderly_dependant(Variable):
+class is_live_together_dependant(Variable):
     value_type = bool
     entity = Person
-    label = "Is an elderly dependant"
+    label = " Is the filers' living-together dependant"
     definition_period = YEAR
     reference = (
         "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1",

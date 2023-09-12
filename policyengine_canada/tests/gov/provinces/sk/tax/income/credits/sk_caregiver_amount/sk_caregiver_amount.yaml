@@ -2,7 +2,7 @@
   period: 2023
   input:
     province_code: SK
-    sk_caregiver_amount_eligibility: false
+    sk_caregiver_amount_eligibile_person: false
     individual_net_income: 10_000
   output:
     sk_caregiver_amount: 0
@@ -11,7 +11,7 @@
   period: 2023
   input:
     province_code: SK
-    sk_caregiver_amount_eligibility: true
+    sk_caregiver_amount_eligibile_person: true
     individual_net_income: 17_770
   output:
     sk_caregiver_amount: 10_405
@@ -20,7 +20,7 @@
   period: 2023
   input:
     province_code: SK
-    sk_caregiver_amount_eligibility: true
+    sk_caregiver_amount_eligibile_person: true
     individual_net_income: 17_669
   output:
     sk_caregiver_amount: 10_405
@@ -29,7 +29,7 @@
   period: 2023
   input:
     province_code: SK
-    sk_caregiver_amount_eligibility: true
+    sk_caregiver_amount_eligibile_person: true
     individual_net_income: 20_000
   output:
     sk_caregiver_amount: 8_175
@@ -38,7 +38,7 @@
   period: 2023
   input:
     province_code: SK
-    sk_caregiver_amount_eligibility: true
+    sk_caregiver_amount_eligibile_person: true
     individual_net_income: 28_175
   output:
     sk_caregiver_amount: 0
@@ -47,7 +47,7 @@
   period: 2023
   input:
     province_code: SK
-    sk_caregiver_amount_eligibility: false
+    sk_caregiver_amount_eligibile_person: false
     individual_net_income: 28_220
   output:
     sk_caregiver_amount: 0
@@ -56,7 +56,7 @@
   period: 2022
   input:
     province_code: SK
-    sk_caregiver_amount_eligibility: true
+    sk_caregiver_amount_eligibile_person: true
     individual_net_income: 16_717
   output:
     sk_caregiver_amount: 9789
@@ -65,7 +65,7 @@
   period: 2022
   input:
     province_code: SK
-    sk_caregiver_amount_eligibility: true
+    sk_caregiver_amount_eligibile_person: true
     individual_net_income: 15_669
   output:
     sk_caregiver_amount: 9789
@@ -74,7 +74,7 @@
   period: 2022
   input:
     province_code: SK
-    sk_caregiver_amount_eligibility: true
+    sk_caregiver_amount_eligibile_person: true
     individual_net_income: 20_000
   output:
     sk_caregiver_amount: 6_506
@@ -83,7 +83,7 @@
   period: 2022
   input:
     province_code: SK
-    sk_caregiver_amount_eligibility: true
+    sk_caregiver_amount_eligibile_person: true
     individual_net_income: 26_506
   output:
     sk_caregiver_amount: 0
@@ -92,7 +92,7 @@
   period: 2022
   input:
     province_code: SK
-    sk_caregiver_amount_eligibility: false
+    sk_caregiver_amount_eligibile_person: false
     individual_net_income: 28_220
   output:
     sk_caregiver_amount: 0

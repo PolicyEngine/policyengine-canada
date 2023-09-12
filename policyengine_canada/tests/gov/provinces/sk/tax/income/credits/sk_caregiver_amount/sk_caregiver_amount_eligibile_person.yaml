@@ -3,63 +3,69 @@
   input:
     province_code: SK
     age: 19
-    is_infirm_dependant: true
-    is_elderly_dependant: false
+    is_live_together_dependant: true
+    is_disabled: true
+    parent_or_grandparent: false
     individual_net_income: 15_000
   output:
-    sk_caregiver_amount_eligibility: true
+    sk_caregiver_amount_eligibile_person: true
 
 - name: Do not have eligible elderly dependants
   period: 2022
   input:
     province_code: SK
     age: 64
-    is_infirm_dependant: false
-    is_elderly_dependant: true
+    is_live_together_dependant: true
+    is_disabled: false
+    parent_or_grandparent: true
     individual_net_income: 15_000
   output:
-    sk_caregiver_amount_eligibility: false
+    sk_caregiver_amount_eligibile_person: false
 
 - name: Do not have eligible dependants because of dependant's high net income
   period: 2022
   input:
     province_code: SK
     age: 66
-    is_infirm_dependant: false
-    is_elderly_dependant: true
+    is_live_together_dependant: true
+    is_disabled: false
+    parent_or_grandparent: true
     individual_net_income: 26_507
   output:
-    sk_caregiver_amount_eligibility: false
+    sk_caregiver_amount_eligibile_person: false
 
 - name: Do not have eligible dependants because of dependant's high net income
   period: 2024
   input:
     province_code: SK
     age: 66
-    is_infirm_dependant: false
-    is_elderly_dependant: true
+    is_live_together_dependant: true
+    is_disabled: false
+    parent_or_grandparent: true
     individual_net_income: 28_176
   output:
-    sk_caregiver_amount_eligibility: false
+    sk_caregiver_amount_eligibile_person: false
 
 - name: Have eligible elderly dependants
   period: 2024
   input:
     province_code: SK
     age: 66
-    is_infirm_dependant: false
-    is_elderly_dependant: true
+    is_live_together_dependant: true
+    is_disabled: false
+    parent_or_grandparent: true
     individual_net_income: 28_174
   output:
-    sk_caregiver_amount_eligibility: true
+    sk_caregiver_amount_eligibile_person: true
 
 - name: Do not Have eligible infirm dependants
   period: 2022
   input:
     province_code: SK
     age: 15
-    is_infirm_dependant: true
-    is_elderly_dependant: false
+    is_live_together_dependant: true
+    is_disabled: true
+    parent_or_grandparent: false
     individual_net_income: 16_716
   output:
-    sk_caregiver_amount_eligibility: false
+    sk_caregiver_amount_eligibile_person: false
