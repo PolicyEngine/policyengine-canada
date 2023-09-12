@@ -6,7 +6,7 @@ class nu_eligible_dependent_credit(Variable):
     entity = Household
     label = "Nunavut eligible dependent credit"
     definition_period = YEAR
-    defined_for = ProvinceCode.NU
+    defined_for = "nu_eligible_dependent_credit_eligible"
 
     def formula(household, period, parameters):
         person = household.members
