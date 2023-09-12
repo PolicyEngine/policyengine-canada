@@ -2,7 +2,7 @@ from policyengine_canada.model_api import *
 
 
 class nu_married_status_credit_eligible(Variable):
-    value_type = float
+    value_type = bool
     entity = Person
     label = "Eligible for the Nunavut married status credit"
     definition_period = YEAR
