@@ -15,5 +15,3 @@ class nu_married_status_credit_eligible(Variable):
         spouse = person("is_spouse", period)
         dependent = person("is_dependant", period)
         return spouse & dependent
-
-        return income_eligible
