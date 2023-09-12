@@ -6,7 +6,7 @@ class nu_single_status_credit(Variable):
     entity = Person
     label = "Nunavut single status credit"
     definition_period = YEAR
-    defined_for = ProvinceCode.NU
+    defined_for = "nu_single_status_credit_eligible"
 
     def formula(person, period, parameters):
         eligible = person("nu_single_status_credit_eligible", period)
