@@ -2,7 +2,7 @@ from policyengine_canada.model_api import *
 
 
 class nu_eligible_dependent_credit_eligible(Variable):
-    value_type = float
+    value_type = bool
     entity = Person
     label = "Eligible for the Nunavut eligible dependent credit"
     definition_period = YEAR
