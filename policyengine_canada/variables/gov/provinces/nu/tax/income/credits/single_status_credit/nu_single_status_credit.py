@@ -9,7 +9,6 @@ class nu_single_status_credit(Variable):
     defined_for = "nu_single_status_credit_eligible"
 
     def formula(person, period, parameters):
-        eligible = person("nu_single_status_credit_eligible", period)
         amount = parameters(
             period
         ).gov.provinces.nu.tax.income.credits.single_status_credit.amount
