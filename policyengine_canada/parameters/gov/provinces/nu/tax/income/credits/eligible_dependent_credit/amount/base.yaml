@@ -3,7 +3,7 @@ values:
   2022-01-01: 16_862
 metadata:
   unit: currency-CAD
-  label: Nunavut married status base amount
+  label: Nunavut eligible dependent credit base amount
   reference:
   - title: Nunavut Income Tax Act Subvision C Section 2.15
     href: https://www.nunavutlegislation.ca/en/consolidated-law/income-tax-act-consolidation
