@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class nu_married_status_credit_eligible(Variable):
     value_type = float
     entity = Person
-    label = "Nunavut married status credit eligible"
+    label = "Eligible for the Nunavut married status credit"
     definition_period = YEAR
     defined_for = ProvinceCode.NU
 
