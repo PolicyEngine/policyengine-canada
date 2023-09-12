@@ -20,7 +20,3 @@ class nu_married_status_credit(Variable):
         eligible_income = household.sum(income)
         max_amount = max_(0, p.amount.additional - eligible_income)
         return p.amount.base + max_amount
-        return (
-            amount
-        * eligible
-        )
