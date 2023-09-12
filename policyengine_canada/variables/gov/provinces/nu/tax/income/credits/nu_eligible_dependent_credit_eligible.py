@@ -16,4 +16,3 @@ class nu_eligible_dependent_credit_eligible(Variable):
         dependent = person("is_dependant", period)
         return ~spouse & dependent
 
-        return income_eligible
