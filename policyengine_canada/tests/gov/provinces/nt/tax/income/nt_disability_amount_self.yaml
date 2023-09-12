@@ -3,7 +3,7 @@
   input:
     nt_disability_amount_self_eligible: false
     age: 17
-    childcare_costs: 3_050
+    care_costs_for_self: 3_050
   output:
     nt_disability_amount_self: 0
 
@@ -12,7 +12,7 @@
   input:
     nt_disability_amount_self_eligible: true
     age: 17
-    childcare_costs: 0
+    care_costs_for_self: 0
   output:
     nt_disability_amount_self: 17_832
 
@@ -21,7 +21,7 @@
   input:
     nt_disability_amount_self_eligible: true
     age: 17
-    childcare_costs: 5_000
+    care_costs_for_self: 5_000
   output:
     nt_disability_amount_self: 15_862
 
@@ -30,7 +30,7 @@
   input:
     nt_disability_amount_self_eligible: true
     age: 17
-    childcare_costs: 10_000
+    care_costs_for_self: 10_000
   output:
     nt_disability_amount_self: 12_658
 
@@ -39,7 +39,7 @@
   input:
     nt_disability_amount_self_eligible: true
     age: 17
-    childcare_costs: 3_050
+    care_costs_for_self: 3_050
   output:
     nt_disability_amount_self: 17_812
 
@@ -48,7 +48,7 @@
   input:
     nt_disability_amount_self_eligible: false
     age: 18
-    childcare_costs: 3_050
+    care_costs_for_self: 3_050
   output:
     nt_disability_amount_self: 0
 
@@ -57,7 +57,7 @@
   input:
     nt_disability_amount_self_eligible: true
     age: 18
-    childcare_costs: 0
+    care_costs_for_self: 0
   output:
     nt_disability_amount_self: 12_658
 
@@ -66,6 +66,6 @@
   input:
     nt_disability_amount_self_eligible: true
     age: 18
-    childcare_costs: 3_050
+    care_costs_for_self: 3_050
   output:
     nt_disability_amount_self: 12_658

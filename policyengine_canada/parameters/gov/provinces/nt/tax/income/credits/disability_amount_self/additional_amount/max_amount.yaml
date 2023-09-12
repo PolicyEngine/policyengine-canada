@@ -1,6 +1,6 @@
 description: Northwest Territories' allows for this additional maximum disability amount for self for younger filers.
 values:
-  2022-12-31: 5_174
+  2022-01-01: 5_174
 metadata:
   unit: currency-CAD
   period: year
