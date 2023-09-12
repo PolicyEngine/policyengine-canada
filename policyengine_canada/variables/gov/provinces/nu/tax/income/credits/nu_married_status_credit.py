@@ -6,7 +6,7 @@ class nu_married_status_credit(Variable):
     entity = Household
     label = "Nunavut married status credit"
     definition_period = YEAR
-    defined_for = ProvinceCode.NU
+    defined_for = "nu_married_status_credit_eligible"
 
     def formula(household, period, parameters):
         person = household.members
