@@ -1,15 +1,15 @@
-- name: Household's head is taking care of the spouse
+- name: Household's head and spouse is living together
   period: 2023
   input:
     province_code: MB
-    is_caregiver: true
+    cohabitating_spouses: true
   output:
     mb_spouse_credit_eligible: true
 
-- name: Household's head is not taking care of the spouse
+- name: Household's head and spouse is not living together
   period: 2023
   input:
     province_code: MB
-    is_caregiver: false
+    cohabitating_spouses: false
   output:
     mb_spouse_credit_eligible: false
