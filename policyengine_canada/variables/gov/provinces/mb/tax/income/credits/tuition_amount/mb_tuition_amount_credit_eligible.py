@@ -14,6 +14,4 @@ class mb_tuition_amount_credit_eligible(Variable):
         ).gov.provinces.mb.tax.income.credits.tuition_amount
 
         tuition = person("tuition_expenses", period)
-        tuition_eligible = tuition > p.tuition_threshold
-
-        return tuition_eligible
+        return tuition > p.tuition_threshold
