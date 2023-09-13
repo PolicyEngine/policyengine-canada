@@ -521,3 +521,8 @@
     added:
     - Manitoba age amount credit.
   date: 2023-08-25 15:15:09
+- bump: minor
+  changes:
+    added:
+    - Nunavut age amount credit.
+  date: 2023-09-04 23:15:38
