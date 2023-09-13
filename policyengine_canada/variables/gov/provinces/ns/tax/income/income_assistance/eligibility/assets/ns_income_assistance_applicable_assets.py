@@ -14,4 +14,4 @@ class ns_income_assistance_applicable_assets(Variable):
 
     adds = "gov.provinces.ns.tax.income.income_assistance.eligibility.assets.applicable_assets"
 
-    # None of the following is an applicable asset, per https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC3_25:
+    # None of the following is an applicable asset, per https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC3_25
