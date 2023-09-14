@@ -1,7 +1,14 @@
 - name:  Anyone who is SPA-eligible gets the full amount prior to reduction. 
   period: 2022
   input:
-    spa_eligible: TRUE
+    spa_eligible: true
   output:
     spa_oas_portion: 8_226
+
+- name:  None is SPA Eligible
+  period: 2022
+  input:
+    spa_eligible: false
+  output:
+    spa_oas_portion: 0
 

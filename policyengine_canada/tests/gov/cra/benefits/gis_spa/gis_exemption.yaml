@@ -5,3 +5,27 @@
     self_employment_income: 5_000
   output:
     gis_exemption: 10_000
+
+- name: GIS Exemption with middle threshold
+  period: 2023
+  input:
+    employment_income: 15_000
+    self_employment_income: 5_000
+  output:
+    gis_exemption: 7_500
+
+- name: GIS Exemption with lowest threshold
+  period: 2023
+  input:
+    employment_income: 10_000
+    self_employment_income: 5_000
+  output:
+    gis_exemption: 5_000
+
+- name: GIS Exemption with highest threshold
+  period: 2023
+  input:
+    employment_income: 20_000
+    self_employment_income: 0
+  output:
+    gis_exemption: 10_000

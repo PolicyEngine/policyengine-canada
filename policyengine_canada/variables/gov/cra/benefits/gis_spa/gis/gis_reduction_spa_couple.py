@@ -24,12 +24,12 @@ class gis_reduction_spa_couple(Variable):
         p = parameters(period).gov.cra.benefits.gis_spa.gis_reduction
 
         # Reduce like other pensioner couples up to the crossover point
-        first_part = min(
+        first_part = min_(
             p.two_pensioners.calc(combined_gis_income),
             p.two_pensioners.calc(crossover),
         )
         # Plateau until the spouse's SPA-gis-portion is exhausted, as captured by the variable plateau_range. The first part must be maxed-out for this to be non-zero.
-        second_part = min(
+        second_part = min_(
             (combined_gis_income - first_part) * p.gis_spa_couple_plateau_rate,
             plateau_range * p.gis_spa_couple_plateau_rate,
         ) * (first_part == (p.two_pensioners.calc(crossover)))

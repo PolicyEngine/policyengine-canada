@@ -1,3 +1,18 @@
+- name: Two OAS pensioners people test
+  period: 2023
+  input:
+    people:
+      head:
+        gis_income: 2_048
+        gis_spa_category: COUPLE_BOTH_OAS
+      spouse:
+        is_spouse: true
+        gis_spa_category: COUPLE_BOTH_OAS
+    household:
+      spouse_gis_income: 2_000
+  output:
+    gis_reduction: [1_000, 488]
+
 - name: Single Pensioner
   period: 2023
   input:

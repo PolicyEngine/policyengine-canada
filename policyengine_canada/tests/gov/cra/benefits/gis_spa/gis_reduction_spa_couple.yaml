@@ -1,3 +1,21 @@
+- name: Couple with combined income less than the plateau threshold
+  period: 2023
+  absolute_error_margin: 0.01
+  input:
+    people: 
+      head:
+        is_spouse: false
+        gis_income: 2_048
+        gis_spa_category: COUPLE_ONE_OAS_SPA_ELIGIBLE
+      spouse:
+        is_spouse: true
+        gis_spa_category: COUPLE_ONE_OAS_SPA_ELIGIBLE
+    household: 
+      members: [head, spouse]
+      spouse_gis_income: 2_000
+  output:
+    gis_reduction_spa_couple: [1_000,488]
+
 - name: Couple with combined income less than the plateau threshold. 
   period: 2023
   absolute_error_margin: 0.01

@@ -1,0 +1,5 @@
+- name: Baisc GIS Spouse Allowance Crossover Vlaue
+  period: 2023
+  absolute_error_margin: 0.01
+  output:
+    gis_spa_crossover: 25_927.45

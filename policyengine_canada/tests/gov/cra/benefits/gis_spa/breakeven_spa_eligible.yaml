@@ -1,0 +1,5 @@
+- name: Fixed Value for Breakeven SPA-Eligible
+  period: 2023
+  absolute_error_margin: 0.01
+  output:
+    breakeven_spa_eligible: 35_976.72
