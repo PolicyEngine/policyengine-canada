@@ -23,8 +23,8 @@ class sk_caregiver_amount(Variable):
         eligible_person = person(
             "sk_caregiver_amount_eligibile_person", period
         )
-        dependants_income = person("dependant_income", period)
+        dependant_income = person("dependant_income", period)
 
         return eligible_person * min(
-            p.amount, p.income_threshold.higher - dependants_income
+            p.amount, p.income_threshold.higher - dependant_income
         )
