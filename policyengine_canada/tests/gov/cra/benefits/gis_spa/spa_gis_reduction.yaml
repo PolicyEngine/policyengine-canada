@@ -1,8 +1,24 @@
+- name:  People Test with The default rate of 25% of net household income
+  period: 2022
+  input:
+    people:
+      head:
+        is_spouse: false
+        individual_net_income: 1_000
+      spouse:
+        is_spouse: true
+        spa_oas_net: 0
+    household:
+      household_spouse_income: 0
+      is_married: true
+  output:
+    spa_gis_reduction: [250, 0]
+
 - name:  The default rate of 25% of net household income
   period: 2022
   input:
     individual_net_income: 500
-    spouse_net_income: 500
+    household_spouse_income: 500
     spa_oas_net: 0
   output:
     spa_gis_reduction: 250
@@ -11,7 +27,7 @@
   period: 2022
   input:
     individual_net_income: 500
-    spouse_net_income: 500
+    household_spouse_income: 500
     spa_oas_net: 100
   output:
     spa_gis_reduction: 0

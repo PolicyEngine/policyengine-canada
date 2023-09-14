@@ -6,6 +6,14 @@
   output:
     gis_spa_category: SINGLE_WITH_OAS
 
+- name: Single OAS Pensioner
+  period: 2022
+  input:
+    is_married: false
+    oas_eligible: true
+  output:
+    gis_spa_category: SINGLE_WITH_OAS
+
 - name: Widow
   period: 2022
   input:

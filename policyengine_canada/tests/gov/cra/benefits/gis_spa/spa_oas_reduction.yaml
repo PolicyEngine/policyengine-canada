@@ -1,7 +1,28 @@
+- name:  People test
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: false
+        individual_net_income: 1_000
+      spouse:
+        is_spouse: true
+        spouse_income: 1_048
+  output:
+    spa_oas_reduction: [1_500,750]
+
 - name:  The default rate of 75% of net household income after the first 48 dollars.
   period: 2023
   input:
-    individual_net_income: 1_048
+    individual_net_income: 1_000
+    spouse_income: 48
   output:
     spa_oas_reduction: 750
 
+- name:  No deduction when household income is below 48
+  period: 2023
+  input:
+    individual_net_income: 20
+    spouse_income: 20
+  output:
+    spa_oas_reduction: 0

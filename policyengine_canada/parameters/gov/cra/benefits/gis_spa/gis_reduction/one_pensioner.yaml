@@ -15,7 +15,3 @@ metadata:
   period: year
   documentation: Corresponds to GISRRS and GISRLS
   label: GIS reduction for Single Pensioners and Married Pensioners whose spouse doesn't qualify for GIS or SPA
-  name: gis_reduction_rate_for_single_pensioner_households
-
-
-   

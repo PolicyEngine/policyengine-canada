@@ -15,4 +15,4 @@ class gis_net(Variable):
         gis_cap = person("gis_cap", period)
         gis_reduction = person("gis_reduction", period)
 
-        return max(gis_cap - gis_reduction, 0)
+        return max_(gis_cap - gis_reduction, 0)

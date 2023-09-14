@@ -19,7 +19,7 @@ class gis_reduction(Variable):
         gis_reduction_spa_couple = person("gis_reduction_spa_couple", period)
         p = parameters(period).gov.cra.benefits.gis_spa.gis_reduction
 
-        reduction = select(
+        return select(
             [
                 gis_spa_category == gis_spa_categories.SINGLE_WITH_OAS,
                 gis_spa_category == gis_spa_categories.COUPLE_BOTH_OAS,
@@ -45,5 +45,3 @@ class gis_reduction(Variable):
             ],
             default=0,
         )
-
-        return reduction

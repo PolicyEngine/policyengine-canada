@@ -12,9 +12,7 @@ class spa_oas_reduction(Variable):
     def formula(person, period, parameters):
         household = person.household
         individual_net_income = person("individual_net_income", period)
-        spouse_net_income = household("spouse_net_income", period)
+        spouse_income = household("household_spouse_income", period)
         p = parameters(period).gov.cra.benefits.gis_spa.spa_reduction
 
-        return p.spa_oas_reduction.calc(
-            individual_net_income + spouse_net_income
-        )
+        return p.spa_oas_reduction.calc(individual_net_income + spouse_income)

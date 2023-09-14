@@ -15,4 +15,4 @@ class spa_oas_net(Variable):
         spa_oas_portion = person("spa_oas_portion", period)
         spa_oas_reduction = person("spa_oas_reduction", period)
 
-        return max(spa_oas_portion - spa_oas_reduction, 0)
+        return max_(spa_oas_portion - spa_oas_reduction, 0)

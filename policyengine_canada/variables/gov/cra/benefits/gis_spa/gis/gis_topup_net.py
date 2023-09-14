@@ -15,4 +15,4 @@ class gis_topup_net(Variable):
         gis_topup_cap = person("gis_topup_cap", period)
         gis_topup_reduction = person("gis_topup_reduction", period)
 
-        return max(gis_topup_cap - gis_topup_reduction, 0)
+        return max_(gis_topup_cap - gis_topup_reduction, 0)

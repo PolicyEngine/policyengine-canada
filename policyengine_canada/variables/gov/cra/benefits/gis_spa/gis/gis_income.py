@@ -13,4 +13,4 @@ class gis_income(Variable):
         employment_income = person("employment_income", period)
         self_employment_income = person("self_employment_income", period)
         exemption = person("gis_exemption", period)
-        return max(employment_income - self_employment_income - exemption, 0)
+        return max_(employment_income - self_employment_income - exemption, 0)

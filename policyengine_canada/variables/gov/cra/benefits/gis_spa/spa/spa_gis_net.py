@@ -15,4 +15,4 @@ class spa_gis_net(Variable):
         spa_gis_portion = person("spa_gis_portion", period)
         spa_gis_reduction = person("spa_gis_reduction", period)
 
-        return max(spa_gis_portion - spa_gis_reduction, 0)
+        return max_(spa_gis_portion - spa_gis_reduction, 0)
