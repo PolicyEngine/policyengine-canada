@@ -1,11 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class sk_caregiver_amount(Variable):
-    value_type = float
+class dependant_lives_with_filer(Variable):
+    value_type = bool
     entity = Person
-    label = "Saskatchewan Caregiver Amount"
-    unit = CAD
+    label = "Whether a dependant lives with the filer"
     definition_period = YEAR
     reference = (
         "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1",
@@ -15,16 +14,3 @@ class sk_caregiver_amount(Variable):
         "https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=13 page=14,16,17",
     )
     defined_for = ProvinceCode.SK
-
-    def formula(person, period, parameters):
-        p = parameters(
-            period
-        ).gov.provinces.sk.tax.income.credits.sk_caregiver_amount
-        eligible_person = person(
-            "sk_caregiver_amount_eligibile_person", period
-        )
-        dependants_income = person("dependant_income", period)
-
-        return eligible_person * min(
-            p.amount, p.income_threshold.higher - dependants_income
-        )

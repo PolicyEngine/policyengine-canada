@@ -1,10 +1,10 @@
-description: Saskatchewan provides this caregiver amount tax credit for filers with eligible dependants.
+description: Saskatchewan allows for this maximum caregiver amount.
 values: 
   2022-01-01: 9_789 
   2023-01-01: 10_405
 metadata:
   unit: currency-CAD
-  label: Saskatchewan Caregiver Tax Credit Maximum Amount
+  label: Saskatchewan Caregiver Tax Credit maximum amount
   reference: 
   - title: 2023 Sasktachewan Personal Tax Credits Return Line9 Caregiver Amount
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1
@@ -15,5 +15,5 @@ metadata:
   - title: 2022 Sasktachewan Sasktachewan Personal Tax Credits Return Calculation Form Line9 Caregiver Amount
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk-ws/td1sk-ws-lp-22e.pdf#page=5
   - title: Sasktachewan The Income Tax Act, 2000
-    href: https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=13,14,16,17
+    href: https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=13 page=14,16,17
 

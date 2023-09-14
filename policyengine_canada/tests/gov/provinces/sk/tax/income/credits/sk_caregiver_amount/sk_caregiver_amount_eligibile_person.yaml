@@ -3,10 +3,10 @@
   input:
     province_code: SK
     age: 19
-    is_live_together_dependant: true
+    dependant_lives_with_filer: true
     is_disabled: true
     parent_or_grandparent: false
-    individual_net_income: 15_000
+    dependant_income: 15_000
   output:
     sk_caregiver_amount_eligibile_person: true
 
@@ -15,10 +15,10 @@
   input:
     province_code: SK
     age: 64
-    is_live_together_dependant: true
+    dependant_lives_with_filer: true
     is_disabled: false
     parent_or_grandparent: true
-    individual_net_income: 15_000
+    dependant_income: 15_000
   output:
     sk_caregiver_amount_eligibile_person: false
 
@@ -27,10 +27,10 @@
   input:
     province_code: SK
     age: 66
-    is_live_together_dependant: true
+    dependant_lives_with_filer: true
     is_disabled: false
     parent_or_grandparent: true
-    individual_net_income: 26_507
+    dependant_income: 26_507
   output:
     sk_caregiver_amount_eligibile_person: false
 
@@ -39,10 +39,10 @@
   input:
     province_code: SK
     age: 66
-    is_live_together_dependant: true
+    dependant_lives_with_filer: true
     is_disabled: false
     parent_or_grandparent: true
-    individual_net_income: 28_176
+    dependant_income: 28_176
   output:
     sk_caregiver_amount_eligibile_person: false
 
@@ -51,10 +51,10 @@
   input:
     province_code: SK
     age: 66
-    is_live_together_dependant: true
+    dependant_lives_with_filer: true
     is_disabled: false
     parent_or_grandparent: true
-    individual_net_income: 28_174
+    dependant_income: 28_174
   output:
     sk_caregiver_amount_eligibile_person: true
 
@@ -63,9 +63,9 @@
   input:
     province_code: SK
     age: 15
-    is_live_together_dependant: true
+    dependant_lives_with_filer: true
     is_disabled: true
     parent_or_grandparent: false
-    individual_net_income: 16_716
+    dependant_income: 16_716
   output:
     sk_caregiver_amount_eligibile_person: false

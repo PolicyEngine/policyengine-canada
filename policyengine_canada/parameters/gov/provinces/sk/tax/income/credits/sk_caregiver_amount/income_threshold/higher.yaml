@@ -1,4 +1,5 @@
-description: Saskatchewan provides partial Caregiver Tax Credit Amount for filer with dependants whose net income is below this threshold.
+description: Saskatchewan reduces the maximum Caregiver Tax Credit amount by the difference of this threshold and the dependants income.
+
 values:
   2022-01-01: 26_506 
   2023-01-01: 28_175
@@ -15,4 +16,4 @@ metadata:
   - title: 2022 Sasktachewan Sasktachewan Personal Tax Credits Return Calculation Form Line9 Caregiver Amount
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk-ws/td1sk-ws-lp-22e.pdf#page=5
   - title: Sasktachewan The Income Tax Act, 2000
-    href: https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=13,14,16,17
+    href: https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=13 page=14,16,17
