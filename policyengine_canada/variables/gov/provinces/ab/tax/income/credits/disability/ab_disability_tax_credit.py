@@ -7,12 +7,9 @@ class ab_disability_tax_credit(Variable):
     label = "Alberta disability tax credit"
     unit = CAD
     definition_period = YEAR
+    defined_for = "ab_disability_tax_credit_eligible"
 
     def formula(person, period, parameters):
-        disability = person("is_disabled", period)
-        return (
-            disability
-            * parameters(
-                period
-            ).gov.provinces.ab.tax.income.credits.disability.base
-        )
+        return parameters(
+            period
+        ).gov.provinces.ab.tax.income.credits.disability.base

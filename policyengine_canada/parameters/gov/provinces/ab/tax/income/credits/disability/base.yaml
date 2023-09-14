@@ -1,11 +1,10 @@
 description: Alberta provides this amount under the disability credit. 
 values:
-  2022-12-31: 16_201
+  2022-01-01: 16_201
 metadata:
   unit: currency-CAD
   period: year
-  name: Alberta disability credit.
-  label: Alberta disability credit amount.
+  label: Alberta disability credit amount
   reference:
-  - title: Alberta personal tax credits return
+  - title: Alberta disability credit base amount (Page 1 Section 4)
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf

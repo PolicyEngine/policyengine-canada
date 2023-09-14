@@ -1,13 +1,13 @@
 - name: Eligible person 
   period: 2023
   input:
-    is_disabled: true
+    ab_disability_tax_credit_eligible: true
   output:
     ab_disability_tax_credit: 16_201
 
 - name: Uneligible person 
   period: 2023
   input:
-    is_disabled: false
+    ab_disability_tax_credit_eligible: false
   output:
     ab_disability_tax_credit: 0
