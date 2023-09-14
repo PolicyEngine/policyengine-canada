@@ -1,0 +1,87 @@
+- name: Eligible
+  period: 2022
+  input:
+    province_code: SK
+    is_dependant: true
+    is_relative: true
+    joint_living: true
+    is_spouse: false
+    is_supportive: false
+
+  output:
+    sk_eligible_dependant_credit_eligibility: true
+
+
+- name: Ineligible
+  period: 2022
+  input:
+    province_code: SK
+    is_dependant: false
+    is_relative: false
+    joint_living: false
+    is_spouse: false
+    is_supportive: false
+
+  output:
+    sk_eligible_dependant_credit_eligibility: false
+
+
+- name: Ineligible
+  period: 2022
+  input:
+    province_code: SK
+    is_dependant: false
+    is_relative: false
+    joint_living: true
+    is_spouse: true
+    is_supportive: true
+
+  output:
+    sk_eligible_dependant_credit_eligibility: false
+
+
+
+- name: Eligible
+  period: 2023
+  input:
+    province_code: SK
+    is_dependant: true
+    is_relative: true
+    joint_living: true
+    is_spouse: false
+    is_supportive: false
+
+  output:
+    sk_eligible_dependant_credit_eligibility: true
+
+
+
+- name: Ineligible
+  period: 2023
+  input:
+    province_code: SK
+    is_dependant: false
+    is_relative: false
+    joint_living: false
+    is_spouse: false
+    is_supportive: false
+
+  output:
+    sk_eligible_dependant_credit_eligibility: false
+
+
+- name: Ineligible
+  period: 2023
+  input:
+    province_code: SK
+    is_dependant: false
+    is_relative: false
+    joint_living: true
+    is_spouse: true
+    is_supportive: true
+
+  output:
+    sk_eligible_dependant_credit_eligibility: false
+
+
+

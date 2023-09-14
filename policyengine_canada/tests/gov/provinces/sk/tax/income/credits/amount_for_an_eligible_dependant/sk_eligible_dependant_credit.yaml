@@ -1,8 +1,7 @@
- - name: Ineligible because of Head Ineligibility
-   period: 2023
+ - name: Ineligible
+   period: 2022
    input:
-     sk_head_eligibility: false
-     sk_dependant_eligibility: true
+     sk_eligible_dependant_credit_eligibility: false
      dependant_income: 1_000
      province_code: SK
 
@@ -10,25 +9,44 @@
      sk_eligible_dependant_credit: 0
 
 
+ - name: Eligible dependant with dependant's income less than net income base amount
+   period: 2022
+   input:
+     sk_eligible_dependant_credit_eligibility: true
+     dependant_income: 1_000
+     province_code: SK
 
- - name: Ineligible because of Dependant Ineligibility
+   output:
+     sk_eligible_dependant_credit: 16_615
+
+
+
+ - name: Eligible dependant with dependant's income more than net income base amount
+   period: 2022
+   input:
+     sk_eligible_dependant_credit_eligibility: true
+     dependant_income: 3_000
+     province_code: SK
+
+   output:
+     sk_eligible_dependant_credit: 15_277
+
+
+ - name: Ineligible
    period: 2023
    input:
-     sk_head_eligibility: true
-     sk_dependant_eligibility: false
+     sk_eligible_dependant_credit_eligibility: false
      dependant_income: 1_000
      province_code: SK
 
    output:
      sk_eligible_dependant_credit: 0
-
 
 
  - name: Eligible dependant with dependant's income less than net income base amount
    period: 2023
    input:
-     sk_head_eligibility: true
-     sk_dependant_eligibility: true
+     sk_eligible_dependant_credit_eligibility: true
      dependant_income: 1_000
      province_code: SK
 
@@ -40,12 +58,11 @@
  - name: Eligible dependant with dependant's income more than net income base amount
    period: 2023
    input:
-     sk_head_eligibility: true
-     sk_dependant_eligibility: true
+     sk_eligible_dependant_credit_eligibility: true
      dependant_income: 3_000
      province_code: SK
 
    output:
-     sk_eligible_dependant_credit: 14_661
+     sk_eligible_dependant_credit: 16_428
 
 
