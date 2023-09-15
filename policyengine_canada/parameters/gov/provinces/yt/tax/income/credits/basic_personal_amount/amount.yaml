@@ -1,4 +1,4 @@
-description: Yukon credits basic personal amount, based on the filers income.
+description: Yukon credits this basic personal amount, based on the filers income.
 brackets:
   - threshold:
       2022-01-01: 0
