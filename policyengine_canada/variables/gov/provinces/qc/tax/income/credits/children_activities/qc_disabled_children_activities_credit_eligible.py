@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class qc_disabled_children_activities_credit_eligible(Variable):
     value_type = bool
     entity = Person
-    label = "Quebec disabled children's activities tax credit eligibility"
+    label = "Eligible for the Quebec disabled children's activities tax credit"
     definition_period = YEAR
     defined_for = ProvinceCode.QC
 

@@ -13,8 +13,10 @@ class qc_disabled_children_activities_credit(Variable):
             period
         ).gov.provinces.qc.tax.income.credits.children_activities
 
-        fee = person("physical_activities_fees", period)
-        fee_subsidy = p.disabled_children.subsidy.calc(fee)
-        eligible_fee = min_(fee + fee_subsidy, p.disabled_children.fee_limit)
+        fees = person("physical_activities_fees", period)
+        additional_credit_amount = p.disabled_children.subsidy.calc(fees)
+        capped_credit = min_(
+            fees + additional_credit_amount, p.disabled_children.fee_limit
+        )
 
-        return eligible_fee * p.rate
+        return capped_credit * p.rate

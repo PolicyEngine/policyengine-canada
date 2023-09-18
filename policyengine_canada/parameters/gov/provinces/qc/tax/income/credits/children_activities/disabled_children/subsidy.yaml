@@ -1,4 +1,4 @@
-description: Quebec adds its disabled children's activities tax credits at those amount based on eligible registration or membership fees.
+description: Quebec adds an additional amount to the children's activities credits if the registration or membership fees excess the following threshold. 
 brackets:
   - amount:
       2022-01-01: 0

@@ -15,7 +15,7 @@ class qc_children_activities_credit(Variable):
 
         # income eligibility
         income_eligible = (
-            household("adjusted_family_net_income", period) < p.income_limit
+            household("adjusted_family_net_income", period) <= p.income_limit
         )
 
         person = household.members

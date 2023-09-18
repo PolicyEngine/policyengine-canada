@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class qc_non_disabled_children_activities_credit(Variable):
     value_type = float
     entity = Person
-    label = "Quebec nondisabled children's activities tax credit"
+    label = "Quebec non-disabled children's activities tax credit"
     definition_period = YEAR
     defined_for = "qc_non_disabled_children_activities_credit_eligible"
 

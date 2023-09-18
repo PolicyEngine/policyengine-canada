@@ -1,9 +1,9 @@
-description: Quebec children's activities tax credits rate of the eligible registration or membership fees.
+description: Quebec multiplies the registration or membership fees by the following rate for the calculation of the children's activities tax credit.
 values:
   2022-01-01: 0.2
 metadata:
   unit: currency-CAD
-  label: Quebec children's activities tax credits rate
+  label: Quebec children's activities tax credits registration or membership fees rate
   reference:
     - title: Revenu Quebec - Tax Credit for Children's Activities - Line 462
       href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/451-to-480-refund-or-balance-due/line-462/point-25/
