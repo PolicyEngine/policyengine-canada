@@ -19,18 +19,12 @@ class qc_adapted_work_premium_single_amount(Variable):
 
         income = household("adjusted_family_net_income", period)
 
-        # work income eligibility
-        work_income_eligible = (
-            household("family_working_income", period) > p.work_income_limit
-        )
-
-        eligible = work_income_eligible & single
-
         # credit amount
         credit = where(
             has_child,
             p.single.amount.single_parent,
             p.single.amount.person_living_alone,
         )
+        credit_amount = max_(0, credit - p.single.reduction.calc(income))
 
-        return eligible * max_(0, credit - p.single.reduction.calc(income))
+        return single * credit_amount

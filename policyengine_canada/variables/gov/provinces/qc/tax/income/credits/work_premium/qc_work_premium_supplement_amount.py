@@ -14,10 +14,13 @@ class qc_work_premium_supplement_amount(Variable):
         ).gov.provinces.qc.tax.income.credits.work_premium.supplement
 
         person = household.members
+        is_head_or_spouse = person("is_head_or_spouse", period)
         work_income_eligible = (
             person("working_income", period) > p.work_income_eligibility
         )
-        supplement_eligible = household.sum(work_income_eligible)
+        supplement_eligible = household.sum(
+            work_income_eligible & is_head_or_spouse
+        )
 
         return select(
             [supplement_eligible == 2, supplement_eligible == 1],

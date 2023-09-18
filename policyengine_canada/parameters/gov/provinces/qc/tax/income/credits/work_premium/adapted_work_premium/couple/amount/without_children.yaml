@@ -3,7 +3,7 @@ values:
   2022-01-01: 3_075.78
 metadata:
   unit: currency-CAD
-  label: Quebec maximum adapted anual work premium amount for couple without child
+  label: Quebec maximum adapted annual work premium amount for couple without children
   reference:
     - title: Revenu Quebec - Amount of the Work Premium Tax Credit
       href: https://www.revenuquebec.ca/en/citizens/tax-credits/work-premium-tax-credits/tax-credit-amounts/

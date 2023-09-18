@@ -19,18 +19,12 @@ class qc_adapted_work_premium_couple_amount(Variable):
 
         income = household("adjusted_family_net_income", period)
 
-        # work income eligibility
-        work_income_eligible = (
-            household("family_working_income", period) > p.work_income_limit
-        )
-
-        eligible = work_income_eligible & has_spouse
-
         # credit amount
         credit = where(
             has_child,
             p.couple.amount.with_children,
             p.couple.amount.without_children,
         )
+        credit_amount = max_(0, credit - p.couple.reduction.calc(income))
 
-        return eligible * max_(0, credit - p.couple.reduction.calc(income))
+        return has_spouse * credit_amount
