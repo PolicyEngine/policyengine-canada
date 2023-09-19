@@ -1,10 +1,11 @@
-description: Nova Scotia disability amount.
+description: Nova Scotia provides the following disability amount.
 
 values: 
   2022-01-01: 7_341
 metadata:
   unit: currency-CAD
-  label: Nova Scotia disability amount.
+  period: year
+  label: Nova Scotia disability amount
   reference: 
-  - title: Nova Scotia Disability Amount
+  - title: 2022 Nova Scotia Personal Tax Credits Return - TD1NS
     href: https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf#page=1

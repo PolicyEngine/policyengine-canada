@@ -2,7 +2,8 @@ from policyengine_canada.model_api import *
 
 
 class ns_disability_amount(Variable):
-    value_type = bool
+    value_type = float
+    unit = CAD
     entity = Person
     label = "Nova Scotia Disability Amount"
     definition_period = YEAR
@@ -13,7 +14,7 @@ class ns_disability_amount(Variable):
         p = parameters(
             period
         ).gov.provinces.ns.tax.income.credits.disability_amount
-        isdisabled = person("person_disability_situation", period)
+        is_disabled = person("is_disabled", period)
         disability_amount = p.amount
 
-        return where(isdisabled, disability_amount, 0)
+        return where(is_disabled, disability_amount, 0)

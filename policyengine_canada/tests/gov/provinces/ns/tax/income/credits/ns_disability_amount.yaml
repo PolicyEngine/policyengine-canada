@@ -2,7 +2,7 @@
   period: 2023
   input:
     province_code: NS
-    person_disability_situation: true
+    is_disabled: true
   output:
     ns_disability_amount: 7_341
 
@@ -10,6 +10,6 @@
   period: 2023
   input:
     province_code: NS
-    person_disability_situation: false
+    is_disabled: false
   output:
     ns_disability_amount: 0
