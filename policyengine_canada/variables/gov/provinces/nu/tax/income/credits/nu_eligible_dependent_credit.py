@@ -16,14 +16,8 @@ class nu_eligible_dependent_credit(Variable):
         
         spouse = person("is_spouse", period)
         dependent = person("is_dependant", period)
-        spouse_absent = ~household.any(spouse & dependent)
-        household_eligible = household.any(income_eligible)
+        income_eligible = (~spouse) & dependent
         income = income_eligible * person("individual_net_income", period)
         eligible_income = household.sum(income)
         max_amount = max_(0, p.amount.additional - eligible_income)
-        amount = p.amount.base + max_amount
-        return (
-            amount
-            * household_eligible
-            * spouse_absent
-        )
+        return p.amount.base + max_amount
