@@ -1,10 +1,10 @@
-description: Saskatchewan provides the maximum infirm dependant tax credit amount for filers with dependants whose net income is or below this threshold.
+description: Saskatchewan reduces the maximum Infirm Dependants Tax Credit amount by the difference of this threshold and the dependants income.
 values: 
-  2022-01-01: 6_945
-  2023-01-01: 7_383
+  2022-01-01: 16_734 
+  2023-01-01: 17_788
 metadata:
   unit: currency-CAD
-  label: Saskatchewan Infirm Dependants Tax Credit Lower Income Threshold for the Dependant
+  label: Saskatchewan Infirm Dependants Tax Credit Higher Income Threshold for the Dependant
   reference: 
   - title: 2023 Sasktachewan Personal Tax Credits Return Line10 Amount for infirm dependants age 18 or older
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1
@@ -15,4 +15,4 @@ metadata:
   - title: 2022 Sasktachewan Sasktachewan Personal Tax Credits Return Calculation Form Line10 Amount for infirm dependants age 18 or older
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk-ws/td1sk-ws-lp-22e.pdf#page=6
   - title: Sasktachewan The Income Tax Act, 2000
-    href: https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=13,14,15
+    href: https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=13 #page=14,15
