@@ -1,0 +1,213 @@
+- name: Quebec family allowance payment amount for single parent family with a shared custody children and income below reduction threshold
+  period: 2023
+  input:
+    people:
+      c1:
+        age: 16
+        full_custody: true
+      c2:
+        age: 10
+        full_custody: true
+      c3:
+        age: 5
+        full_custody: false
+    household:
+      members: [c1, c2, c3]
+      adjusted_family_net_income: 40_000
+      is_married: false
+      qc_fa_eligibility: true
+      province_code: QC
+  output:
+    qc_fa_payment: 7_931 #max[(2,782 * (2+1*0.5) + 976),(1107*（2+1*0.5)+389)]
+
+- name: Quebec family allowance payment amount for two parent family with a shared custody children and income below reduction threshold
+  period: 2023
+  input:
+    people:
+      c1:
+        age: 16
+        full_custody: true
+      c2:
+        age: 10
+        full_custody: true
+      c3:
+        age: 8
+        full_custody: false
+      c4:
+        age: 18 # age not eligible
+        full_custody: true     
+    household:
+      members: [c1, c2, c3, c4]
+      adjusted_family_net_income: 50_000
+      qc_fa_eligibility: true
+      is_married: true
+      province_code: QC
+  output:
+    qc_fa_payment: 6_955 #max[(2,782 * (2+1*0.5) + 976),(1107*（2+1*0.5)+389)]
+
+- name: Quebec family allowance payment amount for single parent family with a shared custody children and income over reduction threshold
+  period: 2023
+  input:
+    people:
+      c1:
+        age: 8
+        full_custody: true
+      c2:
+        age: 10
+        full_custody: true
+      c3:
+        age: 17
+        full_custody: false
+    household:
+      members: [c1, c2, c3]
+      adjusted_family_net_income: 100_000
+      qc_fa_eligibility: true
+      is_married: false
+      province_code: QC
+  output:
+    qc_fa_payment: 5_537.72 #max[(2,782 * (2+1*0.5) + 976 - 0.04*(100,000-40,168)),(1107*（2+1*0.5)+389)]
+
+- name: Quebec family allowance payment amount for two parent family with a shared custody children and income over reduction threshold
+  period: 2023
+  input:
+    people:
+      c1:
+        age: 17
+        full_custody: true
+      c2:
+        age: 1
+        full_custody: true
+      c3:
+        age: 15
+        full_custody: false
+    household:
+      members: [c1, c2, c3]
+      adjusted_family_net_income: 100_000
+      qc_fa_eligibility: true
+      is_married: true
+      province_code: QC
+  output:
+    qc_fa_payment: 5_162.32 #max[(2,782 * (2+1*0.5) - 0.04*(100,000-55183)),(1107*（2+1*0.5)]
+
+- name: Quebec family allowance payment amount for single parent family with a shared custody children and income over income limit
+  period: 2023
+  input:
+    people:
+      c1:
+        age: 17
+        full_custody: true
+      c2:
+        age: 1
+        full_custody: true
+      c3:
+        age: 15
+        full_custody: false
+    household:
+      members: [c1, c2, c3]
+      adjusted_family_net_income: 300_000
+      qc_fa_eligibility: true
+      is_married: false
+      province_code: QC
+  output:
+    qc_fa_payment: 3_156.5 #max[(2,782 * (2+1*0.5) + 976 - 0.04*(300,000-40,168)),(1107*（2+1*0.5)+389)]
+
+- name: Quebec family allowance payment amount for two parent family with a shared custody children and income over income limit
+  period: 2023
+  input:
+    people:
+      c1:
+        age: 17
+        full_custody: true
+      c2:
+        age: 1
+        full_custody: true
+      c3:
+        age: 15
+        full_custody: false
+    household:
+      members: [c1, c2, c3]
+      adjusted_family_net_income: 300_000
+      qc_fa_eligibility: true
+      is_married: true
+      province_code: QC
+  output:
+    qc_fa_payment: 2_767.5 #max[(2,782 * (2+1*0.5) - 0.04*(300,000-55183)),(1107*（2+1*0.5)]
+
+- name: Quebec family allowance payment amount for single parent family with no children
+  period: 2023
+  input:
+    adjusted_family_net_income: 100_000
+    qc_fa_eligibility: false
+    is_married: false
+    province_code: QC
+  output:
+    qc_fa_payment: 0
+
+- name: Quebec family allowance payment amount for single parent family with 7 children and income over reduction threshold
+  period: 2023
+  input:
+    people:
+      c1:
+        age: 17
+        full_custody: true
+      c2:
+        age: 1
+        full_custody: true
+      c3:
+        age: 15
+        full_custody: false
+      c4:
+        age: 15
+        full_custody: false
+      c5:
+        age: 10
+        full_custody: false
+      c6:
+        age: 11
+        full_custody: true
+      c7:
+        age: 13
+        full_custody: true
+    household:
+      members: [c1, c2, c3, c4, c5, c6, c7]
+      adjusted_family_net_income: 220_000
+      qc_fa_eligibility: true
+      count_children: 7
+      is_married: false
+      province_code: QC
+  output:
+    qc_fa_payment: 9_083.72 # max[(2,782 * (4+3*0.5) + 976 - 0.04*(220000-40,168)),(1107*（4+3*0.5)+389)]
+
+- name: Quebec family allowance payment amount for two parent family with 7 children and income over reduction threshold
+  period: 2023
+  input:
+    people:
+      c1:
+        age: 17
+        full_custody: true
+      c2:
+        age: 1
+        full_custody: true
+      c3:
+        age: 15
+        full_custody: false
+      c4:
+        age: 15
+        full_custody: false
+      c5:
+        age: 10
+        full_custody: false
+      c6:
+        age: 11
+        full_custody: true
+      c7:
+        age: 13
+        full_custody: true
+    household:
+      members: [c1, c2, c3, c4, c5, c6, c7]
+      adjusted_family_net_income: 220_000
+      qc_fa_eligibility: true
+      is_married: true
+      province_code: QC
+  output:
+    qc_fa_payment: 8_708.32 # max[(2,782 * (4+3*0.5) - 0.04*(220000-40,168)),(1107*（4+3*0.5))]

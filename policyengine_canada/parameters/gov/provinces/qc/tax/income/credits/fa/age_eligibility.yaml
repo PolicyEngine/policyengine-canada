@@ -1,0 +1,11 @@
+description: Quebec limits its family allowance to eligible dependent children at or below this age.
+values:
+  2022-01-01: 18
+metadata:
+  unit: year
+  label: Quebec family allowance credit child age eligibility
+  reference:
+    - title: Revenu Quebec - Amount of the Family Allowance payment
+      href: https://www.rrq.gouv.qc.ca/en/enfants/naissance/paiement_soutien_enfants/Pages/montant.aspx
+    - title: Quebec I-3 - Taxation Act, Part I, Book IX, Title III, Chapter III.1, DIVISION II.11.2, 1029.8.61.8 "eligible dependent child"
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=fr#se:1029_8_61_8
