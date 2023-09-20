@@ -1,0 +1,15 @@
+description: Saskatchewan provides this amount for qualified disabled filers under the disability amount.
+values:
+  2022-01-01: 9_789
+  2023-01-01: 10_405
+metadata:
+  unit: currency-CAD
+  label: Saskatchewan disability amount
+  reference:
+  - title: 2023 Saskatchewan TD1SK Personal Tax Credits Return, line 5
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1
+  - title: Saskatchewan I2-01 The Income Tax Act, 2000, Page 25, Mental or physical impairment credit (23), (1)
+    href: https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=25&26
+  - title: 2022 Saskatchewan TD1SK Personal Tax Credits Return, line 5
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-22e.pdf#page=1
+  
