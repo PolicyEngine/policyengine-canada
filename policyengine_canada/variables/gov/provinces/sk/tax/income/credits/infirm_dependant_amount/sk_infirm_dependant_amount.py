@@ -24,8 +24,8 @@ class sk_infirm_dependant_amount(Variable):
             "sk_infirm_dependant_amount_eligible_person", period
         )
         dependant_income = person("dependant_income", period)
-        income_differences = max_(0, p.income_threshold.higher - dependant_income)
-
-        return eligible_person * min_(
-            p.amount, income_differences
+        income_differences = max_(
+            0, p.income_threshold.higher - dependant_income
         )
+
+        return eligible_person * min_(p.amount, income_differences)
