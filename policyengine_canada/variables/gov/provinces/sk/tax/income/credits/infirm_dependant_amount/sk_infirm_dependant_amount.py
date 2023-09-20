@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class infirm_dependant_amount(Variable):
+class sk_infirm_dependant_amount(Variable):
     value_type = float
     entity = Person
     label = "Saskatchewan Infirm Dependant Amount"
@@ -19,9 +19,9 @@ class infirm_dependant_amount(Variable):
     def formula(person, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.sk.tax.income.credits.infirm_dependant_amount
+        ).gov.provinces.sk.tax.income.credits.sk_infirm_dependant_amount
         eligible_person = person(
-            "infirm_dependant_amount_eligibile_person", period
+            "sk_infirm_dependant_amount_eligible_person", period
         )
         dependant_income = person("dependant_income", period)
 

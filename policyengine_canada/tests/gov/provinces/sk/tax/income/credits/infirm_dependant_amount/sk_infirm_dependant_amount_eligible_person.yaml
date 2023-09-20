@@ -8,7 +8,7 @@
     dependant_income: 15_000
     sk_caregiver_amount: 10_405
   output:
-    infirm_dependant_amount_eligibile_person: false
+    sk_infirm_dependant_amount_eligible_person: false
 
 - name: 2022 Have duplicate eligible infirm dependants - non eligible
   period: 2022
@@ -20,7 +20,7 @@
     dependant_income: 15_000
     sk_caregiver_amount: 9_789
   output:
-    infirm_dependant_amount_eligibile_person: false
+    sk_infirm_dependant_amount_eligible_person: false
 
 - name: Have infirm dependants below the age threshold - non eligible
   period: 2023
@@ -32,7 +32,7 @@
     dependant_income: 15_000
     sk_caregiver_amount: 0
   output:
-    infirm_dependant_amount_eligibile_person: false
+    sk_infirm_dependant_amount_eligible_person: false
 
 - name: Have no dependants - non eligible
   period: 2023
@@ -44,7 +44,7 @@
     dependant_income: 15_000
     sk_caregiver_amount: 0
   output:
-    infirm_dependant_amount_eligibile_person: false
+    sk_infirm_dependant_amount_eligible_person: false
 
 - name: Have non-disabled dependants - non eligible
   period: 2023
@@ -56,7 +56,7 @@
     dependant_income: 15_000
     sk_caregiver_amount: 0
   output:
-    infirm_dependant_amount_eligibile_person: false
+    sk_infirm_dependant_amount_eligible_person: false
 
 - name: 2023 Infirm dependants' income is above higher income threshold - non eligible
   period: 2023
@@ -68,7 +68,7 @@
     dependant_income: 17_789
     sk_caregiver_amount: 0
   output:
-    infirm_dependant_amount_eligibile_person: false
+    sk_infirm_dependant_amount_eligible_person: false
 
 - name: 2022 Infirm dependants' income is above higher income threshold - non eligible
   period: 2022
@@ -80,7 +80,7 @@
     dependant_income: 16_735
     sk_caregiver_amount: 0
   output:
-    infirm_dependant_amount_eligibile_person: false
+    sk_infirm_dependant_amount_eligible_person: false
 
 - name: 2023 Have eligible infirm dependant
   period: 2023
@@ -92,7 +92,7 @@
     dependant_income: 7_382
     sk_caregiver_amount: 0
   output:
-    infirm_dependant_amount_eligibile_person: true
+    sk_infirm_dependant_amount_eligible_person: true
 
 - name: 2022 Have eligible infirm dependant
   period: 2022
@@ -104,4 +104,4 @@
     dependant_income: 6_944
     sk_caregiver_amount: 0
   output:
-    infirm_dependant_amount_eligibile_person: true
+    sk_infirm_dependant_amount_eligible_person: true

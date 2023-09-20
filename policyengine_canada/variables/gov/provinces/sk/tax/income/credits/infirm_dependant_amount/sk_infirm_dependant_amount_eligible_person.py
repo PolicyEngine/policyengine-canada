@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class infirm_dependant_amount_eligible_person(Variable):
+class sk_infirm_dependant_amount_eligible_person(Variable):
     value_type = bool
     entity = Person
     label = "Eligible person for the Saskatchewan Infirm Dependants Amount"
@@ -18,7 +18,7 @@ class infirm_dependant_amount_eligible_person(Variable):
     def formula(person, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.sk.tax.income.credits.infirm_dependant_amount
+        ).gov.provinces.sk.tax.income.credits.sk_infirm_dependant_amount
 
         age = person("age", period)
         dependant = person("is_child_of_filer", period)
