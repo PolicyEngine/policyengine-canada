@@ -22,6 +22,7 @@ class sk_eligible_dependant_credit_eligibility(Variable):
         dependant_eligible = live_together & dependant & is_related
         spouse = person("is_spouse", period)
         support = person("is_supportive", period)
-        head_eligible = (~spouse) | (spouse & ~live_together & ~support)
+        cohabitating_spouses = person.household("cohabitating_spouses", period)
+        head_eligible = (~spouse) | (~cohabitating_spouses & ~support)
 
         return dependant_eligible * head_eligible
