@@ -15,7 +15,7 @@
       cohabitating_spouses: false
 
   output:
-    sk_eligible_dependant_credit_eligibility: [true, true]
+    sk_eligible_dependant_credit_eligibility: true
 
 
 - name: Eligible because of both head and dependant eligible
@@ -35,47 +35,47 @@
       cohabitating_spouses: false
       
   output:
-    sk_eligible_dependant_credit_eligibility: [true, true]
+    sk_eligible_dependant_credit_eligibility: true
 
 
-# - name: Ineligible because of dependant ineligible
-#   period: 2022
-#   input:
-#     people:
-#       head:
-#         is_spouse: false
-#         is_supportive: false
-#       dependant:
-#         is_dependant: false
-#         is_relative: false
-#     household:
-#       members: [head, dependant]
-#       province_code: SK
-#       joint_living: false
-#       cohabitating_spouses: false
+- name: Ineligible because of dependant ineligible
+  period: 2022
+  input:
+    people:
+      head:
+        is_spouse: false
+        is_supportive: false
+      dependant:
+        is_dependant: false
+        is_relative: false
+    household:
+      members: [head, dependant]
+      province_code: SK
+      joint_living: false
+      cohabitating_spouses: false
 
-#   output:
-#     sk_eligible_dependant_credit_eligibility: [true, false]
+  output:
+    sk_eligible_dependant_credit_eligibility: false
 
 
-# - name: Ineligible because of dependant ineligible
-#   period: 2022
-#   input:
-#     people:
-#       head:
-#         is_spouse: true
-#         is_supportive: false
-#       dependant:
-#         is_dependant: false
-#         is_relative: false
-#     household:
-#       members: [head, dependant]
-#       province_code: SK
-#       joint_living: false
-#       cohabitating_spouses: false
+- name: Ineligible because of dependant ineligible
+  period: 2022
+  input:
+    people:
+      head:
+        is_spouse: true
+        is_supportive: false
+      dependant:
+        is_dependant: false
+        is_relative: false
+    household:
+      members: [head, dependant]
+      province_code: SK
+      joint_living: false
+      cohabitating_spouses: false
 
-#   output:
-#     sk_eligible_dependant_credit_eligibility: [true, false]
+  output:
+    sk_eligible_dependant_credit_eligibility: false
 
 
 # - name: Ineligible because of head ineligible
@@ -84,7 +84,7 @@
 #     people:
 #       head:
 #         is_spouse: true
-#         is_supportive: true
+#         is_supportive: false
 #       dependant:
 #         is_dependant: true
 #         is_relative: true
@@ -95,27 +95,27 @@
 #       cohabitating_spouses: true
 
 #   output:
-#     sk_eligible_dependant_credit_eligibility: [false, true]
+#     sk_eligible_dependant_credit_eligibility: false
 
 
-# - name: Ineligible because of both head and dependant ineligible
-#   period: 2022
-#   input:
-#     people:
-#       head:
-#         is_spouse: true
-#         is_supportive: true
-#       dependant:
-#         is_dependant: false
-#         is_relative: false
-#     household:
-#       members: [head, dependant]
-#       province_code: SK
-#       joint_living: false
-#       cohabitating_spouses: true
+- name: Ineligible because of both head and dependant ineligible
+  period: 2022
+  input:
+    people:
+      head:
+        is_spouse: true
+        is_supportive: true
+      dependant:
+        is_dependant: false
+        is_relative: false
+    household:
+      members: [head, dependant]
+      province_code: SK
+      joint_living: false
+      cohabitating_spouses: true
 
-#   output:
-#     sk_eligible_dependant_credit_eligibility: [false, false]
+  output:
+    sk_eligible_dependant_credit_eligibility: false
 
 
 - name: Eligible because of both head and dependant eligible
@@ -135,7 +135,7 @@
       cohabitating_spouses: true
 
   output:
-    sk_eligible_dependant_credit_eligibility: [true, true]
+    sk_eligible_dependant_credit_eligibility: true
 
 
 - name: Eligible because of both head and dependant eligible
@@ -155,47 +155,47 @@
       cohabitating_spouses: false
       
   output:
-    sk_eligible_dependant_credit_eligibility: [true, true]
+    sk_eligible_dependant_credit_eligibility: true
 
 
-# - name: Ineligible because of dependant ineligible
-#   period: 2023
-#   input:
-#     people:
-#       head:
-#         is_spouse: false
-#         is_supportive: false
-#       dependant:
-#         is_dependant: false
-#         is_relative: false
-#     household:
-#       members: [head, dependant]
-#       province_code: SK
-#       joint_living: false
-#       cohabitating_spouses: false
+- name: Ineligible because of dependant ineligible
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: false
+        is_supportive: false
+      dependant:
+        is_dependant: false
+        is_relative: false
+    household:
+      members: [head, dependant]
+      province_code: SK
+      joint_living: false
+      cohabitating_spouses: false
 
-#   output:
-#     sk_eligible_dependant_credit_eligibility: [true, false]
+  output:
+    sk_eligible_dependant_credit_eligibility: false
 
 
-# - name: Ineligible because of dependant ineligible
-#   period: 2023
-#   input:
-#     people:
-#       head:
-#         is_spouse: true
-#         is_supportive: false
-#       dependant:
-#         is_dependant: false
-#         is_relative: false
-#     household:
-#       members: [head, dependant]
-#       province_code: SK
-#       joint_living: false
-#       cohabitating_spouses: false
+- name: Ineligible because of dependant ineligible
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: true
+        is_supportive: false
+      dependant:
+        is_dependant: false
+        is_relative: false
+    household:
+      members: [head, dependant]
+      province_code: SK
+      joint_living: false
+      cohabitating_spouses: false
 
-#   output:
-#     sk_eligible_dependant_credit_eligibility: [true, false]
+  output:
+    sk_eligible_dependant_credit_eligibility: false
 
 
 # - name: Ineligible because of head ineligible
@@ -215,25 +215,25 @@
 #       cohabitating_spouses: true
 
 #   output:
-#     sk_eligible_dependant_credit_eligibility: [false, true]
+#     sk_eligible_dependant_credit_eligibility: false
 
 
-# - name: Ineligible because of both head and dependant ineligible
-#   period: 2023
-#   input:
-#     people:
-#       head:
-#         is_spouse: true
-#         is_supportive: true
-#       dependant:
-#         is_dependant: false
-#         is_relative: false
-#     household:
-#       members: [head, dependant]
-#       province_code: SK
-#       joint_living: false
-#       cohabitating_spouses: true
+- name: Ineligible because of both head and dependant ineligible
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: true
+        is_supportive: true
+      dependant:
+        is_dependant: false
+        is_relative: false
+    household:
+      members: [head, dependant]
+      province_code: SK
+      joint_living: false
+      cohabitating_spouses: true
 
-#   output:
-#     sk_eligible_dependant_credit_eligibility: [false, false]
+  output:
+    sk_eligible_dependant_credit_eligibility: false
 
