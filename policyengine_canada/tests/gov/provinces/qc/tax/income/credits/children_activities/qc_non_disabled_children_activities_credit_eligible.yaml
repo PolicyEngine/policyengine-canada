@@ -1,35 +1,65 @@
-- name: Quebec nondisabled children's activities tax credit eligibility for disabled child
+- name: Quebec non-disabled children's activities tax credit eligibility for disabled child
   period: 2022
   input:
     age: 10
+    is_child_of_filer: true
+    is_custodied_by_filer: true
     is_disabled: true
     province_code: QC
   output:
     qc_non_disabled_children_activities_credit_eligible: false
 
-- name: Quebec nondisabled children's activities tax credit eligibility for child above age eligibility
+- name: Quebec non-disabled children's activities tax credit eligibility for child above age eligibility
   period: 2022
   input:
     age: 16
+    is_child_of_filer: true
+    is_custodied_by_filer: true
     is_disabled: false
     province_code: QC
   output:
     qc_non_disabled_children_activities_credit_eligible: false
 
-- name: Quebec nondisabled children's activities tax credit eligibility for child below age eligibility
+- name: Quebec non-disabled children's activities tax credit eligibility for child below age eligibility
   period: 2022
   input:
     age: 4
+    is_child_of_filer: true
+    is_custodied_by_filer: true
     is_disabled: false
     province_code: QC
   output:
     qc_non_disabled_children_activities_credit_eligible: false
 
-- name: Quebec nondisabled children's activities tax credit eligibility
+- name: Quebec non-disabled children's activities tax credit eligibility
   period: 2022
   input:
     age: 5
+    is_child_of_filer: true
+    is_custodied_by_filer: true
     is_disabled: false
     province_code: QC
   output:
     qc_non_disabled_children_activities_credit_eligible: true
+
+- name: Quebec non-disabled children's activities tax credit eligibility for not tax filers's own child but has the custody and supervision
+  period: 2022
+  input:
+    age: 5
+    is_child_of_filer: false
+    is_custodied_by_filer: true
+    is_disabled: false
+    province_code: QC
+  output:
+    qc_non_disabled_children_activities_credit_eligible: true
+
+- name: Quebec non-disabled children's activities tax credit eligibility for not tax filers's own child and not has the custody and supervision
+  period: 2022
+  input:
+    age: 5
+    is_child_of_filer: false
+    is_custodied_by_filer: false
+    is_disabled: false
+    province_code: QC
+  output:
+    qc_non_disabled_children_activities_credit_eligible: false

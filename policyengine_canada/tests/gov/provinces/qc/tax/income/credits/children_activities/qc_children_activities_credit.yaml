@@ -1,45 +1,17 @@
-- name: Quebec children's activities tax credit for household family income within the limit
+- name: Quebec children's activities tax credit for eligible household
   period: 2022
   input:
-    people:
-      c1:
-        is_dependant: true
-        qc_non_disabled_children_activities_credit: 80
-        qc_disabled_children_activities_credit: 0
-      c2:
-        is_dependant: true
-        qc_non_disabled_children_activities_credit: 0
-        qc_disabled_children_activities_credit: 160
-      c3:
-        is_dependant: false
-        qc_non_disabled_children_activities_credit: 80
-        qc_disabled_children_activities_credit: 0
-    household:
-      members: [c1,c2,c3]
-      adjusted_family_net_income: 50_000
-      province_code: QC
+    qc_children_activities_credit_eligible: true
+    qc_non_disabled_children_activities_credit: 500
+    qc_disabled_children_activities_credit: 300
   output:
-    qc_children_activities_credit: 240 #80+160
+    qc_children_activities_credit: 800 #500+300
 
-- name: Quebec children's activities tax credit for household family income above the limit
+- name: Quebec children's activities tax credit for non-eligible household
   period: 2022
   input:
-    people:
-      c1:
-        is_dependant: true
-        qc_non_disabled_children_activities_credit: 80
-        qc_disabled_children_activities_credit: 0
-      c2:
-        is_dependant: true
-        qc_non_disabled_children_activities_credit: 0
-        qc_disabled_children_activities_credit: 160
-      c3:
-        is_dependant: false
-        qc_non_disabled_children_activities_credit: 80
-        qc_disabled_children_activities_credit: 0
-    household:
-      members: [c1,c2,c3]
-      adjusted_family_net_income: 150_000
-      province_code: QC
+    qc_children_activities_credit_eligible: false
+    qc_non_disabled_children_activities_credit: 500
+    qc_disabled_children_activities_credit: 300
   output:
     qc_children_activities_credit: 0
