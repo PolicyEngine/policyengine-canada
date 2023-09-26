@@ -1,0 +1,9 @@
+description: Northwest Territories provides this additional tuition and education amount for full time students or part time students with mental or physical disability.
+values:
+  2023-01-01: 400
+metadata:
+  unit: currency-CAD
+  label: Northwest Territories Tuition and Education additional amount 
+  reference:
+    - title: Government of Canada - Northwest Territories Personal Tax Credits Return
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nt/td1nt-23e.pdf
