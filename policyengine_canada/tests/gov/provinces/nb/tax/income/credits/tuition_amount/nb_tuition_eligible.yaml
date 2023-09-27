@@ -1,0 +1,15 @@
+- name: Tuition Ineligible
+  period: 2022
+  input:
+    province_code: NB
+    tuition_expenses: 50
+  output:
+    nb_tuition_eligible: false
+
+- name: Tuition eligible
+  period: 2023
+  input:
+    province_code: NB
+    tuition_expenses: 101
+  output:
+    nb_tuition_eligible: true

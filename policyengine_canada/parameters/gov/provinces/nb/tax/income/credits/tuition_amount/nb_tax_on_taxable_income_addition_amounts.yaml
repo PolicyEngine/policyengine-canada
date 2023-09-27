@@ -1,0 +1,31 @@
+description: New Brunswick adds this amounts to tax on taxable income for tuition 
+brackets:
+  - threshold: 
+      2022-01-01: 0
+    amount: 
+      2022-01-01: 0
+  - threshold:
+      2022-01-01: 44_887
+    amount:
+      2022-01-01: 4_219.38
+  - threshold: 
+      2022-01-01: 89_775
+    amount: 
+      2022-01-01: 10_871.78
+  - threshold:
+      2022-01-01: 145_955
+    amount: 
+      2022-01-01: 20_152.72
+  - threshold:
+      2022-01-01: 166_280
+    amount: 
+      2022-01-01: 23_778.7
+
+metadata:
+  type: single_amount
+  threshold_unit: currency-CAD
+  rate_unit: currency
+  label: New Brunswick taxable income phase out rate
+  reference:
+    - title: New Brunswick tax and credits
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-c/5004-c-22e.pdf#page=1

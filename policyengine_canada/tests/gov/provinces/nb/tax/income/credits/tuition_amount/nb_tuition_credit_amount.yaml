@@ -1,0 +1,49 @@
+- name: Lowest tax on taxable income threshold
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    nb_taxable_income: 44_887
+    nb_tuition_credit_amount_income: 20_000
+    tuition_expenses: 10_000
+  output:
+    nb_tuition_credit_amount: 10_000
+
+- name: Second tax on taxable income threshold
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    nb_taxable_income: 54_887
+    nb_tuition_credit_amount_income: 20_000
+    tuition_expenses: 10_000
+  output:
+    nb_tuition_credit_amount: 10000
+
+- name: Third tax on taxable income threshold
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    nb_taxable_income: 139_775
+    nb_tuition_credit_amount_income: 20_000
+    tuition_expenses: 50_000
+  output:
+    nb_tuition_credit_amount: 50_000
+
+- name: Fourth tax on taxable income threshold
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    nb_taxable_income: 145_965
+    nb_tuition_credit_amount_income: 100_000
+    tuition_expenses: 150_000
+  output:
+    nb_tuition_credit_amount: 114_409.62
+
+- name: Highest tax on taxable income threshold
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    nb_taxable_income: 167_280
+    nb_tuition_credit_amount_income: 100_000
+    tuition_expenses: 160_000
+  output:
+    nb_tuition_credit_amount: 155_124.47

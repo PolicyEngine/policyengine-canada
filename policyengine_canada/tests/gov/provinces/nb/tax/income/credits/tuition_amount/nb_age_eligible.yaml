@@ -1,0 +1,15 @@
+- name: Age Ineligible
+  period: 2023
+  input:
+    province_code: NB
+    age: 15
+  output:
+    nb_age_eligible: false
+
+- name: Age eligible
+  period: 2023
+  input:
+    province_code: NB
+    age: 16
+  output:
+    nb_age_eligible: true
