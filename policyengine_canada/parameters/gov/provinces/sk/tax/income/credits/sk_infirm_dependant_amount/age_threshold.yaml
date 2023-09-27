@@ -1,9 +1,9 @@
-description: Saskatchewan qualifies infirm dependants under the Caregiver Tax Credit Amount for filers' dependants with this age or older.
+description: Saskatchewan qualifies dependant for the infirm dependant tax credit above this age.
 values: 
   2022-01-01: 18
 metadata:
   unit: year
-  label: Saskatchewan Infirm Dependants Tax Credit infirm dependant age eligibility
+  label: Saskatchewan infirm dependants tax credit age eligibility
   reference: 
   - title: 2023 Sasktachewan Personal Tax Credits Return Line10 Amount for infirm dependants age 18 or older
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1
