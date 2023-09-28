@@ -20,9 +20,6 @@ class sk_infirm_dependant_amount(Variable):
         p = parameters(
             period
         ).gov.provinces.sk.tax.income.credits.sk_infirm_dependant_amount
-        eligible_person = person(
-            "sk_infirm_dependant_amount_eligible_person", period
-        )
 
         dependant_income = person("dependant_income", period)
         income_differences = max_(
