@@ -14,7 +14,7 @@ class sk_infirm_dependant_amount(Variable):
         "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk-ws/td1sk-ws-lp-22e.pdf#page=6",
         "https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=13 #page=14,15",
     )
-    defined_for = ProvinceCode.SK
+    defined_for = "sk_infirm_dependant_amount_eligible_person"
 
     def formula(person, period, parameters):
         p = parameters(
@@ -23,9 +23,10 @@ class sk_infirm_dependant_amount(Variable):
         eligible_person = person(
             "sk_infirm_dependant_amount_eligible_person", period
         )
+
         dependant_income = person("dependant_income", period)
         income_differences = max_(
             0, p.income_threshold.higher - dependant_income
         )
 
-        return eligible_person * min_(p.amount, income_differences)
+        return min_(p.amount, income_differences)

@@ -32,15 +32,9 @@ class sk_infirm_dependant_amount_eligible_person(Variable):
         dependants_income = person("dependant_income", period)
         income_eligibility = dependants_income <= p.income_threshold.higher
 
-        caregiver_amount = person(
-            "sk_caregiver_amount", period
-        )
-        duplicate_infirm_dependant = where(
-            caregiver_amount == 0, 0, 1
-        )
+        caregiver_amount = person("sk_caregiver_amount", period)
+        duplicate_infirm_dependant = where(caregiver_amount == 0, 0, 1)
 
-        return (
-            infirm_eligibility
-            & ~duplicate_infirm_dependant
-            & income_eligibility
-        )
+        eligible = infirm_eligibility & income_eligibility
+
+        return where(caregiver_amount == 0, eligible, 0)
