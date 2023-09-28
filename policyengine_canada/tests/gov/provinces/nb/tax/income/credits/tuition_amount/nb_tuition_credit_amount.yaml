@@ -36,7 +36,7 @@
     nb_tuition_credit_amount_income: 100_000
     tuition_expenses: 150_000
   output:
-    nb_tuition_credit_amount: 114_409.62
+    nb_tuition_credit_amount: 114_409.57
 
 - name: Highest tax on taxable income threshold
   period: 2023
@@ -46,4 +46,4 @@
     nb_tuition_credit_amount_income: 100_000
     tuition_expenses: 160_000
   output:
-    nb_tuition_credit_amount: 155_124.47
+    nb_tuition_credit_amount: 155124.42

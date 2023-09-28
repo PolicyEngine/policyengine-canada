@@ -26,100 +26,16 @@ class nb_tuition_credit_amount(Variable):
             [
                 taxable_income
                 <= p.nb_tax_on_taxable_income_threshold.thresholds[1],
-                p.nb_tax_on_taxable_income_threshold.thresholds[1]
-                < taxable_income
-                < p.nb_tax_on_taxable_income_threshold.thresholds[2],
-                p.nb_tax_on_taxable_income_threshold.thresholds[2]
-                < taxable_income
-                < p.nb_tax_on_taxable_income_threshold.thresholds[3],
-                p.nb_tax_on_taxable_income_threshold.thresholds[3]
-                < taxable_income
-                < p.nb_tax_on_taxable_income_threshold.thresholds[4],
                 taxable_income
-                > p.nb_tax_on_taxable_income_threshold.thresholds[4],
+                > p.nb_tax_on_taxable_income_threshold.thresholds[1],
             ],
             [
                 min_(max_(taxable_income - tuition_income, 0), tuition),
                 min_(
                     max_(
                         (
-                            (
-                                (
-                                    taxable_income
-                                    - p.nb_tax_on_taxable_income_threshold.thresholds[
-                                        1
-                                    ]
-                                )
-                                * p.nb_tax_on_taxable_income_threshold.rates[1]
-                                + p.nb_tax_on_taxable_income_addition_amounts.amounts[
-                                    1
-                                ]
-                            )
-                            / p.nb_tax_on_taxable_income_rate
-                        )
-                        - tuition_income,
-                        0,
-                    ),
-                    tuition,
-                ),
-                min_(
-                    max_(
-                        (
-                            (
-                                (
-                                    taxable_income
-                                    - p.nb_tax_on_taxable_income_threshold.thresholds[
-                                        2
-                                    ]
-                                )
-                                * p.nb_tax_on_taxable_income_threshold.rates[2]
-                                + p.nb_tax_on_taxable_income_addition_amounts.amounts[
-                                    2
-                                ]
-                            )
-                            / p.nb_tax_on_taxable_income_rate
-                        )
-                        - tuition_income,
-                        0,
-                    ),
-                    tuition,
-                ),
-                min_(
-                    max_(
-                        (
-                            (
-                                (
-                                    taxable_income
-                                    - p.nb_tax_on_taxable_income_threshold.thresholds[
-                                        3
-                                    ]
-                                )
-                                * p.nb_tax_on_taxable_income_threshold.rates[3]
-                                + p.nb_tax_on_taxable_income_addition_amounts.amounts[
-                                    3
-                                ]
-                            )
-                            / p.nb_tax_on_taxable_income_rate
-                        )
-                        - tuition_income,
-                        0,
-                    ),
-                    tuition,
-                ),
-                min_(
-                    max_(
-                        (
-                            (
-                                (
-                                    taxable_income
-                                    - p.nb_tax_on_taxable_income_threshold.thresholds[
-                                        4
-                                    ]
-                                )
-                                * p.nb_tax_on_taxable_income_threshold.rates[4]
-                                + p.nb_tax_on_taxable_income_addition_amounts.amounts[
-                                    4
-                                ]
+                            p.nb_tax_on_taxable_income_threshold.calc(
+                                taxable_income
                             )
                             / p.nb_tax_on_taxable_income_rate
                         )

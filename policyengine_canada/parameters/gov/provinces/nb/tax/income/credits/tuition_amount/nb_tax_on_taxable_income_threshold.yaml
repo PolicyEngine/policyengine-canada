@@ -3,7 +3,7 @@ brackets:
   - threshold: 
       2022-01-01: 0
     rate: 
-      2022-01-01: 0
+      2022-01-01: 0.094
   - threshold:
       2022-01-01: 44_887
     rate:
