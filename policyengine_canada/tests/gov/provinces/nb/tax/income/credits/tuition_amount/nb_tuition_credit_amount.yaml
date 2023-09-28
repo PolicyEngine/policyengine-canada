@@ -16,7 +16,7 @@
     nb_tuition_credit_amount_income: 20_000
     tuition_expenses: 10_000
   output:
-    nb_tuition_credit_amount: 10000
+    nb_tuition_credit_amount: 10_000
 
 - name: Third tax on taxable income threshold
   period: 2023
@@ -46,4 +46,4 @@
     nb_tuition_credit_amount_income: 100_000
     tuition_expenses: 160_000
   output:
-    nb_tuition_credit_amount: 155124.42
+    nb_tuition_credit_amount: 155_124.42
