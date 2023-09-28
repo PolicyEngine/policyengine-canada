@@ -8,6 +8,6 @@ class is_dependant(Variable):
     definition_period = YEAR
 
     def formula(person, period, parameters):
-        head = person("head", period)
-        spouse = person("spouse", period)
+        head = person("is_head", period)
+        spouse = person("is_spouse", period)
         return ~head & ~spouse
