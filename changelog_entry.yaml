@@ -1,0 +1,4 @@
+- bump: patch
+  changes:
+    changed:
+    - Redefine `is_dependant`.
