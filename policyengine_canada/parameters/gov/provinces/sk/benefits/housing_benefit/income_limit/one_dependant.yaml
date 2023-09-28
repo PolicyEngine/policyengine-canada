@@ -1,0 +1,10 @@
+decription: Saskatchewan Housing Benefit Annual Income Limit for one dependant
+values: 
+  2023-01-01: 52_900
+
+metadata:
+  unit: currency-CAD
+  label: Saskatchewan Housing Benefit Annual Income Limit for one dependants
+  reference:
+  - title: Saskatchewan Housing Benefit
+    href: https://www.saskatchewan.ca/residents/housing-and-renting/renting-and-leasing/saskatchewan-housing-benefit#:~:text=Renters%20are%20eligible%20for%20the,%24300%2C000%20in%20household%20assets%3B%20and
