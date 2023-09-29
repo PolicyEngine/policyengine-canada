@@ -531,3 +531,8 @@
     added:
     - Northwest Territories basic personal amount.
   date: 2023-09-23 22:06:50
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia income assistance asset eligibility.
+  date: 2023-09-28 18:01:54
