@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class nb_tuition_credit_amount(Variable):
+class nb_tuition_credit(Variable):
     value_type = float
     entity = Person
-    label = "New Brunswick tuition credit amount"
+    label = "New Brunswick tuition credit"
     definition_period = YEAR
     defined_for: "nb_tuition_eligible"
     reference = (
@@ -22,6 +22,15 @@ class nb_tuition_credit_amount(Variable):
         p = parameters(
             period
         ).gov.provinces.nb.tax.income.credits.tuition_amount
+        reduced_taxable_income = max_(taxable_income - tuition_income, 0)
+        tax_on_taxable_income = p.nb_tax_on_taxable_income_threshold.calc(
+            taxable_income
+        )
+        reduced_tax_on_taxable_income = max_(
+            (tax_on_taxable_income / p.nb_tax_on_taxable_income_rate)
+            - tuition_income,
+            0,
+        )
         return select(
             [
                 taxable_income
@@ -30,19 +39,7 @@ class nb_tuition_credit_amount(Variable):
                 > p.nb_tax_on_taxable_income_threshold.thresholds[1],
             ],
             [
-                min_(max_(taxable_income - tuition_income, 0), tuition),
-                min_(
-                    max_(
-                        (
-                            p.nb_tax_on_taxable_income_threshold.calc(
-                                taxable_income
-                            )
-                            / p.nb_tax_on_taxable_income_rate
-                        )
-                        - tuition_income,
-                        0,
-                    ),
-                    tuition,
-                ),
+                min_(reduced_taxable_income, tuition),
+                min_(reduced_tax_on_taxable_income, tuition),
             ],
         )
