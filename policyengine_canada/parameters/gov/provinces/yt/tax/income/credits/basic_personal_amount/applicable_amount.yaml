@@ -1,26 +1,9 @@
-description: Yukon credits basic personal amount, based on the filers income.
-brackets:
-  - threshold:
-      2022-01-01: 0
-    rate:
-      2022-01-01: 14_398
-      2023-01-01: 15_000
-  - threshold:
-      2022-01-01: 155_625
-      2023-01-01: 165_430
-    rate:
-      2023-01-01: 0.02105488 # 1_479 / 70_245
-  - threshold:
-      2022-01-01: 221_708 # 155_625 + 66_083
-      2023-01-01: 235_675 # 165_430 + 70_245
-    rate:
-      2022-01-01: 0
-
+description: Yukon credits this basic personal amount, based on the base amount
+values:
+  2022-01-01: 1_479
 metadata:
-  type: marginal_rate
-  threshold_unit: currency-CAD
-  rate_unit: /1
-  label: Yukon basic personal amount
+  unit: currency-CAD
+  label: Yukon income basic personal base amount
   reference:
   - title: Worksheet for the Yukon 2023 Personal Tax Credits Return
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1yt-ws/td1yt-ws-23e.pdf#page=1
