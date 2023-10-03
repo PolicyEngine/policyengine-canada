@@ -1,0 +1,14 @@
+description: Manitoba limits the age amount credit to the following maximum amount.
+values:
+  2022-01-01: 3_728
+metadata:
+  unit: currency-CAD
+  label: Manitoba age credit maximum amount
+  reference:
+  # Manitoba provides the same maximum age credit amount for both 2022 and 2023
+  - title: 2022 Manitoba Personal Tax Credits Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb/td1mb-22e.pdf#page=1
+  - title: 2023 Manitoba Personal Tax Credits Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb/td1mb-23e.pdf#page=1
+  - title: 2023 Manitoba, The Income Tax Act § 4.6(4)
+    href: https://web2.gov.mb.ca/laws/statutes/ccsm/_pdf.php?cap=i10

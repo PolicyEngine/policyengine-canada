@@ -1,0 +1,27 @@
+- name: 2022 NT basic personal amount
+  period: 2022
+  input:
+    province_code: NT
+  output:
+    nt_basic_personal_amount: 15_609
+
+- name: 2022 NT basic personal amount; wrong province
+  period: 2022
+  input:
+    province_code: AB
+  output:
+    nt_basic_personal_amount: 0
+
+- name: 2023 NT basic personal amount
+  period: 2023
+  input:
+    province_code: NT
+  output:
+    nt_basic_personal_amount: 16_593
+
+- name: 2023 NT basic personal amount; wrong province
+  period: 2023
+  input:
+    province_code: AB
+  output:
+    nt_basic_personal_amount: 0
