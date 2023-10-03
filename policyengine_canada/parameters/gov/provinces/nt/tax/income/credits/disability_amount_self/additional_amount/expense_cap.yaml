@@ -1,10 +1,11 @@
-description: Northwest Territories limits the child and attendant care expenses to this amount under the disability amount for self.
+description: Northwest Territories disability amount child and attendant care expense cap
+
 values:
   2022-01-01: 3_030
 metadata:
   unit: currency-CAD
   period: year
-  label: Northwest Territories disability amount maximum child and attendant care expenses threshold
+  label: Northwest Territories disability amount child and attendant care expenses cap
   reference:
     - title: Income Tax Act - Section 2.12 CPP/QPP disability benefits and other lumpsum payments for previous years
       href: www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf#page=23

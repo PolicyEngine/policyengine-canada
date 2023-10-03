@@ -19,13 +19,13 @@ class nt_disability_amount_self(Variable):
         )
         total_expenses = person("care_costs_for_self", period)
         expense_reduction = max_(
-            total_expenses - p.additional_amount.child_care_expense_cap, 0
+            total_expenses - p.additional_amount.expense_cap, 0
         )
-        additional_max_with_child_care = max_(
+        additional_amount = max_(
             p.additional_amount.max_amount - expense_reduction, 0
         )
         return where(
             reduction_age_threshold,
-            p.base + additional_max_with_child_care,
+            p.base + additional_amount,
             p.base,
         )
