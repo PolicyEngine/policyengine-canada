@@ -6,7 +6,7 @@ class nb_tuition_credit(Variable):
     entity = Person
     label = "New Brunswick tuition credit"
     definition_period = YEAR
-    defined_for: "nb_tuition_eligible"
+    defined_for: "nb_tuition_credit_eligibility"
     reference = (
         "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-s11/5004-s11-22e.pdf#page=1",
         "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-c/5004-c-22e.pdf#page=1",

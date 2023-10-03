@@ -1,0 +1,35 @@
+- name: Age eligible and tuition ineligible
+  period: 2023
+  input:
+    province_code: NB
+    age: 17
+    tuition_expenses: 50
+  output:
+    nb_tuition_credit_eligibility: false
+
+- name: Age eligible and tuition eligible
+  period: 2023
+  input:
+    province_code: NB
+    age: 16
+    tuition_expenses: 101
+  output:
+    nb_tuition_credit_eligibility: true
+
+- name: Age ineligible and tuition eligible
+  period: 2023
+  input:
+    province_code: NB
+    age: 10
+    tuition_expenses: 200
+  output:
+    nb_tuition_credit_eligibility: false
+
+- name: Age ineligible and tuition ineligible
+  period: 2023
+  input:
+    province_code: NB
+    age: 10
+    tuition_expenses: 30
+  output:
+    nb_tuition_credit_eligibility: false
