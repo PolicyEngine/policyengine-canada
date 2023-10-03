@@ -9,4 +9,6 @@ class mb_spouse_credit_eligible(Variable):
     defined_for = ProvinceCode.MB
 
     def formula(household, period, parameters):
-        return household("cohabitating_spouses", period)
+        person = household.members
+        is_caregiver = person("is_caregiver", period)
+        return is_caregiver * household("cohabitating_spouses", period)
