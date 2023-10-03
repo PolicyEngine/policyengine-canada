@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+# No reduction in the Alberta Personal Income Tax Act
 
 class ab_disability_tax_credit(Variable):
     value_type = float
