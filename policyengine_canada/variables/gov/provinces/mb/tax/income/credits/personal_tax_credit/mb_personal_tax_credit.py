@@ -20,15 +20,16 @@ class mb_personal_tax_credit(Variable):
         # disablity
         disabled = person("is_disabled", period)
         # age
-        age = person("age", period)
+        year_of_birth = person("born_year", period)
 
-        age_eligible_dependant = age >= p.teen_age_amount
-        age_eligible_children = age <= p.teen_age_amount
+        age_eligible_dependant = year_of_birth <= p.age.teen_age
+        age_eligible_children = year_of_birth >= p.age.teen_age
 
         # disability claims credit amount
         disability_claims = household.sum(dependant * disabled)
         disability_claims_amount = (
-            disability_claims * p.self_and_dependant_disability_claim_credit
+            disability_claims
+            * p.amount.self_and_dependant_disability_claim_credit
         )
 
         # disabled dependants credit amount
@@ -36,19 +37,19 @@ class mb_personal_tax_credit(Variable):
             dependant * age_eligible_dependant * disabled
         )
         disabled_dependants_amount = (
-            disabled_dependants * p.disabled_dependant_amount
+            disabled_dependants * p.amount.disabled_dependant_credit
         )
 
         # eligible dependant children credit amount
         eligible_children = household.sum(dependant * age_eligible_children)
         eligible_children_amount = (
-            eligible_children * p.dependant_children_amount
+            eligible_children * p.amount.dependant_children_credit
         )
 
         # eligible dependant credit amount
         eligible_dependant = household.sum(dependant) > 0
         eligible_dependant_amount = (
-            eligible_dependant * p.eligible_dependant_credit
+            eligible_dependant * p.amount.eligible_dependant_credit
         )
 
         # calculation of total credit amount
@@ -63,8 +64,4 @@ class mb_personal_tax_credit(Variable):
         # household net income
         net_income = household("adjusted_family_net_income", period)
 
-        total_personal_tax_credit = total_credits - (
-            p.family_income_rate_amount * net_income
-        )
-
-        return total_personal_tax_credit
+        return total_credits - (p.amount.family_income_rate * net_income)

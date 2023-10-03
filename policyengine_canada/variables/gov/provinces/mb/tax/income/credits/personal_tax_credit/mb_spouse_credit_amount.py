@@ -14,16 +14,14 @@ class mb_spouse_credit_amount(Variable):
         ).gov.provinces.mb.tax.income.credits.personal_tax_credit
 
         spouse = person("is_spouse", period)
-        age_eligibility = person("age", period) >= p.elderly_age_amount
+        age_eligibility = person("born_year", period) <= p.age.elderly_age
         disabled = person("is_disabled", period)
 
         age_eligible_spouse = spouse & age_eligibility
         disabled_spouse = spouse & disabled
 
-        spouse_credit_amount = (
-            spouse * p.basic_credit
-            + age_eligible_spouse * p.age_credit
-            + disabled_spouse * p.disability_credit
+        return (
+            spouse * p.amount.basic_credit
+            + age_eligible_spouse * p.age.age_credit
+            + disabled_spouse * p.amount.disability_credit
         )
-
-        return spouse_credit_amount

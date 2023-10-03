@@ -3,7 +3,7 @@
   input:
     people:
       c1:
-        age: 50
+        born_year: 1960
         is_head: true
         is_disabled: false
         mb_spouse_credit_amount: 308
@@ -19,7 +19,7 @@
   input:
     people:
       c1:
-        age: 50
+        born_year: 1960
         is_disabled: true
         is_head: true
         mb_spouse_credit_amount: 308
@@ -35,7 +35,7 @@
   input:
     people:
       c1: 
-        age: 70
+        born_year: 1950
         is_disabled: true
         is_head: true
         mb_spouse_credit_amount: 308
