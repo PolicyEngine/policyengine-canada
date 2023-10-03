@@ -22,12 +22,9 @@ class mb_tuition_amount_credit(Variable):
         disabled = person("is_disabled", period)
 
         tuition_addition = select(
-            [full_time, ~full_time & disabled, ~full_time & ~disabled],
-            [
-                p.amount.full_time,
-                p.part_time.disabled,
-                p.part_time.non_disabled,
-            ],
+            [full_time, disabled],
+            [p.amount.full_time, p.amount.part_time.disabled],
+            default=p.amount.part_time.non_disabled,
         )
 
         return tuition + tuition_addition

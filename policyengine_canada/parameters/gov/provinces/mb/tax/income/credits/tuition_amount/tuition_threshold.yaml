@@ -1,4 +1,4 @@
-description: Manitoba allows students with tuition above this amount to file for the tuition amount credit.
+description: Manitoba limits the tuition amount credit to students who have paid more than this amount of tuition.
 values:
   2022-01-01: 100
 metadata:
