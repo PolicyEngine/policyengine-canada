@@ -17,8 +17,6 @@ class qc_disabled_children_activities_credit_eligible(Variable):
         disabled = person("is_disabled", period)
 
         # your or your spouse's child or a person of whom you or your spouse has the custody and supervision
-        is_child_of_filer = person("is_child_of_filer", period)
-        is_custodied_by_filer = person("is_custodied_by_filer", period)
-        eligible_child = is_child_of_filer | is_custodied_by_filer
+        is_dependant = person("is_dependant", period)
 
-        return eligible_child & disabled & p.age_eligibility.calc(age)
+        return is_dependant & disabled & p.age_eligibility.calc(age)

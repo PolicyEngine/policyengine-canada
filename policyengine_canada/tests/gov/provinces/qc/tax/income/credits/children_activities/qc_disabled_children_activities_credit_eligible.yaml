@@ -2,8 +2,7 @@
   period: 2022
   input:
     age: 10
-    is_child_of_filer: true
-    is_custodied_by_filer: true
+    is_dependant: true
     is_disabled: false
     province_code: QC
   output:
@@ -13,8 +12,7 @@
   period: 2022
   input:
     age: 18
-    is_child_of_filer: true
-    is_custodied_by_filer: true
+    is_dependant: true
     is_disabled: true
     province_code: QC
   output:
@@ -24,8 +22,7 @@
   period: 2022
   input:
     age: 4
-    is_child_of_filer: true
-    is_custodied_by_filer: true
+    is_dependant: true
     is_disabled: true
     province_code: QC
   output:
@@ -35,32 +32,20 @@
   period: 2022
   input:
     age: 5
-    is_child_of_filer: true
-    is_custodied_by_filer: true
+    is_dependant: true
     is_disabled: true
     province_code: QC
   output:
     qc_disabled_children_activities_credit_eligible: true
 
-- name: Quebec disabled children's activities tax credit eligibility for not tax filers's own child but has the custody and supervision
+- name: Quebec disabled children's activities tax credit eligibility for not tax filers's dependant
   period: 2022
   input:
     age: 5
-    is_child_of_filer: false
-    is_custodied_by_filer: true
-    is_disabled: true
-    province_code: QC
-  output:
-    qc_disabled_children_activities_credit_eligible: true
-
-- name: Quebec disabled children's activities tax credit eligibility for not tax filers's own child and not has the custody and supervision
-  period: 2022
-  input:
-    age: 5
-    is_child_of_filer: false
-    is_custodied_by_filer: false
+    is_dependant: false
     is_disabled: true
     province_code: QC
   output:
     qc_disabled_children_activities_credit_eligible: false
+
 
