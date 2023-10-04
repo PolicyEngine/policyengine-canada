@@ -1,11 +1,11 @@
-description: Quebec limits its work premium credit to a couple annual work income above this amount.
+description: Quebec limits its work premium credit to singles with work income at least this amount.
 values:
-  2022-01-01: 3_600
+  2022-01-01: 2_400
 metadata:
   unit: currency-CAD
-  label: Quebec work premium tax credit work income requirement for couples 
+  label: Quebec work premium tax credit work income requirement for singles 
   reference:
     - title: Revenu Quebec - Eligibility Requirements for the Work Premium Tax Credit
       href: https://www.revenuquebec.ca/en/citizens/tax-credits/work-premium-tax-credits/eligibility-requirements-for-the-work-premium-tax-credits/
-    - title: Taxation Act(CQLR c I-3), Part I, Book IX, Title III, Division II.17.1 §2. 1029.8.116.5.(b)ii
+    - title: Taxation Act(CQLR c I-3), Part I, Book IX, Title III, Division II.17.1 §2. 1029.8.116.5.(b)i
       href: https://www.canlii.org/en/qc/laws/stat/cqlr-c-i-3/latest/cqlr-c-i-3.html#DIVISION_II_17_1_CREDITS_TO_INCREASE_THE_INCENTIVE_TO_WORK_23799168

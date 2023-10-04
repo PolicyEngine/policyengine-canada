@@ -1,0 +1,28 @@
+- name: Quebec work premium credit for household eligible for higher adapted work premium credit
+  period: 2022
+  input:
+    qc_general_work_premium_amount: 200
+    qc_adapted_work_premium_amount: 300
+    province_code: QC
+  output:
+    qc_work_premium_credit_base: 300 # max(200, 300)
+
+- name: Quebec work premium credit for household eligible for lower adapted work premium credit
+  period: 2022
+  input:
+    qc_general_work_premium_amount: 500
+    qc_adapted_work_premium_amount: 300
+    province_code: QC
+  output:
+    qc_work_premium_credit_base: 500 # max(500, 300)
+
+- name: Quebec work premium credit for married household eligible for adapted work premium credit
+  period: 2022
+  input:
+    qc_general_work_premium_amount: 200
+    qc_adapted_work_premium_amount: 0
+    province_code: QC
+  output:
+    qc_work_premium_credit_base: 200
+
+

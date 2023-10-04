@@ -1,4 +1,4 @@
-description: Quebec limits its adapted work premium credit to one's annual work income above this amount.
+description: Quebec limits its adapted work premium credit to people with work income at least this amount.
 values:
   2022-01-01: 1_200
 metadata:

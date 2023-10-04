@@ -1,12 +1,12 @@
 from policyengine_canada.model_api import *
 
 
-class qc_work_premium_supplement_amount(Variable):
+class qc_work_premium_credit_supplement(Variable):
     value_type = float
     entity = Household
     label = "Quebec supplement to the work premium"
     definition_period = YEAR
-    defined_for = "qc_work_premium_eligibility"
+    defined_for = "qc_work_premium_eligible"
 
     def formula(household, period, parameters):
         p = parameters(

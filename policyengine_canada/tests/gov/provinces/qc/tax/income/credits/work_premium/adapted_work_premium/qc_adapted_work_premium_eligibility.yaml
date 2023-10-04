@@ -12,7 +12,7 @@
         working_income: 2_000
     household:
       members: [head, spouse]
-      qc_work_premium_eligibility: true
+      qc_work_premium_eligible: true
       province_code: QC
   output:
     qc_adapted_work_premium_eligibility: false
@@ -31,7 +31,7 @@
         working_income: 2_000
     household:
       members: [head, spouse]
-      qc_work_premium_eligibility: true
+      qc_work_premium_eligible: true
       province_code: QC
   output:
     qc_adapted_work_premium_eligibility: true
@@ -50,7 +50,7 @@
         working_income: 2_000
     household:
       members: [head, spouse]
-      qc_work_premium_eligibility: true
+      qc_work_premium_eligible: true
       province_code: QC
   output:
     qc_adapted_work_premium_eligibility: false
@@ -69,7 +69,7 @@
         working_income: 2_000
     household:
       members: [head, spouse]
-      qc_work_premium_eligibility: true
+      qc_work_premium_eligible: true
       province_code: QC
   output:
     qc_adapted_work_premium_eligibility: true
@@ -84,7 +84,7 @@
         working_income: 2_000
     household:
       members: [head]
-      qc_work_premium_eligibility: true
+      qc_work_premium_eligible: true
       province_code: QC
   output:
     qc_adapted_work_premium_eligibility: true
@@ -99,7 +99,7 @@
         working_income: 2_000
     household:
       members: [head]
-      qc_work_premium_eligibility: false
+      qc_work_premium_eligible: false
       province_code: QC
   output:
     qc_adapted_work_premium_eligibility: false
@@ -118,7 +118,7 @@
         working_income: 2_000
     household:
       members: [head]
-      qc_work_premium_eligibility: false
+      qc_work_premium_eligible: false
       province_code: QC
   output:
     qc_adapted_work_premium_eligibility: false

@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class qc_work_premium_eligibility(Variable):
+class qc_work_premium_eligible(Variable):
     value_type = bool
     entity = Household
     label = "Eligible household for the Quebec work premium tax credit"

@@ -9,11 +9,11 @@
         is_head_or_spouse: true
         working_income: 3_000
     household:
-      qc_work_premium_eligibility: true
+      qc_work_premium_eligible: true
       members: [head, spouse]
       province_code: QC
   output:
-    qc_work_premium_supplement_amount: 4_800
+    qc_work_premium_credit_supplement: 4_800
 
 - name: Quebec work premium supplement for household without spouse enter the labour market but other dependent entered
   period: 2022
@@ -26,11 +26,11 @@
         is_head_or_spouse: false
         working_income: 3_000
     household:
-      qc_work_premium_eligibility: true
+      qc_work_premium_eligible: true
       members: [head, dependant]
       province_code: QC
   output:
-    qc_work_premium_supplement_amount: 2_400
+    qc_work_premium_credit_supplement: 2_400
 
 - name: Quebec work premium supplement for household only the head enter the labour market/spouse work income below the requirement
   period: 2022
@@ -44,10 +44,10 @@
         working_income: 2_000
     household:
       members: [head, spouse]
-      qc_work_premium_eligibility: true
+      qc_work_premium_eligible: true
       province_code: QC
   output:
-    qc_work_premium_supplement_amount: 2_400
+    qc_work_premium_credit_supplement: 2_400
 
 - name: Quebec work premium supplement for household when both the head and spouse work income below the requirement
   period: 2022
@@ -61,10 +61,10 @@
         working_income: 2_000
     household:
       members: [head, spouse]
-      qc_work_premium_eligibility: true
+      qc_work_premium_eligible: true
       province_code: QC
   output:
-    qc_work_premium_supplement_amount: 0
+    qc_work_premium_credit_supplement: 0
 
 - name: Quebec work premium supplement for household with spouse enter the labour market but are not eligible for this credit
   period: 2022
@@ -77,8 +77,8 @@
         is_head_or_spouse: true
         working_income: 3_000
     household:
-      qc_work_premium_eligibility: false
+      qc_work_premium_eligible: false
       members: [head, spouse]
       province_code: QC
   output:
-    qc_work_premium_supplement_amount: 0
+    qc_work_premium_credit_supplement: 0

@@ -6,7 +6,7 @@ class qc_adapted_work_premium_eligibility(Variable):
     entity = Household
     label = "Quebec adapted work premium tax credit eligibility"
     definition_period = YEAR
-    defined_for = "qc_work_premium_eligibility"
+    defined_for = "qc_work_premium_eligible"
 
     def formula(household, period, parameters):
         p = parameters(
@@ -21,7 +21,7 @@ class qc_adapted_work_premium_eligibility(Variable):
 
         # Your or your spouse's annual work income is over $1,200.
         work_income_eligible = (
-            person("working_income", period) > p.work_income_limit
+            person("working_income", period) > p.work_income_requirement
         )
 
         return household.any(
