@@ -15,7 +15,7 @@
       qc_work_premium_eligible: true
       province_code: QC
   output:
-    qc_adapted_work_premium_eligibility: false
+    qc_adapted_work_premium_eligible: false
 
 - name: Quebec adapted work premium eligibility for married household with disabled head and working income above the requirement
   period: 2022
@@ -34,7 +34,7 @@
       qc_work_premium_eligible: true
       province_code: QC
   output:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
 
 - name: Quebec adapted work premium eligibility for married household with disabled head but working income below the requirement
   period: 2022
@@ -53,7 +53,7 @@
       qc_work_premium_eligible: true
       province_code: QC
   output:
-    qc_adapted_work_premium_eligibility: false
+    qc_adapted_work_premium_eligible: false
 
 - name: Quebec adapted work premium eligibility for married household with disabled spouse and working income above the requirement
   period: 2022
@@ -72,7 +72,7 @@
       qc_work_premium_eligible: true
       province_code: QC
   output:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
 
 - name: Quebec adapted work premium eligibility for unmarried household with disabled head and working income above the requirement
   period: 2022
@@ -87,7 +87,7 @@
       qc_work_premium_eligible: true
       province_code: QC
   output:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
 
 - name: Quebec adapted work premium eligibility for unmarried household with non-eligible disabled head and working income above the requirement
   period: 2022
@@ -102,7 +102,7 @@
       qc_work_premium_eligible: false
       province_code: QC
   output:
-    qc_adapted_work_premium_eligibility: false
+    qc_adapted_work_premium_eligible: false
 
 - name: Quebec adapted work premium eligibility for household with non-disabled head but disabled other members
   period: 2022
@@ -121,4 +121,4 @@
       qc_work_premium_eligible: false
       province_code: QC
   output:
-    qc_adapted_work_premium_eligibility: false
+    qc_adapted_work_premium_eligible: false

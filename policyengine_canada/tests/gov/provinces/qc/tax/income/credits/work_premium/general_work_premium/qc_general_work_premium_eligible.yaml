@@ -6,7 +6,7 @@
     family_working_income: 4_000
     province_code: QC
   output:
-    qc_general_work_premium_eligibility: true
+    qc_general_work_premium_eligible: true
 
 - name: Quebec general work premium eligibility for married household with working income below or at limit
   period: 2022
@@ -16,7 +16,7 @@
     family_working_income: 3_600
     province_code: QC
   output:
-    qc_general_work_premium_eligibility: false
+    qc_general_work_premium_eligible: false
 
 - name: Quebec general work premium eligibility for unmarried household with working income over limit
   period: 2022
@@ -26,7 +26,7 @@
     family_working_income: 2_900
     province_code: QC
   output:
-    qc_general_work_premium_eligibility: true
+    qc_general_work_premium_eligible: true
 
 - name: Quebec general work premium eligibility for unmarried household with working income below or at limit
   period: 2022
@@ -36,4 +36,4 @@
     family_working_income: 2_400
     province_code: QC
   output:
-    qc_general_work_premium_eligibility: false
+    qc_general_work_premium_eligible: false

@@ -6,7 +6,7 @@ class qc_general_work_premium_amount(Variable):
     entity = Household
     label = "Quebec general work premium tax credit amount"
     definition_period = YEAR
-    defined_for = "qc_general_work_premium_eligibility"
+    defined_for = "qc_general_work_premium_eligible"
 
     def formula(household, period, parameters):
         p = parameters(

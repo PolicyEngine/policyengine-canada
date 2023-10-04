@@ -1,7 +1,7 @@
 - name: Quebec adapted work premium amount for single parent with family income below the turndown threshold
   period: 2022
   input:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
     is_married: false
     count_children: 1
     adjusted_family_net_income: 11_000 
@@ -12,7 +12,7 @@
 - name: Quebec adapted work premium amount for single parent with family income above the turndown threshold
   period: 2022
   input:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
     is_married: false
     count_children: 1
     adjusted_family_net_income: 30_000
@@ -23,7 +23,7 @@
 - name: Quebec adapted work premium amount for single parent with family income above the maximum income
   period: 2022
   input:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
     is_married: false
     count_children: 1
     adjusted_family_net_income: 52_000
@@ -34,7 +34,7 @@
 - name: Quebec adapted work premium amount for person living alone with family income below the turndown threshold
   period: 2022
   input:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
     is_married: false
     count_children: 0
     adjusted_family_net_income: 11_000 
@@ -45,7 +45,7 @@
 - name: Quebec adapted work premium amount for person living alone with family income above the turndown threshold
   period: 2022
   input:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
     is_married: false
     count_children: 0
     adjusted_family_net_income: 20_000
@@ -56,7 +56,7 @@
 - name: Quebec adapted work premium amount for person living alone with family income above the maximum income
   period: 2022
   input:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
     is_married: false
     count_children: 0
     adjusted_family_net_income: 52_000
@@ -67,7 +67,7 @@
 - name: Quebec adapted work premium amount for couple with children with family income below the turndown threshold
   period: 2022
   input:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
     is_married: true
     count_children: 1
     adjusted_family_net_income: 20_000
@@ -79,7 +79,7 @@
 - name: Quebec adapted work premium amount for couple with children with family income above the turndown threshold
   period: 2022
   input:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
     is_married: true
     count_children: 1
     adjusted_family_net_income: 30_000
@@ -90,7 +90,7 @@
 - name: Quebec adapted work premium amount for couple with children with family income above the maximum income
   period: 2022
   input:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
     is_married: true
     count_children: 1
     adjusted_family_net_income: 70_000
@@ -101,7 +101,7 @@
 - name: Quebec adapted work premium amount for couple without child with family income below the turndown threshold 
   period: 2022
   input:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
     is_married: true
     count_children: 0
     adjusted_family_net_income: 11_000 
@@ -113,7 +113,7 @@
 - name: Quebec adapted work premium amount for couple without child with family income above the turndown threshold
   period: 2022
   input:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
     is_married: true
     count_children: 0
     adjusted_family_net_income: 30_000
@@ -124,7 +124,7 @@
 - name: Quebec adapted work premium amount for couple without child with family income above the maximum income 
   period: 2022
   input:
-    qc_adapted_work_premium_eligibility: true
+    qc_adapted_work_premium_eligible: true
     is_married: true
     count_children: 0
     adjusted_family_net_income: 60_000
