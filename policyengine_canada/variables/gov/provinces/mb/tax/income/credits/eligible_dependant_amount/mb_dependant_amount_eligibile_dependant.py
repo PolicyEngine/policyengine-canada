@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class mb_dependant_eligibility(Variable):
+class mb_dependant_amount_eligibile_dependant(Variable):
     value_type = bool
     entity = Person
     label = "Manitoba dependant eligibility"
@@ -18,6 +18,15 @@ class mb_dependant_eligibility(Variable):
         relative = person("is_relative", period)
         live_together = person("lived_together", period)
 
-        dependant_eligible = relative & live_together
+        # eligible dependant's net income
+
+        dependant_income = person("dependant_income", period)
+        eligible_dependant_income = (
+            p.dependant_income_max_amount > dependant_income
+        )
+
+        dependant_eligible = (
+            relative & live_together & eligible_dependant_income
+        )
 
         return dependant_eligible

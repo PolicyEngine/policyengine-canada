@@ -6,17 +6,13 @@ class mb_dependant_amount(Variable):
     entity = Person
     label = "Manitoba eligible dependant amount credit"
     definition_period = YEAR
-    defined_for = ProvinceCode.MB
+    defined_for = "mb_dependant_amount_eligibility"
 
     def formula(person, period, parameters):
         p = parameters(
             period
         ).gov.provinces.mb.tax.income.credits.eligible_dependant_amount
 
-        credit = (
-            person("mb_head_eligibility", period)
-            * person("mb_dependant_eligibility", period)
-            * (p.max_amount - person("dependant_income", period))
-        )
+        credit = p.max_amount - person("dependant_income", period)
 
         return credit

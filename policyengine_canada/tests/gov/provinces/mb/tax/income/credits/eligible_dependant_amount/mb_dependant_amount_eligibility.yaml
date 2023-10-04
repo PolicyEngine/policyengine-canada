@@ -1,26 +1,22 @@
 - name: head of household ineligible for eligible dependant tax credit amount
   period: 2023
   input:
-    province_code: MB
+    mb_dependant_amount_eligibile_dependant: true
     is_spouse: true
     lived_together: true
     is_care_receiver: false
     is_caregiver: false
-    dependant_income: 9_000
-
   output:
-    mb_head_eligibility: false
+    mb_dependant_amount_eligibility: false
 
 - name: head of household eligible for eligible dependant tax credit amount
   period: 2023
   input:
-    province_code: MB
+    mb_dependant_amount_eligibile_dependant: true
     is_spouse: false
-    lived_together: false
-    is_care_receiver: false
-    is_caregiver: false
-    dependant_income: 9_000
-
+    lived_together: true
+    is_care_receiver: true
+    is_caregiver: true
   output:
-    mb_head_eligibility: true
+    mb_dependant_amount_eligibility: true
 
