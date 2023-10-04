@@ -526,3 +526,18 @@
     added:
     - Nunavut age amount credit.
   date: 2023-09-04 23:15:38
+- bump: minor
+  changes:
+    added:
+    - Northwest Territories basic personal amount.
+  date: 2023-09-23 22:06:50
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia income assistance asset eligibility.
+  date: 2023-09-28 18:01:54
+- bump: patch
+  changes:
+    fixed:
+    - Disability tax credit parameter readme file.
+  date: 2023-10-03 23:05:56

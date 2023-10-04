@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.85.1] - 2023-10-03 23:05:56
+
+### Fixed
+
+- Disability tax credit parameter readme file.
+
+## [0.85.0] - 2023-09-28 18:01:54
+
+### Added
+
+- Nova Scotia income assistance asset eligibility.
+
+## [0.84.0] - 2023-09-23 22:06:50
+
+### Added
+
+- Northwest Territories basic personal amount.
+
 ## [0.83.0] - 2023-09-04 23:15:38
 
 ### Added
@@ -638,6 +656,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.85.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.85.0...0.85.1
+[0.85.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.84.0...0.85.0
+[0.84.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.83.0...0.84.0
 [0.83.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.82.0...0.83.0
 [0.82.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.81.0...0.82.0
 [0.81.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.80.2...0.81.0
