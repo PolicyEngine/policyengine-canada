@@ -5,6 +5,7 @@ class qc_refundable_medical_expense_credit(Variable):
     value_type = float
     entity = Person
     label = "Quebec medical expenses tax credit"
+    reference = "https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf#page=2"
     definition_period = YEAR
     defined_for = "qc_refundable_medical_expense_credit_eligible"
 
@@ -17,7 +18,7 @@ class qc_refundable_medical_expense_credit(Variable):
             "qc_non_refundable_medical_expense", period
         )
         disability_supports_expense = person(
-            "qc_disability_supports_expense", period
+            "disability_supports_expense", period
         )
         medical_expense = min_(
             p.rate
