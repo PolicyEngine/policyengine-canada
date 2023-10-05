@@ -1,0 +1,13 @@
+description: Quebec provides a work premium credit up to this amount to eligible couples without children.
+values:
+  2022-01-01: 1_600.57
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Quebec maximum work premium amount for couple without child
+  reference:
+    - title: Revenu Quebec - Amount of the Work Premium Tax Credit
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/work-premium-tax-credits/tax-credit-amounts/
+    - title: Parameters of the Personal Income Tax System for 2022 - Table 3
+      href: http://www.finances.gouv.qc.ca/MAJ2021/documents/en/AUTEN_IncomeTax2022.pdf#page=15
+    # Legal reference unavailable
