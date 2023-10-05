@@ -8,8 +8,8 @@ class nb_tuition_credit(Variable):
     definition_period = YEAR
     defined_for: "nb_tuition_credit_eligibility"
     reference = (
-        "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-s11/5004-s11-22e.pdf#page=1",
-        "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-c/5004-c-22e.pdf#page=1",
+        "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-s11/5004-s11-22e.pdf#page=1",  # Line 10
+        "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-c/5004-c-22e.pdf#page=1",  # Line 8
     )
 
     def formula(person, period, parameters):
@@ -23,20 +23,15 @@ class nb_tuition_credit(Variable):
             period
         ).gov.provinces.nb.tax.income.credits.tuition_amount
         reduced_taxable_income = max_(taxable_income - tuition_income, 0)
-        tax_on_taxable_income = p.nb_tax_on_taxable_income_threshold.calc(
-            taxable_income
-        )
+        tax_on_taxable_income = p.income_threshold.calc(taxable_income)
         reduced_tax_on_taxable_income = max_(
-            (tax_on_taxable_income / p.nb_tax_on_taxable_income_rate)
-            - tuition_income,
+            (tax_on_taxable_income / p.rate) - tuition_income,
             0,
         )
         return select(
             [
-                taxable_income
-                <= p.nb_tax_on_taxable_income_threshold.thresholds[1],
-                taxable_income
-                > p.nb_tax_on_taxable_income_threshold.thresholds[1],
+                taxable_income <= p.income_threshold.thresholds[1],
+                taxable_income > p.income_threshold.thresholds[1],
             ],
             [
                 min_(reduced_taxable_income, tuition),
