@@ -5,6 +5,7 @@ class ns_basic_personal_amount(Variable):
     value_type = float
     entity = Person
     label = "Nova Scotia Basic Personal Amount"
+    unit = CAD
     definition_period = YEAR
     defined_for = ProvinceCode.NS
     reference = (
@@ -26,14 +27,5 @@ class ns_basic_personal_amount(Variable):
             p.additional_amount.base
             - p.additional_amount.phase_out_rate.calc(taxable_income),
         )
-        additional_amount = min_(
-            reduced_additional_amount, p.additional_amount.base
-        )
 
-        return where(
-            taxable_income <= p.additional_amount.income_threshold,
-            p.additional_amount.max_personal_amount,
-            p.base + additional_amount,
-        )
-
-    # p.base + additional_amount
+        return (p.base + reduced_additional_amount,)
