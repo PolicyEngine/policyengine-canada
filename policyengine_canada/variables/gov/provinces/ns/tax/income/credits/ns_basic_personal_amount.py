@@ -28,4 +28,4 @@ class ns_basic_personal_amount(Variable):
             - p.additional_amount.phase_out_rate.calc(taxable_income),
         )
 
-        return (p.base + reduced_additional_amount,)
+        return p.base + reduced_additional_amount
