@@ -1,0 +1,19 @@
+description: Prince Edward Island reduces the low-income tax reduction amount by this rate.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Prince Edward Island low-income tax reduction rate
+  reference:
+    - title: Government of Canada - Prince Edward Island Information Guide
+      href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/prince-edward-island/5002-pc/information-residents-prince-edward-island.html#P130_13917
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0
+  - threshold:
+      2022-01-01: 20_000
+    rate:
+      2022-01-01: 0.05
+
