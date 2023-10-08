@@ -1,0 +1,16 @@
+- name: Under age threshold
+  period: 2023
+  input:
+    province_code: NT
+    age: 5
+  output:
+    nt_child_benefit_younger_eligible_child: true
+
+
+- name: Over age threshold
+  period: 2023
+  input:
+    province_code: NT
+    age: 6
+  output:
+    nt_child_benefit_younger_eligible_child: false
