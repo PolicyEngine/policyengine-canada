@@ -15,15 +15,17 @@ class yt_basic_personal_amount(Variable):
 
         applicable_amount = p.applicable_amount
         base_amount = p.base_amount
-        division = p.division
+        divisor = p.divisor
         income_threshold = p.income_threshold
-        individual_net_income = person("individual_net_income", period)
 
-        eligible = (division - (individual_net_income - income_threshold)) <= 0
-        eligible_amount = division - (individual_net_income - income_threshold)
+        individual_net_income = person("individual_net_income", period)
+        additional_amount = divisor - (
+            individual_net_income - income_threshold
+        )
+        additional_amount_eligible = additional_amount <= 0
 
         return where(
-            eligible,
+            additional_amount_eligible,
             base_amount,
-            eligible_amount / division * applicable_amount + base_amount,
+            additional_amount / divisor * applicable_amount + base_amount,
         )
