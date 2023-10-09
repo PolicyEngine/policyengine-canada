@@ -541,3 +541,18 @@
     fixed:
     - Disability tax credit parameter readme file.
   date: 2023-10-03 23:05:56
+- bump: minor
+  changes:
+    added:
+    - Quebec work premium tax credit.
+  date: 2023-10-04 23:17:14
+- bump: patch
+  changes:
+    changed:
+    - Redefine `is_dependant`.
+  date: 2023-10-06 11:22:22
+- bump: patch
+  changes:
+    removed:
+    - numpy pin.
+  date: 2023-10-08 04:38:29
