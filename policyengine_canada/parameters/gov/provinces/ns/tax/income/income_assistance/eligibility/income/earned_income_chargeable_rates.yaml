@@ -1,4 +1,4 @@
-description: Earned income is partially exempted, with the remainder considered chargeable under the Nova Scotia Income Assistance program.
+description: ENova Scotia exempts partial earned income, with the remainder considered chargeable under the Income Assistance program.
 brackets:
   - threshold:
       2021-01-01: 0

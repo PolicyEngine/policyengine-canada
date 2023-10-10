@@ -10,4 +10,4 @@ class rent_from_roomers(Variable):
     reference = (
         "https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4"
     )
-    defined_for = ProvinceCode.NS
+    

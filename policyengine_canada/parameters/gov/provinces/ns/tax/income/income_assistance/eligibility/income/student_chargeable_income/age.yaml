@@ -3,20 +3,20 @@ brackets:
   - threshold:
       2021-01-01: 0
     amount:
-      2021-01-01: 0
+      2021-01-01: false
   - threshold:
       2021-01-01: 16
     amount:
-      2021-01-01: 1
+      2021-01-01: true
   - threshold:
       2021-01-01: 21
     amount:
-      2021-01-01: 0
+      2021-01-01: false
 
 metadata:
   type: single_amount
   threshold_unit: year
-  amount_unit: /1
+  amount_unit: bool
   period: year
   label: Nova Scotia Income Assistance student chargeable income age
   reference:

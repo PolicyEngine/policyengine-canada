@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class rent_from_boarders(Variable):
+class ns_income_assistance_earned_income (Variable):
     value_type = float
     entity = Person
-    label = "Rent collected from boarders"
+    label = "Nova Scotia income assistance earned income"
     unit = CAD
     definition_period = YEAR
     reference = (
@@ -12,6 +12,4 @@ class rent_from_boarders(Variable):
     )
     defined_for = ProvinceCode.NS
 
-    def formula(person, period, parameters):
-        is_dependant = person("is_dependant", period)
-        return where (is_dependant, 0, rent_from_boarders)
+    adds = "gov.provinces.ns.tax.income.income_assistance.eligibility.income.earned_income"

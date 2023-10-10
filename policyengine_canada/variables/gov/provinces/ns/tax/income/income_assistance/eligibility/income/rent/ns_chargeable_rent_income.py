@@ -15,7 +15,7 @@ class ns_chargeable_rent_income(Variable):
             period
         ).gov.provinces.ns.tax.income.income_assistance.eligibility.income.rent
         base = p.chargeable_rent_base
-        boarder_rent = person("rent_from_boarders", period)
+        boarder_rent = person("ns_rent_from_boarders", period)
         boarder_rent_rate = boarder_rent * p.live_with_boarders_rate
         roomers_rent = person("rent_from_roomers", period)
         roomers_rent_rate = roomers_rent * p.live_with_roomers_rate
