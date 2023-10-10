@@ -17,5 +17,7 @@ class nu_eligible_dependent_credit_eligible(Variable):
         dependent = person("is_dependant", period)
         dependent_spouse = household.any(spouse & dependent)
         dependent_non_spouse = household.any((~spouse) & dependent)
+        # The household can only be eligible for one of the credits: 
+        # eligible dependent credit and married status credit. 
         return (~dependent_spouse) & (dependent_non_spouse)
 
