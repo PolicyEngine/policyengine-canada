@@ -1,0 +1,15 @@
+- name: Ineligible Age
+  period: 2023
+  input:
+    province_code: MB
+    age: 64
+  output:
+    mb_age_credit_eligible: false
+
+- name: Eligible Age
+  period: 2023
+  input:
+    province_code: MB
+    age: 65
+  output:
+    mb_age_credit_eligible: true
