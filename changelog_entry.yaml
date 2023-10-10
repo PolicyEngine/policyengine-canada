@@ -1,0 +1,4 @@
+- bump: minor
+  changes:
+    added:
+    - Initial country package contents.
