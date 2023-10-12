@@ -1,8 +1,9 @@
 from policyengine_canada.model_api import *
 
 
-class is_supportive(Variable):
+class cohabitating_dependant(Variable):
     value_type = bool
     entity = Person
-    label = "A person is supporting or being supported by"
+    label = "Dependant lives together with the tax filer"
+    unit = CAD
     definition_period = YEAR

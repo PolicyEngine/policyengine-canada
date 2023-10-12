@@ -1,9 +1,8 @@
 from policyengine_canada.model_api import *
 
 
-class joint_living(Variable):
+class spouse_is_supported(Variable):
     value_type = bool
     entity = Household
-    label = "Live together with the tax filer"
-    unit = CAD
+    label = "A spouse that is supported by the tax filer"
     definition_period = YEAR

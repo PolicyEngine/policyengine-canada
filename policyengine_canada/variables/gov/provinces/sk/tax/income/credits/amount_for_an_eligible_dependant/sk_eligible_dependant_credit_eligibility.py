@@ -17,13 +17,17 @@ class sk_eligible_dependant_credit_eligibility(Variable):
 
     def formula(household, period, parameters):
         person = household.members
-        live_together = household("joint_living", period)
+        live_together = person("cohabitating_dependant", period)
         dependant = person("is_dependant", period)
-        is_related = person("is_relative", period)
+        is_related = person("is_related", period)
         dependant_eligible = live_together & dependant & is_related
         spouse = person("is_spouse", period)
-        support = person("is_supportive", period)
+        no_spouse_present = household.min(~spouse)
+        spouse_is_supported = household("spouse_is_supported", period)
         cohabitating_spouses = household("cohabitating_spouses", period)
-        head_eligible = (~spouse) | ((~cohabitating_spouses) & (~support))
+        # The household is eligible if there is no spouse present or if the spouse
+        # does not live with the head and is not supported
+        spouse_condition_eligible = no_spouse_present | ((~cohabitating_spouses) & (~spouse_is_supported))
+        return household.any(dependant_eligible & spouse_condition_eligible)
 
-        return household.any(dependant_eligible * head_eligible)
+# household.min should be applied to not spouse 
