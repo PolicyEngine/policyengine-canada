@@ -23,9 +23,9 @@ class nb_tuition_credit(Variable):
             period
         ).gov.provinces.nb.tax.income.credits.tuition_amount
         reduced_taxable_income = max_(taxable_income - tuition_income, 0)
-        tax_on_taxable_income = p.phase_out_rate.calc(taxable_income)
+        phased_out_income = p.phase_out_rate.calc(taxable_income)
         reduced_tax_on_taxable_income = max_(
-            (tax_on_taxable_income / p.rate) - tuition_income,
+            (phased_out_income / p.rate) - tuition_income,
             0,
         )
         return select(
