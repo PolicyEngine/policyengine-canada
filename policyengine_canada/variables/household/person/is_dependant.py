@@ -7,6 +7,7 @@ class is_dependant(Variable):
     label = "Is a dependant"
     definition_period = YEAR
 
-    # Impute dependant status on age.
     def formula(person, period, parameters):
-        return person("age", period) < 18
+        head = person("is_head", period)
+        spouse = person("is_spouse", period)
+        return ~head & ~spouse
