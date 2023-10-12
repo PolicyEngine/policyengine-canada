@@ -1,9 +1,10 @@
-description: New Brunswick provides tuition credit amount for filers above this age.
+description: New Brunswick qualifies filers for the tuition credit above this age.
 values:
   2022-01-01: 16
 metadata:
   unit: year
   label: New Brunswick tuition credit age eligibility
   reference: 
+  # The credit is not mentioned in the New Brunswick income tax act
   - title: Students and income tax
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pub/p105/p105-22e.pdf#page=11

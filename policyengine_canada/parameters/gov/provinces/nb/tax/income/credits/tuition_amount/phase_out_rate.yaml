@@ -25,8 +25,9 @@ metadata:
   type: marginal_rate
   threshold_unit: currency-CAD
   rate_unit: /1
-  label: New Brunswick taxable income phase out rate
+  label: New Brunswick tuition credit phase out rate
   reference:
+  # The credit is not mentioned in the New Brunswick income tax act
     - title: New Brunswick tuition and education amounts
       href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-s11/5004-s11-22e.pdf#page=1
     - title: New Brunswick tax and credits

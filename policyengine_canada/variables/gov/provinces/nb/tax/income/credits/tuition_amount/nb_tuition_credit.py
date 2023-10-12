@@ -23,15 +23,15 @@ class nb_tuition_credit(Variable):
             period
         ).gov.provinces.nb.tax.income.credits.tuition_amount
         reduced_taxable_income = max_(taxable_income - tuition_income, 0)
-        tax_on_taxable_income = p.income_threshold.calc(taxable_income)
+        tax_on_taxable_income = p.phase_out_rate.calc(taxable_income)
         reduced_tax_on_taxable_income = max_(
             (tax_on_taxable_income / p.rate) - tuition_income,
             0,
         )
         return select(
             [
-                taxable_income <= p.income_threshold.thresholds[1],
-                taxable_income > p.income_threshold.thresholds[1],
+                taxable_income <= p.phase_out_rate.thresholds[1],
+                taxable_income > p.phase_out_rate.thresholds[1],
             ],
             [
                 min_(reduced_taxable_income, tuition),
