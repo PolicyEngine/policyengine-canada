@@ -1,0 +1,8 @@
+- name: 2022 Saskatchewan Dividend Tax Credit
+  period: 2022
+  input:
+    province_code: SK
+    sk_total_taxable_dividends: 15_000
+    sk_other_than_eligible_taxable_dividends: 1_000
+  output:
+    sk_dividend_tax_credit: 347.3
