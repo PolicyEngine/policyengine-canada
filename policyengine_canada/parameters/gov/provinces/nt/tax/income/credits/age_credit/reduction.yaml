@@ -1,0 +1,23 @@
+description: Northwest Territories phases the age credit out at this rate based on the filer's income. 
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0
+  - threshold:
+      2022-01-01: 39_826
+      2023-01-01: 42_335
+    rate:
+      2022-01-01: 0.15
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Northwest Territories Age Credit phase out rate
+  reference:
+  - title: Income Tax Act - Section 2.2 Age Credit 
+    href: https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf#page=31
+  - title: 2022 Worksheet NT428 - line 58080
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5012-d/5012-d-22e.pdf#page=1
+  - title: 2023 Personal Tax Credits Return - line 2 Age amount
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nt-ws/td1nt-ws-23e.pdf#page=1
