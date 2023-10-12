@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class qc_post_secondary_studies_amount_eligibility(Variable):
+class qc_post_secondary_studies_amount_eligible(Variable):
     value_type = bool
     entity = Person
     label = "Quebec amount for a child under 18 enrolled in post-secondary studies eligibility"
@@ -23,7 +23,7 @@ class qc_post_secondary_studies_amount_eligibility(Variable):
         # no spouse or the spouse is not claiming an amount for credits transferred from one spouse to the other
         has_spouse = person("has_spouse", period)
         # spouse_eligible = ~has_spouse| (credit transferred by your spouse <= 0 )
-        # TODO: Line 430
+        # TODO: Line 431
 
         return (
             age_eligible

@@ -1,0 +1,9 @@
+description: Quebec provides up to this amount of the travel benefits if you works in the intermidiate zone for each eligible member of your family.
+values:
+  2022-01-01: 600
+metadata:
+  unit: currency-CAD
+  label: Quebec travel benefit amount if living in intermidiate zone
+  reference:
+    - title: Revenu Quebec - Deduction for Residents of Designated Remote Areas - Line 236
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/201-to-260-net-income/line-236/

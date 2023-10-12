@@ -8,7 +8,7 @@ class qc_post_secondary_studies_amount(Variable):
         "Quebec amount for a child under 18 enrolled in post-secondary studies"
     )
     definition_period = YEAR
-    defined_for = "qc_post_secondary_studies_amount_eligibility"
+    defined_for = "qc_post_secondary_studies_amount_eligible"
 
     def formula(person, period, parameters):
         p = parameters(
