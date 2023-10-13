@@ -3,6 +3,7 @@ values:
   2022-01-01: 600
 metadata:
   unit: currency-CAD
+  period: year
   label: Quebec travel benefit amount if living in intermidiate zone
   reference:
     - title: Revenu Quebec - Deduction for Residents of Designated Remote Areas - Line 236

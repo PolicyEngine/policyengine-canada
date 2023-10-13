@@ -11,7 +11,7 @@ class qc_post_secondary_studies_transferred_amount(Variable):
     def formula(person, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.qc.tax.income.credits.child_pursuing_studies.transferred_amount
+        ).gov.provinces.qc.tax.income.credits.dependant_amount.child_in_post_secondary_studies.transferred_amount
 
         # Amount that you can transfer
         base_amount = p.base_amount

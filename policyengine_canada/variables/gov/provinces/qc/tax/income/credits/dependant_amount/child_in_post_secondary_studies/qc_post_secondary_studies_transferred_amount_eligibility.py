@@ -11,7 +11,7 @@ class qc_post_secondary_studies_transferred_amount_eligibility(Variable):
     def formula(person, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.qc.tax.income.credits.child_pursuing_studies.transferred_amount
+        ).gov.provinces.qc.tax.income.credits.dependant_amount.child_in_post_secondary_studies.transferred_amount
 
         age_eligible = person("age", period) >= p.age_eligibility
         is_full_time_student = person("is_full_time_student", period)

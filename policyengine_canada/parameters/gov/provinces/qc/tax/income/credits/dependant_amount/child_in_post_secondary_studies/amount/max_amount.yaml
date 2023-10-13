@@ -1,8 +1,9 @@
-description: Quebec limits this amount for a child under 18 enrolled in post-secondary studies for each year.
+description: Quebec provides this amount for an eligible child enrolled in post-secondary studies.
 values:
   2022-01-01: 6_202
 metadata:
   unit: currency-CAD
+  period: year
   label: Quebec maximum amount for a child in post-secondary studies
   reference:
     - title: Revenu Quebec - Amount for dependants and amount transferred by a child 18 or over enrolled in post-secondary studies - Line 367

@@ -11,7 +11,7 @@ class qc_post_secondary_studies_amount_eligible(Variable):
     def formula(person, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.qc.tax.income.credits.child_pursuing_studies.amount
+        ).gov.provinces.qc.tax.income.credits.dependant_amount.child_in_post_secondary_studies.amount
 
         # age eligibility
         age_eligible = person("age", period) < p.age_eligibility
