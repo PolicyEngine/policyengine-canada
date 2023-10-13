@@ -10,3 +10,6 @@ metadata:
       href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/350-to-398-1-non-refundable-tax-credits/line-367/
     - title: Schedule A - Amount for Dependants and Amount Transferred by a Child Pursuing Studies
       href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.A-V%282022-12%29.pdf#page=1
+    - title: Quebec I-3 - Taxation Act, Part I, Book V, Title I, Chapter I.0.1, 752.0.1. (d)
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3#se:752_0_1
+      # $2,861*2 = $5,722 in the legal reference, increased due to the inflation adjustments
