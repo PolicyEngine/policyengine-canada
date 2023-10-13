@@ -6,7 +6,7 @@ class qc_post_secondary_studies_transferred_amount(Variable):
     entity = Person
     label = "Quebec amount transferred by a child enrolled in post-secondary studies"
     definition_period = YEAR
-    defined_for = "qc_post_secondary_studies_transferred_amount_eligibility"
+    defined_for = "qc_post_secondary_studies_transferred_amount_eligible"
 
     def formula(person, period, parameters):
         p = parameters(

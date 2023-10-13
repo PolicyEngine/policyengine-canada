@@ -1,0 +1,54 @@
+- name: Quebec amount for other dependant under age eligibility
+  period: 2022
+  input:
+    age: 16
+    is_dependant: true
+    is_spouse: false
+    qc_post_secondary_studies_transferred_amount: 0
+    province_code: QC
+  output:
+    qc_amount_for_other_dependant_eligible: false
+
+- name: Quebec amount for non-dependant eligibility
+  period: 2022
+  input:
+    age: 19
+    is_dependant: false
+    is_spouse: false
+    qc_post_secondary_studies_transferred_amount: 0
+    province_code: QC
+  output:
+    qc_amount_for_other_dependant_eligible: false
+
+- name: Quebec amount for other dependant but the tax filer's spouse eligibility
+  period: 2022
+  input:
+    age: 20
+    is_dependant: true
+    is_spouse: true
+    qc_post_secondary_studies_transferred_amount: 0
+    province_code: QC
+  output:
+    qc_amount_for_other_dependant_eligible: false
+
+- name: Quebec amount for other dependant with amount transferred from post secondary studies eligibility
+  period: 2022
+  input:
+    age: 18
+    is_dependant: true
+    is_spouse: false
+    qc_post_secondary_studies_transferred_amount: 500
+    province_code: QC
+  output:
+    qc_amount_for_other_dependant_eligible: false
+
+- name: Quebec amount for other dependant eligibility
+  period: 2022
+  input:
+    age: 19
+    is_dependant: true
+    is_spouse: false
+    qc_post_secondary_studies_transferred_amount: 0
+    province_code: QC
+  output:
+    qc_amount_for_other_dependant_eligible: true
