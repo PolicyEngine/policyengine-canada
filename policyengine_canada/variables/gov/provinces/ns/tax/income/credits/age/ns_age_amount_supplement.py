@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class ns_age_amount_supplement(Variable):
     value_type = float
     entity = Person
-    label = "Nova Scotia Basic Personal Amount"
+    label = "Nova Scotia Age Amount Supplement"
     unit = CAD
     definition_period = YEAR
     defined_for = ProvinceCode.NS

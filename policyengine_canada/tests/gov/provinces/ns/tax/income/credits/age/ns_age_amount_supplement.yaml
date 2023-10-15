@@ -5,7 +5,7 @@
     age: 65
     ns_taxable_income: 24_999
   output:
-    ns_age_tax_credit: 1_465
+    ns_age_amount_supplement: 1_465
 
 - name: Nova Scotia Age amonut supplement; eligible age with eligible taxable income between 25_000 and 75_000
   period: 2023
@@ -14,7 +14,7 @@
     age: 65
     ns_taxable_income: 65_000
   output:
-    ns_age_tax_credit: 295
+    ns_age_amount_supplement: 293
 
 - name: Nova Scotia Age tax credit; eligible age with ineligible taxable income more than 75_000
   period: 2023
@@ -23,7 +23,7 @@
     age: 65
     ns_taxable_income: 75_001
   output:
-    ns_age_tax_credit: 0
+    ns_age_amount_supplement: 0
 
 - name: Nova Scotia Age tax credit; ineligible age with eligible taxable income
   period: 2023
@@ -32,7 +32,7 @@
     age: 64
     ns_taxable_income: 24_999
   output:
-    ns_age_tax_credit: 0
+    ns_age_amount_supplement: 0
 
 - name: Nova Scotia Age tax credit; ineligible age with ineligible taxable income
   period: 2023
@@ -41,4 +41,4 @@
     age: 64
     ns_taxable_income: 75_001
   output:
-    ns_age_tax_credit: 0
+    ns_age_amount_supplement: 0
