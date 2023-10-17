@@ -25,8 +25,8 @@ class ns_age_amount_supplement(Variable):
         # Calculate additional amount added to base amount
         reduced_additional_amount = max_(
             0,
-            p.age_supplement.base
-            - p.age_supplement.phase_out_rate.calc(taxable_income),
+            p.supplement.base
+            - p.supplement.phase_out_rate.calc(taxable_income),
         )
 
         return eligibility * reduced_additional_amount
