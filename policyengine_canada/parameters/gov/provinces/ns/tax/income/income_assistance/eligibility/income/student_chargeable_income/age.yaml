@@ -1,4 +1,4 @@
-description: Aged 16 to 21, attending an approved educational program qualifies for student chargeable income under Nova Scotia Income Assistance.
+description: Nova Scotia designates partial full-time employment income as non-chargeable for individuals aged 16 to 21, participating in an approved educational program under the Income Assistance program.
 brackets:
   - threshold:
       2021-01-01: 0
@@ -20,5 +20,5 @@ metadata:
   period: year
   label: Nova Scotia Income Assistance student chargeable income age
   reference:
-    - title: Employment Support and Income Assistance Act, Section 33
-      href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4
+    - title: Employment Support and Income Assistance Act, Section 33 (3)
+      href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC3_33
