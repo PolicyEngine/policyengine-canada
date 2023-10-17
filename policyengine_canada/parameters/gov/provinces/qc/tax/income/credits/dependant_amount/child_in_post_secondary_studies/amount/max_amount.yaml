@@ -1,6 +1,8 @@
 description: Quebec provides this amount for an eligible child enrolled in post-secondary studies.
 values:
   2022-01-01: 6_202
+  # $3,101 for each completed term up to a maximum of two terms per child
+  # we assume that a child completed two terms per year
 metadata:
   unit: currency-CAD
   period: year

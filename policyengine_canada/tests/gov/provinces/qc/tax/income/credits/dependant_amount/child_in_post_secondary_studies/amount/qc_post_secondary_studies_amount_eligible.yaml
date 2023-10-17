@@ -1,0 +1,71 @@
+- name: Quebec amount for a child over age enrolled in post-secondary studies eligibility
+  period: 2022
+  input:
+    age: 20
+    is_dependant: true
+    is_full_time_student: true
+    has_spouse: false
+    qc_credit_transferred_by_spouse: 0
+    province_code: QC
+  output:
+    qc_post_secondary_studies_amount_eligible: false
+
+- name: Quebec amount for a child enrolled in part-time post-secondary studies eligibility
+  period: 2022
+  input:
+    age: 15
+    is_dependant: true
+    is_full_time_student: false
+    has_spouse: false
+    qc_credit_transferred_by_spouse: 0
+    province_code: QC
+  output:
+    qc_post_secondary_studies_amount_eligible: false
+
+- name: Quebec amount for a child but not dependant enrolled in post-secondary studies eligibility
+  period: 2022
+  input:
+    age: 15
+    is_dependant: false
+    is_full_time_student: true
+    has_spouse: false
+    qc_credit_transferred_by_spouse: 0
+    province_code: QC
+  output:
+    qc_post_secondary_studies_amount_eligible: false
+
+- name: Quebec amount for a child has spouse and transfering amount to his/her spouse in post-secondary studies eligibility
+  period: 2022
+  input:
+    age: 17
+    is_dependant: true
+    is_full_time_student: true
+    has_spouse: true
+    qc_credit_transferred_by_spouse: 300
+    province_code: QC
+  output:
+    qc_post_secondary_studies_amount_eligible: false
+
+- name: Quebec amount for a child has spouse but not transfer amount to his/her spouse in post-secondary studies eligibility
+  period: 2022
+  input:
+    age: 17
+    is_dependant: true
+    is_full_time_student: true
+    has_spouse: true
+    qc_credit_transferred_by_spouse: 0
+    province_code: QC
+  output:
+    qc_post_secondary_studies_amount_eligible: true
+
+- name: Quebec amount for a single child enrollde in post-secondary studies eligibility
+  period: 2022
+  input:
+    age: 17
+    is_dependant: true
+    is_full_time_student: true
+    has_spouse: false
+    qc_credit_transferred_by_spouse: 0
+    province_code: QC
+  output:
+    qc_post_secondary_studies_amount_eligible: true

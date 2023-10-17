@@ -22,8 +22,10 @@ class qc_post_secondary_studies_amount_eligible(Variable):
 
         # no spouse or the spouse is not claiming an amount for credits transferred from one spouse to the other
         has_spouse = person("has_spouse", period)
-        # spouse_eligible = ~has_spouse| (credit transferred by your spouse <= 0 )
-        # TODO: Line 431
+        credit_transferred_by_spouse = person(
+            "qc_credit_transferred_by_spouse", period
+        )
+        spouse_eligible = ~has_spouse | (credit_transferred_by_spouse == 0)
 
         return (
             age_eligible
