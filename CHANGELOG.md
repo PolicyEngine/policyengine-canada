@@ -5,6 +5,142 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.86.2] - 2023-10-08 04:38:29
+
+## [0.86.1] - 2023-10-06 11:22:22
+
+### Changed
+
+- Redefine `is_dependant`.
+
+## [0.86.0] - 2023-10-04 23:17:14
+
+### Added
+
+- Quebec work premium tax credit.
+
+## [0.85.1] - 2023-10-03 23:05:56
+
+### Fixed
+
+- Disability tax credit parameter readme file.
+
+## [0.85.0] - 2023-09-28 18:01:54
+
+### Added
+
+- Nova Scotia income assistance asset eligibility.
+
+## [0.84.0] - 2023-09-23 22:06:50
+
+### Added
+
+- Northwest Territories basic personal amount.
+
+## [0.83.0] - 2023-09-04 23:15:38
+
+### Added
+
+- Nunavut age amount credit.
+
+## [0.82.0] - 2023-08-25 15:15:09
+
+### Added
+
+- Manitoba age amount credit.
+
+## [0.81.0] - 2023-08-24 21:35:50
+
+### Added
+
+- Northwest Territories Age Credit.
+
+## [0.80.2] - 2023-08-21 20:36:42
+
+## [0.80.1] - 2023-08-21 20:22:09
+
+### Fixed
+
+- Manitoba BPA parameter folder structure.
+
+## [0.80.0] - 2023-08-20 20:37:37
+
+### Added
+
+- Yukon Employment Amount.
+
+## [0.79.0] - 2023-08-18 04:11:47
+
+### Added
+
+- Saskatchewan age amount tax credit.
+
+## [0.78.0] - 2023-08-18 03:53:19
+
+### Added
+
+- Saskatchewan Senior Supplementary amount Tax Credit.
+
+## [0.77.0] - 2023-08-18 03:48:59
+
+### Added
+
+- Saskatchewan disability amount.
+
+## [0.76.0] - 2023-08-11 04:31:59
+
+### Added
+
+- Alberta age credit.
+
+## [0.75.0] - 2023-08-10 01:36:53
+
+### Added
+
+- Quebec basic personal amount.
+
+## [0.74.0] - 2023-08-10 01:10:48
+
+### Added
+
+- Quebec family allowance tax credit.
+
+## [0.73.0] - 2023-08-09 23:04:22
+
+### Added
+
+- Canada employment amount.
+
+## [0.72.0] - 2023-08-08 01:39:11
+
+### Added
+
+- Manitoba basic personal amount.
+
+## [0.71.0] - 2023-08-07 00:48:20
+
+### Added
+
+- Nova Scotia Income Assistance Age Eligibility.
+
+## [0.70.0] - 2023-07-19 18:54:15
+
+### Added
+
+- Yukon Government carbon price rebate - Individuals (YGCPRI)
+
+## [0.69.0] - 2023-07-03 02:09:04
+
+### Added
+
+- Nova Scotia Age tax credit.
+
+## [0.68.0] - 2023-06-29 16:50:09
+
+### Added
+
+- Alberta pension credit.
+
 ## [0.67.0] - 2023-06-01 03:05:10
 
 ### Added
@@ -534,6 +670,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.86.2]: https://github.com/PolicyEngine/policyengine-canada/compare/0.86.1...0.86.2
+[0.86.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.86.0...0.86.1
+[0.86.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.85.1...0.86.0
+[0.85.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.85.0...0.85.1
+[0.85.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.84.0...0.85.0
+[0.84.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.83.0...0.84.0
+[0.83.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.82.0...0.83.0
+[0.82.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.81.0...0.82.0
+[0.81.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.80.2...0.81.0
+[0.80.2]: https://github.com/PolicyEngine/policyengine-canada/compare/0.80.1...0.80.2
+[0.80.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.80.0...0.80.1
+[0.80.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.79.0...0.80.0
+[0.79.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.78.0...0.79.0
+[0.78.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.77.0...0.78.0
+[0.77.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.76.0...0.77.0
+[0.76.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.75.0...0.76.0
+[0.75.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.74.0...0.75.0
+[0.74.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.73.0...0.74.0
+[0.73.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.72.0...0.73.0
+[0.72.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.71.0...0.72.0
+[0.71.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.70.0...0.71.0
+[0.70.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.69.0...0.70.0
+[0.69.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.68.0...0.69.0
+[0.68.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.67.0...0.68.0
 [0.67.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.66.0...0.67.0
 [0.66.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.65.0...0.66.0
 [0.65.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.64.0...0.65.0

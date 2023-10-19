@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class basic_personal_amount_supplement(Variable):
     value_type = float
     entity = Person
-    label = "Basic Personal Amount"
+    label = "Basic Personal Amount Supplement"
     unit = CAD
     definition_period = YEAR
 
