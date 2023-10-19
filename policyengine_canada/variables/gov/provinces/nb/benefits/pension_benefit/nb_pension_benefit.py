@@ -19,5 +19,5 @@ class nb_pension_benefit(Variable):
             period
         ).gov.provinces.nb.benefits.pension_benefit.maximum_benefit
         age_eligibility = age > threshold
-        # min of 1_000 or less
+        # 1_000 or less
         return age_eligibility * min_(maximum_benefit, pension_income)

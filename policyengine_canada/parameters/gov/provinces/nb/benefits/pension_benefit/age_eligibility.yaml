@@ -1,9 +1,9 @@
-description: New Brunswick Pension Age Eligibilty
+description: New Brunswick provides the Pension benefit for filers at or above this age.
 values:
   2023-01-01: 65
 metadata:
   unit: year
   label: New Brunswick pension age eligibility
   reference:
-    - title: N.B. pension benefit
+    - title: New Brunswick pension age eligibility
       href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/new-brunswick/5004-pc/information-residents-new-brunswick.html#P64_5140
