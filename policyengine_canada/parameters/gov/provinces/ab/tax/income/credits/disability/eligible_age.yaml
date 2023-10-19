@@ -1,0 +1,9 @@
+description: Alberta provides certain disability credit under this age.
+values:
+  2022-01-01: 18
+metadata:
+  unit: year
+  label: Alberta disability credit age eligibility
+  reference:
+  - title: Alberta Disablitiy credit - Page 2
+    href:  https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5009-d/5009-d-22e.pdf

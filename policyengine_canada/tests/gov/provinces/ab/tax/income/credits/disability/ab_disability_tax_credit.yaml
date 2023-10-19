@@ -1,13 +1,47 @@
-- name: Eligible person 
-  period: 2023
+- name: Eligible person over 18 
+  period: 2022
   input:
+    province_code: AB
+    age: 19
     ab_disability_tax_credit_eligible: true
   output:
-    ab_disability_tax_credit: 16_201
+    ab_disability_tax_credit: 15_284
+  
+- name: Eligible person under 18 with childcare_received less than threshold
+  period: 2022
+  input:
+    province_code: AB
+    age: 17
+    ab_disability_tax_credit_eligible: true
+    childcare_received: 2_000
+  output:
+    ab_disability_tax_credit: 26_754
+  
+- name: Eligible person under 18 with childcare_received greater than threshold, less than max_amount_child
+  period: 2022
+  input:
+    province_code: AB
+    age: 17
+    ab_disability_tax_credit_eligible: true
+    childcare_received: 8_000
+  output:
+    ab_disability_tax_credit: 21_882
+
+- name: Eligible person under 18 with childcare_received greater than max_amount_child
+  period: 2022
+  input:
+    province_code: AB
+    age: 17
+    ab_disability_tax_credit_eligible: true
+    childcare_received: 15_000
+  output:
+    ab_disability_tax_credit: 15_284
 
 - name: Uneligible person 
-  period: 2023
+  period: 2022
   input:
+    province_code: AB
+    age: 18
     ab_disability_tax_credit_eligible: false
   output:
     ab_disability_tax_credit: 0
