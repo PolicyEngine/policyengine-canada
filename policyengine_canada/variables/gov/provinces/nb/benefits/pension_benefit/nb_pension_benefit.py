@@ -12,12 +12,8 @@ class nb_pension_benefit(Variable):
     def formula(person, period, parameters):
         age = person("age", period)
         pension_income = person("pension_and_savings_plan_income", period)
-        threshold = parameters(
+        max_amount = parameters(
             period
-        ).gov.provinces.nb.benefits.pension_benefit.age_eligibility
-        maximum_benefit = parameters(
-            period
-        ).gov.provinces.nb.benefits.pension_benefit.maximum_benefit
-        age_eligibility = age > threshold
-        # 1_000 or less
-        return age_eligibility * min_(maximum_benefit, pension_income)
+        ).gov.provinces.nb.benefits.pension_benefit.max_amount
+        # Capped at a certain amount
+        return min_(max_amount, pension_income)
