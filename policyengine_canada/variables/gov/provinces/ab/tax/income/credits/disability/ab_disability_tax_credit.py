@@ -12,9 +12,11 @@ class ab_disability_tax_credit(Variable):
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.ab.tax.income.credits.disability
         childcare_received = person("childcare_received", period)
-        # max_amount_child - (childcare_received - threshold)
-        child_credit = (person("age", period) < p.eligible_age) * max(
-            0, p.max_amount_child - max(0, childcare_received - p.threshold)
+        childcare = max_(0, childcare_received - p.income_threshold)
+        child_credit_eligibility = person("age", period) < p.eligible_age
+        child_credit = (
+            max_(0, p.max_amount.younger - childcare)
+            * child_credit_eligibility
         )
 
-        return min(p.max_amount_total, p.base + child_credit)
+        return min_(p.max_amount_total, p.max_amount.base + child_credit)
