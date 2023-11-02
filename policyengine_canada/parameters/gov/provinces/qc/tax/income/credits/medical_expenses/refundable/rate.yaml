@@ -1,4 +1,4 @@
-description: Quebec provides the refundable medical expense credit at this rate based on the medical expense.
+description: Quebec limits the refundable medical expense credit to this rate of medical expenses.
 values:
   2022-01-01: 0.25
 metadata:

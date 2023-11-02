@@ -1,19 +1,17 @@
-- name: Quebec non-refundable medical expenses tax credit for income within limit
+- name: Quebec non-refundable medical expenses tax credit for family income within limit
   period: 2022
   input:
     medical_expenses: 3_000
-    head_income: 20_000
-    spouse_income: 15_000
+    qc_family_income: 35_000
     province_code: QC
   output:
-    qc_non_refundable_medical_expense: 1_950 # 3000-0.03*(20000+15000)
+    qc_non_refundable_medical_expense: 1_950 # 3000-0.03*35000
 
-- name: Quebec non-refundable medical expenses tax credit for income above limit
+- name: Quebec non-refundable medical expenses tax credit for family income above limit
   period: 2022
   input:
     medical_expenses: 1_000
-    head_income: 30_000
-    spouse_income: 30_000
+    qc_family_income: 60_000
     province_code: QC
   output:
-    qc_non_refundable_medical_expense: 0 # max(0, 1000-0.03*(30000+30000)) = max(0, -800)
+    qc_non_refundable_medical_expense: 0 # max(0, 1000-0.03*(60000)) = max(0, -800)

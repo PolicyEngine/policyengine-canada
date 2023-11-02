@@ -3,9 +3,8 @@
   input:
     qc_refundable_medical_expense_credit_eligible: false
     qc_non_refundable_medical_expense: 3_000
-    disability_supports_expense: 1_000
-    head_income: 60_000
-    spouse_income: 50_000
+    disability_support_expenses: 1_000
+    qc_family_income: 110_000
   output:
     qc_refundable_medical_expense_credit: 0
 
@@ -14,31 +13,28 @@
   input:
     qc_refundable_medical_expense_credit_eligible: true
     qc_non_refundable_medical_expense: 1_000
-    disability_supports_expense: 1_000
-    head_income: 30_000
-    spouse_income: 30_000
+    disability_support_expenses: 1_000
+    qc_family_income: 60_000
   output:
-    qc_refundable_medical_expense_credit: 0 #max(0,(min(1274, 0.25*(1000+1000))-0.05*(30000+30000-24635)))
+    qc_refundable_medical_expense_credit: 0 #max(0,(min(1274, 0.25*(1000+1000))-0.05*(60000-24635)))
 
 - name: Quebec refundable medical expenses tax credit for household family income within limit
   period: 2022
   input:
     qc_refundable_medical_expense_credit_eligible: true
     qc_non_refundable_medical_expense: 3_000
-    disability_supports_expense: 3_000
-    head_income: 20_000
-    spouse_income: 30_000
+    disability_support_expenses: 3_000
+    qc_family_income: 50_000
   output:
-    qc_refundable_medical_expense_credit: 5.75 #max(0,(min(1274, 0.25*(3000+3000))-0.05*(20000+30000-24635)))=1274-1268.25
+    qc_refundable_medical_expense_credit: 5.75 #max(0,(min(1274, 0.25*(3000+3000))-0.05*(50000-24635)))=1274-1268.25
 
 - name: Quebec refundable medical expenses tax credit for low household family income 
   period: 2022
   input:
     qc_refundable_medical_expense_credit_eligible: true
     qc_non_refundable_medical_expense: 3_000
-    disability_supports_expense: 3_000
-    head_income: 2_000
-    spouse_income: 3_000
+    disability_support_expenses: 3_000
+    qc_family_income: 5_000
   output:
     qc_refundable_medical_expense_credit: 1_274 #max(0,(min(1274, 0.25*(3000+3000))-0.05*(5000-24635)))=1274-1268.25
   
@@ -47,8 +43,7 @@
   input:
     qc_refundable_medical_expense_credit_eligible: true
     qc_non_refundable_medical_expense: 1_000
-    disability_supports_expense: 2_000
-    head_income: 20_000
-    spouse_income: 30_000
+    disability_support_expenses: 2_000
+    qc_family_income: 50_000
   output:
-    qc_refundable_medical_expense_credit: 0 #max(0,(min(1274, 0.25*(1000+2000))-0.05*(20000+30000-24635)))=max(0,750-1268.25)
+    qc_refundable_medical_expense_credit: 0 #max(0,(min(1274, 0.25*(1000+2000))-0.05*(50000-24635)))=max(0,750-1268.25)

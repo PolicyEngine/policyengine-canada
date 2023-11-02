@@ -1,8 +1,8 @@
 from policyengine_canada.model_api import *
 
 
-class disability_supports_expense(Variable):
+class disability_support_expenses(Variable):
     value_type = float
     entity = Person
-    label = "Disability Supports Expense"
+    label = "Disability Support Expenses"
     definition_period = YEAR

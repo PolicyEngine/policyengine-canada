@@ -1,9 +1,9 @@
-description: Quebec provides this maximum amount for its refundable medical expense tax credit.
+description: Quebec provides this maximum refundable medical expense tax credit.
 values:
   2022-01-01: 1_274
 metadata:
   unit: currency-CAD
-  label: Quebec maximum refundable medical expenses tax credit 
+  label: Quebec refundable medical expenses tax credit max amount
   reference:
     - title: Schedule B – Tax Relief Measures - Part D
       href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf#page=2
