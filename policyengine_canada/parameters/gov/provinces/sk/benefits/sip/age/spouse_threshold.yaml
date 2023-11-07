@@ -1,0 +1,10 @@
+decription: Saskatchewan Seniors Income Plan Spouse Age Threshold
+values: 
+  2022-07-01: 60
+
+metadata:
+  unit: year
+  label: Saskatchewan Seniors Income Plan Spouse Age Threshold
+  reference:
+  - title: Saskatchewan Seniors Income Plan
+    href: https://www.saskatchewan.ca/residents/family-and-social-support/seniors-services/financial-help-for-seniors
