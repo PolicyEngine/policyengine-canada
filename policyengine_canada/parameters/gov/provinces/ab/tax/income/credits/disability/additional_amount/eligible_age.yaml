@@ -4,7 +4,9 @@ values:
 metadata:
   unit: year
   period: year
-  label: Alberta disability credit age eligibility
+  label: Alberta disability credit additional amount age eligibility
   reference:
   - title: Alberta Disablitiy credit - Page 2
     href:  https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5009-d/5009-d-22e.pdf#page=2
+  - title: Alberta Income Tax Act - Section 13
+    href: https://kings-printer.alberta.ca/1266.cfm?page=a30.cfm&leg_type=Acts&isbncln=9780779842674

@@ -1,10 +1,10 @@
-description: Alberta limits the disability credit to this maximum base amount.
+description: Alberta provides this additional disability credit amount for younger filers.
 values:
-  2022-01-01: 26_754
+  2022-01-01: 11_470
 metadata:
   unit: currency-CAD
   period: year
-  label: Alberta disability credit max base amount
+  label: Alberta disability credit younger max amount
   reference:
   - title: Alberta Disablitiy credit - Page 2
     href:  https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5009-d/5009-d-22e.pdf#page=2
