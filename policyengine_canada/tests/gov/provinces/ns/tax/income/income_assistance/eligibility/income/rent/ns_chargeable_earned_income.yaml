@@ -3,7 +3,7 @@
   input:
     province_code: NS
     is_disabled: 0
-    earned_income:
+    earned_income: 100
   output:
     ns_chargeable_earned_income: 
 
