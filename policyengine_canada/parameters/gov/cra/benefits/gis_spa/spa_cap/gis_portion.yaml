@@ -1,0 +1,9 @@
+description: Maximum amount of the 'GIS-portion' of the SPA. By default equal to the GIS family amount. 
+values:
+  1999-12-31: 6_240.18
+metadata:
+  period: year
+  label: Maximum amount of the GIS-portion of the SPA.
+  reference:
+  - title: SPSD/M Variable Guide
+   

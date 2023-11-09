@@ -4,7 +4,7 @@
     age: 66
     adult_years_in_canada: 47
   output:
-    oas_eligibility: TRUE
+    oas_eligible: true
 
 - name: 65 year old but with only 5 years of residency, so not eligible
   period: 2022
@@ -12,7 +12,7 @@
     age: 65
     adult_years_in_canada: 5
   output:
-    oas_eligibility: FALSE
+    oas_eligible: false
 
 - name: only 64 years old so not eligible
   period: 2022
@@ -20,4 +20,4 @@
     age: 64
     adult_years_in_canada: 46
   output:
-    oas_eligibility: FALSE
+    oas_eligible: false
