@@ -15,9 +15,9 @@ class sk_dividend_tax_credit(Variable):
             period
         ).gov.provinces.sk.tax.income.credits.dividend_tax_credit
 
-        taxable_dividends = person("sk_total_taxable_dividends", period)
+        taxable_dividends = person("taxable_dividend_income", period)
         other_than_eligible_taxable_dividends = person(
-            "sk_other_than_eligible_taxable_dividends", period
+            "other_than_eligible_taxable_dividend_income", period
         )
 
         eligible_taxable_dividends_weight_percent = p.eligible_cal_percent
@@ -25,10 +25,9 @@ class sk_dividend_tax_credit(Variable):
             p.other_than_eligible_cal_percent
         )
 
+        credits_on_eligible_taxable_dividends = (taxable_dividends - other_than_eligible_taxable_dividends) * eligible_taxable_dividends_weight_percent
+        credits_on_other_than_eligible_taxable_dividends = other_than_eligible_taxable_dividends * other_than_eligible_taxable_dividends_weight_percent
+
         return (
-            (taxable_dividends - other_than_eligible_taxable_dividends)
-            * eligible_taxable_dividends_weight_percent
-        ) + (
-            other_than_eligible_taxable_dividends
-            * other_than_eligible_taxable_dividends_weight_percent
+            credits_on_eligible_taxable_dividends + credits_on_other_than_eligible_taxable_dividends
         )
