@@ -1,0 +1,20 @@
+description: Newfoundland and Labrador phases the income supplement in at this rate.
+brackets:
+  - threshold: 
+      2023-01-01: 0
+    rate:
+      2023-01-01: 0
+  - threshold:
+      2023-01-01: 15_000
+    rate:
+      2023-01-01: 0.0532
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: Newfoundland and Labrador Income Supplement phase in rate
+  reference:
+    - title: Government of Canada - Newfoundland and Labrador Income Supplement
+      href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/
+    - title: Government of Canada - Newfoundland and Labrador Income Tax Act §34
+      href: https://www.assembly.nl.ca/Legislation/sr/statutes/i01-1.htm#34_ 
