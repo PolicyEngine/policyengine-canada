@@ -1,0 +1,13 @@
+description: British Columbia divides the tax on taxable income by the lowest tax rate to calculate the tuition credit.
+values:
+  2022-01-01: 0.0506
+metadata:
+  unit: currency-CAD
+  # "appropriate percentage" for a taxation year means the lowest percentage specified in section 4.1 (1) 
+  # that is applicable in determining tax payable under this Act for the year
+  label: New Brunswick lowest tax rate # appropriate percentage
+  reference:
+    - title: 2023 New Brunswick income tax act § 4.6
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96215_00_multi#section4.6
+    - title: 2022 New Brunswick tuition and education amounts, BC(S11) 
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-s11/5004-s11-22e.pdf#page=1

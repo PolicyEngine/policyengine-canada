@@ -1,0 +1,44 @@
+description: British Columbia taxes individuals based on their income at a progressive rate. 
+brackets:
+  - threshold: 
+      2022-01-01: 0
+    rate: 
+      2022-01-01: 0.0506
+  - threshold:
+      2022-01-01: 43_070
+    rate:
+      2022-01-01: 0.077
+  - threshold: 
+      2022-01-01: 86_141
+    rate: 
+      2022-01-01: 0.105
+  - threshold:
+      2022-01-01: 98_901
+    rate: 
+      2022-01-01: 0.1229
+  - threshold:
+      2022-01-01: 120_094
+    rate: 
+      2022-01-01: 0.147
+  - threshold:
+      2022-01-01: 162_832
+    rate: 
+      2022-01-01: 0.168
+  - threshold:
+      2022-01-01: 227_091
+    rate: 
+      2022-01-01: 0.205
+
+
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: British Columbia tax brackets rate
+  reference:
+    - title: 2023 British Columbia income tax act § 4.1
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96215_00_multi#section4.1
+    - title: 2022 British Columbia tuition and education amounts, Schedule BC(S11)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5010-s11/5010-s11-22e.pdf#page=1
+    - title: 2022 British Columbia Tax, BC428
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5010-c/5010-c-22e.pdf#page=1

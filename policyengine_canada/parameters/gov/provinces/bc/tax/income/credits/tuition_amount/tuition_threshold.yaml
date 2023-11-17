@@ -1,0 +1,13 @@
+description: British Columbia qualifies filers for the tuition tax credit with tuition expense above this rate.
+values: 
+  2022-01-01: 100
+metadata:
+  unit: currency-CAD
+  period: year
+  label: British Columbia tuition credit tuition threshold
+  reference:
+  - title: 2023 British Columbia Personal Tax Credits Return, TD1BC
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nb/td1nb-23e.pdf#page=1
+  # The tuition credit section of British Columbia income act refered to section 118.5 of federal act 
+  - title: 2023 Canada Income Tac Act § 118.5(1.1)
+    href: https://laws-lois.justice.gc.ca/PDF/I-3.3.pdf#page=1566

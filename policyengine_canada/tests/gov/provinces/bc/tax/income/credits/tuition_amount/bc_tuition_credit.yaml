@@ -1,0 +1,49 @@
+- name: Lowest tax on taxable income threshold
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    bc_taxable_income: 44_887
+    bc_comprehensive_tax_credits: 20_000
+    tuition_expenses: 10_000
+  output:
+    bc_tuition_credit: 10_000
+
+- name: Second tax on taxable income threshold
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    bc_taxable_income: 54_887
+    bc_comprehensive_tax_credits: 20_000
+    tuition_expenses: 10_000
+  output:
+    bc_tuition_credit: 10_000
+
+- name: Third tax on taxable income threshold
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    bc_taxable_income: 139_775
+    bc_comprehensive_tax_credits: 20_000
+    tuition_expenses: 50_000
+  output:
+    bc_tuition_credit: 50_000
+
+- name: Fourth tax on taxable income threshold
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    bc_taxable_income: 145_965
+    bc_comprehensive_tax_credits: 100_000
+    tuition_expenses: 150_000
+  output:
+    bc_tuition_credit: 150_000
+
+- name: Highest tax on taxable income threshold
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    bc_taxable_income: 167_280
+    bc_comprehensive_tax_credits: 100_000
+    tuition_expenses: 160_000
+  output:
+    bc_tuition_credit: 160_000
