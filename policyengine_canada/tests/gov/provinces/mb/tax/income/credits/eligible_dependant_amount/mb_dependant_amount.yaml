@@ -1,0 +1,15 @@
+- name: ineligible dependant income
+  period: 2023
+  input:
+    mb_dependant_amount_eligibility: false
+    dependant_income: 9_500
+  output:
+    mb_dependant_amount: 0 # ineligible dependant's net income exceeding $9134
+
+- name: eligible dependant income
+  period: 2023
+  input:
+    mb_dependant_amount_eligibility: true
+    dependant_income: 9_000
+  output:
+    mb_dependant_amount: 134 # $9,134 - $9,000 = $134

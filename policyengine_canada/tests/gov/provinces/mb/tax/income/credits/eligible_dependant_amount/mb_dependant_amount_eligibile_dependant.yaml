@@ -1,0 +1,19 @@
+- name: ineligible dependant 
+  period: 2023
+  input:
+    province_code: MB
+    is_relative: true
+    lived_together: true
+    dependant_income: 9000
+  output:
+    mb_dependant_amount_eligibile_dependant: true
+
+- name: ineligible dependant 
+  period: 2023
+  input:
+    province_code: MB
+    is_relative: false
+    lived_together: false
+    dependant_income: 9_500
+  output:
+    mb_dependant_amount_eligibile_dependant: false
