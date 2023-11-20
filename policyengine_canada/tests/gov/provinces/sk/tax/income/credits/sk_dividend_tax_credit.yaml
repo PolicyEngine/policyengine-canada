@@ -24,3 +24,12 @@
     other_than_eligible_taxable_dividend_income: 2_800
   output:
     sk_dividend_tax_credit: 735.14
+
+- name: 2022 Saskatchewan Dividend Tax Credit Test 4
+  period: 2022
+  input:
+    province_code: SK
+    taxable_dividend_income: 30_000
+    other_than_eligible_taxable_dividend_income: 3_800
+  output:
+    sk_dividend_tax_credit: 862.09
