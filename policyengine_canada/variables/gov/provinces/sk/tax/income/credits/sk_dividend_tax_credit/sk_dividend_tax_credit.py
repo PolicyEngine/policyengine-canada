@@ -25,7 +25,9 @@ class sk_dividend_tax_credit(Variable):
             p.other_than_eligible_cal_percent
         )
 
-        credits_on_eligible_taxable_dividends = (taxable_dividends - other_than_eligible_taxable_dividends) * eligible_taxable_dividends_weight_percent
+        reduced_taxable_dividends = max_(taxable_dividends - other_than_eligible_taxable_dividends, 0)  
+        credits_on_eligible_taxable_dividends = reduced_taxable_dividends * eligible_taxable_dividends_weight_percent
+    
         credits_on_other_than_eligible_taxable_dividends = other_than_eligible_taxable_dividends * other_than_eligible_taxable_dividends_weight_percent
 
         return (

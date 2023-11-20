@@ -8,4 +8,3 @@ class other_than_eligible_taxable_dividend_income(Variable):
     unit = CAD
     definition_period = YEAR
     reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5008-d/5008-d-22e.pdf#page=3"
-    defined_for = ProvinceCode.SK
