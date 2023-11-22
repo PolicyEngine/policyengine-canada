@@ -2,7 +2,7 @@ from policyengine_canada.model_api import *
 
 
 class nu_single_status_credit_eligible(Variable):
-    value_type = float
+    value_type = bool
     entity = Person
     label = "Eligible for the Nunavut single status credit"
     definition_period = YEAR
