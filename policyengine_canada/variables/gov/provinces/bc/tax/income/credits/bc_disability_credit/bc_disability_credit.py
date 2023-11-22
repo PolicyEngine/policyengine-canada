@@ -13,7 +13,7 @@ class bc_disability_credit(Variable):
         p = parameters(period).gov.provinces.bc.tax.income.credits.disability
         childcare_received = person(
             "childcare_received", period
-        )  # create new variable in household/person?
+        )  
         additional_amount_reduction = max_(
             0, childcare_received - p.additional_amount.income_threshold
         )
