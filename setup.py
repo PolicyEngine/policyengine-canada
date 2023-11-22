@@ -18,7 +18,6 @@ general_requirements = [
     "microdf_python>=0.3.0,<1",
     "nptyping<2",
     "numexpr<3",
-    "numpy>=1.11,<1.23",
     "pandas>=1.4.2,<2",
     "plotly>=5.6.0,<6",
     "policyengine_core>=2.1,<3",
@@ -43,7 +42,7 @@ dev_requirements = [
 
 setup(
     name="policyengine-canada",
-    version="0.85.0",
+    version="0.87.0",
     author="PolicyEngine",
     author_email="hello@policyengine.org",
     classifiers=[
