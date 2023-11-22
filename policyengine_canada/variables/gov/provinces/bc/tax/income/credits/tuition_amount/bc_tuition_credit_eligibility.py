@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class bc_tuition_credit_eligibility(Variable):
     value_type = bool
     entity = Person
-    label = "Eligible for the British Columbia tuition credit"
+    label = "Eligibility for the British Columbia tuition credit"
     definition_period = YEAR
     reference = (
         "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-32300-your-tuition-education-textbook-amounts/eligible-tuition-fees.html",  # Tuition Amount
