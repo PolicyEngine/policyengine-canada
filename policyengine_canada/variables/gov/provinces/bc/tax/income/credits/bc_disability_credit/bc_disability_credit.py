@@ -11,9 +11,7 @@ class bc_disability_credit(Variable):
 
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.bc.tax.income.credits.disability
-        childcare_received = person(
-            "childcare_received", period
-        )  
+        childcare_received = person("childcare_received", period)
         additional_amount_reduction = max_(
             0, childcare_received - p.additional_amount.income_threshold
         )
