@@ -1,0 +1,47 @@
+- name: Eligible person over 18 
+  period: 2023
+  input:
+    province_code: BC
+    age: 19
+    bc_disability_credit_eligible: true
+  output:
+    bc_disability_credit: 8_986
+
+- name: Eligible person under 18 with childcare_received less than threshold
+  period: 2023
+  input:
+    province_code: BC
+    age: 17
+    bc_disability_credit_eligible: true
+    childcare_received: 3_000
+  output:
+    bc_disability_credit: 14_228
+
+- name: Eligible person under 18 with childcare_received greater than threshold, less than max_amount_child
+  period: 2023
+  input:
+    province_code: BC
+    age: 17
+    bc_disability_credit_eligible: true
+    childcare_received: 3_500
+  output:
+    bc_disability_credit: 13_772
+
+- name: Eligible person under 18 with childcare_received greater than max_amount_child
+  period: 2023
+  input:
+    province_code: BC
+    age: 17
+    bc_disability_credit_eligible: true
+    childcare_received: 15_000
+  output:
+    bc_disability_credit: 8_986
+
+- name: Uneligible person 
+  period: 2023
+  input:
+    province_code: BC
+    age: 18
+    bc_disability_credit_eligible: false
+  output:
+    bc_disability_credit: 0

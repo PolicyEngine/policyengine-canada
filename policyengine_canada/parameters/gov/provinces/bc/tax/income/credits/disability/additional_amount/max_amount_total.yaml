@@ -1,0 +1,12 @@
+description: British Columbia limits the disability credit to this maximum base amount.
+values:
+  2023-01-01: 14_228
+metadata:
+  unit: currency-CAD
+  period: year
+  label: British Columbia disability credit max amount
+  reference:
+  - title: B.C. basic personal income tax credits
+    href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/basic
+  - title: Income Tax Act (4.51)
+    href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96215_00_multi#section4.51
