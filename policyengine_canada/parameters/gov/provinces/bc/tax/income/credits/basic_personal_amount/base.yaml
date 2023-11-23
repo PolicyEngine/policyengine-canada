@@ -1,0 +1,13 @@
+description: British Columbia provides the following basic personal amount. 
+values:
+  2022-01-01: 11_302
+  2023-01-01: 11_981
+metadata:
+  unit: currency-CAD
+  label: British Columbia basic personal amount
+  reference:
+  - title: 2022 British Columbia, Personal Tax Credits Return, TD1BC
+    href: https://tsaykeh.com/files/pdf/1650179447_BC%20Tax%20Form.pdf#page=1
+  - title: 2023 British Columbia, Personal Tax Credits Return, TD1BC
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1bc/td1bc-23e.pdf#page=1
+# The British Columbia Income Tax Act does not have a separate section describing the basic personal amount
