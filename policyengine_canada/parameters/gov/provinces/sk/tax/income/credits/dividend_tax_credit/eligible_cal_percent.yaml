@@ -1,6 +1,6 @@
 description: Saskatchewan applies this weight percentage on the eligible taxable amount of dividends in calculating the total dividend tax credit.
 values: 
-  2022-01-01: 0.01695
+  2022-01-01: 0.11 
 metadata:
   unit: /1
   period: year
