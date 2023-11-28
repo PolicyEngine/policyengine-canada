@@ -13,29 +13,22 @@ class sk_dividend_tax_credit(Variable):
     def formula(person, period, parameters):
         p = parameters(
             period
-        ).gov.provinces.sk.tax.income.credits.dividend_tax_credit
+        ).gov.provinces.sk.tax.income.credits.dividend_tax_credit.fraction
 
         taxable_dividends = person("taxable_dividend_income", period)
         other_than_eligible_taxable_dividends = person(
             "other_than_eligible_taxable_dividend_income", period
         )
 
-        eligible_taxable_dividends_weight_percent = p.eligible_cal_percent
-        other_than_eligible_taxable_dividends_weight_percent = (
-            p.other_than_eligible_cal_percent
-        )
-
         reduced_taxable_dividends = max_(
             taxable_dividends - other_than_eligible_taxable_dividends, 0
         )
         credits_on_eligible_taxable_dividends = (
-            reduced_taxable_dividends
-            * eligible_taxable_dividends_weight_percent
+            reduced_taxable_dividends * p.eligible
         )
 
         credits_on_other_than_eligible_taxable_dividends = (
-            other_than_eligible_taxable_dividends
-            * other_than_eligible_taxable_dividends_weight_percent
+            other_than_eligible_taxable_dividends * p.other_than_eligible
         )
 
         return (
