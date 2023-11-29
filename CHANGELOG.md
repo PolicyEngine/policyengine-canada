@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.87.0] - 2023-11-09 20:50:26
+
+### Added
+
+- New Brunswick pension benefit.
+
 ## [0.86.2] - 2023-10-08 04:38:29
 
 ## [0.86.1] - 2023-10-06 11:22:22
@@ -670,6 +676,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.87.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.86.2...0.87.0
 [0.86.2]: https://github.com/PolicyEngine/policyengine-canada/compare/0.86.1...0.86.2
 [0.86.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.86.0...0.86.1
 [0.86.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.85.1...0.86.0

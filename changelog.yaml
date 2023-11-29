@@ -556,3 +556,8 @@
     removed:
     - numpy pin.
   date: 2023-10-08 04:38:29
+- bump: minor
+  changes:
+    added:
+    - New Brunswick pension benefit.
+  date: 2023-11-09 20:50:26
