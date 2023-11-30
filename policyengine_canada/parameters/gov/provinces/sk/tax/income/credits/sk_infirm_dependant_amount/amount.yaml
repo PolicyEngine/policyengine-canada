@@ -5,6 +5,7 @@ values:
 metadata:
   unit: currency-CAD
   label: Saskatchewan infirm dependants tax credit maximum amount
+  period: year  
   reference: 
   - title: 2023 Sasktachewan Personal Tax Credits Return Line10 Amount for infirm dependants age 18 or older
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1
@@ -14,5 +15,5 @@ metadata:
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-22e.pdf#page=1
   - title: 2022 Sasktachewan Sasktachewan Personal Tax Credits Return Calculation Form Line10 Amount for infirm dependants age 18 or older
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk-ws/td1sk-ws-lp-22e.pdf#page=6
-  - title: Sasktachewan The Income Tax Act, 2000
+  - title: Sasktachewan The Income Tax Act, 2000#2020, c25, s.5.
     href: https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=13 #page=14,15
