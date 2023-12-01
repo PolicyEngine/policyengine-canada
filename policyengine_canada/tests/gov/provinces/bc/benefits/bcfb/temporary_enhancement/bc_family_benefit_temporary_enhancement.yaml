@@ -1,0 +1,58 @@
+- name: Temporary Enhancement with 1 Child and Low Family Net Income
+  period: 2023
+  input: 
+    province_code: BC
+    bc_family_benefit_eligible_children: 1
+    adjusted_family_net_income: 25_000
+  output:
+    bc_family_benefit_temporary_enhancement: 175
+
+- name: Temporary Enhancement with 2 Children and Low Family Net Income
+  period: 2023
+  input: 
+    province_code: BC
+    bc_family_benefit_eligible_children: 2
+    adjusted_family_net_income: 25_000
+  output:
+    bc_family_benefit_temporary_enhancement: 350
+
+- name: Temporary Enhancement with 3 Children and Middle Family Net Income - Deductible
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    province_code: BC
+    bc_family_benefit_eligible_children: 3
+    adjusted_family_net_income: 30_000
+  output:
+    bc_family_benefit_temporary_enhancement: 483.48
+
+
+- name: Temporary Enhancement with 3 Children and Middle Family Net Income - Minimum Benefit
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    province_code: BC
+    bc_family_benefit_eligible_children: 3
+    adjusted_family_net_income: 82_000
+  output:
+    bc_family_benefit_temporary_enhancement: 450
+
+- name: Temporary Enhancement with 4 Children and High Family Net Income - Deductible
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    province_code: BC
+    bc_family_benefit_eligible_children: 4
+    adjusted_family_net_income: 90_000
+  output:
+    bc_family_benefit_temporary_enhancement: 502.03
+
+- name: Temporary Enhancement with 4 Children and High Family Net Income - Zero
+  period: 2023
+  absolute_error_margin: 0.01
+  input: 
+    province_code: BC
+    bc_family_benefit_eligible_children: 4
+    adjusted_family_net_income: 200_000
+  output:
+    bc_family_benefit_temporary_enhancement: 0
