@@ -29,11 +29,8 @@ class sk_infirm_dependant_amount_eligible_person(Variable):
 
         infirm_eligibility = is_infirm_dependant & infirm_age_eligibility
 
-        dependants_income = person("dependant_income", period)
-        income_eligibility = dependants_income <= p.income_threshold.higher
-
         caregiver_amount_eligible = person("sk_caregiver_amount", period) == 0
 
         return (
-            infirm_eligibility & income_eligibility & caregiver_amount_eligible
+            infirm_eligibility & caregiver_amount_eligible
         )
