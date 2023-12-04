@@ -1,47 +1,53 @@
-- name: Eligible person over 18 
+- name: Eligible person with disability credit less than limit 2023
   period: 2023
   input:
     province_code: BC
-    age: 19
     bc_disability_credit_eligible: true
+    bc_disability_credit_additional_amount: 0
   output:
     bc_disability_credit: 8_986
 
-- name: Eligible person under 18 with childcare_received less than threshold
+- name: Eligible person with disability credit over limit 2023
   period: 2023
   input:
     province_code: BC
-    age: 17
     bc_disability_credit_eligible: true
-    childcare_received: 3_000
+    bc_disability_credit_additional_amount: 5_243
   output:
     bc_disability_credit: 14_228
 
-- name: Eligible person under 18 with childcare_received greater than threshold, less than max_amount_child
+- name: Ineligible person 2023
   period: 2023
   input:
     province_code: BC
-    age: 17
-    bc_disability_credit_eligible: true
-    childcare_received: 3_500
-  output:
-    bc_disability_credit: 13_772
-
-- name: Eligible person under 18 with childcare_received greater than max_amount_child
-  period: 2023
-  input:
-    province_code: BC
-    age: 17
-    bc_disability_credit_eligible: true
-    childcare_received: 15_000
-  output:
-    bc_disability_credit: 8_986
-
-- name: Uneligible person 
-  period: 2023
-  input:
-    province_code: BC
-    age: 18
     bc_disability_credit_eligible: false
+    bc_disability_credit_additional_amount: 5_242
+  output:
+    bc_disability_credit: 0
+
+- name: Eligible person with disability credit less than limit 2022
+  period: 2022
+  input:
+    province_code: BC
+    bc_disability_credit_eligible: true
+    bc_disability_credit_additional_amount: 0
+  output:
+    bc_disability_credit: 8_477
+
+- name: Eligible person with disability credit over limit 2022
+  period: 2022
+  input:
+    province_code: BC
+    bc_disability_credit_eligible: true
+    bc_disability_credit_additional_amount: 4_947
+  output:
+    bc_disability_credit: 13_423
+
+- name: Ineligible person 2022
+  period: 2022
+  input:
+    province_code: BC
+    bc_disability_credit_eligible: false
+    bc_disability_credit_additional_amount: 4_946
   output:
     bc_disability_credit: 0

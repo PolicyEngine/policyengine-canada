@@ -4,7 +4,7 @@ values:
 metadata:
   unit: year
   period: year
-  label: British Columbia disability credit additional amount age eligibility
+  label: British Columbia additional disability credit eligible age limit
   reference:
   - title: B.C. basic personal income tax credits
     href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/basic

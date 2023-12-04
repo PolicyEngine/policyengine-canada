@@ -1,0 +1,31 @@
+- name: Eligible person for additional disability credit 2023
+  period: 2023
+  input:
+    age: 17
+    province_code: BC
+  output:
+    bc_disability_credit_additional_amount_eligible: true
+
+- name: Ineligible person for additional disability credit 2023
+  period: 2023
+  input:
+    age: 18
+    province_code: BC
+  output:
+    bc_disability_credit_additional_amount_eligible: false
+
+- name: Eligible person for additional disability credit 2022
+  period: 2022 
+  input:
+    age: 16
+    province_code: BC
+  output:
+    bc_disability_credit_additional_amount_eligible: true
+
+- name: Ineligible person for additional disability credit 2022
+  period: 2022
+  input:
+    age: 19
+    province_code: BC
+  output:
+    bc_disability_credit_additional_amount_eligible: false

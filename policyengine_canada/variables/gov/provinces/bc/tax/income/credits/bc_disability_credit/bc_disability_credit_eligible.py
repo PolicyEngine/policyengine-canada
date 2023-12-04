@@ -5,7 +5,6 @@ class bc_disability_credit_eligible(Variable):
     value_type = bool
     entity = Person
     label = "Eligible for the British Columbia disability tax credit"
-    unit = CAD
     definition_period = YEAR
     defined_for = ProvinceCode.BC
 
