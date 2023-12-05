@@ -5,7 +5,7 @@ metadata:
   unit: currency-CAD
   # "appropriate percentage" for a taxation year means the lowest percentage specified in section 4.1 (1) 
   # that is applicable in determining tax payable under this Act for the year
-  label: New Brunswick lowest tax rate # appropriate percentage
+  label: British Columbia lowest tax rate # appropriate percentage
   reference:
     - title: 2023 British Columbia income tax act § 4.6
       href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96215_00_multi#section4.6
