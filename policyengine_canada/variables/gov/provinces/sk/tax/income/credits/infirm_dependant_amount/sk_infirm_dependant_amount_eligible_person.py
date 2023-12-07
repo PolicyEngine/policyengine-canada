@@ -31,6 +31,9 @@ class sk_infirm_dependant_amount_eligible_person(Variable):
 
         caregiver_amount_eligible = person("sk_caregiver_amount", period) == 0
 
+        dependants_income = person("dependant_income", period)
+        income_eligibility = dependants_income <= p.income_threshold.higher
+
         return (
-            infirm_eligibility & caregiver_amount_eligible
+            infirm_eligibility & caregiver_amount_eligible & income_eligibility
         )

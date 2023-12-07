@@ -1,31 +1,12 @@
-description: Saskatchewan infirm dependants credit amount phases out by income thresholds.
-brackets:
-  - amount:
-      2022-01-01: 9_789
-      2023-01-01: 10_405
-    threshold:
-      2022-01-01: 0
-      2023-01-01: 0
-  - amount:
-      2022-01-01: 9_789
-      2023-01-01: 10_405
-    threshold:
-      2022-01-01: 6_945
-      2023-01-01: 7_383
-  - amount:
-      2022-01-01: 0
-      2023-01-01: 0
-    threshold:
-      2022-01-01: 16_734
-      2023-01-01: 17_788
+description: Saskatchewan allows for this maximum infirm dependant credit amount.
+values: 
+  2022-01-01: 9_789
+  2023-01-01: 10_405
 metadata:
-  type: single_amount
-  threshold_unit: currency-CAD
-  amount_unit: currency-CAD
-  period: year
-  name: Saskatchewan_infirm_dependants_credit_income_thresholds
-  label: Saskatchewan infirm dependants credit income thresholds
-  reference:
+  unit: currency-CAD
+  label: Saskatchewan infirm dependants tax credit maximum amount
+  period: year  
+  reference: 
   - title: 2023 Sasktachewan Personal Tax Credits Return Line10 Amount for infirm dependants age 18 or older
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1
   - title: 2023 Sasktachewan Personal Tax Credits Return Calculation Line10 Amount for infirm dependants age 18 or older

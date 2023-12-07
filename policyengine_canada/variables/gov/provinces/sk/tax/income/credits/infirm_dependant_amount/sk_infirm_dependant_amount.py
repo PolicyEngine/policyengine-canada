@@ -22,5 +22,13 @@ class sk_infirm_dependant_amount(Variable):
         ).gov.provinces.sk.tax.income.credits.sk_infirm_dependant_amount
 
         dependant_income = person("dependant_income", period)
+        income_differences = max_(
+            0, p.income_threshold.higher - dependant_income
+        )
+        infirm_credit_amount = select(
+            dependant_income > p.income_threshold.lower,
+            min_(income_differences, p.amount),
+            p.amount,
+        )
 
-        return p.income_threshold_bracket.calc(dependant_income)
+        return infirm_credit_amount
