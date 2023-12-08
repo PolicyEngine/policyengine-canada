@@ -7,4 +7,4 @@ class taxable_dividend_income(Variable):
     label = "Total taxable dividends (eligible and other than eligible)"
     unit = CAD
     definition_period = YEAR
-    reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5008-d/5008-d-22e.pdf#page=3"
+    reference = "https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=31"

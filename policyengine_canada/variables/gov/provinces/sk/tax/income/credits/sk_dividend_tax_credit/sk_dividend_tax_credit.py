@@ -17,7 +17,7 @@ class sk_dividend_tax_credit(Variable):
 
         taxable_dividends = person("taxable_dividend_income", period)
         other_than_eligible_taxable_dividends = person(
-            "other_than_eligible_taxable_dividend_income", period
+            "tax_exempt_dividend_income", period
         )
 
         reduced_taxable_dividends = max_(
