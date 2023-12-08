@@ -4,7 +4,7 @@ values:
   2023-01-01: 10_405
 metadata:
   unit: currency-CAD
-  label: Saskatchewan infirm dependants tax credit maximum amount
+  label: Saskatchewan infirm dependants tax credit max amount
   period: year  
   reference: 
   - title: 2023 Sasktachewan Personal Tax Credits Return Line10 Amount for infirm dependants age 18 or older
