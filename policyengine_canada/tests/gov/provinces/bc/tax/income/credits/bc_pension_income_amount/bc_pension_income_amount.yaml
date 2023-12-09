@@ -1,4 +1,4 @@
-- name: Max Pension Benefit 
+- name: Pension income is larger than the maximum amount
   period: 2023
   input:
     province_code: BC
@@ -6,7 +6,7 @@
   output:
     bc_pension_income_amount: 1_000
 
-- name: Pension Benefit Below Maximum Amount
+- name: Pension income is less than the maximum amount
   period: 2023
   input:
     province_code: BC
