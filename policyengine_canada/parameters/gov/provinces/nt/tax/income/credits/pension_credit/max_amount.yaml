@@ -1,0 +1,11 @@
+description: Northwest Territories limits the pension credit to this maximum amount.
+values:
+  2021-01-01: 1_000
+metadata:
+  unit: currency-CAD
+  label: Northwest Territories Pension Credit max amount
+  reference:
+  - title: Income Tax Act - Section 2.21 Pension Credit
+    href: https://www.justice.gov.nt.ca/en/files/legislation/income-tax/income-tax.a.pdf#page=32
+  - title: 2023 Northwest Territories Personal Tax Credits Return - 3. pension income amount
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nt/td1nt-23e.pdf#page=1
