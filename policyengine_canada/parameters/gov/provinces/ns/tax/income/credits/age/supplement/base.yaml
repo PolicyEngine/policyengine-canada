@@ -3,7 +3,7 @@ values:
   2022-01-01: 1_465
 metadata:
   unit: currency-CAD
-  label: Nova Scotia basic personal amount additional base
+  label: Nova Scotia maximum age amount supplement base
   reference: 
   - title: 2022 Nova Scotia Personal Tax Credits Return
     href: https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf#page=1

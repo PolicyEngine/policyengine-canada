@@ -1,4 +1,4 @@
-description: Nova Scotia phases its age amount supplement out at this rate.
+description: Nova Scotia phases its age amount supplement out at this rate, based on taxable income.
 brackets:
   - threshold:
       2022-01-01: 0
