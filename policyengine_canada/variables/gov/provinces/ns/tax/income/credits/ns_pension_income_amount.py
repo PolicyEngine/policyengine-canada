@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class ns_pension_income_amount(Variable):
     value_type = float
     entity = Person
-    label = "Nova Scotia Pension Income Amount"
+    label = "Nova Scotia pension income amount"
     unit = CAD
     definition_period = YEAR
     defined_for = ProvinceCode.NS
@@ -15,9 +15,11 @@ class ns_pension_income_amount(Variable):
     )
 
     def formula(person, period, parameters):
-        max_amount = parameters(
+        cap = parameters(
             period
-        ).gov.provinces.ns.tax.income.credits.pension_income_amount.max_amount
-        pension_income_amount = person("pension_and_savings_plan_income", period)
+        ).gov.provinces.ns.tax.income.credits.pension_income_amount.cap
+        pension_income_amount = person(
+            "pension_and_savings_plan_income", period
+        )
 
-        return min(pension_income_amount, max_amount)
+        return min_(pension_income_amount, cap)

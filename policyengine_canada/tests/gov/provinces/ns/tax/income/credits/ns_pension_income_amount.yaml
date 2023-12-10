@@ -22,3 +22,10 @@
   output:
     ns_pension_income_amount: 1_173
 
+- name: Person has pension income 0
+  period: 2023
+  input:
+    province_code: NS
+    pension_and_savings_plan_income: 0
+  output:
+    ns_pension_income_amount: 0
