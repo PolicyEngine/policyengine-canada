@@ -1,0 +1,14 @@
+description: Nova Scotia provides this spouse and common-law partner amount base
+values:
+  2023-01-01: 9_329
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Nova Scotia spouse and commonlaw partner amount credit base
+  reference:
+  - title: 2022 Nova Scotia Personal Tax Credits Return
+    href: https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf#page=1
+  - title: 2022 Worksheet NS428
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5003-c/5003-c-22e.pdf#page=1
+  - title: Nova Scotia income tax act - subdivision c - Deduction for employment out of Canada - 10C
+    href: https://nslegislature.ca/sites/default/files/legc/statutes/income%20tax.pdf#page=24
