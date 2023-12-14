@@ -16,4 +16,6 @@ class bc_disability_credit_additional_amount(Variable):
         additional_amount_reduction = max_(
             0, childcare_received - p.additional_amount.income_threshold
         )
-        return max_(0, p.additional_amount.younger - additional_amount_reduction)
+        return max_(
+            0, p.additional_amount.younger - additional_amount_reduction
+        )
