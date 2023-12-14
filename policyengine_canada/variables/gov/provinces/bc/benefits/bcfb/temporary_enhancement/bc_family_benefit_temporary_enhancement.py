@@ -16,34 +16,43 @@ class bc_family_benefit_temporary_enhancement(Variable):
         p = parameters(
             period
         ).gov.provinces.bc.benefits.bcfb.temporary_enhancement
-        phase_out_amount_middle_income = p.phase_out_rate_middle_income.calc(
+        months = p.cap_month
+        low_family_income = (
+            family_net_income < p.phase_out.middle.thresholds[1]
+        )
+        middle_family_income = (
+            p.phase_out.middle.thresholds[1]
+            < family_net_income
+            < p.phase_out.middle.thresholds[2]
+        )
+        high_family_income = (
+            family_net_income > p.phase_out.middle.thresholds[2]
+        )
+        phase_out_amount_middle_income = p.phase_out.middle.calc(
             family_net_income
         )
-        phase_out_amount_high_income = p.phase_out_rate_high_income.calc(
-            family_net_income
+        phase_out_amount_high_income = p.phase_out.high.calc(family_net_income)
+        temporary_enhancement_low_family_income = p.amount * children * months
+        temporary_enhancement_middle_family_income = (
+            max_(
+                p.amount * months - phase_out_amount_middle_income,
+                p.income_threshold.income_threshold * months,
+            )
+            * children
+        )
+        temporary_enhancement_high_family_income = (
+            max_(
+                p.income_threshold.income_threshold * months
+                - phase_out_amount_high_income,
+                0,
+            )
+            * children
         )
         return select(
+            [low_family_income, middle_family_income, high_family_income],
             [
-                family_net_income
-                < p.phase_out_rate_middle_income.thresholds[1],
-                p.phase_out_rate_middle_income.thresholds[1]
-                < family_net_income
-                < p.phase_out_rate_middle_income.thresholds[2],
-                family_net_income
-                > p.phase_out_rate_middle_income.thresholds[2],
-            ],
-            [
-                p.max_amount * children,
-                max_(
-                    p.max_amount - phase_out_amount_middle_income,
-                    p.minimum_amount_middle_family_income,
-                )
-                * children,
-                max_(
-                    p.minimum_amount_middle_family_income
-                    - phase_out_amount_high_income,
-                    0,
-                )
-                * children,
+                temporary_enhancement_low_family_income,
+                temporary_enhancement_middle_family_income,
+                temporary_enhancement_high_family_income,
             ],
         )

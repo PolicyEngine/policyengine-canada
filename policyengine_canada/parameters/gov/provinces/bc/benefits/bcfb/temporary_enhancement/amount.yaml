@@ -1,10 +1,11 @@
 description: British Columbia provides this max temporary enhanced benefit to to eligible family.
 values:
 # only for the period January 2023 to March 2023
-  2023-01-01: 175 # up to $58.33 monthly per child
+  2023-01-01: 58.33 # up to $58.33 monthly per child
   2023-04-01: 0
 metadata:
   unit: currency-CAD
+  period: month
   label: British Columbia max family benefit temporary enhancement amount
   reference: 
   # this temporary enhancement is not mentioned in the B.C. Income Tax Act

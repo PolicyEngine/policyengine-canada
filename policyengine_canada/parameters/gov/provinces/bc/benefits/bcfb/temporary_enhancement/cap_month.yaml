@@ -1,0 +1,13 @@
+description: British Columbia caps months for temporary enhancement.
+values:
+# only for the period January 2023 to March 2023
+  2023-01-01: 3 
+  2023-04-01: 0
+metadata:
+  unit: month
+  period: month
+  label: British Columbia caps months
+  reference: 
+  # this temporary enhancement is not mentioned in the B.C. Income Tax Act
+  - title: B.C. family benefit
+    href: https://www2.gov.bc.ca/gov/content/family-social-supports/affordability/family-benefit
