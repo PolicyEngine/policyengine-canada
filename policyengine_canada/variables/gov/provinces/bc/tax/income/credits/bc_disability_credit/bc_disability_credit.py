@@ -16,5 +16,5 @@ class bc_disability_credit(Variable):
             "bc_disability_credit_additional_amount", period
         )
         return min_(
-            p.additional_amount.max_amount_total, p.base + additional_amount
+            p.additional_amount.max_amount, p.base + additional_amount
         )
