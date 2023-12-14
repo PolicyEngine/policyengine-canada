@@ -7,4 +7,4 @@ class tax_exempt_dividend_income(Variable):
     label = "Taxable Dividends (Other Than Eligible)"
     unit = CAD
     definition_period = YEAR
-    reference = "https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=31"
+    reference = "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-40425-federal-dividend-tax-credit.html"
