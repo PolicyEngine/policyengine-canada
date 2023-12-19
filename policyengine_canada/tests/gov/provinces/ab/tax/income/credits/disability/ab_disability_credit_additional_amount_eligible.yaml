@@ -1,0 +1,15 @@
+- name: Eligible person for additional disability credit
+  period: 2022 
+  input:
+    age: 16
+    province_code: AB
+  output:
+    ab_disability_credit_additional_amount_eligible: true
+
+- name: Ineligible person for additional disability credit
+  period: 2022
+  input:
+    age: 19
+    province_code: AB
+  output:
+    ab_disability_credit_additional_amount_eligible: false

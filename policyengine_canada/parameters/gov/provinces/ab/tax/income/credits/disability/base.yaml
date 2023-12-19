@@ -4,7 +4,9 @@ values:
 metadata:
   unit: currency-CAD
   period: year
-  label: Alberta disability credit base amount
+  label: Alberta base disability credit amount
   reference:
-  - title: Alberta Disablitiy credit - Page 2
+  - title: Alberta Disablitiy Credit worksheet 2022 - Page 2
     href:  https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5009-d/5009-d-22e.pdf#page=2
+  - title: Alberta Income Tax Act - Section 13
+    href: https://kings-printer.alberta.ca/1266.cfm?page=a30.cfm&leg_type=Acts&isbncln=9780779842674

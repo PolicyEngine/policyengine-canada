@@ -4,12 +4,12 @@
     is_disabled: true
     province_code: AB
   output:
-    ab_disability_tax_credit_eligible: true
+    ab_disability_credit_eligible: true
 
-- name: Uneligible person without disability
+- name: Ineligible person without disability
   period: 2022
   input:
     is_disabled: false
     province_code: AB
   output:
-    ab_disability_tax_credit_eligible: false
+    ab_disability_credit_eligible: false
