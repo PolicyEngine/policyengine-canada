@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class sk_infirm_dependant_individual_amount(Variable):
+class sk_infirm_dependant_amount_person(Variable):
     value_type = float
     entity = Person
     label = "Saskatchewan Infirm Dependant Amount for Each Eligible Dependant"

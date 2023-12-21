@@ -5,7 +5,7 @@
     sk_infirm_dependant_amount_eligible_person: false
     dependant_income: 10_000
   output:
-    sk_infirm_dependant_individual_amount: 0
+    sk_infirm_dependant_amount_person: 0
 
 - name: 2023 Have eligible dependants with income at lower income threshold
   period: 2023
@@ -14,7 +14,7 @@
     sk_infirm_dependant_amount_eligible_person: true
     dependant_income: 7_383
   output:
-    sk_infirm_dependant_individual_amount: 10_405
+    sk_infirm_dependant_amount_person: 10_405
 
 - name: 2023 Have eligible dependants with income below lower income threshold
   period: 2023
@@ -23,7 +23,7 @@
     sk_infirm_dependant_amount_eligible_person: true
     dependant_income: 7_382
   output:
-    sk_infirm_dependant_individual_amount: 10_405
+    sk_infirm_dependant_amount_person: 10_405
 
 - name: 2023 Have eligible dependants with income between lower and higher income threshold
   period: 2023
@@ -32,7 +32,7 @@
     sk_infirm_dependant_amount_eligible_person: true
     dependant_income: 10_000
   output:
-    sk_infirm_dependant_individual_amount: 7_788
+    sk_infirm_dependant_amount_person: 7_788
 
 - name: 2023 Have eligible dependants with income at higher income threshold
   period: 2023
@@ -41,7 +41,7 @@
     sk_infirm_dependant_amount_eligible_person: true
     dependant_income: 17_788
   output:
-    sk_infirm_dependant_individual_amount: 0
+    sk_infirm_dependant_amount_person: 0
 
 - name: 2023 Have eligible dependants with income above higher income threshold
   period: 2023
@@ -50,7 +50,7 @@
     sk_infirm_dependant_amount_eligible_person: true
     dependant_income: 17_789
   output:
-    sk_infirm_dependant_individual_amount: 0
+    sk_infirm_dependant_amount_person: 0
 
 - name: 2022 Have eligible dependants with income at lower income threshold
   period: 2022
@@ -59,7 +59,7 @@
     sk_infirm_dependant_amount_eligible_person: true
     dependant_income: 6_945
   output:
-    sk_infirm_dependant_individual_amount: 9_789
+    sk_infirm_dependant_amount_person: 9_789
 
 - name: 2022 Have eligible dependants with income below lower income threshold
   period: 2022
@@ -68,7 +68,7 @@
     sk_infirm_dependant_amount_eligible_person: true
     dependant_income: 6_944
   output:
-    sk_infirm_dependant_individual_amount: 9_789
+    sk_infirm_dependant_amount_person: 9_789
 
 - name: 2022 Have eligible dependants with income between lower and higher income threshold
   period: 2022
@@ -77,7 +77,7 @@
     sk_infirm_dependant_amount_eligible_person: true
     dependant_income: 10_000
   output:
-    sk_infirm_dependant_individual_amount: 6_734
+    sk_infirm_dependant_amount_person: 6_734
 
 - name: 2022 Have eligible dependants with income at higher income threshold
   period: 2022
@@ -86,7 +86,7 @@
     sk_infirm_dependant_amount_eligible_person: true
     dependant_income: 16_734
   output:
-    sk_infirm_dependant_individual_amount: 0
+    sk_infirm_dependant_amount_person: 0
 
 - name: 2022 Have eligible dependants with income above higher income threshold
   period: 2022
@@ -95,4 +95,4 @@
     sk_infirm_dependant_amount_eligible_person: true
     dependant_income: 16_735
   output:
-    sk_infirm_dependant_individual_amount: 0
+    sk_infirm_dependant_amount_person: 0

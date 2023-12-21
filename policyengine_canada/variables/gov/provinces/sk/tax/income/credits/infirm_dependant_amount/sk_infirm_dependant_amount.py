@@ -1,5 +1,6 @@
 from policyengine_canada.model_api import *
 
+
 class sk_infirm_dependant_amount(Variable):
     value_type = float
     entity = Household
@@ -13,4 +14,4 @@ class sk_infirm_dependant_amount(Variable):
         "https://pubsaskdev.blob.core.windows.net/pubsask-prod/806/I2-01.pdf#page=13 #page=14,15",
     )
 
-    adds = ['sk_infirm_dependant_individual_amount"]
+    adds = ["sk_infirm_dependant_amount_person"]
