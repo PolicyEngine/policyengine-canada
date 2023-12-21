@@ -1,4 +1,4 @@
-description: Saskatchewan multiplies the eligible taxable amount of dividends under the total dividend tax credit by this amount.
+description: Saskatchewan multiplies the eligible dividend amount under the total dividend tax credit by this amount.  
 values: 
   2022-01-01: 0.11 
 metadata:

@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class taxable_dividend_income(Variable):
+class eligible_dividend_income(Variable):
     value_type = float
     entity = Person
     label = "Total taxable dividends (eligible and other than eligible)"

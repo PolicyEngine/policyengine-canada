@@ -2,8 +2,8 @@
   period: 2022
   input:
     province_code: SK
-    taxable_dividend_income: 15_000
-    tax_exempt_dividend_income: 1_000
+    eligible_dividend_income: 15_000
+    other_than_eligible_dividend_income: 1_000
   output:
     sk_dividend_tax_credit: 1556.95
 
@@ -11,8 +11,8 @@
   period: 2022
   input:
     province_code: SK
-    taxable_dividend_income: 20_000
-    tax_exempt_dividend_income: 2_000
+    eligible_dividend_income: 20_000
+    other_than_eligible_dividend_income: 2_000
   output:
     sk_dividend_tax_credit: 2013.9
 
@@ -20,8 +20,8 @@
   period: 2022
   input:
     province_code: SK
-    taxable_dividend_income: 28_000
-    tax_exempt_dividend_income: 2_800
+    eligible_dividend_income: 28_000
+    other_than_eligible_dividend_income: 2_800
   output:
     sk_dividend_tax_credit: 2819.46
 
@@ -29,7 +29,7 @@
   period: 2022
   input:
     province_code: SK
-    taxable_dividend_income: 30_000
-    tax_exempt_dividend_income: 3_800
+    eligible_dividend_income: 30_000
+    other_than_eligible_dividend_income: 3_800
   output:
     sk_dividend_tax_credit: 2946.41
