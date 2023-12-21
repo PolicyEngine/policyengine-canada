@@ -16,7 +16,7 @@ class bc_family_benefit_temporary_enhancement(Variable):
         p = parameters(
             period
         ).gov.provinces.bc.benefits.bcfb.temporary_enhancement
-        months = p.cap_month
+        months = min_(p.cap_month, MONTHS_IN_YEAR)
         low_family_income = (
             family_net_income < p.phase_out.middle.thresholds[1]
         )
