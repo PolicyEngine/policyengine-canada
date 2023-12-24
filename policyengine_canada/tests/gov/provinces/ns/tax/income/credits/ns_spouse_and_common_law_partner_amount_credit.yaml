@@ -71,6 +71,21 @@
   output:
     ns_spouse_and_common_law_partner_amount_credit: 1
 
+- name: House hold with spouse income between (848, 9_329) 2
+  period: 2023
+  input:
+    people:
+      spouse:
+        spouse_income: 9_000
+      head:
+        spouse_income: 0
+    household:
+      members: [head, spouse]
+      province_code: NS
+      is_married: true
+  output:
+    ns_spouse_and_common_law_partner_amount_credit: 329
+
 - name: House hold with spouse income is 9_329
   period: 2023
   input:
