@@ -7,7 +7,7 @@ class ns_age_amount_supplement(Variable):
     label = "Nova Scotia Age Amount Supplement"
     unit = CAD
     definition_period = YEAR
-    defined_for = ns_age_amount_supplement_eligible
+    defined_for = "ns_age_amount_supplement_eligible"
     reference = (
         "https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf#page=1",
         "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ns-ws/td1ns-ws-23e.pdf#page=1",
