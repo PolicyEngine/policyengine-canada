@@ -16,22 +16,22 @@ class sk_dividend_tax_credit(Variable):
         ).gov.provinces.sk.tax.income.credits.dividend_tax_credit.fraction
 
         eligible_dividend_income = person("eligible_dividend_income", period)
-        other_than_eligible_taxable_dividends = person(
-            "other_than_eligible_dividend_income", period
+        non_eligible_taxable_dividends = person(
+            "non_eligible_dividend_income", period
         )
 
         reduced_eligible_dividend_income = max_(
-            eligible_dividend_income - other_than_eligible_taxable_dividends, 0
+            eligible_dividend_income - non_eligible_taxable_dividends, 0
         )
         credits_on_eligible_dividend_income = (
             reduced_eligible_dividend_income * p.eligible
         )
 
-        credits_on_other_than_eligible_dividend_income = (
-            other_than_eligible_taxable_dividends * p.other_than_eligible
+        credits_on_non_eligible_dividend_income = (
+            non_eligible_taxable_dividends * p.non_eligible
         )
 
         return (
             credits_on_eligible_dividend_income
-            + credits_on_other_than_eligible_dividend_income
+            + credits_on_non_eligible_dividend_income
         )
