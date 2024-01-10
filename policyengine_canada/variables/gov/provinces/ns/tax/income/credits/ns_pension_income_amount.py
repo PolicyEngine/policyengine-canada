@@ -15,9 +15,12 @@ class ns_pension_income_amount(Variable):
     )
 
     def formula(person, period, parameters):
-        cap = parameters(
+        p = parameters(
             period
-        ).gov.provinces.ns.tax.income.credits.pension_income_amount.cap
+        ).gov.provinces.ns.tax.income.credits.pension_income_amount
+
+        cap = p.cap
+
         pension_income_amount = person(
             "pension_and_savings_plan_income", period
         )
