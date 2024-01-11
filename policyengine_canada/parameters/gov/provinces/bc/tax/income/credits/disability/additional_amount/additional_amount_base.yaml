@@ -1,11 +1,21 @@
-description: British Columbia reduces the additional disability credit amount by the excess of childcare expenses over this threshold.  
-values:
-  2022-01-01: 2_871
-  2023-01-01: 3_044
+description: British Columbia provides an additional disability credit to filers by age.
+brackets: 
+  - amount:
+      2022-01-01: 4_946
+      2023-01-01: 5_242
+    threshold:
+      2022-01-01: 0
+  - amount: 
+      2022-01-01: 0
+    threshold:
+      2022-01-01: 18
 metadata:
-  unit: currency-CAD
+  type: single_amount
+  threshold_unit: year
+  amount_unit: currency-CAD
   period: year
-  label: British Columbia disability credit income threshold
+  name: bc_additional_disability_credit
+  label: British Columbia additional disability credit
   reference:
   - title: B.C. basic personal income tax credits
     href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/basic
@@ -13,3 +23,4 @@ metadata:
     href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96215_00_multi#section4.51
   - title: British Columbia disability amount worksheet 2022
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5010-d/5010-d-22e.pdf#page=1
+

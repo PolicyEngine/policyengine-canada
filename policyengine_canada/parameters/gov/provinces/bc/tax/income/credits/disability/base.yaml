@@ -5,9 +5,9 @@ values:
 metadata:
   unit: currency-CAD
   period: year
-  label: British Columbia base disability credit amount
+  label: British Columbia disability credit base amount
   reference:
-  - title: B.C. basic personal income tax credits 2022 and 2023 parameter values
+  - title: B.C. basic personal income tax credits
     href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/basic
   - title: British Columbia Income Tax Act (4.51)
     href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96215_00_multi#section4.51

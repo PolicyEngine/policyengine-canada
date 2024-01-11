@@ -7,7 +7,7 @@ class bc_disability_credit(Variable):
     label = "British Columbia disability tax credit"
     unit = CAD
     definition_period = YEAR
-    reference = "href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5010-d/5010-d-22e.pdf#page=1"
+    reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5010-d/5010-d-22e.pdf#page=1"
     defined_for = "bc_disability_credit_eligible"
 
     def formula(person, period, parameters):
@@ -15,4 +15,5 @@ class bc_disability_credit(Variable):
         additional_amount = person(
             "bc_disability_credit_additional_amount", period
         )
-        return min_(p.additional_amount.max_amount, p.base + additional_amount)
+        total_credit_amount = p.base + additional_amount
+        return min_(p.additional_amount.cap, total_credit_amount)

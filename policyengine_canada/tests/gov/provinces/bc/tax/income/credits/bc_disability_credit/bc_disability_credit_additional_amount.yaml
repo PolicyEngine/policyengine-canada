@@ -3,8 +3,7 @@
   input:
     province_code: BC
     age: 17
-    bc_disability_credit_additional_amount_eligible: true
-    childcare_received: 3_000
+    childcare_expenses_claimed_by_another_person: 3_000
   output:
     bc_disability_credit_additional_amount: 5_242
 
@@ -13,8 +12,7 @@
   input:
     province_code: BC
     age: 17
-    bc_disability_credit_additional_amount_eligible: true
-    childcare_received: 3_500
+    childcare_expenses_claimed_by_another_person: 3_500
   output:
     bc_disability_credit_additional_amount: 4_786
 
@@ -23,8 +21,16 @@
   input:
     province_code: BC
     age: 17
-    bc_disability_credit_additional_amount_eligible: true
-    childcare_received: 15_000
+    childcare_expenses_claimed_by_another_person: 15_000
+  output:
+    bc_disability_credit_additional_amount: 0
+
+- name: Ineligible person 2023
+  period: 2023
+  input:
+    province_code: BC
+    age: 18
+    childcare_expenses_claimed_by_another_person: 15_000
   output:
     bc_disability_credit_additional_amount: 0
 
@@ -33,8 +39,7 @@
   input:
     province_code: BC
     age: 17
-    bc_disability_credit_additional_amount_eligible: true
-    childcare_received: 2_800
+    childcare_expenses_claimed_by_another_person: 2_800
   output:
     bc_disability_credit_additional_amount: 4_946
 
@@ -43,8 +48,7 @@
   input:
     province_code: BC
     age: 17
-    bc_disability_credit_additional_amount_eligible: true
-    childcare_received: 3_000
+    childcare_expenses_claimed_by_another_person: 3_000
   output:
     bc_disability_credit_additional_amount: 4_817
 
@@ -53,7 +57,15 @@
   input:
     province_code: BC
     age: 17
-    bc_disability_credit_additional_amount_eligible: true
-    childcare_received: 15_000
+    childcare_expenses_claimed_by_another_person: 15_000
+  output:
+    bc_disability_credit_additional_amount: 0
+
+- name: Ineligible person 2022
+  period: 2022
+  input:
+    province_code: BC
+    age: 18
+    childcare_expenses_claimed_by_another_person: 15_000
   output:
     bc_disability_credit_additional_amount: 0
