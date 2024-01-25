@@ -3,8 +3,8 @@ values:
   2022-01-01: 2_871
   2023-01-01: 3_044
 metadata:
-  unit: currency-CAD
   period: year
+  unit: currency-CAD
   label: British Columbia disability credit additional amount childcare expense threshold
   reference:
   - title: B.C. basic personal income tax credits
