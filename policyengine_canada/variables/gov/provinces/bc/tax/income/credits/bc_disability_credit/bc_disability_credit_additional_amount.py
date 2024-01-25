@@ -16,10 +16,10 @@ class bc_disability_credit_additional_amount(Variable):
             "childcare_expenses_claimed_by_another_person", period
         )
         reduced_childcare_expenses = max_(
-            0, childcare_expenses - p.additional_amount.income_threshold
+            0,
+            childcare_expenses
+            - p.additional_amount.childcare_expense_threshold,
         )
         age = person("age", period)
-        additional_amount_base = (
-            p.additional_amount.additional_amount_base.calc(age)
-        )
+        additional_amount_base = p.additional_amount.base.calc(age)
         return max_(0, additional_amount_base - reduced_childcare_expenses)

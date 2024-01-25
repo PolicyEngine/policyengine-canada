@@ -1,21 +1,20 @@
-description: British Columbia provides an additional disability credit to filers by age.
+description: British Columbia provides an additional disability credit of this amount, based on age.
 brackets: 
-  - amount:
+  - threshold:
+      2022-01-01: 0
+    amount:
       2022-01-01: 4_946
       2023-01-01: 5_242
-    threshold:
-      2022-01-01: 0
-  - amount: 
-      2022-01-01: 0
-    threshold:
+  - threshold:
       2022-01-01: 18
+    amount: 
+      2022-01-01: 0
 metadata:
   type: single_amount
   threshold_unit: year
   amount_unit: currency-CAD
   period: year
-  name: bc_additional_disability_credit
-  label: British Columbia additional disability credit
+  label: British Columbia disability credit additional amount base 
   reference:
   - title: B.C. basic personal income tax credits
     href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/basic

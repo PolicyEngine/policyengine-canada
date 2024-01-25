@@ -5,7 +5,7 @@ values:
 metadata:
   unit: currency-CAD
   period: year
-  label: British Columbia disability credit income threshold
+  label: British Columbia disability credit additional amount childcare expense threshold
   reference:
   - title: B.C. basic personal income tax credits
     href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/basic
