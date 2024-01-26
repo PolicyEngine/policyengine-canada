@@ -31,13 +31,13 @@ general_requirements = [
 ]
 
 dev_requirements = [
-    "furo<2023",
-    "jupyter-book<1",
-    "markupsafe==2.0.1",
-    "pydata-sphinx-theme==0.13.1",
-    "sphinx>=4.5.0,<5",
-    "sphinx-argparse>=0.3.2,<1",
-    "sphinx-math-dollar>=1.2.1,<2",
+    "furo",
+    "jupyter-book",
+    "markupsafe",
+    "pydata-sphinx-theme",
+    "sphinx",
+    "sphinx-argparse",
+    "sphinx-math-dollar",
 ]
 
 setup(
