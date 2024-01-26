@@ -10,7 +10,7 @@ long_description = (this_directory / "README.md").read_text()
 # functional and integration breaks caused by external code updates.
 
 general_requirements = [
-    "black[jupyter]<23",
+    "black[jupyter]",
     "coverage<7",
     "dpath<3",
     "h5py>=3,<4",
