@@ -1,0 +1,9 @@
+description: Manitoba provides different tax credits according to different age groups.
+values:
+  2022-01-01: 65
+metadata:
+  unit: year
+  label: Manitoba tax credit diference with people with different ages
+  reference:
+    - title: Manitoba Information Guide Manitoba Credits Form MB479
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5007-tc/5007-tc-22e.pdf # page=3
