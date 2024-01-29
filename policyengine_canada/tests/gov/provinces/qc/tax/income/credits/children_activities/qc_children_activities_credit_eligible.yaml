@@ -1,0 +1,23 @@
+- name: Quebec children's activities tax credit eligibility for household income below the income limit
+  period: 2022
+  input:
+    adjusted_family_net_income: 400
+    province_code: QC
+  output:
+    qc_children_activities_credit_eligible: true
+
+- name: Quebec children's activities tax credit eligibility for household income above the income limit
+  period: 2022
+  input:
+    adjusted_family_net_income: 200_000
+    province_code: QC
+  output:
+    qc_children_activities_credit_eligible: false
+
+- name: Quebec children's activities tax credit eligibility for household income at the income limit
+  period: 2022
+  input:
+    adjusted_family_net_income: 146_450
+    province_code: QC
+  output:
+    qc_children_activities_credit_eligible: true

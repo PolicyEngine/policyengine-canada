@@ -1,0 +1,12 @@
+description: Quebec limits its children's activities tax credits to family with income at or below this amount.
+values:
+  2022-01-01: 146_450
+metadata:
+  unit: currency-CAD
+  label: Quebec children's activities family income limit 
+  reference:
+    - title: Revenu Quebec - Tax Credit for Children's Activities - Line 462
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/451-to-480-refund-or-balance-due/line-462/point-25/
+    - title: Quebec I-3 - Taxation Act, Part I, Book IX, Title III, Chapter III.1, DIVISION II.12.2, 1029.8.66.6. "excluded individual" (a)
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#ga:l_i-gb:l_ix-gc:l_iii-gd:l_iii_1-ge:l_ii_12_2-h1
+      # an individual whose family income for the year exceeds $130,000, increased due to the inflation adjustments
