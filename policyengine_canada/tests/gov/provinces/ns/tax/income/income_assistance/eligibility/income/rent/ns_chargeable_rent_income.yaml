@@ -1,0 +1,69 @@
+- name: Nova Scotia Income Assistance chargeable rent income; with 0 from roomers and properties
+  period: 2023
+  input:
+    province_code: NS
+    rent_from_boarders: 3_000
+    rent_from_roomers: 0
+    rent_from_properties: 0
+  output:
+    ns_chargeable_rent_income: 750
+
+- name: Nova Scotia Income Assistance chargeable rent income; with 0 from roomers and properties; lower than rent base
+  period: 2023
+  input:
+    province_code: NS
+    rent_from_boarders: 2_399
+    rent_from_roomers: 0
+    rent_from_properties: 0
+  output:
+    ns_chargeable_rent_income: 600
+
+- name: Nova Scotia Income Assistance chargeable rent income; with 0 from boarders and properties
+  period: 2023
+  input:
+    province_code: NS
+    rent_from_boarders: 0
+    rent_from_roomers: 1_000
+    rent_from_properties: 0
+  output:
+    ns_chargeable_rent_income: 700
+
+- name: Nova Scotia Income Assistance chargeable rent income; with 0 from boarders and properties; lower than rent base
+  period: 2023
+  input:
+    province_code: NS
+    rent_from_boarders: 0
+    rent_from_roomers: 800
+    rent_from_properties: 0
+  output:
+    ns_chargeable_rent_income: 600
+
+- name: Nova Scotia Income Assistance chargeable rent income; with 0 from roomers and boarders
+  period: 2023
+  input:
+    province_code: NS
+    rent_from_boarders: 0
+    rent_from_roomers: 0
+    rent_from_properties: 1_000
+  output:
+    ns_chargeable_rent_income: 700
+
+- name: Nova Scotia Income Assistance chargeable rent income
+  period: 2023
+  input:
+    province_code: NS
+    rent_from_boarders: 3_000
+    rent_from_roomers: 1_000
+    rent_from_properties: 1_000
+  output:
+    ns_chargeable_rent_income: 2_150
+
+- name: Nova Scotia Income Assistance chargeable rent income; lower than rent base
+  period: 2023
+  input:
+    province_code: NS
+    rent_from_boarders: 2_399
+    rent_from_roomers: 800
+    rent_from_properties: 0
+  output:
+    ns_chargeable_rent_income: 1_200
