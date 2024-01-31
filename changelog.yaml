@@ -561,3 +561,8 @@
     added:
     - New Brunswick pension benefit.
   date: 2023-11-09 20:50:26
+- bump: patch
+  changes:
+    changed:
+    - Unpin black.
+  date: 2024-01-26 14:53:06
