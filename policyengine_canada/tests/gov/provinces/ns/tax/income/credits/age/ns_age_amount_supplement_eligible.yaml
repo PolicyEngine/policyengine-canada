@@ -1,4 +1,4 @@
-- name: Nova Scotia Age amonut supplement; 65 is eligible age
+- name: Nova Scotia Age amount supplement; 65 is eligible age
   period: 2023
   input:
     province_code: NS

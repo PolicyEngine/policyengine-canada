@@ -15,12 +15,10 @@ class ns_age_amount_supplement(Variable):
     )
 
     def formula(person, period, parameters):
-        p = parameters(period).gov.provinces.ns.tax.income.credits.age
+        p = parameters(period).gov.provinces.ns.tax.income.credits.age.supplement
         taxable_income = person("ns_taxable_income", period)
 
         # Calculate additional amount added to base amount
-        return max_(
-            0,
-            p.supplement.base
-            - p.supplement.phase_out_rate.calc(taxable_income),
-        )
+        reduction = p.reduction.calc(taxable_income)
+
+        return max_(p.base - reduction, 0)
