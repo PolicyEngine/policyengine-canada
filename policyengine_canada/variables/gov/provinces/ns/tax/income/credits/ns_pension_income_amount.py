@@ -19,10 +19,8 @@ class ns_pension_income_amount(Variable):
             period
         ).gov.provinces.ns.tax.income.credits.pension_income_amount
 
-        cap = p.cap
-
         pension_income_amount = person(
             "pension_and_savings_plan_income", period
         )
 
-        return min_(pension_income_amount, cap)
+        return min_(pension_income_amount, p.cap)
