@@ -15,16 +15,16 @@ class mb_tuition_amount_credit(Variable):
 
         tuition = person("tuition_expenses", period)
 
-        # check if full-time student
-        full_time = person("is_full_time_student", period)
+        # check if full-time or disabled student
+        full_time_student = person("is_full_time_student", period)
 
-        # check if disabled
-        disabled = person("is_disabled", period)
+        disabled_student = person("is_disabled", period)
 
-        tuition_addition = select(
-            [full_time, disabled],
-            [p.amount.full_time, p.amount.part_time.disabled],
-            default=p.amount.part_time.non_disabled,
+        full_time_or_disabled_student = full_time_student | disabled_student
+
+        tuition_addition = (
+            full_time_or_disabled_student * p.amount.full_time_or_disabled
+            + ~full_time_student * p.amount.part_time.non_disabled
         )
 
         return tuition + tuition_addition
