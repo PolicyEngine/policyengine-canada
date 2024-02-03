@@ -5,7 +5,7 @@
     is_full_time_student: true
     tuition_expenses: 20_000
   output:
-    mb_tuition_amount_credit: 24_800 # 20_000 + 4_800 = 24_800
+    mb_tuition_amount_credit: 7_800 # 20_000 * 0.15 + 4_800 = 24_800
 
 - name: Manitoba part time non-disabled students credit 
   period: 2023
@@ -15,4 +15,4 @@
     is_disabled: false
     tuition_expenses: 20_000
   output:
-    mb_tuition_amount_credit: 21_440 # 20_000 + 1_440 = 21_440
+    mb_tuition_amount_credit: 4_440 # 20_000 * 0.15 + 1_440 = 21_440

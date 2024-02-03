@@ -15,6 +15,12 @@ class mb_tuition_amount_credit(Variable):
 
         tuition = person("tuition_expenses", period)
 
+        rate = parameters(period).gov.cra.tax.income.income_tax_schedule.rates[
+            0
+        ]
+
+        tuition_rate = tuition * rate
+
         # check if full-time or disabled student
         full_time_student = person("is_full_time_student", period)
 
@@ -27,4 +33,4 @@ class mb_tuition_amount_credit(Variable):
             + ~full_time_student * p.amount.part_time.non_disabled
         )
 
-        return tuition + tuition_addition
+        return tuition_rate + tuition_addition
