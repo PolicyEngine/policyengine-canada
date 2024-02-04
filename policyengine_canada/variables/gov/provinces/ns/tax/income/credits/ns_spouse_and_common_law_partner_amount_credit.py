@@ -4,7 +4,7 @@ from policyengine_canada.model_api import *
 class ns_spouse_and_common_law_partner_amount_credit(Variable):
     value_type = float
     entity = Household
-    label = "Nova Scotia spouse and commonlaw partner amount credit"
+    label = "Nova Scotia spouse and common-law partner amount credit"
     unit = CAD
     definition_period = YEAR
     defined_for = ProvinceCode.NS
@@ -16,8 +16,7 @@ class ns_spouse_and_common_law_partner_amount_credit(Variable):
 
     def formula(household, period, parameters):
         person = household.members
-        spouse_income = person("spouse_income", period)
-        total_spouse_income = household.sum(spouse_income)
+        total_spouse_income = add(household, period, ["spouse_income"])
         p = parameters(
             period
         ).gov.provinces.ns.tax.income.credits.spouse_and_common_law_partner_amount
@@ -25,4 +24,5 @@ class ns_spouse_and_common_law_partner_amount_credit(Variable):
         reduced_base_amount = max_(0, (p.base - total_spouse_income))
         # Adding married condition to avoid amount for single filers
         is_married = household("is_married", period)
-        return min_(p.cap, reduced_base_amount) * is_married
+        capped_credit = min_(p.cap, reduced_base_amount)
+        return capped_credit * is_married
