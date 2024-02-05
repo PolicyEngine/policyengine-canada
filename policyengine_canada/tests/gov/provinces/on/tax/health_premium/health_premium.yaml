@@ -1,0 +1,63 @@
+- name: Ontario health premium; below first bracket 
+  period: 2022
+  input:
+    province_code: ONT
+    on_taxable_income: 12_345
+  output:
+    on_health_premium: 0
+
+- name: Ontario health premium; at first bracket 
+  period: 2022
+  input:
+    province_code: ONT
+    on_taxable_income: 20_000
+  output:
+    on_health_premium: 0
+
+- name: Ontario health premium; middle bracket 
+  period: 2022
+  input:
+    province_code: ONT
+    on_taxable_income: 50_000
+  output:
+    on_health_premium: 600
+
+- name: Ontario health premium; between lower brackets 
+  period: 2022
+  input:
+    province_code: ONT
+    on_taxable_income: 22_222
+  output:
+    on_health_premium: 133.32
+
+- name: Ontario health premium; between upper brackets 
+  period: 2022
+  input:
+    province_code: ONT
+    on_taxable_income: 200_123
+  output:
+    on_health_premium: 780.75
+
+- name: Ontario health premium; at maximum amount 
+  period: 2022
+  input:
+    province_code: ONT
+    on_taxable_income: 200_600
+  output:
+    on_health_premium: 900
+
+- name: Ontario health premium; past maximum amount 
+  period: 2022
+  input:
+    province_code: ONT
+    on_taxable_income: 10_000_000_000
+  output:
+    on_health_premium: 900
+
+- name: Ontario health premium; wrong province
+  period: 2022
+  input:
+    province_code: AB
+    on_taxable_income: 45_678
+  output:
+    on_health_premium: 0
