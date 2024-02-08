@@ -14,6 +14,7 @@ class oeptc_category(Variable):
     possible_values = OEPTCCategory
     default_value = OEPTCCategory.SINGLE_SHARED_CUSTODY
     definition_period = YEAR
+    label = "oeptc category"
 
     def formula(household, period, parameters):
         married = household("is_married", period)
