@@ -15,4 +15,5 @@ class ab_disability_credit(Variable):
         additional_amount = person(
             "ab_disability_credit_additional_amount", period
         )
-        return min_(p.additional_amount.max_amount, p.base + additional_amount)
+        total_credit_amount = p.base + additional_amount
+        return min_(p.cap, total_credit_amount)
