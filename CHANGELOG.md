@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.88.0] - 2024-02-02 06:53:53
+
+### Added
+
+- Nova Scotia pension income amount.
+
 ## [0.87.1] - 2024-01-26 14:53:06
 
 ### Changed
@@ -682,6 +688,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.88.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.87.1...0.88.0
 [0.87.1]: https://github.com/PolicyEngine/policyengine-canada/compare/0.87.0...0.87.1
 [0.87.0]: https://github.com/PolicyEngine/policyengine-canada/compare/0.86.2...0.87.0
 [0.86.2]: https://github.com/PolicyEngine/policyengine-canada/compare/0.86.1...0.86.2
