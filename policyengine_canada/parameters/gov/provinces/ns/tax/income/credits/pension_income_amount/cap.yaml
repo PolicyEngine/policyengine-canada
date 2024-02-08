@@ -1,0 +1,15 @@
+description: Nova Scotia caps the pension income amount at this amount. 
+values: 
+  2017-01-01: 1_173
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Nova Scotia pension income amount cap 
+  reference: 
+  - title: 2022 Nova Scotia Personal Tax Credits Return Line 3
+    href: https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf#page=1
+  - title: 2022 Worksheet NS428
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5003-c/5003-c-22e.pdf#page=1
+  - title: Nova Scotia income tax act - subdivision c - Deduction for employment out of Canada - 10H
+    href: https://nslegislature.ca/sites/default/files/legc/statutes/income%20tax.pdf#page=28
+
