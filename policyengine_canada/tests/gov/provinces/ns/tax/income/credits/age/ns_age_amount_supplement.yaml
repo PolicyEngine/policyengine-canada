@@ -2,7 +2,7 @@
   period: 2023
   input:
     ns_taxable_income: 24_999
-    ns_age_amount_supplement_eligible: true  
+    ns_age_amount_eligible: true  
   output:
     ns_age_amount_supplement: 1_465
 
@@ -10,7 +10,7 @@
   period: 2023
   input:
     ns_taxable_income: 65_000
-    ns_age_amount_supplement_eligible: true  
+    ns_age_amount_eligible: true  
   output:
     ns_age_amount_supplement: 293
 
@@ -18,7 +18,7 @@
   period: 2023
   input:
     ns_taxable_income: 75_001
-    ns_age_amount_supplement_eligible: true  
+    ns_age_amount_eligible: true  
   output:
     ns_age_amount_supplement: 0
 
@@ -26,7 +26,7 @@
   period: 2023
   input:
     ns_taxable_income: 24_999
-    ns_age_amount_supplement_eligible: false  
+    ns_age_amount_eligible: false  
   output:
     ns_age_amount_supplement: 0
 
@@ -34,6 +34,6 @@
   period: 2023
   input:
     ns_taxable_income: 75_001
-    ns_age_amount_supplement_eligible: false  
+    ns_age_amount_eligible: false  
   output:
     ns_age_amount_supplement: 0

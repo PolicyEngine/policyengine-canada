@@ -1,10 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class ns_age_amount_supplement_eligible(Variable):
+class ns_age_amount_eligible(Variable):
     value_type = bool
     entity = Person
-    label = "Eligible for the Nova Scotia Age Amount Supplement"
+    label = "Eligible for the Nova Scotia age amount and age amount supplement"
     definition_period = YEAR
     defined_for = ProvinceCode.NS
     reference = (
