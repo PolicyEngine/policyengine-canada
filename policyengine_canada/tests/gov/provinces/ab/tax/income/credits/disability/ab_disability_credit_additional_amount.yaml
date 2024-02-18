@@ -3,7 +3,7 @@
   input:
     province_code: AB
     age: 17
-    childcare_received: 3_000
+    care_expenses: 3_000
   output:
     ab_disability_credit_additional_amount: 11_470
 
@@ -12,7 +12,7 @@
   input:
     province_code: AB
     age: 17
-    childcare_received: 3_500
+    care_expenses: 3_500
   output:
     ab_disability_credit_additional_amount: 11_098
 
@@ -21,6 +21,6 @@
   input:
     province_code: AB
     age: 17
-    childcare_received: 15_000
+    care_expenses: 15_000
   output:
     ab_disability_credit_additional_amount: 0
