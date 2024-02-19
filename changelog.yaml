@@ -571,3 +571,8 @@
     added:
     - Nova Scotia pension income amount.
   date: 2024-02-02 06:53:53
+- bump: patch
+  changes:
+    added:
+    - Labels to all variables, to pass latest core requirements.
+  date: 2024-02-18 18:20:19
