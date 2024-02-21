@@ -13,11 +13,11 @@ class ab_disability_credit_additional_amount(Variable):
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.ab.tax.income.credits.disability
         childcare_expenses = person("care_expenses", period)
-        reduced_childcare_expenses = max_(
+        excess_childcare_expenses = max_(
             0,
             childcare_expenses
             - p.additional_amount.childcare_expense_threshold,
         )
         age = person("age", period)
         additional_amount_base = p.additional_amount.base.calc(age)
-        return max_(0, additional_amount_base - reduced_childcare_expenses)
+        return max_(0, additional_amount_base - excess_childcare_expenses)
