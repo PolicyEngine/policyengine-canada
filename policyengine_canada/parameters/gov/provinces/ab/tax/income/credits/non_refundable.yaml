@@ -1,0 +1,10 @@
+description: Alberta list of non-refundable tax credits.
+values:
+  2022-01-01:
+    - ab_age_credit
+    - ab_disability_credit
+    - ab_pension_credit
+    - ab_spouse_and_common_law_partner_amount_credit
+
+metadata:
+  unit: program
