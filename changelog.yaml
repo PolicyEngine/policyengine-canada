@@ -576,3 +576,8 @@
     added:
     - Labels to all variables, to pass latest core requirements.
   date: 2024-02-18 18:20:19
+- bump: minor
+  changes:
+    added:
+    - Alberta disability credit.
+  date: 2024-02-24 05:08:23
