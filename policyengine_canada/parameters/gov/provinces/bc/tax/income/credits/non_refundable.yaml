@@ -3,6 +3,7 @@ values:
   2022-01-01:
     - bc_tax_reduction_credit
     - bc_age_credit
+    - bc_disability_credit
 
 metadata:
   unit: program

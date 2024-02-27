@@ -3,7 +3,7 @@
   input:
     province_code: BC
     age: 17
-    childcare_received: 3_000
+    care_expenses: 3_000
   output:
     bc_disability_credit_additional_amount: 5_242
 
@@ -12,7 +12,7 @@
   input:
     province_code: BC
     age: 17
-    childcare_received: 3_500
+    care_expenses: 3_500
   output:
     bc_disability_credit_additional_amount: 4_786
 
@@ -21,7 +21,7 @@
   input:
     province_code: BC
     age: 17
-    childcare_received: 15_000
+    care_expenses: 15_000
   output:
     bc_disability_credit_additional_amount: 0
 
@@ -30,7 +30,7 @@
   input:
     province_code: BC
     age: 18
-    childcare_received: 15_000
+    care_expenses: 15_000
   output:
     bc_disability_credit_additional_amount: 0
 
@@ -39,7 +39,7 @@
   input:
     province_code: BC
     age: 17
-    childcare_received: 2_800
+    care_expenses: 2_800
   output:
     bc_disability_credit_additional_amount: 4_946
 
@@ -48,7 +48,7 @@
   input:
     province_code: BC
     age: 17
-    childcare_received: 3_000
+    care_expenses: 3_000
   output:
     bc_disability_credit_additional_amount: 4_817
 
@@ -57,7 +57,7 @@
   input:
     province_code: BC
     age: 17
-    childcare_received: 15_000
+    care_expenses: 15_000
   output:
     bc_disability_credit_additional_amount: 0
 
@@ -66,6 +66,6 @@
   input:
     province_code: BC
     age: 18
-    childcare_received: 15_000
+    care_expenses: 15_000
   output:
     bc_disability_credit_additional_amount: 0
