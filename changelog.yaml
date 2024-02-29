@@ -586,3 +586,8 @@
     added:
     - British Columbia basic personal amount.
   date: 2024-02-29 02:49:05
+- bump: minor
+  changes:
+    added:
+    - British Columbia pension income amount.
+  date: 2024-02-29 14:47:21
