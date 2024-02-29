@@ -15,6 +15,6 @@ class ns_disability_amount(Variable):
             period
         ).gov.provinces.ns.tax.income.credits.disability_amount
         is_disabled = person("is_disabled", period)
-        disability_amount = p.amount
+        disability_amount = p.base
 
         return where(is_disabled, disability_amount, 0)
