@@ -581,3 +581,8 @@
     added:
     - Alberta disability credit.
   date: 2024-02-24 05:08:23
+- bump: minor
+  changes:
+    added:
+    - British Columbia basic personal amount.
+  date: 2024-02-29 02:49:05
