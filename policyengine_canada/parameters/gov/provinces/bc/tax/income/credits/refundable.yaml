@@ -1,7 +1,10 @@
-description: British Columbia list of refundable tax credits.
+description: British Columbia provides ty of refundable tax credits.
 values:
   2022-01-01:
     - bc_climate_action_tax_credit
+    - bc_disability_credit
 
 metadata:
-  unit: program
+  unit: list
+  period: year
+  label: British Columbia refundable tax credits
