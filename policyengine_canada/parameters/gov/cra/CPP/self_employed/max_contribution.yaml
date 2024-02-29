@@ -1,0 +1,9 @@
+description: Canada pension plan maximum yearly contribution for self employment
+values:
+  2022-01-01: 6_999.60
+metadata:
+  unit: currency-CAD
+  label: CPP self-employed max contribution
+  reference:
+  - title: Government of Canada - Contributions to the Canada Pension Plan
+    href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html
