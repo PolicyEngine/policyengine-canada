@@ -1,0 +1,9 @@
+description: Newfoundland and Labrador provides the seniors’ benefit at or above this age.
+values:
+  2022-12-31: 64
+metadata:
+  unit: age
+  label: Newfoundland and Labrador age threshold
+  reference:
+    - title: Government of Canada - Newfoundland and Labrador Seniors Benefit
+      href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/
