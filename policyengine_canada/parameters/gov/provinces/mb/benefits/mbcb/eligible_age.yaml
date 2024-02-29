@@ -3,7 +3,8 @@ values:
   2022-01-01: 18
 metadata:
   unit: year
-  label: Manitoba child benefit age benefit eligibility
+  label: Manitoba child benefit age eligibility
+  period: year
   reference:
-    - title: Manitoba basic child age benefit
+    - title: Province of Manitoba - Manitoba Child Benefit
       href: https://www.gov.mb.ca/fs/eia/mcb.html

@@ -18,6 +18,7 @@ metadata:
   threshold_unit: currency-CAD
   rate_unit: /1
   label: Manibota Child Benefit three children phase out rate
+  period: year
   reference:
     - title: Manibota child tax benefit 
       href: https://www.gov.mb.ca/fs/eia/mcb_table.html

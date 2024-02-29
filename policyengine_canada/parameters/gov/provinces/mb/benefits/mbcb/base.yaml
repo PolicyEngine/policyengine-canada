@@ -5,6 +5,7 @@ values:
 metadata:
   unit: currency-CAD
   label: Manitoba child benefit base
+  period: year
   reference:
     - title: Manitoba child tax benefit 
       href: https://www.gov.mb.ca/fs/eia/mcb.html
