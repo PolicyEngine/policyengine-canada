@@ -13,17 +13,15 @@ brackets:
     rate:
       2022-01-01: 1
       
-#TODO: find 7+ children rates if possible
-
 metadata:
   type: marginal_rate
   threshold_unit: currency-CAD
   rate_unit: /1
-  label: Manibota Child Benefit one child phase out rate
+  label: Manitoba Child Benefit six or more children phase out rate
   period: year
   reference:
-    - title: Manibota child tax benefit 
+    - title: Manitoba child tax benefit 
       href: https://www.gov.mb.ca/fs/eia/mcb_table.html
-      # Law does specify rate for 7+ children, assume that it is the same as for 6
-    - title: Manibota child tax benefit regulation 6(2)
+      # Law does not specify the reduction start for 7+ children, assuming that it is the same as for 6
+    - title: Manitoba child tax benefit regulation 6(2)
       href: https://www.gov.mb.ca/fs/eia_manual/regs/4.html
