@@ -4,7 +4,8 @@ brackets:
       2022-01-01: 0
     amount:
       2022-01-01: 4_946
-      2023-01-01: 5_242
+      2023-01-01: 5_242  
+      2024-01-01: 5_505
   - threshold:
       2022-01-01: 18
     amount: 
@@ -22,4 +23,3 @@ metadata:
     href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96215_00_multi#section4.51
   - title: British Columbia disability amount worksheet 2022
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5010-d/5010-d-22e.pdf#page=1
-

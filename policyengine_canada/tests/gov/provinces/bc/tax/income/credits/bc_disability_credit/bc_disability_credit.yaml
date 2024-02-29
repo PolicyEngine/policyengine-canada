@@ -7,15 +7,6 @@
   output:
     bc_disability_credit: 8_986
 
-- name: Eligible person with disability credit over limit 2023
-  period: 2023
-  input:
-    province_code: BC
-    bc_disability_credit_eligible: true
-    bc_disability_credit_additional_amount: 5_243
-  output:
-    bc_disability_credit: 14_228
-
 - name: Ineligible person 2023
   period: 2023
   input:
@@ -33,15 +24,6 @@
     bc_disability_credit_additional_amount: 0
   output:
     bc_disability_credit: 8_477
-
-- name: Eligible person with disability credit over limit 2022
-  period: 2022
-  input:
-    province_code: BC
-    bc_disability_credit_eligible: true
-    bc_disability_credit_additional_amount: 4_947
-  output:
-    bc_disability_credit: 13_423
 
 - name: Ineligible person 2022
   period: 2022

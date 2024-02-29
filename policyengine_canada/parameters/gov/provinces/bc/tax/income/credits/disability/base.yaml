@@ -1,7 +1,8 @@
 description: British Columbia provides this disability credit base amount.
 values:
   2022-01-01: 8_477
-  2023-01-01: 8_986
+  2023-01-01: 8_986  
+  2024-01-01: 9_435
 metadata:
   unit: currency-CAD
   period: year

@@ -1,7 +1,9 @@
 description: British Columbia reduces the additional disability credit amount by the excess of childcare expenses over this threshold.  
 values:
   2022-01-01: 2_871
-  2023-01-01: 3_044
+  2023-01-01: 3_044  
+  2024-01-01: 3_196  
+
 metadata:
   unit: currency-CAD
   period: year
