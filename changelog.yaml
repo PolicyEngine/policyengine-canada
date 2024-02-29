@@ -561,3 +561,23 @@
     added:
     - New Brunswick pension benefit.
   date: 2023-11-09 20:50:26
+- bump: patch
+  changes:
+    changed:
+    - Unpin black.
+  date: 2024-01-26 14:53:06
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia pension income amount.
+  date: 2024-02-02 06:53:53
+- bump: patch
+  changes:
+    added:
+    - Labels to all variables, to pass latest core requirements.
+  date: 2024-02-18 18:20:19
+- bump: minor
+  changes:
+    added:
+    - Alberta disability credit.
+  date: 2024-02-24 05:08:23

@@ -13,6 +13,7 @@ class gst_credit_category(Variable):
     possible_values = GSTCreditCategory
     default_value = GSTCreditCategory.HEAD
     definition_period = YEAR
+    label = "GST Credit Category"
 
     def formula(person, period, parameters):
         return select(

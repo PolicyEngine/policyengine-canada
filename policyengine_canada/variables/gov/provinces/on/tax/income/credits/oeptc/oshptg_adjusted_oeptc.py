@@ -7,6 +7,7 @@ class oshptg_adjusted_oeptc(Variable):
     documentation = "Ontario energy and property tax credit adjusted for the Ontario senior homeowners property tax grant"
     unit = CAD
     definition_period = YEAR
+    label = "Ontario energy and property tax credit adjusted for the Ontario senior homeowners property tax grant"
 
     def formula(household, period, parameters):
         person = household.members
