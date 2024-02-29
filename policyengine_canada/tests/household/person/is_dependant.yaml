@@ -1,0 +1,23 @@
+- name: Ineligible dependant who is head
+  period: 2023
+  input:
+    is_head: true
+    is_spouse: false
+  output:
+    is_dependant: false
+
+- name: Ineligible dependant who is spouse
+  period: 2023
+  input:
+    is_head: false
+    is_spouse: true
+  output:
+    is_dependant: false
+
+- name: Eligible dependant
+  period: 2023
+  input:
+    is_head: false
+    is_spouse: false
+  output:
+    is_dependant: true

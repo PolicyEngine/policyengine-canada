@@ -526,3 +526,63 @@
     added:
     - Nunavut age amount credit.
   date: 2023-09-04 23:15:38
+- bump: minor
+  changes:
+    added:
+    - Northwest Territories basic personal amount.
+  date: 2023-09-23 22:06:50
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia income assistance asset eligibility.
+  date: 2023-09-28 18:01:54
+- bump: patch
+  changes:
+    fixed:
+    - Disability tax credit parameter readme file.
+  date: 2023-10-03 23:05:56
+- bump: minor
+  changes:
+    added:
+    - Quebec work premium tax credit.
+  date: 2023-10-04 23:17:14
+- bump: patch
+  changes:
+    changed:
+    - Redefine `is_dependant`.
+  date: 2023-10-06 11:22:22
+- bump: patch
+  changes:
+    removed:
+    - numpy pin.
+  date: 2023-10-08 04:38:29
+- bump: minor
+  changes:
+    added:
+    - New Brunswick pension benefit.
+  date: 2023-11-09 20:50:26
+- bump: patch
+  changes:
+    changed:
+    - Unpin black.
+  date: 2024-01-26 14:53:06
+- bump: minor
+  changes:
+    added:
+    - Nova Scotia pension income amount.
+  date: 2024-02-02 06:53:53
+- bump: patch
+  changes:
+    added:
+    - Labels to all variables, to pass latest core requirements.
+  date: 2024-02-18 18:20:19
+- bump: minor
+  changes:
+    added:
+    - Alberta disability credit.
+  date: 2024-02-24 05:08:23
+- bump: minor
+  changes:
+    added:
+    - British Columbia basic personal amount.
+  date: 2024-02-29 02:49:05

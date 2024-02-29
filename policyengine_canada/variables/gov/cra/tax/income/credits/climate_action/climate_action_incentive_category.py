@@ -16,6 +16,7 @@ class climate_action_incentive_category(Variable):
     possible_values = ClimateActionIncentiveCategory
     default_value = ClimateActionIncentiveCategory.HEAD
     definition_period = YEAR
+    label = "Climate Action Incentive Category"
 
     def formula(person, period, parameters):
         is_single_parent_household = person.household(

@@ -1,0 +1,10 @@
+description: Nova Scotia considers these assets when determining eligibility for the Income Assistance.
+values:
+  2021-01-01:
+    - real_and_personal_property
+    - household_liquid_assets
+metadata:
+  unit: list
+  reference:
+    - title: Employment Support and Income Assistance Act, Section 21, Definitions (2)
+      href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC3_2
