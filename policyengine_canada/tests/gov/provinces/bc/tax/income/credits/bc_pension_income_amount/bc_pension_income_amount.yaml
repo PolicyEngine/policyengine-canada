@@ -1,0 +1,15 @@
+- name: Pension income is larger than the maximum amount
+  period: 2023
+  input:
+    province_code: BC
+    pension_and_savings_plan_income: 1_001
+  output:
+    bc_pension_income_amount: 1_000
+
+- name: Pension income is less than the maximum amount
+  period: 2023
+  input:
+    province_code: BC
+    pension_and_savings_plan_income: 800
+  output:
+    bc_pension_income_amount: 800
