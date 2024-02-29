@@ -4,11 +4,15 @@
     people:
       head:
         age: 30
+        is_spouse: false
+        is_dependant: false
       spouse:
         age: 30
         is_spouse: true
+        is_dependant: false
       dependent:
         age: 19
+        is_spouse: false
         is_dependant: true
     household:
       members: [head, spouse, dependent]
@@ -22,6 +26,8 @@
     people:
       head:
         age: 30
+        is_spouse: false
+        is_dependant: false
     household:
       members: [head]
       province_code: NS
@@ -34,9 +40,12 @@
     people:
       head:
         age: 30
+        is_spouse: false
+        is_dependant: false
       spouse:
         age: 30
         is_spouse: true
+        is_dependant: false
     household:
       members: [head, spouse]
       province_code: NS
