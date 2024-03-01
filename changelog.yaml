@@ -596,3 +596,8 @@
     added:
     - Nova Scotia disability amount.
   date: 2024-03-01 02:01:53
+- bump: minor
+  changes:
+    added:
+    - British Columbia disability credit.
+  date: 2024-03-01 16:19:20
