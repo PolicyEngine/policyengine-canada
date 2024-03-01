@@ -1,16 +1,21 @@
-description: British Columbia provides the following non-refundable tax credits.
-values:
-  2022-01-01:
-    - bc_tax_reduction_credit
-    - bc_age_credit
-    - bc_basic_personal_amount
-    - bc_pension_income_amount
-    - bc_disability_credit
-
+description: British Columbia provides an additional disability credit of this amount, based on age.
+brackets: 
+  - threshold:
+      2022-01-01: 0
+    amount:
+      2022-01-01: 4_946
+      2023-01-01: 5_242  
+      2024-01-01: 5_505
+  - threshold:
+      2022-01-01: 18
+    amount: 
+      2022-01-01: 0
 metadata:
-  unit: program
+  type: single_amount
+  threshold_unit: year
+  amount_unit: currency-CAD
   period: year
-  label: British Columbia non-refundable tax credits
+  label: British Columbia disability credit additional amount base 
   reference:
   - title: B.C. basic personal income tax credits
     href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/basic
