@@ -1,4 +1,4 @@
-description: Manitoba phases the child benefit out for families with one child at this rate.
+description: Manitoba phases the child benefit out for families with one child at this rate, based on income. 
 brackets:
   - threshold:
       2022-01-01: 0
@@ -24,4 +24,4 @@ metadata:
       href: https://www.gov.mb.ca/fs/eia/mcb_table.html
     - title: Manitoba child tax benefit regulation 6(2)
       href: https://www.gov.mb.ca/fs/eia_manual/regs/4.html
-
+    # did not find tax form for 2022

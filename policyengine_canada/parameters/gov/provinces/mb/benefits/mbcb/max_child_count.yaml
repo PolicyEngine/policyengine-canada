@@ -1,4 +1,4 @@
-description: Manitoba adds an additional child benefit amount for up to this child count.
+description: Manitoba adds an additional child benefit amount for up to this children count.
 values:
   2022-01-01: 6
 metadata:
@@ -9,4 +9,5 @@ metadata:
     - title: Manitoba basic child age benefit
       href: https://www.gov.mb.ca/fs/eia/mcb_table.html
     - title: Manitoba child benefit regulation § 5
-      href: https://www.gov.mb.ca/fs/eia_manual/regs/4.html
+      href: https://www.gov.mb.ca/fs/eia_manual/regs/4.html 
+    # did not find tax form for 2022
