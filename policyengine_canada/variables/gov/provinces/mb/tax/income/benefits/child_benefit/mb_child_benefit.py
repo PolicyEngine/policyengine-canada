@@ -9,20 +9,24 @@ class mb_child_benefit(Variable):
     defined_for = ProvinceCode.MB
 
     def formula(household, period, parameters):
-        children = household("mb_child_benefit_eligible_children", period)
+        eligible_children = household(
+            "mb_child_benefit_eligible_children", period
+        )
         p = parameters(period).gov.provinces.mb.benefits.mbcb
-        children = min_(children, p.max_child_count)  # <= 6
+        capped_children_count = min_(
+            eligible_children, p.max_child_count
+        )  # <= 6
 
         income = household("adjusted_family_net_income", period)
-        base = children * p.base
+        base_amount = capped_children_count * p.base
         reduction = select(
             [
-                children == 1,
-                children == 2,
-                children == 3,
-                children == 4,
-                children == 5,
-                children >= 6,
+                capped_children_count == 1,
+                capped_children_count == 2,
+                capped_children_count == 3,
+                capped_children_count == 4,
+                capped_children_count == 5,
+                capped_children_count >= 6,
             ],
             [
                 p.reduction.one_child.calc(income),
@@ -34,4 +38,4 @@ class mb_child_benefit(Variable):
             ],
             default=0,
         )
-        return max_(0, base - reduction)
+        return max_(0, base_amount - reduction)

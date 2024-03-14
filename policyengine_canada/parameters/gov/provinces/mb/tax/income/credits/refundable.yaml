@@ -1,14 +1,12 @@
 description: Manitoba provides the follwoing refundable tax credits.
 values:
-  2022-01-01: 
-    - mb_child_benefit 
+  2022-01-01: []
+    
 
 metadata:
   unit: list  
   period: year 
   label: Manitoba refundable credits  
-  reference:
-  # Child benefit reference  
-  - title: Manitoba child benefit regulation § 6(1)  
-    href: https://www.gov.mb.ca/fs/eia_manual/regs/4.html  
+  
+  
   
