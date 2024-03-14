@@ -10,8 +10,12 @@ class household_benefits(Variable):
     adds = [
         "child_benefit",
         "dental_benfit",
+        # Manitoba
         "mb_child_benefit",
+        # New Brunswick
         "nb_child_benefit",
+        # Nunavut
         "nu_child_benefit",
+        # Yukon
         "yt_child_benefit",
     ]

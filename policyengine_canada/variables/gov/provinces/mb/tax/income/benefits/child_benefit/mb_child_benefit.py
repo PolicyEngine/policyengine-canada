@@ -13,9 +13,8 @@ class mb_child_benefit(Variable):
             "mb_child_benefit_eligible_children", period
         )
         p = parameters(period).gov.provinces.mb.benefits.mbcb
-        capped_children_count = min_(
-            eligible_children, p.max_child_count
-        )  # <= 6
+        capped_children_count = min_(eligible_children, p.max_child_count)
+        # <= 6
 
         income = household("adjusted_family_net_income", period)
         base_amount = capped_children_count * p.base
