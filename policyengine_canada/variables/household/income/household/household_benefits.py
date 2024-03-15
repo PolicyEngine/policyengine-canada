@@ -9,7 +9,7 @@ class household_benefits(Variable):
     definition_period = YEAR
     adds = [
         "child_benefit",
-        "dental_benfit",
+        "dental_benefit",
         # Manitoba
         "mb_child_benefit",
         # New Brunswick
