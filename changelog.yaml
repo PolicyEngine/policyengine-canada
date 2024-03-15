@@ -601,3 +601,8 @@
     added:
     - British Columbia disability credit.
   date: 2024-03-01 16:19:20
+- bump: minor
+  changes:
+    added:
+    - Manitoba child benefit.
+  date: 2024-03-15 03:16:05
