@@ -1,0 +1,26 @@
+- name: Quebec solidarity credit qst component for non-eligible individual
+  period: 2023
+  input:
+    is_married: false
+    qc_sales_tax: 0
+    province_code: QC
+  output:
+    qc_solidarity_qst_component_amount: 0
+
+- name: Quebec solidarity credit qst component for individual living with spouse
+  period: 2023
+  input:
+    is_married: true
+    qc_sales_tax: 200
+    province_code: QC
+  output:
+    qc_solidarity_qst_component_amount: 618 #309+309
+
+- name: Quebec solidarity credit qst component for individual living alone
+  period: 2023
+  input:
+    is_married: false
+    qc_sales_tax: 200
+    province_code: QC
+  output:
+    qc_solidarity_qst_component_amount: 456 #309+147

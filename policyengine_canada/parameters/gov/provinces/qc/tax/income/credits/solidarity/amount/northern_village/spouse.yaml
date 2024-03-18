@@ -1,0 +1,14 @@
+description: Quebec increases the solidarity tax credit for individuals living in Northern villages by this amount for each eligible adult's spouse.
+values:
+  2022-07-01: 1_818
+metadata:
+  unit: currency-CAD
+  label: Quebec Solidarity Tax Credit base amount for spouse living in a northern village 
+  reference:
+    - title: Revenu Quebec - Solidarity Tax Credit - Component for individuals living in a northern village
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/solidarity-tax-credit/components-of-the-solidarity-tax-credit/component-for-individuals-living-in-northern-villages/
+    - title: Parameters of the Personal Income Tax System for 2022 - Table 4
+      href: http://www.finances.gouv.qc.ca/MAJ2021/documents/en/AUTEN_IncomeTax2022.pdf#page=16
+    - title: Taxation Act(CQLR c I-3), Part I, Book IX, Title III, Division II.17.2 Solidarity Credit, § 2.1029.8.116.16.(c)i
+      href: https://www.canlii.org/en/qc/laws/stat/cqlr-c-i-3/latest/cqlr-c-i-3.html#se:1029_8_116_16
+      # $1,719 in the legal reference, increased due to the inflation adjustments
