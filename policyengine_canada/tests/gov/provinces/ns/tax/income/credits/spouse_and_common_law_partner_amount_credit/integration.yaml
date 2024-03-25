@@ -1,0 +1,56 @@
+- name: Integration - spouse with income <= 848
+  period: 2023
+  absolute_error_margin: 0.01
+  input:
+    people:
+      parent1:
+        age: 40
+        individual_net_income: 20_000
+      parent2:
+        age: 39
+        is_spouse: true
+        individual_net_income: 0
+    household:
+      members: [parent1, parent2]
+      province_code: NS
+      is_married: true
+  output:
+    ns_spouse_and_common_law_partner_amount_credit: 8_481
+
+- name: Integration - spouse with 848<= income <= 9329
+  period: 2023
+  absolute_error_margin: 0.01
+  input:
+    people:
+      parent1:
+        age: 40
+        individual_net_income: 20_000
+      parent2:
+        age: 39
+        is_spouse: true
+        individual_net_income: 849
+    household:
+      members: [parent1, parent2]
+      province_code: NS
+      is_married: true
+  output:
+    ns_spouse_and_common_law_partner_amount_credit: 8_480
+
+- name: Integration - spouse with income >= 9329
+  period: 2023
+  absolute_error_margin: 0.01
+  input:
+    people:
+      parent1:
+        age: 40
+        individual_net_income: 20_000
+      parent2:
+        age: 39
+        is_spouse: true
+        individual_net_income: 9_400
+    household:
+      members: [parent1, parent2]
+      province_code: NS
+      is_married: true
+  output:
+    ns_spouse_and_common_law_partner_amount_credit: 0

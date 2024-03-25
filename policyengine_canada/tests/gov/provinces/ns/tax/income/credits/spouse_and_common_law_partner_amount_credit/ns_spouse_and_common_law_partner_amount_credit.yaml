@@ -1,0 +1,117 @@
+- name: Househod with no spouse income
+  period: 2023
+  input:
+    people:
+      head:
+        spouse_income: 0
+      spouse:
+        spouse_income: 0
+    household:
+      members: [head, spouse]
+      province_code: NS
+      is_married: true
+  output:
+    ns_spouse_and_common_law_partner_amount_credit: 8_481
+
+- name: Not married are not eligible for an amount
+  period: 2023
+  input:
+    people:
+      head:
+        spouse_income: 0
+    household:
+      members: [head]
+      province_code: NS
+      is_married: false
+  output:
+    ns_spouse_and_common_law_partner_amount_credit: 0
+
+- name: House hold with spouse income lower than 848
+  period: 2023
+  input:
+    people:
+      spouse:
+        spouse_income: 847
+      head:
+        spouse_income: 0
+    household:
+      members: [head, spouse]
+      province_code: NS
+      is_married: true
+  output:
+    ns_spouse_and_common_law_partner_amount_credit: 8_481
+
+- name: House hold with spouse income between (848, 9_329)
+  period: 2023
+  input:
+    people:
+      spouse:
+        spouse_income: 849
+      head:
+        spouse_income: 0
+    household:
+      members: [head, spouse]
+      province_code: NS
+      is_married: true
+  output:
+    ns_spouse_and_common_law_partner_amount_credit: 8_480
+
+- name: House hold with spouse income between (848, 9_329)
+  period: 2023
+  input:
+    people:
+      spouse:
+        spouse_income: 9_328
+      head:
+        spouse_income: 0
+    household:
+      members: [head, spouse]
+      province_code: NS
+      is_married: true
+  output:
+    ns_spouse_and_common_law_partner_amount_credit: 1
+
+- name: House hold with spouse income between (848, 9_329) 2
+  period: 2023
+  input:
+    people:
+      spouse:
+        spouse_income: 9_000
+      head:
+        spouse_income: 0
+    household:
+      members: [head, spouse]
+      province_code: NS
+      is_married: true
+  output:
+    ns_spouse_and_common_law_partner_amount_credit: 329
+
+- name: House hold with spouse income is 9_329
+  period: 2023
+  input:
+    people:
+      spouse:
+        spouse_income: 9_329
+      head:
+        spouse_income: 0
+    household:
+      members: [head, spouse]
+      province_code: NS
+      is_married: true
+  output:
+    ns_spouse_and_common_law_partner_amount_credit: 0
+
+- name: House hold with spouse income more than 9_329
+  period: 2023
+  input:
+    people:
+      spouse:
+        spouse_income: 9_400
+      head:
+        spouse_income: 0
+    household:
+      members: [head, spouse]
+      province_code: NS
+      is_married: true
+  output:
+    ns_spouse_and_common_law_partner_amount_credit: 0
