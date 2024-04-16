@@ -1,0 +1,10 @@
+description: Alberta provides this maximum amount under the personal credit. 
+values:
+  2023-01-01: 21_003
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Alberta base personal credit maximum amount
+  reference:
+  - title: Alberta income tax personal credit
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf
