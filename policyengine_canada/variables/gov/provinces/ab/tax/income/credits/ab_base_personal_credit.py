@@ -12,4 +12,4 @@ class ab_base_personal_credit(Variable):
 
     def formula(person, period, parameters):
         base = parameters(period).gov.provinces.ab.tax.income.credits.base
-        return p
+        return base
