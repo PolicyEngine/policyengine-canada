@@ -11,5 +11,5 @@ class ab_base_personal_credit(Variable):
     defined_for = ProvinceCode.AB
 
     def formula(person, period, parameters):
-        base = parameters(period).gov.provinces.ab.tax.income.credits.base
+        return parameters(period).gov.provinces.ab.tax.income.credits.base
         return base
