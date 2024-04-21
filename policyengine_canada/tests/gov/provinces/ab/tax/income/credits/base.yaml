@@ -1,6 +1,0 @@
-- name: Alberta Base
-  period: 2023
-  input:
-    province_code: AB
-  output:
-    ab_base_personal_credit: 21_003
