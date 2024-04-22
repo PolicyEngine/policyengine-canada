@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class ab_base_personal_amount(Variable):
+class ab_basic_personal_amount(Variable):
     value_type = float
     entity = Person
     label = "Alberta basic personal amount"
@@ -11,4 +11,6 @@ class ab_base_personal_amount(Variable):
     defined_for = ProvinceCode.AB
 
     def formula(person, period, parameters):
-        return parameters(period).gov.provinces.ab.tax.income.credits.basic_personal_amount.amount
+        return parameters(
+            period
+        ).gov.provinces.ab.tax.income.credits.basic_personal_amount.amount

@@ -3,10 +3,11 @@
   input:
     province_code: AB
   output:
-    ab_base_personal_credit: 19_369
+    ab_basic_personal_amount: 19_369
+  
 - name: Alberta Basic Personal Amount (2023)
   period: 2023
   input:
     province_code: AB
   output:
-    ab_base_personal_credit: 21_003
+    ab_basic_personal_amount: 21_003
