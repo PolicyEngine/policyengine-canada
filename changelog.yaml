@@ -606,3 +606,8 @@
     added:
     - Manitoba child benefit.
   date: 2024-03-15 03:16:05
+- bump: minor
+  changes:
+    added:
+    - Alberta basic personal amount.
+  date: 2024-04-22 23:28:02
