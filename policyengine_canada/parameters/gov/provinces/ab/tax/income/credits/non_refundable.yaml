@@ -5,6 +5,7 @@ values:
     - ab_disability_credit
     - ab_pension_credit
     - ab_spouse_and_common_law_partner_amount_credit
+    - ab_basic_personal_amount
 
 metadata:
   unit: list  

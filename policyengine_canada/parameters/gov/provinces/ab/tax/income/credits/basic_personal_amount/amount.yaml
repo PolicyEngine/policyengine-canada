@@ -1,0 +1,17 @@
+description: Alberta provides this basic personal amount. 
+values:
+  # Legal code defines $19,369.
+  # Section 44.2 defines indexing.
+  2022-01-01: 19_369
+  2023-01-01: 21_003
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Alberta basic personal amount
+  reference:
+  - title: Alberta income tax personal credit (2022)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-22e.pdf#page=1
+  - title: Alberta income tax personal credit (2023)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf#page=1
+  - title: Alberta Personal Income Tax Act Division 3 Basic Personal Amount C
+    href: https://www.canlii.org/en/ab/laws/stat/rsa-2000-c-a-30/latest/rsa-2000-c-a-30.html
