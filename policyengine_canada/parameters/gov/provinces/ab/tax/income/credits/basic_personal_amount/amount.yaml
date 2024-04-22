@@ -1,5 +1,7 @@
 description: Alberta provides this basic personal amount. 
 values:
+  # Legal code defines $19,369.
+  # Section 44.2 defines indexing.
   2022-01-01: 19_369
   2023-01-01: 21_003
 metadata:
