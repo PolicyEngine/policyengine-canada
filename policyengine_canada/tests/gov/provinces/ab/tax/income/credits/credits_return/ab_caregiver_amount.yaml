@@ -3,7 +3,7 @@
   input:
     age: 19
     is_disabled: true
-    live_together: true
+    cohabitating_dependant: true
     individual_net_income: 20_000
     province_code: AB
   output:
@@ -14,7 +14,7 @@
   input:
     age: 19
     is_disabled: true
-    live_together: true
+    cohabitating_dependant: true
     individual_net_income: 10_000
     province_code: AB
   output:
@@ -24,7 +24,7 @@
   period: 2023
   input:
     age: 66
-    live_together: true
+    cohabitating_dependant: true
     individual_net_income: 10_000
     province_code: AB
   output:
@@ -34,7 +34,7 @@
   period: 2023
   input:
     age: 67
-    live_together: true
+    cohabitating_dependant: true
     individual_net_income: 20_000
     province_code: AB
   output:
@@ -45,7 +45,7 @@
   input:
     age: 25
     is_disabled: true
-    live_together: false
+    cohabitating_dependant: false
     individual_net_income: 40_000
     province_code: AB
   output:

@@ -1,11 +1,13 @@
 description: Alberta limits its Child and Family Benefit to people above this age.
 values:
-  2023-01-01: 18
+  2022-01-01: 18
 metadata:
   unit: year
   label: Alberta child and Family Benefit adult dependant age eligibility
   reference:
-  - title: Province of Alberta - Alberta Child and Family Benefit
-    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf
-  - title: Province of Alberta - Alberta Personal Income Tax Act, RSA 2000
-    href: https://www.canlii.org/en/ab/laws/stat/rsa-2000-c-a-30/latest/rsa-2000-c-a-30.html 
+  - title: Province of Alberta - Alberta Child and Family Benefit (2022)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-22e.pdf#page=1
+  - title: Province of Alberta - Alberta Child and Family Benefit (2023)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf#page=1
+  - title: Province of Alberta - Alberta Personal Income Tax Act, RSA 2000, Division 4
+    href: https://www.canlii.org/en/ab/laws/stat/rsa-2000-c-a-30/latest/rsa-2000-c-a-30.html
