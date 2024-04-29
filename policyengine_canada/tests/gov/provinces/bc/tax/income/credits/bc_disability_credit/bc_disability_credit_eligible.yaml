@@ -1,0 +1,31 @@
+- name: Eligible person with disability 2023
+  period: 2023
+  input:
+    is_disabled: true
+    province_code: BC
+  output:
+    bc_disability_credit_eligible: true
+
+- name: Ineligible person without disability 2023
+  period: 2023
+  input:
+    is_disabled: false
+    province_code: BC
+  output:
+    bc_disability_credit_eligible: false
+
+- name: Eligible person with disability 2022
+  period: 2022
+  input:
+    is_disabled: true
+    province_code: BC
+  output:
+    bc_disability_credit_eligible: true
+
+- name: Ineligible person without disability 2022
+  period: 2022
+  input:
+    is_disabled: false
+    province_code: BC
+  output:
+    bc_disability_credit_eligible: false

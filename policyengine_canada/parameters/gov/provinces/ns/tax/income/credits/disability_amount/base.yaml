@@ -1,0 +1,16 @@
+description: Nova Scotia provides the following base disability amount.
+
+values: 
+  2022-01-01: 7_341
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Nova Scotia disability amount base
+  reference: 
+  - title: 2022 Nova Scotia Personal Tax Credits Return - TD1NS
+    href: https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf#page=1
+  - title: T2201 Disability Tax Credit Certificate and relevant information
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2201.html
+  - title: Income Tax Act 
+    # The income tax act does not specify the disability amount
+    href: https://nslegislature.ca/sites/default/files/legc/statutes/income%20tax.pdf#page=44

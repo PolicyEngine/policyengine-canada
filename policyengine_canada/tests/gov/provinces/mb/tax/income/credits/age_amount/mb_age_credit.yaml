@@ -1,0 +1,35 @@
+- name: Ineligible
+  period: 2023
+  input:
+    province_code: MB
+    mb_age_credit_eligible: false
+    individual_net_income: 20_000
+  output:
+    mb_age_credit: 0
+
+- name: Eligible under phase-out income
+  period: 2023
+  input:
+    province_code: MB
+    mb_age_credit_eligible: true
+    individual_net_income: 20_000
+  output:
+    mb_age_credit: 3_728
+
+- name: Eligible over phase-out income # 3_728 - ((37_749 - 27_749) * 0.15)
+  period: 2023
+  input:
+    province_code: MB
+    mb_age_credit_eligible: true
+    individual_net_income: 37_749
+  output:
+    mb_age_credit: 2_228
+
+- name: Eligible over maximum phase-out income # max_(3_728 - ((100_000 - 27_749) * 0.15),0)
+  period: 2023
+  input:
+    province_code: MB
+    mb_age_credit_eligible: true
+    individual_net_income: 100_000
+  output:
+    mb_age_credit: 0

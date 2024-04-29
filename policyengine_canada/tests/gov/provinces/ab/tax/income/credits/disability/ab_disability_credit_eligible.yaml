@@ -1,0 +1,15 @@
+- name: Eligible person with disability
+  period: 2022
+  input:
+    is_disabled: true
+    province_code: AB
+  output:
+    ab_disability_credit_eligible: true
+
+- name: Ineligible person without disability
+  period: 2022
+  input:
+    is_disabled: false
+    province_code: AB
+  output:
+    ab_disability_credit_eligible: false

@@ -1,0 +1,11 @@
+description: Manitoba provides the following non-refundable tax credits.  
+values:
+  2022-01-01:
+    - mb_age_amount
+    - mb_pension_amount
+    - mb_basic_person_amount
+
+metadata:
+  unit: list  
+  period: year 
+  label: Manitoba non-refundable credits  

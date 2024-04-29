@@ -1,0 +1,194 @@
+- name: Manitoba Child Benefit Amount with 1 child and low income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 1
+    adjusted_family_net_income: 14_000
+  output:
+    mb_child_benefit: 420
+
+- name: Manitoba Child Benefit Amount with 1 child and intermidate income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 1
+    adjusted_family_net_income: 16_000
+  output:
+    mb_child_benefit: 342.7 #partial deduction rate is 0.0773
+
+- name: Manitoba Child Benefit Amount with 1 child and high income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 1
+    adjusted_family_net_income: 25_000
+  output:
+    mb_child_benefit: 0
+
+- name: Manitoba Child Benefit Amount with 2 children and low income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 2
+    adjusted_family_net_income: 14_000
+  output:
+    mb_child_benefit: 840
+
+- name: Manitoba Child Benefit Amount with 2 children and intermediate income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 2
+    adjusted_family_net_income: 16_000
+  output:
+    mb_child_benefit: 685.4 #partial deduction rate is 0.1546
+
+- name: Manitoba Child Benefit Amount with 2 children and high income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 2
+    adjusted_family_net_income: 25_000
+  output:
+    mb_child_benefit: 0
+  
+- name: Manitoba Child Benefit Amount with 3 child and low income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 3
+    adjusted_family_net_income: 14_000
+  output:
+    mb_child_benefit: 1_260
+
+- name: Manitoba Child Benefit Amount with 3 child and intermediate income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 3
+    adjusted_family_net_income: 16_000
+  output:
+    mb_child_benefit: 1_028.2 #partial deduction rate is 0.2318
+
+- name: Manitoba Child Benefit Amount with 3 children and high income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 3
+    adjusted_family_net_income: 20_436
+  output:
+    mb_child_benefit: 0
+
+- name: Manitoba Child Benefit Amount with 4 children and low income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 4
+    adjusted_family_net_income: 14_000
+  output:
+    mb_child_benefit: 1_680
+    
+- name: Manitoba Child Benefit Amount with 4 children and intermediate income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 4
+    adjusted_family_net_income: 16_000
+  output:
+    mb_child_benefit: 1_448.2
+
+- name: Manitoba Child Benefit Amount with 4 children and high income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 4
+    adjusted_family_net_income: 25_000
+  output:
+    mb_child_benefit: 0
+
+- name: Manitoba Child Benefit Amount with 5 children and low income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 5
+    adjusted_family_net_income: 14_999
+  output:
+    mb_child_benefit: 2_100
+
+- name: Manitoba Child Benefit Amount with 5 children and intermediate income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 5
+    adjusted_family_net_income: 16_000
+  output:
+    mb_child_benefit: 1_868.2
+
+- name: Manitoba Child Benefit Amount with 5 children and high income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 5
+    adjusted_family_net_income: 25_000
+  output:
+    mb_child_benefit: 0
+
+- name: Manitoba Child Benefit Amount with 6 or more children and low income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 6
+    adjusted_family_net_income: 14_000
+  output:
+    mb_child_benefit: 2_520
+
+- name: Manitoba Child Benefit Amount with 6 and more children and intermediate income
+  period: 2023
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 6
+    adjusted_family_net_income: 16_000
+  output:
+    mb_child_benefit: 2_288.2
+
+- name: Manitoba Child Benefit Amount with 6 or more children and high income
+  period: 2023
+  absolute_error_margin: 2
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 6
+    adjusted_family_net_income: 25_865
+  output:
+    mb_child_benefit: 0
+
+- name: Manitoba Child Benefit Amount with 8 children and low income
+  period: 2023
+  absolute_error_margin: 2
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 8
+    adjusted_family_net_income: 14_000
+  output:
+    mb_child_benefit: 2_520  
+
+- name: Manitoba Child Benefit Amount with 8 children and intermdeiate income
+  period: 2023
+  absolute_error_margin: 2
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 8
+    adjusted_family_net_income: 16_000
+  output:
+    mb_child_benefit: 2_288.2  
+
+- name: Manitoba Child Benefit Amount with 8 children and high income
+  period: 2023
+  absolute_error_margin: 2
+  input:
+    province_code: MB
+    mb_child_benefit_eligible_children: 8
+    adjusted_family_net_income: 25_865
+  output:
+    mb_child_benefit: 0
+
+
