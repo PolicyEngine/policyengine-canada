@@ -31,7 +31,7 @@ class ab_caregiver_amount(Variable):
         caregiver_amount = (
             (p.upper_dependant_income_threshold - dependant_net_income)
             * income_eligibility
-            * person("live_together", period)
+            * person("cohabitating_dependant", period)
         )
 
         return min_(caregiver_amount, p.maximum_caregiver_amount)

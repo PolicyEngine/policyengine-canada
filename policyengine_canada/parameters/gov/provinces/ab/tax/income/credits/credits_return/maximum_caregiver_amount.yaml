@@ -1,6 +1,6 @@
 description: Alberta Maximum Caregiver Amount
 values:
-  2022-01-1: 11_212
+  2022-01-01: 11_212
   2023-01-01: 12_158 
 metadata:
   unit: currency-CAD
