@@ -1,4 +1,4 @@
-description: Alberta provides the caregiver amount for dependants with income below this threshold.
+description: Alberta limits the caregiver amount to dependants with income below this threshold.
 values:
   2022-01-01: 17_826
   2023-01-01: 19_331 
