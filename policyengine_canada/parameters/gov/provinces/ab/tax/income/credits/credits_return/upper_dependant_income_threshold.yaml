@@ -4,6 +4,7 @@ values:
   2023-01-01: 31_489
 metadata:
   unit: currency-CAD
+  period: year
   label: Alberta Dependant Upper Income Threshold
   reference:
     - title: Government of Canada - Alberta Caregiver Amount (2022)

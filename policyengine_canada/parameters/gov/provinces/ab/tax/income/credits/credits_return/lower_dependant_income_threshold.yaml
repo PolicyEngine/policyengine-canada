@@ -4,6 +4,7 @@ values:
   2023-01-01: 19_331 
 metadata:
   unit: currency-CAD
+  period: year
   label: Alberta caregiver amount dependent lower income threshold
   reference:
     - title: Government of Canada - Alberta Caregiver Amount (2022)
