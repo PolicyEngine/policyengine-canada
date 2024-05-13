@@ -1,0 +1,13 @@
+- name: 2023 Basic personal amount
+  period: 2023
+  input:
+    province_code: BC
+  output:
+    bc_basic_personal_amount: 11_981
+
+- name: 2022 Basic personal amount
+  period: 2022
+  input:
+    province_code: BC
+  output:
+    bc_basic_personal_amount: 11_302

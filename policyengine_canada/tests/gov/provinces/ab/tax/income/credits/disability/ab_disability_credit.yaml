@@ -1,0 +1,26 @@
+- name: Eligible person with disability credit less than limit
+  period: 2022
+  input:
+    province_code: AB
+    ab_disability_credit_eligible: true
+    ab_disability_credit_additional_amount: 0
+  output:
+    ab_disability_credit: 15_284
+
+- name: Eligible person with disability credit over limit
+  period: 2022
+  input:
+    province_code: AB
+    ab_disability_credit_eligible: true
+    ab_disability_credit_additional_amount: 12_0000
+  output:
+    ab_disability_credit: 26_754
+
+- name: Ineligible person
+  period: 2022
+  input:
+    province_code: AB
+    ab_disability_credit_eligible: false
+    ab_disability_credit_additional_amount: 11_470
+  output:
+    ab_disability_credit: 0

@@ -1,0 +1,10 @@
+description: Manitoba qualifies children for the child tax benefit below this age.
+values:
+  2022-01-01: 18
+metadata:
+  unit: year
+  label: Manitoba child benefit age eligibility
+  period: year
+  reference:
+    - title: Province of Manitoba - Manitoba Child Benefit
+      href: https://www.gov.mb.ca/fs/eia/mcb.html

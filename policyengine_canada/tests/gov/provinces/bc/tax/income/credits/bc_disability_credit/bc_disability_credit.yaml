@@ -1,0 +1,35 @@
+- name: Eligible person with disability credit less than limit 2023
+  period: 2023
+  input:
+    province_code: BC
+    bc_disability_credit_eligible: true
+    bc_disability_credit_additional_amount: 0
+  output:
+    bc_disability_credit: 8_986
+
+- name: Ineligible person 2023
+  period: 2023
+  input:
+    province_code: BC
+    bc_disability_credit_eligible: false
+    bc_disability_credit_additional_amount: 5_242
+  output:
+    bc_disability_credit: 0
+
+- name: Eligible person with disability credit less than limit 2022
+  period: 2022
+  input:
+    province_code: BC
+    bc_disability_credit_eligible: true
+    bc_disability_credit_additional_amount: 0
+  output:
+    bc_disability_credit: 8_477
+
+- name: Ineligible person 2022
+  period: 2022
+  input:
+    province_code: BC
+    bc_disability_credit_eligible: false
+    bc_disability_credit_additional_amount: 4_946
+  output:
+    bc_disability_credit: 0

@@ -1,0 +1,8 @@
+description: Manitoba provides the follwoing refundable tax credits.
+values:
+  2022-01-01: []
+    
+metadata:
+  unit: list  
+  period: year 
+  label: Manitoba refundable credits

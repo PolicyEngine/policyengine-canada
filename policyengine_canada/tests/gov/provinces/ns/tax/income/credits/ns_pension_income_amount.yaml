@@ -1,0 +1,31 @@
+- name: Person has pension income lower than 1_173
+  period: 2023
+  input:
+    province_code: NS
+    pension_and_savings_plan_income: 1_172
+  output:
+    ns_pension_income_amount: 1_172
+
+- name: Person has pension income equal to 1_173
+  period: 2023
+  input:
+    province_code: NS
+    pension_and_savings_plan_income: 1_173
+  output:
+    ns_pension_income_amount: 1_173
+
+- name: Person has pension income higher than 1_173
+  period: 2023
+  input:
+    province_code: NS
+    pension_and_savings_plan_income: 1_180
+  output:
+    ns_pension_income_amount: 1_173
+
+- name: Person has pension income 0
+  period: 2023
+  input:
+    province_code: NS
+    pension_and_savings_plan_income: 0
+  output:
+    ns_pension_income_amount: 0

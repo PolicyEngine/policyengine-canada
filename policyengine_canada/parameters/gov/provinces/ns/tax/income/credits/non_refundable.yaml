@@ -1,6 +1,9 @@
-description: Non-refundable tax credits in Nova Scotia.
+description: Nova Scotia provides the following non-refundable tax credits.
 values:
   2022-01-01:
     - ns_poverty_reduction_credit
+    - ns_disability_amount
 metadata:
-  unit: program
+  unit: list
+  period: year
+  label: Nova Scotia non-refundable tax credits

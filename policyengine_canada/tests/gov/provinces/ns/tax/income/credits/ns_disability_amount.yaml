@@ -1,0 +1,15 @@
+- name: Person is disabled
+  period: 2023
+  input:
+    province_code: NS
+    is_disabled: true
+  output:
+    ns_disability_amount: 7_341
+
+- name: Person is not disabled
+  period: 2023
+  input:
+    province_code: NS
+    is_disabled: false
+  output:
+    ns_disability_amount: 0
