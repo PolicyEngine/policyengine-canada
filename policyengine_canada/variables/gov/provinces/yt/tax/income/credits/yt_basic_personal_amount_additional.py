@@ -19,4 +19,9 @@ class yt_basic_personal_amount_additional(Variable):
         )
         additional_amount_eligible = additional_amount <= 0
 
-        return additional_amount_eligible * additional_amount / p.divisor * p.applicable_amount
+        return (
+            additional_amount_eligible
+            * additional_amount
+            / p.divisor
+            * p.applicable_amount
+        )
