@@ -21,8 +21,9 @@ class ab_caregiver_amount(Variable):
             age
             >= p.lower_age_eligibility & person("is_disabled", period)
         )
+        income = person("individual_net_income", period)
         dependant_net_income = (
-            person("individual_net_income", period) * is_dependant
+            income * is_dependant
         )
 
         income_eligibility = (
