@@ -17,9 +17,9 @@ class ab_caregiver_amount(Variable):
 
         # Whether the person is dependant (65 or older/ disabled)
         age = person("age", period)
-        is_dependant = (age >= p.higher_age_eligibility) | (
+        is_dependant = (age >= p.age_eligibility.higher) | (
             person("age", period)
-            >= p.lower_age_eligibility & person("is_disabled", period)
+            >= p.age_eligibility.lower & person("is_disabled", period)
         )
         dependant_net_income = (
             person("individual_net_income", period) * is_dependant
@@ -39,4 +39,4 @@ class ab_caregiver_amount(Variable):
             net_income * income_eligibility * cohabitating_dependant
         )
 
-        return min_(caregiver_amount, p.maximum_caregiver_amount)
+        return min_(caregiver_amount, p.max_amount)

@@ -1,9 +1,10 @@
-description: Alberta limits its Child and Family Benefit to people above this age and disabled.
+description: Alberta limits its caregiver amount to people above this age and disabled.
 values:
   2022-01-01: 18
 metadata:
   unit: year
-  label: Alberta child and Family Benefit adult dependant age eligibility
+  period: year
+  label: Alberta caregiver credit adult dependant age eligibility
   reference:
   - title: Province of Alberta - Alberta Child and Family Benefit (2022)
     href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-22e.pdf#page=1
