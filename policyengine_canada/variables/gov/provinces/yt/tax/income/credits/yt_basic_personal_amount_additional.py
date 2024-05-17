@@ -17,11 +17,8 @@ class yt_basic_personal_amount_additional(Variable):
         additional_amount = p.divisor - (
             individual_net_income - p.income_threshold
         )
-        additional_amount_eligible = additional_amount <= 0
+        additional_amount_eligible = additional_amount > 0
+        yt_additional_amount = additional_amount_eligible * additional_amount
+        yt_additional_amount = yt_additional_amount / p.divisor
 
-        return (
-            additional_amount_eligible
-            * additional_amount
-            / p.divisor
-            * p.applicable_amount
-        )
+        return yt_additional_amount * p.applicable_amount

@@ -4,7 +4,7 @@
     province_code: YT
     individual_net_income: 250_000
   output:
-    yt_basic_personal_amount: 13_521
+    yt_basic_personal_amount_additional: 0
 
 - name: Income below the income threshold in 2023
   period: 2023
@@ -13,7 +13,7 @@
     province_code: YT
     individual_net_income: 200_000
   output:
-    yt_basic_personal_amount: 14_272
+    yt_basic_personal_amount_additional: 751
 
 - name: Income above the income threshold in 2022
   period: 2022
@@ -21,4 +21,5 @@
     province_code: YT
     individual_net_income: 250_000
   output:
-    yt_basic_personal_amount: 12_719
+    yt_basic_personal_amount_additional: 0
+
