@@ -6,6 +6,7 @@ values:
     - ab_pension_credit
     - ab_spouse_and_common_law_partner_amount_credit
     - ab_basic_personal_amount
+    - ab_caregiver_amount
 
 metadata:
   unit: list  
