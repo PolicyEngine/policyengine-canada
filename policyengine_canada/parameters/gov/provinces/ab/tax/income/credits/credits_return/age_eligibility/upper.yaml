@@ -1,4 +1,4 @@
-description: Alberta limits its caregiver amount to people above this age (who are not disabled).
+description: Alberta limits its caregiver amount to non-disabled adult dependants above this age.
 values:
   2022-01-01: 65
 metadata:
