@@ -13,13 +13,18 @@ class ab_infirm_dependant_credit(Variable):
         p = parameters(
             period
         ).gov.provinces.ab.tax.income.credits.infirm_dependant
+
         eligible = person("is_infirm_dependant", period)
+
         infirm_dependant_income = person("infirm_dependant_income", period)
+
         income_level_condition = infirm_dependant_income > p.phase_out_start
+
         max_credit = eligible * p.base
-        partial_credit = eligible * (
-            p.max_net_income - infirm_dependant_income
-        )
+
+        reduced_threshold = max_(0, p.max_net_income - infirm_dependant_income)
+
+        partial_credit = eligible * reduced_threshold
         
         capped_credit = where(
             income_level_condition,
