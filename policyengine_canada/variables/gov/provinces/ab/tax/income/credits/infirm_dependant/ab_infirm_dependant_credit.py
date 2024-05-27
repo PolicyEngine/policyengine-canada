@@ -20,9 +20,10 @@ class ab_infirm_dependant_credit(Variable):
         partial_credit = eligible * (
             p.max_net_income - infirm_dependant_income
         )
-        per_credit = where(
+        
+        capped_credit = where(
             income_level_condition,
-            max_(0, partial_credit),
+            partial_credit,
             max_credit,
         )
-        return household.sum(per_credit)
+        return household.sum(capped_credit)
