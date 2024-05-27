@@ -11,6 +11,33 @@
   output:
     ab_infirm_dependant_credit: 12_158
 
+- name: Infirm dependant net income below 7_407
+  period: 2022
+  input:
+    people:
+      p1:
+        is_infirm_dependant: true
+        infirm_dependant_income: 7_000
+    household:
+      members: p1
+      province_code: AB
+  output:
+    ab_infirm_dependant_credit: 11_212
+
+- name: Infirm dependant net income over 8_032 but lower than 20_190
+  period: 2023
+  input:
+    people:
+      p1:
+        is_infirm_dependant: true
+        infirm_dependant_income: 20_000
+    household:
+      members: p1
+      province_code: AB
+  output:
+    ab_infirm_dependant_credit: 190
+
+
 - name: Infirm dependant net income over 8_032 but lower than 20_190
   period: 2023
   input:
