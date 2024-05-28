@@ -1,10 +1,11 @@
-description: Yukon reduces this basic personal amount, for high income filers.
+description: Yukon reduces the basic personal amount for high income filers by this amount.
 
 values:
   2022-01-01: 1_679
   2023-01-01: 1_479
 metadata:
   unit: currency-CAD
+  period: year
   label: Yukon basic personal amount applicable amount
   reference:
   - title: Worksheet for the Yukon 2023 Personal Tax Credits Return

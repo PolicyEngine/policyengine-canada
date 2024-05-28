@@ -4,6 +4,7 @@ values:
   2023-01-01: 165_430
 metadata:
   unit: currency-CAD
+  period: year
   label: Yukon basic personal amount reduction income threshold
   reference:
   - title: Worksheet for the Yukon 2023 Personal Tax Credits Return
