@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class yt_basic_personal_amount_additional(Variable):
+class yt_additional_basic_personal_amount(Variable):
     value_type = float
     entity = Person
     label = "Yukon additional basic personal amount"

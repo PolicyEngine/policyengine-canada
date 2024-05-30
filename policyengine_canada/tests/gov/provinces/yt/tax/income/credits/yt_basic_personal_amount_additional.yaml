@@ -4,7 +4,7 @@
     province_code: YT
     individual_net_income: 250_000
   output:
-    yt_basic_personal_amount_additional: 0
+    yt_additional_basic_personal_amount: 0
 
 - name: Income below the income threshold and additional amount equals 0 in 2023 (edge case)
   period: 2023
@@ -13,7 +13,7 @@
     province_code: YT
     individual_net_income: 235_675
   output:
-    yt_basic_personal_amount_additional: 0
+    yt_additional_basic_personal_amount: 0
 
 - name: Income below the income threshold and additional amount above 0 in 2023
   period: 2023
@@ -22,7 +22,7 @@
     province_code: YT
     individual_net_income: 200_000
   output:
-    yt_basic_personal_amount_additional: 751
+    yt_additional_basic_personal_amount: 751
 
 - name: Income above the income threshold but additional amount below 0 in 2022
   period: 2022
@@ -30,7 +30,7 @@
     province_code: YT
     individual_net_income: 250_000
   output:
-    yt_basic_personal_amount_additional: 0
+    yt_additional_basic_personal_amount: 0
 
 - name: Income below the income threshold and additional amount equals 0 in 2022 (edge case)
   period: 2022
@@ -39,7 +39,7 @@
     province_code: YT
     individual_net_income: 221_708
   output:
-    yt_basic_personal_amount_additional: 0
+    yt_additional_basic_personal_amount: 0
 
 - name: Income below the income threshold and additional amount above 0 in 2022
   period: 2022
@@ -48,4 +48,4 @@
     province_code: YT
     individual_net_income: 200_000
   output:
-    yt_basic_personal_amount_additional: 551.5
+    yt_additional_basic_personal_amount: 551.5
