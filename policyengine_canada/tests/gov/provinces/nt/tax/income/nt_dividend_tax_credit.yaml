@@ -1,0 +1,8 @@
+- name: Calculation 2022 # (39,000 * 0.06) + ((39,800 - 39,000) * 0.115) = 2,432
+  period: 2022
+  input:
+    province_code: NT
+    taxable_dividend_income: 39_800
+    taxable_other_than_dividend_income: 39_000
+  output:
+    nt_dividend_tax_credit: 2_432
