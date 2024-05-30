@@ -1,0 +1,15 @@
+description: Yukon reduces the basic personal amount for filers with income above this threshold.
+values:
+  2022-01-01: 155_625
+  2023-01-01: 165_430
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Yukon basic personal amount reduction income threshold
+  reference:
+  - title: Worksheet for the Yukon 2023 Personal Tax Credits Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1yt-ws/td1yt-ws-23e.pdf#page=1
+  - title: Worksheet for the Yukon 2022 Personal Tax Credits Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1yt-ws/td1yt-ws-22e.pdf#page=1
+  - title: Yukon Income Tax Act, line (15)
+    href: https://laws.yukon.ca/cms/images/LEGISLATION/PRINCIPAL/2002/2002-0118/2002-0118.pdf#page=18
