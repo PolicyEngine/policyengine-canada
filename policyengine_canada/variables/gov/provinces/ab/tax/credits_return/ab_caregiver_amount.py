@@ -24,7 +24,7 @@ class ab_caregiver_amount(Variable):
         )
 
         income = person("individual_net_income", period)
-        dependant_net_income = income * is_dependant
+        dependant_net_income = income * eligible_dependant
 
         income_eligibility = (
             dependant_net_income <= p.upper_dependant_income_threshold
