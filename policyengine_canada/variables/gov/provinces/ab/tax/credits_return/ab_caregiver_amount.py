@@ -18,8 +18,9 @@ class ab_caregiver_amount(Variable):
         # Whether the person is dependant (65 or older/ disabled)
         age = person("age", period)
         disabled = person("is_disabled", period)
-        is_dependant = (age >= p.age_eligibility.upper) | (
-            age >= p.age_eligibility.lower & disabled
+        is_dependant = person("is_dependant", period)
+        eligible_dependant = ((age >= p.age_eligibility.upper) | (
+            age >= p.age_eligibility.lower & disabled) & is_dependant
         )
 
         income = person("individual_net_income", period)
