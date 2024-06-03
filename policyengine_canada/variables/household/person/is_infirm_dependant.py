@@ -12,4 +12,4 @@ class is_infirm_dependant(Variable):
         p = parameters(
             period
         ).gov.provinces.ab.tax.income.credits.infirm_dependant
-        return person("age", period) >= p.infirm_dependant_age
+        return person("age", period) >= p.age_threshold
