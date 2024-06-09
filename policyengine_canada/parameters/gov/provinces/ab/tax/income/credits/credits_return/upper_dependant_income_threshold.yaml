@@ -1,4 +1,4 @@
-description: Alberta caregiver amount phases out for dependants above this income threshold.
+description: Alberta limits the caregiver amount for dependants above this income threshold.
 values:
   2022-01-01: 29_038
   2023-01-01: 31_489
