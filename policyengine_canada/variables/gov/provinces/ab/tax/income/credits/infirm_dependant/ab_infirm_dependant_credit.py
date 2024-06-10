@@ -22,10 +22,12 @@ class ab_infirm_dependant_credit(Variable):
 
         max_credit = eligible * p.base
 
-        reduced_threshold = max_(0, p.income_threshold - infirm_dependant_income)
+        reduced_threshold = max_(
+            0, p.income_threshold - infirm_dependant_income
+        )
 
         partial_credit = eligible * reduced_threshold
-        
+
         capped_credit = where(
             income_level_condition,
             partial_credit,
