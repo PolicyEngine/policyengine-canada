@@ -15,20 +15,8 @@ class ab_caregiver_amount(Variable):
             period
         ).gov.provinces.ab.tax.income.credits.credits_return
 
-        # Whether the person is dependant (65 or older/ disabled)
-        age = person("age", period)
-        disabled = person("is_disabled", period)
-        is_dependant = person("is_dependant", period)
-        eligible_dependant = ((age >= p.age_eligibility.upper) | (
-            age >= p.age_eligibility.lower & disabled) & is_dependant
-        )
-
-        income = person("individual_net_income", period)
-        dependant_net_income = income * eligible_dependant
-
-        income_eligibility = (
-            dependant_net_income <= p.upper_dependant_income_threshold
-        )
+        # Whether the person is eligible or not (income based)
+        income_eligibility = person("ab_caregiver_amount_eligible", period)
 
         net_income = max_(
             0, p.upper_dependant_income_threshold - dependant_net_income
