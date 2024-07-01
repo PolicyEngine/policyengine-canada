@@ -1,0 +1,32 @@
+- name: Dependant Over 18 with net income between 19,331 and 31,489
+  period: 2023
+  input:
+    age: 19
+    is_disabled: true
+    cohabitating_dependant: true
+    individual_net_income: 20_000
+    province_code: AB
+  output:
+    ab_caregiver_amount_eligible: true
+
+- name: Dependant Over 18 with net income below 19,331
+  period: 2023
+  input:
+    age: 19
+    is_disabled: true
+    cohabitating_dependant: true
+    individual_net_income: 10_000
+    province_code: AB
+  output:
+    ab_caregiver_amount_eligible: true
+
+- name: Dependant Over 65 with net income over 31,489
+  period: 2023
+  input:
+    age: 25
+    is_disabled: true
+    cohabitating_dependant: false
+    individual_net_income: 40_000
+    province_code: AB
+  output:
+    ab_caregiver_amount_eligible: false

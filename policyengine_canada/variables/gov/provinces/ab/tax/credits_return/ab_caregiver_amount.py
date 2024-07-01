@@ -26,7 +26,9 @@ class ab_caregiver_amount(Variable):
         cohabitating_dependant = person("cohabitating_dependant", period)
 
         caregiver_amount = (
-            net_income * person("ab_caregiver_amount_eligible", period) * cohabitating_dependant
+            net_income
+            * person("ab_caregiver_amount_eligible", period)
+            * cohabitating_dependant
         )
 
         return min_(caregiver_amount, p.max_amount)

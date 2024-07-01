@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class ab_caregiver_amount_eligible_person(Variable):
+class ab_caregiver_amount_eligible(Variable):
     value_type = bool
     entity = Person
     label = "Eligible person for the Alberta caregiver amount"
