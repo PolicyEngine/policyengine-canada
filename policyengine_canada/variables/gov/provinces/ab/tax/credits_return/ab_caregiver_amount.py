@@ -8,7 +8,7 @@ class ab_caregiver_amount(Variable):
     unit = CAD
     definition_period = YEAR
     reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf"
-    defined_for = ProvinceCode.AB
+    defined_for = "ab_caregiver_amount_eligible_person"
 
     def formula(person, period, parameters):
         p = parameters(
@@ -16,7 +16,6 @@ class ab_caregiver_amount(Variable):
         ).gov.provinces.ab.tax.income.credits.credits_return
 
         # Whether the person is eligible or not (income based)
-        income_eligibility = person("ab_caregiver_amount_eligible", period)
 
         net_income = max_(
             0, p.upper_dependant_income_threshold - person("ab_dependant_net_income", period)

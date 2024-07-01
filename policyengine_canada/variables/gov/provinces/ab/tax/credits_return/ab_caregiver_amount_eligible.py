@@ -1,11 +1,10 @@
 from policyengine_canada.model_api import *
 
 
-class ab_caregiver_amount_eligible(Variable):
-    value_type = float
+class ab_caregiver_amount_eligible_person(Variable):
+    value_type = bool
     entity = Person
-    label = "Alberta caregiver amount income eligibility"
-    unit = CAD
+    label = "Eligible person for the Alberta caregiver amount"
     definition_period = YEAR
     reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf"
     defined_for = ProvinceCode.AB
@@ -17,8 +16,7 @@ class ab_caregiver_amount_eligible(Variable):
 
         dependant_net_income = person("ab_dependant_net_income", period) * eligible_dependant
 
-        income_eligibility = (
+        return (
             dependant_net_income <= p.upper_dependant_income_threshold
         )
 
-        return income_eligibility
