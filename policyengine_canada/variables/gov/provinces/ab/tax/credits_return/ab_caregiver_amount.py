@@ -16,7 +16,6 @@ class ab_caregiver_amount(Variable):
         ).gov.provinces.ab.tax.income.credits.credits_return
 
         # Whether the person is eligible or not (income based)
-        income_eligibility = person("ab_caregiver_amount_eligible", period)
 
         net_income = max_(
             0, p.upper_dependant_income_threshold - dependant_net_income
