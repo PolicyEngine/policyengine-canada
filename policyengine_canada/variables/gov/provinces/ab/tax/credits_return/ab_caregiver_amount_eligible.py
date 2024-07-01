@@ -14,9 +14,8 @@ class ab_caregiver_amount_eligible_person(Variable):
             period
         ).gov.provinces.ab.tax.income.credits.credits_return
 
-        dependant_net_income = person("ab_dependant_net_income", period) * eligible_dependant
-
-        return (
-            dependant_net_income <= p.upper_dependant_income_threshold
+        dependant_net_income = (
+            person("ab_dependant_net_income", period) * eligible_dependant
         )
 
+        return dependant_net_income <= p.upper_dependant_income_threshold
