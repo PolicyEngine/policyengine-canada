@@ -8,7 +8,7 @@ class ab_caregiver_amount(Variable):
     unit = CAD
     definition_period = YEAR
     reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf"
-    defined_for = ProvinceCode.AB
+    defined_for = "ab_caregiver_amount_eligible_person"
 
     def formula(person, period, parameters):
         p = parameters(
