@@ -1,7 +1,7 @@
 from policyengine_canada.model_api import *
 
 
-class ab_caregiver_amount_eligible(Variable):
+class ab_dependant_net_income(Variable):
     value_type = float
     entity = Person
     label = "Alberta caregiver amount dependant net income"
