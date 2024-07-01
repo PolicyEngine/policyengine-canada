@@ -19,7 +19,7 @@ class ab_caregiver_amount(Variable):
         income_eligibility = person("ab_caregiver_amount_eligible", period)
 
         net_income = max_(
-            0, p.upper_dependant_income_threshold - dependant_net_income
+            0, p.upper_dependant_income_threshold - person("ab_dependant_net_income", period)
         )
 
         cohabitating_dependant = person("cohabitating_dependant", period)
