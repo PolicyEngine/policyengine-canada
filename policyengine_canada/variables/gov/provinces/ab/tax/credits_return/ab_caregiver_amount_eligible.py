@@ -29,4 +29,3 @@ class ab_caregiver_amount_eligible_person(Variable):
             dependant_net_income <= p.upper_dependant_income_threshold
         )
 
-        return income_eligibility
