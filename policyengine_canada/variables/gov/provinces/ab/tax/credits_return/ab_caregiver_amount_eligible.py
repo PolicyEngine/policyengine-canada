@@ -5,7 +5,6 @@ class ab_caregiver_amount_eligible(Variable):
     value_type = bool
     entity = Person
     label = "Eligible person for the Alberta caregiver amount"
-    unit = CAD
     definition_period = YEAR
     reference = "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf"
     defined_for = ProvinceCode.AB
