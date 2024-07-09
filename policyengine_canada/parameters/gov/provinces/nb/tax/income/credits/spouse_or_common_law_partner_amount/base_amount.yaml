@@ -1,113 +1,23 @@
 description: New Brunswick provides the following Spouse or Common-law partner base amount.  
 values:
+  2022-01-01: x
   2023-01-01: 10_741
+  2024-01-01: 11_246
 metadata:
   unit: currency-CAD
   period: year
   label: New Brunswick Spouse or Common-law Partner Base Amount
   reference:
+    - title: Worksheet for the 2022 New Brunswick Personal Tax Credits Return
+      href: https://www.cchwebsites.com/content/pdf/tax_forms/ca/en/td1nbws_en.pdf#page=1
+    - title: 2022 New Brunswick Personal Tax Credits Return
+      href: https://www.vitalitenb.ca/sites/default/files/documents/employes/td1nb_nb_personal_tax_credits_return.pdf#page=1
     - title: Worksheet for the 2023 New Brunswick Personal Tax Credits Return
       href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nb-ws/td1nb-ws-23e.pdf#page=1
     - title: 2023 New Brunswick Personal Tax Credits Return
       href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nb-ws/td1nb-ws-23e.pdf#page=1
+    - title: 2024 New Brunswick Personal Tax Credits Return
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nb/td1nb-24e.pdf#page=1
+    - title: Worksheet for the 2024 New Brunswick Personal Tax Credits Return
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nb-ws/td1nb-ws-24e.pdf#page=1
 
-- name: No spouse income
-  period: 2023
-  input:
-    people:
-      head:
-        spouse_income: 0
-      spouse:
-        spouse_income: 0
-    household:
-      members: [head, spouse]
-      province_code: NB
-  output:
-    ab_spouse_and_common_law_partner_amount_credit: 9_764
-
-- name: Spouse income of $1,000
-  period: 2023
-  input:
-    province_code: NB
-    spouse_income: 1_000
-  output:
-    ab_spouse_and_common_law_partner_amount_credit: 9_741
-
-- name: Spouse income of $10,000
-  period: 2023
-  input:
-    province_code: NB
-    spouse_income: 10_000
-  output:
-    ab_spouse_and_common_law_partner_amount_credit: 741
-
-- name: Capped at 0
-  period: 2023
-  input:
-    province_code: AB
-    spouse_income: 40_000
-  output:
-    ab_spouse_and_common_law_partner_amount_credit: 0
-
-SPOUSE_INCOME
-- name: One person eligible and one not
-  period: 2023
-  input:
-    people:
-      head:
-        is_spouse: false
-        individual_net_income: 10_000
-      spouse:
-        is_spouse: true
-        individual_net_income: 1_000
-    household:
-      members: [head, spouse]
-      province_code: NB
-  output:
-    spouse_income: [0, 1_000]
-
-- name: Eligible spouse
-  period: 2023
-  input:
-    province_code: NB
-    is_spouse: true
-    individual_net_income: 10_000
-  output:
-    spouse_income: 10_000
-
-- name: Ineligible spouse
-  period: 2023
-  input:
-    province_code: NB
-    is_spouse: false
-    individual_net_income: 10_000
-  output:
-    spouse_income: 0
-
-
-from policyengine_canada.model_api import *
-
-class nb_spouse_and_common_law_partner_amount_credit(Variable):
-    value_type = float
-    entity = Household
-    label = "New Brunswick spouse and common-law partner amount credit"
-    definition_period = YEAR
-    defined_for = ProvinceCode.NB
-
-    def formula(household, period, parameters):
-        spouse_income = add(household, period, ["spouse_income"])
-        base_amount = 10_741
-        max_credit = 9_764
-        result = base_amount - spouse_income
-        return min(max_credit, max(0, result))
-
-class spouse_income(Variable):
-    value_type = float
-    entity = Person
-    label = "Spouse and commonlaw partner income"
-    definition_period = YEAR
-
-    def formula(person, period, parameters):
-        spouse = person("is_spouse", period)
-        income = person("individual_net_income", period)
-        return spouse * income

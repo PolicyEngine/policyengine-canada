@@ -1,0 +1,39 @@
+- name: One person eligible and one not
+  period: 2022
+  period: 2023
+  period: 2024
+  input:
+    people:
+      head:
+        is_spouse: false
+        individual_net_income: 10_000
+      spouse:
+        is_spouse: true
+        individual_net_income: 1_000
+    household:
+      members: [head, spouse]
+      province_code: NB
+  output:
+    spouse_income: [0, 1_000]
+
+- name: Eligible spouse
+  period: 2022
+  period: 2023
+  period: 2024
+  input:
+    province_code: NB
+    is_spouse: true
+    individual_net_income: 10_000
+  output:
+    spouse_income: 10_000
+
+- name: Ineligible spouse
+  period: 2022
+  period: 2023
+  period: 2024
+  input:
+    province_code: NB
+    is_spouse: false
+    individual_net_income: 10_000
+  output:
+    spouse_income: 0
