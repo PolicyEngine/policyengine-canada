@@ -4,9 +4,10 @@
     people:
       p1:
         individual_net_income: 10_000
-    household:
-      members: p1
-      province_code: YT
+    households:
+      household:
+        members: [p1]
+        province_code: YT
   output:
     yt_medical_expense_credit: 300  # 10_000 * 0.03
 
@@ -16,9 +17,10 @@
     people:
       p1:
         individual_net_income: 0
-    household:
-      members: p1
-      province_code: YT
+    households:
+      household:
+        members: [p1]
+        province_code: YT
   output:
     yt_medical_expense_credit: 0
 
@@ -28,8 +30,9 @@
     people:
       p1:
         individual_net_income: 20_000
-    household:
-      members: p1
-      province_code: YT
+    households:
+      household:
+        members: [p1]
+        province_code: YT
   output:
     yt_medical_expense_credit: 600  # 20_000 * 0.03
