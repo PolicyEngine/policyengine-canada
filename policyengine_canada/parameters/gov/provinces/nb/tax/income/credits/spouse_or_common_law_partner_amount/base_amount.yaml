@@ -1,6 +1,6 @@
 description: New Brunswick provides the following Spouse or Common-law partner base amount.  
 values:
-  2022-01-01: x
+  2022-01-01: 10_105
   2023-01-01: 10_741
   2024-01-01: 11_246
 metadata:

@@ -75,4 +75,20 @@
   output:
     nb_spouse_and_common_law_partner_amount_credit: 0
 
+parameters:
+  gov:
+    provinces:
+      nb:
+        tax:
+          income:
+            credits:
+              spouse_or_common_law_partner_amount:
+                base_amount:
+                  2022-01-01: 10_105
+                  2023-01-01: 10_741
+                  2024-01-01: 11_246
+                max_credit:
+                  2022-01-01: 9_186
+                  2023-01-01: 9_764
+                  2024-01-01: 10_223
 
