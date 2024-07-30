@@ -1,0 +1,4 @@
+- bump: minor
+  changes:
+    added:
+    - New Brunswick Spouse or Common-law Partner base amount for the years 2022, 2023, and 2024; nb_spouse_and_common_law_partner_amount_credit to calculate the credit dynamically based on parameters; test cases; parameter configurations for base_amount and max_credit in the parameters file.
