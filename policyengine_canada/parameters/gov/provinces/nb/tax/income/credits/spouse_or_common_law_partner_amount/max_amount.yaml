@@ -1,4 +1,4 @@
-description: The New Brunswick spouse or common-law partner amount credit is calculated by taking into account the spouse's net income and comparing it to a base amount. The maximum credit is the highest amount that can be claimed as a credit.
+description: New Brunswick provides the following maximum spouse or common-law partner amount.
 values:
   2022-01-01: 9_186
   2023-01-01: 9_764
@@ -6,7 +6,7 @@ values:
 metadata:
   unit: currency-CAD
   period: year
-  label: New Brunswick Spouse or Common-law Partner Max Credit
+  label: New Brunswick Spouse or Common-law Partner max Credit
   reference:
     - title: Worksheet for the 2022 New Brunswick Personal Tax Credits Return
       href: https://www.cchwebsites.com/content/pdf/tax_forms/ca/en/td1nbws_en.pdf#page=1

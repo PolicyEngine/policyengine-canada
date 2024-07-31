@@ -6,7 +6,7 @@ values:
 metadata:
   unit: currency-CAD
   period: year
-  label: New Brunswick Spouse or Common-law Partner Base Amount
+  label: New Brunswick Spouse or Common-law Partner base Amount
   reference:
     - title: Worksheet for the 2022 New Brunswick Personal Tax Credits Return
       href: https://www.cchwebsites.com/content/pdf/tax_forms/ca/en/td1nbws_en.pdf#page=1

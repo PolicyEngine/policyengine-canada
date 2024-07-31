@@ -10,10 +10,8 @@ class nb_spouse_and_common_law_partner_amount_credit(Variable):
 
     def formula(household, period, parameters):
         p = parameters(period).gov.provinces.nb.tax.income.credits.spouse_or_common_law_partner_amount 
-        base_amount = p.base_amount  
-        max_credit = p.max_credit 
-        
+
         spouse_income = add(household, period, ["spouse_income"])
-        reduced_amount = max_(base_amount - spouse_income, 0)  
-        return min(max_credit, reduced_amount)
+        reduced_amount = max_(p.base_amount - spouse_income, 0)  
+        return min(p.max_credit, reduced_amount)
 
