@@ -13,5 +13,5 @@ class nb_spouse_and_common_law_partner_amount_credit(Variable):
 
         spouse_income = add(household, period, ["spouse_income"])
         reduced_amount = max_(p.base_amount - spouse_income, 0)  
-        return min(p.max_credit, reduced_amount)
+        return min_(p.max_credit, reduced_amount)
 
