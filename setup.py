@@ -20,7 +20,7 @@ general_requirements = [
     "numexpr<3",
     "pandas>=1.4.2,<2",
     "plotly>=5.6.0,<6",
-    "policyengine_core>=2.16,<3",
+    "PolicyEngine-Core>=3.6.4",
     "psutil<6",
     "pytest",
     "requests>=2.27.1,<3",
