@@ -6,12 +6,17 @@
       parent:
         age: 40
         person_index: 0
+        is_head: true
       c1:
         age: 12
         person_index: 1
+        is_head: false
+        is_spouse: false
       c2:
         age: 10
         person_index: 2
+        is_head: false
+        is_spouse: false
     household:
       members: [parent, c1, c2]
       adjusted_family_net_income: 20_000
@@ -19,4 +24,3 @@
       is_married: false
   output:
     bc_climate_action_tax_credit: 443.5
-

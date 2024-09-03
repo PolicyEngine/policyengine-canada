@@ -4,10 +4,13 @@
   input:
     people:
       parent:
+        is_head: true
         age: 40
       c1:
         age: 12
         full_custody: false
+        is_head: false
+        is_spouse: false
     household:
       members: [parent, c1]
       province_code: ONT
@@ -36,11 +39,14 @@
       parent2:
         age: 40
         is_spouse: true
+        is_head: false
       c1:
         age: 5
         full_custody: true 
         is_disabled: true
         dtc_eligible: true
+        is_head: false
+        is_spouse: false
     household:
       members: [parent1, parent2, c1]
       province_code: ONT
@@ -67,9 +73,13 @@
     people:
       parent:
         age: 40
+        is_head: true
+        is_spouse: false
       c1:
         age: 12
         full_custody: false
+        is_head: false
+        is_spouse: false
     household:
       members: [parent, c1]
       province_code: ONT
