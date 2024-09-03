@@ -616,3 +616,8 @@
     added:
     - Yukon basic personal amount.
   date: 2024-08-21 14:25:09
+- bump: patch
+  changes:
+    changed:
+    - Update policyengine-core.
+  date: 2024-09-03 23:14:20
