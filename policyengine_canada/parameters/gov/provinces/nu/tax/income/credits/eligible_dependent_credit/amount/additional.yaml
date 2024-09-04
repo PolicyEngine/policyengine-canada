@@ -1,0 +1,11 @@
+description: Nunavut provides this additional maximum amount for filers who are supporting a dependent, living in the same household. 
+values:
+  2022-01-01: 16_862
+metadata:
+  unit: currency-CAD
+  label: Nunavut eligible dependent additional max amount
+  reference:
+  - title: Nunavut Income Tax Act Subvision C Section 2.15
+    href: https://www.nunavutlegislation.ca/en/consolidated-law/income-tax-act-consolidation
+  - title: 2022 Form NU428, Nunavut Tax
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5014-c/5014-c-22e.pdf#page=1
