@@ -1,0 +1,14 @@
+description: Saskatchewan provides the following maximum amount under an eligible dependant amount credit.
+values:
+  2022-01-01: 16_615
+  2023-01-01: 17_661
+metadata:
+  unit: currency-CAD
+  label: Saskatchewan maximun amount for an eligible dependant
+  reference: 
+  - title: 2022 Saskatchewan Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-22e.pdf#page=1
+  - title: 2023 Saskatchewan Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1
+  - title: The Income Tax Act, 2000 DIVISION 2 Section 15, Infirm dependant credit 15(1) & Section 19, Dependent child credit 19(1)
+    href: https://publications.saskatchewan.ca/api/v1/products/583/formats/806/download#page=13 #page=16
