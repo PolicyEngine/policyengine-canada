@@ -1,0 +1,39 @@
+- name: Ineligible
+  period: 2022
+  input:
+    province_code: SK
+    age: 19
+    is_child: true
+
+  output:
+    sk_child_amount_eligible: false
+
+- name: Eligible
+  period: 2022
+  input:
+    province_code: SK
+    age: 16
+    is_child: true
+
+  output:
+    sk_child_amount_eligible: true
+
+- name: Ineligible
+  period: 2023
+  input:
+    province_code: SK
+    age: 17
+    is_child: false
+
+  output:
+    sk_child_amount_eligible: false
+
+- name: Eligible
+  period: 2023
+  input:
+    province_code: SK
+    age: 13
+    is_child: true
+
+  output:
+    sk_child_amount_eligible: true
