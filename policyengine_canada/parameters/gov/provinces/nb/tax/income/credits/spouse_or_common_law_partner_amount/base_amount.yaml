@@ -1,0 +1,23 @@
+description: New Brunswick provides the following Spouse or Common-law partner base amount.  
+values:
+  2022-01-01: 10_105
+  2023-01-01: 10_741
+  2024-01-01: 11_246
+metadata:
+  unit: currency-CAD
+  period: year
+  label: New Brunswick Spouse or Common-law Partner base amount
+  reference:
+    - title: Worksheet for the 2022 New Brunswick Personal Tax Credits Return
+      href: https://www.cchwebsites.com/content/pdf/tax_forms/ca/en/td1nbws_en.pdf#page=1
+    - title: 2022 New Brunswick Personal Tax Credits Return
+      href: https://www.vitalitenb.ca/sites/default/files/documents/employes/td1nb_nb_personal_tax_credits_return.pdf#page=1
+    - title: Worksheet for the 2023 New Brunswick Personal Tax Credits Return
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nb-ws/td1nb-ws-23e.pdf#page=1
+    - title: 2023 New Brunswick Personal Tax Credits Return
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nb-ws/td1nb-ws-23e.pdf#page=1
+    - title: 2024 New Brunswick Personal Tax Credits Return
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nb/td1nb-24e.pdf#page=1
+    - title: Worksheet for the 2024 New Brunswick Personal Tax Credits Return
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1nb-ws/td1nb-ws-24e.pdf#page=1
+
