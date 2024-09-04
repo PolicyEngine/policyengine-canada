@@ -1,0 +1,15 @@
+- name: Quebec caregiver tax credit eligible individual
+  period: 2022
+  input:
+    is_caregiver: true
+    province_code: QC
+  output:
+    qc_caregiver_eligibility: true
+
+- name: Quebec caregiver tax credit non-eligible individual
+  period: 2022
+  input:
+    is_caregiver: false
+    province_code: QC
+  output:
+    qc_caregiver_eligibility: false

@@ -1,0 +1,13 @@
+description: Quebec limits its tax credits to caregivers providing care to carereceivers at or above this age.
+values:
+  2022-01-01: 18
+metadata:
+  unit: year
+  label: Quebec caregivers tax credit carereceivers age eligibility
+  reference:
+    - title: Revenu Quebec - Tax Credit for Caregivers - Line 462
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/451-to-480-refund-or-balance-due/line-462/point-2/
+    - title: Quebec I-3 - Taxation Act, Part I, Book IX, Title III, Chapter III.1, DIVISION II.11.7.2, 1029.8.61.96.10. 
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:1029_8_61_96_10
+      # the person is 18 years of age or over in the particular period or
+      # if the person or the individual died in the year, the person had reached that age at the time of the death;

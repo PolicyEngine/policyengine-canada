@@ -1,0 +1,54 @@
+- name: Quebec caregiver tax credit for caregiver living with disabled non care receiver eligibility
+  period: 2022
+  input:
+    is_disabled: true
+    is_carereceiver: false
+    age: 18
+    lived_together: true
+    province_code: QC
+  output:
+    qc_caregiver_living_with_disabled_carereceiver_eligible: false
+
+- name: Quebec caregiver tax credit for caregiver living with nondisabled care receiver eligibility
+  period: 2022
+  input:
+    is_disabled: false
+    is_carereceiver: true
+    age: 18
+    lived_together: true
+    province_code: QC
+  output:
+    qc_caregiver_living_with_disabled_carereceiver_eligible: false
+
+- name: Quebec caregiver tax credit for caregiver living with disabled non-adult care receiver eligibility
+  period: 2022
+  input:
+    is_disabled: true
+    is_carereceiver: true
+    age: 16
+    lived_together: true
+    province_code: QC
+  output:
+    qc_caregiver_living_with_disabled_carereceiver_eligible: false
+
+- name: Quebec caregiver tax credit for caregiver not living with disabled care receiver eligibility
+  period: 2022
+  input:
+    is_disabled: true
+    is_carereceiver: true
+    age: 19
+    lived_together: false
+    province_code: QC
+  output:
+    qc_caregiver_living_with_disabled_carereceiver_eligible: false
+
+- name: Quebec caregiver tax credit for caregiver living with eligibile disabled care receiver 
+  period: 2022
+  input:
+    is_disabled: true
+    is_carereceiver: true
+    age: 19
+    lived_together: true
+    province_code: QC
+  output:
+    qc_caregiver_living_with_disabled_carereceiver_eligible: true
