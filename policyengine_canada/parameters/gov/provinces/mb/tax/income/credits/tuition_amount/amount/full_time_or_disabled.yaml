@@ -1,0 +1,11 @@
+description: Manitoba extends this tuition amount to full-time or disabled part-time students at educational institutions.
+values:
+  2022-01-01: 4_800 # 400/month * 12
+metadata:
+  unit: currency-CAD
+  label: Manitoba tuition credit full-time or disabled part-time student amount
+  reference:
+    - title: Government of Canada - Manitoba Information Guide
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb/td1mb-23e.pdf#page=1
+    - title: Government of Canada - Manitoba individual income tax C.C.S.M C.l.10 Division II Section4.6(14)(B)(a)
+      href: https://web2.gov.mb.ca/laws/statutes/archive/i010(2020-11-05)e.php#4.6(14)
