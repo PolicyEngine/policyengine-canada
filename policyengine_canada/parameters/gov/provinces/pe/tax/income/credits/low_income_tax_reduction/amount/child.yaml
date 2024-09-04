@@ -1,0 +1,9 @@
+description: Prince Edward Island provides this base amount for one child under the low-income tax reduction.
+values:
+  2022-01-01: 300
+metadata:
+  unit: currency-CAD
+  label: Prince Edward Island low-income tax reduction base amount child
+  reference:
+    - title: Government of Canada - Prince Edward Island Information Guide
+      href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/prince-edward-island/5002-pc/information-residents-prince-edward-island.html#P130_13917
