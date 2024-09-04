@@ -1,0 +1,12 @@
+description: Quebec qualifies filers for its medical expense credit with family income at or below this threshold.
+values:
+  2022-01-01: 50_115
+metadata:
+  unit: currency-CAD
+  label: Quebec medical expenses tax credit family income eligibility threshold
+  reference:
+    - title: Revenu Quebec - Refundable Tax Credit for Medical Expenses (Line 462 - Point 1)
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/451-to-480-refund-or-balance-due/line-462/point-1/
+    - title: Schedule B – Tax Relief Measures - Part D
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf#page=2   
+    # Legal Reference Unavailable
