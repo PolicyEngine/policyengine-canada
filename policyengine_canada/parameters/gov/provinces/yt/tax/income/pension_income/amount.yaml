@@ -1,0 +1,10 @@
+description: Yukon provides this maximum pension income amount.
+values:
+  2022-01-01: 2_000
+metadata:
+  unit: currency-CAD
+  label: Yukon pension income max amount
+  reference:
+  - title: YT428 2022 - line 25
+    # Credit is not specified in the Yukon Income Tax Act
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5011-c/5011-c-22e.pdf#page1
