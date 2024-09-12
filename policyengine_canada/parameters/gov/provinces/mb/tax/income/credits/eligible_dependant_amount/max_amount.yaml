@@ -1,0 +1,11 @@
+description: Manitoba provides this maximum amount tax credit to eligible dependants. 
+values:
+  2023-01-01: 9_134
+metadata:
+  unit: currency-CAD
+  label: Manitoba eligible dependent tax credit max amount
+  reference:
+    - title: 2023 Manitoba Personal Tax Credits Return
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb/td1mb-23e.pdf#page=1
+    - title: Government of Canada - Manitoba individual income tax C.C.S.M C.l.10 Division II Section4.6(6)(i)
+      href: https://web2.gov.mb.ca/laws/statutes/archive/i010(2020-11-05)e.php#4.6(6)
