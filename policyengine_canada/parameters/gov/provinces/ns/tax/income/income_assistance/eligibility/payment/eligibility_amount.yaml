@@ -1,0 +1,9 @@
+description: Nova Scotia considers the following when calculating an applicant's eligibility amount.
+values:
+  2021-01-01:
+    - chargeable_income
+    - applicable_assets
+    - special_needs_expenses
+    
+metadata:
+  unit: program
