@@ -1,0 +1,17 @@
+- name: Quebec designated remote area travel benefit for household living in Northern zone
+  period: 2022
+  input:
+    qc_designated_remote_area_travel_benefit: 1_200
+    household_size: 3
+    province_code: QC
+  output:
+    qc_designated_remote_area_travel_benefit_household: 3_600 #1200*3
+
+- name: Quebec designated remote area travel benefit for household living in intermediate zone
+  period: 2022
+  input:
+    qc_designated_remote_area_travel_benefit: 600
+    household_size: 2
+    province_code: QC
+  output:
+    qc_designated_remote_area_travel_benefit_household: 1_200 #600*2
