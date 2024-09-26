@@ -1,0 +1,31 @@
+- name: One child 
+  period: 2023
+  input:
+    province_code: NT
+    nt_child_benefit_younger_eligible_children: 1
+  output:
+    nt_child_benefit_younger_base: 814.92
+
+- name: Three children # (814.92 + 652.08 + 529.92)
+  period: 2023
+  input:
+    province_code: NT
+    nt_child_benefit_younger_eligible_children: 3
+  output:
+    nt_child_benefit_younger_base: 1_996.92
+
+- name: Seven children # (814.92 + 652.08 + 529.92 + 448.08 + (366.96 * 3))
+  period: 2023
+  input:
+    province_code: NT
+    nt_child_benefit_younger_eligible_children: 7
+  output:
+    nt_child_benefit_younger_base: 3_545.88
+
+- name: No children
+  period: 2023
+  input:
+    province_code: NT
+    nt_child_benefit_younger_eligible_children: 0
+  output:
+    nt_child_benefit_younger_base: 0
