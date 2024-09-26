@@ -1,0 +1,31 @@
+- name: No dependants
+  period: 2022
+  input:
+    dependent_net_income: 7_543
+    eligible_people_for_other_infirm_dependants_amount: 0
+  output:
+    other_infirm_dependants: 0
+
+- name: Capped at 7_525 
+  period: 2022
+  input:
+    dependent_net_income: 7_543
+    eligible_people_for_other_infirm_dependants_amount: 1
+  output:
+    other_infirm_dependants: 7_525 
+
+- name: Calculation - #25_195 - 20_000 = 5_195
+  period: 2022
+  input:
+    dependent_net_income: 20_000
+    eligible_people_for_other_infirm_dependants_amount: 1
+  output:
+    other_infirm_dependants: 5_195 
+
+- name: Calculation - # 2 * (25_195 - 20_000) = 5_195
+  period: 2022
+  input:
+    dependent_net_income: 20_000
+    eligible_people_for_other_infirm_dependants_amount: 2
+  output:
+    other_infirm_dependants: 10_390
