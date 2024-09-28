@@ -1,0 +1,17 @@
+description: Guaranteed Income Supplement Top-up turnaround point for categories SINGLE_WITH_OAS or WIDOW_SPA_ELIGIBLE
+brackets:
+  - threshold:
+      2021-01-01: 0
+    rate:
+      2021-01-01: 0
+  - threshold:
+      2021-01-01: 2000
+    rate:
+      2021-01-01: 0.25
+metadata:
+  period: year
+  label: GIS Top-up Income Exemption for Single GIS or SPA Recipients
+  documentataion: Corresponds to GISTOPSINGIS and GISTOPSRRGIS in the SPSD/M Variable Guide
+  reference:
+  - title: SPSD/M Variable Guide
+   

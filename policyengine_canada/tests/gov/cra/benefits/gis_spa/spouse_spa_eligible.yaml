@@ -1,0 +1,30 @@
+- name: Both are eligible
+  period: 2022
+  input:
+    people:
+      head:
+        is_head: true
+        spa_eligible: true
+      spouse:
+        is_spouse: true
+        spa_eligible: true
+    household:
+      members: [head, spouse]
+  output:
+    spouse_spa_eligible: [true, true]
+
+- name: Spouse is not SPA eligible
+  period: 2022
+  input:
+    people:
+      head:
+        is_head: true
+        spa_eligible: true
+      spouse:
+        is_spouse: true
+        spa_eligible: false 
+    household:
+      members: [head, spouse]
+  output:
+    spouse_spa_eligible: [false, true]
+
