@@ -1,5 +1,5 @@
 - name: Single parent with two children living in Manitoba.
-  period: 2023
+  period: 2022
   input:
     people:
       parent:
@@ -20,24 +20,6 @@
         province_code: MB
   output:
     climate_action_incentive: 728
-
-- name: Married couple with no children in Saskatchewan
-  period: 2023
-  input:
-    people:
-      head:
-        age: 30
-        is_head: true
-        is_spouse: true
-      spouse:
-        age: 28
-        is_head: false
-        is_spouse: true
-    household:
-      members: [head, spouse]
-      province_code: SK
-  output:
-    climate_action_incentive: 825
 
 - name: Single parent with two children living in rural Manitoba.
   period: 2023
@@ -60,4 +42,45 @@
       province_code: MB
       is_rural: true
   output:
-    climate_action_incentive: 800.8
+    climate_action_incentive: 686.4
+
+- name: Married couple with no children in Saskatchewan
+  period: 2022
+  input:
+    people:
+      head:
+        age: 30
+        is_head: true
+        is_spouse: true
+      spouse:
+        age: 28
+        is_head: false
+        is_spouse: true
+    household:
+      members: [head, spouse]
+      province_code: SK
+  output:
+    climate_action_incentive: 825
+
+- name: Single parent with two children living in rural Saskatchewan.
+  period: 2023
+  input:
+    people:
+      parent:
+        age: 30
+        is_head: true
+        is_spouse: false
+      c1:
+        age: 10
+        is_head: false
+        is_spouse: false
+      c2:
+        age: 9
+        is_head: false
+        is_spouse: false
+    household:
+      members: [parent, c1, c2]
+      province_code: SK
+      is_rural: true
+  output:
+    climate_action_incentive: 
