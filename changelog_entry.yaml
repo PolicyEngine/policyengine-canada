@@ -1,4 +1,4 @@
 - bump: patch
   changes:
     fixed:
-    - psutil version requirement update.
+    - Core version requirement update.
