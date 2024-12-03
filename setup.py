@@ -21,7 +21,7 @@ general_requirements = [
     "pandas>=1.4.2,<2",
     "plotly>=5.6.0,<6",
     "policyengine_core>=3.6.4",
-    "psutil<6",
+    "psutil<7",
     "pytest",
     "requests>=2.27.1,<3",
     "sortedcontainers<3",
