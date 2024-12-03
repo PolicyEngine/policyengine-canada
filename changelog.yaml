@@ -621,3 +621,8 @@
     changed:
     - Update policyengine-core.
   date: 2024-09-03 23:14:20
+- bump: patch
+  changes:
+    fixed:
+    - Core version requirement update.
+  date: 2024-12-03 22:40:28
