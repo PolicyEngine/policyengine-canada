@@ -6,10 +6,9 @@ from setuptools import find_packages, setup
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-# Please make sure to cap all dependency versions, in order to avoid unwanted
-# functional and integration breaks caused by external code updates.
-
+# Core requirements with refined version constraints
 general_requirements = [
+    "policyengine_core>=3.14.1",
     "black[jupyter]",
     "coverage<7",
     "dpath<3",
@@ -20,8 +19,6 @@ general_requirements = [
     "numexpr<3",
     "pandas>=1.4.2,<2",
     "plotly>=5.6.0,<6",
-    "policyengine_core>=3.6.4",
-    "psutil<6",
     "pytest",
     "requests>=2.27.1,<3",
     "sortedcontainers<3",
@@ -50,10 +47,9 @@ setup(
         "License :: OSI Approved :: GNU Affero General Public License v3",
         "Operating System :: POSIX",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Topic :: Scientific/Engineering :: Information Analysis",
     ],
     description="Microsimulation model for Canada's tax-benefit system.",
@@ -66,8 +62,7 @@ setup(
     extras_require={
         "dev": dev_requirements,
     },
-    # Windows CI requires Python 3.9.
-    python_requires=">=3.7",
+    python_requires=">=3.10,<3.13",
     install_requires=general_requirements,
     packages=find_packages(),
     include_package_data=True,
