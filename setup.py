@@ -65,8 +65,8 @@ setup(
     extras_require={
         "dev": dev_requirements,
     },
-    # Windows CI requires Python 3.9.
-    python_requires=">=3.7",
+    # Windows CI requires Python 3.10.
+    python_requires=">=3.10",
     install_requires=general_requirements,
     packages=find_packages(),
     include_package_data=True,
