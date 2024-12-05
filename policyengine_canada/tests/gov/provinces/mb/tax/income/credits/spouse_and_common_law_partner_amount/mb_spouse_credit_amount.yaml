@@ -1,0 +1,15 @@
+- name: Eligible income spouse lived with and being taken care of household's head
+  period: 2023
+  input:
+    mb_spouse_credit_eligible: true
+    spouse_income: 5_000
+  output:
+    mb_spouse_credit_amount: 4_134
+
+- name: Ineligible income spouse lived with and being taken care of household's head
+  period: 2023
+  input:
+    mb_spouse_credit_eligible: true
+    spouse_income: 10_000
+  output:
+    mb_spouse_credit_amount: 0
