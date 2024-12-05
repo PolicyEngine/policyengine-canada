@@ -1,0 +1,16 @@
+- name: Below Maximum Pension Amount
+  period: 2022
+  input:
+    province_code: YT
+    pension_and_savings_plan_income: 10_000
+  output:
+    yt_pension_amount: 2_000
+
+- name: Above Maximum Pension Amount
+  period: 2022
+  input:
+    province_code: YT
+    pension_and_savings_plan_income: 0
+  output:
+    yt_pension_amount: 0
+
