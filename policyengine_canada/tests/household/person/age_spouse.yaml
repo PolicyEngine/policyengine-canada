@@ -1,0 +1,34 @@
+- name: Spouse Age is Lower than Head Age
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: false
+        age: 70
+      spouse:
+        is_spouse: true
+        age: 62
+    household:
+      members: [head, spouse]
+      is_married: true
+  output:
+    age_spouse: 62
+
+- name: Spouse Age is Higher than Head Age
+  period: 2023
+  input:
+    people:
+      head:
+        is_spouse: false
+        age: 70
+      spouse:
+        is_spouse: true
+        age: 72
+    household:
+      members: [head, spouse]
+      is_married: true
+  output:
+    age_spouse: 72
+    
+    
+    
