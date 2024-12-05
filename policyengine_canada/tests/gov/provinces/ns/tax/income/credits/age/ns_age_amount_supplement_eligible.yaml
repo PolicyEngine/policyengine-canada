@@ -1,0 +1,40 @@
+- name: Nova Scotia Age amount supplement; 65 is eligible age
+  period: 2023
+  input:
+    province_code: NS
+    age: 65
+  output:
+    ns_age_amount_eligible: true
+
+
+- name: Nova Scotia Age amonut supplement; lower than 65 is not an eligible age
+  period: 2023
+  input:
+    province_code: NS
+    age: 64
+  output:
+    ns_age_amount_eligible: false
+
+- name: Nova Scotia Age amonut supplement; lower than 65 is not an eligible age
+  period: 2023
+  input:
+    province_code: NS
+    age: 50
+  output:
+    ns_age_amount_eligible: false
+
+- name: Nova Scotia Age amonut supplement; higher than 65 is eligible age
+  period: 2023
+  input:
+    province_code: NS
+    age: 67
+  output:
+    ns_age_amount_eligible: true
+
+- name: Nova Scotia Age amonut supplement; higher than 65 is eligible age
+  period: 2023
+  input:
+    province_code: NS
+    age: 70
+  output:
+    ns_age_amount_eligible: true
