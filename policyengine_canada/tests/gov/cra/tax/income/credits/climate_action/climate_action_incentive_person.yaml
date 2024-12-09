@@ -12,7 +12,23 @@
       members: [parent, c1, c2]
       province_code: ONT
   output:
-    climate_action_incentive_person: [373, 186, 93]
+    climate_action_incentive_person: [373, 93, 93]
+
+- name: Single parent with two children in Ontario.
+  period: 2024
+  input:
+    people:
+      parent:
+        climate_action_incentive_category: HEAD
+      c1:
+        climate_action_incentive_category: ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD
+      c2:
+        climate_action_incentive_category: OTHER_CHILD
+    household:
+      members: [parent, c1, c2]
+      province_code: ONT
+  output:
+    climate_action_incentive_person: [488, 122, 122]
 
 - name: Married couple with one child in Alberta.
   period: 2023
@@ -29,3 +45,52 @@
       province_code: AB
   output:
     climate_action_incentive_person: [539, 270, 135]
+
+
+- name: Married couple with one child in Alberta.
+  period: 2024
+  input:
+    people:
+      head:
+        climate_action_incentive_category: HEAD
+      spouse:
+        climate_action_incentive_category: SPOUSE
+      c1:
+        climate_action_incentive_category: OTHER_CHILD
+    household:
+      members: [head, spouse, c1]
+      province_code: AB
+  output:
+    climate_action_incentive_person: [772, 386, 193]
+
+- name: Single parent with two children in Manitoba.
+  period: 2023
+  input:
+    people:
+      parent:
+        climate_action_incentive_category: HEAD
+      c1:
+        climate_action_incentive_category: ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD
+      c2:
+        climate_action_incentive_category: OTHER_CHILD
+    household:
+      members: [parent, c1, c2]
+      province_code: MB
+  output:
+    climate_action_incentive_person: [416, 104, 104]
+
+- name: Single parent with two children in Saskatchewan.
+  period: 2023
+  input:
+    people:
+      parent:
+        climate_action_incentive_category: HEAD
+      c1:
+        climate_action_incentive_category: ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD
+      c2:
+        climate_action_incentive_category: OTHER_CHILD
+    household:
+      members: [parent, c1, c2]
+      province_code: SK
+  output:
+    climate_action_incentive_person: [550, 138, 138]
