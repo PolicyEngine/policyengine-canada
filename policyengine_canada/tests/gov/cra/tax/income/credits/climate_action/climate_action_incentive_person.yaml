@@ -14,6 +14,22 @@
   output:
     climate_action_incentive_person: [373, 93, 93]
 
+- name: Single parent with two children in Ontario.
+  period: 2024
+  input:
+    people:
+      parent:
+        climate_action_incentive_category: HEAD
+      c1:
+        climate_action_incentive_category: ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD
+      c2:
+        climate_action_incentive_category: OTHER_CHILD
+    household:
+      members: [parent, c1, c2]
+      province_code: ONT
+  output:
+    climate_action_incentive_person: [488, 122, 122]
+
 - name: Married couple with one child in Alberta.
   period: 2023
   input:
