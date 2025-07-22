@@ -50,6 +50,7 @@ setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
         "Topic :: Scientific/Engineering :: Information Analysis",
     ],
     description="Microsimulation model for Canada's tax-benefit system.",
@@ -62,7 +63,7 @@ setup(
     extras_require={
         "dev": dev_requirements,
     },
-    python_requires=">=3.10,<3.13",
+    python_requires=">=3.10",
     install_requires=general_requirements,
     packages=find_packages(),
     include_package_data=True,
