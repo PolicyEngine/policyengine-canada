@@ -626,3 +626,8 @@
     fixed:
     - Core version requirement update.
   date: 2024-12-03 22:40:28
+- bump: patch
+  changes:
+    fixed:
+    - Include python-13 support and update microdf to latest versions.
+  date: 2025-07-24 12:38:45

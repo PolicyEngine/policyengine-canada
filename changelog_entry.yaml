@@ -1,4 +1,0 @@
-- bump: patch
-  changes:
-    fixed:
-    - Include python-13 support and update microdf to latest versions.
