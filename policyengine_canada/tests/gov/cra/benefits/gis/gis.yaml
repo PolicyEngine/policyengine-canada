@@ -80,3 +80,46 @@
     self_employment_income: 0
   output:
     gis: 0
+
+- name: Couple where both receive OAS with no income
+  period: 2024
+  input:
+    people:
+      head:
+        age: 70
+        adult_years_in_canada: 50
+        is_head: true
+        employment_income: 0
+      spouse:
+        age: 68
+        adult_years_in_canada: 45
+        is_spouse: true
+        employment_income: 0
+    household:
+      members: [head, spouse]
+  output:
+    # Maximum monthly for couple both OAS is $652.96
+    # Annual: $652.96 * 12 = $7,835.52 per person
+    gis: [7_835.52, 7_835.52]
+
+- name: Couple with combined income gets reduced GIS
+  period: 2024
+  input:
+    people:
+      head:
+        age: 70
+        adult_years_in_canada: 50
+        is_head: true
+        employment_income: 10_000
+      spouse:
+        age: 68
+        adult_years_in_canada: 45
+        is_spouse: true
+        employment_income: 5_000
+    household:
+      members: [head, spouse]
+  output:
+    # Combined income: $15,000
+    # Reduction: $15,000 * 0.5 = $7,500
+    # GIS: $7,835.52 - $7,500 = $335.52 per person
+    gis: [335.52, 335.52]

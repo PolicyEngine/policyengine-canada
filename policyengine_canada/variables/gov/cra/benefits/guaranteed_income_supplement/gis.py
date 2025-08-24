@@ -45,11 +45,11 @@ class gis(Variable):
         )
         
         # For couples, use combined income
-        # TODO: Properly aggregate household income for GIS
+        # Aggregate household income for GIS calculation
         household_gis_income = where(
             is_single_household,
             gis_income,
-            gis_income  # Placeholder - should be household total
+            person.household.sum(gis_income)  # Sum all household members' GIS income
         )
         
         # Calculate reduction based on income
