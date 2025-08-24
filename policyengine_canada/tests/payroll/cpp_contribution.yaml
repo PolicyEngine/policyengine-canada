@@ -1,0 +1,61 @@
+- name: CPP contribution for employee
+  period: 2024
+  input:
+    employment_income: 40_000
+    self_employment_income: 0
+  output:
+    cpp_contribution: 2_171.75
+
+- name: CPP contribution for self-employed (double rate)
+  period: 2024
+  input:
+    employment_income: 0
+    self_employment_income: 40_000
+  output:
+    cpp_contribution: 4_343.50
+
+- name: CPP contribution at maximum pensionable earnings
+  period: 2024
+  input:
+    employment_income: 100_000
+    self_employment_income: 0
+  output:
+    cpp_contribution: 4_034.10
+
+- name: CPP contribution with mixed income
+  period: 2024
+  input:
+    employment_income: 30_000
+    self_employment_income: 20_000
+  output:
+    # Employee portion: (30,000 - 3,500) * 0.0595 = 1,576.75
+    # Self-employed portion: 20,000 * 0.0595 * 2 = 2,380
+    # Total = 3,956.75
+    cpp_contribution: 3_956.75
+
+- name: CPP contribution below basic exemption
+  period: 2024
+  input:
+    employment_income: 3_000
+    self_employment_income: 0
+  output:
+    cpp_contribution: 0
+
+- name: CPP contribution for 2025
+  period: 2025
+  input:
+    employment_income: 50_000
+    self_employment_income: 0
+  output:
+    cpp_contribution: 2_766.75
+
+- name: CPP contribution at maximum for 2025
+  period: 2025
+  input:
+    employment_income: 100_000
+    self_employment_income: 0
+  output:
+    # Maximum pensionable earnings 2025 = 75,300
+    # Pensionable = 75,300 - 3,500 = 71,800
+    # Contribution = 71,800 * 0.0595 = 4,272.10
+    cpp_contribution: 4_272.10

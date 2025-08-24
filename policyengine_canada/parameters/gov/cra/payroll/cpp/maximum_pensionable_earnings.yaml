@@ -1,0 +1,15 @@
+description: Year's Maximum Pensionable Earnings (YMPE) for Canada Pension Plan
+values:
+  2020-01-01: 58_700
+  2021-01-01: 61_600
+  2022-01-01: 64_900
+  2023-01-01: 66_600
+  2024-01-01: 71_300
+  2025-01-01: 75_300
+metadata:
+  unit: currency-CAD
+  period: year
+  label: CPP maximum pensionable earnings (YMPE)
+  reference:
+    - title: CPP contribution rates, maximums and exemptions
+      href: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html

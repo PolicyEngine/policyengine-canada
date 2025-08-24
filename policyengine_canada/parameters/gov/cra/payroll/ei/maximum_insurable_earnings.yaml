@@ -1,0 +1,17 @@
+description: Maximum annual insurable earnings for Employment Insurance
+values:
+  2020-01-01: 54_200
+  2021-01-01: 56_300
+  2022-01-01: 60_300
+  2023-01-01: 61_500
+  2024-01-01: 63_200
+  2025-01-01: 66_300
+metadata:
+  unit: currency-CAD
+  period: year
+  label: EI maximum insurable earnings
+  reference:
+    - title: EI premium rates and maximums
+      href: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html
+    - title: Employment Insurance - Important notice about maximum insurable earnings for 2025
+      href: https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/ei-employers/premium-reduction-program/2025-maximum-insurable-earnings.html

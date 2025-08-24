@@ -1,0 +1,79 @@
+- name: CPP2 contribution for employee earning above YMPE
+  period: 2024
+  input:
+    employment_income: 75_000
+    self_employment_income: 0
+  output:
+    # 2024: YMPE = 71,300, YAMPE = 73,200
+    # CPP2 earnings = min(75,000, 73,200) - 71,300 = 1,900
+    # Contribution = 1,900 * 0.04 = 76
+    cpp2_contribution: 76
+
+- name: CPP2 contribution for self-employed (double rate)
+  period: 2024
+  input:
+    employment_income: 0
+    self_employment_income: 75_000
+  output:
+    cpp2_contribution: 152
+
+- name: CPP2 contribution below YMPE (should be zero)
+  period: 2024
+  input:
+    employment_income: 60_000
+    self_employment_income: 0
+  output:
+    cpp2_contribution: 0
+
+- name: CPP2 contribution at maximum YAMPE
+  period: 2024
+  input:
+    employment_income: 100_000
+    self_employment_income: 0
+  output:
+    cpp2_contribution: 76
+
+- name: CPP2 contribution with mixed income
+  period: 2024
+  input:
+    employment_income: 72_000
+    self_employment_income: 2_000
+  output:
+    # Total earnings = 74,000 (capped at YAMPE 73,200)
+    # CPP2 pensionable = 73,200 - 71,300 = 1,900
+    # Employment portion: min(72,000, 73,200) - 71,300 = 700
+    # Employee contribution = 700 * 0.04 = 28
+    # Self-employed portion: 1,900 - 700 = 1,200
+    # Self-employed contribution = 1,200 * 0.04 * 2 = 96
+    # Total = 28 + 96 = 124
+    cpp2_contribution: 124
+
+- name: CPP2 contribution before 2024 (should be zero)
+  period: 2023
+  input:
+    employment_income: 75_000
+    self_employment_income: 0
+  output:
+    cpp2_contribution: 0
+
+- name: CPP2 contribution for 2025 with higher YAMPE
+  period: 2025
+  input:
+    employment_income: 80_000
+    self_employment_income: 0
+  output:
+    # 2025: YMPE = 75,300, YAMPE = 81,200
+    # CPP2 earnings = min(80,000, 81,200) - 75,300 = 4,700
+    # Contribution = 4,700 * 0.04 = 188
+    cpp2_contribution: 188
+
+- name: CPP2 contribution at maximum for 2025
+  period: 2025
+  input:
+    employment_income: 90_000
+    self_employment_income: 0
+  output:
+    # 2025: YMPE = 75,300, YAMPE = 81,200
+    # CPP2 earnings = 81,200 - 75,300 = 5,900
+    # Contribution = 5,900 * 0.04 = 236
+    cpp2_contribution: 236
