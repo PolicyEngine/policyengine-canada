@@ -8,20 +8,46 @@ metadata:
   reference:
     - title: Government of Canada - Canadian income tax rates for individuals current and previous years
       href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    - title: TaxTips.ca - Nunavut Tax Rates & Tax Brackets (used for 2023-2025 values)
+      href: https://www.taxtips.ca/taxrates/nu.htm
 brackets:
   - threshold:
       2022-01-01: 0
+      2023-01-01: 0
+      2024-01-01: 0
+      2025-01-01: 0
     rate:
       2022-01-01: 0.04
+      2023-01-01: 0.04
+      2024-01-01: 0.04
+      2025-01-01: 0.04
   - threshold:
       2022-01-01: 47_862
+      2023-01-01: 50_877
+      2024-01-01: 53_268
+      2025-01-01: 54_707
     rate:
       2022-01-01: 0.07
+      2023-01-01: 0.07
+      2024-01-01: 0.07
+      2025-01-01: 0.07
   - threshold:
       2022-01-01: 95_724
+      2023-01-01: 101_754
+      2024-01-01: 106_537
+      2025-01-01: 109_413
     rate:
       2022-01-01: 0.09
+      2023-01-01: 0.09
+      2024-01-01: 0.09
+      2025-01-01: 0.09
   - threshold:
       2022-01-01: 155_625
+      2023-01-01: 165_429
+      2024-01-01: 173_205
+      2025-01-01: 177_881
     rate:
       2022-01-01: 0.115
+      2023-01-01: 0.115
+      2024-01-01: 0.115
+      2025-01-01: 0.115
