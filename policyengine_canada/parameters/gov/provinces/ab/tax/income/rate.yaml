@@ -8,6 +8,10 @@ metadata:
   reference:
     - title: Government of Canada - Canadian income tax rates for individuals current and previous years
       href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    - title: Alberta 2025-28 Fiscal Plan (Budget 2025)
+      href: https://open.alberta.ca/dataset/5ebd05dc-d598-440b-9da2-25f37cd99a49/resource/43bccd72-36fa-41a4-becd-cb8c28da9683/download/budget-2025-fiscal-plan-2025-28.pdf
+    - title: Alberta Budget 2025 - Open Government
+      href: https://open.alberta.ca/publications/budget-2025
 brackets:
   - threshold:
       2022-01-01: 0
