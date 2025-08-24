@@ -1,0 +1,11 @@
+description: Rural top-up percentage for Canada Carbon Rebate
+values:
+  2022-07-01: 0.1  # 10% top-up
+  2024-04-01: 0.2  # Doubled to 20% top-up
+metadata:
+  unit: /1
+  period: year
+  label: Rural top-up rate
+  reference:
+    - title: Canada Carbon Rebate rural top-up, 2024 and 2025
+      href: https://www.canada.ca/en/environment-climate-change/news/2024/10/canada-carbon-rebate-rural-top-up-2024-and-2025.html
