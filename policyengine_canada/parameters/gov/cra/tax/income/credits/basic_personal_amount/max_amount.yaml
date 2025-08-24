@@ -5,6 +5,7 @@ values:
   2022-01-01: 14_398
   2023-01-01: 15_000
   2024-01-01: 15_705
+  2025-01-01: 16_129
 metadata:
   unit: currency-CAD
   period: year
