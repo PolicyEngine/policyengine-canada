@@ -64,12 +64,22 @@ metadata:
   name: federal_tax_rates
   label: Federal tax rates
   reference:
-  - title: Government of Canada - 9.2.4 Tax brackets and rates
-    href: https://www.canada.ca/en/financial-consumer-agency/services/financial-toolkit/taxes-quebec/taxes-quebec-2/5.html
-  - title: Government of Canada - Canadian income tax rates for individuals 2023
+  # 2019-2020 rates
+  - title: Government of Canada - Canadian income tax rates for individuals
     href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+  # 2021 rates
+  - title: T4127 Payroll Deductions Formulas - 113th Edition (2021 rates)
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-113th-edition-effective-january-1-2021/t4127-jan-payroll-deductions-formulas-computer-programs.html
+  # 2022 rates
+  - title: T4127 Payroll Deductions Formulas - 115th Edition (2022 rates)
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-115th-edition-effective-january-1-2022/t4127-jan-payroll-deductions-formulas-computer-programs.html
+  # 2023 rates
+  - title: T4127 Payroll Deductions Formulas - 117th Edition (2023 rates)
+    href: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-117th-edition-effective-january-1-2023/t4127-jan-payroll-deductions-formulas.html
+  # 2024 rates
   - title: T4127 Payroll Deductions Formulas - 119th Edition (2024 rates)
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-119th-edition-effective-january-1-2024/t4127-jan-payroll-deductions-formulas-computer-programs.html
+  # 2025 rates
   - title: T4127 Payroll Deductions Formulas - 120th Edition (2025 rates)
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4127-payroll-deductions-formulas/t4127-jan/t4127-jan-payroll-deductions-formulas-computer-programs.html
   - title: Department of Finance - Delivering a middle-class tax cut (2025 rate reduction)
