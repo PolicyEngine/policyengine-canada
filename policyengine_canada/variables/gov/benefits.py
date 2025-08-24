@@ -13,6 +13,7 @@ class benefits(Variable):
         "canada_workers_benefit",
         "dental_benefit",
         "oas_net",
+        "gis",
         # Ontario programs.
         "on_benefits",
         # British Columbia programs.

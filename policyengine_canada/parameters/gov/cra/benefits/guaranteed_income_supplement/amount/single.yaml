@@ -1,0 +1,13 @@
+description: Maximum monthly Guaranteed Income Supplement for single seniors
+values:
+  2022-01-01: 1_028.96
+  2023-01-01: 1_065.47
+  2024-01-01: 1_083.68
+  2025-01-01: 1_097.75
+metadata:
+  unit: currency-CAD
+  period: month
+  label: GIS maximum amount for singles
+  reference:
+    - title: Old Age Security payment amounts
+      href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html
