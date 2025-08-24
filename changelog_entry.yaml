@@ -1,0 +1,6 @@
+- bump: patch
+  changes:
+    added:
+      - Tax rates for 2024-2025 for Northwest Territories, Nunavut, Yukon, Prince Edward Island, and Newfoundland and Labrador
+    changed:
+      - Updated references to use official CRA T4032 payroll deduction tables where available

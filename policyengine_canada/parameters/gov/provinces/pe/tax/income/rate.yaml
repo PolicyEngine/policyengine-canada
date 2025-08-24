@@ -8,16 +8,48 @@ metadata:
   reference:
     - title: Government of Canada - Canadian income tax rates for individuals current and previous years
       href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    - title: TaxTips.ca - Prince Edward Island Tax Rates & Tax Brackets (used for 2023-2025 values)
+      href: https://www.taxtips.ca/taxrates/pe.htm
 brackets:
   - threshold:
       2022-01-01: 0
+      2023-01-01: 0
+      2024-01-01: 0
+      2025-01-01: 0
     rate:
       2022-01-01: 0.098
+      2023-01-01: 0.098
+      2024-01-01: 0.0965
+      2025-01-01: 0.095
   - threshold:
       2022-01-01: 31_984
+      2023-01-01: 31_984
+      2024-01-01: 32_656
+      2025-01-01: 33_328
     rate:
       2022-01-01: 0.138
+      2023-01-01: 0.138
+      2024-01-01: 0.1363
+      2025-01-01: 0.1347
   - threshold:
       2022-01-01: 63_969
+      2023-01-01: 63_969
+      2024-01-01: 64_313
+      2025-01-01: 64_656
     rate:
       2022-01-01: 0.167
+      2023-01-01: 0.167
+      2024-01-01: 0.1665
+      2025-01-01: 0.166
+  - threshold:
+      2024-01-01: 105_000
+      2025-01-01: 105_000
+    rate:
+      2024-01-01: 0.18
+      2025-01-01: 0.1762
+  - threshold:
+      2024-01-01: 140_000
+      2025-01-01: 140_000
+    rate:
+      2024-01-01: 0.1875
+      2025-01-01: 0.19

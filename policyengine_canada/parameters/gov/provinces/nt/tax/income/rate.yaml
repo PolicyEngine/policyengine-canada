@@ -8,6 +8,8 @@ metadata:
   reference:
     - title: Government of Canada - Canadian income tax rates for individuals current and previous years
       href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    - title: T4032NT - Payroll Deductions Tables - Northwest Territories
+      href: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032nt-jan/t4032nt-january-general-information.html
 brackets:
   - threshold:
       2022-01-01: 0
@@ -15,13 +17,16 @@ brackets:
       2022-01-01: 0.059
   - threshold:
       2022-01-01: 45_462
+      2025-01-01: 51_964
     rate:
       2022-01-01: 0.086
   - threshold:
       2022-01-01: 90_927
+      2025-01-01: 103_930
     rate:
       2022-01-01: 0.122
   - threshold:
       2022-01-01: 147_826
+      2025-01-01: 168_967
     rate:
       2022-01-01: 0.1405
