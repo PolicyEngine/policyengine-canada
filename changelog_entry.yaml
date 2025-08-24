@@ -1,0 +1,6 @@
+- bump: minor
+  changes:
+    added:
+      - Alberta 2025 tax reform with new 8% tax bracket on first $60,000 of income.
+      - Updated Alberta tax brackets for 2023, 2024, and 2025 with proper indexation.
+      - Updated Alberta basic personal amount for 2024 and 2025.

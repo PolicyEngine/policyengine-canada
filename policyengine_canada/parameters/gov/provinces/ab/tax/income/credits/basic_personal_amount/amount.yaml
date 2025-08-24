@@ -4,6 +4,8 @@ values:
   # Section 44.2 defines indexing.
   2022-01-01: 19_369
   2023-01-01: 21_003
+  2024-01-01: 21_885
+  2025-01-01: 22_323
 metadata:
   unit: currency-CAD
   period: year
