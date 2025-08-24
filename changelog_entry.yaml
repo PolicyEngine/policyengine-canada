@@ -1,0 +1,4 @@
+- bump: minor
+  changes:
+    added:
+      - Federal tax parameters for 2024 including updated tax brackets and basic personal amount.
