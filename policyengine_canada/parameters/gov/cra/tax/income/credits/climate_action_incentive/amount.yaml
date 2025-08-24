@@ -22,6 +22,8 @@ HEAD:
     2022-07-01: 373
     2023-07-01: 488
     2024-04-01: 560
+  PE:
+    2024-04-01: 440  # $110 quarterly * 4 (all PE residents get rural rate)
   SK:
     2022-07-01: 550
     2023-07-01: 680
@@ -48,6 +50,8 @@ SPOUSE:
     2022-07-01: 186
     2023-07-01: 244
     2024-04-01: 280
+  PE:
+    2024-04-01: 220  # $55 quarterly * 4 (all PE residents get rural rate)
   SK:
     2022-07-01: 275
     2023-07-01: 340
@@ -74,6 +78,8 @@ ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD:
     2022-07-01: 186
     2023-07-01: 244
     2024-04-01: 280
+  PE:
+    2024-04-01: 220  # $55 quarterly * 4 (all PE residents get rural rate)
   SK:
     2022-07-01: 275
     2023-07-01: 340
@@ -100,6 +106,8 @@ OTHER_CHILD:
     2022-07-01: 93
     2023-07-01: 122
     2024-04-01: 140
+  PE:
+    2024-04-01: 110  # $27.50 quarterly * 4 (all PE residents get rural rate)
   SK:
     2022-07-01: 138
     2023-07-01: 170

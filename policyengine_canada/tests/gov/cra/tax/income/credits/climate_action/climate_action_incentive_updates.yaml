@@ -17,7 +17,7 @@
         members: [adult1, adult2, child1, child2]
         province_code: ONT
   output:
-    climate_action_incentive: 976  # $488 + $244 + $122 + $122 (using 2023-07-01 values)
+    climate_action_incentive: 976  # $488 + $244 + $122 + $122 (using 2023-07-01 values active at 2024-01-01)
 
 - name: Alberta single adult 2024
   period: 2024
@@ -26,7 +26,7 @@
     is_head: true
     age: 30
   output:
-    climate_action_incentive: 772  # Using 2023-07-01 value
+    climate_action_incentive: 772  # Using 2023-07-01 value active at 2024-01-01
 
 - name: Saskatchewan couple 2023
   period: 2023
@@ -63,3 +63,4 @@
         province_code: MB
   output:
     climate_action_incentive: 728  # $416 + $208 + $104 (using 2022-07-01 values since test is for start of 2023)
+
