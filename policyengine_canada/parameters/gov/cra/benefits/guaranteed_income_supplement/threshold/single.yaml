@@ -1,0 +1,13 @@
+description: Annual income threshold for GIS eligibility for singles
+values:
+  2022-01-01: 20_784
+  2023-01-01: 21_624
+  2024-01-01: 21_768
+  2025-01-01: 22_272
+metadata:
+  unit: currency-CAD
+  period: year
+  label: GIS income threshold for singles
+  reference:
+    - title: Old Age Security payment amounts
+      href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html

@@ -1,0 +1,82 @@
+- name: Single senior with no income gets maximum GIS
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 50
+    is_head: true
+    is_spouse: false
+    employment_income: 0
+    self_employment_income: 0
+  output:
+    # Maximum monthly for 2024 is $1,083.68
+    # Annual: $1,083.68 * 12 = $13,004.16
+    gis: 13_004.16
+
+- name: Single senior with income at threshold gets minimal GIS
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 50
+    is_head: true
+    is_spouse: false
+    employment_income: 21_768  # Near threshold for 2024
+    self_employment_income: 0
+  output:
+    # Income: $21,768
+    # Reduction: $21,768 * 0.5 = $10,884
+    # GIS: $13,004.16 - $10,884 = $2,120.16
+    gis: 2_120.16
+
+- name: Single senior with partial income gets reduced GIS
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 50
+    is_head: true
+    is_spouse: false
+    employment_income: 10_000
+    self_employment_income: 0
+  output:
+    # Income: $10,000
+    # Reduction: $10,000 * 0.5 = $5,000
+    # GIS: $13,004.16 - $5,000 = $8,004.16
+    gis: 8_004.16
+
+- name: Single senior with income above threshold gets reduced GIS
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 50
+    is_head: true
+    is_spouse: false
+    employment_income: 22_000
+    self_employment_income: 0
+  output:
+    # Income: $22,000
+    # Reduction: $22,000 * 0.5 = $11,000
+    # GIS: $13,004.16 - $11,000 = $2,004.16
+    gis: 2_004.16
+
+- name: Not eligible due to age
+  period: 2024
+  input:
+    age: 60
+    adult_years_in_canada: 40
+    is_head: true
+    is_spouse: false
+    employment_income: 0
+    self_employment_income: 0
+  output:
+    gis: 0
+
+- name: Single senior with high income gets no GIS
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 50
+    is_head: true
+    is_spouse: false
+    employment_income: 50_000
+    self_employment_income: 0
+  output:
+    gis: 0
