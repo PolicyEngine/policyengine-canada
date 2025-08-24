@@ -20,7 +20,10 @@
     employment_income: 100_000
     self_employment_income: 0
   output:
-    cpp_contribution: 4_034.10
+    # Maximum pensionable earnings 2024 = $68,500
+    # Pensionable = $68,500 - $3,500 = $65,000
+    # Contribution = $65,000 * 0.0595 = $3,867.50
+    cpp_contribution: 3_867.50
 
 - name: CPP contribution with mixed income
   period: 2024
@@ -55,7 +58,7 @@
     employment_income: 100_000
     self_employment_income: 0
   output:
-    # Maximum pensionable earnings 2025 = 75,300
-    # Pensionable = 75,300 - 3,500 = 71,800
-    # Contribution = 71,800 * 0.0595 = 4,272.10
-    cpp_contribution: 4_272.10
+    # Maximum pensionable earnings 2025 = $71,300
+    # Pensionable = $71,300 - $3,500 = $67,800
+    # Contribution = $67,800 * 0.0595 = $4,034.10
+    cpp_contribution: 4_034.10

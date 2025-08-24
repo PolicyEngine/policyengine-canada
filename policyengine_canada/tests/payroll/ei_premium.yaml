@@ -36,6 +36,6 @@
 - name: EI premium at exactly maximum insurable earnings 2025
   period: 2025
   input:
-    employment_income: 66_300
+    employment_income: 65_700
   output:
-    ei_premium: 1_087.32
+    ei_premium: 1_077.48
