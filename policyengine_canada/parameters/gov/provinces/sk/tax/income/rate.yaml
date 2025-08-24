@@ -8,10 +8,6 @@ metadata:
   reference:
     - title: Government of Canada - Canadian income tax rates for individuals current and previous years
       href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
-    - title: 2024 Personal Income Tax Structure | Saskatchewan Government
-      href: https://www.saskatchewan.ca/residents/taxes-and-investments/personal-income-tax/2024-personal-income-tax-structure
-    - title: 2025 Personal Income Tax Structure | Saskatchewan Government
-      href: https://www.saskatchewan.ca/residents/taxes-and-investments/personal-income-tax/personal-income-tax-structure
 brackets:
   - threshold:
       2022-01-01: 0
@@ -19,13 +15,9 @@ brackets:
       2022-01-01: 0.105
   - threshold:
       2022-01-01: 46_773
-      2024-01-01: 52_057
-      2025-01-01: 53_463
     rate:
       2022-01-01: 0.125
   - threshold:
       2022-01-01: 133_638
-      2024-01-01: 148_734  # 52,057 + 96,677
-      2025-01-01: 152_750  # 53,463 + 99,287
     rate:
       2022-01-01: 0.145

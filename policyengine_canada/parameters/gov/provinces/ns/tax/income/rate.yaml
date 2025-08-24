@@ -8,8 +8,6 @@ metadata:
   reference:
     - title: Government of Canada - Canadian income tax rates for individuals current and previous years
       href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
-    - title: Personal income tax rates and indexation | Nova Scotia Government
-      href: https://beta.novascotia.ca/personal-income-tax-rates-and-indexation
 brackets:
   - threshold:
       2022-01-01: 0
@@ -17,26 +15,18 @@ brackets:
       2022-01-01: 0.0879
   - threshold:
       2022-01-01: 29_590
-      2024-01-01: 29_590
-      2025-01-01: 30_507
     rate:
       2022-01-01: 0.1495
   - threshold:
       2022-01-01: 59_180
-      2024-01-01: 59_180
-      2025-01-01: 61_015
     rate:
       2022-01-01: 0.1667
   - threshold:
       2022-01-01: 93_000
-      2024-01-01: 93_000
-      2025-01-01: 95_883
     rate:
       2022-01-01: 0.175
   - threshold:
       2022-01-01: 150_000
-      2024-01-01: 150_000
-      2025-01-01: 154_650
     rate:
       2022-01-01: 0.21
 
