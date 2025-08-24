@@ -1,0 +1,56 @@
+- name: Basic EI benefit calculation
+  period: 2024
+  input:
+    employment_income: 50_000
+    ei_insurable_hours: 600
+  output:
+    # Weekly: min($50,000, $63,200) / 52 * 0.55 = $528.85
+    # Capped at maximum $668/week, so $528.85
+    # Annual: $528.85 * 26 weeks = $13,750
+    ei_benefit: 13_750
+
+- name: EI benefit at maximum
+  period: 2024
+  input:
+    employment_income: 80_000
+    ei_insurable_hours: 1_000
+  output:
+    # Weekly: min($80,000, $63,200) / 52 * 0.55 = $668 (at maximum)
+    # Annual: $668 * 26 weeks = $17,368
+    ei_benefit: 17_368
+
+- name: Below minimum hours - no benefit
+  period: 2024
+  input:
+    employment_income: 40_000
+    ei_insurable_hours: 400
+  output:
+    ei_benefit: 0
+
+- name: No employment income - no benefit
+  period: 2024
+  input:
+    employment_income: 0
+    ei_insurable_hours: 600
+  output:
+    ei_benefit: 0
+
+- name: EI benefit for 2025
+  period: 2025
+  input:
+    employment_income: 60_000
+    ei_insurable_hours: 800
+  output:
+    # Weekly: $60,000 / 52 * 0.55 = $634.62
+    # Annual: $634.62 * 26 weeks = $16,500
+    ei_benefit: 16_500
+
+- name: EI benefit at 2025 maximum
+  period: 2025
+  input:
+    employment_income: 90_000
+    ei_insurable_hours: 1_200
+  output:
+    # Weekly: min($90,000, $65,700) / 52 * 0.55 = $695 (at maximum)
+    # Annual: $695 * 26 weeks = $18,070
+    ei_benefit: 18_070
