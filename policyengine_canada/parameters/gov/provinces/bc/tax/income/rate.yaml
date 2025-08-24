@@ -8,32 +8,65 @@ metadata:
   reference:
     - title: Government of Canada - Canadian income tax rates for individuals current and previous years
       href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    - title: Personal income tax rates - Province of British Columbia
+      href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/tax-rates
 brackets:
   - threshold:
-      2022-01-01: 0
+      values:
+        2022-01-01: 0
     rate:
       2022-01-01: 0.0506
   - threshold:
-      2022-01-01: 43_070
+      values:
+        2022-01-01: 43_070
+        2023-01-01: 45_654
+      metadata:
+        uprating:
+          parameter: gov.provinces.bc.cpi
     rate:
       2022-01-01: 0.077
   - threshold:
-      2022-01-01: 86_141
+      values:
+        2022-01-01: 86_141
+        2023-01-01: 91_310
+      metadata:
+        uprating:
+          parameter: gov.provinces.bc.cpi
     rate:
       2022-01-01: 0.105
   - threshold:
-      2022-01-01: 98_901
+      values:
+        2022-01-01: 98_901
+        2023-01-01: 104_835
+      metadata:
+        uprating:
+          parameter: gov.provinces.bc.cpi
     rate:
       2022-01-01: 0.1229
   - threshold:
-      2022-01-01: 120_094
+      values:
+        2022-01-01: 120_094
+        2023-01-01: 127_299
+      metadata:
+        uprating:
+          parameter: gov.provinces.bc.cpi
     rate:
       2022-01-01: 0.147
   - threshold:
-      2022-01-01: 162_832
+      values:
+        2022-01-01: 162_832
+        2023-01-01: 172_602
+      metadata:
+        uprating:
+          parameter: gov.provinces.bc.cpi
     rate:
       2022-01-01: 0.168
   - threshold:
-      2022-01-01: 227_091
+      values:
+        2022-01-01: 227_091
+        2023-01-01: 240_716
+      metadata:
+        uprating:
+          parameter: gov.provinces.bc.cpi
     rate:
       2022-01-01: 0.205

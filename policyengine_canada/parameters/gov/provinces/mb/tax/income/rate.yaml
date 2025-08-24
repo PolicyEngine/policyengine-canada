@@ -8,6 +8,8 @@ metadata:
   reference:
     - title: Government of Canada - Canadian income tax rates for individuals current and previous years
       href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    - title: TaxTips.ca - Manitoba 2024 & 2025 Tax Rates & Tax Brackets
+      href: https://www.taxtips.ca/taxrates/mb.htm
 brackets:
   - threshold:
       2022-01-01: 0
@@ -15,9 +17,13 @@ brackets:
       2022-01-01: 0.108
   - threshold:
       2022-01-01: 34_773
+      2024-01-01: 47_000
+      2025-01-01: 47_000
     rate:
       2022-01-01: 0.1275
   - threshold:
       2022-01-01: 74_416
+      2024-01-01: 100_000
+      2025-01-01: 100_000
     rate:
       2022-01-01: 0.174

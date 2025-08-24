@@ -1,0 +1,17 @@
+description: Ontario Consumer Price Index (2002=100 base).
+values:
+  2020-01-01: 137.5
+  2021-01-01: 141.4
+  2022-01-01: 145.8
+  2023-01-01: 151.7  # Approximately 4.05% increase
+  2024-01-01: 158.5  # 4.5% indexation per government
+  2025-01-01: 162.9  # 2.8% indexation per government
+metadata:
+  economy: true
+  unit: /1
+  label: Ontario CPI
+  reference:
+    - title: Statistics Canada - Consumer Price Index
+      href: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000501
+    - title: Government of Canada - Payroll Deductions Tables
+      href: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032on-jan/t4032on-january-general-information.html
