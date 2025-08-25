@@ -1,0 +1,54 @@
+- name: Ontario total sales tax (HST only)
+  period: 2024
+  input:
+    province_code: ONT
+    consumption: 50_000
+  output:
+    # HST: $50,000 * 0.13 = $6,500
+    # PST: $0 (uses HST)
+    # Total: $6,500
+    total_sales_tax: 6_500
+
+- name: British Columbia total sales tax (GST + PST)
+  period: 2024
+  input:
+    province_code: BC
+    consumption: 50_000
+  output:
+    # GST: $50,000 * 0.05 = $2,500
+    # PST: $50,000 * 0.07 = $3,500
+    # Total: $6,000
+    total_sales_tax: 6_000
+
+- name: Quebec total sales tax (GST + QST)
+  period: 2024
+  input:
+    province_code: QC
+    consumption: 40_000
+  output:
+    # GST: $40,000 * 0.05 = $2,000
+    # QST: $40,000 * 0.09975 = $3,990
+    # Total: $5,990
+    total_sales_tax: 5_990
+
+- name: Alberta total sales tax (GST only)
+  period: 2024
+  input:
+    province_code: AB
+    consumption: 60_000
+  output:
+    # GST: $60,000 * 0.05 = $3,000
+    # PST: $0 (no PST in Alberta)
+    # Total: $3,000
+    total_sales_tax: 3_000
+
+- name: Nova Scotia total sales tax (HST only)
+  period: 2024
+  input:
+    province_code: NS
+    consumption: 30_000
+  output:
+    # HST: $30,000 * 0.15 = $4,500
+    # PST: $0 (uses HST)
+    # Total: $4,500
+    total_sales_tax: 4_500
