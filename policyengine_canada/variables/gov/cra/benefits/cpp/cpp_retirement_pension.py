@@ -8,7 +8,6 @@ class cpp_retirement_pension(Variable):
     definition_period = YEAR
     unit = CAD
     documentation = "Annual CPP retirement pension amount"
-    adds = ["cpp_retirement_pension"]
     
     def formula(person, period, parameters):
         p = parameters(period).gov.cra.benefits.cpp.retirement
