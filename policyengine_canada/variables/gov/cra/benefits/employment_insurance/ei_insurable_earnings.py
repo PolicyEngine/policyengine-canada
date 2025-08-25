@@ -11,11 +11,7 @@ class ei_insurable_earnings(Variable):
     
     def formula(person, period, parameters):
         employment_income = person("employment_income", period)
-        
-        # For now, use the maximum weekly benefit to infer max insurable earnings
-        # Maximum insurable earnings = max_weekly_benefit / rate
         p = parameters(period).gov.cra.benefits.employment_insurance
-        max_insurable = p.maximum_weekly_benefit / p.rate * 52
         
         # Cap at maximum insurable earnings
-        return min_(employment_income, max_insurable)
+        return min_(employment_income, p.maximum_insurable_earnings)

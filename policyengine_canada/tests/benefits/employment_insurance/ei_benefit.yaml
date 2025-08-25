@@ -51,6 +51,6 @@
     employment_income: 90_000
     ei_insurable_hours: 1_200
   output:
-    # Weekly: min($90,000, $65,700) / 52 * 0.55 = $695 (at maximum)
-    # Annual: $695 * 26 weeks = $18,070
-    ei_benefit: 18_070
+    # Weekly: min($90,000, $65,700) / 52 * 0.55 = $694.90
+    # Annual: $694.90 * 26 weeks = $18,067.50
+    ei_benefit: 18_067.50
