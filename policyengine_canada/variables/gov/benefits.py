@@ -12,6 +12,7 @@ class benefits(Variable):
         "child_disability_benefit",
         "canada_workers_benefit",
         "dental_benefit",
+        "ei_benefit",
         "oas_net",
         # Ontario programs.
         "on_benefits",

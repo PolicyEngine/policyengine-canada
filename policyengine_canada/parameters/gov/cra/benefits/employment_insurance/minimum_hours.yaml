@@ -1,0 +1,10 @@
+description: Minimum insurable hours required for Employment Insurance eligibility
+values:
+  2020-01-01: 420
+metadata:
+  unit: hour
+  period: year
+  label: EI minimum insurable hours
+  reference:
+    - title: Employment Insurance eligibility
+      href: https://www.canada.ca/en/services/benefits/ei/ei-regular-benefit/eligibility.html
