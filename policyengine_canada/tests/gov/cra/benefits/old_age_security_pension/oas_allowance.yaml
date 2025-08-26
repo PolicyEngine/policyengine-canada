@@ -1,0 +1,29 @@
+# Note: OAS Allowance is a simplified implementation
+# Actual benefit includes income testing and phase-out based on combined household income
+
+- name: Single person not eligible
+  period: 2024
+  input:
+    age: 62
+    is_spouse: false
+    individual_net_income: 20_000
+  output:
+    oas_allowance: 0
+
+- name: Too young for allowance
+  period: 2024
+  input:
+    age: 59
+    is_spouse: true
+    individual_net_income: 20_000
+  output:
+    oas_allowance: 0
+
+- name: Too old for allowance (would get OAS instead)
+  period: 2024
+  input:
+    age: 65
+    is_spouse: true
+    individual_net_income: 20_000
+  output:
+    oas_allowance: 0
