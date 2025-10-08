@@ -1,8 +1,8 @@
 all: install format test build changelog
 
 documentation:
-	jb clean docs
-	jb build docs
+	myst clean --all docs
+	myst build docs
 
 format:
 	black . -l 79
