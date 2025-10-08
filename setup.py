@@ -29,7 +29,7 @@ general_requirements = [
 
 dev_requirements = [
     "furo",
-    "jupyter-book",
+    "jupyter-book>=2.0.0a0",
     "markupsafe",
     "pydata-sphinx-theme",
     "sphinx",
