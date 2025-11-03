@@ -1,0 +1,108 @@
+- name: No dependent in the household
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+    households:
+      household:
+        members: [head]
+        province_code: NU
+  output:
+    nu_eligible_dependent_credit: 0
+
+- name: Independent spouse and independent third person in the household
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+      spouse:
+        is_spouse: true
+        is_dependant: false
+        individual_net_income: 10_000
+      dependent:
+        is_spouse: false
+        is_dependant : false
+        individual_net_income : 10_000
+    household:
+      members: [head, spouse, dependent]
+      province_code: NU
+  output:
+    nu_eligible_dependent_credit: 0
+
+- name: Independent spouse and dependent third person in the household with less than 16000 income
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+      spouse:
+        is_spouse: true
+        is_dependant: false
+        individual_net_income: 10_000
+      dependent:
+        is_spouse : false
+        is_dependant : true
+        individual_net_income : 10_000
+    household:
+      members: [head, spouse, dependent]
+      province_code: NU
+  output:
+    nu_eligible_dependent_credit: 23_724
+
+- name: Dependent spouse and dependent third person in the household with less than 16000 income
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+      spouse:
+        is_spouse: true
+        is_dependant: true
+        individual_net_income: 10_000
+      dependent:
+        is_spouse: false
+        is_dependant : true
+        individual_net_income : 10_000
+    household:
+      members: [head, spouse, dependent]
+      province_code: NU
+  output:
+    nu_eligible_dependent_credit: 0
+
+- name: Dependent third person in the household with less than 16000 income
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+      dependent:
+        is_spouse: false
+        is_dependant : true
+        individual_net_income : 10_000
+    household:
+      members: [head, dependent]
+      province_code: NU
+  output:
+    nu_eligible_dependent_credit: 23_724
+
+- name: Independent spouse and dependent third person in the household with more than 16000 income
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+      spouse:
+        is_spouse: true
+        is_dependant: false
+        individual_net_income: 10_000
+      dependent:
+        is_spouse: false
+        is_dependant : true
+        individual_net_income : 20_000
+    household:
+      members: [head, spouse, dependent]
+      province_code: NU
+  output:
+    nu_eligible_dependent_credit: 16_862
