@@ -1,0 +1,24 @@
+- name: without disability
+  period: 2023
+  input:
+    province_code: NT
+    is_disabled: false
+  output:
+    nt_disability_amount_self_eligible: false
+
+- name: with disability
+  period: 2023
+  input:
+    province_code: NT
+    is_disabled: true
+  output:
+    nt_disability_amount_self_eligible: true
+
+- name: with disability, wrong province
+  period: 2023
+  input:
+    province_code: AB
+    is_disabled: true
+  output:
+    nt_disability_amount_self_eligible: false
+
