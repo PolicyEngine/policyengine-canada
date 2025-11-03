@@ -1,0 +1,16 @@
+- name: No pension income
+  period: 2023
+  input:
+    province_code: NU
+    pension_and_savings_plan_income: 0
+  output:
+    nu_pension_amount_credit: 0
+
+- name: Pension income of $500 - capped at 2_000
+  period: 2023
+  input:
+    province_code: NU
+    pension_and_savings_plan_income: 500
+  output:
+    nu_pension_amount_credit: 500
+
