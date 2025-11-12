@@ -1,0 +1,109 @@
+- name: Single senior - no income - maximum benefit
+  period: 2025
+  input:
+    province_code: AB
+    age: 65
+    individual_net_income: 0
+    is_married: false
+    oas_net: 8_000
+  output:
+    ab_seniors_benefit: 5_756
+
+- name: Single senior - under threshold
+  period: 2025
+  input:
+    province_code: AB
+    age: 70
+    individual_net_income: 30_000
+    is_married: false
+    oas_net: 8_000
+  output:
+    ab_seniors_benefit: 5_756
+
+- name: Single senior - at threshold
+  period: 2025
+  input:
+    province_code: AB
+    age: 75
+    individual_net_income: 33_410
+    is_married: false
+    oas_net: 8_000
+  output:
+    ab_seniors_benefit: 5_756
+
+- name: Single senior - partial reduction
+  period: 2025
+  input:
+    province_code: AB
+    age: 68
+    individual_net_income: 35_000
+    is_married: false
+    oas_net: 8_000
+  output:
+    ab_seniors_benefit: 5_507.801
+
+- name: Single senior - high income reduced
+  period: 2025
+  input:
+    province_code: AB
+    age: 80
+    individual_net_income: 70_000
+    is_married: false
+    oas_net: 8_000
+  output:
+    ab_seniors_benefit: 44.301
+
+- name: Couple - maximum benefit
+  period: 2025
+  input:
+    province_code: AB
+    age: 65
+    individual_net_income: 0
+    is_married: true
+    oas_net: 8_000
+  output:
+    ab_seniors_benefit: 5_756
+
+- name: Couple - partial reduction
+  period: 2025
+  input:
+    province_code: AB
+    age: 70
+    individual_net_income: 55_000
+    is_married: true
+    oas_net: 8_000
+  output:
+    ab_seniors_benefit: 5_699.804
+
+- name: Under 65 - not eligible
+  period: 2025
+  input:
+    province_code: AB
+    age: 64
+    individual_net_income: 0
+    is_married: false
+    oas_net: 0
+  output:
+    ab_seniors_benefit: 0
+
+- name: No OAS - not eligible
+  period: 2025
+  input:
+    province_code: AB
+    age: 65
+    individual_net_income: 0
+    is_married: false
+    oas_net: 0
+  output:
+    ab_seniors_benefit: 0
+
+- name: 2024 amounts - single
+  period: 2024
+  input:
+    province_code: AB
+    age: 65
+    individual_net_income: 20_000
+    is_married: false
+    oas_net: 8_000
+  output:
+    ab_seniors_benefit: 3_792

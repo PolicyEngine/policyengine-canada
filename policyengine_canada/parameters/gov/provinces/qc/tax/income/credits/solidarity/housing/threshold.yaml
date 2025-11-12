@@ -1,0 +1,10 @@
+description: Quebec Solidarity Tax Credit housing component income threshold
+values:
+  2024-01-01: 35000
+
+metadata:
+  unit: currency-CAD
+  label: QC Solidarity housing threshold
+  reference:
+  - title: Quebec Solidarity Tax Credit
+    href: https://www.revenuquebec.ca/en/citizens/tax-credits/solidarity-tax-credit/

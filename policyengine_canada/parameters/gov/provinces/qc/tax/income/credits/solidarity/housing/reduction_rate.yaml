@@ -1,0 +1,10 @@
+description: Quebec Solidarity Tax Credit housing component reduction rate
+values:
+  2024-01-01: 0.03
+
+metadata:
+  unit: /1
+  label: QC Solidarity housing reduction rate
+  reference:
+  - title: Quebec Solidarity Tax Credit
+    href: https://www.revenuquebec.ca/en/citizens/tax-credits/solidarity-tax-credit/

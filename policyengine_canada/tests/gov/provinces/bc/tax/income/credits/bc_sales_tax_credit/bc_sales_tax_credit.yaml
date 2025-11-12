@@ -1,0 +1,79 @@
+- name: Single person - no income
+  period: 2024
+  input:
+    province_code: BC
+    age: 25
+    individual_net_income: 0
+    is_married: false
+  output:
+    bc_sales_tax_credit: 75
+
+- name: Single person - under threshold
+  period: 2024
+  input:
+    province_code: BC
+    age: 30
+    individual_net_income: 15_000
+    is_married: false
+  output:
+    bc_sales_tax_credit: 75
+
+- name: Single person - partial reduction
+  period: 2024
+  input:
+    province_code: BC
+    age: 35
+    individual_net_income: 20_000
+    is_married: false
+  output:
+    bc_sales_tax_credit: 0
+
+- name: Single person - above threshold reduces to zero
+  period: 2024
+  input:
+    province_code: BC
+    age: 40
+    individual_net_income: 18_750
+    is_married: false
+  output:
+    bc_sales_tax_credit: 0
+
+- name: Couple - under threshold
+  period: 2024
+  input:
+    province_code: BC
+    age: 45
+    individual_net_income: 18_000
+    is_married: true
+  output:
+    bc_sales_tax_credit: 75
+
+- name: Couple - partial reduction
+  period: 2024
+  input:
+    province_code: BC
+    age: 50
+    individual_net_income: 20_000
+    is_married: true
+  output:
+    bc_sales_tax_credit: 35
+
+- name: Couple - fully reduced
+  period: 2024
+  input:
+    province_code: BC
+    age: 55
+    individual_net_income: 25_000
+    is_married: true
+  output:
+    bc_sales_tax_credit: 0
+
+- name: Under 18 - not eligible
+  period: 2024
+  input:
+    province_code: BC
+    age: 17
+    individual_net_income: 0
+    is_married: false
+  output:
+    bc_sales_tax_credit: 0
