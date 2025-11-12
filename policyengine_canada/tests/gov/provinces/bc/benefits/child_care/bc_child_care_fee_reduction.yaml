@@ -1,7 +1,6 @@
 - name: BC Child Care Fee Reduction - infant/toddler
   period: 2024
   input:
-    province_code: BC
     people:
       parent:
         age: 30
@@ -9,6 +8,7 @@
         age: 1
     households:
       household:
+        province_code: BC
         members: [parent, infant]
   output:
     bc_child_care_fee_reduction: 10_800  # $900/month * 12 (not income-tested)
@@ -16,7 +16,6 @@
 - name: BC Child Care Fee Reduction - preschool age
   period: 2024
   input:
-    province_code: BC
     people:
       parent:
         age: 30
@@ -24,6 +23,7 @@
         age: 4
     households:
       household:
+        province_code: BC
         members: [parent, child]
   output:
     bc_child_care_fee_reduction: 1_740  # $145/month * 12
@@ -31,7 +31,6 @@
 - name: BC Child Care Fee Reduction - school age
   period: 2024
   input:
-    province_code: BC
     people:
       parent:
         age: 30
@@ -39,6 +38,7 @@
         age: 8
     households:
       household:
+        province_code: BC
         members: [parent, child]
   output:
     bc_child_care_fee_reduction: 1_380  # $115/month * 12
@@ -46,7 +46,6 @@
 - name: BC Child Care Fee Reduction - child over age 12 (ineligible)
   period: 2024
   input:
-    province_code: BC
     people:
       parent:
         age: 30
@@ -54,6 +53,7 @@
         age: 13
     households:
       household:
+        province_code: BC
         members: [parent, child]
   output:
     bc_child_care_fee_reduction: 0  # Child over 12
@@ -61,7 +61,6 @@
 - name: BC Child Care Fee Reduction - multiple children
   period: 2024
   input:
-    province_code: BC
     people:
       parent:
         age: 30
@@ -73,6 +72,7 @@
         age: 10
     households:
       household:
+        province_code: BC
         members: [parent, child1, child2, child3]
   output:
     bc_child_care_fee_reduction: 13_920  # $900 + $145 + $115 per month * 12
@@ -80,7 +80,6 @@
 - name: BC Child Care Fee Reduction - high income family (still eligible)
   period: 2024
   input:
-    province_code: BC
     people:
       parent:
         age: 30
@@ -88,6 +87,7 @@
         age: 3
     households:
       household:
+        province_code: BC
         members: [parent, child]
         adjusted_family_net_income: 200_000
   output:

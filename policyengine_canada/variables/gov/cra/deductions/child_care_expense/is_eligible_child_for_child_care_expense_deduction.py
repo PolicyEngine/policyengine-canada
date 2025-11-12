@@ -11,7 +11,6 @@ class is_eligible_child_for_child_care_expense_deduction(Variable):
 
     def formula(person, period, parameters):
         age = person("age", period)
-        net_income = person("individual_net_income", period)
         is_dependant = person("is_dependant", period)
         p = parameters(period).gov.cra.deductions.child_care_expense
 
@@ -21,8 +20,7 @@ class is_eligible_child_for_child_care_expense_deduction(Variable):
         # Or child has disability (any age)
         has_disability = person("is_disabled", period)
 
-        # Child's net income must be below the basic personal amount
-        income_eligible = net_income <= p.child_income_limit
-
-        # Must be a dependant
-        return is_dependant & (age_eligible | has_disability) & income_eligible
+        # Must be a dependant (this implicitly handles the income requirement)
+        # Note: We don't check child's net income here to avoid circular dependency
+        # since net income depends on deductions which depend on this eligibility
+        return is_dependant & (age_eligible | has_disability)

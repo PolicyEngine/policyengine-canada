@@ -6,3 +6,6 @@
     - BC Affordable Child Care Benefit
     - BC Child Care Fee Reduction Initiative (CCFRI)
     - Alberta Child Care Subsidy Program
+    fixed:
+    - CI build failure due to missing setuptools dependency in GitHub Actions workflow
+    - Documentation build failure by using python -m jupyter_book instead of jb command

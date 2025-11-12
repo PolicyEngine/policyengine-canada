@@ -1,7 +1,6 @@
 - name: BC Affordable Child Care Benefit - infant at maximum benefit
   period: 2024
   input:
-    province_code: BC
     people:
       parent:
         age: 30
@@ -10,6 +9,7 @@
         is_child: true
     households:
       household:
+        province_code: BC
         members: [parent, infant]
         adjusted_family_net_income: 40_000
   output:
@@ -18,7 +18,6 @@
 - name: BC Affordable Child Care Benefit - toddler 19-36 months
   period: 2024
   input:
-    province_code: BC
     people:
       parent:
         age: 30
@@ -27,6 +26,7 @@
         is_child: true
     households:
       household:
+        province_code: BC
         members: [parent, toddler]
         adjusted_family_net_income: 40_000
   output:
@@ -35,7 +35,6 @@
 - name: BC Affordable Child Care Benefit - preschool age child
   period: 2024
   input:
-    province_code: BC
     people:
       parent:
         age: 30
@@ -44,6 +43,7 @@
         is_child: true
     households:
       household:
+        province_code: BC
         members: [parent, child]
         adjusted_family_net_income: 40_000
   output:
@@ -52,7 +52,6 @@
 - name: BC Affordable Child Care Benefit - school age child
   period: 2024
   input:
-    province_code: BC
     people:
       parent:
         age: 30
@@ -61,6 +60,7 @@
         is_child: true
     households:
       household:
+        province_code: BC
         members: [parent, child]
         adjusted_family_net_income: 40_000
   output:
@@ -69,7 +69,6 @@
 - name: BC Affordable Child Care Benefit - income above general limit (ineligible)
   period: 2024
   input:
-    province_code: BC
     people:
       parent:
         age: 30
@@ -78,6 +77,7 @@
         is_child: true
     households:
       household:
+        province_code: BC
         members: [parent, child]
         adjusted_family_net_income: 120_000
   output:
@@ -86,7 +86,6 @@
 - name: BC Affordable Child Care Benefit - with family size adjustment
   period: 2024
   input:
-    province_code: BC
     people:
       parent1:
         age: 30
@@ -103,6 +102,7 @@
         is_child: true
     households:
       household:
+        province_code: BC
         members: [parent1, parent2, child1, child2, child3]
         adjusted_family_net_income: 80_000
         household_size: 5
@@ -112,7 +112,6 @@
 - name: BC Affordable Child Care Benefit - partial benefit above threshold
   period: 2024
   input:
-    province_code: BC
     people:
       parent:
         age: 30
@@ -121,6 +120,7 @@
         is_child: true
     households:
       household:
+        province_code: BC
         members: [parent, child]
         adjusted_family_net_income: 75_000
   output:
