@@ -1,0 +1,331 @@
+# - name: No pensioners
+#   period: 2023
+#   input:
+#     people:
+#       senior:
+#         age: 63
+#         is_pensioner: true
+#         special_care_home: false
+#         gis_reduction: 1_000
+#         canada_pension_plan_payout: 4_000
+#         individual_net_income: 4_000
+#       spouse:
+#         age: 64
+#         is_spouse: false
+#         is_pensioner: false
+#         received_allowance: 0
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: false
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 0
+
+
+
+# #living in special care home
+
+# #single
+
+# - name: Saskatchewan Seniors Income Plan Benefit for a single pensioner who are eligible for SIP and living in special care home with age more than 65, annual income below a specified level, and gis reduction below a specified level
+#   period: 2022
+#   input:
+#     people:
+#       senior:
+#         age: 70
+#         is_pensioner: true
+#         special_care_home: true
+#         gis_reduction: 200
+#         canada_pension_plan_payout: 4_000
+#         individual_net_income: 900
+#       spouse:
+#         age: 64
+#         is_spouse: false
+#         is_pensioner: false
+#         received_allowance: 0
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: false
+  
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 336.6
+
+# - name: Saskatchewan Seniors Income Plan Benefit for a single pensioner who are eligible for SIP and living in special care home with age more than 65, annual income below a specified level, and gis reduction above a specified level
+#   period: 2022
+#   input:
+#     people:
+#       senior:
+#         age: 70
+#         is_pensioner: true
+#         special_care_home: true
+#         gis_reduction: 500
+#         canada_pension_plan_payout: 4_000
+#         individual_net_income: 900
+#       spouse:
+#         age: 64
+#         is_spouse: false
+#         is_pensioner: false
+#         received_allowance: 0
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: false
+  
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 0
+
+# - name: Saskatchewan Seniors Income Plan Benefit for a single pensioner who are ineligible for SIP and living in special care home because age less than 65, annual income above a specified level, and cpp above a specified level
+#   period: 2022
+#   input:
+#     people:
+#       senior:
+#         age: 60
+#         is_pensioner: true
+#         special_care_home: true
+#         gis_reduction: 200
+#         canada_pension_plan_payout: 5_000
+#         individual_net_income: 1_000
+#       spouse:
+#         age: 64
+#         is_spouse: false
+#         is_pensioner: false
+#         received_allowance: 0
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: false
+  
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 0    
+
+
+# #married
+
+# - name: Saskatchewan Seniors Income Plan Benefit for married pensioners who are eligible for SIP and living in special care home with age more than 65, annual income below a specified level, cpp below a specified level, and gis reduction below a specified level
+#   period: 2022
+#   input:
+#     people:
+#       senior:
+#         age: 70
+#         is_pensioner: true
+#         special_care_home: true
+#         gis_reduction: 200
+#         canada_pension_plan_payout: 7_000
+#         individual_net_income: 1_000
+#       spouse:
+#         age: 65
+#         is_spouse: true
+#         is_pensioner: true
+#         received_allowance: 0
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: true
+
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 233.4
+
+
+# - name: Saskatchewan Seniors Income Plan Benefit for married pensioners who are eligible for SIP and living in special care home with age more than 65, annual income below a specified level, cpp below a specified level, and gis reduction above a specified level
+#   period: 2022
+#   input:
+#     people:
+#       senior:
+#         age: 70
+#         is_pensioner: true
+#         special_care_home: true
+#         gis_reduction: 500
+#         canada_pension_plan_payout: 7_000
+#         individual_net_income: 1_000
+#       spouse:
+#         age: 65
+#         is_spouse: true
+#         is_pensioner: true
+#         received_allowance: 0
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: true
+
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 0
+
+
+# - name: Saskatchewan Seniors Income Plan Benefit for a single pensioner who are ineligible for SIP and living in special care home because age less than 65, annual income above a specified level, and cpp above a specified level
+#   period: 2022
+#   input:
+#     people:
+#       senior:
+#         age: 60
+#         is_pensioner: true
+#         special_care_home: true
+#         gis_reduction: 200
+#         canada_pension_plan_payout: 8_000
+#         individual_net_income: 2_000
+#       spouse:
+#         age: 65
+#         is_spouse: true
+#         is_pensioner: true
+#         received_allowance: 0
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: true
+
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 0
+
+
+
+# #married and spouse age less than 60
+
+# - name: Saskatchewan Seniors Income Plan Benefit for married pensioners who are eligible for SIP and living in special care home with age more than 65, annual income below a specified level, a spouse age less than 60, cpp below a specified level, and gis reduction below a specified level
+#   period: 2022
+#   input:
+#     people:
+#       senior:
+#         age: 70
+#         is_pensioner: true
+#         special_care_home: true
+#         gis_reduction: 100
+#         canada_pension_plan_payout: 9_000
+#         individual_net_income: 8_000
+#       spouse:
+#         age: 58
+#         is_spouse: true
+#         is_pensioner: true
+#         received_allowance: 0
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: true
+
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 206.4
+
+
+# - name: Saskatchewan Seniors Income Plan Benefit for married pensioners who are eligible for SIP and living in special care home with age more than 65, annual income below a specified level, a spouse age less than 60, cpp below a specified level, and gis reduction above a specified level
+#   period: 2022
+#   input:
+#     people:
+#       senior:
+#         age: 70
+#         is_pensioner: true
+#         special_care_home: true
+#         gis_reduction: 200
+#         canada_pension_plan_payout: 9_000
+#         individual_net_income: 8_000
+#       spouse:
+#         age: 58
+#         is_spouse: true
+#         is_pensioner: true
+#         received_allowance: 0
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: true
+
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 0
+
+
+# - name: Saskatchewan Seniors Income Plan Benefit for married pensioners who are ineligible for SIP and living in special care home because age less than 65, annual income above a specified level, a spouse age less than 60, and cpp above a specified level
+#   period: 2022
+#   input:
+#     people:
+#       senior:
+#         age: 60
+#         is_pensioner: true
+#         special_care_home: true
+#         gis_reduction: 100
+#         canada_pension_plan_payout: 11_000
+#         individual_net_income: 10_000
+#       spouse:
+#         age: 58
+#         is_spouse: true
+#         is_pensioner: true
+#         received_allowance: 0
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: true
+
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 0
+
+
+# #married and spouse receiving allowance
+
+# - name: Saskatchewan Seniors Income Plan Benefit for married pensioners who are eligible for SIP and living in special care home with age more than 65, annual income below a specified level, a spouse receiving allowance, cpp below a specified level, and gis reduction below a specified level
+#   period: 2022
+#   input:
+#     people:
+#       senior:
+#         age: 70
+#         is_pensioner: true
+#         special_care_home: true
+#         gis_reduction: 1_000
+#         canada_pension_plan_payout: 8_000
+#         individual_net_income: 1_000
+#       spouse:
+#         age: 65
+#         is_spouse: true
+#         is_pensioner: true
+#         received_allowance: 12_000
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: true
+
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 161
+
+
+# - name: Saskatchewan Seniors Income Plan Benefit for married pensioners who are eligible for SIP and living in special care home with age more than 65, annual income below a specified level, a spouse receiving allowance, cpp below a specified level, and gis reduction above a specified level
+#   period: 2022
+#   input:
+#     people:
+#       senior:
+#         age: 70
+#         is_pensioner: true
+#         special_care_home: true
+#         gis_reduction: 2_000
+#         canada_pension_plan_payout: 8_000
+#         individual_net_income: 1_000
+#       spouse:
+#         age: 65
+#         is_spouse: true
+#         is_pensioner: true
+#         received_allowance: 12_000
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: true
+
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 0
+
+
+# - name: Saskatchewan Seniors Income Plan Benefit for married pensioners who are ineligible for SIP and living in special care home with age less than 65, annual income above a specified level, a spouse receiving allowance, and cpp above a specified level
+#   input:
+#     people:
+#       senior:
+#         age: 60
+#         is_pensioner: true
+#         special_care_home: true
+#         gis_reduction: 1_000
+#         canada_pension_plan_payout: 10_000
+#         individual_net_income: 2_000
+#       spouse:
+#         age: 65
+#         is_spouse: true
+#         is_pensioner: true
+#         received_allowance: 12_000
+#     household:
+#       members: [senior, spouse]
+#       province_code: SK
+#       is_married: true
+
+#   output:
+#     sk_seniors_income_plan_in_special_care_home: 0
