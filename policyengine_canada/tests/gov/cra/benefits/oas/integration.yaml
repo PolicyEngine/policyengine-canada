@@ -5,7 +5,7 @@
     adult_years_in_canada: 47
     individual_net_income: 91_761
   output:
-    oas_eligibility: TRUE
+    oas_eligible: TRUE
     oas_pre_repayment: 8_226
     oas_repayment: 1_500
     oas_net: 6_726
@@ -17,7 +17,7 @@
     adult_years_in_canada: 47
     individual_net_income: 40_000
   output:
-    oas_eligibility: TRUE
+    oas_eligible: TRUE
     oas_pre_repayment: 8_226
     oas_repayment: 0
     oas_net: 8_226
@@ -29,7 +29,7 @@
     adult_years_in_canada: 20
     individual_net_income: 10_000_000
   output:
-    oas_eligibility: TRUE
+    oas_eligible: TRUE
     oas_pre_repayment: 4_113
     oas_repayment: 4_113
     oas_net: 0
