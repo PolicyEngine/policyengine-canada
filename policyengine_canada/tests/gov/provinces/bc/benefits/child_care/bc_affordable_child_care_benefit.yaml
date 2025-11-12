@@ -107,7 +107,7 @@
         adjusted_family_net_income: 80_000
         household_size: 5
   output:
-    bc_affordable_child_care_benefit: 14_700  # Reduced due to income but with family size adjustment
+    bc_affordable_child_care_benefit: 12714.55  # ($1,060 + $550 + $415) * 12 with income phase-out and family size adjustment
 
 - name: BC Affordable Child Care Benefit - partial benefit above threshold
   period: 2024

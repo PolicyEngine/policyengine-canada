@@ -75,4 +75,4 @@ class bc_affordable_child_care_benefit(Variable):
         # Sum across all children
         total_benefit = household.sum(annual_benefit_per_child)
 
-        return where(eligible, total_benefit, 0)
+        return np.round(where(eligible, total_benefit, 0), 2)

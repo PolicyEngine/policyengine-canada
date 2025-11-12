@@ -62,4 +62,5 @@ class ab_child_care_subsidy(Variable):
         )
 
         # Sum across all children
-        return household.sum(annual_subsidy_per_child)
+        total = household.sum(annual_subsidy_per_child)
+        return np.round(total, 2)

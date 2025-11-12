@@ -12,7 +12,7 @@
       adjusted_family_net_income: 30_000
       province_code: ONT
   output:
-    on_child_care_tax_credit: 4_400  # 55% of $8,000 at $30k income
+    on_child_care_tax_credit: 4_020  # 67% of $6,000 max at $30k income
 
 - name: Ontario CARE Credit - family at maximum rate (75%)
   period: 2024
@@ -61,7 +61,7 @@
       adjusted_family_net_income: 25_000
       province_code: ONT
   output:
-    on_child_care_tax_credit: 5_362.50  # 71% of $8,250 max (at $25k income: 65% rate)
+    on_child_care_tax_credit: 5_857.50  # 71% of $8,250 max at $25k income
 
 - name: Ontario CARE Credit - income above limit (ineligible)
   period: 2024
@@ -112,4 +112,4 @@
       adjusted_family_net_income: 30_000
       province_code: ONT
   output:
-    on_child_care_tax_credit: 5_280  # 55% of $7,200 (includes 20% top-up for 2021)
+    on_child_care_tax_credit: 4_824  # 67% of $7,200 (includes 20% top-up for 2021) at $30k income

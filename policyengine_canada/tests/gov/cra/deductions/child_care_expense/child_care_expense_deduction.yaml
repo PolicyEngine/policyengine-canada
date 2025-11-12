@@ -68,8 +68,8 @@
       household:
         members: [parent, child]
   output:
-    child_care_expense_deduction: 10_000  # Limited to 2/3 of $15,000 = $10,000, not the full $12,000 capped to $8,000
-    child_care_expense_deduction_person: [10_000, 0]
+    child_care_expense_deduction: 8_000  # Capped at $8,000 for child under 7, even though 2/3 of $15,000 = $10,000
+    child_care_expense_deduction_person: [8_000, 0]
 
 - name: Multiple children with different ages
   period: 2024

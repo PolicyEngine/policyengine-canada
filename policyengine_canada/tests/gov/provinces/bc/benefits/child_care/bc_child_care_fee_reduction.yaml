@@ -75,7 +75,7 @@
         province_code: BC
         members: [parent, child1, child2, child3]
   output:
-    bc_child_care_fee_reduction: 13_920  # $900 + $145 + $115 per month * 12
+    bc_child_care_fee_reduction: 13_560  # $900 (infant/toddler) + $115 (school age 6) + $115 (school age 10) per month * 12
 
 - name: BC Child Care Fee Reduction - high income family (still eligible)
   period: 2024
@@ -91,4 +91,4 @@
         members: [parent, child]
         adjusted_family_net_income: 200_000
   output:
-    bc_child_care_fee_reduction: 10_800  # Not income-tested
+    bc_child_care_fee_reduction: 1_740  # Not income-tested, $145/month * 12 for preschool age (3 years)
