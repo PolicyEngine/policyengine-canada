@@ -1,8 +1,8 @@
 all: install format test build changelog
 
 documentation:
-	jb clean docs
-	jb build docs
+	python -m jupyter_book clean docs
+	python -m jupyter_book build docs
 
 format:
 	black . -l 79

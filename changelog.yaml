@@ -631,3 +631,8 @@
     fixed:
     - Include python-13 support and update microdf to latest versions.
   date: 2025-07-24 12:38:45
+- bump: patch
+  changes:
+    fixed:
+    - CI build failure due to missing setuptools dependency in GitHub Actions workflow.
+  date: 2025-11-12 14:08:46
