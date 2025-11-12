@@ -42,6 +42,8 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.13
+      - name: Install build dependencies
+        run: pip install wheel setuptools
       - name: Install package
         run: make install
       - name: Run tests

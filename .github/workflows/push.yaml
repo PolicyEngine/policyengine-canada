@@ -85,6 +85,8 @@ jobs:
           python-version: 3.13
       - name: Publish a git tag
         run: ".github/publish-git-tag.sh || true"
+      - name: Install build dependencies
+        run: pip install wheel setuptools
       - name: Install package
         run: make install
       - name: Build package
