@@ -1,0 +1,9 @@
+description: Prince Edward Island provides the aged supplement under the low-income tax reduction for fliers born no earlier than this year.
+values:
+  2022-01-01: 1957
+metadata:
+  unit: year
+  label: Prince Edward Island low-income tax old age
+  reference:
+    - title: Government of Canada - Prince Edward Island Information Guide
+      href: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/prince-edward-island/5002-pc/information-residents-prince-edward-island.html#P130_13917
