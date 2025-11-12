@@ -1,0 +1,14 @@
+description: Saskatchewan reduces the amount credit for an eligible dependant from the following base amount.
+values:
+  2022-01-01: 18_277
+  2023-01-01: 19_428
+metadata:
+  unit: currency-CAD
+  label: Saskatchewan amount for an eligible dependant reduction base amount
+  reference:
+  - title: Worksheet for the 2022 Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk-ws/td1sk-ws-22e.pdf#page=1
+  - title: Worksheet for the 2023 Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk-ws/td1sk-ws-23e.pdf#page=1
+  - title: The Income Tax Act, 2000 DIVISION 2 Section 15, Infirm dependant credit 15(1) & Section 19, Dependent child credit 19(1)
+    href: https://publications.saskatchewan.ca/api/v1/products/583/formats/806/download#page=13 #page=16
