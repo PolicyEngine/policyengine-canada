@@ -8,7 +8,7 @@ class on_child_care_tax_credit(Variable):
     documentation = "Ontario Childcare Access and Relief from Expenses (CARE) Tax Credit - refundable credit based on childcare expenses and family income"
     unit = CAD
     definition_period = YEAR
-    defined_for = ProvinceCode.ON
+    defined_for = ProvinceCode.ONT
     reference = "https://www.ontario.ca/page/ontario-child-care-tax-credit"
 
     def formula(household, period, parameters):
