@@ -1,0 +1,9 @@
+description: Income reduction per family member beyond the first two for BC Affordable Child Care Benefit
+values:
+  2018-01-01: 2_000
+metadata:
+  unit: currency-CAD
+  label: BC Affordable Child Care Benefit family size adjustment
+  reference:
+    - title: BC Affordable Child Care Benefit Eligibility
+      href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit/information-for-families/eligibility-estimate-funding

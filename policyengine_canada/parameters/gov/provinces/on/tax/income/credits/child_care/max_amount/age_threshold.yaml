@@ -1,0 +1,9 @@
+description: Age threshold for Ontario CARE credit max amounts (under this age gets higher amount)
+values:
+  2019-01-01: 7
+metadata:
+  unit: year
+  label: Ontario CARE credit age threshold
+  reference:
+    - title: Ontario Child Care Tax Credit
+      href: https://www.ontario.ca/page/ontario-child-care-tax-credit

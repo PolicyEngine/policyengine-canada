@@ -1,0 +1,9 @@
+description: General income limit for BC Affordable Child Care Benefit eligibility
+values:
+  2018-01-01: 111_000
+metadata:
+  unit: currency-CAD
+  label: BC Affordable Child Care Benefit income limit
+  reference:
+    - title: BC Affordable Child Care Benefit
+      href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit
