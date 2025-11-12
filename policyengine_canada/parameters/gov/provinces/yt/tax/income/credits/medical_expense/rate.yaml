@@ -1,0 +1,10 @@
+description: Yukon multiplies the medical expenses by the following rate under the medical expenses tax credit. 
+values:
+  2022-01-01: 0.03
+metadata:
+  unit: /1
+  label: Yukon Medical Expenses credit applicable rate
+  # Credit is not mentioned in the in Yukon Income Tax Act
+  reference:
+  - title: Yukon Tax-Medical Expenses
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5011-c/5011-c-22e.pdf#page=2
