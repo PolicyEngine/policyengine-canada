@@ -4,5 +4,7 @@ values:
     - age_amount_credit
     - disability_tax_credit
     - basic_personal_amount
+    - spouse_or_common_law_partner_amount
+
 metadata:
   unit: program

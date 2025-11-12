@@ -1,0 +1,65 @@
+- name: Dependent income below threshold
+  period: 2022
+  input:
+    dependent_net_income: 7_543
+    spouse_or_common_law_partner_amount: 1_000
+    eligible_dependent_amount: 1_000
+    eligible_dependent_for_canada_caregiver_amount: true
+    eligible_spouse_for_canada_caregiver_amount: true
+  output:
+    canada_caregiver_amount: 0
+
+- name: Capped at 7_544
+  period: 2022
+  input:
+    dependent_net_income: 7_544
+    spouse_or_common_law_partner_amount: 0
+    eligible_dependent_amount: 0
+    eligible_dependent_for_canada_caregiver_amount: true
+    eligible_spouse_for_canada_caregiver_amount: true
+  output:
+    canada_caregiver_amount: 7_525
+
+- name: Ineligible
+  period: 2022
+  input:
+    dependent_net_income: 7_544
+    spouse_or_common_law_partner_amount: 1_000
+    eligible_dependent_amount: 1_000
+    eligible_dependent_for_canada_caregiver_amount: false
+    eligible_spouse_for_canada_caregiver_amount: false
+  output:
+    canada_caregiver_amount: 0
+
+- name: Calculation # 25_195 - 20_000 = 5_195
+  period: 2022
+  input:
+    dependent_net_income: 20_000
+    spouse_or_common_law_partner_amount: 0
+    eligible_dependent_amount: 0
+    eligible_dependent_for_canada_caregiver_amount: true
+    eligible_spouse_for_canada_caregiver_amount: true
+  output:
+    canada_caregiver_amount: 5_195
+
+- name: Calculation w dependent amount # 25_195 - 20_000 - 1_000 = 4_195
+  period: 2022
+  input:
+    dependent_net_income: 20_000
+    spouse_or_common_law_partner_amount: 0
+    eligible_dependent_amount: 1_000
+    eligible_dependent_for_canada_caregiver_amount: true
+    eligible_spouse_for_canada_caregiver_amount: true
+  output:
+    canada_caregiver_amount: 4_195
+
+- name: Calculation w spouse amount # 25_195 - 20_000 - 1_000 = 4_195
+  period: 2022
+  input:
+    dependent_net_income: 20_000
+    spouse_or_common_law_partner_amount: 1_000
+    eligible_dependent_amount: 0
+    eligible_dependent_for_canada_caregiver_amount: true
+    eligible_spouse_for_canada_caregiver_amount: true
+  output:
+    canada_caregiver_amount: 4_195
