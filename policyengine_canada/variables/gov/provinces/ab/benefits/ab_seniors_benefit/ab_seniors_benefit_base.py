@@ -6,7 +6,9 @@ class ab_seniors_benefit_base(Variable):
     entity = Person
     label = "Alberta Seniors Benefit base amount"
     unit = CAD
-    documentation = "Maximum Alberta Seniors Benefit amount before income reduction"
+    documentation = (
+        "Maximum Alberta Seniors Benefit amount before income reduction"
+    )
     definition_period = YEAR
     defined_for = ProvinceCode.AB
 

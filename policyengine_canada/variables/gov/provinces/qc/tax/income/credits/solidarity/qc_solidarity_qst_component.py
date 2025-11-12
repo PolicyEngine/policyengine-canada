@@ -6,7 +6,9 @@ class qc_solidarity_qst_component(Variable):
     entity = Household
     label = "Quebec Solidarity Tax Credit - QST Component"
     unit = CAD
-    documentation = "Quebec Sales Tax (QST) offset component of the Solidarity Tax Credit"
+    documentation = (
+        "Quebec Sales Tax (QST) offset component of the Solidarity Tax Credit"
+    )
     definition_period = YEAR
     defined_for = ProvinceCode.QC
 
