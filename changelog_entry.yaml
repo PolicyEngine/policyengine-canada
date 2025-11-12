@@ -1,0 +1,4 @@
+- bump: patch
+  changes:
+    fixed:
+    - CI build failure due to missing setuptools dependency in GitHub Actions workflow.
