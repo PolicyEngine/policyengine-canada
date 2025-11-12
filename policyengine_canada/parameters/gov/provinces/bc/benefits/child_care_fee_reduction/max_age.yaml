@@ -1,0 +1,9 @@
+description: Maximum age for BC Child Care Fee Reduction Initiative eligibility
+values:
+  2018-01-01: 12
+metadata:
+  unit: year
+  label: BC Child Care Fee Reduction max age
+  reference:
+    - title: BC Child Care Fee Reduction Initiative
+      href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-fee-reduction-initiative-provider-opt-in-status

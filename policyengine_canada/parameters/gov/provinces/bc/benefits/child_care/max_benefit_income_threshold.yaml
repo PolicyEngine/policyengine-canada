@@ -1,0 +1,9 @@
+description: Income threshold for maximum BC Affordable Child Care Benefit (licensed care)
+values:
+  2018-01-01: 45_000
+metadata:
+  unit: currency-CAD
+  label: BC Affordable Child Care Benefit maximum benefit threshold
+  reference:
+    - title: BC Affordable Child Care Benefit Eligibility
+      href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit/information-for-families/eligibility-estimate-funding

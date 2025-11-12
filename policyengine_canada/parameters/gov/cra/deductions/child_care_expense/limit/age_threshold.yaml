@@ -1,0 +1,9 @@
+description: Age threshold for higher child care expense limit (under this age gets $8,000, at or above gets $5,000)
+values:
+  2015-01-01: 7
+metadata:
+  unit: year
+  label: Age threshold for child care expense limits
+  reference:
+    - title: Line 21400 – Child care expenses
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-21400-child-care-expenses.html

@@ -1,0 +1,9 @@
+description: Income limit for Alberta Child Care Subsidy for preschool age children (0 to kindergarten)
+values:
+  2020-01-01: 180_000
+metadata:
+  unit: currency-CAD
+  label: Alberta child care subsidy income limit (preschool)
+  reference:
+    - title: Alberta Child Care Subsidy
+      href: https://www.alberta.ca/child-care-subsidy

@@ -1,0 +1,95 @@
+- name: Basic child care expense deduction for child under 7
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 50_000
+      child:
+        age: 5
+        childcare_expense: 10_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    child_care_expense_deduction: 8_000  # Capped at $8,000 for child under 7
+    child_care_expense_deduction_person: [8_000, 0]  # Only parent claims it
+
+- name: Child care expense deduction for child aged 7-16
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 40_000
+      child:
+        age: 10
+        childcare_expense: 6_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    child_care_expense_deduction: 5_000  # Capped at $5,000 for child 7-16
+    child_care_expense_deduction_person: [5_000, 0]
+
+- name: Child care expense deduction for disabled child
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 60_000
+      child:
+        age: 10
+        childcare_expense: 12_000
+        is_dependant: true
+        is_disabled: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    child_care_expense_deduction: 11_000  # Capped at $11,000 for disabled child
+    child_care_expense_deduction_person: [11_000, 0]
+
+- name: Child care expense deduction limited by 2/3 earned income
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 15_000
+      child:
+        age: 5
+        childcare_expense: 12_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    child_care_expense_deduction: 8_000  # Capped at $8,000 for child under 7, even though 2/3 of $15,000 = $10,000
+    child_care_expense_deduction_person: [8_000, 0]
+
+- name: Multiple children with different ages
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 80_000
+      child1:
+        age: 4
+        childcare_expense: 9_000
+        is_dependant: true
+        individual_net_income: 0
+      child2:
+        age: 12
+        childcare_expense: 6_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child1, child2]
+  output:
+    child_care_expense_deduction: 13_000  # $8,000 (child1 capped) + $5,000 (child2 capped)
+    child_care_expense_deduction_person: [13_000, 0, 0]

@@ -1,0 +1,10 @@
+description: Maximum monthly BC Affordable Child Care Benefit for preschool age children 37 months to school age (licensed group care)
+values:
+  2018-01-01: 550
+metadata:
+  unit: currency-CAD
+  period: month
+  label: BC Affordable Child Care Benefit max for preschool age
+  reference:
+    - title: BC Affordable Child Care Benefit Rates
+      href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit/information-for-families/rates-payments

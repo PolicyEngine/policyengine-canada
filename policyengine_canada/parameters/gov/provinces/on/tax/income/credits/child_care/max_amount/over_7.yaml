@@ -1,0 +1,12 @@
+description: Maximum Ontario CARE credit for children aged 7-16
+values:
+  2019-01-01: 3_750
+  2021-01-01: 4_500  # Includes 20% top-up for 2021
+  2022-01-01: 3_750  # Top-up ended
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Ontario CARE max credit for children 7-16
+  reference:
+    - title: Ontario Child Care Tax Credit
+      href: https://www.ontario.ca/page/ontario-child-care-tax-credit

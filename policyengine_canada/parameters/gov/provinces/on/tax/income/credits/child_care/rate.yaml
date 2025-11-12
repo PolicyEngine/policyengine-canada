@@ -1,0 +1,182 @@
+description: Ontario CARE credit rate based on adjusted family income
+brackets:
+  # $0-$20,000: 75%
+  - amount:
+      2019-01-01: 0.75
+    threshold:
+      2019-01-01: 0
+
+  # $20,000-$40,000: declining by 2% per $2,500
+  - amount:
+      2019-01-01: 0.73
+    threshold:
+      2019-01-01: 20_000
+  - amount:
+      2019-01-01: 0.73
+    threshold:
+      2019-01-01: 22_500
+  - amount:
+      2019-01-01: 0.71
+    threshold:
+      2019-01-01: 25_000
+  - amount:
+      2019-01-01: 0.69
+    threshold:
+      2019-01-01: 27_500
+  - amount:
+      2019-01-01: 0.67
+    threshold:
+      2019-01-01: 30_000
+  - amount:
+      2019-01-01: 0.65
+    threshold:
+      2019-01-01: 32_500
+  - amount:
+      2019-01-01: 0.63
+    threshold:
+      2019-01-01: 35_000
+  - amount:
+      2019-01-01: 0.61
+    threshold:
+      2019-01-01: 37_500
+
+  # $40,000-$60,000: declining by 2% per $5,000
+  - amount:
+      2019-01-01: 0.59
+    threshold:
+      2019-01-01: 40_000
+  - amount:
+      2019-01-01: 0.57
+    threshold:
+      2019-01-01: 45_000
+  - amount:
+      2019-01-01: 0.55
+    threshold:
+      2019-01-01: 50_000
+  - amount:
+      2019-01-01: 0.53
+    threshold:
+      2019-01-01: 55_000
+
+  # $60,000-$150,000: declining by 2% per $3,600
+  - amount:
+      2019-01-01: 0.51
+    threshold:
+      2019-01-01: 60_000
+  - amount:
+      2019-01-01: 0.49
+    threshold:
+      2019-01-01: 63_600
+  - amount:
+      2019-01-01: 0.47
+    threshold:
+      2019-01-01: 67_200
+  - amount:
+      2019-01-01: 0.45
+    threshold:
+      2019-01-01: 70_800
+  - amount:
+      2019-01-01: 0.43
+    threshold:
+      2019-01-01: 74_400
+  - amount:
+      2019-01-01: 0.41
+    threshold:
+      2019-01-01: 78_000
+  - amount:
+      2019-01-01: 0.39
+    threshold:
+      2019-01-01: 81_600
+  - amount:
+      2019-01-01: 0.37
+    threshold:
+      2019-01-01: 85_200
+  - amount:
+      2019-01-01: 0.35
+    threshold:
+      2019-01-01: 88_800
+  - amount:
+      2019-01-01: 0.33
+    threshold:
+      2019-01-01: 92_400
+  - amount:
+      2019-01-01: 0.31
+    threshold:
+      2019-01-01: 96_000
+  - amount:
+      2019-01-01: 0.29
+    threshold:
+      2019-01-01: 99_600
+  - amount:
+      2019-01-01: 0.27
+    threshold:
+      2019-01-01: 103_200
+  - amount:
+      2019-01-01: 0.25
+    threshold:
+      2019-01-01: 106_800
+  - amount:
+      2019-01-01: 0.23
+    threshold:
+      2019-01-01: 110_400
+  - amount:
+      2019-01-01: 0.21
+    threshold:
+      2019-01-01: 114_000
+  - amount:
+      2019-01-01: 0.19
+    threshold:
+      2019-01-01: 117_600
+  - amount:
+      2019-01-01: 0.17
+    threshold:
+      2019-01-01: 121_200
+  - amount:
+      2019-01-01: 0.15
+    threshold:
+      2019-01-01: 124_800
+  - amount:
+      2019-01-01: 0.13
+    threshold:
+      2019-01-01: 128_400
+  - amount:
+      2019-01-01: 0.11
+    threshold:
+      2019-01-01: 132_000
+  - amount:
+      2019-01-01: 0.09
+    threshold:
+      2019-01-01: 135_600
+  - amount:
+      2019-01-01: 0.07
+    threshold:
+      2019-01-01: 139_200
+  - amount:
+      2019-01-01: 0.05
+    threshold:
+      2019-01-01: 142_800
+  - amount:
+      2019-01-01: 0.03
+    threshold:
+      2019-01-01: 146_400
+
+  # Over $150,000: 0%
+  - amount:
+      2019-01-01: 0.01
+    threshold:
+      2019-01-01: 150_000
+  - amount:
+      2019-01-01: 0
+    threshold:
+      2019-01-01: 153_600
+
+metadata:
+  type: single_amount
+  threshold_unit: currency-CAD
+  amount_unit: /1
+  label: Ontario CARE credit rate
+  reference:
+    - title: Ontario Child Care Tax Credit
+      href: https://www.ontario.ca/page/ontario-child-care-tax-credit
+    - title: TaxTips.ca - Ontario CARE Credit
+      href: https://www.taxtips.ca/ontax/ontario-care-childcare-credit.htm

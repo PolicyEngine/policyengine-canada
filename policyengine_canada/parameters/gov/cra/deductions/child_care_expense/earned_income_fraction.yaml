@@ -1,0 +1,9 @@
+description: Fraction of earned income that limits the child care expense deduction
+values:
+  2015-01-01: 0.6667
+metadata:
+  unit: /1
+  label: Earned income fraction for child care expense deduction
+  reference:
+    - title: Line 21400 – Child care expenses
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-21400-child-care-expenses.html

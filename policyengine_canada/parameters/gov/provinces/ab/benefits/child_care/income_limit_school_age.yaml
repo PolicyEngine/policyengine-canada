@@ -1,0 +1,9 @@
+description: Income limit for Alberta Child Care Subsidy for school age children (kindergarten to Grade 6)
+values:
+  2020-01-01: 90_000
+metadata:
+  unit: currency-CAD
+  label: Alberta child care subsidy income limit (school age)
+  reference:
+    - title: Alberta Child Care Subsidy
+      href: https://www.alberta.ca/child-care-subsidy

@@ -9,3 +9,8 @@ class deductions_from_total_to_net_income(Variable):
     documentation = "Deductions used in the calculation of Net Income"
     definition_period = YEAR
     reference = "SPSD/M 29.0 Variable Guide, Page 8"
+
+    adds = [
+        "child_care_expense_deduction_person",
+        "canadian_armed_forces_and_personnel_deduction",
+    ]

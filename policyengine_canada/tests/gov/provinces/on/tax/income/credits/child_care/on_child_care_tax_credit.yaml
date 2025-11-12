@@ -1,0 +1,115 @@
+- name: Ontario CARE Credit - low income family with child under 7
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 35
+      child:
+        age: 5
+        childcare_expense: 8_000
+    household:
+      members: [parent, child]
+      adjusted_family_net_income: 30_000
+      province_code: ONT
+  output:
+    on_child_care_tax_credit: 4_020  # 67% of $6,000 max at $30k income
+
+- name: Ontario CARE Credit - family at maximum rate (75%)
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 35
+      child:
+        age: 3
+        childcare_expense: 10_000
+    household:
+      members: [parent, child]
+      adjusted_family_net_income: 15_000
+      province_code: ONT
+  output:
+    on_child_care_tax_credit: 4_500  # 75% of $6,000 max for child under 7
+
+- name: Ontario CARE Credit - school age child
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 35
+      child:
+        age: 10
+        childcare_expense: 5_000
+    household:
+      members: [parent, child]
+      adjusted_family_net_income: 40_000
+      province_code: ONT
+  output:
+    on_child_care_tax_credit: 2_212.50  # 59% of $3,750 max for school age
+
+- name: Ontario CARE Credit - disabled child with higher limit
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 35
+      child:
+        age: 8
+        childcare_expense: 10_000
+        is_disabled: true
+    household:
+      members: [parent, child]
+      adjusted_family_net_income: 25_000
+      province_code: ONT
+  output:
+    on_child_care_tax_credit: 5_857.50  # 71% of $8,250 max at $25k income
+
+- name: Ontario CARE Credit - income above limit (ineligible)
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 35
+      child:
+        age: 5
+        childcare_expense: 8_000
+    household:
+      members: [parent, child]
+      adjusted_family_net_income: 160_000
+      province_code: ONT
+  output:
+    on_child_care_tax_credit: 0  # Income over $150,000 limit
+
+- name: Ontario CARE Credit - multiple children different ages
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 35
+      child1:
+        age: 4
+        childcare_expense: 7_000
+      child2:
+        age: 9
+        childcare_expense: 4_000
+    household:
+      members: [parent, child1, child2]
+      adjusted_family_net_income: 50_000
+      province_code: ONT
+  output:
+    on_child_care_tax_credit: 5_362.50  # 55% of ($6,000 + $3,750) at $50k income
+
+- name: Ontario CARE Credit - 2021 with 20% top-up
+  period: 2021
+  input:
+    people:
+      parent:
+        age: 35
+      child:
+        age: 5
+        childcare_expense: 8_000
+    household:
+      members: [parent, child]
+      adjusted_family_net_income: 30_000
+      province_code: ONT
+  output:
+    on_child_care_tax_credit: 4_824  # 67% of $7,200 (includes 20% top-up for 2021) at $30k income

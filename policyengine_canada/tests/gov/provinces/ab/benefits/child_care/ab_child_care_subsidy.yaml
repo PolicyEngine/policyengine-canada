@@ -1,0 +1,121 @@
+- name: Alberta Child Care Subsidy - preschool at maximum
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 3
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 40_000
+  output:
+    ab_child_care_subsidy: 2_400  # $200/month * 12 at low income
+
+- name: Alberta Child Care Subsidy - school age child
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 8
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 50_000
+  output:
+    ab_child_care_subsidy: 2666.67  # $250/month * 12 with phase-out at $50k income
+
+- name: Alberta Child Care Subsidy - preschool income over limit (ineligible)
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 3
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 185_000
+  output:
+    ab_child_care_subsidy: 0  # Income over $180,000 limit
+
+- name: Alberta Child Care Subsidy - school age income over limit (ineligible)
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 8
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 95_000
+  output:
+    ab_child_care_subsidy: 0  # Income over $90,000 limit for school age
+
+- name: Alberta Child Care Subsidy - partial benefit with phase-out
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 4
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 130_000
+  output:
+    ab_child_care_subsidy: 1333.33  # Reduced benefit due to income phase-out
+
+- name: Alberta Child Care Subsidy - multiple children mixed ages
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child1:
+        age: 3
+        is_child: true
+      child2:
+        age: 7
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child1, child2]
+        adjusted_family_net_income: 60_000
+  output:
+    ab_child_care_subsidy: 4_400  # Both children eligible with phase-out: ($200 + $250) * 12 * rate
+
+- name: Alberta Child Care Subsidy - child aged 13 (ineligible)
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 13
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 50_000
+  output:
+    ab_child_care_subsidy: 0  # Child over age 12
