@@ -1,0 +1,15 @@
+- name: Manitoba student with ineligible tuition amount
+  period: 2023
+  input:
+    province_code: MB
+    tuition_expenses: 50
+  output:
+    mb_tuition_amount_credit_eligible: 0
+
+- name: Manitoba student with eligible tuition amount
+  period: 2023
+  input:
+    province_code: MB
+    tuition_expenses: 20_000
+  output:
+    mb_tuition_amount_credit_eligible: 1
