@@ -1,0 +1,97 @@
+- name: One single senior with net income above 29_402
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    age: 66
+    individual_net_income: 29_405
+    province_code: NL
+  output:
+    nl_seniors_benefit: 1_515.65
+  
+- name: One single senior with net income below 29_402
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    age: 66
+    individual_net_income: 29_401
+    province_code: NL
+  output:
+    nl_seniors_benefit: 1_516
+
+- name: One single senior with net income between 29_402 and 42_404
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    age: 66
+    individual_net_income: 30_000
+    province_code: NL
+  output:
+    nl_seniors_benefit: 1446.27
+
+- name: One single senior with net income above 42_404
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    age: 66
+    individual_net_income: 42_405
+    province_code: NL
+  output:
+    nl_seniors_benefit: 0
+
+- name: Senior and spouse with net income below 29_402 
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    age: 66
+    individual_net_income: 29_380
+    is_spouse: true
+    spouse_income: 5
+    province_code: NL
+  output:
+    nl_seniors_benefit: 1_516
+
+- name: Senior and spouse with net income between 29_402 and 42_404
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    age: 66
+    individual_net_income: 30_000
+    is_spouse: true
+    spouse_income: 10_000
+    province_code: NL
+  output:
+    nl_seniors_benefit: 280.3
+
+- name: Senior and spouse with net income above 42_404  
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    age: 66
+    individual_net_income: 50_400
+    is_spouse: false
+    spouse_income: 0
+    province_code: NL
+  output:
+    nl_seniors_benefit: 0
+
+- name: Not senior with net income above 42_404  
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    age: 60
+    individual_net_income: 50_400
+    is_spouse: true
+    spouse_income: 0
+    province_code: NL
+  output:
+    nl_seniors_benefit: 0
+
+- name: No senior single with net income above 29_402
+  period: 2023
+  absolute_error_margin: 0.1
+  input:
+    age: 60
+    individual_net_income: 29_405
+    province_code: NL
+  output:
+    nl_seniors_benefit: 0
