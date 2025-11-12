@@ -1,0 +1,26 @@
+- name: Quebec caregiver tax credit for caregiver with non-eligible disabled care receiver 
+  period: 2022
+  input:
+    qc_caregiver_not_living_with_disabled_carereceiver_eligible: false
+    individual_net_income: 30_000
+    province_code: QC
+  output:
+    qc_caregiver_not_living_with_disabled_carereceiver: 0
+
+- name: Quebec caregiver tax credit for caregiver not living with disabled care receiver with income below income limit
+  period: 2022
+  input:
+    qc_caregiver_not_living_with_disabled_carereceiver_eligible: true
+    individual_net_income: 20_000
+    province_code: QC
+  output:
+    qc_caregiver_not_living_with_disabled_carereceiver: 1_299 # 1299-min(0.16*max(20000-23055,0),1299)
+
+- name: Quebec caregiver tax credit for caregiver not living with disabled care receiver with income above income limit
+  period: 2022
+  input:
+    qc_caregiver_not_living_with_disabled_carereceiver_eligible: true
+    individual_net_income: 40_000
+    province_code: QC
+  output:
+    qc_caregiver_not_living_with_disabled_carereceiver: 0 # 1299-min(0.16*max(40000-23055,0),1299)

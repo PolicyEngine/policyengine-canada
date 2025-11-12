@@ -1,0 +1,13 @@
+description: Quebec limits its tax credits to eligible caregivers based on the difference between this amount and eligible base amount.
+values:
+  2022-01-01: 2_598
+metadata:
+  unit: curreny-CAD
+  label: Quebec caregivers tax credit limit for caregivers living with care receivers
+  reference:
+    - title: TP-1-V - Schedule H – Tax Credit for Caregivers
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.H-V%282022-12%29.pdf#page=2
+    - title: Quebec I-3 - Taxation Act, Part I, Book IX, Title III, Chapter III.1, DIVISION II.11.7.2, 1029.8.61.96.12. (a)
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:1029_8_61_96_12
+      # $2,500 in the legal reference, increased due to the inflation adjustments
+      
