@@ -1,5 +1,9 @@
 description: British Columbia provides ty of refundable tax credits.
 values:
+  2024-01-01:
+    - bc_climate_action_tax_credit
+    - bc_disability_credit
+    - bc_sales_tax_credit
   2022-01-01:
     - bc_climate_action_tax_credit
     - bc_disability_credit

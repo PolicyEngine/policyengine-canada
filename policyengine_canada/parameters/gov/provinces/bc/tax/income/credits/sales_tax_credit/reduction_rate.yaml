@@ -1,0 +1,10 @@
+description: British Columbia sales tax credit reduction rate (2% of income over threshold)
+values:
+  2024-01-01: 0.02
+
+metadata:
+  unit: /1
+  label: BC sales tax credit reduction rate
+  reference:
+  - title: British Columbia Sales Tax Credit
+    href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/sales-tax

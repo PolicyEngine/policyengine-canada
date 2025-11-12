@@ -1,0 +1,10 @@
+description: British Columbia sales tax credit income threshold for couples
+values:
+  2024-01-01: 18000
+
+metadata:
+  unit: currency-CAD
+  label: BC sales tax credit threshold (couple)
+  reference:
+  - title: British Columbia Sales Tax Credit
+    href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/sales-tax

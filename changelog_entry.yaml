@@ -1,0 +1,6 @@
+- bump: minor
+  changes:
+    added:
+    - BC Sales Tax Credit
+    - Alberta Seniors Benefit
+    - Quebec Solidarity Tax Credit (housing and QST components)

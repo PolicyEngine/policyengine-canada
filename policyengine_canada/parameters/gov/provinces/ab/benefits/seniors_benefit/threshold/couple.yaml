@@ -1,0 +1,11 @@
+description: Alberta Seniors Benefit income threshold for senior couples
+values:
+  2024-01-01: 56820
+  2025-01-01: 54640
+
+metadata:
+  unit: currency-CAD
+  label: Alberta Seniors Benefit threshold (couple)
+  reference:
+  - title: Alberta Seniors Benefit
+    href: https://www.alberta.ca/alberta-seniors-benefit

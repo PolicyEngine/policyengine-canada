@@ -1,0 +1,79 @@
+- name: Single person - no income - maximum credit
+  period: 2024
+  input:
+    province_code: QC
+    household_size: 1
+    is_married: false
+    adjusted_family_net_income: 0
+  output:
+    qc_solidarity_tax_credit: 1_120
+
+- name: Single person - under housing threshold
+  period: 2024
+  input:
+    province_code: QC
+    household_size: 1
+    is_married: false
+    adjusted_family_net_income: 30_000
+  output:
+    qc_solidarity_tax_credit: 1_120
+
+- name: Single person - with housing reduction
+  period: 2024
+  input:
+    province_code: QC
+    household_size: 1
+    is_married: false
+    adjusted_family_net_income: 40_000
+  output:
+    qc_solidarity_tax_credit: 970
+
+- name: Couple - no income
+  period: 2024
+  input:
+    province_code: QC
+    household_size: 2
+    is_married: true
+    adjusted_family_net_income: 0
+  output:
+    qc_solidarity_tax_credit: 1_834
+
+- name: Couple - partial reduction
+  period: 2024
+  input:
+    province_code: QC
+    household_size: 2
+    is_married: true
+    adjusted_family_net_income: 45_000
+  output:
+    qc_solidarity_tax_credit: 1_534
+
+- name: Single parent with one child - no income
+  period: 2024
+  input:
+    province_code: QC
+    household_size: 2
+    is_married: false
+    adjusted_family_net_income: 0
+  output:
+    qc_solidarity_tax_credit: 1_834
+
+- name: Family with 3 members - high income - reduced
+  period: 2024
+  input:
+    province_code: QC
+    household_size: 3
+    is_married: true
+    adjusted_family_net_income: 60_000
+  output:
+    qc_solidarity_tax_credit: 1_192.75
+
+- name: Very high income - minimum credit
+  period: 2024
+  input:
+    province_code: QC
+    household_size: 1
+    is_married: false
+    adjusted_family_net_income: 100_000
+  output:
+    qc_solidarity_tax_credit: 0

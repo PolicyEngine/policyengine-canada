@@ -1,0 +1,10 @@
+description: Alberta Seniors Benefit reduction rate ($0.1561 per $1 of income)
+values:
+  2024-01-01: 0.1561
+
+metadata:
+  unit: /1
+  label: Alberta Seniors Benefit reduction rate
+  reference:
+  - title: Alberta Seniors Benefit
+    href: https://www.alberta.ca/alberta-seniors-benefit
