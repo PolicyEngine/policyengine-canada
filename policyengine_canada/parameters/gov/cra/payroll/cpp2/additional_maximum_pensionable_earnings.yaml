@@ -1,0 +1,11 @@
+description: Year's Additional Maximum Pensionable Earnings (YAMPE) for CPP2
+values:
+  2024-01-01: 73_200
+  2025-01-01: 81_200
+metadata:
+  unit: currency-CAD
+  period: year
+  label: CPP2 additional maximum pensionable earnings (YAMPE)
+  reference:
+    - title: Canada Revenue Agency announces maximum pensionable earnings and contributions for 2025
+      href: https://www.canada.ca/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2024/canada-revenue-agency-announces-maximum-pensionable-earnings-contributions-2025.html

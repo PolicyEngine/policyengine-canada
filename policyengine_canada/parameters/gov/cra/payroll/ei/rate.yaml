@@ -1,0 +1,16 @@
+description: Employment Insurance premium rate per $100 of insurable earnings
+values:
+  2020-01-01: 0.0158
+  2021-01-01: 0.0158
+  2022-01-01: 0.0158
+  2023-01-01: 0.0163
+  2024-01-01: 0.0166
+  2025-01-01: 0.0164
+metadata:
+  unit: /1
+  label: EI premium rate
+  reference:
+    - title: EI premium rates and maximums
+      href: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html
+    - title: Canada Employment Insurance Commission confirms 2025 Employment Insurance premium rate
+      href: https://www.canada.ca/en/employment-social-development/news/2024/09/canada-employment-insurance-commission-confirms-2025-employment-insurance-premium-rate.html

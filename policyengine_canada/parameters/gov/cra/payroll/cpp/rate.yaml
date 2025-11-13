@@ -1,0 +1,16 @@
+description: Canada Pension Plan contribution rate for employees and employers
+values:
+  2020-01-01: 0.0525
+  2021-01-01: 0.0545
+  2022-01-01: 0.057
+  2023-01-01: 0.0595
+  2024-01-01: 0.0595
+  2025-01-01: 0.0595
+metadata:
+  unit: /1
+  label: CPP contribution rate
+  reference:
+    - title: CPP contribution rates, maximums and exemptions
+      href: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html
+    - title: Canada Revenue Agency announces maximum pensionable earnings and contributions for 2025
+      href: https://www.canada.ca/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2024/canada-revenue-agency-announces-maximum-pensionable-earnings-contributions-2025.html
