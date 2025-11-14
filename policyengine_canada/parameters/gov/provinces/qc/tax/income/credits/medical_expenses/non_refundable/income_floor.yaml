@@ -1,0 +1,14 @@
+description: Quebec limits the medical expense deduction to medical expenses in excess of this percentage of family income. 
+values:
+  2022-01-01: 0.03
+metadata:
+  unit: year
+  label: Quebec medical expense non-refundable credit income floor
+  reference:
+    - title: Revenu Quebec - Medical Expenses - Line 381
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/350-to-398-1-non-refundable-tax-credits/line-381/
+    - title: Schedule B – Tax Relief Measures - Part C
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.B-V%282022-12%29.pdf#page=2
+    - title: Quebec I-3 - Taxation Act, Part I, Book V, Title I, Chapter I.0.3, 752.0.11. (c)
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:752_0_11
+      # 3% of the aggregate of the individual’s income for the year and the income, for the year, of the person who is the individual’s eligible spouse for the year 
