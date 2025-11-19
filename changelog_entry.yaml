@@ -1,0 +1,5 @@
+- bump: minor
+  changes:
+    added:
+      - Federal tax parameters for 2024 and 2025 including updated tax brackets and basic personal amount.
+      - Federal tax rate reduction from 15% to 14.5% for 2025 (14% for 2026) on lowest bracket.
