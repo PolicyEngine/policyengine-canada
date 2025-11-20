@@ -1,0 +1,15 @@
+description: Maximum monthly CPP retirement pension at age 65
+values:
+  2020-01-01: 1_175.83
+  2021-01-01: 1_203.75
+  2022-01-01: 1_253.59
+  2023-01-01: 1_306.57
+  2024-01-01: 1_364.60
+  2025-01-01: 1_433.00
+metadata:
+  unit: currency-CAD
+  period: month
+  label: CPP maximum monthly retirement pension
+  reference:
+    - title: CPP retirement pension amount
+      href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/amount.html

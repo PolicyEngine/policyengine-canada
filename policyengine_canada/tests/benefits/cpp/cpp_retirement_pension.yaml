@@ -1,0 +1,55 @@
+- name: CPP retirement pension with full contributions
+  period: 2024
+  input:
+    age: 65
+    cpp_years_of_contribution: 40
+  output:
+    # Full contributions (40 years) = average monthly benefit
+    # $816.52 * 12 = $9,798.24
+    cpp_retirement_pension: 9_798.24
+
+- name: CPP retirement pension with partial contributions
+  period: 2024
+  input:
+    age: 65
+    cpp_years_of_contribution: 20
+  output:
+    # 20/40 years = 50% of average benefit
+    # $816.52 * 0.5 * 12 = $4,899.12
+    cpp_retirement_pension: 4_899.12
+
+- name: No pension below age 60
+  period: 2024
+  input:
+    age: 55
+    cpp_years_of_contribution: 30
+  output:
+    cpp_retirement_pension: 0
+
+- name: No pension without contributions
+  period: 2024
+  input:
+    age: 65
+    cpp_years_of_contribution: 0
+  output:
+    cpp_retirement_pension: 0
+
+- name: CPP retirement pension for 2025
+  period: 2025
+  input:
+    age: 70
+    cpp_years_of_contribution: 45
+  output:
+    # Capped at 40 years = full average benefit
+    # $844.53 * 12 = $10,134.36
+    cpp_retirement_pension: 10_134.36
+
+- name: Minimum contribution scenario
+  period: 2024
+  input:
+    age: 60
+    cpp_years_of_contribution: 1
+  output:
+    # 1/40 years = 2.5% of average benefit
+    # $816.52 * 0.025 * 12 = $244.956
+    cpp_retirement_pension: 244.956
