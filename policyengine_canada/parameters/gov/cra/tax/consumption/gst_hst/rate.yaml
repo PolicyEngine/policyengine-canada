@@ -1,0 +1,38 @@
+description: GST/HST rate by province
+AB:
+  2020-01-01: 0.05
+BC:
+  2020-01-01: 0.05
+MB:
+  2020-01-01: 0.05
+NB:
+  2020-01-01: 0.15
+NL:
+  2020-01-01: 0.15
+NS:
+  2020-01-01: 0.15
+  2025-04-01: 0.14
+NT:
+  2020-01-01: 0.05
+NU:
+  2020-01-01: 0.05
+ONT:
+  2020-01-01: 0.13
+PE:
+  2020-01-01: 0.15
+QC:
+  2020-01-01: 0.05
+SK:
+  2020-01-01: 0.05
+YT:
+  2020-01-01: 0.05
+
+metadata:
+  unit: /1
+  period: year
+  label: GST/HST rate
+  reference:
+    - title: GST/HST rates by province
+      href: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html
+  breakdown:
+    - province_code
