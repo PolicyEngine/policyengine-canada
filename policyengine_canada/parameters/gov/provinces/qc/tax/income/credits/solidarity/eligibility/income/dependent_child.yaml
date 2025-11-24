@@ -1,0 +1,10 @@
+description: Quebec adds this amount per dependent child to its maximum family income for calculation of solidarity tax credit.
+values:
+  2022-01-01: 2_400
+metadata:
+  unit: currency-CAD
+  label: Quebec solidarity tax credits additional income per child
+  reference:
+    - title: Revenu Quebec - Solidarity Tax Credit - Calculation of the Credit
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/solidarity-tax-credit/calculation-of-the-credit/
+  # Legal reference unavailable
