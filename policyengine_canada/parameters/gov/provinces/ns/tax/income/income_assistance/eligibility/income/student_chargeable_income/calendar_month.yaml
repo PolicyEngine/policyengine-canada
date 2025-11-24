@@ -1,0 +1,9 @@
+description: Nova Scotia categorizes full-time employment income as chargeable for a standard duration of 12 months per year under the Income Assistance program.
+values:
+  2021-01-01: 12
+metadata:
+  unit: month
+  label: Income Assistance default chargeable month for full-time employment
+  reference:
+    - title: Employment Support and Income Assistance Act, Section 33, (3)
+      href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4
