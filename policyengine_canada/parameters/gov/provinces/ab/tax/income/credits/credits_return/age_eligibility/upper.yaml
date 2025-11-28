@@ -1,0 +1,14 @@
+description: Alberta limits its caregiver amount to non-disabled adult dependants above this age.
+values:
+  2022-01-01: 65
+metadata:
+  unit: year
+  period: year
+  label: Alberta caregiver credit adult dependant higher age eligibility
+  reference:
+  - title: Province of Alberta - Alberta Child and Family Benefit (2022)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-22e.pdf#page=1
+  - title: Province of Alberta - Alberta Child and Family Benefit (2023)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf#page=1
+  - title: Province of Alberta - Alberta Personal Income Tax Act, RSA 2000, Division 3 (c)
+    href: https://www.canlii.org/en/ab/laws/stat/rsa-2000-c-a-30/latest/rsa-2000-c-a-30.html
