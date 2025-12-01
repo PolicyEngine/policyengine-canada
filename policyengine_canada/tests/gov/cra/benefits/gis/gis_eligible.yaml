@@ -1,0 +1,39 @@
+- name: 65 year old with low income is eligible
+  period: 2024
+  input:
+    age: 65
+    adult_years_in_canada: 40
+    employment_income: 5_000
+    self_employment_income: 0
+  output:
+    gis_eligible: true
+
+- name: 65 year old with high income is not eligible
+  period: 2024
+  input:
+    age: 65
+    adult_years_in_canada: 40
+    employment_income: 50_000
+    self_employment_income: 0
+  output:
+    gis_eligible: false
+
+- name: 64 year old is not eligible (too young for OAS)
+  period: 2024
+  input:
+    age: 64
+    adult_years_in_canada: 40
+    employment_income: 5_000
+    self_employment_income: 0
+  output:
+    gis_eligible: false
+
+- name: 65 year old with insufficient residency is not eligible
+  period: 2024
+  input:
+    age: 65
+    adult_years_in_canada: 5  # Less than 10 years required for OAS
+    employment_income: 5_000
+    self_employment_income: 0
+  output:
+    gis_eligible: false
