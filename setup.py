@@ -8,7 +8,7 @@ long_description = (this_directory / "README.md").read_text()
 
 # Core requirements with refined version constraints
 general_requirements = [
-    "policyengine_core>=3.14.1",
+    "policyengine_core>=3.23.0",
     "black[jupyter]",
     "coverage<7",
     "dpath<3",
