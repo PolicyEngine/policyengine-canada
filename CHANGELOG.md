@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.96.5] - 2025-12-03 23:06:49
+
+### Changed
+
+- Bump policyengine-core to 3.23.0 (adds strict enum validation).
+
 ## [0.96.4] - 2025-11-12 14:08:46
 
 ### Fixed
@@ -766,6 +772,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.96.5]: https://github.com/PolicyEngine/policyengine-canada/compare/0.96.4...0.96.5
 [0.96.4]: https://github.com/PolicyEngine/policyengine-canada/compare/0.96.3...0.96.4
 [0.96.3]: https://github.com/PolicyEngine/policyengine-canada/compare/0.96.2...0.96.3
 [0.96.2]: https://github.com/PolicyEngine/policyengine-canada/compare/0.96.1...0.96.2

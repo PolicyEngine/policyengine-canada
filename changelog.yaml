@@ -636,3 +636,8 @@
     fixed:
     - CI build failure due to missing setuptools dependency in GitHub Actions workflow.
   date: 2025-11-12 14:08:46
+- bump: patch
+  changes:
+    changed:
+    - Bump policyengine-core to 3.23.0 (adds strict enum validation).
+  date: 2025-12-03 23:06:49
