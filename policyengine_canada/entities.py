@@ -8,6 +8,20 @@ See https://openfisca.org/doc/key-concepts/person,_entities,_role.html
 
 from policyengine_core.entities import build_entity
 
+State = build_entity(
+    key="state",
+    plural="states",
+    label="State",
+    roles=[
+        {
+            "key": "member",
+            "plural": "members",
+            "label": "Member",
+            "doc": "A person who is a citizen of a country.",
+        }
+    ],
+)
+
 Household = build_entity(
     key="household",
     plural="households",
@@ -32,4 +46,4 @@ Person = build_entity(
 )
 
 
-entities = [Household, Person]
+entities = [Household, Person, State]

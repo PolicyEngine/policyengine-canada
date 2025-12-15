@@ -14,7 +14,7 @@ class oas_pre_repayment(Variable):
     def formula(person, period, parameters):
         age = person("age", period)
         adult_years_in_canada = person("adult_years_in_canada", period)
-        oas_eligible = person("oas_eligibility", period)
+        oas_eligible = person("oas_eligible", period)
         p = parameters(period).gov.cra.benefits.old_age_security_pension
         # Age at which you get the percentage boost.
         older_increase_age_threshold = p.eligibility.age.older_seniors_increase
