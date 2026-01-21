@@ -1,0 +1,8 @@
+- name: Quebec family income
+  period: 2022
+  input:
+    spouse_income: 600
+    head_income: 2_000
+    province_code: QC
+  output:
+    qc_family_income: 2_600
