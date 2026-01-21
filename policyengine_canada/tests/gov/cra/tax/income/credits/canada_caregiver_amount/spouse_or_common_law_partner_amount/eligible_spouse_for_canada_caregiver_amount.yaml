@@ -1,0 +1,23 @@
+- name: Not spouse
+  period: 2022
+  input:
+    is_spouse: false
+    is_disabled: true
+  output:
+    eligible_spouse_for_canada_caregiver_amount: false
+
+- name: Not disabled
+  period: 2022
+  input:
+    is_spouse: true
+    is_disabled: false
+  output:
+    eligible_spouse_for_canada_caregiver_amount: false
+
+- name: Eligible
+  period: 2022
+  input:
+    is_spouse: true
+    is_disabled: true
+  output:
+    eligible_spouse_for_canada_caregiver_amount: true

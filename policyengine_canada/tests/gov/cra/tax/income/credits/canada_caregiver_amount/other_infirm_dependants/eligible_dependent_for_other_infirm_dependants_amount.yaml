@@ -1,0 +1,24 @@
+- name: Under age eligibility
+  period: 2022
+  input:
+    is_disabled: true
+    age: 17
+  output:
+    eligible_dependent_for_other_infirm_dependants_amount: false 
+
+- name: Not disabled
+  period: 2022
+  input:
+    is_disabled: false
+    age: 18
+  output:
+    eligible_dependent_for_other_infirm_dependants_amount: false 
+
+
+- name: Eligible
+  period: 2022
+  input:
+    is_disabled: true
+    age: 18
+  output:
+    eligible_dependent_for_other_infirm_dependants_amount: true 
