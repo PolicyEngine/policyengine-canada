@@ -1,0 +1,4 @@
+- bump: patch
+  changes:
+    changed:
+      - Bumped policyengine-core to 3.23.6 and microdf to 1.2.1 for pandas 3.0 compatibility
