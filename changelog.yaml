@@ -641,3 +641,8 @@
     changed:
     - Bump policyengine-core to 3.23.0 (adds strict enum validation).
   date: 2025-12-03 23:06:49
+- bump: patch
+  changes:
+    changed:
+    - Bumped policyengine-core to 3.23.6 and microdf to 1.2.1 for pandas 3.0 compatibility
+  date: 2026-01-25 16:04:56
