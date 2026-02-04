@@ -1,0 +1,6 @@
+- bump: patch
+  changes:
+    added:
+      - Provincial CPI index parameters for Ontario, British Columbia, and Quebec
+    changed:
+      - Provincial tax rate files now use CPI-based uprating metadata instead of manual indexing

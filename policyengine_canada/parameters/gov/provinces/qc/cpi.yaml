@@ -1,0 +1,17 @@
+description: Quebec Consumer Price Index (2002=100 base).
+values:
+  2020-01-01: 130.3
+  2021-01-01: 134.7
+  2022-01-01: 141.0
+  2023-01-01: 150.1  # 6.45% indexation per government
+  2024-01-01: 157.7  # 5.08% indexation per government
+  2025-01-01: 162.2  # 2.85% indexation per government
+metadata:
+  economy: true
+  unit: /1
+  label: Quebec CPI
+  reference:
+    - title: Statistics Canada - Consumer Price Index
+      href: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000501
+    - title: Indexing of the parameters of the personal income tax system for 2025
+      href: https://www.quebec.ca/en/news/actualites/detail/indexing-of-the-parameters-of-the-personal-income-tax-system-social-assistance-benefits-and-certain-government-fees-for-the-2025-taxation-year-59718

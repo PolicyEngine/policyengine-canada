@@ -1,0 +1,17 @@
+description: British Columbia Consumer Price Index (2002=100 base).
+values:
+  2020-01-01: 133.8
+  2021-01-01: 137.0
+  2022-01-01: 141.4
+  2023-01-01: 147.6  # Approximately 4.4% increase
+  2024-01-01: 155.0  # 5.0% indexation per government
+  2025-01-01: 159.3  # 2.8% indexation per government
+metadata:
+  economy: true
+  unit: /1
+  label: British Columbia CPI
+  reference:
+    - title: Statistics Canada - Consumer Price Index
+      href: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000501
+    - title: Personal income tax rates - Province of British Columbia
+      href: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/tax-rates
