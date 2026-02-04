@@ -8,24 +8,64 @@ metadata:
   reference:
     - title: Government of Canada - Canadian income tax rates for individuals current and previous years
       href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    - title: TaxTips.ca - Yukon Tax Rates & Tax Brackets (used for 2023-2025 values)
+      href: https://www.taxtips.ca/taxrates/yt.htm
 brackets:
   - threshold:
       2022-01-01: 0
+      2023-01-01: 0
+      2024-01-01: 0
+      2025-01-01: 0
     rate:
       2022-01-01: 0.064
+      2023-01-01: 0.064
+      2024-01-01: 0.064
+      2025-01-01: 0.064
   - threshold:
       2022-01-01: 50_197
+      2023-01-01: 53_359
+      2024-01-01: 55_867
+      2025-01-01: 57_375
     rate:
       2022-01-01: 0.09
+      2023-01-01: 0.09
+      2024-01-01: 0.09
+      2025-01-01: 0.09
   - threshold:
       2022-01-01: 100_392
+      2023-01-01: 106_717
+      2024-01-01: 111_733
+      2025-01-01: 114_750
     rate:
       2022-01-01: 0.109
+      2023-01-01: 0.109
+      2024-01-01: 0.109
+      2025-01-01: 0.109
   - threshold:
       2022-01-01: 155_625
+      2023-01-01: 165_430
+      2024-01-01: 173_205
+      2025-01-01: 177_882
     rate:
       2022-01-01: 0.128
+      2023-01-01: 0.1293
+      2024-01-01: 0.1293
+      2025-01-01: 0.1293
+  - threshold:
+      2023-01-01: 235_675
+      2024-01-01: 246_752
+      2025-01-01: 253_414
+    rate:
+      2023-01-01: 0.128
+      2024-01-01: 0.128
+      2025-01-01: 0.128
   - threshold:
       2022-01-01: 500_000
+      2023-01-01: 500_000
+      2024-01-01: 500_000
+      2025-01-01: 500_000
     rate:
       2022-01-01: 0.15
+      2023-01-01: 0.15
+      2024-01-01: 0.15
+      2025-01-01: 0.15
