@@ -1,0 +1,18 @@
+description: Alberta phases the infirm dependant amount out above this dependant income threshold.
+values:
+  2023-01-01: 8_032
+  2022-01-01: 7_407
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Alberta infirm dependant phase out start
+  reference:
+  - title: Alberta 2023 personal tax credits return TD1AB
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.#page=1
+  - title: Alberta 2023 personal tax credits return worksheet TD1AB-WS
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab-ws/td1ab-ws-23e.pdf#page=1
+  - title: Alberta 2022 personal tax credits return TD1AB
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-22e.#page=1
+  - title: Alberta 2022 personal tax credits return worksheet TD1AB-WS
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab-ws/td1ab-ws-22e.pdf#page=1
+    
