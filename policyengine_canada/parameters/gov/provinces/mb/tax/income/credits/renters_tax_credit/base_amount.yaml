@@ -1,0 +1,9 @@
+description: Manitoba provides this basic credit amount for either the head or the spouse having age of older than or equal to 65. 
+values:
+  2022-01-01: 825
+metadata:
+  unit: currency-CAD
+  label: Manitoba basic credit amount of renters tax credit for either the head or the spouse having eligible age
+  reference:
+    - title: Manitoba Information Guide Manitoba Credits Form MB479
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5007-tc/5007-tc-22e.pdf #page=3
