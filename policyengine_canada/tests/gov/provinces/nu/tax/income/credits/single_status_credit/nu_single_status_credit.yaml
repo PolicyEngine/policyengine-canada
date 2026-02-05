@@ -1,0 +1,15 @@
+- name: Person with single status
+  period: 2023
+  input:
+    province_code: NU
+    is_married: false
+  output:
+    nu_single_status_credit: 16_862
+
+- name: Person with married status
+  period: 2023
+  input:
+    province_code: NU
+    is_married: true
+  output:
+    nu_single_status_credit: 0

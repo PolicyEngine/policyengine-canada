@@ -1,0 +1,11 @@
+description: Nunavut credits this amount under the single status credit.
+values:
+  2022-01-01: 16_862
+metadata:
+  unit: currency-CAD
+  label: Nunavut single status credit amount
+  reference:
+  - title: Nunavut Income Tax Act Part I Division B Subvision c 2.16
+    href: https://www.nunavutlegislation.ca/en/consolidated-law/income-tax-act-consolidation
+  - title: 2022 Form NU428, Nunavut Tax
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5014-c/5014-c-22e.pdf#page=1
