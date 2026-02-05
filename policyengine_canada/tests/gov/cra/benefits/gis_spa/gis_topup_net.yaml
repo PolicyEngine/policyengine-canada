@@ -1,0 +1,15 @@
+- name: Basic Reduction
+  period: 2023
+  input:
+    gis_topup_cap: 300
+    gis_topup_reduction: 100
+  output:
+    gis_topup_net: 200
+
+- name: Negative Reduction
+  period: 2023
+  input:
+    gis_topup_cap: 300
+    gis_topup_reduction: 500
+  output:
+    gis_topup_net: 0

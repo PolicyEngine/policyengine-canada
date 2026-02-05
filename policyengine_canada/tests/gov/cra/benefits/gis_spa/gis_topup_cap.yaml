@@ -1,0 +1,54 @@
+- name: Single Pensioner
+  period: 2022
+  absolute_error_margin: 0.01
+  input:
+    gis_spa_category: SINGLE_WITH_OAS
+    oas_eligible: true
+  output:
+    gis_topup_cap: 875.70
+
+- name: Widow
+  period: 2022
+  absolute_error_margin: 0.01
+  input:
+    gis_spa_category: WIDOW_SPA_ELIGIBLE
+  output:
+    gis_topup_cap: 875.70
+
+- name: OAS pensioner whose spouse is SPA eligible
+  period: 2022
+  absolute_error_margin: 0.01
+  input:
+    gis_spa_category: COUPLE_ONE_OAS_SPA_ELIGIBLE
+    oas_eligible: true
+  output:
+    gis_topup_cap: 490.98
+
+- name: OAS pensioner whose spouse is not SPA eligible
+  period: 2022
+  absolute_error_margin: 0.01
+  input:
+    gis_spa_category: COUPLE_ONE_OAS_SPA_INELIGIBLE
+    oas_eligible: true
+  output:
+    gis_topup_cap: 490.98
+
+- name: SPA-eligible person whose spouse has OAS
+  period: 2022
+  absolute_error_margin: 0.01
+  input:
+    gis_spa_category: COUPLE_ONE_OAS_SPA_ELIGIBLE
+    oas_eligible: false
+  output:
+    gis_topup_cap: 490.98
+
+- name: Person not eligible for OAS or SPA, but is married to an OAS pensioner
+  period: 2022
+  absolute_error_margin: 0.1
+  input:
+    gis_spa_category: COUPLE_ONE_OAS_SPA_INELIGIBLE
+    oas_eligible: false
+  output:
+    gis_topup_cap: 0
+
+

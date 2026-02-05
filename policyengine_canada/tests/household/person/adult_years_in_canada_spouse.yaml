@@ -1,0 +1,15 @@
+- name: Adult Years in Canada for Spouse
+  period: 2023
+  input:
+    adult_years_in_canada: 35
+    is_spouse: true
+  output:
+    adult_years_in_canada_spouse: 35
+
+- name: Adult Years in Canada for Non-Spouse
+  period: 2023
+  input:
+    adult_years_in_canada: 40
+    is_spouse: false
+  output:
+    adult_years_in_canada_spouse: 0

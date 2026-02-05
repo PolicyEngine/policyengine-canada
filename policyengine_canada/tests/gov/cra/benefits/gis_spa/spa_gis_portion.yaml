@@ -1,0 +1,14 @@
+- name:  Anyone who is SPA-eligible gets the full amount prior to reduction. 
+  period: 2022
+  input:
+    spa_eligible: true
+  output:
+    spa_gis_portion: 6_240.18
+
+- name:  None is Spouse Eligible
+  period: 2022
+  input:
+    spa_eligible: false
+  output:
+    spa_gis_portion: 0
+

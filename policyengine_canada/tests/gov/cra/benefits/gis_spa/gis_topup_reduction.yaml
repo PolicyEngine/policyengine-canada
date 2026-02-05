@@ -1,0 +1,41 @@
+- name: Single Pensioner
+  period: 2023
+  input:
+    gis_spa_category: SINGLE_WITH_OAS
+    individual_net_income: 2_100
+  output:
+    gis_topup_reduction: 25
+
+- name: Widow
+  period: 2023
+  input:
+    gis_spa_category: SINGLE_WITH_OAS
+    individual_net_income: 2_100
+  output:
+    gis_topup_reduction: 25
+
+- name: OAS pensioner whose spouse is SPA eligible
+  period: 2023
+  input:
+    gis_spa_category: COUPLE_ONE_OAS_SPA_ELIGIBLE
+    individual_net_income: 4_100
+  output:
+    gis_topup_reduction: 12.50
+
+- name: Two OAS pensioners
+  period: 2023
+  input:
+    gis_spa_category: COUPLE_BOTH_OAS
+    individual_net_income: 4_100
+  output:
+    gis_topup_reduction: 12.50
+
+- name: OAS pensioner whose spouse is not eligible for SPA. 
+  period: 2023
+  input:
+    gis_spa_category: COUPLE_ONE_OAS_SPA_INELIGIBLE
+    oas_eligible: True
+    individual_net_income: 4_100
+  output:
+    gis_topup_reduction: 12.50
+

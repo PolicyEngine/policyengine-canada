@@ -1,0 +1,10 @@
+description: Guaranteed Income Supplement maximum top-up for married recipients of GIS or SPA. Corresponds to categories SINGLE_WITH_OAS or WIDOW_SPA_ELIGIBLE
+values:
+  2021-01-01: 490.98
+metadata:
+  period: year
+  label: GIS Top-up Cap for Married GIS or SPA Recipients
+  documentataion: Corresponds to GISTOPMAR in the SPSD/M Variable Guide
+  reference:
+  - title: SPSD/M Variable Guide
+   

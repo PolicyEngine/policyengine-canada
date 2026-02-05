@@ -1,0 +1,31 @@
+- name: Spouse Income is higher than Head Income
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+        gis_income: 2_000
+      spouse:
+        is_spouse: true
+        gis_income: 3_000
+    household:
+      is_married: true
+      members: [head, spouse]
+  output:
+    spouse_gis_income: 3_000
+
+- name: Spouse Income is lower than Head Income
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+        gis_income: 2_000
+      spouse:
+        is_spouse: true
+        gis_income: 1_000
+    household:
+      is_married: true
+      members: [head, spouse]
+  output:
+    spouse_gis_income: 1_000
