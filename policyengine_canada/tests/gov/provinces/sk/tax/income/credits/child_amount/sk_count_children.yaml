@@ -1,0 +1,94 @@
+- name: No eligible child in Household
+  period: 2022
+  input:
+    people:
+      child_1: 
+        age: 13
+        is_child: false
+    household:
+      members: [child_1]
+      province_code: SK
+
+  output:
+    sk_count_children: 0
+
+
+- name: One eligible child in Household
+  period: 2022
+  input:
+    people:
+      child_1: 
+        age: 10
+        is_child: true
+    household:
+      members: [child_1]
+      province_code: SK
+
+  output:
+    sk_count_children: 1
+
+
+- name: Two eligible children in Household
+  period: 2022
+  input:
+    people:
+      child_1: 
+        age: 8
+        is_child: true
+      child_2:
+        age: 17
+        is_child: true
+    household:
+      members: [child_1, child_2]
+      province_code: SK
+
+  output:
+    sk_count_children: 2
+
+
+- name: No eligible child in Household
+  period: 2023
+  input:
+    people:
+      child_1: 
+        age: 17
+        is_child: false
+    household:
+      members: [child_1]
+      province_code: SK
+
+
+- name: One eligible child in Household
+  period: 2023
+  input:
+    people:
+      child_1: 
+        age: 12
+        is_child: true
+    household:
+      members: [child_1]
+      province_code: SK
+
+  output:
+    sk_count_children: 1
+
+
+- name: Two eligible children in Household
+  period: 2023
+  input:
+    people:
+      child_1: 
+        age: 11
+        is_child: true
+      child_2:
+        age: 14
+        is_child: true
+      child_3:
+        age: 16
+        is_child: true
+    household:
+      members: [child_1, child_2, child_3]
+      province_code: SK
+
+  output:
+    sk_count_children: 3

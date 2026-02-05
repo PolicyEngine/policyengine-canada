@@ -1,0 +1,61 @@
+- name: Ineligible because spouse must make the claim
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 20_000
+    head_income: 30_000
+    sk_count_children: 1
+    sk_child_amount_eligible: true
+
+  output:
+    sk_child_amount: 0
+
+- name: Ineligible because the age of children
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 30_000
+    head_income: 20_000
+    sk_count_children: 2
+    sk_child_amount_eligible: false
+
+  output:
+    sk_child_amount: 0
+
+- name: Ineligible because not children
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 30_000
+    head_income: 20_000
+    sk_count_children: 1
+    sk_child_amount_eligible: false
+
+  output:
+    sk_child_amount: 0
+
+
+- name: Eligible for two children
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 30_000
+    head_income: 20_000
+    sk_count_children: 2
+    sk_child_amount_eligible: true
+
+  output:
+    sk_child_amount: 13_400
+
+
+- name: Eligible for one children
+  period: 2023
+  input:
+    province_code: SK
+    spouse_income: 30_000
+    head_income: 20_000
+    sk_count_children: 1
+    sk_child_amount_eligible: true
+
+  output:
+    sk_child_amount: 6_700
