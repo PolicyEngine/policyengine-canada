@@ -1,0 +1,21 @@
+description: British Columbia phases family benefit temporary enhancement amount out at this rate, based on high family net income.
+brackets:
+  - threshold:
+      2021-07-01: 0
+    rate:
+      2021-07-01: 0
+  - threshold:
+      2021-07-01: 82_578
+    rate:
+      2021-07-01: 0.0033
+
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: British Columbia phase out rate of high family net income # above $82_578
+  reference: 
+  # this temporary enhancement is not mentioned in the B.C. Income Tax Act
+    - title: B.C. family benefit
+      href: https://www2.gov.bc.ca/gov/content/family-social-supports/affordability/family-benefit
+    
