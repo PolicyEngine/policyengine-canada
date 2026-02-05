@@ -1,0 +1,39 @@
+- name: Under maximum amount
+  period: 2022
+  input:
+    province_code: NT
+    pension_and_savings_plan_income: 999
+  output:
+    nt_pension_credit: 999
+
+- name: Maximum amount
+  period: 2022
+  input:
+    province_code: NT
+    pension_and_savings_plan_income: 1_000
+  output:
+    nt_pension_credit: 1_000
+
+- name: Maximum amount; wrong province
+  period: 2022
+  input:
+    province_code: AB
+    pension_and_savings_plan_income: 1_000
+  output:
+    nt_pension_credit: 0
+
+- name: Above maximum amount
+  period: 2022
+  input:
+    province_code: NT
+    pension_and_savings_plan_income: 1_001
+  output:
+    nt_pension_credit: 1_000
+
+- name: No pension income
+  period: 2022
+  input:
+    province_code: NT
+    pension_and_savings_plan_income: 0
+  output:
+    nt_pension_credit: 0
