@@ -1,0 +1,59 @@
+- name: Ineligible for having no spouse
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+    household:
+      members: [head]
+      province_code: NU
+  output:
+    nu_married_status_credit_eligible: false
+
+- name: Ineligible for having no dependent spouse
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+      spouse:
+        is_spouse: true
+        is_dependant: false
+    household:
+      members: [head, spouse]
+      province_code: NU
+  output:
+    nu_married_status_credit_eligible: false
+
+- name: Ineligible for having dependent household member in addition to dependent spouse
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+      spouse:
+        is_spouse: true
+        is_dependant: true
+      dependent:
+        is_spouse: false
+        is_dependant: true
+    household:
+      members: [head, spouse, dependent]
+      province_code: NU
+  output:
+    nu_married_status_credit_eligible: false
+
+- name: Eligible
+  period: 2023
+  input:
+    people:
+      head:
+        is_head: true
+      spouse:
+        is_spouse: true
+        is_dependant: true
+    household:
+      members: [head, spouse]
+      province_code: NU
+  output:
+    nu_married_status_credit_eligible: true
