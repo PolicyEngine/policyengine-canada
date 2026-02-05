@@ -11,5 +11,6 @@ class household_income_tax_before_refundable_credits(Variable):
     adds = [
         "income_tax_before_refundable_credits",  # Federal.
         "on_income_tax_before_refundable_credits",  # Ontario.
+        "on_health_premium",  # Ontario.
         "bc_income_tax_before_refundable_credits",  # British Columbia.
     ]
