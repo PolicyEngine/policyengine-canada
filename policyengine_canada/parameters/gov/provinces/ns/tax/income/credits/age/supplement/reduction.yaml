@@ -1,0 +1,25 @@
+description: Nova Scotia phases its age amount supplement out at this rate, based on taxable income.
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0
+  - threshold:
+      2022-01-01: 25_000
+    rate:
+      2022-01-01: 0.0293
+
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  period: year 
+  label: Nova Scotia age amount supplement phase out rate
+  reference: 
+  - title: 2022 Nova Scotia Personal Tax Credits Return
+    href: https://hr.acadiau.ca/files/sites/hr/Payroll/Pensions%20&%20Benefits/NS_TD1_2022.pdf#page=1
+  - title: Worksheet for the 2023 Nova Scotia TD1NS-WS Personal Tax Credits Return -- Age Amount Supplement
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ns-ws/td1ns-ws-23e.pdf#page=1
+  - title: Nova Scotia income tax act - subdivision c - Deduction for employment out of Canada
+    href: https://nslegislature.ca/sites/default/files/legc/statutes/income%20tax.pdf#page=28
+
