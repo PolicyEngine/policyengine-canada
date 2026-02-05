@@ -1,0 +1,43 @@
+- name: Quebec amount for an eligible child enrolled in post-secondary studies
+  period: 2022
+  input:
+    qc_post_secondary_studies_amount_eligible: true
+    individual_net_income: 2000
+    qc_designated_remote_area_travel_benefit: 600
+    qc_other_income: 1000
+    province_code: QC
+  output:
+    qc_post_secondary_studies_amount: 4_602 #6202 -(2000+600-1000)
+
+- name: Quebec amount for non-eligible child enrolled in post-secondary studies
+  period: 2022
+  input:
+    qc_post_secondary_studies_amount_eligible: false
+    individual_net_income: 2000
+    qc_designated_remote_area_travel_benefit: 600
+    qc_other_income: 1000
+    province_code: QC
+  output:
+    qc_post_secondary_studies_amount: 0
+
+- name: Quebec amount for an eligible child enrolled in post-secondary studies with low income
+  period: 2022
+  input:
+    qc_post_secondary_studies_amount_eligible: true
+    individual_net_income: 1000
+    qc_designated_remote_area_travel_benefit: 0
+    qc_other_income: 1200
+    province_code: QC
+  output:
+    qc_post_secondary_studies_amount: 6_202 #6202-max(0,1000+0-1200)
+
+- name: Quebec amount for an eligible child enrolled in post-secondary studies with high income
+  period: 2022
+  input:
+    qc_post_secondary_studies_amount_eligible: true
+    individual_net_income: 6000
+    qc_designated_remote_area_travel_benefit: 1200
+    qc_other_income: 100
+    province_code: QC
+  output:
+    qc_post_secondary_studies_amount: 0 #max(0,6202-(6000+1200-100))

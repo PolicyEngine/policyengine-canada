@@ -1,0 +1,14 @@
+description: Quebec provides the amount for a dependant this age or above but not enrolled enrolled in post-secondary studies.
+values:
+  2022-01-01: 18
+metadata:
+  unit: year
+  label: Quebec amount for other dependants
+  reference:
+    - title: Revenu Quebec - Amount for dependants and amount transferred by a child 18 or over enrolled in post-secondary studies - Line 367
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/350-to-398-1-non-refundable-tax-credits/line-367/
+    - title: Schedule A - Amount for Dependants and Amount Transferred by a Child Pursuing Studies - (C) Amount for other dependants
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.A-V%282022-12%29.pdf#page=2
+    - title: Quebec I-3 - Taxation Act, Part I, Book V, Title I, Chapter I.0.1, 752.0.1. (f) ii
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3#se:752_0_1
+      # during the year, is 18 years of age or over

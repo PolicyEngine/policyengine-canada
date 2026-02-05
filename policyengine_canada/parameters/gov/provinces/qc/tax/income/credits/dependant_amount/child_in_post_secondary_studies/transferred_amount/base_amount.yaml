@@ -1,0 +1,16 @@
+description: Quebec provides this base amount transferred by a child enrolled in post-secondary studies for parents.
+values:
+  2022-01-01: 4_879
+metadata:
+  unit: currency-CAD
+  label: Quebec post-secondary studies transfered base amount
+  reference:
+    - title: Revenu Quebec - Amount for dependants and amount transferred by a child 18 or over enrolled in post-secondary studies - Line 367
+      href: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/how-to-complete-your-income-tax-return/line-by-line-help/350-to-398-1-non-refundable-tax-credits/line-367/
+    - title: Schedule S – Amount Transferred by a Child 18 or Over Enrolled in Post-Secondary Studies
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.S-V%282022-12%29.pdf
+    - title: Schedule A - Amount for Dependants and Amount Transferred by a Child Pursuing Studies
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/2022-12/TP-1.D.A-V%282022-12%29.pdf#page=1
+    - title: Quebec I-3 - Taxation Act, Part I, Book V, Title X, 776.41.14. (a)
+      href: https://www.legisquebec.gouv.qc.ca/en/document/cs/I-3?langCont=en#se:776_41_14
+      # $10,222-$2,861*2 = $4,500 in the legal reference, increased due to the inflation adjustments
