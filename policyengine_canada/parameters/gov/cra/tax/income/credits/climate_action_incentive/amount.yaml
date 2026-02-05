@@ -3,47 +3,84 @@ description: The climate action program provides the following amounts by provin
 HEAD:
   AB:
     2022-07-01: 539
+    2023-04-01: 772
+    2024-04-01: 900
   MB:
     2022-07-01: 416
+    2023-04-01: 528
+    2024-04-01: 600
   ONT:
     2022-07-01: 373
+    2023-04-01: 488
+    2024-04-01: 560
   SK:
     2022-07-01: 550
+    2023-04-01: 680
+    2024-04-01: 752
 SPOUSE:
   AB:
     2022-07-01: 270
+    2023-04-01: 386
+    2024-04-01: 450
   MB:
     2022-07-01: 208
+    2023-04-01: 264
+    2024-04-01: 300
   ONT:
     2022-07-01: 186
+    2023-04-01: 244
+    2024-04-01: 280
   SK:
     2022-07-01: 275 
-ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD:
+    2023-04-01: 340
+    2024-04-01: 376
+ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD: 
   AB:
-    2022-07-01: 270
+    2022-07-01: 135
+    2023-04-01: 193
+    2024-04-01: 225
   MB:
-    2022-07-01: 208
+    2022-07-01: 104
+    2023-04-01: 132
+    2024-04-01: 150
   ONT:
-    2022-07-01: 186
+    2022-07-01: 93
+    2023-04-01: 122
+    2024-04-01: 140
   SK:
-    2022-07-01: 275
+    2022-07-01: 138
+    2023-04-01: 170
+    2024-04-01: 188
 OTHER_CHILD:
   AB:
     2022-07-01: 135
+    2023-04-01: 193
+    2024-04-01: 225
   MB:
     2022-07-01: 104
+    2023-04-01: 132
+    2024-04-01: 150
   ONT:
     2022-07-01: 93
+    2023-04-01: 122
+    2024-04-01: 140
   SK:
     2022-07-01: 138
+    2023-04-01: 170
+    2024-04-01: 188
 
 metadata:
   unit: currency-CAD
   period: year
   label: Climate action amount 
   reference:
-    - title: Government of Canada - Climate action incentive payment
-      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html
+    - title: Climate Action Incentive payment amounts for 2022-23
+      href: https://www.canada.ca/en/department-finance/news/2022/03/climate-action-incentive-payment-amounts-for-2022-23.html
+    - title: Climate Action Incentive payment amounts for 2023-24
+      href: https://www.canada.ca/en/department-finance/news/2022/11/climate-action-incentive-payment-amounts-for-2023-24.html
+    - title: Canada Carbon Rebate amounts for 2024-25
+      href: https://www.canada.ca/en/department-finance/news/2024/02/canada-carbon-rebate-amounts-for-2024-25.html
+
   breakdown:
     - climate_action_incentive_category
     - province_code
