@@ -1,0 +1,12 @@
+description: Newfoundland and Labrador child benefit child age eligibility.
+values:
+  2023-01-01: 448
+metadata:
+  unit: year
+  label: Newfoundland and Labrador child benefit age benefit eligibility
+  reference:
+    - title: N.L. basic child age benefit
+      href: https://www.gov.nl.ca/cssd/income-support/child/
+
+
+  

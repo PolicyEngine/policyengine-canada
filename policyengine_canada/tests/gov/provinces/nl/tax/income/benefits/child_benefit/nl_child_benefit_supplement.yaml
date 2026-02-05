@@ -1,0 +1,34 @@
+- name: Ineligible for supplement
+  period: 2023
+  input:
+    people:
+      p1:
+        age: 30
+        is_pregnant: false
+      p2:
+        age: 20
+        is_pregnant: false
+      p3: 
+        age: 2
+        is_pregnant: false
+    household:
+      members: [p1, p2, p3]
+      province_code: NL
+  output:
+    nl_child_benefit_supplement: 0
+
+- name: Eligible for supplement
+  period: 2023
+  input:
+    people:
+      p1:
+        age: 30
+        is_pregnant: false
+      p2:
+        age: 20
+        is_pregnant: true
+    household:
+      members: [p1, p2]
+      province_code: NL
+  output:
+    nl_child_benefit_supplement: 1_800

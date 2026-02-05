@@ -1,0 +1,71 @@
+- name: Newfoundland one child benefit reduction for low income family.
+  period: 2023
+  input:
+    province_code: NL
+    adjusted_family_net_income: 17_000
+    nl_child_benefit_eligible_children: 1
+  output:
+    nl_child_benefit_reduction: 0
+
+- name: Newfoundland one child benefit reduction for high income family. 
+  period: 2023
+  input:
+    province_code: NL
+    adjusted_family_net_income: 30_000
+    nl_child_benefit_eligible_children: 1
+  output:
+    nl_child_benefit_reduction: 638.9721
+
+- name: Newfoundland two children benefit reduction for low income family.
+  period: 2023
+  input:
+    province_code: NL
+    adjusted_family_net_income: 17_000
+    nl_child_benefit_eligible_children: 2
+  output:
+    nl_child_benefit_reduction: 0
+  
+- name: Newfoundland two children benefit reduction for high income family. 
+  period: 2023
+  input:
+    province_code: NL
+    adjusted_family_net_income: 37_397
+    nl_child_benefit_eligible_children: 2
+  output:
+    nl_child_benefit_reduction: 2_090
+
+- name: Newfoundland three children benefit reduction for low income family.
+  period: 2023
+  input:
+    province_code: NL
+    adjusted_family_net_income: 17_000
+    nl_child_benefit_eligible_children: 3
+  output:
+    nl_child_benefit_reduction: 0
+  
+- name: Newfoundland three children benefit reduction for high income family. 
+  period: 2023
+  input:
+    province_code: NL
+    adjusted_family_net_income: 37_397
+    nl_child_benefit_eligible_children: 3
+  output:
+    nl_child_benefit_reduction: 3_244
+
+- name: Newfoundland three children benefit reduction for low income family.
+  period: 2023
+  input:
+    province_code: NL
+    adjusted_family_net_income: 17_000
+    nl_child_benefit_eligible_children: 4
+  output:
+    nl_child_benefit_reduction: 0
+  
+- name: Newfoundland three children benefit reduction for high income family. 
+  period: 2023
+  input:
+    province_code: NL
+    adjusted_family_net_income: 37_397
+    nl_child_benefit_eligible_children: 4
+  output:
+    nl_child_benefit_reduction: 1_238

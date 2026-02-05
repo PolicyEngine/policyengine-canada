@@ -1,0 +1,15 @@
+- name: Eligible
+  period: 2023
+  input:
+    province_code: NL
+    age: 0
+  output:
+    nl_child_benefit_supplement_child: true
+
+- name: Ineligible
+  period: 2023
+  input:
+    province_code: NL
+    age: 1
+  output:
+    nl_child_benefit_supplement_child: false

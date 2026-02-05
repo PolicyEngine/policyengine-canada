@@ -1,0 +1,79 @@
+- name: Newfoundland one child benefit without reduction.
+  period: 2023
+  input:
+    province_code: NL
+    nl_child_benefit_reduction: 0
+    nl_child_benefit_supplement: 0
+    nl_child_benefit_eligible_children: 1
+  output:
+    nl_child_benefit: 422
+
+- name: Newfoundland two children benefit without reduction.
+  period: 2023
+  input:
+    province_code: NL
+    nl_child_benefit_reduction: 0
+    nl_child_benefit_supplement: 0
+    nl_child_benefit_eligible_children: 2
+  output:
+    nl_child_benefit: 870
+  
+- name: Newfoundland three children benefit without reduction.
+  period: 2023
+  input:
+    province_code: NL
+    nl_child_benefit_reduction: 0
+    nl_child_benefit_supplement: 0
+    nl_child_benefit_eligible_children: 3
+  output:
+    nl_child_benefit: 1_351
+
+- name: Newfoundland four children benefit without reduction.
+  period: 2023
+  input:
+    province_code: NL
+    nl_child_benefit_reduction: 0
+    nl_child_benefit_supplement: 0
+    nl_child_benefit_eligible_children: 4
+  output:
+    nl_child_benefit: 1_867
+
+- name: Newfoundland one child benefit with reduction.
+  period: 2023
+  input:
+    province_code: NL
+    nl_child_benefit_reduction: 150
+    nl_child_benefit_supplement: 0
+    nl_child_benefit_eligible_children: 1
+  output:
+    nl_child_benefit: 272
+
+- name: Newfoundland two children benefit with reduction.
+  period: 2023
+  input:
+    province_code: NL
+    nl_child_benefit_reduction: 150
+    nl_child_benefit_supplement: 0
+    nl_child_benefit_eligible_children: 2
+  output:
+    nl_child_benefit: 720
+
+- name: Newfoundland three children benefit with reduction.
+  period: 2023
+  input:
+    province_code: NL
+    nl_child_benefit_reduction: 150
+    nl_child_benefit_supplement: 0
+    nl_child_benefit_eligible_children: 3
+  output:
+    nl_child_benefit: 1_201
+
+- name: Newfoundland four children benefit with reduction.
+  period: 2023
+  input:
+    province_code: NL
+    nl_child_benefit_reduction: 150
+    nl_child_benefit_supplement: 0
+    nl_child_benefit_eligible_children: 4
+  output:
+    nl_child_benefit: 1_717

@@ -1,0 +1,10 @@
+description: Newfoundland and Labrador child benefit.
+values:
+  2023-01-01: 422
+metadata:
+  unit: year
+  label: Newfoundland and Labrador child benefit.
+  reference:
+    - title: N.L. basic child age benefit
+      href: https://www.gov.nl.ca/cssd/income-support/child/
+    
