@@ -1,0 +1,9 @@
+description: Newfoundland and Labrador provides this maximum benefit amount under the seniors' benefit.
+values:
+  2022-12-31: 1_516
+metadata:
+  unit: currency-CAD
+  label: Newfoundland and Labrador max seniors benefit amount
+  reference:
+    - title: Government of Canada - Newfoundland and Labrador Seniors Benefit
+      href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/
