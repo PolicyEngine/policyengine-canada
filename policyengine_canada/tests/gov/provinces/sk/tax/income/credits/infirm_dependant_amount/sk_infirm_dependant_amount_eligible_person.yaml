@@ -1,0 +1,107 @@
+- name: 2023 Have duplicate eligible infirm dependants - non eligible
+  period: 2023
+  input:
+    province_code: SK
+    age: 19
+    is_child_of_filer: true
+    is_disabled: true
+    sk_caregiver_amount: 10_405
+    dependant_income: 16_734
+  output:
+    sk_infirm_dependant_amount_eligible_person: false
+
+- name: 2022 Have duplicate eligible infirm dependants - non eligible
+  period: 2022
+  input:
+    province_code: SK
+    age: 19
+    is_child_of_filer: true
+    is_disabled: true
+    sk_caregiver_amount: 9_789
+    dependant_income: 16_734
+  output:
+    sk_infirm_dependant_amount_eligible_person: false
+
+- name: Have infirm dependants below the age threshold - non eligible
+  period: 2023
+  input:
+    province_code: SK
+    age: 17
+    is_child_of_filer: true
+    is_disabled: true
+    sk_caregiver_amount: 0
+    dependant_income: 16_734
+  output:
+    sk_infirm_dependant_amount_eligible_person: false
+
+- name: Have no dependants - non eligible
+  period: 2023
+  input:
+    province_code: SK
+    age: 0
+    is_child_of_filer: false
+    is_disabled: true
+    sk_caregiver_amount: 0
+    dependant_income: 16_734
+  output:
+    sk_infirm_dependant_amount_eligible_person: false
+
+- name: Have non-disabled dependants - non eligible
+  period: 2023
+  input:
+    province_code: SK
+    age: 20
+    is_child_of_filer: true
+    is_disabled: false
+    sk_caregiver_amount: 0
+    dependant_income: 16_734
+  output:
+    sk_infirm_dependant_amount_eligible_person: false
+
+- name: 2023 Have eligible infirm dependant
+  period: 2023
+  input:
+    province_code: SK
+    age: 21
+    is_child_of_filer: true
+    is_disabled: true
+    sk_caregiver_amount: 0
+    dependant_income: 16_734
+  output:
+    sk_infirm_dependant_amount_eligible_person: true
+
+- name: 2022 Have eligible infirm dependant
+  period: 2022
+  input:
+    province_code: SK
+    age: 19
+    is_child_of_filer: true
+    is_disabled: true
+    sk_caregiver_amount: 0
+    dependant_income: 16_734
+  output:
+    sk_infirm_dependant_amount_eligible_person: true
+
+- name: 2022 Income higher than the higher income threshold
+  period: 2022
+  input:
+    province_code: SK
+    age: 19
+    is_child_of_filer: true
+    is_disabled: true
+    sk_caregiver_amount: 0
+    dependant_income: 17_789
+  output:
+    sk_infirm_dependant_amount_eligible_person: false
+
+- name: 2023 Income higher than the higher income threshold
+  period: 2023
+  input:
+    province_code: SK
+    age: 19
+    is_child_of_filer: true
+    is_disabled: true
+    sk_caregiver_amount: 0
+    dependant_income: 17_789
+  output:
+    sk_infirm_dependant_amount_eligible_person: false
