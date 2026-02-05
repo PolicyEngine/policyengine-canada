@@ -1,0 +1,10 @@
+decription: Saskatchewan Seniors Income Plan Client Living at Home Annual Taxable Income Level where SIP becomes 0 for Married Recipient who are both pensioners
+values: 
+  2022-07-01: 7_440
+
+metadata:
+  unit: currency_CAD
+  label: Saskatchewan Seniors Income Plan Client Living at Home Annual Taxable Income Level for married recipient who are both pensioners
+  reference:
+  - title: Saskatchewan Seniors Income Plan
+    href: https://www.saskatchewan.ca/residents/family-and-social-support/seniors-services/financial-help-for-seniors

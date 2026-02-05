@@ -1,0 +1,10 @@
+decription: Saskatchewan Seniors Income Plan Client Living in Special Care Home CPP income where a senior becomes ineligible for SIP for Married Recipient whose Spouse Receiving Allowance
+values: 
+  2022-07-01: 9_120
+
+metadata:
+  unit: currency_CAD
+  label: Saskatchewan Seniors Income Plan Client Living in Special Care Home CPP income for Married Recipient whose spouse is receiving allowance
+  reference:
+  - title: Saskatchewan Seniors Income Plan
+    href: https://www.saskatchewan.ca/residents/family-and-social-support/seniors-services/financial-help-for-seniors
