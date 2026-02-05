@@ -1,0 +1,17 @@
+- name: Quebec children's activities tax credit for eligible household
+  period: 2022
+  input:
+    qc_children_activities_credit_eligible: true
+    qc_non_disabled_children_activities_credit: 500
+    qc_disabled_children_activities_credit: 300
+  output:
+    qc_children_activities_credit: 800 #500+300
+
+- name: Quebec children's activities tax credit for non-eligible household
+  period: 2022
+  input:
+    qc_children_activities_credit_eligible: false
+    qc_non_disabled_children_activities_credit: 500
+    qc_disabled_children_activities_credit: 300
+  output:
+    qc_children_activities_credit: 0

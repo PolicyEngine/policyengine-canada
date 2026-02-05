@@ -1,0 +1,49 @@
+- name: Quebec non-disabled children's activities tax credit eligibility for disabled child
+  period: 2022
+  input:
+    age: 10
+    is_dependant: true
+    is_disabled: true
+    province_code: QC
+  output:
+    qc_non_disabled_children_activities_credit_eligible: false
+
+- name: Quebec non-disabled children's activities tax credit eligibility for child above age eligibility
+  period: 2022
+  input:
+    age: 16
+    is_dependant: true
+    is_disabled: false
+    province_code: QC
+  output:
+    qc_non_disabled_children_activities_credit_eligible: false
+
+- name: Quebec non-disabled children's activities tax credit eligibility for child below age eligibility
+  period: 2022
+  input:
+    age: 4
+    is_dependant: true
+    is_disabled: false
+    province_code: QC
+  output:
+    qc_non_disabled_children_activities_credit_eligible: false
+
+- name: Quebec non-disabled children's activities tax credit eligibility
+  period: 2022
+  input:
+    age: 5
+    is_dependant: true
+    is_disabled: false
+    province_code: QC
+  output:
+    qc_non_disabled_children_activities_credit_eligible: true
+
+- name: Quebec non-disabled children's activities tax credit eligibility for not tax filers's dependant
+  period: 2022
+  input:
+    age: 5
+    is_dependant: false
+    is_disabled: false
+    province_code: QC
+  output:
+    qc_non_disabled_children_activities_credit_eligible: false
