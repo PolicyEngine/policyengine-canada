@@ -1,0 +1,9 @@
+description: Maximum family income to be eligible for Ontario CARE child care tax credit
+values:
+  2019-01-01: 150_000
+metadata:
+  unit: currency-CAD
+  label: Ontario CARE credit income limit
+  reference:
+    - title: Ontario Child Care Tax Credit
+      href: https://www.ontario.ca/page/ontario-child-care-tax-credit

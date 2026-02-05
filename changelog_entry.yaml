@@ -1,0 +1,11 @@
+- bump: minor
+  changes:
+    added:
+    - Federal Child Care Expense Deduction (CCED) - line 21400
+    - Ontario Childcare Access and Relief from Expenses (CARE) Tax Credit
+    - BC Affordable Child Care Benefit
+    - BC Child Care Fee Reduction Initiative (CCFRI)
+    - Alberta Child Care Subsidy Program
+    fixed:
+    - CI build failure due to missing setuptools dependency in GitHub Actions workflow
+    - Documentation build failure by using python -m jupyter_book instead of jb command

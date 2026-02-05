@@ -1,0 +1,11 @@
+description: Maximum monthly fee reduction for infant/toddler group care (BC CCFRI)
+values:
+  2018-01-01: 350
+  2024-01-01: 900
+metadata:
+  unit: currency-CAD
+  period: month
+  label: BC CCFRI max reduction for infant/toddler
+  reference:
+    - title: BC Child Care Fee Reduction Initiative Funding Guidelines 2024-25
+      href: https://www2.gov.bc.ca/assets/gov/family-and-social-supports/child-care/childcarebc-programs/ccfri/ccfri_funding_guidelines_24_25.pdf

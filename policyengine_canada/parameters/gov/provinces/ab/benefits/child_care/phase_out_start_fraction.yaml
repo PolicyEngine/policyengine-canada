@@ -1,0 +1,9 @@
+description: Fraction of income limit where phase-out begins for Alberta Child Care Subsidy
+values:
+  2020-01-01: 0.5
+metadata:
+  unit: /1
+  label: Alberta child care subsidy phase-out start
+  reference:
+    - title: Alberta Child Care Subsidy
+      href: https://www.alberta.ca/child-care-subsidy

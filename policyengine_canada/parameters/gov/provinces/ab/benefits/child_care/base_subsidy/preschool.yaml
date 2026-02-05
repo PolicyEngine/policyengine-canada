@@ -1,0 +1,10 @@
+description: Base monthly Alberta Child Care Subsidy for preschool age children (representative amount)
+values:
+  2020-01-01: 200
+metadata:
+  unit: currency-CAD
+  period: month
+  label: Alberta child care subsidy base (preschool)
+  reference:
+    - title: Alberta Child Care Subsidy
+      href: https://www.alberta.ca/child-care-subsidy
