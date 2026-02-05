@@ -1,0 +1,16 @@
+description: Alberta limits the caregiver amount for dependants above this income threshold.
+values:
+  2022-01-01: 29_038
+  2023-01-01: 31_489
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Alberta caregiver amount upper dependant income threshold
+  reference:
+    - title: Government of Canada - Alberta Caregiver Amount (2022)
+      href:  https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-22e.pdf#page=1
+    - title: Government of Canada - Alberta Caregiver Amount (2023)
+      href:  https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1ab/td1ab-23e.pdf#page=1
+    - title: Province of Alberta - Alberta Personal Income Tax Act, RSA 2000, Division 3 (d) (iii)
+      href: https://www.canlii.org/en/ab/laws/stat/rsa-2000-c-a-30/latest/rsa-2000-c-a-30.html
+
