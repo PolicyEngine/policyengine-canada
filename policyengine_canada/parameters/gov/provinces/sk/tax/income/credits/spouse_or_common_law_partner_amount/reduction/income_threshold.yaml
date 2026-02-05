@@ -1,0 +1,15 @@
+description: Saskatchewan reduces the spouse or common-law partner amount credit above this spousal income threshold.
+values: 
+  2022-01-01: 1_662
+  2023-01-01: 1_767
+
+metadata:
+  unit: currency-CAD
+  label: Saskatchewan spouse or common-law partner amount reduction threshold 
+  reference:
+  - title: 2022 Saskatchewan Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-22e.pdf#page=1
+  - title: 2023 Saskatchewan Personal Tax Credit Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1sk/td1sk-23e.pdf#page=1
+  - title: The Income Tax Act, 2000 DIVISION 2 Section 12, Spousal Credit 12(1)
+    href: https://publications.saskatchewan.ca/api/v1/products/583/formats/806/download#page=12

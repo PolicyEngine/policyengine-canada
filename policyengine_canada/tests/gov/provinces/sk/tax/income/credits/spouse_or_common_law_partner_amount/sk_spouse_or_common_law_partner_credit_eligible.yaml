@@ -1,0 +1,25 @@
+- name: The spouse or common-law partner lives with the head
+  period: 2022
+  input:
+    people:
+      spouse:
+        is_spouse: true
+    household: 
+      members: [spouse]
+      province_code: SK
+      cohabitating_spouses: true
+  output:
+    sk_spouse_or_common_law_partner_credit_eligible: true
+
+- name: No spouse or common-law partner lives with the head
+  period: 2022
+  input:
+    people:
+      spouse:
+        is_spouse: false
+    household: 
+      members: [spouse]
+      province_code: SK
+      cohabitating_spouses: false
+  output:
+    sk_spouse_or_common_law_partner_credit_eligible: false
