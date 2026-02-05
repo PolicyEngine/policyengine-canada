@@ -1,0 +1,13 @@
+description: Newfoundland and Labrador qualifies children for the income supplement below this age threshold.
+values:
+  2023-01-01: 19
+metadata:
+  unit: year
+  label: Newfoundland and Labrador Income Supplement Children Age Eligibility
+  reference:
+    - title: Government of Canada - Newfoundland and Labrador Income Supplement
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-newfoundland-labrador.html
+    - title: Government of Canada - Newfoundland and Labrador Income Supplement
+      href: https://www.gov.nl.ca/fin/tax-programs-incentives/personal/income-supplement/
+    - title: Government of Canada - Newfoundland and Labrador Income Tax Act §34
+      href: https://www.assembly.nl.ca/Legislation/sr/statutes/i01-1.htm#34_ 
