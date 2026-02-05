@@ -1,0 +1,10 @@
+description: New Brunswick divides the phased out taxable income by this rate to calculate the tuition credit.
+values:
+  2022-01-01: 0.094
+metadata:
+  unit: currency-CAD
+  label: New Brunswick phased out taxable income rate
+  reference:
+  # The tuition credit amount is not mentioned in the NB income tax act
+    - title: New Brunswick tuition and education amounts
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-s11/5004-s11-22e.pdf#page=1
