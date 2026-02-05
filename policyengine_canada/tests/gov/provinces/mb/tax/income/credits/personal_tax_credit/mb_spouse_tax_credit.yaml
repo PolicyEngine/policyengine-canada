@@ -1,0 +1,29 @@
+- name: Manitoba non-disabled and non-elderly spouse tax credit
+  period: 2022
+  input:
+    province_code: MB
+    is_spouse: true
+    born_year: 1960
+    is_disabled: false
+  output:
+    mb_spouse_credit_amount: 195 #195 + 0 = 195
+
+- name: Manitoba disabled and non-elderly spouse tax credit
+  period: 2022
+  input:
+    province_code: MB
+    is_spouse: true
+    born_year: 1960
+    is_disabled: true
+  output:
+    mb_spouse_credit_amount: 308 # 195 + 113 = 308
+
+- name: Manitoba disabled and elderly spouse tax credit
+  period: 2022
+  input:
+    province_code: MB
+    is_spouse: true
+    born_year: 1950
+    is_disabled: true
+  output:
+    mb_spouse_credit_amount: 421 # 195 + 113 + 113 = 421
