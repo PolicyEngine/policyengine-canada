@@ -1,0 +1,23 @@
+description: Quebec reduces its solidarity tax credit for family or individuals eligible for only Québec sales tax (QST) component based on the income. 
+brackets:
+  - rate:
+      2022-07-01: 0
+    threshold:
+      2022-07-01: 0
+  - rate:
+      2022-07-01: 0.03
+    threshold:
+      2022-07-01: 36_790
+metadata:
+  type: marginal_rate
+  rate_unit: /1
+  threshold_unit: currency-CAD
+  label: Quebec Solidarity Tax Credit reduction rate if eligible for both QST component only 
+  reference:
+    - title: SPSD/M - 1.3.25.4.10.10 QSTCRRPQuebecSolidarityTaxCreditreductionrate if eligible for only QST component (Page 1653)
+    - title: Parameters of the Personal Income Tax System for 2022 - Table 4
+      href: http://www.finances.gouv.qc.ca/MAJ2021/documents/en/AUTEN_IncomeTax2022.pdf#page=16
+    - title: Taxation Act(CQLR c I-3), Part I, Book IX, Title III, Division II.17.2 Solidarity Credit, § 2.1029.8.116.16.(d)
+      href: https://www.canlii.org/en/qc/laws/stat/cqlr-c-i-3/latest/cqlr-c-i-3.html#se:1029_8_116_16
+      # 3%, if B(housing component amount) and C(Northern village component amount) in the formula have a value equal to zero
+      # 3% reduction when over 34,800 in the legal reference, threshold increased due to the inflation adjustments

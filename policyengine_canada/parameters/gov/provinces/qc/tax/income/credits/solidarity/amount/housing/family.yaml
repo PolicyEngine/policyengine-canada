@@ -1,0 +1,16 @@
+description: Quebec limits its housing component of the solidarity tax credit for married individual living with their family at this amount.
+values:
+  2022-07-01: 727
+metadata:
+  unit: currency-CAD
+  label: Quebec Solidarity Tax Credit QST housing component family amount
+  reference:
+    - title: Revenu Quebec - Solidarity Tax Credit - Housing Component
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/solidarity-tax-credit/components-of-the-solidarity-tax-credit/housing-component/
+    - title: SPSD/M - 1.3.25.4.10.5 QSTCHSFQuebec Solidarity Tax Credit housing component single family amount (Page 1645)
+    - title: SPSD/M - 1.3.25.4.10.6 QSTCHMFQuebec Solidarity Tax Credit housing component multiple family amount (Page 1647)
+    - title: Parameters of the Personal Income Tax System for 2022 - Table 4
+      href: http://www.finances.gouv.qc.ca/MAJ2021/documents/en/AUTEN_IncomeTax2022.pdf#page=16
+    - title: Taxation Act(CQLR c I-3), Part I, Book IX, Title III, Division II.17.2 Solidarity Credit, § 2.1029.8.116.16.(b)ii(1)
+      href: https://www.canlii.org/en/qc/laws/stat/cqlr-c-i-3/latest/cqlr-c-i-3.html#se:1029_8_116_16
+      # $687 in the legal reference, increased due to the inflation adjustments

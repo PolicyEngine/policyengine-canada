@@ -1,0 +1,12 @@
+description: Quebec limits its solidarity tax credit to people at or above this age.
+values:
+  2022-01-01: 18
+metadata:
+  unit: year
+  label: Quebec solidarity tax credit age eligibility
+  reference:
+    - title: Revenu Quebec - Solidarity Tax Credit - Eligibility for the Solidarity Tax Credit
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/solidarity-tax-credit/eligibility/
+    - title: Taxation Act(CQLR c I-3), Part I, Book IX, Title III, Division II.17.2 Solidarity Credit, § 1.1029.8.116.12, "eligible individual" (a)
+      href: https://www.canlii.org/en/qc/laws/stat/cqlr-c-i-3/latest/cqlr-c-i-3.html#se:1029_8_116_12
+      # is either 18 years of age or over
