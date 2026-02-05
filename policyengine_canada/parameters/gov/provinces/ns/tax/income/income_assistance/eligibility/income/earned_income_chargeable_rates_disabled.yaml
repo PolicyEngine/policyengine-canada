@@ -1,0 +1,27 @@
+description: Nova Scotia exempts partial earned income, with the remainder considered chargeable for disabled employement under the Income Assistance program.
+brackets:
+  - threshold:
+      2021-01-01: 0
+    amount:
+      2021-01-01: 0
+  - threshold:
+      2021-01-01: 350.01
+    amount:
+      2021-01-01: 0.25
+  - threshold:
+      2021-01-01: 500.01
+    amount:
+      2021-01-01: 0.5
+  - threshold:
+      2021-01-01: 750.01
+    amount:
+      2021-01-01: 0.75
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  amount_unit: /1
+  period: year
+  label: Nova Scotia Income Assistance earned income exemption rates for disabled employment
+  reference:
+    - title: Employment Support and Income Assistance Act, Section 33, (2)
+      href: https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC2_4
