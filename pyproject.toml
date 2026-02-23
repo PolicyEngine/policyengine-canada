@@ -37,6 +37,19 @@ dependencies = [
     "wheel<1",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "build",
+    "furo",
+    "jupyter-book",
+    "markupsafe",
+    "pydata-sphinx-theme",
+    "sphinx",
+    "sphinx-argparse",
+    "sphinx-math-dollar",
+    "towncrier>=24.8.0",
+]
+
 [project.urls]
 Homepage = "https://github.com/policyengine/policyengine-canada"
 

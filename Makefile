@@ -15,7 +15,7 @@ test:
 	policyengine-core test -c policyengine_canada policyengine_canada/tests
 
 build:
-	python setup.py sdist bdist_wheel
+	python -m build
 
 changelog:
 	python .github/bump_version.py
