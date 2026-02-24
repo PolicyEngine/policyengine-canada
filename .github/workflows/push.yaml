@@ -9,7 +9,7 @@ jobs:
       (github.repository == 'PolicyEngine/policyengine-canada')
       && (github.event.head_commit.message == 'Update PolicyEngine Canada')
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Check formatting
         uses: "lgeiger/black-action@master"
         with:
@@ -22,12 +22,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:          token: ${{ secrets.POLICYENGINE_GITHUB }}
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.13
+          python-version: "3.14"
+          allow-prereleases: true
       - name: Build changelog
         run: |
           pip install towncrier
@@ -52,16 +53,17 @@ jobs:
         os: [ubuntu-latest, windows-latest]
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.13
+          python-version: "3.14"
+          allow-prereleases: true
       - name: Install package
         run: make install
       - name: Run tests
         run: make test
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v4
       - name: Generate documentation
         run: make documentation
       - name: Deploy documentation
@@ -78,11 +80,12 @@ jobs:
       && (github.event.head_commit.message == 'Update PolicyEngine Canada')
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.13
+          python-version: "3.14"
+          allow-prereleases: true
       - name: Publish a git tag
         run: ".github/publish-git-tag.sh || true"
       - name: Install build dependencies
@@ -106,12 +109,13 @@ jobs:
       GH_TOKEN: ${{ secrets.POLICYENGINE_GITHUB }}
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:          token: ${{ secrets.POLICYENGINE_GITHUB }}
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.12
+          python-version: "3.14"
+          allow-prereleases: true
       - name: Install Wheel and Pytest
         run: pip3 install wheel setuptools pytest==5.4.3
       - name: Install package
