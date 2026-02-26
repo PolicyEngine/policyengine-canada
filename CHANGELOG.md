@@ -1,3 +1,10 @@
+## [0.97.1] - 2026-02-26
+
+### Fixed
+
+- Fixed push workflow YAML syntax and update_api.py to read version from pyproject.toml.
+
+
 ## [0.97.0] - 2026-02-26
 
 ### Added
