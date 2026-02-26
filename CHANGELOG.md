@@ -1,3 +1,15 @@
+## [0.97.0] - 2026-02-26
+
+### Added
+
+- Updated all federal CRA parameters through 2025: income tax brackets and rates (including 14.5% lowest bracket for 2025, 14% for 2026), Basic Personal Amount, Age Amount credit, Canada Employment Amount, Disability Tax Credit, Canada Child Benefit, Child Disability Benefit, Canada Workers Benefit, GST/HST credit, Old Age Security pension and clawback thresholds, Climate Action Incentive amounts for 2023-24 and 2024-25 (including new provinces NB, NL, NS, PE and rural supplement increase to 20%), and Canada Training Credit income thresholds.
+
+### Changed
+
+- Migrated from changelog_entry.yaml to towncrier fragments to eliminate merge conflicts.
+- Add Python 3.14 support, drop Python 3.10.
+
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
