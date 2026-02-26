@@ -1,0 +1,15 @@
+description: Average monthly CPP retirement pension at age 65
+values:
+  2020-01-01: 710.41
+  2021-01-01: 702.77
+  2022-01-01: 727.61
+  2023-01-01: 758.32
+  2024-01-01: 816.52
+  2025-01-01: 844.53
+metadata:
+  unit: currency-CAD
+  period: month
+  label: CPP average monthly retirement pension
+  reference:
+    - title: CPP retirement pension amount
+      href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/amount.html
