@@ -1,3 +1,10 @@
+## [0.97.2] - 2026-02-26
+
+### Fixed
+
+- Pin jupyter-book to v1 to fix documentation build in CI.
+
+
 ## [0.97.1] - 2026-02-26
 
 ### Fixed
