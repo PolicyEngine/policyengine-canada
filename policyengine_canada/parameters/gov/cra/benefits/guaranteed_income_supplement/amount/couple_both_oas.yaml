@@ -1,0 +1,13 @@
+description: Maximum monthly GIS when spouse/partner receives full OAS pension
+values:
+  2022-01-01: 619.99
+  2023-01-01: 641.80
+  2024-01-01: 652.96
+  2025-01-01: 660.78
+metadata:
+  unit: currency-CAD
+  period: month
+  label: GIS maximum amount for couples (both receive OAS)
+  reference:
+    - title: Old Age Security payment amounts
+      href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html
