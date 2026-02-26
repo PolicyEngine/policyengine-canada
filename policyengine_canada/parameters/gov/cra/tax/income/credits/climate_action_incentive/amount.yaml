@@ -124,9 +124,13 @@ metadata:
   reference:
     - title: Government of Canada - Climate action incentive payment
       href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html
-    - title: Climate Action Incentive payment amounts for 2023-24
+    - title: "How much the Canada Carbon Rebate payment amounts were"
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-carbon-rebate/how-much.html
+    - title: "Climate Action Incentive amounts for July 2022 \u2013 June 2023 (e.g. ON individual = $373, AB = $539, SK = $550, MB = $416)"
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-carbon-rebate/how-much.html
+    - title: "Climate Action Incentive payment amounts for 2023-24 (e.g. ON individual = $488, AB = $772, SK = $680, MB = $528)"
       href: https://www.canada.ca/en/department-finance/news/2022/11/climate-action-incentive-payment-amounts-for-2023-24.html
-    - title: Canada Carbon Rebate amounts for 2024-25
+    - title: "Canada Carbon Rebate amounts for 2024-25 (e.g. ON individual = $560, AB = $900, SK = $752, MB = $600)"
       href: https://www.canada.ca/en/department-finance/news/2024/02/canada-carbon-rebate-amounts-for-2024-25.html
   breakdown:
     - climate_action_incentive_category

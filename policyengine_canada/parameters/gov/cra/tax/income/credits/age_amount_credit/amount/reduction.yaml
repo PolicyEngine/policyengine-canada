@@ -25,9 +25,15 @@ metadata:
   reference:
   - title: Government of Canada - Canada Age Amount Credit
     href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30100-amount.html
-  - title: Federal Worksheet
-    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-21e.pdf
-  - title: Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.))
+  - title: Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)), Section 118
     href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-118.html
-  - title: Budget Implementation Act, 2009 S.C. 2009, c. 2
-    href: https://laws-lois.justice.gc.ca/eng/AnnualStatutes/2009_2/page-1.html#h-2
+  - title: CRA Federal Worksheet 5000-D1 (2021) - Age amount reduction threshold ($38,893)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-21e.pdf
+  - title: CRA Federal Worksheet 5000-D1 (2022) - Age amount reduction threshold ($39,826)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-22e.pdf
+  - title: CRA Federal Worksheet 5000-D1 (2023) - Age amount reduction threshold ($42,335)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-23e.pdf
+  - title: CRA Federal Worksheet 5000-D1 (2024) - Age amount reduction threshold ($44,325)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-24e.pdf
+  - title: CRA Federal Worksheet 5000-D1 (2025) - Age amount reduction threshold ($45,522)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-25e.pdf

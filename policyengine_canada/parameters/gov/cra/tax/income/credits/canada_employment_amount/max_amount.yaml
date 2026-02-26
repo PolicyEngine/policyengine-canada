@@ -10,6 +10,17 @@ metadata:
   reference:
   - title: Government of Canada, Line 31260 – Canada employment amount
     href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-31260-canada-employment-amount.html
-    # The law specifies $1,000.
   - title: Canada Income Tax Act, 118 (10) - Canada employment credit
     href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-118.html
+  - title: CRA Federal Worksheet 5000-D1 for 2020 (CEA max = $1,245)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-20e.pdf
+  - title: CRA Federal Worksheet 5000-D1 for 2021 (CEA max = $1,257)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-21e.pdf
+  - title: CRA Federal Worksheet 5000-D1 for 2022 (CEA max = $1,287)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-22e.pdf
+  - title: CRA Federal Worksheet 5000-D1 for 2023 (CEA max = $1,368)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-23e.pdf
+  - title: CRA Federal Worksheet 5000-D1 for 2024 (CEA max = $1,433)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-24e.pdf
+  - title: CRA Federal Worksheet 5000-D1 for 2025 (CEA max = $1,471)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-25e.pdf
