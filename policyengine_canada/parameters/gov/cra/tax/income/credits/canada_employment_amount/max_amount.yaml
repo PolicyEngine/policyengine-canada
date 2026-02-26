@@ -1,5 +1,7 @@
 description: Canada provides the following maximum amount under the Canada employment amount. 
 values:
+  2020-01-01: 1_245
+  2021-01-01: 1_257
   2022-01-01: 1_287
   2023-01-01: 1_368
   2024-01-01: 1_433
