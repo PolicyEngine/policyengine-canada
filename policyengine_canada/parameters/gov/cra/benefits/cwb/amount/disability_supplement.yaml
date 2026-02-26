@@ -1,6 +1,9 @@
 description: The maximum supplement amount allowed under the canada workers benefit.
 values:
   2022-12-31: 720
+  2023-12-31: 784
+  2024-12-31: 821
+  2025-12-31: 843
 metadata:
   unit: currency-CAD
   period: year

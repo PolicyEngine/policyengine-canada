@@ -1,6 +1,10 @@
 description: Maximum amount that can be received per eligible child under the canada child disability benefit.
 values:
   2021-01-01: 2_985
+  2022-07-01: 2_985
+  2023-07-01: 3_173
+  2024-07-01: 3_322
+  2025-07-01: 3_411
 metadata:
   unit: currency-CAD
   period: year

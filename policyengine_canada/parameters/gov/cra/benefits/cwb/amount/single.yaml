@@ -1,6 +1,9 @@
 description: The maximum base amount allowed for single filers under the canada workers benefit.
 values:
   2022-12-31: 1_395
+  2023-12-31: 1_518
+  2024-12-31: 1_590
+  2025-12-31: 1_633
 metadata:
   unit: currency-CAD
   period: year

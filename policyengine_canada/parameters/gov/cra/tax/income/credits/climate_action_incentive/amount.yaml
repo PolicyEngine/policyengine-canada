@@ -3,47 +3,131 @@ description: The climate action program provides the following amounts by provin
 HEAD:
   AB:
     2022-07-01: 539
+    2023-07-01: 772
+    2024-07-01: 900
   MB:
     2022-07-01: 416
+    2023-07-01: 528
+    2024-07-01: 600
+  NB:
+    2023-07-01: 368
+    2024-07-01: 380
+  NL:
+    2023-07-01: 656
+    2024-07-01: 596
+  NS:
+    2023-07-01: 496
+    2024-07-01: 412
   ONT:
     2022-07-01: 373
+    2023-07-01: 488
+    2024-07-01: 560
+  PE:
+    2023-07-01: 480
+    2024-07-01: 440
   SK:
     2022-07-01: 550
+    2023-07-01: 680
+    2024-07-01: 752
 SPOUSE:
   AB:
     2022-07-01: 270
+    2023-07-01: 386
+    2024-07-01: 450
   MB:
     2022-07-01: 208
+    2023-07-01: 264
+    2024-07-01: 300
+  NB:
+    2023-07-01: 184
+    2024-07-01: 190
+  NL:
+    2023-07-01: 328
+    2024-07-01: 298
+  NS:
+    2023-07-01: 248
+    2024-07-01: 206
   ONT:
     2022-07-01: 186
+    2023-07-01: 244
+    2024-07-01: 280
+  PE:
+    2023-07-01: 240
+    2024-07-01: 220
   SK:
-    2022-07-01: 275 
+    2022-07-01: 275
+    2023-07-01: 340
+    2024-07-01: 376
 ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD:
   AB:
     2022-07-01: 270
+    2023-07-01: 386
+    2024-07-01: 450
   MB:
     2022-07-01: 208
+    2023-07-01: 264
+    2024-07-01: 300
+  NB:
+    2023-07-01: 184
+    2024-07-01: 190
+  NL:
+    2023-07-01: 328
+    2024-07-01: 298
+  NS:
+    2023-07-01: 248
+    2024-07-01: 206
   ONT:
     2022-07-01: 186
+    2023-07-01: 244
+    2024-07-01: 280
+  PE:
+    2023-07-01: 240
+    2024-07-01: 220
   SK:
     2022-07-01: 275
+    2023-07-01: 340
+    2024-07-01: 376
 OTHER_CHILD:
   AB:
     2022-07-01: 135
+    2023-07-01: 193
+    2024-07-01: 225
   MB:
     2022-07-01: 104
+    2023-07-01: 132
+    2024-07-01: 150
+  NB:
+    2023-07-01: 92
+    2024-07-01: 95
+  NL:
+    2023-07-01: 164
+    2024-07-01: 149
+  NS:
+    2023-07-01: 124
+    2024-07-01: 103
   ONT:
     2022-07-01: 93
+    2023-07-01: 122
+    2024-07-01: 140
+  PE:
+    2023-07-01: 120
+    2024-07-01: 110
   SK:
     2022-07-01: 138
+    2023-07-01: 170
+    2024-07-01: 188
 
 metadata:
   unit: currency-CAD
   period: year
-  label: Climate action amount 
+  label: Climate action amount
   reference:
     - title: Government of Canada - Climate action incentive payment
       href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/cai-payment.html
+    - title: Climate Action Incentive payment amounts for 2023-24
+      href: https://www.canada.ca/en/department-finance/news/2022/11/climate-action-incentive-payment-amounts-for-2023-24.html
+    - title: Canada Carbon Rebate amounts for 2024-25
+      href: https://www.canada.ca/en/department-finance/news/2024/02/canada-carbon-rebate-amounts-for-2024-25.html
   breakdown:
     - climate_action_incentive_category
     - province_code

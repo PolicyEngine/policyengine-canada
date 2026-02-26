@@ -1,6 +1,9 @@
 description: The annual amount you receive if you meet the age and residuence requirements but are _below_ the age threshold for the seniors increase
 values:
-  2022-01-01: 8226
+  2022-01-01: 8_226
+  2023-01-01: 8_492
+  2024-01-01: 8_732
+  2025-01-01: 8_881
 metadata:
   unit: currency-CAD
   name: old_age_security_pension_base_amount

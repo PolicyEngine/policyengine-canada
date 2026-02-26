@@ -2,10 +2,19 @@ description: This tax credit, introduced in 1986, is a refundable credit calcula
 
 HEAD:
   2022-07-01: 306
+  2023-07-01: 325
+  2024-07-01: 340
+  2025-07-01: 349
 SPOUSE:
   2022-07-01: 306
+  2023-07-01: 325
+  2024-07-01: 340
+  2025-07-01: 349
 CHILD:
   2022-07-01: 161
+  2023-07-01: 171
+  2024-07-01: 179
+  2025-07-01: 184
 
 metadata:
   unit: currency-CAD
