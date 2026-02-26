@@ -15,6 +15,9 @@ brackets:
   - threshold:
       values:
         2022-12-31: 26_177
+        2023-12-31: 28_494
+        2024-12-31: 29_833
+        2025-12-31: 30_639
     rate:
       values:
         2022-12-31: 0
@@ -32,3 +35,11 @@ metadata:
     href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2021-recovery-plan-for-jobs-growth-resilience/canada-workers-benefit-qa.html
   - title: Income Tax Act (Part I)(Division E)(Subdivision A.2)(1.3)(2)(A)(b)
     href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-96.html#h-299725
+  - title: CRA CWB phase-in for 2022 tax year (family threshold = $26,177, rate = 27%)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5007-tc/5007-tc-22e.pdf
+  - title: CRA CWB phase-in for 2023 tax year (family threshold = $28,494, rate = 27%)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5007-tc/5007-tc-23e.pdf
+  - title: CRA CWB phase-in for 2024 tax year (family threshold = $29,833, rate = 27%)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5007-tc/5007-tc-24e.pdf
+  - title: CRA CWB phase-in for 2025 tax year (family threshold = $30,639, rate = 27%)
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5007-tc/5007-tc-25e.pdf
