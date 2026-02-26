@@ -1,4 +1,5 @@
 description: Canada supplements the climate action incentive amount for rural citizens of the provinces.
+# Effective date uses July 1 to align with benefit payment year (Apr-Mar)
 values:
   2022-07-01: 0.1
   2024-07-01: 0.2

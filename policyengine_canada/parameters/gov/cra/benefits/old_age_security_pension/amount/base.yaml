@@ -6,6 +6,7 @@ values:
   2025-01-01: 8_881
 metadata:
   unit: currency-CAD
+  period: year
   name: old_age_security_pension_base_amount
   label: Old Age Security Pension Base Amount
   reference:

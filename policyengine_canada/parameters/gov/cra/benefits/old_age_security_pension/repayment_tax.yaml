@@ -29,10 +29,12 @@ brackets:
         2023-12-31: 0.15
         2024-12-31: 0.15
 
+# Date keys use YYYY-12-31 convention: e.g. 2024-12-31 applies to the 2025 tax year
 metadata:
   type: marginal_rate
   rate_unit: /1
   threshold_unit: currency-CAD
+  period: year
   label: Repayment tax
   reference:
     - title: Government of Canada - Old Age Security Pension Recovery Tax

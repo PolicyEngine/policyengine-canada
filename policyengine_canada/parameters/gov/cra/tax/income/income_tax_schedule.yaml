@@ -24,7 +24,7 @@ brackets:
       values:
         2019-01-01: 95_259
         2020-01-01: 97_069
-        2021-01-01: 98_040 
+        2021-01-01: 98_040
         2022-01-01: 100_392
         2023-01-01: 106_717
         2024-01-01: 111_733
@@ -36,7 +36,7 @@ brackets:
       values:
         2019-01-01: 147_667
         2020-01-01: 150_473
-        2021-01-01: 151_978 
+        2021-01-01: 151_978
         2022-01-01: 155_625
         2023-01-01: 165_430
         2024-01-01: 173_205
@@ -71,16 +71,16 @@ metadata:
   - title: T4127 Payroll Deductions Formulas - 113th Edition (2021 rates)
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-113th-edition-effective-january-1-2021/t4127-jan-payroll-deductions-formulas-computer-programs.html
   # 2022 rates
-  - title: T4127 Payroll Deductions Formulas - 115th Edition (2022 rates)
+  - title: T4127 Payroll Deductions Formulas - 115th Edition (2022 brackets at 15%/20.5%/26%/29%/33%)
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-115th-edition-effective-january-1-2022/t4127-jan-payroll-deductions-formulas-computer-programs.html
   # 2023 rates
-  - title: T4127 Payroll Deductions Formulas - 117th Edition (2023 rates)
+  - title: T4127 Payroll Deductions Formulas - 117th Edition (2023 brackets at 15%/20.5%/26%/29%/33%)
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-117th-edition-effective-january-1-2023/t4127-jan-payroll-deductions-formulas.html
   # 2024 rates
-  - title: T4127 Payroll Deductions Formulas - 119th Edition (2024 rates)
+  - title: T4127 Payroll Deductions Formulas - 119th Edition (2024 brackets at 15%/20.5%/26%/29%/33%)
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-119th-edition-effective-january-1-2024/t4127-jan-payroll-deductions-formulas-computer-programs.html
-  # 2025 rates
-  - title: T4127 Payroll Deductions Formulas - 120th Edition (2025 rates)
+  # 2025 rates — first bracket rate reduced from 15% to 14.5% pending enactment
+  - title: T4127 Payroll Deductions Formulas - 120th Edition (2025 brackets at 14.5%/20.5%/26%/29%/33%)
     href: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4127-payroll-deductions-formulas/t4127-jan/t4127-jan-payroll-deductions-formulas-computer-programs.html
   - title: Department of Finance - Delivering a middle-class tax cut (2025 rate reduction)
     href: https://www.canada.ca/en/department-finance/news/2025/05/delivering-a-middle-class-tax-cut.html
