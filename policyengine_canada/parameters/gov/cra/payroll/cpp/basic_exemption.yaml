@@ -1,0 +1,10 @@
+description: Basic exemption amount for Canada Pension Plan contributions
+values:
+  2020-01-01: 3_500
+metadata:
+  unit: currency-CAD
+  period: year
+  label: CPP basic exemption
+  reference:
+    - title: CPP contribution rates, maximums and exemptions
+      href: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html

@@ -1,0 +1,95 @@
+subagents:
+  policyengine-rules-reviewer:
+    name: PolicyEngine Rules PR Reviewer
+    description: Reviews PolicyEngine pull requests implementing tax/benefit rules for accuracy and completeness
+    version: 1.0.0
+    enabled: true
+    
+    activation:
+      # Activate when these patterns are found in user requests
+      patterns:
+        - "review.*PR"
+        - "check.*PR"  
+        - "validate.*PR"
+        - "verify.*parameter"
+        - "check.*calculation"
+        - "review.*implementation"
+        - "validate.*rules"
+        - "PolicyEngine.*PR"
+      
+      # Also activate for these file patterns in PRs
+      file_patterns:
+        - "parameters/**/*.yaml"
+        - "variables/**/benefits/*.py"
+        - "variables/**/tax/*.py"
+        - "tests/**/*.yaml"
+    
+    capabilities:
+      source_verification:
+        description: Verify parameter values against government sources
+        tools_used:
+          - WebFetch
+          - WebSearch
+        
+      calculation_validation:
+        description: Validate formulas match legislation
+        tools_used:
+          - Read
+          - Python evaluation
+          
+      completeness_checking:
+        description: Identify missing policy components
+        tools_used:
+          - Grep
+          - Read
+          
+      test_reconstruction:
+        description: Manually calculate test cases
+        tools_used:
+          - Mathematical calculation
+          
+      documentation_review:
+        description: Check documentation quality
+        tools_used:
+          - Read
+          - Markdown validation
+    
+    review_scope:
+      countries:
+        - CA  # Canada
+        - US  # United States
+        - UK  # United Kingdom
+        
+      domains:
+        - tax_calculation
+        - benefit_calculation
+        - eligibility_determination
+        - parameter_updates
+        - formula_implementation
+    
+    output:
+      format: markdown
+      sections:
+        - source_verification
+        - discrepancies
+        - missing_components
+        - test_validation
+        - documentation_issues
+        - recommendations
+        - confidence_level
+      
+    quality_checks:
+      - parameter_accuracy
+      - formula_correctness
+      - test_coverage
+      - documentation_completeness
+      - edge_case_handling
+      - period_handling
+      - entity_level_correctness
+      
+    escalation_triggers:
+      - ambiguous_source_documentation
+      - conflicting_interpretations
+      - high_monetary_impact
+      - legal_compliance_issues
+      - cross_jurisdiction_complexity
