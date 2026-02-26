@@ -1,6 +1,6 @@
 [project]
 name = "policyengine-canada"
-version = "0.97.2"
+version = "0.97.3"
 description = "Microsimulation model for Canada's tax-benefit system."
 readme = "README.md"
 authors = [

@@ -1,3 +1,10 @@
+## [0.97.3] - 2026-02-26
+
+### Fixed
+
+- Fixed documentation build by using jupyter-book CLI command directly.
+
+
 ## [0.97.2] - 2026-02-26
 
 ### Fixed
