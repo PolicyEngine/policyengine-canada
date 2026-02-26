@@ -1,0 +1,10 @@
+description: Employment Insurance benefit replacement rate
+values:
+  2020-01-01: 0.55
+metadata:
+  unit: /1
+  period: year
+  label: EI benefit rate
+  reference:
+    - title: Employment Insurance benefit amounts
+      href: https://www.canada.ca/en/services/benefits/ei/ei-regular-benefit/benefit-amount.html
