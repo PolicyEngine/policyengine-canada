@@ -41,7 +41,7 @@ dependencies = [
 dev = [
     "build",
     "furo",
-    "jupyter-book",
+    "jupyter-book<2",
     "markupsafe",
     "pydata-sphinx-theme",
     "sphinx",
