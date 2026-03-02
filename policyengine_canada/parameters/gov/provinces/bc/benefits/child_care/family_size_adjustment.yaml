@@ -6,5 +6,7 @@ metadata:
   period: year
   label: BC Affordable Child Care Benefit family size adjustment
   reference:
-    - title: BC Affordable Child Care Benefit Eligibility
+    - title: BC Affordable Child Care Benefit — Eligibility, family size income adjustment
       href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit/information-for-families/eligibility-estimate-funding
+    - title: Child Care Subsidy Regulation, B.C. Reg. 74/2018
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/74_2018

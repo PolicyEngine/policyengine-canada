@@ -6,5 +6,7 @@ metadata:
   period: month
   label: BC Affordable Child Care Benefit max for under 19 months
   reference:
-    - title: BC Affordable Child Care Benefit Rates
+    - title: BC Affordable Child Care Benefit — Maximum monthly benefit for children under 19 months
       href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit/information-for-families/rates-payments
+    - title: Child Care Subsidy Regulation, B.C. Reg. 74/2018
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/74_2018

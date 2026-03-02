@@ -7,5 +7,7 @@ metadata:
   unit: year
   label: BC ACCB preschool age threshold
   reference:
-    - title: BC Affordable Child Care Benefit Rates
+    - title: BC Affordable Child Care Benefit — Rates and payments, preschool age threshold
       href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit/information-for-families/rates-payments
+    - title: Child Care Subsidy Regulation, B.C. Reg. 74/2018
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/74_2018

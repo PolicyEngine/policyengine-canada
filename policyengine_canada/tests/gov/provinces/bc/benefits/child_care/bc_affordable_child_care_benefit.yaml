@@ -127,3 +127,47 @@
         adjusted_family_net_income: 75_000
   output:
     bc_affordable_child_care_benefit: 3_600  # Partial benefit due to income phase-out
+
+# --- Boundary tests: income at exactly $111,000 limit (S12) ---
+
+- name: Boundary - income exactly at $111,000 limit (eligible but fully phased out)
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 3
+        is_child: true
+    households:
+      household:
+        province_code: BC
+        members: [parent, child]
+        adjusted_family_net_income: 111_000
+  output:
+    # 2-person household: family_size_adjustment = max(0, 2 - 2) * $2,000 = $0
+    # adjusted_income = $111,000
+    # adjusted_income <= income_limit ($111,000) => eligible = true
+    # benefit_rate = max(0, 1 - (111,000 - 45,000) / (111,000 - 45,000)) = 0
+    # Benefit = $550 * 12 * 0 = $0
+    bc_affordable_child_care_benefit: 0
+
+- name: Boundary - income $111,001 just above limit (ineligible)
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 3
+        is_child: true
+    households:
+      household:
+        province_code: BC
+        members: [parent, child]
+        adjusted_family_net_income: 111_001
+  output:
+    # 2-person household: family_size_adjustment = $0
+    # adjusted_income = $111,001 > income_limit ($111,000) => eligible = false
+    # Benefit = $0
+    bc_affordable_child_care_benefit: 0

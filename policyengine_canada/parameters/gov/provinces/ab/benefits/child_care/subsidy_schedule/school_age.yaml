@@ -1,4 +1,4 @@
-description: Alberta provides this monthly child care subsidy amount for school-age children (Grades 1-6) in licensed facility-based care, based on family income.
+description: Alberta provides this amount as the monthly child care subsidy for school-age children under the Alberta Child Care Subsidy program.
 brackets:
   - threshold:
       2024-01-01: 0
@@ -7,31 +7,31 @@ brackets:
   - threshold:
       2024-01-01: 50_000
     amount:
-      2024-01-01: 310
+      2024-01-01: 348
   - threshold:
       2024-01-01: 55_000
     amount:
-      2024-01-01: 254
+      2024-01-01: 311
   - threshold:
       2024-01-01: 60_000
     amount:
-      2024-01-01: 198
+      2024-01-01: 275
   - threshold:
       2024-01-01: 65_000
     amount:
-      2024-01-01: 143
+      2024-01-01: 238
   - threshold:
       2024-01-01: 70_000
     amount:
-      2024-01-01: 131
+      2024-01-01: 201
   - threshold:
       2024-01-01: 75_000
     amount:
-      2024-01-01: 118
+      2024-01-01: 165
   - threshold:
       2024-01-01: 80_000
     amount:
-      2024-01-01: 105
+      2024-01-01: 128
   - threshold:
       2024-01-01: 85_000
     amount:
@@ -47,5 +47,7 @@ metadata:
   threshold_unit: currency-CAD
   label: Alberta child care subsidy schedule (school-age, facility-based)
   reference:
-    - title: Alberta Child Care Subsidy
+    - title: Alberta Child Care Subsidy — School-age monthly rates by income bracket (2024)
       href: https://www.alberta.ca/child-care-subsidy
+    - title: Alberta Child Care Licensing Regulation, AR 143/2008, Schedule 4
+      href: https://www.canlii.org/en/ab/laws/regu/alta-reg-143-2008/latest/alta-reg-143-2008.html
