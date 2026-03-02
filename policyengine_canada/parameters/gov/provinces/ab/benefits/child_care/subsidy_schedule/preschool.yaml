@@ -1,0 +1,67 @@
+description: Alberta provides this monthly child care subsidy amount for preschool-age children in licensed facility-based care, based on family income.
+brackets:
+  - threshold:
+      2024-01-01: 0
+    amount:
+      2024-01-01: 266
+  - threshold:
+      2024-01-01: 120_000
+    amount:
+      2024-01-01: 252
+  - threshold:
+      2024-01-01: 125_000
+    amount:
+      2024-01-01: 239
+  - threshold:
+      2024-01-01: 130_000
+    amount:
+      2024-01-01: 225
+  - threshold:
+      2024-01-01: 135_000
+    amount:
+      2024-01-01: 212
+  - threshold:
+      2024-01-01: 140_000
+    amount:
+      2024-01-01: 200
+  - threshold:
+      2024-01-01: 145_000
+    amount:
+      2024-01-01: 186
+  - threshold:
+      2024-01-01: 150_000
+    amount:
+      2024-01-01: 173
+  - threshold:
+      2024-01-01: 155_000
+    amount:
+      2024-01-01: 159
+  - threshold:
+      2024-01-01: 160_000
+    amount:
+      2024-01-01: 146
+  - threshold:
+      2024-01-01: 165_000
+    amount:
+      2024-01-01: 133
+  - threshold:
+      2024-01-01: 170_000
+    amount:
+      2024-01-01: 119
+  - threshold:
+      2024-01-01: 175_000
+    amount:
+      2024-01-01: 106
+  - threshold:
+      2024-01-01: 180_000
+    amount:
+      2024-01-01: 0
+
+metadata:
+  type: single_amount
+  rate_unit: currency-CAD
+  threshold_unit: currency-CAD
+  label: Alberta child care subsidy schedule (preschool, facility-based)
+  reference:
+    - title: Alberta Child Care Subsidy
+      href: https://www.alberta.ca/child-care-subsidy

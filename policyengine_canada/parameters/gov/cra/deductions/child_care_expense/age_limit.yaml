@@ -1,9 +1,12 @@
-description: Maximum age for child care expense deduction eligibility (unless disabled)
+description: The Income Tax Act sets this maximum age for a child to qualify for the child care expense deduction, unless the child has a disability.
 values:
   2015-01-01: 16
 metadata:
   unit: year
+  period: year
   label: Child care expense deduction age limit
   reference:
-    - title: Line 21400 – Child care expenses
-      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-21400-child-care-expenses.html
+    - title: Income Tax Act, s. 63(3) — definition of "eligible child"
+      href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-63.html
+    - title: CRA T778 Child Care Expenses Deduction (2024), Part A
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t778/t778-24e.pdf#page=2

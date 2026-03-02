@@ -1,10 +1,12 @@
-description: British Columbia provides the maximum Affordable Child Care Benefit to families with adjusted income at or below this amount.
+description: >-
+  British Columbia applies the family size income adjustment for each
+  household member beyond this base count for the Affordable Child Care
+  Benefit.
 values:
-  2018-01-01: 45_000
+  2018-01-01: 2
 metadata:
-  unit: currency-CAD
-  period: year
-  label: BC Affordable Child Care Benefit maximum benefit threshold
+  unit: person
+  label: BC ACCB base family size
   reference:
     - title: BC Affordable Child Care Benefit Eligibility
       href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit/information-for-families/eligibility-estimate-funding

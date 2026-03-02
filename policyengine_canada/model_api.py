@@ -5,7 +5,6 @@ from policyengine_canada.variables.household.demographic.geographic.province.pro
 )
 from policyengine_canada.tools.general import *
 
-
 CAD = "currency-CAD"
 
 

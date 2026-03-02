@@ -5,62 +5,36 @@ class ab_child_care_subsidy(Variable):
     value_type = float
     entity = Household
     label = "Alberta Child Care Subsidy"
-    documentation = "Income-tested subsidy to help Alberta families with child care costs (2024 income-based model, before April 2025 flat-fee changes)"
     unit = CAD
-    definition_period = YEAR  # Annual total of monthly subsidies
+    definition_period = YEAR
     defined_for = ProvinceCode.AB
     reference = "https://www.alberta.ca/child-care-subsidy"
 
     def formula(household, period, parameters):
-        # Get family income
-        income = household("adjusted_family_net_income", period)
         p = parameters(period).gov.provinces.ab.benefits.child_care
+        income = household("adjusted_family_net_income", period)
 
         person = household.members
         age = person("age", period)
-        is_child = person("is_child", period)
 
-        # Different income limits for different age groups
-        # Ages 0-5 (preschool): income must be under $180,000
-        # Kindergarten-Grade 6 (ages 5-12): income must be under $90,000
-        preschool_age = age < 5
-        school_age = (age >= 5) & (age <= 12)
+        # Per alberta.ca, subsidy depends on child age group
+        preschool_age = p.age_threshold.preschool
+        school_age_max = p.age_threshold.school_age_max
 
-        preschool_eligible = preschool_age & (
-            income < p.income_limit_preschool
-        )
-        school_age_eligible = school_age & (income < p.income_limit_school_age)
+        is_preschool = age < preschool_age
+        is_school_age = (age >= preschool_age) & (age <= school_age_max)
 
-        # Simplified monthly subsidy amounts (varies by income in reality)
-        # Using base amounts - actual amounts vary by income level
-        # These are average/representative amounts
+        # Look up monthly subsidy from income bracket tables
+        preschool_monthly = p.subsidy_schedule.preschool.calc(income)
+        school_age_monthly = p.subsidy_schedule.school_age.calc(income)
+
         monthly_subsidy = where(
-            preschool_eligible,
-            p.base_subsidy.preschool,
-            where(school_age_eligible, p.base_subsidy.school_age, 0),
+            is_preschool,
+            preschool_monthly,
+            where(is_school_age, school_age_monthly, 0),
         )
 
-        # Apply income-based reduction for higher incomes
-        # Simplified: full subsidy below threshold, linear phase-out to income limit
-        income_limit = where(
-            preschool_age, p.income_limit_preschool, p.income_limit_school_age
-        )
-        phase_out_start = income_limit * p.phase_out_start_fraction
+        # Annual subsidy = monthly amount * 12 months
+        annual_per_child = monthly_subsidy * 12
 
-        subsidy_rate = where(
-            income <= phase_out_start,
-            1.0,
-            max_(
-                0, (income_limit - income) / (income_limit - phase_out_start)
-            ),
-        )
-
-        # Annual subsidy = monthly subsidy * 12 * subsidy_rate * eligible
-        eligible = preschool_eligible | school_age_eligible
-        annual_subsidy_per_child = (
-            monthly_subsidy * 12 * subsidy_rate * is_child * eligible
-        )
-
-        # Sum across all children
-        total = household.sum(annual_subsidy_per_child)
-        return np.round(total, 2)
+        return household.sum(annual_per_child)

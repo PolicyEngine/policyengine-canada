@@ -12,5 +12,4 @@ class deductions_from_total_to_net_income(Variable):
 
     adds = [
         "child_care_expense_deduction_person",
-        "canadian_armed_forces_and_personnel_deduction",
     ]

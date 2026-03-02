@@ -1,9 +1,12 @@
-description: Age threshold for Ontario CARE credit max amounts (under this age gets higher amount)
+description: Ontario uses this age threshold to determine the maximum Childcare Access and Relief from Expenses tax credit amount per child.
 values:
   2019-01-01: 7
 metadata:
   unit: year
+  period: year
   label: Ontario CARE credit age threshold
   reference:
-    - title: Ontario Child Care Tax Credit
-      href: https://www.ontario.ca/page/ontario-child-care-tax-credit
+    - title: Ontario Taxation Act, 2007, s. 103.0.3
+      href: https://www.ontario.ca/laws/statute/07o11#BK181
+    - title: CRA ON479-A Schedule
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-24e.pdf#page=1

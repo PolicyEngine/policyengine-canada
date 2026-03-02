@@ -8,29 +8,31 @@ class child_care_expense_deduction(Variable):
     documentation = "Federal deduction for child care expenses (line 21400). In two-parent households, typically claimed by the lower-income spouse."
     unit = CAD
     definition_period = YEAR
-    reference = "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-21400-child-care-expenses.html"
+    reference = (
+        "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-63.html",
+        "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t778/t778-24e.pdf",
+    )
 
     def formula(household, period, parameters):
-        # Get household members
         person = household.members
 
-        # Get childcare expenses and maximums for all members
+        # Step 1: Cap each child's expenses at their per-child maximum
         expenses = person("childcare_expense", period)
         max_per_child = person(
             "child_care_expense_deduction_max_per_child", period
         )
-
-        # Cap each child's expenses at their maximum
         capped_expenses = min_(expenses, max_per_child)
-
-        # Sum capped expenses to household level
         total_household_expenses = household.sum(capped_expenses)
 
-        # Apply the 2/3 earned income limit
-        # Use family employment income as the base
-        family_earned_income = household("family_employment_income", period)
+        # Step 2: Apply 2/3 earned income limit per ITA s. 63(1)(e)
+        # "Earned income" per ITA s. 63(3) includes employment income
+        # and net self-employment income (plus scholarships, CPP/QPP
+        # disability, and training allowances not yet modelled).
+        family_earned_income = household.sum(
+            person("employment_income", period)
+            + person("self_employment_income", period)
+        )
         p = parameters(period).gov.cra.deductions.child_care_expense
         earned_income_limit = family_earned_income * p.earned_income_fraction
 
-        # The deduction is the lesser of total expenses and 2/3 earned income
         return min_(total_household_expenses, earned_income_limit)

@@ -1,10 +1,11 @@
-description: British Columbia provides this maximum monthly Affordable Child Care Benefit for school-age children in licensed group care.
+description: >-
+  British Columbia applies the school-age benefit rate starting at this age
+  for the Affordable Child Care Benefit.
 values:
-  2018-01-01: 415
+  2018-01-01: 5
 metadata:
-  unit: currency-CAD
-  period: month
-  label: BC Affordable Child Care Benefit max for school age
+  unit: year
+  label: BC ACCB school age threshold
   reference:
     - title: BC Affordable Child Care Benefit Rates
       href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit/information-for-families/rates-payments

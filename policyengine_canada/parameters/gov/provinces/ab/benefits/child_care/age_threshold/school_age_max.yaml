@@ -1,0 +1,10 @@
+description: Alberta applies the school-age child care subsidy schedule to children up to and including this age.
+values:
+  2024-01-01: 12
+metadata:
+  unit: year
+  period: year
+  label: Alberta child care subsidy school-age maximum age
+  reference:
+    - title: Alberta Child Care Subsidy
+      href: https://www.alberta.ca/child-care-subsidy

@@ -1,4 +1,4 @@
-description: Maximum deductible child care expenses for children with disabilities
+description: The Income Tax Act sets this maximum annual child care expense amount for a child eligible for the disability tax credit.
 values:
   2015-01-01: 11_000
 metadata:
@@ -6,5 +6,7 @@ metadata:
   period: year
   label: Child care expense limit for children with disabilities
   reference:
-    - title: Line 21400 – Child care expenses
-      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-21400-child-care-expenses.html
+    - title: Income Tax Act, s. 63(3) — "annual child care expense amount", paragraph (a)
+      href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-63.html
+    - title: CRA T778 Child Care Expenses Deduction (2024), Part B
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t778/t778-24e.pdf#page=3

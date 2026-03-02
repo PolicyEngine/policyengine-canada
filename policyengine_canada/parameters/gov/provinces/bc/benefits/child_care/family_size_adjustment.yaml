@@ -1,8 +1,9 @@
-description: Income reduction per family member beyond the first two for BC Affordable Child Care Benefit
+description: British Columbia reduces adjusted family income by this amount per family member beyond the first two for the Affordable Child Care Benefit.
 values:
   2018-01-01: 2_000
 metadata:
   unit: currency-CAD
+  period: year
   label: BC Affordable Child Care Benefit family size adjustment
   reference:
     - title: BC Affordable Child Care Benefit Eligibility

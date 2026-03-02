@@ -93,3 +93,49 @@
   output:
     child_care_expense_deduction: 13_000  # $8,000 (child1 capped) + $5,000 (child2 capped)
     child_care_expense_deduction_person: [13_000, 0, 0]
+
+- name: Child care expense deduction where 2/3 earned income is binding constraint
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    people:
+      parent:
+        employment_income: 9_000
+      child:
+        age: 5
+        childcare_expense: 8_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    # Per-child cap: min($8,000 expenses, $8,000 under-7 limit) = $8,000
+    # 2/3 earned income limit: $9,000 * 0.6667 = $6,000 (binding)
+    # Deduction = min($8,000, $6,000) = $6,000
+    child_care_expense_deduction: 6_000
+    child_care_expense_deduction_person: [6_000, 0]
+
+- name: Two-parent household - deduction claimed by lower-income spouse
+  period: 2024
+  input:
+    people:
+      adult1:
+        employment_income: 80_000
+      adult2:
+        employment_income: 30_000
+      child:
+        age: 5
+        childcare_expense: 10_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [adult1, adult2, child]
+  output:
+    # Per-child cap: min($10,000 expenses, $8,000 under-7 limit) = $8,000
+    # 2/3 family earned income: ($80,000 + $30,000) * 0.6667 = $73,337 (not binding)
+    # Household deduction = $8,000
+    # Allocated to lower-income spouse (adult2 with $30,000)
+    child_care_expense_deduction: 8_000
+    child_care_expense_deduction_person: [0, 8_000, 0]

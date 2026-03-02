@@ -5,15 +5,15 @@ class bc_child_care_fee_reduction(Variable):
     value_type = float
     entity = Household
     label = "BC Child Care Fee Reduction Initiative"
-    documentation = "Fee reduction for families at participating BC child care facilities (not income-tested)"
     unit = CAD
-    definition_period = YEAR  # Annual total of monthly fee reductions
+    definition_period = YEAR
     defined_for = ProvinceCode.BC
-    reference = "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-fee-reduction-initiative-provider-opt-in-status"
+    reference = (
+        "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-fee-reduction-initiative-provider-opt-in-status",
+        "https://www2.gov.bc.ca/assets/gov/family-and-social-supports/child-care/childcarebc-programs/ccfri/ccfri_funding_guidelines_24_25.pdf#page=5",
+    )
 
     def formula(household, period, parameters):
-        # This benefit is available to all families with children 12 and under
-        # at participating facilities (not income-tested)
         p = parameters(
             period
         ).gov.provinces.bc.benefits.child_care_fee_reduction
@@ -21,27 +21,28 @@ class bc_child_care_fee_reduction(Variable):
         person = household.members
         age = person("age", period)
 
-        # Eligible children are 12 and under
         is_eligible = age <= p.max_age
 
-        # Maximum monthly fee reduction amounts by age group
-        # Simplified to use main age categories
-        monthly_reduction = where(
-            age < 3,  # Infant/toddler
-            p.max_reduction.infant_toddler,
-            where(
-                age < 5,  # Preschool (3-5)
+        # Age boundaries per CCFRI Funding Guidelines Table 1
+        preschool_age = p.age.preschool
+        kindergarten_age = p.age.kindergarten
+        school_age_start = p.age.school_age
+
+        is_infant_toddler = age < preschool_age
+        is_preschool = (age >= preschool_age) & (age < kindergarten_age)
+        is_kindergarten = (age >= kindergarten_age) & (age < school_age_start)
+        is_school_age = (age >= school_age_start) & is_eligible
+
+        monthly_reduction = select(
+            [is_infant_toddler, is_preschool, is_kindergarten, is_school_age],
+            [
+                p.max_reduction.infant_toddler,
                 p.max_reduction.preschool,
-                where(
-                    age <= 12,  # School age (5-12)
-                    p.max_reduction.school_age,
-                    0,
-                ),
-            ),
+                p.max_reduction.kindergarten,
+                p.max_reduction.school_age,
+            ],
+            default=0,
         )
 
-        # Annual reduction = monthly reduction * 12 months * eligible
         annual_reduction_per_child = monthly_reduction * 12 * is_eligible
-
-        # Sum across all children
         return household.sum(annual_reduction_per_child)

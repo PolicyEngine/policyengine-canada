@@ -8,7 +8,10 @@ class child_care_expense_deduction_max_per_child(Variable):
     documentation = "Maximum deductible child care expenses per eligible child based on age and disability status"
     unit = CAD
     definition_period = YEAR
-    reference = "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-21400-child-care-expenses.html"
+    reference = (
+        "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-63.html",
+        "https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t778/t778-24e.pdf#page=3",
+    )
 
     def formula(person, period, parameters):
         age = person("age", period)
@@ -18,11 +21,7 @@ class child_care_expense_deduction_max_per_child(Variable):
         )
         p = parameters(period).gov.cra.deductions.child_care_expense
 
-        # Different limits based on age and disability
-        # $11,000 for children with disabilities (any age)
-        # $8,000 for children under 7
-        # $5,000 for children 7-16
-
+        # Per ITA s. 63(3) "annual child care expense amount"
         return where(
             is_eligible,
             where(

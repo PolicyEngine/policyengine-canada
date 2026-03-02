@@ -26,7 +26,22 @@
         province_code: BC
         members: [parent, child]
   output:
-    bc_child_care_fee_reduction: 1_740  # $145/month * 12
+    bc_child_care_fee_reduction: 6_540  # $545/month * 12
+
+- name: BC Child Care Fee Reduction - kindergarten age
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 5
+    households:
+      household:
+        province_code: BC
+        members: [parent, child]
+  output:
+    bc_child_care_fee_reduction: 3_840  # $320/month * 12
 
 - name: BC Child Care Fee Reduction - school age
   period: 2024
@@ -75,7 +90,7 @@
         province_code: BC
         members: [parent, child1, child2, child3]
   output:
-    bc_child_care_fee_reduction: 13_560  # $900 (infant/toddler) + $115 (school age 6) + $115 (school age 10) per month * 12
+    bc_child_care_fee_reduction: 13_560  # ($900 infant/toddler + $115 school age 6 + $115 school age 10) per month * 12
 
 - name: BC Child Care Fee Reduction - high income family (still eligible)
   period: 2024
@@ -91,4 +106,49 @@
         members: [parent, child]
         adjusted_family_net_income: 200_000
   output:
-    bc_child_care_fee_reduction: 1_740  # Not income-tested, $145/month * 12 for preschool age (3 years)
+    bc_child_care_fee_reduction: 6_540  # Not income-tested, $545/month * 12 for preschool age (3 years)
+
+- name: BC Child Care Fee Reduction - age 2 infant/toddler boundary
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 2
+    households:
+      household:
+        province_code: BC
+        members: [parent, child]
+  output:
+    bc_child_care_fee_reduction: 10_800  # Age 2 < 3 (preschool threshold), infant/toddler rate $900/month * 12
+
+- name: BC Child Care Fee Reduction - age 12 max eligible school age
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 12
+    households:
+      household:
+        province_code: BC
+        members: [parent, child]
+  output:
+    bc_child_care_fee_reduction: 1_380  # Age 12 <= max_age (12), school-age rate $115/month * 12
+
+- name: BC Child Care Fee Reduction - age 3 preschool boundary start
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 3
+    households:
+      household:
+        province_code: BC
+        members: [parent, child]
+  output:
+    bc_child_care_fee_reduction: 6_540  # Age 3 >= preschool threshold (3), preschool rate $545/month * 12
