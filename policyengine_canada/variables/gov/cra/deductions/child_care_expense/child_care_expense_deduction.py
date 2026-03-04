@@ -35,4 +35,6 @@ class child_care_expense_deduction(Variable):
         p = parameters(period).gov.cra.deductions.child_care_expense
         earned_income_limit = family_earned_income * p.earned_income_fraction
 
-        return min_(total_household_expenses, earned_income_limit)
+        # Prevent negative deduction when self-employment losses
+        # make earned_income_limit negative (ITA s. 63).
+        return max_(0, min_(total_household_expenses, earned_income_limit))
