@@ -8,25 +8,25 @@
     # adjusted_income = 10,000 + 8,000 = 18,000 -> rate 0.75 (2024 bracket 0-20,000)
     on_child_care_tax_credit: 6_000  # 0.75 * 8,000
 
-- name: Income in 75% bracket (adjusted $22,000)
+- name: Income in 73% bracket (adjusted $22,000)
   period: 2024
   input:
     family_net_income: 14_000
     child_care_expense_deduction: 8_000
     province_code: ONT
   output:
-    # adjusted_income = 14,000 + 8,000 = 22,000 -> rate 0.75 (2024 bracket 20,000-22,500)
-    on_child_care_tax_credit: 6_000  # 0.75 * 8,000
+    # adjusted_income = 14,000 + 8,000 = 22,000 -> rate 0.73 (bracket 20,000-22,500)
+    on_child_care_tax_credit: 5_840  # 0.73 * 8,000
 
-- name: Income in 73% bracket (adjusted $23,000)
+- name: Income in 71% bracket (adjusted $23,000)
   period: 2024
   input:
     family_net_income: 15_000
     child_care_expense_deduction: 8_000
     province_code: ONT
   output:
-    # adjusted_income = 15,000 + 8,000 = 23,000 -> rate 0.73 (2024 bracket 22,500-25,000)
-    on_child_care_tax_credit: 5_840  # 0.73 * 8,000
+    # adjusted_income = 15,000 + 8,000 = 23,000 -> rate 0.71 (bracket 22,500-25,000)
+    on_child_care_tax_credit: 5_680  # 0.71 * 8,000
 
 - name: Income in 53% bracket (adjusted $50,000)
   period: 2024

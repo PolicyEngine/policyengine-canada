@@ -7,63 +7,57 @@ brackets:
 
   - amount:
       2019-01-01: 0.73
-      2024-01-01: 0.75
     threshold:
       2019-01-01: 20_000
 
   - amount:
       2019-01-01: 0.71
-      2024-01-01: 0.73
     threshold:
       2019-01-01: 22_500
 
   - amount:
       2019-01-01: 0.69
-      2024-01-01: 0.71
     threshold:
       2019-01-01: 25_000
 
   - amount:
       2019-01-01: 0.67
-      2024-01-01: 0.69
     threshold:
       2019-01-01: 27_500
 
   - amount:
       2019-01-01: 0.65
-      2024-01-01: 0.67
     threshold:
       2019-01-01: 30_000
 
   - amount:
       2019-01-01: 0.63
-      2024-01-01: 0.65
     threshold:
       2019-01-01: 32_500
 
   - amount:
       2019-01-01: 0.61
-      2024-01-01: 0.63
     threshold:
       2019-01-01: 35_000
 
   - amount:
       2019-01-01: 0.59
-      2024-01-01: 0.61
     threshold:
       2019-01-01: 37_500
 
   - amount:
       2019-01-01: 0.57
-      2024-01-01: 0.59
     threshold:
       2019-01-01: 40_000
 
+  # NOTE: The $42,500 bracket exists in the 2019 ON479-A but not in 2024.
+  # In 2024, the table jumps from $40,000 to $45,000 in $5,000 steps.
+  # The 2024 threshold override merges this bracket into the $45,000 bracket.
   - amount:
       2019-01-01: 0.55
-      2024-01-01: 0.57
     threshold:
       2019-01-01: 42_500
+      2024-01-01: 45_000
 
   - amount:
       2019-01-01: 0.53
@@ -246,6 +240,9 @@ brackets:
       2019-01-01: 120_000
       2024-01-01: 139_200
 
+  # TODO: The 2019 ON479-A may have additional brackets between $120,000 and
+  # $146,400 (e.g., $122,500, $125,000, ... in $2,500 steps). The 2019 form
+  # is needed to verify whether the step size changes above $120,000.
   - amount:
       2019-01-01: 0.01
       2024-01-01: 0.03
@@ -274,5 +271,7 @@ metadata:
   reference:
     - title: Ontario Taxation Act, 2007, s. 103.0.3(7)
       href: https://www.ontario.ca/laws/statute/07o11#BK181
+    - title: CRA ON479-A Schedule (2019) -- CARE credit rate table
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-19e.pdf#page=2
     - title: CRA ON479-A Schedule (2024) — CARE credit rate table
       href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-24e.pdf#page=2

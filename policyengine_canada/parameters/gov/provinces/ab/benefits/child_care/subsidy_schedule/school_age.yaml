@@ -43,11 +43,11 @@ brackets:
 
 metadata:
   type: single_amount
-  rate_unit: currency-CAD
+  amount_unit: currency-CAD
   threshold_unit: currency-CAD
   label: Alberta child care subsidy schedule (school-age, facility-based)
   reference:
-    - title: Alberta Child Care Subsidy — School-age monthly rates by income bracket (2024)
+    - title: Alberta Child Care Subsidy Program — School-age monthly subsidy rates by family income (2024)
       href: https://www.alberta.ca/child-care-subsidy
-    - title: Alberta Child Care Licensing Regulation, AR 143/2008, Schedule 4
-      href: https://www.canlii.org/en/ab/laws/regu/alta-reg-143-2008/latest/alta-reg-143-2008.html
+    - title: Early Learning and Child Care Act, SA 2007, c E-0.1
+      href: https://www.canlii.org/en/ab/laws/stat/sa-2007-c-e-0.1/latest/sa-2007-c-e-0.1.html
