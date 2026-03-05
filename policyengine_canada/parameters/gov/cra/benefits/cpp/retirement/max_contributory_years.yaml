@@ -1,0 +1,10 @@
+description: The Canada Pension Plan sets this as the maximum number of contributory years used to calculate the retirement pension.
+values:
+  1966-01-01: 40
+metadata:
+  unit: year
+  period: year
+  label: CPP maximum contributory years
+  reference:
+    - title: Canada Pension Plan (R.S.C., 1985, c. C-8)
+      href: https://laws-lois.justice.gc.ca/eng/acts/c-8/page-5.html

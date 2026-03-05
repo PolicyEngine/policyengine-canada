@@ -8,3 +8,4 @@ class cpp_years_of_contribution(Variable):
     definition_period = YEAR
     unit = "year"
     documentation = "Number of years person has contributed to CPP"
+    reference = "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/amount.html"

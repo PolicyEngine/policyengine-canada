@@ -8,25 +8,22 @@ class cpp_retirement_pension(Variable):
     definition_period = YEAR
     unit = CAD
     documentation = "Annual CPP retirement pension amount"
-    
+    reference = "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/amount.html"
+
     def formula(person, period, parameters):
         p = parameters(period).gov.cra.benefits.cpp.retirement
-        
-        # Check eligibility
         eligible = person("cpp_retirement_eligible", period)
-        
-        # Simplified calculation based on years of contribution
-        # Use average between 0 and maximum based on contribution years
         years_contributed = person("cpp_years_of_contribution", period)
-        
-        # Assume full contributions after 40 years
-        contribution_factor = min_(years_contributed / 40, 1)
-        
-        # Calculate monthly amount between 0 and maximum
-        # For simplicity, use average as midpoint
-        monthly_amount = contribution_factor * p.average_monthly
-        
-        # Convert to annual
+
+        # Contribution factor: ratio of years contributed to maximum contributory period
+        max_years = p.max_contributory_years
+        contribution_factor = min_(years_contributed / max_years, 1)
+
+        # Scale average monthly by contribution factor, cap at maximum monthly
+        monthly_amount = min_(
+            p.average_monthly * contribution_factor,
+            p.maximum_monthly,
+        )
         annual_amount = monthly_amount * 12
-        
+
         return where(eligible, annual_amount, 0)

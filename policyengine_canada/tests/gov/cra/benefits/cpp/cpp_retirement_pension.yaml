@@ -41,8 +41,8 @@
     cpp_years_of_contribution: 45
   output:
     # Capped at 40 years = full average benefit
-    # $844.53 * 12 = $10,134.36
-    cpp_retirement_pension: 10_134.36
+    # $803.76 * 12 = $9,645.12
+    cpp_retirement_pension: 9_645.12
 
 - name: Minimum contribution scenario
   period: 2024
