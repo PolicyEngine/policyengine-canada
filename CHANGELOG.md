@@ -1,3 +1,10 @@
+## [0.98.0] - 2026-03-05
+
+### Added
+
+- Added child care expense deductions and provincial child care benefits (Ontario CARE credit, BC ACCB, BC CCFRI, Alberta subsidy).
+
+
 ## [0.97.3] - 2026-02-26
 
 ### Fixed
