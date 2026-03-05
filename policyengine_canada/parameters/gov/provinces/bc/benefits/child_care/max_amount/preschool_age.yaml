@@ -1,0 +1,12 @@
+description: British Columbia provides this maximum monthly Affordable Child Care Benefit for preschool-age children in licensed group care.
+values:
+  2018-01-01: 550
+metadata:
+  unit: currency-CAD
+  period: month
+  label: BC Affordable Child Care Benefit max for preschool age
+  reference:
+    - title: BC Affordable Child Care Benefit — Maximum monthly benefit for preschool-age children
+      href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit/information-for-families/rates-payments
+    - title: Early Learning and Child Care Regulation, B.C. Reg. 189/2024
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/189_2024

@@ -1,0 +1,14 @@
+description: >-
+  British Columbia applies the toddler benefit rate starting at this age
+  (in years) for the Affordable Child Care Benefit.
+values:
+  2018-01-01: 1.583
+metadata:
+  unit: year
+  period: year
+  label: BC ACCB toddler age threshold (19 months)
+  reference:
+    - title: BC Affordable Child Care Benefit — Rates and payments, toddler age threshold (19 months)
+      href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit/information-for-families/rates-payments
+    - title: Early Learning and Child Care Regulation, B.C. Reg. 189/2024
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/189_2024

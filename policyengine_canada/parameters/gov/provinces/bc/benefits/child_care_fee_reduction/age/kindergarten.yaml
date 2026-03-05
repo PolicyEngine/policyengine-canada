@@ -1,0 +1,12 @@
+description: >-
+  British Columbia applies the kindergarten fee reduction rate starting at
+  this age through the Child Care Fee Reduction Initiative.
+values:
+  2018-01-01: 5
+metadata:
+  unit: year
+  period: year
+  label: BC CCFRI kindergarten age threshold
+  reference:
+    - title: BC Child Care Fee Reduction Initiative Funding Guidelines 2024-25, Table 1
+      href: https://www2.gov.bc.ca/assets/gov/family-and-social-supports/child-care/childcarebc-programs/ccfri/ccfri_funding_guidelines_24_25.pdf#page=5

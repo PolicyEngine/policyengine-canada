@@ -1,0 +1,16 @@
+description: The Income Tax Act sets this maximum net income for an eligible child claiming the child care expense deduction.
+values:
+  2023-01-01: 15_000
+  2024-01-01: 15_705
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Child income limit for child care expense deduction
+  note: "Documents ITA s. 63(3)(b) child income limit. Not used in formula — implementing this check would create a circular dependency (child's net income depends on the deduction being calculated)."
+  reference:
+    - title: Income Tax Act, s. 63(3) — definition of "eligible child", paragraph (b)
+      href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-63.html
+    - title: CRA T778 Child Care Expenses Deduction (2024) — Eligible child income limit
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t778/t778-24e.pdf#page=2
+    - title: CRA T778 Child Care Expenses Deduction (2023) — Eligible child income limit
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t778/t778-23e.pdf#page=2

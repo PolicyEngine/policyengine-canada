@@ -1,0 +1,329 @@
+- name: Basic child care expense deduction for child under 7
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 50_000
+      child:
+        age: 5
+        childcare_expense: 10_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    child_care_expense_deduction: 8_000  # Capped at $8,000 for child under 7
+    child_care_expense_deduction_person: [8_000, 0]  # Only parent claims it
+
+- name: Child care expense deduction for child aged 7-16
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 40_000
+      child:
+        age: 10
+        childcare_expense: 6_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    child_care_expense_deduction: 5_000  # Capped at $5,000 for child 7-16
+    child_care_expense_deduction_person: [5_000, 0]
+
+- name: Child care expense deduction for disabled child
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 60_000
+      child:
+        age: 10
+        childcare_expense: 12_000
+        is_dependant: true
+        is_disabled: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    child_care_expense_deduction: 11_000  # Capped at $11,000 for disabled child
+    child_care_expense_deduction_person: [11_000, 0]
+
+- name: Child care expense deduction limited by 2/3 earned income
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 15_000
+      child:
+        age: 5
+        childcare_expense: 12_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    child_care_expense_deduction: 8_000  # Capped at $8,000 for child under 7, even though 2/3 of $15,000 = $10,000
+    child_care_expense_deduction_person: [8_000, 0]
+
+- name: Multiple children with different ages
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 80_000
+      child1:
+        age: 4
+        childcare_expense: 9_000
+        is_dependant: true
+        individual_net_income: 0
+      child2:
+        age: 12
+        childcare_expense: 6_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child1, child2]
+  output:
+    child_care_expense_deduction: 13_000  # $8,000 (child1 capped) + $5,000 (child2 capped)
+    child_care_expense_deduction_person: [13_000, 0, 0]
+
+- name: Child care expense deduction where 2/3 earned income is binding constraint
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    people:
+      parent:
+        employment_income: 9_000
+      child:
+        age: 5
+        childcare_expense: 8_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    # Per-child cap: min($8,000 expenses, $8,000 under-7 limit) = $8,000
+    # 2/3 earned income limit: $9,000 * 0.6667 = $6,000 (binding)
+    # Deduction = min($8,000, $6,000) = $6,000
+    child_care_expense_deduction: 6_000
+    child_care_expense_deduction_person: [6_000, 0]
+
+- name: Two-parent household - deduction claimed by lower-income spouse
+  period: 2024
+  input:
+    people:
+      adult1:
+        employment_income: 80_000
+      adult2:
+        employment_income: 30_000
+      child:
+        age: 5
+        childcare_expense: 10_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [adult1, adult2, child]
+  output:
+    # Per-child cap: min($10,000 expenses, $8,000 under-7 limit) = $8,000
+    # 2/3 claimant earned income: $30,000 * 0.6667 = $20,001 (not binding)
+    # Household deduction = $8,000
+    # Allocated to lower-income spouse (adult2 with $30,000)
+    child_care_expense_deduction: 8_000
+    child_care_expense_deduction_person: [0, 8_000, 0]
+
+- name: Two-parent household - 2/3 earned income uses claimant only
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    people:
+      high_earner:
+        employment_income: 60_000
+      low_earner:
+        employment_income: 6_000
+      child:
+        age: 5
+        childcare_expense: 8_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [high_earner, low_earner, child]
+  output:
+    # Per-child cap: min($8,000 expenses, $8,000 under-7 limit) = $8,000
+    # Claimant is low_earner (lower income, $6,000)
+    # Per ITA s. 63(1)(e): 2/3 of claimant's earned income = $6,000 * 0.6667 = $4,000 (binding)
+    # If family income were used: 2/3 * $66,000 = $44,000 (not binding) - WRONG
+    # Deduction = min($8,000, $4,000) = $4,000
+    child_care_expense_deduction: 4_000
+    child_care_expense_deduction_person: [0, 4_000, 0]
+
+# --- Boundary tests: age 6 vs 7 threshold (S9) ---
+
+- name: Boundary - child age 6 gets under-7 limit ($8,000)
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 50_000
+      child:
+        age: 6
+        childcare_expense: 10_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    # age 6 < age_threshold 7, so under_7 limit = $8,000
+    # min($10,000 expenses, $8,000 limit) = $8,000
+    # 2/3 earned income: $50,000 * 0.6667 = $33,335 (not binding)
+    child_care_expense_deduction: 8_000
+    child_care_expense_deduction_person: [8_000, 0]
+
+- name: Boundary - child age 7 gets over-7 limit ($5,000)
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 50_000
+      child:
+        age: 7
+        childcare_expense: 10_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    # age 7 is NOT < age_threshold 7, so over_7 limit = $5,000
+    # min($10,000 expenses, $5,000 limit) = $5,000
+    # 2/3 earned income: $50,000 * 0.6667 = $33,335 (not binding)
+    child_care_expense_deduction: 5_000
+    child_care_expense_deduction_person: [5_000, 0]
+
+# --- Boundary tests: age 15 vs 16 eligibility threshold (S10) ---
+
+- name: Boundary - child age 15 is eligible (under age limit 16)
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 50_000
+      child:
+        age: 15
+        childcare_expense: 10_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    # age 15 < age_limit 16, so eligible; over_7 limit = $5,000
+    # min($10,000 expenses, $5,000 limit) = $5,000
+    child_care_expense_deduction: 5_000
+    child_care_expense_deduction_person: [5_000, 0]
+
+- name: Boundary - child age 16 is ineligible (at age limit 16, no disability)
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 50_000
+      child:
+        age: 16
+        childcare_expense: 10_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    # age 16 is NOT < age_limit 16, and no disability, so ineligible
+    # max_per_child = $0, deduction = $0
+    child_care_expense_deduction: 0
+    child_care_expense_deduction_person: [0, 0]
+
+# --- Boundary test: disabled child over age 16 (S11) ---
+
+- name: Boundary - disabled child age 17 is still eligible
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 50_000
+      child:
+        age: 17
+        childcare_expense: 12_000
+        is_dependant: true
+        is_disabled: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    # age 17 >= age_limit 16, but has disability, so eligible
+    # Disabled limit = $11,000
+    # min($12,000 expenses, $11,000 limit) = $11,000
+    # 2/3 earned income: $50,000 * 0.6667 = $33,335 (not binding)
+    child_care_expense_deduction: 11_000
+    child_care_expense_deduction_person: [11_000, 0]
+
+# --- Edge case: zero earned income (S13) ---
+
+- name: Edge case - zero earned income yields zero deduction
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 0
+        self_employment_income: 0
+      child:
+        age: 5
+        childcare_expense: 8_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    # Per-child cap: min($8,000 expenses, $8,000 under-7 limit) = $8,000
+    # Claimant earned income = $0 + $0 = $0
+    # 2/3 earned income limit: $0 * 0.6667 = $0 (binding)
+    # max_(0, min($8,000, $0)) = $0
+    child_care_expense_deduction: 0
+    child_care_expense_deduction_person: [0, 0]
+
+# --- Edge case: negative self-employment income (S14) ---
+
+- name: Edge case - negative self-employment income reduces earned income
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    people:
+      parent:
+        employment_income: 50_000
+        self_employment_income: -10_000
+      child:
+        age: 5
+        childcare_expense: 8_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    # Per-child cap: min($8,000 expenses, $8,000 under-7 limit) = $8,000
+    # Claimant earned income = $50,000 + (-$10,000) = $40,000
+    # 2/3 earned income limit: $40,000 * 0.6667 = $26,668 (not binding)
+    # max_(0, min($8,000, $26,668)) = $8,000
+    child_care_expense_deduction: 8_000
+    child_care_expense_deduction_person: [8_000, 0]

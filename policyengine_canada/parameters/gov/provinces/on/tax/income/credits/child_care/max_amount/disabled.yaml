@@ -1,0 +1,15 @@
+description: Ontario sets this maximum Childcare Access and Relief from Expenses tax credit amount for children with severe disabilities.
+values:
+  2019-01-01: 8_250
+  2021-01-01: 9_900  # Includes 20% top-up for 2021
+  2022-01-01: 8_250
+metadata:
+  unit: currency-CAD
+  period: year
+  label: Ontario CARE max credit for children with disabilities
+  note: "Documents OTA s. 103.0.3 maximum amounts. Not used in formula — Ontario CARE applies rate to federal CCED (line 21400) without separate cap."
+  reference:
+    - title: Ontario Taxation Act, 2007, s. 103.0.3(4)(c)
+      href: https://www.ontario.ca/laws/statute/07o11#BK181
+    - title: CRA ON479-A Schedule (2024) — CARE credit maximum for children with disabilities
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-24e.pdf#page=1

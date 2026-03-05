@@ -1,0 +1,247 @@
+- name: Alberta Child Care Subsidy - preschool at maximum
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 3
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 40_000
+  output:
+    ab_child_care_subsidy: 3_192  # $266/month * 12, income in lowest bracket
+
+- name: Alberta Child Care Subsidy - school age child
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 8
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 50_000
+  output:
+    ab_child_care_subsidy: 4_176  # $348/month * 12, income in $50k-$55k bracket
+
+- name: Alberta Child Care Subsidy - preschool income over limit (ineligible)
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 3
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 185_000
+  output:
+    ab_child_care_subsidy: 0  # Income over $180,000 limit
+
+- name: Alberta Child Care Subsidy - school age income over limit (ineligible)
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 8
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 95_000
+  output:
+    ab_child_care_subsidy: 0  # Income over $90,000 limit for school age
+
+- name: Alberta Child Care Subsidy - reduced bracket for preschool
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 4
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 130_000
+  output:
+    ab_child_care_subsidy: 2_712  # $226/month * 12, income in $130k-$135k bracket
+
+- name: Alberta Child Care Subsidy - multiple children mixed ages
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child1:
+        age: 3
+        is_child: true
+      child2:
+        age: 7
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child1, child2]
+        adjusted_family_net_income: 60_000
+  output:
+    ab_child_care_subsidy: 6_492  # Preschool $266/mo + school-age $275/mo = $541/mo * 12
+
+- name: Alberta Child Care Subsidy - child aged 13 (ineligible)
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 13
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 50_000
+  output:
+    ab_child_care_subsidy: 0  # Child over age 12
+
+- name: Alberta Child Care Subsidy - preschool mid-range bracket
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 2
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 155_000
+  output:
+    ab_child_care_subsidy: 1_920  # $160/month * 12, income in $155k-$160k bracket
+
+- name: Alberta Child Care Subsidy - school age lowest bracket
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 6
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 30_000
+  output:
+    ab_child_care_subsidy: 4_392  # $366/month * 12, income in lowest bracket
+
+- name: Alberta Child Care Subsidy - preschool top of max bracket boundary
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 3
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 119_999
+  output:
+    ab_child_care_subsidy: 3_192  # $266/month * 12, income $119,999 still in $0-$120k bracket
+
+- name: Alberta Child Care Subsidy - preschool first reduced bracket boundary
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 3
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 120_000
+  output:
+    ab_child_care_subsidy: 3_036  # $253/month * 12, income $120,000 enters $120k-$125k bracket
+
+- name: Alberta Child Care Subsidy - school age top of max bracket boundary
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 8
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 49_999
+  output:
+    ab_child_care_subsidy: 4_392  # $366/month * 12, income $49,999 still in $0-$50k bracket
+
+- name: Alberta Child Care Subsidy - preschool at exactly $180,000 cutoff
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 3
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 180_000
+  output:
+    ab_child_care_subsidy: 0  # $0/month * 12, income at $180k bracket = $0
+
+# --- Boundary test: age 5 preschool-to-school-age transition (S13) ---
+
+- name: Boundary - child age 5 uses school-age schedule (not preschool)
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 5
+        is_child: true
+    households:
+      household:
+        province_code: AB
+        members: [parent, child]
+        adjusted_family_net_income: 40_000
+  output:
+    # preschool_age_threshold = 5, so is_preschool = (age < 5) = false
+    # is_school_age = (age >= 5) & (age <= 12) = true
+    # School-age schedule at $40,000 income: $0-$50k bracket = $366/month
+    # Annual = $366 * 12 = $4,392
+    # (Compare: preschool at same income would be $266/month = $3,192/year)
+    ab_child_care_subsidy: 4_392
