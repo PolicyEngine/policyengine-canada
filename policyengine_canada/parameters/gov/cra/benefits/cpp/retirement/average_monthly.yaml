@@ -10,6 +10,7 @@ metadata:
   unit: currency-CAD
   period: month
   label: CPP average monthly retirement pension
+  note: "Historical averages (2020-2024) sourced from canada.ca at time of implementation. Canada.ca only displays current values; historical data may require archived sources to verify."
   reference:
-    - title: CPP retirement pension amount
+    - title: Canada Pension Plan — Monthly retirement pension amounts
       href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/amount.html
