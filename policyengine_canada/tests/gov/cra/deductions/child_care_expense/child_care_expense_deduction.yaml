@@ -134,11 +134,37 @@
         members: [adult1, adult2, child]
   output:
     # Per-child cap: min($10,000 expenses, $8,000 under-7 limit) = $8,000
-    # 2/3 family earned income: ($80,000 + $30,000) * 0.6667 = $73,337 (not binding)
+    # 2/3 claimant earned income: $30,000 * 0.6667 = $20,001 (not binding)
     # Household deduction = $8,000
     # Allocated to lower-income spouse (adult2 with $30,000)
     child_care_expense_deduction: 8_000
     child_care_expense_deduction_person: [0, 8_000, 0]
+
+- name: Two-parent household - 2/3 earned income uses claimant only
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    people:
+      high_earner:
+        employment_income: 60_000
+      low_earner:
+        employment_income: 6_000
+      child:
+        age: 5
+        childcare_expense: 8_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [high_earner, low_earner, child]
+  output:
+    # Per-child cap: min($8,000 expenses, $8,000 under-7 limit) = $8,000
+    # Claimant is low_earner (lower income, $6,000)
+    # Per ITA s. 63(1)(e): 2/3 of claimant's earned income = $6,000 * 0.6667 = $4,000 (binding)
+    # If family income were used: 2/3 * $66,000 = $44,000 (not binding) - WRONG
+    # Deduction = min($8,000, $4,000) = $4,000
+    child_care_expense_deduction: 4_000
+    child_care_expense_deduction_person: [0, 4_000, 0]
 
 # --- Boundary tests: age 6 vs 7 threshold (S9) ---
 
@@ -250,3 +276,54 @@
     # 2/3 earned income: $50,000 * 0.6667 = $33,335 (not binding)
     child_care_expense_deduction: 11_000
     child_care_expense_deduction_person: [11_000, 0]
+
+# --- Edge case: zero earned income (S13) ---
+
+- name: Edge case - zero earned income yields zero deduction
+  period: 2024
+  input:
+    people:
+      parent:
+        employment_income: 0
+        self_employment_income: 0
+      child:
+        age: 5
+        childcare_expense: 8_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    # Per-child cap: min($8,000 expenses, $8,000 under-7 limit) = $8,000
+    # Claimant earned income = $0 + $0 = $0
+    # 2/3 earned income limit: $0 * 0.6667 = $0 (binding)
+    # max_(0, min($8,000, $0)) = $0
+    child_care_expense_deduction: 0
+    child_care_expense_deduction_person: [0, 0]
+
+# --- Edge case: negative self-employment income (S14) ---
+
+- name: Edge case - negative self-employment income reduces earned income
+  period: 2024
+  absolute_error_margin: 0.5
+  input:
+    people:
+      parent:
+        employment_income: 50_000
+        self_employment_income: -10_000
+      child:
+        age: 5
+        childcare_expense: 8_000
+        is_dependant: true
+        individual_net_income: 0
+    households:
+      household:
+        members: [parent, child]
+  output:
+    # Per-child cap: min($8,000 expenses, $8,000 under-7 limit) = $8,000
+    # Claimant earned income = $50,000 + (-$10,000) = $40,000
+    # 2/3 earned income limit: $40,000 * 0.6667 = $26,668 (not binding)
+    # max_(0, min($8,000, $26,668)) = $8,000
+    child_care_expense_deduction: 8_000
+    child_care_expense_deduction_person: [8_000, 0]

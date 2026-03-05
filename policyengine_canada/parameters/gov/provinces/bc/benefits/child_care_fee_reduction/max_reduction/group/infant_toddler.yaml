@@ -1,0 +1,16 @@
+description: >-
+  British Columbia reduces child care fees by this monthly amount for
+  infant and toddler children (under 3 years) in licensed group care
+  through the Child Care Fee Reduction Initiative.
+values:
+  2018-01-01: 350
+  # CCFRI funding year runs April-March. Using Jan 1 for annual calculations.
+  2024-01-01: 900
+metadata:
+  unit: currency-CAD
+  period: month
+  label: BC CCFRI max reduction for infant/toddler
+  note: "CCFRI Guidelines Table 1 defines Infant (0-18 months) and Toddler (18-36 months) as separate categories. Both share the same Group rate ($900 for 2024-25). May need splitting if rates diverge in future years."
+  reference:
+    - title: BC Child Care Fee Reduction Initiative Funding Guidelines 2024-25, Table 1
+      href: https://www2.gov.bc.ca/assets/gov/family-and-social-supports/child-care/childcarebc-programs/ccfri/ccfri_funding_guidelines_24_25.pdf#page=5

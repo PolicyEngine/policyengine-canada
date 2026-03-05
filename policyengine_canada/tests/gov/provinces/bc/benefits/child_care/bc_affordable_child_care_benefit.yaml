@@ -171,3 +171,51 @@
     # adjusted_income = $111,001 > income_limit ($111,000) => eligible = false
     # Benefit = $0
     bc_affordable_child_care_benefit: 0
+
+# --- Edge case: zero income family (S15) ---
+
+- name: Edge case - zero income family gets full maximum benefit
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 2
+        is_child: true
+    households:
+      household:
+        province_code: BC
+        members: [parent, child]
+        adjusted_family_net_income: 0
+  output:
+    # adjusted_income = max(0, $0 - $0 family_size_adj) = $0
+    # $0 <= $111,000 income_limit => eligible
+    # $0 <= $45,000 max_benefit_threshold => benefit_rate = 1.0
+    # Age 2 >= toddler(1.583) and < preschool(3) => toddler rate $1,060/month
+    # Annual benefit = $1,060 * 12 * 1.0 = $12,720
+    bc_affordable_child_care_benefit: 12_720
+
+# --- Edge case: infant age 0 gets under-19-months rate (S16) ---
+
+- name: Edge case - infant age 0 gets under-19-months rate
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 25
+      infant:
+        age: 0
+        is_child: true
+    households:
+      household:
+        province_code: BC
+        members: [parent, infant]
+        adjusted_family_net_income: 30_000
+  output:
+    # adjusted_income = max(0, $30,000 - $0 family_size_adj) = $30,000
+    # $30,000 <= $111,000 income_limit => eligible
+    # $30,000 <= $45,000 max_benefit_threshold => benefit_rate = 1.0
+    # Age 0 < toddler(1.583) => under_19_months rate $1,250/month
+    # Annual benefit = $1,250 * 12 * 1.0 = $15,000
+    bc_affordable_child_care_benefit: 15_000

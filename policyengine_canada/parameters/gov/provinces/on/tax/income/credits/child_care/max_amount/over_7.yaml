@@ -7,6 +7,7 @@ metadata:
   unit: currency-CAD
   period: year
   label: Ontario CARE max credit for children 7-16
+  note: "Documents OTA s. 103.0.3 maximum amounts. Not used in formula — Ontario CARE applies rate to federal CCED (line 21400) without separate cap."
   reference:
     - title: Ontario Taxation Act, 2007, s. 103.0.3(4)(b)
       href: https://www.ontario.ca/laws/statute/07o11#BK181

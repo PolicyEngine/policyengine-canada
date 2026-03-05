@@ -152,3 +152,76 @@
         members: [parent, child]
   output:
     bc_child_care_fee_reduction: 6_540  # Age 3 >= preschool threshold (3), preschool rate $545/month * 12
+
+# --- Edge case: newborn age 0 gets infant/toddler rate (S17) ---
+
+- name: Edge case - newborn age 0 gets infant/toddler rate
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 28
+      newborn:
+        age: 0
+    households:
+      household:
+        province_code: BC
+        members: [parent, newborn]
+  output:
+    # Age 0 < preschool_age threshold => is_infant_toddler = True
+    # Monthly reduction = $900 (infant_toddler rate)
+    # Annual reduction = $900 * 12 = $10,800
+    bc_child_care_fee_reduction: 10_800
+
+# --- Family/in-home multi-age care tests ---
+
+- name: BC Child Care Fee Reduction - family care infant/toddler
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      infant:
+        age: 1
+        is_family_child_care: true
+    households:
+      household:
+        province_code: BC
+        members: [parent, infant]
+  output:
+    bc_child_care_fee_reduction: 7_200  # $600/month * 12 (family rate)
+
+- name: BC Child Care Fee Reduction - family care school age
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child:
+        age: 8
+        is_family_child_care: true
+    households:
+      household:
+        province_code: BC
+        members: [parent, child]
+  output:
+    bc_child_care_fee_reduction: 1_740  # $145/month * 12 (family rate)
+
+- name: BC Child Care Fee Reduction - mixed group and family care
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 30
+      child1:
+        age: 1
+        is_family_child_care: true
+      child2:
+        age: 4
+        is_family_child_care: false
+    households:
+      household:
+        province_code: BC
+        members: [parent, child1, child2]
+  output:
+    bc_child_care_fee_reduction: 13_740  # ($600 family infant + $545 group preschool) * 12

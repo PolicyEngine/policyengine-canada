@@ -29,7 +29,6 @@ class bc_affordable_child_care_benefit(Variable):
 
         person = household.members
         age = person("age", period)
-        is_child = person("is_child", period)
 
         # Age boundaries per ACCB rate schedule
         toddler_age = p.age.toddler
@@ -55,20 +54,16 @@ class bc_affordable_child_care_benefit(Variable):
 
         # Income phase-out above max benefit threshold
         max_benefit_threshold = p.max_benefit_income_threshold
+        excess_income = max_(0, adjusted_income - max_benefit_threshold)
+        phase_out_range = p.income_limit - max_benefit_threshold
+        phase_out_fraction = excess_income / phase_out_range
         benefit_rate = where(
             adjusted_income <= max_benefit_threshold,
             1.0,
-            max_(
-                0,
-                1
-                - (adjusted_income - max_benefit_threshold)
-                / (p.income_limit - max_benefit_threshold),
-            ),
+            max_(0, 1 - phase_out_fraction),
         )
 
-        annual_benefit_per_child = (
-            monthly_benefit * 12 * benefit_rate * is_child
-        )
+        annual_benefit_per_child = monthly_benefit * 12 * benefit_rate
         total_benefit = household.sum(annual_benefit_per_child)
 
         return where(eligible, total_benefit, 0)

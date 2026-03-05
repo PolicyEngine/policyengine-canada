@@ -6,6 +6,7 @@ metadata:
   unit: currency-CAD
   period: year
   label: Child income limit for child care expense deduction
+  note: "Documents ITA s. 63(3)(b) child income limit. Not used in formula — implementing this check would create a circular dependency (child's net income depends on the deduction being calculated)."
   reference:
     - title: Income Tax Act, s. 63(3) — definition of "eligible child", paragraph (b)
       href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-63.html

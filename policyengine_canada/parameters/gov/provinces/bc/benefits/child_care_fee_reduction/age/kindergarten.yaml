@@ -5,6 +5,7 @@ values:
   2018-01-01: 5
 metadata:
   unit: year
+  period: year
   label: BC CCFRI kindergarten age threshold
   reference:
     - title: BC Child Care Fee Reduction Initiative Funding Guidelines 2024-25, Table 1

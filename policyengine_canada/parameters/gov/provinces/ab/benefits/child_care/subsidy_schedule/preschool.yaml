@@ -62,8 +62,7 @@ metadata:
   amount_unit: currency-CAD
   threshold_unit: currency-CAD
   label: Alberta child care subsidy schedule (preschool, facility-based)
+  note: Preschool parent subsidy was discontinued April 1, 2025, replaced by $15/day Affordability Grant paid to providers. These 2024 rates were valid prior to discontinuation but the official page no longer displays them.
   reference:
     - title: Alberta Child Care Subsidy Program — Preschool monthly subsidy rates by family income (2024)
       href: https://www.alberta.ca/child-care-subsidy
-    - title: Early Learning and Child Care Act, SA 2007, c E-0.1
-      href: https://www.canlii.org/en/ab/laws/stat/sa-2007-c-e-0.1/latest/sa-2007-c-e-0.1.html

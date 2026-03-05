@@ -20,6 +20,7 @@ class bc_child_care_fee_reduction(Variable):
 
         person = household.members
         age = person("age", period)
+        is_family = person("is_family_child_care", period)
 
         is_eligible = age <= p.max_age
 
@@ -30,19 +31,47 @@ class bc_child_care_fee_reduction(Variable):
 
         is_infant_toddler = age < preschool_age
         is_preschool = (age >= preschool_age) & (age < kindergarten_age)
-        is_kindergarten = (age >= kindergarten_age) & (age < school_age_start)
+        is_kindergarten = (
+            (age >= kindergarten_age) & (age < school_age_start)
+        )
         is_school_age = (age >= school_age_start) & is_eligible
 
-        monthly_reduction = select(
-            [is_infant_toddler, is_preschool, is_kindergarten, is_school_age],
+        # Group care rates (default)
+        group_reduction = select(
             [
-                p.max_reduction.infant_toddler,
-                p.max_reduction.preschool,
-                p.max_reduction.kindergarten,
-                p.max_reduction.school_age,
+                is_infant_toddler,
+                is_preschool,
+                is_kindergarten,
+                is_school_age,
+            ],
+            [
+                p.max_reduction.group.infant_toddler,
+                p.max_reduction.group.preschool,
+                p.max_reduction.group.kindergarten,
+                p.max_reduction.group.school_age,
             ],
             default=0,
         )
 
-        annual_reduction_per_child = monthly_reduction * 12 * is_eligible
+        # Family/in-home multi-age care rates
+        family_reduction = select(
+            [
+                is_infant_toddler,
+                is_preschool,
+                is_kindergarten,
+                is_school_age,
+            ],
+            [
+                p.max_reduction.family.infant_toddler,
+                p.max_reduction.family.preschool,
+                p.max_reduction.family.kindergarten,
+                p.max_reduction.family.school_age,
+            ],
+            default=0,
+        )
+
+        monthly_reduction = where(
+            is_family, family_reduction, group_reduction
+        )
+        annual_reduction_per_child = monthly_reduction * 12
         return household.sum(annual_reduction_per_child)

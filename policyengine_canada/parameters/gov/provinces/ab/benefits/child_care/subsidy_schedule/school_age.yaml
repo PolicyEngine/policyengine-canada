@@ -46,8 +46,7 @@ metadata:
   amount_unit: currency-CAD
   threshold_unit: currency-CAD
   label: Alberta child care subsidy schedule (school-age, facility-based)
+  note: Rates set by ministerial policy, published at alberta.ca. Verified against official website March 2026. Covers kindergarten through grade 6, facility-based, 50+ hours/month.
   reference:
     - title: Alberta Child Care Subsidy Program — School-age monthly subsidy rates by family income (2024)
       href: https://www.alberta.ca/child-care-subsidy
-    - title: Early Learning and Child Care Act, SA 2007, c E-0.1
-      href: https://www.canlii.org/en/ab/laws/stat/sa-2007-c-e-0.1/latest/sa-2007-c-e-0.1.html
