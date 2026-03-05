@@ -31,9 +31,7 @@ class bc_child_care_fee_reduction(Variable):
 
         is_infant_toddler = age < preschool_age
         is_preschool = (age >= preschool_age) & (age < kindergarten_age)
-        is_kindergarten = (
-            (age >= kindergarten_age) & (age < school_age_start)
-        )
+        is_kindergarten = (age >= kindergarten_age) & (age < school_age_start)
         is_school_age = (age >= school_age_start) & is_eligible
 
         # Group care rates (default)
@@ -70,8 +68,6 @@ class bc_child_care_fee_reduction(Variable):
             default=0,
         )
 
-        monthly_reduction = where(
-            is_family, family_reduction, group_reduction
-        )
+        monthly_reduction = where(is_family, family_reduction, group_reduction)
         annual_reduction_per_child = monthly_reduction * 12
         return household.sum(annual_reduction_per_child)
