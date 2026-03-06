@@ -28,10 +28,6 @@ class qc_cce_disabled_child_tax_credit(Variable):
         )
         eligible = disabled & (own_child | qualifying_non_own_child_dependant)
 
-        credit = (
-            credit_rate
-            * eligible
-            * min_(p.disabled_child_expense_limit, expense)
-        )
+        credit = credit_rate * eligible * min_(p.disabled_child_expense_limit, expense)
 
         return household.sum(credit)

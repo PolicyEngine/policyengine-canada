@@ -14,9 +14,7 @@ class bc_child_care_fee_reduction(Variable):
     )
 
     def formula(household, period, parameters):
-        p = parameters(
-            period
-        ).gov.provinces.bc.benefits.child_care_fee_reduction
+        p = parameters(period).gov.provinces.bc.benefits.child_care_fee_reduction
 
         person = household.members
         age = person("age", period)

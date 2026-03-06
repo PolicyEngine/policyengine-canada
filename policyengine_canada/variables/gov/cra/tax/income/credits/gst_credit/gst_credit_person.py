@@ -11,7 +11,5 @@ class gst_credit_person(Variable):
 
     def formula(person, period, parameters):
         category = person("gst_credit_category", period)
-        amounts = parameters(
-            period
-        ).gov.cra.tax.income.credits.gst_credit.base_amounts
+        amounts = parameters(period).gov.cra.tax.income.credits.gst_credit.base_amounts
         return amounts[category]

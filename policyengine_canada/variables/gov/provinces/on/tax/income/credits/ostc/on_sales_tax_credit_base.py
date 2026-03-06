@@ -6,9 +6,7 @@ class on_sales_tax_credit_base(Variable):
     entity = Household
     label = "Ontario Sales Tax Credit Base"
     unit = CAD
-    documentation = (
-        "Base amount of Ontario sales tax credits before reduction."
-    )
+    documentation = "Base amount of Ontario sales tax credits before reduction."
     definition_period = YEAR
     defined_for = ProvinceCode.ONT
 

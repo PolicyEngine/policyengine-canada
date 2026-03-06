@@ -12,7 +12,5 @@ class bc_disability_credit(Variable):
 
     def formula(person, period, parameters):
         p = parameters(period).gov.provinces.bc.tax.income.credits.disability
-        additional_amount = person(
-            "bc_disability_credit_additional_amount", period
-        )
+        additional_amount = person("bc_disability_credit_additional_amount", period)
         return p.base + additional_amount

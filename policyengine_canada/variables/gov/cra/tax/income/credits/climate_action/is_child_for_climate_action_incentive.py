@@ -4,9 +4,7 @@ from policyengine_canada.model_api import *
 class is_child_for_climate_action_incentive(Variable):
     value_type = bool
     entity = Person
-    label = (
-        "Is a for the climate action incentive eligible child in a Household"
-    )
+    label = "Is a for the climate action incentive eligible child in a Household"
     definition_period = YEAR
     defined_for = "is_dependant"
 

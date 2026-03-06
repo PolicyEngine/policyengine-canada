@@ -12,8 +12,6 @@ class ns_age_tax_credit(Variable):
         age = person("age", period)
         income = person("ns_taxable_income", period)
         p = parameters(period).gov.provinces.ns.tax.income.credits.age
-        eligibility = (age >= p.age_eligibility) & (
-            income < p.income_eligibility
-        )
+        eligibility = (age >= p.age_eligibility) & (income < p.income_eligibility)
 
         return eligibility * p.amount

@@ -5,8 +5,7 @@ documentation:
 	jupyter-book build docs
 
 format:
-	black . -l 79
-	linecheck . --fix
+	ruff format .
 
 install:
 	pip install -e .[dev]

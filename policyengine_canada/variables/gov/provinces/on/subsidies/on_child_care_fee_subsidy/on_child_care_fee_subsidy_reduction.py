@@ -20,12 +20,8 @@ class on_child_care_fee_subsidy_reduction(Variable):
         full_factor = where(
             children > 0, eligible_children * reduction_factor / children, 0
         )
-        full_time_reduction = household(
-            "on_child_care_fee_subsidy_full_time", period
-        )
-        part_time_reduction = household(
-            "on_child_care_fee_subsidy_part_time", period
-        )
+        full_time_reduction = household("on_child_care_fee_subsidy_full_time", period)
+        part_time_reduction = household("on_child_care_fee_subsidy_part_time", period)
         eligible = children > 0
         return (
             eligible

@@ -18,9 +18,7 @@ class child_care_expense_deduction(Variable):
 
         # Step 1: Cap each child's expenses at their per-child maximum
         expenses = person("childcare_expense", period)
-        max_per_child = person(
-            "child_care_expense_deduction_max_per_child", period
-        )
+        max_per_child = person("child_care_expense_deduction_max_per_child", period)
         capped_expenses = min_(expenses, max_per_child)
         total_household_expenses = household.sum(capped_expenses)
 

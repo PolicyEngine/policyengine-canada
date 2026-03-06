@@ -10,9 +10,7 @@ class nl_physical_activity_tax_credit(Variable):
 
     def formula(household, period, parameters):
         person = household.members
-        p = parameters(
-            period
-        ).gov.provinces.nl.tax.income.credits.physical_activity
+        p = parameters(period).gov.provinces.nl.tax.income.credits.physical_activity
 
         # Person has to be either head, spouse or child under 18 to be eligible.
         eligible = (
@@ -21,9 +19,7 @@ class nl_physical_activity_tax_credit(Variable):
             | (person("age", period) < p.age_eligible)
         )
 
-        individual_expenses = eligible * (
-            person("physical_activities_fees", period)
-        )
+        individual_expenses = eligible * (person("physical_activities_fees", period))
 
         expenses = household.sum(individual_expenses)
         maximum_amount = min_(expenses, p.max_amount)

@@ -12,7 +12,5 @@ class ns_low_income_tax_reduction_base_children(Variable):
         p = parameters(
             period
         ).gov.provinces.ns.tax.income.credits.low_income_tax_reduction
-        children = household(
-            "ns_low_income_tax_reduction_eligible_children", period
-        )
+        children = household("ns_low_income_tax_reduction_eligible_children", period)
         return children * p.base.dependant.base

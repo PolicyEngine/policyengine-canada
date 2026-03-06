@@ -28,7 +28,5 @@ class is_child_care_expense_claimant(Variable):
         # Use person_index as a deterministic tiebreaker when two
         # earners have equal income: lowest index claims.
         person_idx = person("person_index", period)
-        min_idx_among_lowest = household.min(
-            where(is_lowest_earner, person_idx, inf)
-        )
+        min_idx_among_lowest = household.min(where(is_lowest_earner, person_idx, inf))
         return is_lowest_earner & (person_idx == min_idx_among_lowest)

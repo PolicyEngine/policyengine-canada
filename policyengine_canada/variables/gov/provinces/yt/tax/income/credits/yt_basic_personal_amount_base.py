@@ -7,6 +7,4 @@ class yt_basic_personal_amount_base(Variable):
     label = "Yukon basic personal amount base"
     definition_period = YEAR
     defined_for = ProvinceCode.YT
-    adds = (
-        "gov.provinces.yt.tax.income.credits.basic_personal_amount.base_amount"
-    )
+    adds = "gov.provinces.yt.tax.income.credits.basic_personal_amount.base_amount"

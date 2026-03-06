@@ -22,7 +22,5 @@ class ns_low_income_tax_reduction_base(Variable):
         dependant_amount = dependant * p.base.eligible_dependant
         return min_(
             p.base.max_amount,
-            household.sum(
-                eligible * (base + spouse_amount + dependant_amount)
-            ),
+            household.sum(eligible * (base + spouse_amount + dependant_amount)),
         )

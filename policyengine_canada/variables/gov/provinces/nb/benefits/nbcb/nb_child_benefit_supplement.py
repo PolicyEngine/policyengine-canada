@@ -10,9 +10,7 @@ class nb_child_benefit_supplement(Variable):
 
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)
-        p = parameters(
-            period
-        ).gov.provinces.nb.benefits.nbcb.working_income_supplement
+        p = parameters(period).gov.provinces.nb.benefits.nbcb.working_income_supplement
         working_income = household("family_working_income", period)
         # the supplement amount is reduced by 4% of "family earned income" in excess of $3,750 minus 5% of "family net income" in excess of $20,921.
         reduced_amount = max_(
