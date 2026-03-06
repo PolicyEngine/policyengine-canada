@@ -1,7 +1,8 @@
+from pathlib import Path
+
 from policyengine_core.country_template.constants import COUNTRY_DIR
 from policyengine_core.data import Dataset
 from policyengine_core.periods import ETERNITY, period
-from pathlib import Path
 
 
 class CountryTemplateDataset(Dataset):

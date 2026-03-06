@@ -3,10 +3,6 @@ import os
 from pathlib import Path
 from typing import Dict, Type
 
-from policyengine_canada.entities import entities
-from policyengine_canada.data.datasets.country_template_dataset import (
-    CountryTemplateDataset,
-)
 from policyengine_core.data.dataset import Dataset
 from policyengine_core.populations.population import Population
 from policyengine_core.simulations import (
@@ -15,6 +11,10 @@ from policyengine_core.simulations import (
 from policyengine_core.simulations import Simulation as CoreSimulation
 from policyengine_core.taxbenefitsystems import TaxBenefitSystem
 
+from policyengine_canada.data.datasets.country_template_dataset import (
+    CountryTemplateDataset,
+)
+from policyengine_canada.entities import entities
 from policyengine_canada.variables.household.demographic.geographic.province.in_province import (
     create_10_province_variables,
 )
