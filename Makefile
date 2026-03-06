@@ -6,6 +6,7 @@ documentation:
 
 format:
 	ruff format .
+	ruff check .
 
 install:
 	pip install -e .[dev]
