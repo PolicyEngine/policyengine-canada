@@ -18,11 +18,7 @@ class on_child_benefit(Variable):
         shared_custody_divisor = parameters(
             period
         ).gov.provinces.on.benefits.ocb.shared_custody_divisor
-        has_any_full_custody_children = (
-            add(household, period, ["full_custody"]) > 0
-        )
-        divisor = where(
-            has_any_full_custody_children, 1, shared_custody_divisor
-        )
+        has_any_full_custody_children = add(household, period, ["full_custody"]) > 0
+        divisor = where(has_any_full_custody_children, 1, shared_custody_divisor)
         child_benefit_amount = max_(0, base - reduction)
         return child_benefit_amount / divisor

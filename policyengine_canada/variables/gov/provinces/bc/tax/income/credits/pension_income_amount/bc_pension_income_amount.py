@@ -11,8 +11,6 @@ class bc_pension_income_amount(Variable):
 
     def formula(person, period, parameters):
         pension_income = person("pension_and_savings_plan_income", period)
-        p = parameters(
-            period
-        ).gov.provinces.bc.tax.income.credits.pension_income_amount
+        p = parameters(period).gov.provinces.bc.tax.income.credits.pension_income_amount
         # Capped at a certain amount
         return min_(p.cap, pension_income)

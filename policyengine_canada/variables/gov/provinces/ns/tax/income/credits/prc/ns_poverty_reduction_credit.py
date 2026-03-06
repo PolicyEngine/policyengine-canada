@@ -19,8 +19,6 @@ class ns_poverty_reduction_credit(Variable):
         income_assistance = household("ns_income_assistance", period)
         p = parameters(period).gov.provinces.ns.tax.income.credits.prc
         eligible = (
-            (children == 0)
-            & (income < p.income_threshold)
-            & (income_assistance > 0)
+            (children == 0) & (income < p.income_threshold) & (income_assistance > 0)
         )
         return where(eligible, p.amount, 0)

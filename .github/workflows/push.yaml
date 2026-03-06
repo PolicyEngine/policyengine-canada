@@ -10,10 +10,15 @@ jobs:
       && (github.event.head_commit.message == 'Update PolicyEngine Canada')
     steps:
       - uses: actions/checkout@v4
-      - name: Check formatting
-        uses: "lgeiger/black-action@master"
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          args: ". -l 79 --check"
+          python-version: "3.14"
+          allow-prereleases: true
+      - name: Install ruff
+        run: pip install "ruff>=0.9.0"
+      - name: Check formatting
+        run: ruff format --check .
   versioning:
     name: Update versioning
     if: |

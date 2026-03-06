@@ -10,7 +10,4 @@ class nu_child_benefit_eligible_child(Variable):
 
     def formula(person, period, parameters):
         age = person("age", period)
-        return (
-            age
-            < parameters(period).gov.provinces.nu.tax.benefits.nucb.age_limit
-        )
+        return age < parameters(period).gov.provinces.nu.tax.benefits.nucb.age_limit

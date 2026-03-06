@@ -24,6 +24,4 @@ class qc_adapted_work_premium_eligible(Variable):
             person("working_income", period) > p.work_income_requirement
         )
 
-        return household.any(
-            is_head_or_spouse & disabled & work_income_eligible
-        )
+        return household.any(is_head_or_spouse & disabled & work_income_eligible)

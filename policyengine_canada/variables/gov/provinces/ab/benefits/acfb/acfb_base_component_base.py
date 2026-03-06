@@ -9,9 +9,7 @@ class acfb_base_component_base(Variable):
     defined_for = ProvinceCode.AB
 
     def formula(household, period, parameters):
-        p = parameters(
-            period
-        ).gov.provinces.ab.benefits.acfb.base_component.base
+        p = parameters(period).gov.provinces.ab.benefits.acfb.base_component.base
         eligible_children = household("acfb_eligible_children", period)
         return (
             (p.one_child * (eligible_children > 0))

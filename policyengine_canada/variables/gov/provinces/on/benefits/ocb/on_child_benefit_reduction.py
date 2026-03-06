@@ -11,6 +11,4 @@ class on_child_benefit_reduction(Variable):
 
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)
-        return parameters(period).gov.provinces.on.benefits.ocb.reduction.calc(
-            income
-        )
+        return parameters(period).gov.provinces.on.benefits.ocb.reduction.calc(income)

@@ -20,8 +20,7 @@ class bc_affordable_child_care_benefit(Variable):
         income = household("adjusted_family_net_income", period)
         household_size = household("household_size", period)
         family_size_adjustment = (
-            max_(0, household_size - p.base_family_size)
-            * p.family_size_adjustment
+            max_(0, household_size - p.base_family_size) * p.family_size_adjustment
         )
         adjusted_income = max_(0, income - family_size_adjustment)
 

@@ -19,11 +19,10 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Information Analysis",
 ]
 dependencies = [
-    "black[jupyter]",
     "coverage<7",
     "dpath<3",
     "h5py>=3,<4",
-    "linecheck<1",
+    "ruff>=0.9.0",
     "microdf_python>=1.2.1",
     "nptyping<2",
     "numexpr<3",
@@ -92,3 +91,6 @@ showcontent = true
 directory = "removed"
 name = "Removed"
 showcontent = true
+
+[tool.ruff]
+line-length = 88

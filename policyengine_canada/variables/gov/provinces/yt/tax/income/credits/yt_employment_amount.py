@@ -11,8 +11,6 @@ class yt_employment_amount(Variable):
     reference = "https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/yukon/5011-pc/information-residents-yukon.html#P4_58310"
 
     def formula(person, period, parameters):
-        p = parameters(
-            period
-        ).gov.provinces.yt.tax.income.credits.employment_amount
+        p = parameters(period).gov.provinces.yt.tax.income.credits.employment_amount
         canada_employment_amount = person("canada_employment_amount", period)
         return min_(canada_employment_amount, p.amount)

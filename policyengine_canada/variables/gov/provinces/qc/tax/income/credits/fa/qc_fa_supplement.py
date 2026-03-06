@@ -16,9 +16,7 @@ class qc_fa_supplement(Variable):
 
         # check if the child is full custody of the head
         full_custody = person("full_custody", period)
-        shared_custody_multiplier = where(
-            full_custody, 1, p.shared_custody_multiplier
-        )
+        shared_custody_multiplier = where(full_custody, 1, p.shared_custody_multiplier)
 
         # Supplement for Handicapped Children
         handicapped = person("is_disabled", period)

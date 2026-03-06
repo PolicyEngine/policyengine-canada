@@ -14,9 +14,7 @@ class qc_sa_tax_credit(Variable):
         income = household("adjusted_family_net_income", period)
 
         # Your spouse is an eligible individual and you were both 70 or over
-        married_both_eligible = household(
-            "qc_sa_married_both_eligible", period
-        )
+        married_both_eligible = household("qc_sa_married_both_eligible", period)
         credit_married_both_eligible = married_both_eligible * max_(
             0,
             p.amount.married_both_eligible - p.reduction.married.calc(income),
@@ -35,7 +33,5 @@ class qc_sa_tax_credit(Variable):
         )
 
         return (
-            credit_married_both_eligible
-            + credit_married_one_eligible
-            + credit_single
+            credit_married_both_eligible + credit_married_one_eligible + credit_single
         )

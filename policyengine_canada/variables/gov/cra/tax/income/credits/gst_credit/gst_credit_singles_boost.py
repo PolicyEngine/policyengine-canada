@@ -15,13 +15,9 @@ class gst_credit_singles_boost(Variable):
             "gst_credit_single_parent_household", period
         )
         net_income = household("household_net_income", period)
-        p = parameters(
-            period
-        ).gov.cra.tax.income.credits.gst_credit.singles_boost
+        p = parameters(period).gov.cra.tax.income.credits.gst_credit.singles_boost
         singles_phase_in = p.phase_in.calc(net_income)
         singles_amount = min_(p.cap, singles_phase_in)
-        amount_if_single = where(
-            single_parent_household, p.cap, singles_amount
-        )
+        amount_if_single = where(single_parent_household, p.cap, singles_amount)
         eligible = ~household("is_married", period)
         return eligible * amount_if_single

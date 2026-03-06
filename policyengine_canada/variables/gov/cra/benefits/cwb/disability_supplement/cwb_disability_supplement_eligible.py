@@ -6,9 +6,7 @@ class cwb_disability_supplement_eligible(Variable):
     entity = Person
     label = "Eligible for canada workers benefit supplement"
     definition_period = YEAR
-    reference = (
-        "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-89.html#docCont"
-    )
+    reference = "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-89.html#docCont"
 
     def formula(person, period, parameters):
         # For now, apply a person-level logic based on age.
