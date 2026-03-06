@@ -1,3 +1,10 @@
+## [0.99.0] - 2026-03-06
+
+### Added
+
+- Added ruff check linting configuration with E and F rules to catch common Python errors.
+
+
 ## [0.98.1] - 2026-03-06
 
 ### Changed
