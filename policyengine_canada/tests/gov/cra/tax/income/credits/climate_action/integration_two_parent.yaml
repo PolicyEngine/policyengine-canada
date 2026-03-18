@@ -1,0 +1,53 @@
+- name: Two-parent household with child — household_net_income does not crash
+  period: 2026
+  absolute_error_margin: 1
+  input:
+    people:
+      parent1:
+        age: 35
+        is_head: true
+        is_spouse: false
+        employment_income: 50_000
+      parent2:
+        age: 33
+        is_head: false
+        is_spouse: true
+        employment_income: 30_000
+      child:
+        age: 5
+        is_head: false
+        is_spouse: false
+    households:
+      household:
+        members: [parent1, parent2, child]
+        province_code: ONT
+        is_married: true
+  output:
+    climate_action_incentive_category:
+      - HEAD
+      - SPOUSE
+      - OTHER_CHILD
+
+- name: Married couple no children — climate action does not crash
+  period: 2026
+  absolute_error_margin: 1
+  input:
+    people:
+      head:
+        age: 40
+        is_head: true
+        is_spouse: false
+        employment_income: 90_000
+      spouse:
+        age: 38
+        is_head: false
+        is_spouse: true
+    households:
+      household:
+        members: [head, spouse]
+        province_code: ONT
+        is_married: true
+  output:
+    climate_action_incentive_category:
+      - HEAD
+      - SPOUSE
