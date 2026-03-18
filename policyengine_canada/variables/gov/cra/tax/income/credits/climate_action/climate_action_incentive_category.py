@@ -41,4 +41,5 @@ class climate_action_incentive_category(Variable):
                 ClimateActionIncentiveCategory.ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD,
                 ClimateActionIncentiveCategory.OTHER_CHILD,
             ],
+            default=ClimateActionIncentiveCategory.OTHER_CHILD,
         )
