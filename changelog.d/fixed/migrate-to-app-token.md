@@ -1,0 +1,1 @@
+Migrated push workflow from the expired `POLICYENGINE_GITHUB` PAT to a short-lived GitHub App token (`APP_ID` / `APP_PRIVATE_KEY`), so the `versioning` job can push the "Update PolicyEngine Canada" commit that triggers Test, Publish, and Deploy. Matches the pattern already used by policyengine-core, policyengine-us, and microdf.

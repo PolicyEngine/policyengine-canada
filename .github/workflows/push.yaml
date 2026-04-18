@@ -26,10 +26,16 @@ jobs:
       && !(github.event.head_commit.message == 'Update PolicyEngine Canada')
     runs-on: ubuntu-latest
     steps:
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.POLICYENGINE_GITHUB }}
+          token: ${{ steps.app-token.outputs.token }}
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -49,6 +55,8 @@ jobs:
           committer_name: Github Actions[bot]
           author_name: Github Actions[bot]
           message: Update PolicyEngine Canada
+          github_token: ${{ steps.app-token.outputs.token }}
+          fetch: false
   Test:
     runs-on: ${{ matrix.os }}
     if: |
@@ -111,13 +119,17 @@ jobs:
       (github.repository == 'PolicyEngine/policyengine-canada')
       && (github.event.head_commit.message == 'Update PolicyEngine Canada')
     runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ secrets.POLICYENGINE_GITHUB }}
     steps:
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.POLICYENGINE_GITHUB }}
+          token: ${{ steps.app-token.outputs.token }}
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -130,4 +142,4 @@ jobs:
       - name: Update API
         run: python .github/update_api.py
         env:
-          GITHUB_TOKEN: ${{ secrets.POLICYENGINE_GITHUB }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
