@@ -6,9 +6,9 @@ jobs:
   Lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.14"
           allow-prereleases: true
@@ -20,7 +20,7 @@ jobs:
     name: Check changelog fragment
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Check for changelog fragment
         run: |
           FRAGMENTS=$(find changelog.d -type f ! -name '.gitkeep' | wc -l)
@@ -38,9 +38,9 @@ jobs:
         python-version: ["3.14"]
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
@@ -50,7 +50,7 @@ jobs:
         run: make install
       - name: Run tests
         run: make test
-      - uses: codecov/codecov-action@v4
+      - uses: codecov/codecov-action@v6
       - name: Build package
         run: make build
       - name: Test documentation builds
