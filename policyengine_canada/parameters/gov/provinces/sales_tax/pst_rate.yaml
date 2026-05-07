@@ -1,0 +1,37 @@
+description: Provincial Sales Tax rate by province
+AB:
+  2020-01-01: 0  # No PST in Alberta
+BC:
+  2020-01-01: 0.07
+MB:
+  2020-01-01: 0.07
+NB:
+  2020-01-01: 0  # Uses HST instead
+NL:
+  2020-01-01: 0  # Uses HST instead
+NS:
+  2020-01-01: 0  # Uses HST instead
+NT:
+  2020-01-01: 0  # No PST in Northwest Territories
+NU:
+  2020-01-01: 0  # No PST in Nunavut
+ONT:
+  2020-01-01: 0  # Uses HST instead
+PE:
+  2020-01-01: 0  # Uses HST instead
+QC:
+  2020-01-01: 0.09975  # Quebec Sales Tax (QST)
+SK:
+  2020-01-01: 0.06
+YT:
+  2020-01-01: 0  # No PST in Yukon
+
+metadata:
+  unit: /1
+  period: year
+  label: Provincial Sales Tax rate
+  reference:
+    - title: Provincial sales tax rates
+      href: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html
+  breakdown:
+    - province_code

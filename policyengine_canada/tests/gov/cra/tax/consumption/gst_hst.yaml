@@ -1,0 +1,57 @@
+- name: Ontario household GST/HST
+  period: 2024
+  input:
+    province_code: ONT
+    consumption: 50_000
+  output:
+    # Ontario HST rate is 13%
+    # $50,000 * 0.13 = $6,500
+    gst_hst: 6_500
+
+- name: Alberta household GST only
+  period: 2024
+  input:
+    province_code: AB
+    consumption: 40_000
+  output:
+    # Alberta GST rate is 5%
+    # $40,000 * 0.05 = $2,000
+    gst_hst: 2_000
+
+- name: Nova Scotia household HST
+  period: 2024
+  input:
+    province_code: NS
+    consumption: 30_000
+  output:
+    # Nova Scotia HST rate is 15% in 2024
+    # $30,000 * 0.15 = $4,500
+    gst_hst: 4_500
+
+- name: British Columbia household GST
+  period: 2024
+  input:
+    province_code: BC
+    consumption: 60_000
+  output:
+    # BC GST rate is 5%
+    # $60,000 * 0.05 = $3,000
+    gst_hst: 3_000
+
+- name: New Brunswick household HST
+  period: 2024
+  input:
+    province_code: NB
+    consumption: 35_000
+  output:
+    # NB HST rate is 15%
+    # $35,000 * 0.15 = $5,250
+    gst_hst: 5_250
+
+- name: Zero consumption no tax
+  period: 2024
+  input:
+    province_code: ONT
+    consumption: 0
+  output:
+    gst_hst: 0

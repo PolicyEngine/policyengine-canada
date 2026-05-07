@@ -1,0 +1,57 @@
+- name: British Columbia PST
+  period: 2024
+  input:
+    province_code: BC
+    consumption: 50_000
+  output:
+    # BC PST rate is 7%
+    # $50,000 * 0.07 = $3,500
+    provincial_sales_tax: 3_500
+
+- name: Quebec QST
+  period: 2024
+  input:
+    province_code: QC
+    consumption: 40_000
+  output:
+    # Quebec Sales Tax rate is 9.975%
+    # $40,000 * 0.09975 = $3,990
+    provincial_sales_tax: 3_990
+
+- name: Saskatchewan PST
+  period: 2024
+  input:
+    province_code: SK
+    consumption: 30_000
+  output:
+    # SK PST rate is 6%
+    # $30,000 * 0.06 = $1,800
+    provincial_sales_tax: 1_800
+
+- name: Manitoba PST
+  period: 2024
+  input:
+    province_code: MB
+    consumption: 45_000
+  output:
+    # MB PST rate is 7%
+    # $45,000 * 0.07 = $3,150
+    provincial_sales_tax: 3_150
+
+- name: Ontario no PST (uses HST)
+  period: 2024
+  input:
+    province_code: ONT
+    consumption: 50_000
+  output:
+    # Ontario uses HST, no separate PST
+    provincial_sales_tax: 0
+
+- name: Alberta no PST
+  period: 2024
+  input:
+    province_code: AB
+    consumption: 60_000
+  output:
+    # Alberta has no PST
+    provincial_sales_tax: 0
