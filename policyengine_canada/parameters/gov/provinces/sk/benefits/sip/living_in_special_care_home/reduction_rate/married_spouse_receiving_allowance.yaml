@@ -1,0 +1,10 @@
+decription: Saskatchewan Seniors Income Plan Client Living in Special Care Home Reduction Rate for Married Recipient whose Spouse Receiving Allowance
+values: 
+  2022-07-01: 0.439
+
+metadata:
+  unit: /1
+  label: Saskatchewan Seniors Income Plan Client Living in Special Care Home Reduction Rate for married recipient whose spouse is receiving allowance
+  reference:
+  - title: Saskatchewan Seniors Income Plan
+    href: https://www.saskatchewan.ca/residents/family-and-social-support/seniors-services/financial-help-for-seniors

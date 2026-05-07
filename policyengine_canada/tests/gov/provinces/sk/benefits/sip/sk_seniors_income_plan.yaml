@@ -1,0 +1,9 @@
+
+# - name: Saskatchewan Seniors Income Plan Benefit for a single pensioner who are eligible for SIP and living at home with age more than 65, annual income below a specified level, and gis reduction below a specified level
+#   period: 2023
+#   input:
+#     province_code: SK
+#     sk_seniors_income_plan_at_home: 0
+#     sk_seniors_income_plan_in_special_care_home: 1_000
+#   output:
+#     sk_seniors_income_plan: 1_000
