@@ -1,0 +1,31 @@
+- name: Employment income only
+  period: 2024
+  input:
+    employment_income: 15_000
+    self_employment_income: 0
+  output:
+    gis_income: 15_000
+
+- name: Self-employment income only
+  period: 2024
+  input:
+    employment_income: 0
+    self_employment_income: 20_000
+  output:
+    gis_income: 20_000
+
+- name: Mixed employment and self-employment income
+  period: 2024
+  input:
+    employment_income: 10_000
+    self_employment_income: 8_000
+  output:
+    gis_income: 18_000
+
+- name: No income
+  period: 2024
+  input:
+    employment_income: 0
+    self_employment_income: 0
+  output:
+    gis_income: 0

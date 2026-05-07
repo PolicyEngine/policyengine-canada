@@ -1,0 +1,13 @@
+description: Combined annual income threshold for GIS when both receive OAS
+values:
+  2022-01-01: 27_552
+  2023-01-01: 28_560
+  2024-01-01: 28_800
+  2025-01-01: 29_424
+metadata:
+  unit: currency-CAD
+  period: year
+  label: GIS income threshold for couples (both OAS)
+  reference:
+    - title: Old Age Security payment amounts
+      href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html
