@@ -1,0 +1,17 @@
+description: Maximum weekly Employment Insurance benefit amount
+values:
+  2020-01-01: 573
+  2021-01-01: 595
+  2022-01-01: 638
+  2023-01-01: 650
+  2024-01-01: 668
+  2025-01-01: 695
+metadata:
+  unit: currency-CAD
+  period: week
+  label: EI maximum weekly benefit
+  reference:
+    - title: Employment Insurance benefit amounts
+      href: https://www.canada.ca/en/services/benefits/ei/ei-regular-benefit/benefit-amount.html
+    - title: EI premium rates and maximums
+      href: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html
