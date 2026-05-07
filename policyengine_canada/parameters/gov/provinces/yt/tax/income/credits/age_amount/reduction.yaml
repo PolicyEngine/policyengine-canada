@@ -1,0 +1,22 @@
+description: Yukon reduces the age amount credit by this rate, based on adjusted net income.
+metadata:
+  type: marginal_rate
+  threshold_unit: currency-CAD
+  rate_unit: /1
+  label: Yukon age amount credit reduction
+  reference:
+  - title: Worksheet for the Yukon 2023 Personal Tax Credits Return
+    href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1yt-ws/td1yt-ws-23e.pdf#page=1
+
+# TODO: 2022 values & 2022 reference & law reference
+
+brackets:
+  - threshold:
+      2022-01-01: 0
+    rate:
+      2022-01-01: 0
+  - threshold:
+      2022-01-01: 
+      2023-01-01: 42_335
+    rate:
+      2022-01-01: 0.15
