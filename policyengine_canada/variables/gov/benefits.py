@@ -11,6 +11,7 @@ class benefits(Variable):
         "child_benefit",
         "child_disability_benefit",
         "canada_workers_benefit",
+        "cpp_retirement_pension",
         "dental_benefit",
         "oas_net",
         # Ontario programs.
