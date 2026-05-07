@@ -1,0 +1,15 @@
+description: Maximum monthly Allowance for the Spouse
+values:
+  2024-01-01: 1_376
+  2025-01-01: 1_404
+metadata:
+  unit: currency-CAD
+  period: month
+  label: OAS Allowance maximum amount
+  reference:
+    - title: Old Age Security Act, section 19 - Allowance
+      href: https://laws-lois.justice.gc.ca/eng/acts/O-9/section-19.html
+    - title: Old Age Security Act, section 22 - Amount of allowance
+      href: https://laws-lois.justice.gc.ca/eng/acts/O-9/section-22.html
+    - title: Old Age Security Regulations, C.R.C., c. 1246, Part III
+      href: https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._1246/

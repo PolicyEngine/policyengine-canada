@@ -1,0 +1,52 @@
+- name: No clawback below threshold
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 40
+    individual_net_income: 80_000
+  output:
+    # Income $80,000 is below threshold $90,997
+    oas_repayment: 0
+
+- name: Partial clawback above threshold
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 40
+    individual_net_income: 100_000
+  output:
+    # Income above threshold: $100,000 - $90,997 = $9,003
+    # Clawback: $9,003 * 0.15 = $1,350.45
+    oas_repayment: 1_350.45
+
+- name: Clawback for high income senior
+  period: 2024
+  input:
+    age: 75
+    adult_years_in_canada: 40
+    individual_net_income: 120_000
+  output:
+    # Income above threshold: $120,000 - $90,997 = $29,003
+    # Clawback: $29,003 * 0.15 = $4,350.45
+    oas_repayment: 4_350.45
+
+- name: Full clawback at very high income
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 40
+    individual_net_income: 150_000
+  output:
+    # Income above threshold: $150,000 - $90,997 = $59,003
+    # Clawback would be: $59,003 * 0.15 = $8,850.45
+    # But capped at OAS benefit amount ($8,628)
+    oas_repayment: 8_628
+
+- name: No clawback for low income
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 40
+    individual_net_income: 30_000
+  output:
+    oas_repayment: 0

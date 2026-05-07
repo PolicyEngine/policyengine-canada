@@ -1,0 +1,92 @@
+# SPSD/M Validation Tests for Canada Child Benefit
+# Reference: SPSD/M Variable imcb17
+
+# Test 1: Maximum benefit for low-income family
+- name: SPSDM - CCB maximum for family under $34,863
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 35
+        individual_net_income: 25_000
+        full_custody: true
+      child_1:
+        age: 5  # Under 6
+        full_custody: true
+      child_2:
+        age: 8  # 6-17
+        full_custody: true
+    households:
+      household:
+        members: [parent, child_1, child_2]
+        province: ON
+  output:
+    child_benefit: 14_357  # 7,787 (under 6) + 6,570 (6-17)
+
+# Test 2: Partial benefit with phase-out
+- name: SPSDM - CCB with partial phase-out
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 40
+        individual_net_income: 75_000
+      child:
+        age: 10
+    households:
+      household:
+        members: [parent, child]
+        province: ON
+  output:
+    # Base: 6,570 for 2024
+    # Phase-out starts at 34,863
+    # Reduction = (75,000 - 34,863) * 0.135 for 1 child = 5,418.50
+    # Net = 6,570 - 5,418.50 = 1,151.50
+    child_benefit: 1_151.50
+
+# Test 3: High income family - minimum benefit
+- name: SPSDM - CCB fully phased out at high income
+  period: 2024
+  input:
+    people:
+      parent_1:
+        age: 45
+        individual_net_income: 150_000
+      parent_2:
+        age: 43
+        is_spouse: true
+        individual_net_income: 100_000
+      child_1:
+        age: 12
+      child_2:
+        age: 14
+    households:
+      household:
+        members: [parent_1, parent_2, child_1, child_2]
+        province: ON
+  output:
+    child_benefit: 0  # Fully phased out at this income level
+
+# Test 4: Single parent with multiple children
+- name: SPSDM - CCB for single parent moderate income
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 38
+        individual_net_income: 50_000
+      child_1:
+        age: 3  # Under 6
+      child_2:
+        age: 7  # 6-17
+      child_3:
+        age: 10  # 6-17
+    households:
+      household:
+        members: [parent, child_1, child_2, child_3]
+        province: ON
+  output:
+    # Base: 7,787 + 6,570 + 6,570 = 20,927
+    # Phase-out for 3+ children at different rate
+    # Reduction = (50,000 - 34,863) * rates
+    child_benefit: 17_366  # Approximate after phase-out

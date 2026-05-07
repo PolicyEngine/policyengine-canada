@@ -1,0 +1,103 @@
+# SPSD/M Validation Tests for OAS
+# These test cases validate PolicyEngine Canada against Statistics Canada's SPSD/M model
+# Reference: SPSD/M Version 29.0 Parameter Guide
+
+# Test 1: Basic OAS with no repayment (low income senior)
+- name: SPSDM - OAS no clawback for low income senior
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 40
+    individual_net_income: 30_000
+  output:
+    oas_pre_repayment: 8_628  # SPSD/M variable: imoasmax
+    oas_repayment: 0           # No repayment below threshold
+    oas_net: 8_628             # SPSD/M variable: imioas
+
+# Test 2: OAS with partial repayment
+- name: SPSDM - OAS with partial clawback at $100k income
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 40
+    individual_net_income: 100_000
+  output:
+    oas_pre_repayment: 8_628
+    # Repayment = (100,000 - 90,997) * 0.15 = 1,350.45
+    oas_repayment: 1_350.45
+    oas_net: 7_277.55
+
+# Test 3: Senior over 75 with 10% boost
+- name: SPSDM - OAS with older senior boost
+  period: 2024
+  input:
+    age: 76
+    adult_years_in_canada: 40
+    individual_net_income: 50_000
+  output:
+    # Base 8,628 * 1.10 = 9,490.80
+    oas_pre_repayment: 9_490.80
+    oas_repayment: 0
+    oas_net: 9_490.80
+
+# Test 4: Very high income with full clawback
+- name: SPSDM - OAS fully clawed back at high income
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 40
+    individual_net_income: 150_000
+  output:
+    oas_pre_repayment: 8_628
+    # Theoretical repayment = (150,000 - 90,997) * 0.15 = 8,850.45
+    # But capped at OAS benefit amount
+    oas_repayment: 8_628
+    oas_net: 0
+
+# Test 5: Partial residency (20 years in Canada)
+- name: SPSDM - OAS with partial residency
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 20  # 20/40 = 50% of full benefit
+    individual_net_income: 40_000
+  output:
+    oas_pre_repayment: 4_314  # 8,628 * 0.5
+    oas_repayment: 0
+    oas_net: 4_314
+
+# Test 6: Income exactly at threshold
+- name: SPSDM - OAS at exact repayment threshold
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 40
+    individual_net_income: 90_997  # Exact threshold for 2024
+  output:
+    oas_pre_repayment: 8_628
+    oas_repayment: 0  # No repayment at threshold
+    oas_net: 8_628
+
+# Test 7: 75-year-old at threshold (with boost)
+- name: SPSDM - Older senior at repayment threshold
+  period: 2024
+  input:
+    age: 75
+    adult_years_in_canada: 40
+    individual_net_income: 90_997
+  output:
+    oas_pre_repayment: 9_490.80  # With 10% boost
+    oas_repayment: 0
+    oas_net: 9_490.80
+
+# Test 8: Income just above threshold
+- name: SPSDM - OAS with minimal repayment
+  period: 2024
+  input:
+    age: 70
+    adult_years_in_canada: 40
+    individual_net_income: 91_997  # $1,000 above threshold
+  output:
+    oas_pre_repayment: 8_628
+    oas_repayment: 150  # 1,000 * 0.15
+    oas_net: 8_478

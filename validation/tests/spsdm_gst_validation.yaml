@@ -1,0 +1,104 @@
+# SPSD/M Validation Tests for GST/HST Credit
+# Reference: SPSD/M variables for GST credit calculation
+
+# Test 1: Single person full credit
+- name: SPSDM - GST credit single person low income
+  period: 2024
+  input:
+    age: 30
+    individual_net_income: 20_000
+  output:
+    # Base: $340 + boost: $179 = $519
+    gst_credit: 519  # 2024 single person amount
+
+# Test 2: Single person with phase-out
+- name: SPSDM - GST credit single person partial
+  period: 2024
+  input:
+    age: 35
+    individual_net_income: 55_000
+  output:
+    # Phase-out starts at 51,287 for singles
+    # Reduction = (55,000 - 51,287) * 0.05 = 185.65
+    # Credit = 519 - 185.65 = 333.35
+    gst_credit: 333.35
+
+# Test 3: Married couple full credit
+- name: SPSDM - GST credit married couple low income
+  period: 2024
+  input:
+    people:
+      spouse_1:
+        age: 40
+        individual_net_income: 25_000
+      spouse_2:
+        age: 38
+        is_spouse: true
+        individual_net_income: 15_000
+    households:
+      household:
+        members: [spouse_1, spouse_2]
+      output:
+    gst_credit: 1_038  # 519 * 2 for couple
+
+# Test 4: Family with children
+- name: SPSDM - GST credit family with children
+  period: 2024
+  input:
+    people:
+      parent_1:
+        age: 35
+        individual_net_income: 30_000
+      parent_2:
+        age: 33
+        is_spouse: true
+        individual_net_income: 20_000
+      child_1:
+        age: 8
+      child_2:
+        age: 12
+    households:
+      household:
+        members: [parent_1, parent_2, child_1, child_2]
+      output:
+    # Base: 519 + 519 + 274 + 274 = 1,586
+    # Income 50,000 below phase-out threshold for family
+    gst_credit: 1_586
+
+# Test 5: High income phase-out
+- name: SPSDM - GST credit high income family
+  period: 2024
+  input:
+    people:
+      parent_1:
+        age: 45
+        individual_net_income: 80_000
+      parent_2:
+        age: 43
+        is_spouse: true
+        individual_net_income: 60_000
+      child:
+        age: 10
+    households:
+      household:
+        members: [parent_1, parent_2, child]
+      output:
+    gst_credit: 0  # Fully phased out at 140,000 family income
+
+# Test 6: Single parent with child
+- name: SPSDM - GST credit single parent
+  period: 2024
+  input:
+    people:
+      parent:
+        age: 32
+        individual_net_income: 35_000
+      child:
+        age: 6
+    households:
+      household:
+        members: [parent, child]
+      output:
+    # Single parent gets couple amount + child
+    # Base: 1,038 + 274 = 1,312
+    gst_credit: 1_312
