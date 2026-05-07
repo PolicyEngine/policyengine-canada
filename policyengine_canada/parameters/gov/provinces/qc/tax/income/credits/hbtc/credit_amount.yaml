@@ -1,0 +1,11 @@
+description: Quebec limits its Home Buyers' Tax Credit up to this amount.
+values:
+  2022-01-01: 1_500
+metadata:
+  unit: currency-CAD
+  label: Quebec home buyer's maximum credit amount 
+  reference:
+    - title: Revenu Quebec - Home Buyers' Tax Credit
+      href: https://www.revenuquebec.ca/en/citizens/tax-credits/home-buyers-tax-credit/#:~:text=Amount%20of%20the%20credit,for%20the%20same%20qualifying%20home
+    - title: TP-752.HA-V - Home Buyers' Tax Credit 2022
+      href: https://www.revenuquebec.ca/documents/en/formulaires/tp/TP-752.HA-V%282022-10%29.pdf
