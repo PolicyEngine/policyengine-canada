@@ -1,0 +1,9 @@
+description: Manitoba provides tax credit to caregiver with dependents having less than or equal to certain annual net income.
+values:
+  2023-01-01: 15_917
+metadata:
+  unit: currency-CAD
+  label: Manitoba caregiver's dependent maxiumum eligible annual net income
+  reference:
+    - title: Government of Canada - Manitoba Information Guide
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb/td1mb-23e.pdf

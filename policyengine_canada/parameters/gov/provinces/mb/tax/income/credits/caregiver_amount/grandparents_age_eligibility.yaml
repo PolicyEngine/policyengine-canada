@@ -1,0 +1,9 @@
+description: Manitoba provides tax credit to caregiver with grandparents over certain age.
+values:
+  2023-01-01: 65
+metadata:
+  unit: year
+  label: Manitoba caregiver's grandparent age eligibility as a dependent 
+  reference:
+    - title: Government of Canada - Manitoba Information Guide
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/td1mb/td1mb-23e.pdf
