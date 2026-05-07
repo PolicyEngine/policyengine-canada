@@ -1,0 +1,41 @@
+- name: Basic EI premium calculation
+  period: 2024
+  input:
+    employment_income: 30_000
+  output:
+    ei_premium: 498
+
+- name: EI premium at maximum insurable earnings
+  period: 2024
+  input:
+    employment_income: 100_000
+  output:
+    ei_premium: 1_049.12
+
+- name: EI premium for 2025 with new rate
+  period: 2025
+  input:
+    employment_income: 50_000
+  output:
+    ei_premium: 820
+
+- name: No EI premium with no employment income
+  period: 2024
+  input:
+    employment_income: 0
+  output:
+    ei_premium: 0
+
+- name: EI premium at exactly maximum insurable earnings 2024
+  period: 2024
+  input:
+    employment_income: 63_200
+  output:
+    ei_premium: 1_049.12
+
+- name: EI premium at exactly maximum insurable earnings 2025
+  period: 2025
+  input:
+    employment_income: 65_700
+  output:
+    ei_premium: 1_077.48
