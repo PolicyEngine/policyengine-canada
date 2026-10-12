@@ -89,6 +89,12 @@ jobs:
           FOLDER: docs/_build/html  # The folder the action should deploy.
   Publish:
     runs-on: ubuntu-latest
+    # PyPI trusted publishing: uploads accepted only from this workflow in the
+    # pypi environment (limited to master). No stored token.
+    environment: pypi
+    permissions:
+      contents: write  # publish-git-tag.sh pushes the version tag
+      id-token: write
     if: |
       (github.repository == 'PolicyEngine/policyengine-canada')
       && (github.event.head_commit.message == 'Update PolicyEngine Canada')
@@ -111,8 +117,6 @@ jobs:
       - name: Publish a Python distribution to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          user: __token__
-          password: ${{ secrets.PYPI }}
           skip_existing: true
   Deploy:
     if: |
