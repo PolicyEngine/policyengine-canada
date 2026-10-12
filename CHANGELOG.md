@@ -1,3 +1,15 @@
+## [0.99.1] - 2026-10-12
+
+### Changed
+
+- Publish to PyPI with trusted publishing (OIDC) from the `pypi` environment instead of a stored API token.
+
+### Fixed
+
+- Fixed climate_action_incentive_category enum crash that broke household_net_income and marginal_tax_rate for all household types.
+- Migrated push workflow from the expired `POLICYENGINE_GITHUB` PAT to a short-lived GitHub App token (`APP_ID` / `APP_PRIVATE_KEY`), so the `versioning` job can push the "Update PolicyEngine Canada" commit that triggers Test, Publish, and Deploy. Matches the pattern already used by policyengine-core, policyengine-us, and microdf.
+
+
 ## [0.99.0] - 2026-03-06
 
 ### Added
