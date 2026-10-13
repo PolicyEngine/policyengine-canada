@@ -1,0 +1,11 @@
+description: The Canada Pension Plan sets this as the maximum number of contributory years used to calculate the retirement pension.
+values:
+  1966-01-01: 40
+metadata:
+  unit: year
+  period: year
+  label: CPP maximum contributory years
+  note: "CPP Act s. 49 allows contributions from age 18 to 65 (~47 years), but dropout provisions (child-rearing, disability, low-earning years) typically reduce the effective contributory period. The 'best 39 years' rule (post-2024 CPP enhancement) makes 40 a reasonable simplified maximum."
+  reference:
+    - title: Canada Pension Plan Act, R.S.C. 1985, c. C-8, s. 49 — Contributory period
+      href: https://laws-lois.justice.gc.ca/eng/acts/c-8/page-11.html

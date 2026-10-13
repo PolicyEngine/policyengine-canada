@@ -1,0 +1,10 @@
+description: The Canada Pension Plan requires this minimum age for retirement pension eligibility.
+values:
+  2020-01-01: 60
+metadata:
+  unit: year
+  period: year
+  label: CPP retirement pension eligibility age
+  reference:
+    - title: Canada Pension Plan — Retirement pension eligibility requirements
+      href: https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/eligibility.html
