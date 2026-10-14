@@ -25,3 +25,6 @@ Description of the changes here.
 ## What this fixes and how it's fixed
 
 Description of how this fix works goes here. Link any issues this PR fixes.
+
+<!-- Required for any change to policy (programs, parameters, eligibility, bug fixes): say how the same provision is right in TheAxiomFoundation/rulespec-ca (PolicyEngine/.github CONTRIBUTING, "Mirror policy changes in Axiom"). Keep one option below (several claims can share the line, separated by `;`), or use axiom: needed if you are an external contributor who cannot complete the Axiom work; a maintainer will follow up. The Axiom parity check verifies the line and comments with suggestions. -->
+axiom: <legal id> encoded-correct (<companion test>) | <rulespec-ca PR> encoded | <rulespec-ca issue> queued | n/a: <category>: <reason>
