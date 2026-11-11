@@ -1,3 +1,10 @@
+## [0.99.2] - 2026-11-11
+
+### Changed
+
+- Auto-install the policyengine-claude country-models plugin for Claude Code, matching policyengine-us and policyengine-uk.
+
+
 ## [0.99.1] - 2026-10-12
 
 ### Changed
