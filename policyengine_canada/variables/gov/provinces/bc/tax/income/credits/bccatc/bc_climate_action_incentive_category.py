@@ -4,9 +4,7 @@ from policyengine_canada.model_api import *
 class BCClimateActionIncentiveCategory(Enum):
     HEAD = "Head"
     SPOUSE = "Spouse"
-    ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD = (
-        "Eldest child in single parent household"
-    )
+    ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD = "Eldest child in single parent household"
     OTHER_CHILD = "Other child"
 
 

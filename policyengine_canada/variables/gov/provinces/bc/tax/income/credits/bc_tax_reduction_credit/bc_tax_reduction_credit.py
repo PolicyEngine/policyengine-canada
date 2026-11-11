@@ -11,7 +11,5 @@ class bc_tax_reduction_credit(Variable):
 
     def formula(person, period, parameters):
         income = person("bc_taxable_income", period)
-        p = parameters(
-            period
-        ).gov.provinces.bc.tax.income.credits.tax_reduction
+        p = parameters(period).gov.provinces.bc.tax.income.credits.tax_reduction
         return max_(p.base - p.reduction.calc(income), 0)

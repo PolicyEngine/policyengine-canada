@@ -9,9 +9,7 @@ class qc_cost_of_living_credit(Variable):
     defined_for = ProvinceCode.QC
 
     def formula(person, period, parameters):
-        p = parameters(
-            period
-        ).gov.provinces.qc.tax.income.credits.cost_of_living
+        p = parameters(period).gov.provinces.qc.tax.income.credits.cost_of_living
         income = person("individual_net_income", period)
 
         # determine eligibility:

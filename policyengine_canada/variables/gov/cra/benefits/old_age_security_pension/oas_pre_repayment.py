@@ -20,8 +20,7 @@ class oas_pre_repayment(Variable):
         older_increase_age_threshold = p.eligibility.age.older_seniors_increase
         eligible_older_increase = age >= older_increase_age_threshold
         total_older_increase_factor = (
-            1
-            + eligible_older_increase * p.amount.older_seniors_increase_factor
+            1 + eligible_older_increase * p.amount.older_seniors_increase_factor
         )
         base_amount = p.amount.base
         # Your full base amount is your number of adult residence years divided

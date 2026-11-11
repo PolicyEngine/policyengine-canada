@@ -1,0 +1,11 @@
+description: Alberta applies the preschool child care subsidy schedule to children below this age.
+values:
+  2024-01-01: 5
+metadata:
+  unit: year
+  period: year
+  label: Alberta child care subsidy preschool age threshold
+  note: Preschool parent subsidy was discontinued April 1, 2025, replaced by $15/day Affordability Grant paid to providers. These 2024 rates were valid prior to discontinuation but the official page no longer displays them.
+  reference:
+    - title: Alberta Child Care Subsidy Program — Preschool age eligibility (2024)
+      href: https://www.alberta.ca/child-care-subsidy

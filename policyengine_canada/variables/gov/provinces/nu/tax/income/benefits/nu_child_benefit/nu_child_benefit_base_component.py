@@ -10,7 +10,5 @@ class nu_child_benefit_base_component(Variable):
 
     def formula(household, period, parameters):
         base = household("nu_child_benefit_base_component_base", period)
-        reduction = household(
-            "nu_child_benefit_base_component_reduction", period
-        )
+        reduction = household("nu_child_benefit_base_component_reduction", period)
         return max_(0, base - reduction)

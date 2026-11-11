@@ -1,9 +1,11 @@
-description: Canada provides this base amount for the BPA.
+description: Canada provides this base amount for the Basic Personal Amount.
 values:
   2020-01-01: 12_298
   2021-01-01: 12_421
   2022-01-01: 12_719
-  2023-01-01: 13_521
+  2023-01-01: 13_520
+  2024-01-01: 14_156
+  2025-01-01: 14_538
 metadata:
   unit: currency-CAD
   period: year
@@ -11,5 +13,17 @@ metadata:
   reference:
     - title: Government of Canada - Basic Personal amount
       href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/basic-personal-amount.html
-    - title: Income Tax Act (E), (A), (118.1), (1.1)
-      href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-84.html?txthl=personal+amounts+amount+basic#s-118 
+    - title: Income Tax Act, s. 118(1.1)
+      href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-84.html?txthl=personal+amounts+amount+basic#s-118
+    - title: CRA Federal Worksheet 5000-D1 for 2020 (BPA base = $12,298)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-20e.pdf
+    - title: CRA Federal Worksheet 5000-D1 for 2021 (BPA base = $12,421)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-21e.pdf
+    - title: CRA Federal Worksheet 5000-D1 for 2022 (BPA base = $12,719)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-22e.pdf
+    - title: CRA Federal Worksheet 5000-D1 for 2023 (BPA base = $13,520)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-23e.pdf
+    - title: CRA Federal Worksheet 5000-D1 for 2024 (BPA base = $14,156)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-24e.pdf
+    - title: CRA Federal Worksheet 5000-D1 for 2025 (BPA base = $14,538)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-25e.pdf

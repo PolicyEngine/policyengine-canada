@@ -18,7 +18,7 @@ class sk_active_family_benefit(Variable):
         disabled_children = household.sum(child & disabled)
         non_disabled_children = children - disabled_children
         eligible = income <= p.eligibility.income
-        amount_if_eligible = (
-            p.amount.non_disabled * non_disabled_children
-        ) + (p.amount.disabled * disabled_children)
+        amount_if_eligible = (p.amount.non_disabled * non_disabled_children) + (
+            p.amount.disabled * disabled_children
+        )
         return eligible * amount_if_eligible

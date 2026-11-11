@@ -11,7 +11,5 @@ class dtc_child_supplement(Variable):
 
     def formula(person, period, parameters):
         p = parameters(period).gov.cra.tax.income.credits.dtc
-        supplement_eligible = (
-            person("age", period) < p.supplement_ineligible_age
-        )
+        supplement_eligible = person("age", period) < p.supplement_ineligible_age
         return p.child_supplement * supplement_eligible

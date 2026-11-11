@@ -12,7 +12,5 @@ class bc_climate_action_tax_credit_person(Variable):
 
     def formula(person, period, parameters):
         category = person("bc_climate_action_incentive_category", period)
-        amounts = parameters(
-            period
-        ).gov.provinces.bc.tax.income.credits.bccatc.amount
+        amounts = parameters(period).gov.provinces.bc.tax.income.credits.bccatc.amount
         return amounts[category]

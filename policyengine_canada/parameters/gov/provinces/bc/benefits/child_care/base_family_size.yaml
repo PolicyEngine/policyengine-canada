@@ -1,0 +1,15 @@
+description: >-
+  British Columbia applies the family size income adjustment for each
+  household member beyond this base count for the Affordable Child Care
+  Benefit.
+values:
+  2018-01-01: 2
+metadata:
+  unit: person
+  period: year
+  label: BC ACCB base family size
+  reference:
+    - title: BC Affordable Child Care Benefit — Eligibility, base family size for income adjustment
+      href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit/information-for-families/eligibility-estimate-funding
+    - title: Early Learning and Child Care Regulation, B.C. Reg. 189/2024
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/189_2024

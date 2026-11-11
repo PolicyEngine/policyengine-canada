@@ -1,16 +1,29 @@
-description: Basic Personal Amout phase-out threshold start.
+description: Basic Personal Amount phase-out threshold end.
 values:
-  2020-01-01: 200_000
+  2020-01-01: 214_368
+  2021-01-01: 216_511
   2022-01-01: 221_708
   2023-01-01: 235_675
+  2024-01-01: 246_752
+  2025-01-01: 253_414
 metadata:
   unit: currency-CAD
   period: year
-  label: Basic personal phase out start threshold
+  label: Basic personal phase out end threshold
   reference:
     - title: Government of Canada - Basic Personal amount
       href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/basic-personal-amount.html
-    - title: Income Tax Act (E), (A), (118.1), (1.1)
-      href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-84.html?txthl=personal+amounts+amount+basic#s-118 
-
-# Based on the federal tax schedule (33% bracket)
+    - title: Income Tax Act, s. 118(1.1)
+      href: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-84.html?txthl=personal+amounts+amount+basic#s-118
+    - title: CRA Federal Worksheet 5000-D1 for 2020 (phase-out end = $214,368)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-20e.pdf
+    - title: CRA Federal Worksheet 5000-D1 for 2021 (phase-out end = $216,511)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-21e.pdf
+    - title: CRA Federal Worksheet 5000-D1 for 2022 (phase-out end = $221,708)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-22e.pdf
+    - title: CRA Federal Worksheet 5000-D1 for 2023 (phase-out end = $235,675)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-23e.pdf
+    - title: CRA Federal Worksheet 5000-D1 for 2024 (phase-out end = $246,752)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-24e.pdf
+    - title: CRA Federal Worksheet 5000-D1 for 2025 (phase-out end = $253,414)
+      href: https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-d1/5000-d1-25e.pdf

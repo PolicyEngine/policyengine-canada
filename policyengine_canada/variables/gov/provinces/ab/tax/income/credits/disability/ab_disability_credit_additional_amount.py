@@ -15,8 +15,7 @@ class ab_disability_credit_additional_amount(Variable):
         childcare_expenses = person("care_expenses", period)
         excess_childcare_expenses = max_(
             0,
-            childcare_expenses
-            - p.additional_amount.childcare_expense_threshold,
+            childcare_expenses - p.additional_amount.childcare_expense_threshold,
         )
         age = person("age", period)
         additional_amount_base = p.additional_amount.base.calc(age)

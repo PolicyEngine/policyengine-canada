@@ -27,18 +27,13 @@ class northern_ontario_energy_credit(Variable):
             phased_out / p.phase_out.shared_custody.divisor
         )
         # Second phase out process - same steps as previously with different amounts.
-        shared_custody_excess = max_(
-            afni - p.phase_out.shared_custody.start, 0
-        )
-        shared_custody_second_phase_out = (
-            shared_custody_excess * p.phase_out.rate
-        )
+        shared_custody_excess = max_(afni - p.phase_out.shared_custody.start, 0)
+        shared_custody_second_phase_out = shared_custody_excess * p.phase_out.rate
         shared_custody_second_phased_out = (
             p.phase_out.shared_custody.base - shared_custody_second_phase_out
         )
         shared_custody_second_phased_out_divided = (
-            shared_custody_second_phased_out
-            / p.phase_out.shared_custody.divisor
+            shared_custody_second_phased_out / p.phase_out.shared_custody.divisor
         )
         # Single with shared custody household afni under 43_602 amount is 205.50.
         shared_custody_result = where(

@@ -1,0 +1,12 @@
+description: British Columbia reduces adjusted family income by this amount per family member beyond the first two for the Affordable Child Care Benefit.
+values:
+  2018-01-01: 2_000
+metadata:
+  unit: currency-CAD
+  period: year
+  label: BC Affordable Child Care Benefit family size adjustment
+  reference:
+    - title: BC Affordable Child Care Benefit — Eligibility, family size income adjustment
+      href: https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit/information-for-families/eligibility-estimate-funding
+    - title: Early Learning and Child Care Regulation, B.C. Reg. 189/2024
+      href: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/189_2024

@@ -11,10 +11,6 @@ class bc_income_tax_before_refundable_credits(Variable):
     defined_for = ProvinceCode.BC
 
     def formula(person, period, parameters):
-        income_tax_before_credits = person(
-            "bc_income_tax_before_credits", period
-        )
-        non_refundable_tax_credits = person(
-            "bc_non_refundable_credits", period
-        )
+        income_tax_before_credits = person("bc_income_tax_before_credits", period)
+        non_refundable_tax_credits = person("bc_non_refundable_credits", period)
         return max_(income_tax_before_credits - non_refundable_tax_credits, 0)

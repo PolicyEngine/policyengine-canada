@@ -21,9 +21,7 @@ class ns_child_benefit(Variable):
         higher_income_base = p.base * (children > 0)
         # In the higher income bracket, families are eligible to receive
         # $637.50 for each child after the first born.
-        higher_income_additional_child = max_(
-            0, p.higher_income_base * (children - 1)
-        )
+        higher_income_additional_child = max_(0, p.higher_income_base * (children - 1))
         amount_if_eligible = where(
             income < p.lower_threshold,
             lower_income_amount,

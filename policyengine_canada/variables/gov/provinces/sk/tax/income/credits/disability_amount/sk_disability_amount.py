@@ -10,8 +10,6 @@ class sk_disability_amount(Variable):
     defined_for = ProvinceCode.SK
 
     def formula(person, period, parameters):
-        p = parameters(
-            period
-        ).gov.provinces.sk.tax.income.credits.disability_amount
+        p = parameters(period).gov.provinces.sk.tax.income.credits.disability_amount
         disabled = person("is_disabled", period)
         return disabled * p.amount

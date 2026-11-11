@@ -9,7 +9,5 @@ class is_child_for_on_child_care_fee_subsidy(Variable):
 
     def formula(person, period, parameters):
         age = person("age", period)
-        p = parameters(
-            period
-        ).gov.provinces.on.subsidies.on_child_care_fee_subsidy
+        p = parameters(period).gov.provinces.on.subsidies.on_child_care_fee_subsidy
         return age < p.child_age_eligibility

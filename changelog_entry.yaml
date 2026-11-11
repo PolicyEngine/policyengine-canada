@@ -1,4 +1,0 @@
-- bump: minor
-  changes:
-    changed:
-      - Added policyengine-claude plugin auto-install configuration.

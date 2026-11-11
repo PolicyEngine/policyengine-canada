@@ -14,9 +14,7 @@ class yt_additional_basic_personal_amount(Variable):
         ).gov.provinces.yt.tax.income.credits.basic_personal_amount.additional
 
         individual_net_income = person("individual_net_income", period)
-        additional_amount = p.divisor - (
-            individual_net_income - p.income_threshold
-        )
+        additional_amount = p.divisor - (individual_net_income - p.income_threshold)
         additional_amount_eligible = additional_amount > 0
         yt_additional_amount = additional_amount_eligible * additional_amount
         yt_additional_amount = yt_additional_amount / p.divisor

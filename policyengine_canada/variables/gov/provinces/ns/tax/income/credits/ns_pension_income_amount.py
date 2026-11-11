@@ -15,12 +15,8 @@ class ns_pension_income_amount(Variable):
     )
 
     def formula(person, period, parameters):
-        p = parameters(
-            period
-        ).gov.provinces.ns.tax.income.credits.pension_income_amount
+        p = parameters(period).gov.provinces.ns.tax.income.credits.pension_income_amount
 
-        pension_income_amount = person(
-            "pension_and_savings_plan_income", period
-        )
+        pension_income_amount = person("pension_and_savings_plan_income", period)
 
         return min_(pension_income_amount, p.cap)

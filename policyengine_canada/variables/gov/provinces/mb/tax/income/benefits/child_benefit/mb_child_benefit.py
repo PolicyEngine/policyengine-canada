@@ -9,9 +9,7 @@ class mb_child_benefit(Variable):
     defined_for = ProvinceCode.MB
 
     def formula(household, period, parameters):
-        eligible_children = household(
-            "mb_child_benefit_eligible_children", period
-        )
+        eligible_children = household("mb_child_benefit_eligible_children", period)
         p = parameters(period).gov.provinces.mb.benefits.mbcb
         capped_children_count = min_(eligible_children, p.max_child_count)
         # <= 6

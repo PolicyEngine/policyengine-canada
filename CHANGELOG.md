@@ -1,9 +1,81 @@
+## [0.99.1] - 2026-10-12
+
+### Changed
+
+- Publish to PyPI with trusted publishing (OIDC) from the `pypi` environment instead of a stored API token.
+
+### Fixed
+
+- Fixed climate_action_incentive_category enum crash that broke household_net_income and marginal_tax_rate for all household types.
+- Migrated push workflow from the expired `POLICYENGINE_GITHUB` PAT to a short-lived GitHub App token (`APP_ID` / `APP_PRIVATE_KEY`), so the `versioning` job can push the "Update PolicyEngine Canada" commit that triggers Test, Publish, and Deploy. Matches the pattern already used by policyengine-core, policyengine-us, and microdf.
+
+
+## [0.99.0] - 2026-03-06
+
+### Added
+
+- Added ruff check linting configuration with E and F rules to catch common Python errors.
+
+
+## [0.98.1] - 2026-03-06
+
+### Changed
+
+- Switch code formatter from Black to Ruff.
+
+
+## [0.98.0] - 2026-03-05
+
+### Added
+
+- Added child care expense deductions and provincial child care benefits (Ontario CARE credit, BC ACCB, BC CCFRI, Alberta subsidy).
+
+
+## [0.97.3] - 2026-02-26
+
+### Fixed
+
+- Fixed documentation build by using jupyter-book CLI command directly.
+
+
+## [0.97.2] - 2026-02-26
+
+### Fixed
+
+- Pin jupyter-book to v1 to fix documentation build in CI.
+
+
+## [0.97.1] - 2026-02-26
+
+### Fixed
+
+- Fixed push workflow YAML syntax and update_api.py to read version from pyproject.toml.
+
+
+## [0.97.0] - 2026-02-26
+
+### Added
+
+- Updated all federal CRA parameters through 2025: income tax brackets and rates (including 14.5% lowest bracket for 2025, 14% for 2026), Basic Personal Amount, Age Amount credit, Canada Employment Amount, Disability Tax Credit, Canada Child Benefit, Child Disability Benefit, Canada Workers Benefit, GST/HST credit, Old Age Security pension and clawback thresholds, Climate Action Incentive amounts for 2023-24 and 2024-25 (including new provinces NB, NL, NS, PE and rural supplement increase to 20%), and Canada Training Credit income thresholds.
+
+### Changed
+
+- Migrated from changelog_entry.yaml to towncrier fragments to eliminate merge conflicts.
+- Add Python 3.14 support, drop Python 3.10.
+
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.96.6] - 2026-01-25 16:04:56
+
+### Changed
+
+- Bumped policyengine-core to 3.23.6 and microdf to 1.2.1 for pandas 3.0 compatibility
 
 ## [0.96.5] - 2025-12-03 23:06:49
 
@@ -772,6 +844,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.96.6]: https://github.com/PolicyEngine/policyengine-canada/compare/0.96.5...0.96.6
 [0.96.5]: https://github.com/PolicyEngine/policyengine-canada/compare/0.96.4...0.96.5
 [0.96.4]: https://github.com/PolicyEngine/policyengine-canada/compare/0.96.3...0.96.4
 [0.96.3]: https://github.com/PolicyEngine/policyengine-canada/compare/0.96.2...0.96.3

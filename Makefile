@@ -1,12 +1,12 @@
 all: install format test build changelog
 
 documentation:
-	python -m jupyter_book clean docs
-	python -m jupyter_book build docs
+	jupyter-book clean docs
+	jupyter-book build docs
 
 format:
-	black . -l 79
-	linecheck . --fix
+	ruff format .
+	ruff check .
 
 install:
 	pip install -e .[dev]
@@ -15,11 +15,8 @@ test:
 	policyengine-core test -c policyengine_canada policyengine_canada/tests
 
 build:
-	python setup.py sdist bdist_wheel
+	python -m build
 
 changelog:
-	build-changelog changelog.yaml --output changelog.yaml --update-last-date --start-from 0.0.0 --append-file changelog_entry.yaml
-	build-changelog changelog.yaml --org PolicyEngine --repo policyengine-canada --output CHANGELOG.md --template .github/changelog_template.md
-	bump-version changelog.yaml setup.py
-	rm changelog_entry.yaml || true
-	touch changelog_entry.yaml
+	python .github/bump_version.py
+	towncrier build --yes --version $$(python -c "import re; print(re.search(r'version = \"(.+?)\"', open('pyproject.toml').read()).group(1))")

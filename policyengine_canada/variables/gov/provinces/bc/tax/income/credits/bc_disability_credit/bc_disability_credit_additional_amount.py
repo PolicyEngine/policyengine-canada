@@ -14,8 +14,7 @@ class bc_disability_credit_additional_amount(Variable):
         p = parameters(period).gov.provinces.bc.tax.income.credits.disability
         childcare_expenses = person("care_expenses", period)
         reduced_childcare_expenses = (
-            childcare_expenses
-            - p.additional_amount.childcare_expense_threshold
+            childcare_expenses - p.additional_amount.childcare_expense_threshold
         )
         excess_childcare_expenses = max_(
             0,

@@ -28,6 +28,4 @@ class province_code(Variable):
     definition_period = ETERNITY
 
     def formula(household, period, parameters):
-        return ProvinceCode.encode(
-            household("province_name", period).decode_to_str()
-        )
+        return ProvinceCode.encode(household("province_name", period).decode_to_str())

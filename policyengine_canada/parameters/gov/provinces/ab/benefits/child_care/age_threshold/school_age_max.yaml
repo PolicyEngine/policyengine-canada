@@ -1,0 +1,11 @@
+description: Alberta applies the school-age child care subsidy schedule to children up to and including this age.
+values:
+  2024-01-01: 12
+metadata:
+  unit: year
+  period: year
+  label: Alberta child care subsidy school-age maximum age
+  note: Age threshold for school-age subsidy (kindergarten through grade 6).
+  reference:
+    - title: Alberta Child Care Subsidy Program — School-age age eligibility (2024)
+      href: https://www.alberta.ca/child-care-subsidy

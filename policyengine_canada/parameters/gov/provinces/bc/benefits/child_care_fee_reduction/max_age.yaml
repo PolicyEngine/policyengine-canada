@@ -1,0 +1,10 @@
+description: British Columbia limits eligibility for the Child Care Fee Reduction Initiative to children up to this age.
+values:
+  2018-01-01: 12
+metadata:
+  unit: year
+  period: year
+  label: BC Child Care Fee Reduction max age
+  reference:
+    - title: BC Child Care Fee Reduction Initiative Funding Guidelines 2024-25, Table 1 — Maximum eligible age
+      href: https://www2.gov.bc.ca/assets/gov/family-and-social-supports/child-care/childcarebc-programs/ccfri/ccfri_funding_guidelines_24_25.pdf#page=5

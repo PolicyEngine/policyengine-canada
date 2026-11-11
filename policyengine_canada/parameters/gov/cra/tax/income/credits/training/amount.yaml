@@ -8,10 +8,20 @@ brackets:
       2020-01-01: 250
     threshold:
       2020-01-01: 10_000
+      2021-01-01: 10_100
+      2022-01-01: 10_342
+      2023-01-01: 10_994
+      2024-01-01: 11_511
+      2025-01-01: 11_821
   - amount:
       2020-01-01: 0
     threshold:
-      2020-01-01: 150_000
+      2020-01-01: 150_473
+      2021-01-01: 151_978
+      2022-01-01: 155_625
+      2023-01-01: 165_430
+      2024-01-01: 173_205
+      2025-01-01: 177_882
 metadata:
   type: single_amount
   threshold_unit: currency-CAD
@@ -21,4 +31,11 @@ metadata:
   label: Canada Training Credit Income Thresholds
   reference:
     - title: Government of Canada - Canada Training Credit
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-45350-canada-training-credit.html
+    - title: "Backgrounder: Canada Training Benefit ($250 annual credit, income between ~$10,000 and ~$150,000)"
       href: https://www.canada.ca/en/employment-social-development/news/2019/05/backgrounder-canada-training-benefit.html
+    - title: How much you can get - Canada training credit
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-training-credit/how-much-you-can-get.html
+    - title: Who can claim - Canada training credit (ages 26-65, income thresholds)
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-training-credit/who-can-claim.html
+    # Upper threshold tracks the 4th federal income tax bracket threshold each year

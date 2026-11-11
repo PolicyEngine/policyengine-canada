@@ -6,6 +6,4 @@ class in_need_of_protective_services(Variable):
     entity = Person
     label = "Person is in need of protective services"
     definition_period = YEAR
-    reference = (
-        "https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC3_8"
-    )
+    reference = "https://novascotia.ca/just/regulations/regs/esiaregs.htm#TOC3_8"

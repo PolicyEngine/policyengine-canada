@@ -10,7 +10,5 @@ class on_child_care_fee_subsidy_full_time(Variable):
 
     def formula(household, period, parameters):
         income = household("adjusted_family_net_income", period)
-        p = parameters(
-            period
-        ).gov.provinces.on.subsidies.on_child_care_fee_subsidy
+        p = parameters(period).gov.provinces.on.subsidies.on_child_care_fee_subsidy
         return p.full_time_calculation.calc(income)

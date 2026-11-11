@@ -10,7 +10,5 @@ class is_child_for_gst_credit(Variable):
     def formula(person, period, parameters):
         dependant = person("is_dependant", period)
         age = person("age", period)
-        adult_age = parameters(
-            period
-        ).gov.cra.tax.income.credits.gst_credit.adult_age
+        adult_age = parameters(period).gov.cra.tax.income.credits.gst_credit.adult_age
         return dependant & (age < adult_age)

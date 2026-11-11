@@ -1,0 +1,74 @@
+- name: Two-parent household with child — category defaults without crash
+  period: 2026
+  input:
+    people:
+      parent1:
+        age: 35
+        is_head: true
+        is_spouse: false
+        employment_income: 50_000
+      parent2:
+        age: 33
+        is_head: false
+        is_spouse: true
+      child:
+        age: 5
+        is_head: false
+        is_spouse: false
+    households:
+      household:
+        members: [parent1, parent2, child]
+        province_code: ONT
+        is_married: true
+  output:
+    climate_action_incentive_category:
+      - HEAD
+      - SPOUSE
+      - OTHER_CHILD
+
+- name: Single parent household — eldest child gets special category
+  period: 2026
+  input:
+    people:
+      parent:
+        age: 35
+        is_head: true
+        is_spouse: false
+        employment_income: 45_000
+      child1:
+        age: 10
+        is_head: false
+        is_spouse: false
+        is_dependant: true
+      child2:
+        age: 7
+        is_head: false
+        is_spouse: false
+        is_dependant: true
+    households:
+      household:
+        members: [parent, child1, child2]
+        province_code: ONT
+        is_married: false
+  output:
+    climate_action_incentive_category:
+      - HEAD
+      - ELDEST_CHILD_IN_SINGLE_PARENT_HOUSEHOLD
+      - OTHER_CHILD
+
+- name: Single person — head only
+  period: 2026
+  input:
+    people:
+      person:
+        age: 40
+        is_head: true
+        is_spouse: false
+        employment_income: 90_000
+    households:
+      household:
+        members: [person]
+        province_code: ONT
+  output:
+    climate_action_incentive_category:
+      - HEAD

@@ -18,7 +18,5 @@ class oshptg_adjusted_oeptc(Variable):
         energy_component = household("oeptc_energy_component", period)
         adjusted_for_energy_component = adjusted_oeptc - energy_component
         occupany_costs = household("oeptc_occupancy_cost", period)
-        adjusted_for_occupany_costs = (
-            adjusted_for_energy_component - occupany_costs
-        )
+        adjusted_for_occupany_costs = adjusted_for_energy_component - occupany_costs
         return max_(eligible * (oeptc - adjusted_for_occupany_costs), 0)

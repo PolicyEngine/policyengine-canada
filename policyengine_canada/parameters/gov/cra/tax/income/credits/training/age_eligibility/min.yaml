@@ -6,5 +6,9 @@ metadata:
   name: training_credit_lower_age_bracket
   label: Training credit lower age bracket
   reference:
-  - title: Government of Canada - Canada Training Credit
-    href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2019-investing-middle-class/canada-training-credit.html
+    - title: Government of Canada - Canada Training Credit
+      href: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-45350-canada-training-credit.html
+    - title: Who can claim - Canada training credit (at least 26 years old at end of year)
+      href: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-training-credit/who-can-claim.html
+    - title: Budget 2019 - Canada Training Credit
+      href: https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2019-investing-middle-class/canada-training-credit.html

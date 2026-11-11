@@ -11,6 +11,5 @@ class yt_child_benefit_base(Variable):
     def formula(household, period, parameters):
         children = household("yt_child_benefit_eligible_children", period)
         return (
-            children
-            * parameters(period).gov.provinces.yt.benefits.child_benefit.base
+            children * parameters(period).gov.provinces.yt.benefits.child_benefit.base
         )

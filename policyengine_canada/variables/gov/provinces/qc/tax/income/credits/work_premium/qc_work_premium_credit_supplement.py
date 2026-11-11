@@ -18,9 +18,7 @@ class qc_work_premium_credit_supplement(Variable):
         work_income_eligible = (
             person("working_income", period) > p.work_income_eligibility
         )
-        supplement_eligible = household.sum(
-            work_income_eligible & is_head_or_spouse
-        )
+        supplement_eligible = household.sum(work_income_eligible & is_head_or_spouse)
 
         return select(
             [supplement_eligible == 2, supplement_eligible == 1],
